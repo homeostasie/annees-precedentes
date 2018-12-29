@@ -1,0 +1,75 @@
+\documentclass[11pt]{article}
+\usepackage{geometry} % Pour passer au format A4
+\geometry{hmargin=1cm, vmargin=1cm} % 
+
+% Page et encodage
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage[english,francais]{babel} % Français et anglais
+\usepackage[utf8]{inputenc} 
+
+\usepackage{lmodern}
+\setlength\parindent{0pt}
+
+% Graphiques
+\usepackage{graphicx, float}
+\usepackage{tikz,tkz-tab}
+
+% Maths et divers
+\usepackage{amsmath,amsfonts,amssymb,amsthm,verbatim}
+\usepackage{multicol,enumitem,url,eurosym,gensymb}
+
+% Sections
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{\centering \normalfont\scshape}
+
+% Tête et pied de page
+
+\usepackage{fancyhdr} 
+\pagestyle{fancyplain} 
+
+\fancyhead{} % No page header
+\fancyfoot{}
+
+\renewcommand{\headrulewidth}{0pt} % Remove header underlines
+\renewcommand{\footrulewidth}{0pt} % Remove footer underlines
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+%----------------------------------------------------------------------------------------
+% Début du document
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+&
+M. Lafond                         ;·  &
+
+On impose l'échelle : 
+\begin{itemize}
+      \item ordonnée : graduée de $0 \degree C$ à $3 \degree C$ avec 8cm pour $1 \degree C$.
+      \item abscisse : graduée avec $1cm = 2ans$.
+\end{itemize}
+
+\subsection*{Période 1 - 1897 - 1927}
+
+
+
+$$Données : 1\degree C ; 0.8\degree C ; 0.6\degree C ; 0.7\degree C ;  0.6\degree C ; 0.7\degree C ; 1\degree C ; 1.1\degree C ; 0.9\degree C$$
+
+
+\subsection*{Période 2 - 1927 - 1957}
+
+$$Données : 0.9\degree C ; 1.1\degree C ; 1.2\degree C ; 1.3\degree C ;  1.4\degree C ; 1.4\degree C ; 1.2\degree C ; 1.1\degree C ; 1.\degree C$$
+
+
+
+\subsection*{Période 3 - 1957 - 1987}
+
+$$Données : 1\degree C ; 0.9\degree C ; 0.8\degree C ; 0.7\degree C ; 0.8\degree C ; 1\degree C ; 1.2\degree C. ; 1.4\degree C ; 1.6\degree C$$
+
+
+\subsection*{Période 4 - 1987 - 2017}
+
+$$Données : 1.6\degree C ; 1.3\degree C ; 1.5\degree C ; 1.8\degree C ; 2\degree C ; 1.7\degree C ; 2.2\degree C ; 2.4\degree C ; 2.8\degree C$$
+
+
+\end{document}  

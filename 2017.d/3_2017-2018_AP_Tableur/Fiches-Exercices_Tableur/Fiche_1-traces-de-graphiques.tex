@@ -1,0 +1,82 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[textheight=28cm,textwidth=19cm,headheight=1mm,footskip=1mm]{geometry}
+\usepackage[UTF8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{fourier}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{paralist,array}
+\usepackage{pgf,tikz}
+\usetikzlibrary{shapes,snakes,arrows,patterns}
+\usepackage{graphicx,multicol}
+\usepackage{varwidth}
+
+\pagestyle{empty}
+
+\newcommand{\ent}[2]{\par \noindent \textbf{NOM - Prénom :} \dotfill \vspace{9pt} \\ Tableur $-$ Fiche #1 : #2.}
+%fin de la commande \ent (entête)
+
+\newcounter {exercice}
+
+\newcommand{\Exdeb}{\par \noindent \stepcounter{exercice} \textbf{\underline{{Exercice }\theexercice\,: }}\vspace{3 pt}}
+%fin de la commande \exdeb (entête d'exercice 1)
+
+\newcommand{\exdeb}{\vspace{36pt} \par \noindent \stepcounter{exercice} \textbf{\underline{{Exercice }\theexercice\,: }}\vspace{3 pt}}
+
+\begin{document}
+\ent{1}{Tracés de graphiques}{} \vspace{24 pt}\\
+\textbf{\underline{Exercice :}} %\vspace{3pt} \\
+\begin{enumerate}[1{)}]
+\item
+Ouvrir le tableur de LibreOffice. \\
+Pour cela 
+\item
+Le tableau suivant donne l'évolution de la population d'un village depuis 1990. \vspace{3pt} \\
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|l|>{\centering}p{1cm}|>{\centering}p{1cm}|>{\centering}p{1cm}|>{\centering}p{1cm}|>{\centering}p{1cm}|>{\centering}p{1cm}|l}
+\cline{1-7}
+Année&1990&1995&2000&2005&2010&2015&$\ $\\
+\cline{1-7}
+Effectif&672&815&910&985&1 058&1 354&$\ $\\
+\cline{1-7}
+\end{tabular}
+\vspace{6pt} \\
+\textbf{Saisir ces données dans une feuille de calcul.} \vspace{3pt}
+\item
+Représenter l'évolution de la population par : 
+\begin{enumerate}[a{)}]
+\item
+un diagramme en barre ;
+\item
+un diagramme circulaire ;
+\item
+une courbe. \vspace{6pt}
+\end{enumerate}
+\textbf{Appeler le professeur} \vspace{12pt} \\
+\hfill
+\renewcommand{\arraystretch}{2}
+\begin{tabular}{l|p{5mm}|p{0.5cm}l|p{5mm}|p{0.5cm}l|p{5mm}|p{0.5cm}l|p{5mm}|p{0.5cm}l|p{5mm}|}
+\cline{2-2} \cline{5-5} \cline{8-8} \cline{11-11} \cline{14-14}
+1)&&&2)&&&3a)&&&3b)&&&3c)&\\
+\cline{2-2} \cline{5-5} \cline{8-8} \cline{11-11} \cline{14-14}
+\end{tabular} \vspace{6pt}
+\item
+Laquelle de ces représentations semble la mieux adaptée pour montrer l'évolution de la population de ce village ? Justifier.\vspace{6pt} \\
+.\dotfill \vspace{6pt} \\
+.\dotfill \vspace{6pt} \\
+.\dotfill \vspace{6pt}
+\item
+Refaire la représentation graphique sous la forme d'une courbe \og lissée \fg{}.
+\item
+Explorer différents autres types de graphique. \vspace{24pt} \\
+\renewcommand{\arraystretch}{2}
+\begin{tabular}{l|p{5mm}|p{0.5cm}l|p{5mm}|p{0.5cm}l|p{5mm}|}
+\cline{2-2} \cline{5-5} \cline{8-8}
+4)&&&5)&&&6)&\\
+\cline{2-2} \cline{5-5} \cline{8-8}
+\end{tabular} %\vspace{6pt}
+\end{enumerate}
+
+
+\end{document}
+

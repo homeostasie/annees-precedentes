@@ -1,0 +1,179 @@
+\documentclass[11pt]{article}
+\usepackage{geometry} % Pour passer au format A4
+\geometry{hmargin=1cm, vmargin=1cm} % 
+
+% Page et encodage
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage[english,francais]{babel} % Français et anglais
+\usepackage[utf8]{inputenc} 
+
+\usepackage{lmodern}
+\setlength\parindent{0pt}
+
+% Graphiques
+\usepackage{graphicx, float}
+
+
+% Maths et divers
+\usepackage{amsmath,amsfonts,amssymb,amsthm,verbatim}
+\usepackage{multicol,enumitem,url,eurosym}
+
+% Sections
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{\centering \normalfont\scshape}
+
+% Tête et pied de page
+
+\usepackage{fancyhdr} 
+\pagestyle{fancyplain} 
+
+\fancyhead{} % No page header
+\fancyfoot{}
+
+\renewcommand{\headrulewidth}{0pt} % Remove header underlines
+\renewcommand{\footrulewidth}{0pt} % Remove footer underlines
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+%----------------------------------------------------------------------------------------
+%	Début du document
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+% RE-DEFINITION
+%----------------------------------------------------------------------------------------
+% MATHS
+%-----------
+
+\newtheorem{Definition}{Définition}
+\newtheorem{Theorem}{Théorème}
+\newtheorem{Proposition}{Propriété}
+
+% MATHS
+%-----------
+\renewcommand{\labelitemi}{$\bullet$}
+\renewcommand{\labelitemii}{$\circ$}
+%----------------------------------------------------------------------------------------
+%	Titre
+%----------------------------------------------------------------------------------------
+
+\setlength{\columnseprule}{1pt}
+
+\horrule{2px}
+\section{Théorème de Pythagore}
+\horrule{2px}
+
+
+  \subsection{Démonstration Chinoise}
+
+\begin{multicols}{2}
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\linewidth]{sources/ch2-thm-pythagore/1_pytha-chine.pdf}
+  \end{figure}
+
+  \Proposition{Un triangle rectangle de petits côtés 3cm et 4cm a un grand côté qui mesure 5cm. Ce plus grand côté s'appelle l'hypoténuse.}
+
+  \paragraph{Démonstration} : Soient $A$ l'aire du carré jaune et $T$ l'aire des triangles de côtés 3 et 4. 
+  \begin{eqnarray*}
+    A &=&  4 \times T + 1\\
+    A &=&  4 \times \dfrac{4 \times 3}{2} + 1\\
+    A &=& 25
+  \end{eqnarray*}
+  Le côté du carré est 5.
+
+\end{multicols}
+
+\horrule{1px}
+
+  \subsection{Nouvelles opérations : carré et racine carré}
+
+  \Proposition{L'aire d'un carré de côté $a$ s'écrit $a^2$ et est égal à $a \times a$. On dit $a$ au carré ou $a$ puissance 2.}
+
+  \Proposition{Le côté d'un carré d'aire b s'écrit $\sqrt{b}$. C'est l'unique nombre tel que $\sqrt{b}^2 = b$. On dit racine carré de 2. Il est facile de donner une valeur approchée de ce nombre à la calculatrice. Pour une valeur exacte, on conversera l'écriture avec $\sqrt{\phantom{abc}}$.}
+ 
+ \horrule{1px}
+   
+\begin{multicols}{2}
+
+  \subsection{Énoncés}
+
+  \Theorem{Énoncé géométrique}\\
+  
+  Dans un triangle rectangle l'aire du carré issue de l'hypoténuse est égal à la somme des aires des carrés issues des deux autres côtés.\\
+
+  \Theorem{Énoncé général}\\
+  
+  Dans un triangle recctangle, l'hypoténuse au carré est égal à la somme des autres côtés au carré. \\
+
+  \Theorem{Énoncé exercices}\\
+  
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\linewidth]{sources/ch2-thm-pythagore/1_pytha-thm.pdf}
+  \end{figure}
+  
+  \begin{enumerate}
+  \item[1.] Dans le triangle ABC rectangle en A.
+  \item[2.] D'après le théorème de Pythagore.
+  \item[3.] $BC^2 = AB^2 + AC^2$
+  \end{enumerate}
+
+
+\end{multicols}
+
+\newpage
+
+\subsection{Modélisation}
+
+\Proposition{Si on a dispose d'un triangle rectangle et qu'on connait la longueur de deux côtés, alors il est possible de calculer la longueur du troisième côté.}
+
+\subsubsection{Recherche de l'hypoténuse }
+
+\begin{multicols}{2}
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\linewidth]{sources/ch2-thm-pythagore/1_pytha-re-g.pdf}
+  \end{figure}
+
+  Dans le triangle MNO rectangle en O.\\
+  D'après le théorème de Pythagore.
+   \begin{eqnarray*}
+    MN^2 &=& MO^2 + NO^2 \\
+    MN^2 &=& 20^2 + 32^2 \\
+    MN^2 &=&  1424\\
+    MN   &=& \sqrt{1424} \\
+    MN   &\approx& 37.7 
+  \end{eqnarray*}
+  
+  La longueur MN mesure environ 27.7cm. Elle est plus grande que les deux autres côtés.
+\end{multicols}
+
+
+\subsubsection{Recherche d'un petit côté}
+
+\begin{multicols}{2}
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\linewidth]{sources/ch2-thm-pythagore/1_pytha-re-p.pdf}
+  \end{figure}
+
+  Dans le triangle MNO rectangle en O.\\
+  D'après le théorème de Pythagore.
+  \begin{eqnarray*}
+    MN^2 &=& MO^2 + NO^2 \\
+    MO^2 &=& MN^2 - NO^2 \\
+    MO^2 &=& 40^2 - 12^2 \\
+    MO^2 &=& 1456\\
+    MO   &=& \sqrt{1456} \\
+    MO   &=& 38
+  \end{eqnarray*}
+  
+  La longueur MO mesure 38cm. Elle n'est pas le plus grand côté.
+\end{multicols}
+\end{document}

@@ -1,0 +1,114 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[textheight=28cm,textwidth=19cm,headheight=1mm,footskip=1mm]{geometry}
+\usepackage[UTF8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{fourier}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{paralist,array}
+\usepackage{pgf,tikz}
+\usetikzlibrary{shapes,snakes,arrows,patterns}
+\usepackage{graphicx,multicol}
+\usepackage{varwidth}
+
+\pagestyle{empty}
+
+\newcommand{\ent}[2]{\par \noindent \textbf{NOM - Prénom :} \dotfill \vspace{9pt} \\ Tableur $-$ Fiche #1 : #2.}
+%fin de la commande \ent (entête)
+
+\newcounter {exercice}
+
+\newcommand{\Exdeb}{\par \noindent \stepcounter{exercice} \textbf{\underline{{Exercice }\theexercice\,: }}\vspace{3 pt}}
+%fin de la commande \exdeb (entête d'exercice 1)
+
+\newcommand{\exdeb}{\vspace{18pt} \par \noindent \stepcounter{exercice} \textbf{\underline{{Exercice }\theexercice\,: }}\vspace{3 pt}}
+
+\begin{document}
+\ent{4}{Fonctions}
+\exdeb \, La boite du pâtissier. \vspace{3 pt}\\
+On dispose d’une plaque de carton carrée de 21 cm de côté. Dans chaque coin de la plaque, on découpe un carré comme indiqué sur le dessin. On obtient alors le patron d’une boîte parallélépipédique, sans couvercle. \\
+ \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\clip(-3.85,0.61) rectangle (14.77,8.52);
+\fill[fill=black,fill opacity=0.25] (-3.34,6.88) -- (-2.44,6.88) -- (-2.44,5.98) -- (-3.34,5.98) -- cycle;
+\fill[fill=black,fill opacity=0.25] (1.46,6.88) -- (2.36,6.88) -- (2.36,5.98) -- (1.46,5.98) -- cycle;
+\fill[fill=black,fill opacity=0.25] (1.46,2.08) -- (2.36,2.08) -- (2.36,1.18) -- (1.46,1.18) -- cycle;
+\fill[fill=black,fill opacity=0.25] (-3.34,2.08) -- (-2.44,2.08) -- (-2.44,1.18) -- (-3.34,1.18) -- cycle;
+\draw (-3.34,1.18)-- (2.36,1.18);
+\draw [<->] (-3.34,7.33) -- (2.36,7.33);
+\draw (-3.34,6.88)-- (-2.44,6.88)-- (-2.44,5.98)-- (-3.34,5.98)-- (-3.34,6.88);
+\draw (1.46,6.88)-- (2.36,6.88)-- (2.36,5.98);
+\draw (2.36,5.98)-- (1.46,5.98)-- (1.46,6.88);
+\draw (1.46,2.08)-- (2.36,2.08)-- (2.36,1.18);
+\draw (2.36,1.18)-- (1.46,1.18)-- (1.46,2.08);
+\draw (-3.34,2.08)-- (-2.44,2.08)-- (-2.44,1.18);
+\draw (-2.44,1.18)-- (-3.34,1.18)-- (-3.34,2.08);
+\draw (-3.34,6.88)-- (2.36,6.88)-- (2.36,1.18);
+\draw (-3.34,1.18)-- (-3.34,6.88);
+\draw (-2.44,5.98)-- (1.46,5.98)-- (1.46,2.08);
+\draw (1.46,2.08)-- (-2.44,2.08)-- (-2.44,5.98);
+\draw (-1.24,8.05) node[anchor=north west] {21 cm};
+\draw [->,line width=2pt] (3.76,4.18) -- (6.15,4.18);
+\draw (7.16,3.2)-- (12.06,3.2);
+\draw (7.16,3.2)-- (7.16,3.9)-- (9.07,5)-- (9.07,4.3);
+\draw (9.07,5)-- (13.97,5)-- (13.97,4.3)-- (12.06,3.2);
+\draw (12.75,4.3)-- (9.07,4.3)-- (8.37,3.9);
+\draw (7.16,3.9)-- (12.06,3.9)-- (13.97,5);
+\draw (12.06,3.9)-- (12.06,3.2);
+\end{tikzpicture}
+\vspace{-24pt} \\
+\begin{enumerate}[1{)}]
+\item
+\begin{enumerate}[a{)}]
+\item
+Établir, en colonne, un tableau de valeurs donnant le volume de la boite en fonction de la valeur du côté du carré que l'on découpe dans chaque coin.
+\item
+En vous servant du tableau de valeurs précédant, déterminer quelle peut être la mesure du côté du carré que l'on découpe dans chaque coin pour que le volume de la boîte soit 486 cm$^3$. \vspace{9pt} \\
+.\dotfill \vspace{6pt}
+\end{enumerate}
+\item
+\begin{enumerate}[a{)}]
+\item
+Tracer le graphique illustrant cette situation.
+\item
+En vous servant du graphique déterminer la mesure approchée au mm du côté du carré à découper pour que le volume soit le plus grand possible.\vspace{9pt} \\
+.\dotfill \vspace{6pt}
+\end{enumerate}
+\item
+A l'aide du graphique dire si la valeur trouvée à la question 1)b) est la seule possible ou pas.\vspace{9pt} \\
+.\dotfill
+\end{enumerate} 
+$\ $ \\
+\renewcommand{\arraystretch}{2}
+\begin{tabular}{l|p{5mm}|p{0.5cm}l|p{5mm}|p{0.5cm}l|p{5mm}|p{0.5cm}l|p{5mm}|p{0.5cm}l|p{5mm}|}
+\cline{2-2} \cline{5-5} \cline{8-8} \cline{11-11} \cline{14-14}
+1a)&&&1b)&&&3a)&&&2b)&&&3)&\\
+\cline{2-2} \cline{5-5} \cline{8-8} \cline{11-11} \cline{14-14}
+\end{tabular} 
+\exdeb \, On considère la fonction \, \textit{f} : \textit{x} \, |--------> \, \textit{x}$^2$ $-$ 2\textit{x} $-$ 3
+\begin{enumerate} [1{)}]
+\item
+Faire un tableau de valeurs demi-entières entre -5 et 5, concernant la fonction \textit{f}.
+\item
+Faire tracer la représentation graphique de la fonction \textit{f}.
+\item
+\textbf{Lire graphiquement :} \vspace{6pt}
+\begin{enumerate} [a{)}]
+\item
+L'image de 2 : \dotfill \vspace{6pt}
+\item
+L'image de 0 : \dotfill \vspace{6pt}
+\item
+Les antécédents de $-$3 : \dotfill \vspace{6pt}
+\item
+Les antécédents de 4 : \dotfill \\
+\end{enumerate}
+\end{enumerate}
+\renewcommand{\arraystretch}{2}
+\begin{tabular}{l|p{5mm}|p{0.5cm}l|p{5mm}|p{0.5cm}l|p{5mm}|p{0.5cm}l|p{5mm}|p{0.5cm}l|p{5mm}|p{0.5cm}l|p{5mm}|}
+\cline{2-2} \cline{5-5} \cline{8-8} \cline{11-11} \cline{14-14} \cline{17-17}
+1)&&&2)&&&3a)&&&3b)&&&3c)&&&3d)&\\
+\cline{2-2} \cline{5-5} \cline{8-8} \cline{11-11} \cline{14-14} \cline{17-17}
+\end{tabular} 
+
+\end{document}
+

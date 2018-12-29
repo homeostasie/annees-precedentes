@@ -1,0 +1,259 @@
+\documentclass[12pt,a4paper]{article} % pour paysage on met [landscape]
+\usepackage[textheight=28cm,textwidth=19cm,headheight=1mm,footskip=1mm]{geometry}
+\usepackage[UTF8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{fourier}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{paralist,array} % paralist : pour les puces et numéros ; array pour les tableaux
+\usepackage{pgf,tikz} % pour les dessins TIKZ
+%\usepackage{pstricks-add} % pour les dessins PSTRICKS
+\usetikzlibrary{shapes,snakes,arrows,patterns}
+\usepackage{graphicx,multicol} % graphicx : pour insérer une image ; multicol : pour faire des colonnes
+\usepackage{varwidth}
+
+\pagestyle{empty} % pas de numéro de page
+
+\newcounter{num}
+\newcommand{\seance}{\stepcounter{num} Séance \thenum \, : \\}
+
+\newcounter{fiche}
+\newcommand{\fiche}{\stepcounter{fiche} Faire la fiche \thefiche. \,}
+
+\begin{document}
+\begin{center}
+\begin{LARGE}
+\textbf{\underline{Bilan de l'AP math en 3$^\textbf{ème}$ et perspectives}}
+\end{LARGE}
+\end{center}\vspace{18pt}
+Il faut demander aux élèves de prévoir un porte-vue afin qu'ils puissent regrouper les documents distribués et le cas échéant s'y référer.
+(Cette année les feuilles sont restées volantes et finalement non disponibles voire elles ont été jetées à la poubelle.) \vspace{12pt} \\
+\begin{Large}
+\textbf{\underline{Scratch}}
+\end{Large} \vspace{6pt}
+\begin{itemize}
+\item[$\checkmark$]
+\textbf{Améliorations générales :}
+\begin{itemize}
+\item[\textbullet]
+Nous avons axés notre travail sur la pratique sur ordinateur. Cependant ils nous semblent nécessaire que les élèves répondent systématiquement à des questions sur l'essentiel à retenir et d'en faire une synthèse en classe entière. (Cette année nous n'avions pas nos classes, il a été compliqué de faire des bilans.) \vspace{3pt}
+\item[\textbullet]
+Au vu de la non réussite au second brevet blanc, ils nous semblent indispensable d'évaluer les élèves en \og débranché \fg{} puis dans un second temps, de leur demander de se corriger en vérifiant sur ordinateur. \vspace{3pt}
+\item[\textbullet]
+Lors de la première séance, nous avons simplement expliquer brièvement le fonctionnement du logiciel. Ils nous semble nécessaire de s'appuyer sur les travaux de fin d'année des élèves de cette année, pour leur montrer où on veut vraiment en venir. De plus il serait peut être intéressant de faire déplacer un robot à partir d'un script. (Voir si cela peut être réalisé).
+\item[\textbullet]
+Pour chaque fiche de travail, évaluer le travail fait par chaque élève ainsi que leur investissement, dans le but qu'ils ne prennent pas ces séances pour des récréations.
+\end{itemize} \vspace{24pt}
+\item[$\checkmark$]
+\textbf{Déroulement séance par séance :}
+\begin{itemize}
+\item[\textbullet]
+\seance
+Leur présenter la partie programmation du programme. \\
+Leur présenter le but qu'ils devront atteindre, en s'appuyant sur les travaux des élèves de cette année (jeu de pong, circuit de voiture, \dots). \\
+Insister sur l'élément déclencheur. \\
+\fiche \textit{Éléments déclencheurs.} \, \textcolor{blue}{\textbf{Faire au tableau la question 1.}} \\
+\textbf{Faire le bilan de l'activité ensemble sur table.} \\
+S'il reste du temps, les laisser explorer le logiciel, afin qu'ils prennent connaissance des différents évènements déclencheurs. \vspace{3pt}
+\item[\textbullet] 
+\seance
+\fiche \textit{Prise en main et déplacements.} \, \textcolor{blue}{\textbf{Exercices 1 et 2 indispensables.}} \\
+Prendre un temps en fin de séance pour leur faire enregistrer au bon endroit leur fichier avant de faire un bilan des différentes possibilités pour tracer le carré ou le triangle équilatéral. \\
+\textbf{Faire une synthèse en classe entière sur les déplacements.} (Voir synthèse 1) \vspace{3pt}
+\item[\textbullet] 
+\seance
+\fiche \textit{Chiffre digitaux (déplacements).} \\
+Prendre un temps en fin de séance pour leur faire enregistrer au bon endroit leur fichier. \vspace{3pt}
+\item[\textbullet] 
+\seance
+\fiche \textit{Grande Ourse (déplacements).} \, \textcolor{blue}{\textbf{Exercice 1 indispensable.}} \\
+Prendre un temps en fin de séance pour leur faire enregistrer au bon endroit. \\
+\textbf{Prendre un temps en classe entière pour faire le bilan de l'activité.} \vspace{3pt}
+\end{itemize}
+\textcolor{blue}{Entre la séance 4 et la séance 5 faire passer \textbf{l'évaluation n°1} sur les déplacements. \\
+La corriger en exécutant le script sur l'ordinateur prof dans nos salles.} \vspace{3pt}
+\begin{itemize}
+\item[\textbullet] 
+\seance
+\fiche \textit{Boucles.} \, \textcolor{blue}{\textbf{Exercices 1 et 2 indispensables.}} \\
+Prendre un temps en fin de séance pour leur faire enregistrer au bon endroit leur fichier avant de faire un bilan sur les différentes boucles qui existent. \\
+\textbf{Faire une synthèse en classe entière sur les boucles.} (Voir synthèse 2) \vspace{3pt}
+\item[\textbullet] 
+\seance
+Prendre le temps de expliquer de l'instruction \og modulo \fg{}. \\
+\fiche \textit{Conditions.} \, \textcolor{blue}{\textbf{Exercices 1 et 2 indispensables.}}\\
+Prendre un temps en fin de séance pour leur faire enregistrer au bon endroit leur fichier avant de faire un bilan sur les différentes conditions qui existent. \\
+\textbf{Faire une synthèse en classe entière sur les conditions.} (Voir synthèse 3) \vspace{3pt}
+\item[\textbullet] 
+\seance
+Leur expliquer les différentes fonctionnalités et le but du jeu de Pong à un joueur. \\
+Présenter le jeu de Pong à un joueur en le faisant fonctionner au tableau.\\
+Prendre le temps de expliquer de l'instruction \og nombre aléatoire entre \dots et \dots \fg{}. \\
+\fiche \textit{Première synthèse : Jeu de Pong à 1 joueur.} \, \textcolor{blue}{\textbf{Questions 1 à 4 inclus indispensables.}} \\
+Prendre un temps en fin de séance pour leur faire enregistrer au bon endroit.
+\vspace{3pt}
+\end{itemize}
+\textcolor{blue}{Entre la séance 7 et la séance 8 faire passer \textbf{l'évaluation n°2}. \\
+La corriger en exécutant le script sur l'ordinateur prof dans nos salles.} \vspace{3pt}
+\begin{itemize}
+\item[\textbullet] 
+\seance
+\fiche \textit{Découvertes des variables.} \, \textcolor{blue}{\textbf{Exercice 1 indispensable.}} \\
+Prendre un temps en fin de séance pour leur faire enregistrer au bon endroit leur fichier. \\
+\textbf{Faire une synthèse en classe entière sur les variables.} (Voir synthèse 4) \vspace{3pt}
+\item[\textbullet] 
+\seance
+Reprise et amélioration du jeu de Pong. \\
+Prendre le temps de leur expliquer l'instruction \og modulo \fg{}. \\
+\fiche \textit{Jeu de Pong à 1 joueur (suite).} \, \textcolor{blue}{\textbf{Questions 1 à 3 inclus indispensables.}} \\
+Prendre un temps en fin de séance pour leur faire enregistrer au bon endroit leur fichier. \\
+S'il reste du temps, faire jouer les élèves. \vspace{3pt}
+\item[\textbullet] 
+\seance 
+\fiche \textit{Le circuit de voiture.} \, \textcolor{blue}{\textbf{Questions 1 à 4 inclus indispensables.}} \\
+S'il reste du temps, faire jouer les élèves. \\
+En prolongement, pour les plus rapides, on peut leur proposer :
+\begin{itemize}
+\item
+de compter le nombre de partie gagnée et le nombre de partie perdue ;
+\item
+de garder en mémoire le meilleur chrono par niveau.
+\end{itemize} 
+Prendre un temps en fin de séance pour leur faire enregistrer au bon endroit leur fichier. \vspace{3pt}
+\end{itemize}
+\end{itemize}
+\vspace{36pt}
+\begin{Large}
+\textbf{\underline{Géogébra}} \, \textcolor{red}{Paragraphe à faire.}
+\end{Large} \vspace{6pt}
+\begin{itemize}
+\item[$\checkmark$]
+\textbf{Améliorations générales :}
+\begin{itemize}
+\item[\textbullet]
+Cette année aucune séance sur géogébra n'a été réalisée. Par manque de temps, de sujets ou d'envie ? \\
+Il sera nécessaire de prévoir deux séances sur géogébra concernant notamment les diverses transformations.
+\item[\textbullet]
+
+\end{itemize}
+\setcounter{num}{0}
+\setcounter{fiche}{0}
+\item[$\checkmark$]
+\textbf{Déroulement séance par séance :}
+\begin{itemize}
+\item[\textbullet]
+\seance
+
+\item[\textbullet]
+\seance
+
+\end{itemize}
+\end{itemize}
+\vspace{36pt}
+\newpage
+\begin{Large}
+\textbf{\underline{Tableur}}
+\end{Large} \vspace{6pt}
+\begin{itemize}
+\item[$\checkmark$]
+\textbf{Améliorations générales :}
+\begin{itemize}
+\item[\textbullet]
+La première séance concernant la réalisation des différents graphiques a plutôt bien fonctionné. Les deux suivantes concernant les fonctions statistiques (moyenne, médiane) n'ont pas accroché les élèves. Il faudra les modifier ou les remplacer par d'autres. \vspace{3pt}
+\item[\textbullet]
+Une quatrième séance, décalée dans le temps par rapport au premières séances, concernait le sujet de la boite du pâtissier. Il semble nécessaire de la préparer en amont en classe entière (cette année nous n'avions pas nos classes, on n'a pas pu le faire). En effet les élèves ont eu beaucoup de mal à comprendre le sujet et le but de l'exercice. Néanmoins elle nous semble intéressante à garder. Il faut peut être penser à l'adapter. \vspace{3pt}
+\item[\textbullet]
+Prévoir quatre séances sur le tableur. Pensez à faire des rappels régulièrement sur le tableur, en classe entière, notamment concernant l'écriture d'une formule.\vspace{3pt}
+\item[\textbullet]
+Les élèves ont été autonome dans leur travail. En effet un tutoriel sur le tableur était à leur disposition en salle informatique. Pour de l'aide nous les renvoyons systématiquement vers ce tutoriel. Nous pouvons conserver ce fonctionnement car les élèves ont, en général, réussit en nous sollicitons peu pour de l'aide.
+\end{itemize}
+\vspace{24pt}
+\setcounter{num}{0}
+\setcounter{fiche}{0}
+\item[$\checkmark$]
+\textbf{Déroulement séance par séance :}
+\begin{itemize}
+\item[\textbullet]
+\seance
+\fiche \textit{Tracés de différents types de graphiques.} \, \textcolor{blue}{\textbf{Questions 1, 2 et 3 indispensables.}} \\
+Prendre un temps en fin de séance pour leur faire enregistrer au bon endroit leur fichier. \vspace{3pt}
+\item[\textbullet]
+\seance
+Leur présenter les fonctions \og moyenne \fg{}, \og médiane \fg{} et \og NB.SI \fg{} à partir du fichier \og Tableur-Seance2\_Prof \fg{}. \\
+\fiche \, \textcolor{blue}{\textbf{Exercice 1 indispensable.}} \\
+Prendre un temps en fin de séance pour leur faire enregistrer au bon endroit leur fichier. \vspace{3pt}
+\item[\textbullet]
+\seance \textcolor{red}{A élaborer.} \\
+\fiche \textcolor{red}{A faire.}
+
+\vspace{3pt}
+\item[\textbullet]
+\seance
+\fiche \textit{La boite du pâtissier}. \, \textcolor{blue}{\textbf{Exercice 1 indispensable.}}\\
+Prendre un temps en fin de séance pour leur faire enregistrer au bon endroit leur fichier.
+\end{itemize}
+\end{itemize}
+\vfill
+\begin{Large}
+\textbf{\underline{Proposition de déroulement des séances d'AP math en 3$^\textbf{ème}$}}
+\end{Large} \vspace{6pt}
+\begin{enumerate}
+\begin{minipage}{0.5\linewidth}
+\item
+Séance 1 sur tableur.
+\item
+Séance 2 sur tableur.
+\item
+Séance 3 sur tableur.
+\item
+Séance 1 sur scratch.
+\item
+Séance 2 sur scratch.
+\item
+Séance 3 sur scratch.
+\item
+Séance 4 sur scratch.
+\item
+Séance 1 sur géogébra.
+\end{minipage}
+\begin{minipage}{0.5\linewidth}
+\item
+Séance 4 sur tableur.
+\item
+Séance 5 sur scratch.
+\item
+Séance 6 sur scratch.
+\item
+Séance 7 sur scratch.
+\item
+Séance 8 sur scratch.
+\item
+Séance 9 sur scratch.
+\item
+Séance 2 sur géogébra.
+\item
+Séance 10 sur scratch.
+\end{minipage}
+\end{enumerate}
+\newpage
+éléments de réflexion. \\
+Séances de prise en main OK mais peut être à réaménager. \\
+1ère séance : leur montrer les jeux et leur dire que c'est leur objectif. Insister sur l'élément déclencheur (plusieurs lutins et une action différente par lutin) + gestion de fichiers. \\
+Pour les déplacements : prise en main, les chiffres puis la grande Ourse. \\
+Évaluation double débranchée et sur poste. \\
+Jeu du casse brique à supprimer. \\
+Revoir énoncé du pong (faire des versions cumulatives) \\
+- création et déplacement du palet ; \\
+- créer la balle et la faire rebondir sur les bords (placement et orientation aléatoire) ; \\
+- faire rebondir la balle sur le palais ; demander ou et comment mettre l'instruction donnée ; \\
+- faire arrêter le jeu si bas de l'écran touché ; \\
+- faire un changement de couleur, vitesse de balle qui accélère, le palais qui rétrécit. \\
+Évaluation double débranchée et sur poste. Récupérer des bonbons qui tombent. \\
+Faire la séance sur variable. Reformuler les énoncés. \\
+Reprendre le jeu de pong : \\
+-soit mettre un chrono et compteur de touche ; \\
+- soit ajouter un second joueur avec le score et seul le gagnant peut continuer à jouer pour améliorer son score. Peut être prévoir de limiter le temps par partie par exemple augmenter la vitesse toutes les trois touches par joueur. \\
+Circuit automobile. \\
+
+\end{document}
+

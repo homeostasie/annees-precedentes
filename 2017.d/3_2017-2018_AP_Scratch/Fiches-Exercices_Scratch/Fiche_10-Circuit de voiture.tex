@@ -1,0 +1,144 @@
+\documentclass[12pt,a4paper]{article} % pour paysage on met [landscape]
+\usepackage[textheight=28cm,textwidth=19cm,headheight=1mm,footskip=1mm]{geometry}
+\usepackage[UTF8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{fourier}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{paralist,array} % paralist : pour les puces et numéros ; array pour les tableaux
+\usepackage{pstricks-add} % pour les dessins PSTRICKS
+
+\pagestyle{empty} % pas de numéro de page
+
+\newcommand{\ent}[2]{\par \noindent \textbf{NOM - Prénom :} \dotfill \vspace{9pt} \\ Scratch $-$ Fiche #1 : #2.}
+%fin de la commande \ent (entête)
+
+\newcounter {exercice}
+
+\newcommand{\exdeb}{\vspace{18pt} \par \noindent \stepcounter{exercice} \textbf{\underline{{Exercice }\theexercice\,: }}}
+
+\begin{document}
+\ent{10}{Le circuit de voiture.} \vspace{24pt} \\
+Le but de l'exercice est de créer un circuit de formule 1 fonctionnel. \vspace{9pt} 
+\begin{enumerate}[1{)}]
+\item
+\textbf{Création du parcours sur la scène.} \hfill \renewcommand{\arraystretch}{2}
+\begin{tabular}{|p{5mm}|}
+\hline
+\\
+\hline
+\end{tabular} \vspace{-6pt}
+% \hfill \renewcommand{\arraystretch}{2}
+%\begin{tabular}{l|p{5mm}|p{0.5cm}l|p{5mm}|p{0.5cm}l|p{5mm}|p{0.5cm}l|p{5mm}|}
+%\cline{2-2} \cline{5-5} \cline{8-8} \cline{11-11}
+%a)&&&b)&&&c)&&&d)&\\
+%\cline{2-2} \cline{5-5} \cline{8-8} \cline{11-11}
+%\end{tabular} \vspace{-6pt}
+\begin{enumerate}[a{)}]
+\item
+Sélectionner Scène, puis l'onglet arrière-plan.
+\item
+Colorier l'arrière-plan à l'aide de l'outil \og pot de peinture \fg{}.
+\item
+À l'aide de l'outil \og crayon \fg{}, trace le circuit. \\
+Laisse assez d'espace pour pouvoir placer la voiture
+\item
+À l'aide de l'outil \og ligne \fg, trace le départ et l'arrivée, en choisissant des couleurs différentes.
+\end{enumerate} \vspace{6pt}
+\item
+\textbf{Choix et taille de la voiture.} \hfill \renewcommand{\arraystretch}{2}
+\begin{tabular}{|p{5mm}|}
+\hline
+\\
+\hline
+\end{tabular} \vspace{-6pt}
+\begin{enumerate}[a{)}]
+\item
+Sélectionner costume, puis choisir un costume dans la bibliothèque et enfin \og car-bug \fg{}.
+\item
+Choisir un pourcentage de taille, de façon à ce que la voiture puisse circuler sans difficulté sur le circuit que vous avez tracé.
+\item
+Quand le drapeau vert est cliqué, la voiture doit se mettre à la bonne taille.
+\item
+Quand le drapeau vert est cliqué, la voiture doit se mettre entre la ligne de départ et la ligne d'arrivée.
+\end{enumerate} \vspace{6pt}
+\item
+\textbf{Déplacement de la voiture.} \hfill \renewcommand{\arraystretch}{2}
+\begin{tabular}{|p{5mm}|}
+\hline
+\\
+\hline
+\end{tabular} \vspace{-6pt} \\
+Compléter le script commençant par \og Quand le drapeau vert est cliqué \fg{} de façon à ce que :
+\begin{enumerate}[a{)}]
+\item
+La voiture avance toute seule de 3 pas en 3 pas.
+\item
+Si la touche \og flèche droite \fg{} est pressée, la voiture doit tourner à droite de 10°.
+\item
+Si la touche \og flèche gauche \fg{} est pressée, la voiture doit tourner à gauche de 10°.
+\end{enumerate} \vspace{6pt}
+\item
+\textbf{La voiture doit rester sur le circuit.} \hfill \renewcommand{\arraystretch}{2}
+\begin{tabular}{|p{5mm}|}
+\hline
+\\
+\hline
+\end{tabular} \vspace{-6pt}
+%\hfill \renewcommand{\arraystretch}{2}
+%\begin{tabular}{l|p{5mm}|p{0.5cm}l|p{5mm}|}
+%\cline{2-2} \cline{5-5}
+%a)&&&b)&\\
+%\cline{2-2} \cline{5-5}
+%\end{tabular}
+\begin{enumerate}[a{)}]
+\item
+Dès que la voiture sort du circuit, un message de fin de jeu doit s'afficher.
+\item
+Dès que la voiture sort du circuit, le jeu doit s'arrêter. (On pourra utiliser \og stop tout \fg{} du menu contrôle.)
+\end{enumerate} \vspace{6pt}
+\item
+\textbf{Gestion de l'arrivée.} \hfill \renewcommand{\arraystretch}{2}
+\begin{tabular}{|p{5mm}|}
+\hline
+\\
+\hline
+\end{tabular} \vspace{-6pt}
+\begin{enumerate}[a{)}]
+\item
+Dès que la ligne d'arrivée est touchée, un message doit s'afficher pour dire que vous avez gagné.
+\item
+Dès que la ligne d'arrivée est touchée, le jeu s'arrête.
+\end{enumerate} \vspace{6pt}
+\item
+\textbf{Gestion du chronomètre.} \hfill \renewcommand{\arraystretch}{2}
+\begin{tabular}{|p{5mm}|}
+\hline
+\\
+\hline
+\end{tabular} \vspace{-6pt}
+\begin{enumerate}[a{)}]
+\item
+Dans le menu Données, créer une variable que vous appellerez chrono.
+\item
+La variable chrono doit être caché, au départ du jeu.
+\item
+Lorsque la ligne de départ est touchée, réinitialiser le chronomètre. (menu capteur)
+\item
+Lorsque la ligne d'arrivée est touchée, stocker chronomètre dans la variable chrono.
+\item
+Lorsque la ligne d'arrivée est touchée, afficher la variable chrono.
+\end{enumerate}
+\item
+\textbf{Mise en place de niveaux de difficulté.} \hfill \renewcommand{\arraystretch}{2}
+\begin{tabular}{|p{5mm}|}
+\hline
+\\
+\hline
+\end{tabular} \vspace{-3pt} \\
+L'utilisateur doit choisir un niveau de difficulté entre 1 et 4. \\
+La voiture avance alors de 1,5 fois le niveau de difficulté.
+\end{enumerate}
+
+\end{document}
+

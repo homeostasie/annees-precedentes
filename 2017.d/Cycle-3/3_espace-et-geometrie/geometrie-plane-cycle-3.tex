@@ -1,0 +1,66 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt]{article}
+\usepackage{geometry} % Pour passer au format A4
+\geometry{hmargin=1cm, vmargin=1cm} %
+
+\usepackage{graphicx} % Required for including pictures
+\usepackage{float} %
+\usepackage{pdfpages}
+
+%Français
+\usepackage[T1]{fontenc}
+\usepackage[english,francais]{babel}
+\usepackage[utf8]{inputenc}
+
+\usepackage{eurosym,siunitx,lmodern,url,hyperref}
+\usepackage{multicol,multido}
+
+%Maths
+\usepackage{amsmath,amsfonts,amssymb,amsthm,gensymb}
+
+%Autres
+\linespread{1} % Line spacing
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+\renewcommand{\labelenumi}{\alph{enumi}.} %
+
+\pagestyle{empty}
+
+ % Droite horizontal avec argument d'épaisseur
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}}
+ % Pointillé avec argument de nombre de lignes
+\newcommand{\Pointille}[1][3]{\multido{}{#1}{ \makebox[\linewidth]{\dotfill}\\[\parskip]}}
+
+%-------------------------------------------------------------------------------
+%	DOCUMENT INFORMATION
+%-------------------------------------------------------------------------------
+
+\begin{document}
+
+\begin{titlepage}
+
+	\center
+	\textsc{\LARGE Géométrie plane au cycle 3}\\[1.5cm] %
+
+	\vfill % Rempli le reste de la page avec du blanc
+	
+\end{titlepage}
+
+\tableofcontents % Include a table of contents
+\newpage % Première section sur une nouvelle page. 
+
+\include{1_lignes-droites}
+
+\include{2_longueur-cercle}
+
+\include{3_probleme-construction-figures}
+
+\include{4-angles}
+
+\appendix
+\include{a-annexe}
+
+\end{document}
