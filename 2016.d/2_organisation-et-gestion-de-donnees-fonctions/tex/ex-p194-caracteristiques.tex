@@ -1,0 +1,146 @@
+\documentclass{beamer}
+
+\usepackage{geometry} % Pour passer au format A4
+\usepackage{graphicx} % Required for including pictures
+\usepackage{float} %
+
+\usepackage{amsmath,amsfonts,amssymb,amsthm}
+\usepackage[T1]{fontenc}
+\usepackage[english,francais]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{eurosym} % signe Euros
+\usepackage{verbatim}
+\usepackage{multicol}
+\usefonttheme[onlymath]{serif}
+\usetheme[options]{Boadilla}
+\usepackage{gensymb} % \degree
+\title{Gestion de données}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\section{Représentation graphique}
+
+\section{Caractéristiques}
+
+\begin{frame}
+  \frametitle{Moyenne : ex1 - p194}
+
+  Tous les midis, pendant une semaine, une météorologue relève la température extérieure.\\
+  $21 \degree C ; 25 \degree C ; 17 \degree C ; 28 \degree C ; 19 \degree C ; 22 \degree C ; 21 \degree C$
+  
+  \begin{itemize}
+  \item Calculer la température moyenne de cette semaine.
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Moyenne : ex1 - p194}
+
+  Tous les midis, pendant une semaine, une météorologue relève la température extérieure.\\
+  $21 \degree C ; 25 \degree C ; 17 \degree C ; 28 \degree C ; 19 \degree C ; 22 \degree C ; 21 \degree C$
+  
+  \begin{itemize}
+  \item Calculer la température moyenne de cette semaine.
+  \end{itemize}
+
+  \begin{exampleblock}{Correction}
+    \begin{eqnarray*}
+      M &=     & \dfrac{21+25+17+28+19+22+21}{7}\\
+        &=     & \dfrac{153}{7}\\
+        &\simeq& 21.9
+    \end{eqnarray*}
+    
+    La température moyenne est d'environ $21.9 \degree C$.
+  \end{exampleblock}
+  
+\end{frame}
+
+\begin{frame}
+  \frametitle{Moyenne pondérée : ex2 - p194}
+
+  On a intérrogé plusieurs familles pour connaitre le nombre de téléphones portables qu'elles possèdent. Le tableau suivant regroupe leurs réponses.
+  
+  \begin{center}
+    \begin{tabular}{| c   || c | c | c  | c  | c |}
+      \hline
+      Nombre de téléphones & 0 & 1 &  2 &  3 & 5 \\
+      \hline
+      Effectif             & 2 & 8 & 18 & 35 & 1 \\
+      \hline
+    \end{tabular}
+  \end{center}
+  
+  \begin{itemize}
+  \item Quel est le nombre moyen de téléphones portables par famille ?
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Moyenne pondérée : ex2 - p194}
+
+  On a intérrogé plusieurs familles pour connaitre le nombre de téléphones portables qu'elles possèdent. Le tableau suivant regroupe leurs réponses.
+  
+  \begin{center}
+    \begin{tabular}{| c   || c | c | c  | c  | c |}
+      \hline
+      Nombre de téléphones & 0 & 1 &  2 &  3 & 5 \\
+      \hline
+      Effectif             & 2 & 8 & 18 & 35 & 1 \\
+      \hline
+    \end{tabular}
+  \end{center}
+  
+  \begin{itemize}
+  \item Quel est le nombre moyen de téléphones portables par famille ?
+  \end{itemize}
+  
+  \begin{exampleblock}{Correction}
+    \begin{eqnarray*}
+      M &=     & \dfrac{0*2+1*8+2*18+3*35+5*1}{2+8+18+35+1}\\
+      &=     & \dfrac{154}{64}\\
+      &\simeq& 2.4
+    \end{eqnarray*}
+    
+    Il y a en moyenne environ $2.4$ portable par famille. 
+  \end{exampleblock}
+  
+\end{frame}
+
+\begin{frame}
+  \frametitle{Moyenne : ex3 - p191}
+
+Arthur veut planter un arbruste qui ne supporte pas le gel. Il consulte ensuite sur Internet les températures moyennes de sa région et il constate que la température moyenne du mois le plus froid est de $9 \degree C$.
+  \begin{itemize}
+  \item Arthur peut-il planter son arbuste sans risque ?
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Moyenne : ex3 - p191}
+
+Arthur veut planter un arbruste qui ne supporte pas le gel. Il consulte ensuite sur Internet les températures moyennes de sa région et il constate que la température moyenne du mois le plus froid est de $9 \degree C$.
+  \begin{itemize}
+  \item Arthur peut-il planter son arbuste sans risque ?
+  \end{itemize}
+
+  \begin{exampleblock}{Correction}
+	NON ! 
+  \end{exampleblock}
+
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Moyenne : ex26 - p195}
+  
+  
+  
+\end{frame}  
+
+\end{document}

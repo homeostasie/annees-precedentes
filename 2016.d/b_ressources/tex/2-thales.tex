@@ -1,0 +1,199 @@
+
+\documentclass[12pt]{article}
+\usepackage{geometry} % Pour passer au format A4
+\geometry{hmargin=1cm, vmargin=1cm} % 
+
+% Page et encodage
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage[english,francais]{babel} % Français et anglais
+\usepackage[utf8]{inputenc} 
+
+\usepackage{lmodern}
+\setlength\parindent{0pt}
+
+% Graphiques
+\usepackage{graphicx} 
+\usepackage{float}
+
+
+% Maths et divers
+\usepackage{amsmath,amsfonts,amssymb,amsthm,verbatim}
+\usepackage{multicol,enumitem,url,eurosym}
+
+
+% Sections
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{\centering \normalfont\scshape} % Make all sections centered, the default font and small caps
+
+% Tête et pied de page
+
+\usepackage{fancyhdr} 
+\pagestyle{fancyplain} 
+
+\fancyhead{} % No page header
+\fancyfoot{}
+% \fancyfoot[C]{Triangles} % Empty center footer
+% \fancyfoot[R]{\thepage} % Page numbering for right footer
+
+\renewcommand{\headrulewidth}{0pt} % Remove header underlines
+\renewcommand{\footrulewidth}{0pt} % Remove footer underlines
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+
+%----------------------------------------------------------------------------------------
+%	Début du document
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+% RE-DEFINITION
+%----------------------------------------------------------------------------------------
+% MATHS
+%-----------
+
+\newtheorem{Definition}{Définition}
+\newtheorem{Theorem}{Théorème}
+\newtheorem{Proposition}{Propriété}
+
+% MATHS
+%-----------
+\renewcommand{\labelitemi}{$\bullet$}
+\renewcommand{\labelitemii}{$\circ$}
+%----------------------------------------------------------------------------------------
+%	Titre
+%----------------------------------------------------------------------------------------
+
+\setlength{\columnseprule}{1pt}
+
+\section*{Théorème de Thalès}
+
+\begin{enumerate}
+\item[1.] Calculer des longueurs manquantes avec des triangles.
+\item[2.] Montrer que des droites sont parallèles.
+\end{enumerate}
+
+\horrule{1px}
+
+\begin{multicols}{2}
+
+  \subsection*{Théorème}
+
+  \textbf{Lorsque des côtés de deux triangles sont parallèles, on a un tableau de proportionnalité entre les longueurs des côtés des deux triangles.}
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{sources/2/2_thales-thm.pdf}
+  \end{figure}
+
+\end{multicols}
+
+\vspace{-0.5cm}
+\horrule{1px}
+\vspace{-1cm}
+
+\setlength{\columnseprule}{0pt}
+\begin{multicols}{2}
+
+  \subsection*{Calculer une longueur manquante}
+
+  On sait que les droites sont parallèles.
+
+  Les droites (AB) et (MN) sont parallèles.
+
+
+  \begin{tabular}{| l || c | c | c | }
+    \hline
+    ABC & AB = 22 & AC = 20 & BC = ?                        \\
+    &         &         & $22 \times 16 \div 10 = 35.2$ \\
+    \hline
+    AMN & AM = 10 & AN = ?                     & MN = 16    \\
+    &         & $20 \times 10 \div 22$ = 9 &            \\ 
+    \hline
+  \end{tabular}
+
+
+  Dans certain cas un peu plus complexe, il faut poser une équation.
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=.6\linewidth]{sources/2/2_thales-long.pdf}
+  \end{figure}
+
+\end{multicols}
+
+\vspace{-0.5cm}
+\horrule{1px}
+\vspace{-1cm}
+
+\subsection*{Chercher si des droites sont parallèles.}
+
+On connait des longueurs, on vérifie si la tableau est de proportionnalité.
+
+\setlength{\columnseprule}{1pt}
+
+\begin{multicols}{2}
+
+  \subsubsection*{Oui}
+  
+  \begin{center}
+    \begin{tabular}{| l || c | c | }
+      \hline
+      ABC & AB = 25 & AC = 20 \\
+      \hline
+      AMN & AM = 10 & AN = 8  \\
+      \hline
+    \end{tabular}
+  \end{center}
+  
+  \begin{multicols}{2}
+
+    \begin{eqnarray*}
+      \dfrac{AB}{AM} &=& \dfrac{25}{10} = 2.5\\
+      \dfrac{AC}{AN} &=& \dfrac{20}{8} = 2.5
+    \end{eqnarray*}
+    
+    Donc $\dfrac{AB}{AM} = \dfrac{AC}{AN}$. \\
+    C'est un tableau de proportionnalité.\\
+    Les droites (BC) et (MN) sont parallèles.
+
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=.7\linewidth]{sources/2/2_thales-oui.pdf}
+    \end{figure}
+
+  \end{multicols}
+
+  \subsubsection*{Non}
+  
+  \begin{center}
+    \begin{tabular}{| l || c | c | }
+      \hline
+      ABC & AB = 9 & BC = 10 \\
+      \hline
+      AMN & AM = 16 & MN = 20  \\
+      \hline
+    \end{tabular}
+  \end{center}
+  
+  \begin{multicols}{2}
+  
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=\linewidth]{sources/2/2_thales-non.pdf}
+    \end{figure}
+
+    \begin{eqnarray*}
+      \dfrac{AB}{AM} &=& \dfrac{9}{16} \approx 0.56\\
+      \dfrac{BC}{MN} &=& \dfrac{10}{20} = 0.5
+    \end{eqnarray*}
+    
+    Donc $\dfrac{AB}{AM} \neq \dfrac{AC}{AN}$. \\
+    Ce n''est pas un tableau de proportionnalité.\\
+    Les droites (BC) et (MN) ne sont pas parallèles.
+  \end{multicols}
+
+\end{multicols}
+
+\end{document}

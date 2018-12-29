@@ -1,0 +1,156 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt]{article}
+\usepackage{geometry} % Pour passer au format A4
+\geometry{hmargin=1cm, vmargin=1cm} % 
+
+\usepackage{graphicx} % Required for including pictures
+\usepackage{float} % 
+
+%Français
+\usepackage[T1]{fontenc} 
+\usepackage[english,francais]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{eurosym}
+\usepackage{lmodern}
+\usepackage{url}
+\usepackage{multicol,multido}
+
+%Maths
+\usepackage{amsmath,amsfonts,amssymb,amsthm,gensymb}
+\usepackage{siunitx}
+
+%Autres
+\linespread{1} % Line spacing
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+\renewcommand{\labelenumi}{\alph{enumi}.} % 
+\pagestyle{empty}
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+\newcommand{\Pointille}[1][3]{\multido{}{#1}{ \makebox[\linewidth]{\dotfill}\\[\parskip]}}
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENT INFORMATION
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+%\maketitle % Insert the title, author and date
+
+\textbf{Nom, Prénom :} \hspace{8cm} \textbf{Classe :} \hspace{3cm} \textbf{Date :}\\
+\textbf{La calculatrice.}
+
+\begin{center}
+  \textit{L’essentiel est sans cesse menacé par l’insignifiant.}  - \textbf{René Char}
+\end{center}
+
+% Exercice 1 
+\begin{multicols}{2}
+  \begin{center}
+    \begin{tabular}{| l || c | c | c |}
+      \hline
+      &  $AB$  &  $BC$ & $\widehat{ABC}$ \\ 
+      \hline
+      1. &  3cm  & 9cm &  \\
+      \hline 
+      2. &  12cm &     & 62\degree \\
+      \hline
+      3. &       & 6cm & 60\degree \\
+      \hline
+      4. &       & 24m &  36\degree \\
+      \hline
+      5. &  34cm &     &  41\degree\\
+      \hline
+      6. &  15cm &  3m &  \\
+      \hline
+    \end{tabular}
+  \end{center}
+
+  \subsection*{Calcul 1}
+  
+  \textit{Compléter le tableau ci-contre.}\\
+
+  $ABC$ est un triangle rectangle en $A$.\\
+
+\end{multicols}
+
+\begin{multicols}{2}
+  \subsection*{Calcul 2}
+  On donne $PK = 3cm$, $RT = 8cm$, $\widehat{KPM} = 30\degree$ et $\widehat{PLR} = 40\degree$.
+
+  \begin{enumerate}
+  \item[1.] Calculer la longueur PL.
+  \item[2.] Calculer la longueur RL.
+  \item[3.] Calculer l'angle $\widehat{LRT}$. En déduire l'angle $\widehat{LTR}$.
+  \end{enumerate}
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\linewidth]{sources/5/4ie_ch6_calc.pdf}
+  \end{figure}
+
+\end{multicols}
+
+\begin{multicols}{2}
+  % Exercice 1 
+  \subsection*{Exercice 1 - Titanic} 
+
+  Un sous-marin $S$, navigue sur la mer du Nord. Visuellement, il apercoit un iceberg $I$. Son sonar lui indique une distance $SP$ de $528m$. Il veut plonger pour passer dessous.
+
+  \begin{enumerate}
+  \item[1.] Pour $1m$ au-dessus de l'eau, il y a environ $8m$ en-dessous. Calculer la hauteur de la partie immergée de l'iceberg puis sa hauteur totale.
+  \item[2.] Calculer la mesure de l'angle $\widehat{ISP}$ de plongée.
+  \end{enumerate}
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\linewidth]{sources/5/4ie_ch6_sous.pdf}
+  \end{figure}
+\end{multicols}
+
+\begin{multicols}{2}
+
+  % Exercice 1 
+  \subsection*{Exercice 2 - Natation} 
+
+  \begin{enumerate}
+  \item[1.] Un nageur est parti de $A$ pour traverser la rivière dont les rives sont parallèles. Il est emporté par le courant et arrive en $B$. Quelle distance a-t-il parcourue ?
+
+  \item[2.]Quelle est la distance $VH$ entre le voilier et la côté ?
+  \end{enumerate}
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\linewidth]{sources/5/4ie_ch6_nage-1b.pdf}
+  \end{figure}
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\linewidth]{sources/5/4ie_ch6_nage-2b.pdf}
+  \end{figure}
+\end{multicols}
+
+\begin{multicols}{2}
+  % Exercice 1 
+  \subsection*{Exercice 3 - Garage}
+
+  On accède au garage situé au sous-sol d'une maison par une rampe $[AC]$.
+  On sait que : $AC = 11.25 m$ ; $BC = 2.35 m$.
+
+  \begin{enumerate}
+  \item[1.] Calculer la distance $AB$ entre le portail et l'entrée.
+  \item[2.] Calculer la mesure de l'angle $\widehat{BAC}$
+  \end{enumerate}
+  \textbf{Bonus} : Donner le nom de cinq candidats à l'élection présidentielle Française de 2017.
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{sources/5/4ie_ch6_garage.pdf}
+  \end{figure}
+
+\end{multicols}
+
+
+
+\end{document}

@@ -1,0 +1,119 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt]{article}
+\usepackage{geometry} % Pour passer au format A4
+\geometry{hmargin=1cm, vmargin=0.8cm} %
+
+\usepackage{graphicx} % Required for including pictures
+\usepackage{float} %
+
+%Français
+\usepackage[T1]{fontenc}
+\usepackage[english,francais]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{eurosym}
+\usepackage{lmodern}
+\usepackage{url}
+\usepackage{multicol,multido}
+
+%Maths
+\usepackage{amsmath,amsfonts,amssymb,amsthm,gensymb}
+\usepackage{siunitx}
+
+%Autres
+\linespread{1} % Line spacing
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+\renewcommand{\labelenumi}{\alph{enumi}.} %
+\pagestyle{empty}
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+\newcommand{\Pointille}[1][3]{\multido{}{#1}{ \makebox[\linewidth]{\dotfill}\\[\parskip]}}
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENT INFORMATION
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+%\maketitle % Insert the title, author and date
+\setlength{\columnseprule}{1pt}
+
+\begin{multicols}{3}
+  $2x + 3 = 0$ \\
+  \vspace{2cm} \\
+
+  $5x + 15 = 0$ \\
+  \vspace{2cm}\\
+
+  $7x -  4= 0$ \\
+  \vspace{2cm}\\
+\end{multicols}
+
+\horrule{1px}
+
+\begin{multicols}{3}
+  $12x + 3 = 13$ \\
+  \vspace{2cm} \\
+
+  $6x + 15 = 5$ \\
+  \vspace{2cm}\\
+
+  $12x -  4 = 4$ \\
+  \vspace{2cm}\\
+\end{multicols}
+
+\horrule{1px}
+
+\begin{multicols}{3}
+  $12x + 3 = -13$ \\
+  \vspace{2cm} \\
+
+  $6x + 15 = -5$ \\
+  \vspace{2cm}\\
+
+  $12x -  4 = -4$ \\
+  \vspace{2cm}\\
+\end{multicols}
+
+
+\horrule{1px}
+
+\begin{multicols}{3}
+  $12x + 3 = 2x$ \\
+  \vspace{2cm} \\
+
+  $6x - 5 = 5x$ \\
+  \vspace{2cm}\\
+
+  $2x +  4 = 8x$ \\
+  \vspace{2cm}\\
+\end{multicols}
+
+\horrule{1px}
+
+\begin{multicols}{3}
+  $12x + 3 = 2x$ \\
+  \vspace{2cm} \\
+
+  $6x - 5 = 5x$ \\
+  \vspace{2cm}\\
+
+  $22x + 3 = -2x + 20$ \\
+  \vspace{2cm}\\
+\end{multicols}
+
+\horrule{1px}
+
+\begin{multicols}{3}
+  $6x - 5 = 15x - 11$ \\
+  \vspace{1cm}\\
+  $2x +  4 = 2x + 8$ \\
+  \vspace{1cm}\\
+  $x +  1 = x + 1$\\
+
+
+
+\end{multicols}
+
+\end{document}

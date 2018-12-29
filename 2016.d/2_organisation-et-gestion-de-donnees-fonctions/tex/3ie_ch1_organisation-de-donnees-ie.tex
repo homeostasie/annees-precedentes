@@ -1,0 +1,177 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LaTeX Template
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Linux and Unix Users Group at Virginia Tech Wiki 
+% (https://vtluug.org/wiki/Example_LaTeX_chem_lab_report)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt]{article}
+\usepackage{geometry} % Pour passer au format A4
+\geometry{hmargin=1cm, vmargin=1cm} % 
+
+\usepackage{graphicx} % Required for including pictures
+\usepackage{float} % 
+
+%Français
+\usepackage[T1]{fontenc} 
+\usepackage[english,francais]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{eurosym}
+\usepackage{lmodern}
+\usepackage{url}
+\usepackage{multicol}
+
+%Maths
+\usepackage{amsmath,amsfonts,amssymb,amsthm}
+\usepackage{gensymb} % \degree
+
+
+%Autres
+\linespread{1} % Line spacing
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule 
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+\renewcommand{\labelenumi}{\alph{enumi}.} % 
+\pagestyle{empty}
+%----------------------------------------------------------------------------------------
+%	DOCUMENT INFORMATION
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+%\maketitle % Insert the title, author and date
+
+\textbf{Nom, Prénom :} \hspace{8cm} \textbf{Classe :} \hspace{3cm} \textbf{Date :}\\
+\textbf{Calculatrice :}
+
+\begin{center}
+  \textit{On ne craint que ce que l'on ne connaît pas.}  - \textbf{Marie Curie}
+\end{center}
+
+
+% Exercice 1 
+\setlength{\columnseprule}{1pt}
+
+\begin{multicols}{2}
+
+  \subsection*{Exercice 1} 
+
+  \textit{Dans un journal, on a compté le nombre de ligne pour chacune des 120 petites annonces parues ce jour-là. Les résultats sont présentés dans le tableau suivant.}
+
+  \begin{center}
+    \begin{tabular}{| l || c | c | c | c | c | }
+      \hline
+      Nombre de lignes  & 2 &  3 &  4 &  5 &  6 \\
+      \hline
+      Effectif          & 5 & 28 & 42 & 10 & 35 \\ 
+      \hline
+      Fréquence (\%)    &   &    &    &    &    \\
+      \hline
+    \end{tabular}
+  \end{center}
+
+  \begin{enumerate}
+  \item Reproduire et compléter le tableau des fréquences en pourcentage.
+  \item Constuire un diagramme en bâtons représentant ces données. \\
+    \textit{Rappel : La qualité, la précision et la beauté graphique sont prises en compte dans la notation.}
+
+  \end{enumerate}
+
+\end{multicols}
+
+\subsection*{Exercice 2} 
+
+\textit{Le tableau suivant donne le nombre de membres par catégories dans un club de football.}
+
+\begin{center}
+  \begin{tabular}{| l || c | c | c | c | c | }
+    \hline
+    Catégorie            & Poussins & Benjamins & Minimes & Cadets & Total         \\
+    \hline
+    Effectif             &       25 &        45 &      39 &    11  &               \\
+    \hline
+    Angle (en $\degree$) &          &           &         &        & $360 \degree$ \\
+    \hline
+  \end{tabular}
+\end{center}
+
+\begin{enumerate}
+\item Reproduire et compléter le tableau.
+\item Constuire un diagramme circulaire.
+\item Donner un exemple de série de données statistiques pour laquelle le diagramme circulaire n'est pas une bonne représentation graphique et justifier avec une argumentation de 2/3 lignes.
+\end{enumerate}
+
+\vspace{0.2cm}
+\horrule{1px}
+\vspace{0.2cm}
+
+\textbf{Nom, Prénom :} \hspace{8cm} \textbf{Classe :} \hspace{3cm} \textbf{Date :}\\
+\textbf{Calculatrice :}
+
+\begin{center}
+  \textit{On ne craint que ce que l'on ne connaît pas.}  - \textbf{Marie Curie}
+\end{center}
+
+
+% Exercice 1 
+\setlength{\columnseprule}{1pt}
+
+\begin{multicols}{2}
+
+  \subsection*{Exercice 1} 
+
+  \textit{Dans un journal, on a compté le nombre de ligne pour chacune des 120 petites annonces parues ce jour-là. Les résultats sont présentés dans le tableau suivant.}
+
+  \begin{center}
+    \begin{tabular}{| l || c | c | c | c | c | }
+      \hline
+      Nombre de lignes  & 2 &  3 &  4 &  5 &  6 \\
+      \hline
+      Effectif          & 15 & 18 & 32 & 20 & 35 \\ 
+      \hline
+      Fréquence (\%)    &   &    &    &    &    \\
+      \hline
+    \end{tabular}
+  \end{center}
+
+  \begin{enumerate}
+  \item Reproduire et compléter le tableau des fréquences en pourcentage.
+  \item Constuire un diagramme en bâtons représentant ces données. \\
+    \textit{Rappel : La qualité, la précision et la beauté graphique sont prises en compte dans la notation.}
+
+  \end{enumerate}
+
+\end{multicols}
+
+\subsection*{Exercice 2} 
+
+\textit{Le tableau suivant donne le nombre de membres par catégories dans un club de football.}
+
+\begin{center}
+  \begin{tabular}{| l || c | c | c | c | c | }
+    \hline
+    Catégorie            & Poussins & Benjamins & Minimes & Cadets & Total         \\
+    \hline
+    Effectif             &       14 &        56 &      35 &    25  &               \\
+    \hline
+    Angle (en $\degree$) &          &           &         &        & $360 \degree$ \\
+    \hline
+  \end{tabular}
+\end{center}
+
+\begin{enumerate}
+\item Reproduire et compléter le tableau.
+\item Constuire un diagramme circulaire.
+\item Donner un exemple de série de données statistiques pour laquelle le diagramme circulaire n'est pas une bonne représentation graphique et justifier avec une argumentation de 2/3 lignes.
+\end{enumerate}
+
+\end{document}

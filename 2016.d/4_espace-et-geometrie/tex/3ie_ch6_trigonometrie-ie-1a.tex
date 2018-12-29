@@ -1,0 +1,180 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt]{article}
+\usepackage{geometry} % Pour passer au format A4
+\geometry{hmargin=1cm, vmargin=1cm} % 
+
+\usepackage{graphicx} % Required for including pictures
+\usepackage{float} % 
+
+%Français
+\usepackage[T1]{fontenc} 
+\usepackage[english,francais]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{eurosym}
+\usepackage{lmodern}
+\usepackage{url}
+\usepackage{multicol,multido}
+
+%Maths
+\usepackage{amsmath,amsfonts,amssymb,amsthm,gensymb}
+\usepackage{siunitx}
+
+%Autres
+\linespread{1} % Line spacing
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+\renewcommand{\labelenumi}{\alph{enumi}.} % 
+\pagestyle{empty}
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+\newcommand{\Pointille}[1][3]{\multido{}{#1}{ \makebox[\linewidth]{\dotfill}\\[\parskip]}}
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENT INFORMATION
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+%\maketitle % Insert the title, author and date
+
+\textbf{Nom, Prénom :} \hspace{8cm} \textbf{Classe :} \hspace{3cm} \textbf{Date :}\\
+\textbf{La calculatrice.}
+
+\begin{center}
+  \textit{L’essentiel est sans cesse menacé par l’insignifiant.}  - \textbf{René Char}
+\end{center}
+
+
+
+% Exercice 1
+\begin{multicols}{2}
+  
+  \textbf{Calcul 1}
+
+  \textit{Compléter le tableau ci-contre.}\\
+
+  $ABC$ est un triangle rectangle en $A$.\\
+
+  \begin{center}
+    \begin{tabular}{| l || c | c | c |}
+      \hline
+      &  $AB$  &  $BC$ & $\widehat{ABC}$ \\ 
+      \hline
+      1. &  3cm  & 8cm &  \\
+      \hline 
+      2. &  12cm &     & 60\degree \\
+      \hline
+      3. &       & 9cm & 70\degree \\
+      \hline
+    \end{tabular}
+  \end{center}
+\end{multicols}
+
+
+
+
+\begin{multicols}{2}
+
+  \textbf{Calcul 2}
+
+  On donne $PK = 3cm$, $RT = 8cm$, $\widehat{KPL} = 45\degree$ et $\widehat{PLR} = 35\degree$.
+
+  \begin{enumerate}
+  \item[1.] Calculer la longueur PL.
+  \item[2.] Calculer la longueur RL.
+  \item[3.] Calculer l'angle $\widehat{LRT}$. En déduire l'angle $\widehat{LTR}$.
+  \end{enumerate}
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\linewidth]{sources/6/3ie_ch6_calc.pdf}
+  \end{figure}
+
+\end{multicols}
+
+
+\textit{Vous devez faire \textbf{TROIS} exercices parmi les quatre. Le quatrième sera à rendre en DM pour la semaine prochaine : Lundi 10 avril.}
+
+% Exercice 1 
+
+\begin{multicols}{2}
+  
+  \textbf{Exercice 1 - Garage}
+
+  Le père de M. Lafond souhaite construire un garage pour garer sa Peugeot 308. Homme de goût, il souhaite poser des tuiles sur le toit. Pour que le permis de constuire soit accepteé, l'angle entre le sol et le toit doit être d'au moins $12\degree$.
+
+  \begin{enumerate}
+  \item[1.] Sa demande va-t-elle être accepter ?
+  \item[2.] Dans tous les cas, il doit commander une poutre. Calculer sa longueur $AB$.
+  \end{enumerate}
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\linewidth]{sources/6/3ie_ch6_gar.pdf}
+  \end{figure}
+
+  
+
+\end{multicols}
+
+\begin{multicols}{2}
+  % Exercice 2
+  \textbf{Exercice 2 - Des milliards de tapis de cheveux}
+
+  \begin{enumerate}
+  \item[1.] Mme Martin souhaite observer l'exoplanète la plus proche à l'œil nu : \textit{Proxima b}. Elle située à \textit{seulement} $4.2 al$ de la Terre. Une année lumière (1 al.) représente : $10^{13} km$. Son diamètre est de $12 000km$.
+    Avec quel angle Mme Martin peut-elle espérer la voir ?
+
+  \item[2.] M Busch en haut de fourvière, regarde en direction du Mont Blanc afin d'oberserver l'ascension de Mme Thebaut. La distance \textit{Lyon-Mont Blanc} est $230km$. Une mêche de cheveux a pour épaisseur $6 \times 10^{-5}m$.
+    Avec quel angle observe-t-il la mêche de Mme Thebaut ?
+  \end{enumerate}
+\end{multicols}
+
+% Exercice 3 
+
+\begin{multicols}{3}
+
+  \textbf{Exercice 3 - $H_{2}O$}
+  \begin{enumerate}
+  \item[1.] Un nageur est parti de $A$ pour traverser la rivière dont les rives sont parallèles. Il est emporté par le courant et arrive en $B$. 
+    
+    Quelle distance a-t-il parcourue ?
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=0.7\linewidth]{sources/6/3ie_ch6_nage-1.pdf}
+    \end{figure}
+  \item[2.]Quelle est la distance $VH$ entre le voilier et la côté ?
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=0.7\linewidth]{sources/6/3ie_ch6_nage-2.pdf}
+    \end{figure}
+  \item[3.] Un sous-marinier apercoit un iceberg. Son sonar lui indique une distance $SP$ de $122m$. Il sait que l'iceberg $IP$ mesure $54m$. Il veut plonger pour passer en-dessous. Le sous-marin ne peut supporter une plongée avec un angle supérieur à $25\degree$. Peut-il passer en-dessous ?
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=0.7\linewidth]{sources/6/3ie_ch6_sous.pdf}
+    \end{figure}
+  \end{enumerate}
+
+\end{multicols}
+
+
+\begin{multicols}{2}
+
+  % Exercice 4
+  \textbf{Exercice 4 - Les pieds sur Terre} 
+  
+  Le rayon de la terre est $6 371 km$. La ville de Lyon est située sur le parallèle 45\degree Nord. \\
+  À l'aide de la rotation de la terre, calculer la distance parcourue par Mme Bourgart en une journée.
+  
+  \textbf{Bonus} : Donner le nom de cinq candidats à l'élection présidentielle Française de 2017.
+  
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.3\linewidth]{sources/6/3ie_ch6_terre.pdf}
+  \end{figure}
+
+\end{multicols}
+
+\end{document}
+

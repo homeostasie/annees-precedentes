@@ -1,0 +1,214 @@
+
+\documentclass[12pt]{article}
+\usepackage{geometry} % Pour passer au format A4
+\geometry{hmargin=1cm, vmargin=1cm} % 
+
+% Page et encodage
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage[english,francais]{babel} % Français et anglais
+\usepackage[utf8]{inputenc} 
+
+\usepackage{lmodern}
+\setlength\parindent{0pt}
+
+% Graphiques
+\usepackage{graphicx} 
+\usepackage{float}
+
+
+% Maths et divers
+\usepackage{amsmath,amsfonts,amssymb,amsthm,verbatim}
+\usepackage{multicol,enumitem,url,eurosym}
+
+
+% Sections
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{\centering \normalfont\scshape} % Make all sections centered, the default font and small caps
+
+% Tête et pied de page
+
+\usepackage{fancyhdr} 
+\pagestyle{fancyplain} 
+
+\fancyhead{} % No page header
+\fancyfoot{}
+% \fancyfoot[C]{Triangles} % Empty center footer
+% \fancyfoot[R]{\thepage} % Page numbering for right footer
+
+\renewcommand{\headrulewidth}{0pt} % Remove header underlines
+\renewcommand{\footrulewidth}{0pt} % Remove footer underlines
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+
+%----------------------------------------------------------------------------------------
+%	Début du document
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+% RE-DEFINITION
+%----------------------------------------------------------------------------------------
+% MATHS
+%-----------
+
+\newtheorem{Definition}{Définition}
+\newtheorem{Theorem}{Théorème}
+\newtheorem{Proposition}{Propriété}
+
+% MATHS
+%-----------
+\renewcommand{\labelitemi}{$\bullet$}
+\renewcommand{\labelitemii}{$\circ$}
+%----------------------------------------------------------------------------------------
+%	Titre
+%----------------------------------------------------------------------------------------
+
+\setlength{\columnseprule}{1pt}
+
+\horrule{1px}
+\section*{Théorème de Pythagore}
+\horrule{1px}
+
+\begin{enumerate}
+\item[1.] Calculer des longueurs dans un triangle rectangle.
+\item[2.] Montrer qu'un triangle est rectangle.
+\end{enumerate}
+
+\horrule{1px}
+
+\begin{multicols}{2}
+
+  \subsection*{Théorème}
+
+  \textbf{Dans un triangle rectangle, le carré de l’hypoténuse est égal à la somme des deux autres carrés.}
+
+  Soit un triangle ABC rectangle en A. 
+  $$AB^2 + AC^2 = BC^2$$
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\linewidth]{sources/1/1_pytha-thm.pdf}
+  \end{figure}
+
+\end{multicols}
+
+\vspace{-0.5cm}
+\horrule{1px}
+\vspace{-1cm}
+
+\subsection*{Calcul d'un troisième côté}
+
+On sait que le triangle est rectange et on connait la longueur de 2 côtés de ce triangle.
+
+\begin{multicols}{2}
+
+  \subsubsection*{Recherche de l'hypothénuse}
+
+  \begin{multicols}{2}
+
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=\linewidth]{sources/1/1_pytha-re-g.pdf}
+    \end{figure}
+
+    Dans le triangle MNO rectangle en O.\\
+    D'après le théorème de Pythagore.
+    \begin{eqnarray*}
+      MN^2 &=& MO^2 + NO^2 \\
+      MN^2 &=& 20^2 + 32^2 \\
+      MN^2 &=&  1424\\
+      MN   &=& \sqrt{1424} \\
+      MN   &\approx& 37.7 
+    \end{eqnarray*}
+    La longueur MN mesure environ 27.7cm.
+
+  \end{multicols}
+
+  \subsubsection*{Recherche d'un petit côté}
+
+  \begin{multicols}{2}
+
+
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=\linewidth]{sources/1/1_pytha-re-p.pdf}
+    \end{figure}
+
+    Dans le triangle MNO rectangle en O.\\
+    D'après le théorème de Pythagore.
+    \begin{eqnarray*}
+      MN^2 &=& MO^2 + NO^2 \\
+      MO^2 &=& MN^2 - NO^2 \\
+      MO^2 &=& 40^2 - 12^2 \\
+      MO^2 &=& 1456\\
+      MO   &=& \sqrt{1456} \\
+      MO   &=& 38
+    \end{eqnarray*}
+    La longueur MO mesure 38cm.
+
+  \end{multicols}
+\end{multicols}
+
+\vspace{-0.5cm}
+\horrule{1px}
+\vspace{-1cm}
+
+\subsection*{Montrer qu'un triangle est rectangle.}
+
+On a les trois côtés d'un triangle rectangle. On cherche à montrer si le triangle est rectangle ou non.
+
+\begin{multicols}{2}
+
+  \subsubsection*{Oui}
+
+  \begin{multicols}{2}
+
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=\linewidth]{sources/1/1_pytha-oui.pdf}
+    \end{figure}
+
+    Dans le triangle ABC, le plus grand côté est AB.
+    \begin{eqnarray*}
+      AB^2 &=& 15^2 \\
+      AB^2 &=& 225
+    \end{eqnarray*}
+
+    \begin{eqnarray*}
+      AC^2 + BC^2 &=& 9^2 + 12^2 \\
+      AC^2 + BC^2 &=& 225
+    \end{eqnarray*}
+
+    Donc $AB^2 = AC^2 + BC^2$
+    D'après la réciproque du théorème de Pythagore, le triangle est ABC est rectangle en C.
+
+  \end{multicols}
+
+  \subsubsection*{Non}
+
+  \begin{multicols}{2}
+
+
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=\linewidth]{sources/1/1_pytha-non.pdf}
+    \end{figure}
+
+    Le plus grand côté est AB.
+    \begin{eqnarray*}
+      AB^2 &=& 13^2 \\
+      AB^2 &=& 169
+    \end{eqnarray*}
+
+    \begin{eqnarray*}
+      AC^2 + BC^2 &=& 11^2 + 12^2 \\
+      AC^2 + BC^2 &=& 265
+    \end{eqnarray*}
+    Donc $AB^2 \neq AC^2 + BC^2$
+    D'après la réciproque du théorème de Pythagore, le triangle est ABC n'est pas rectangle.
+
+  \end{multicols}
+\end{multicols}
+\end{document}
