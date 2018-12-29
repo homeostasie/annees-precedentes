@@ -1,0 +1,178 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Short Sectioned Assignment
+% LaTeX Template
+% Version 1.0 (5/5/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Frits Wenneker (http://www.howtotex.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[paper=a4, fontsize=12pt]{scrartcl} % A4 paper and 11pt font size
+
+
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage[english,francais]{babel} % Français et anglais
+\usepackage[utf8]{inputenc} 
+
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+
+\usepackage{enumitem}
+\usepackage{lmodern}
+\usepackage{url}
+\usepackage{eurosym} % signe Euros
+\usepackage{geometry} % Pour passer au format A4
+\geometry{a4paper} % 
+\usepackage{graphicx} % Required for including pictures
+\usepackage{float} % Allows putting an [H] in \begin{figure} to specify the exact location of the figure
+
+\usepackage{multicol}
+
+\usepackage{verbatim}
+
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{\centering \normalfont\scshape} % Make all sections centered, the default font and small caps
+
+%----------------------------------------------------------------------------------------
+%	Pied de Page
+%----------------------------------------------------------------------------------------
+
+
+\usepackage{fancyhdr} % Custom headers and footers
+\pagestyle{fancyplain} % Makes all pages in the document conform to the custom headers and footers
+\fancyhead{} % No page header - if you want one, create it in the same way as the footers below
+
+\fancyfoot[L]{Cherine Afri} % Empty center footer
+\fancyfoot[C]{Chapitre 1 - Théorème de Thalès} % Empty center footer
+\fancyfoot[R]{\thepage} % Page numbering for right footer
+
+\renewcommand{\headrulewidth}{0pt} % Remove header underlines
+\renewcommand{\footrulewidth}{0pt} % Remove footer underlines
+
+\usepackage{titling}
+\setlength{\droptitle}{-2.5cm}
+
+\setlength{\headheight}{13.6pt} % Customize the height of the header
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs - comment this line for an assignment with lots of text
+
+
+%----------------------------------------------------------------------------------------
+%	Titre
+%----------------------------------------------------------------------------------------
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+
+\title{	
+  \vspace{-10ex}
+  \horrule{0.5pt} \\[0.4cm] % Thin top horizontal rule
+  \huge Chapitre 1 - Théorème de Thalès \\ % The assignment title
+  \horrule{2pt} \\[0.5cm] % Thick bottom horizontal rule
+}
+
+\author{}
+\date{\vspace{-10ex}} % Today's date or a custom date
+
+%----------------------------------------------------------------------------------------
+%	Début du document
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+% RE-DEFINITION
+%----------------------------------------------------------------------------------------
+% MATHS
+%-----------
+
+\newtheorem{Definition}{Définition}
+\newtheorem{Theorem}{Théorème}
+\newtheorem{Proposition}{Propriété}
+
+% MATHS
+%-----------
+\renewcommand{\labelitemi}{$\bullet$}
+\renewcommand{\labelitemii}{$\circ$}
+%----------------------------------------------------------------------------------------
+%	Titre
+%----------------------------------------------------------------------------------------
+
+\maketitle % Print the title
+\setlength{\columnseprule}{1pt}
+
+\section{Formulation}
+
+\begin{multicols}{2}
+
+\begin{Theorem}{Théorème de Thalès}
+
+Soit $ABC$ un triangle avec : 
+\begin{itemize}
+\item $M$ un point appartenant au segment $[AB]$
+\item $N \in [AC]$
+\end{itemize}
+\textbf{Si} les droites $(MN)$ et $(BC)$ sont \textbf{parallèles}, alors :
+$$\dfrac{AM}{AB} = \dfrac{AN}{AC} = \dfrac{MN}{BC}$$
+
+\end{Theorem}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.8\linewidth]{sources/poly/1_triangle-thales.pdf}
+\end{figure}
+
+\end{multicols}
+
+\section{Exploiter le théorème de Thalès}
+
+\begin{Proposition}{
+Le théorème de Thalès se révèle particulièrement efficace pour chercher des longueurs manquantes sur une figure.}
+
+$$AM \times AC = AN \times AB$$
+
+Toutes longueurs manquantes $AM$, $AC$, $AN$ où $AB$ peuvent être déduites à partir des trois autres.
+\end{Proposition}
+
+
+\begin{Proposition}{Le théorème de Thalès représente une situation proportionnelle.}
+\end{Proposition}
+
+
+\section{Appartées géométriques}
+
+\subsection{Reconnaître des droites parallèles}
+
+\begin{multicols}{3}
+
+ \begin{Proposition}{$d_1$ et $d_2$ sont parallèles, alors :}\\
+\begin{itemize}
+    \item Les angles correspondants sont égaux;
+    \item Les angles alternes-internes sont égaux.
+\end{itemize}
+  \end{Proposition}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.8\linewidth]{sources/poly/3_angle_ai.pdf}
+\end{figure}
+
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.8\linewidth]{sources/poly/4_angle_cor.pdf}
+\end{figure}
+
+\end{multicols}
+
+\end{document}

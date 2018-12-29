@@ -1,0 +1,127 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LaTeX Template
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Linux and Unix Users Group at Virginia Tech Wiki 
+% (https://vtluug.org/wiki/Example_LaTeX_chem_lab_report)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[13pt]{article}
+\usepackage{geometry} % Pour passer au format A4
+\geometry{hmargin=0.5cm, vmargin=0.5cm} % 
+
+\usepackage{graphicx} % Required for including pictures
+\usepackage{float} % 
+
+%Français
+\usepackage[T1]{fontenc} 
+\usepackage[english,francais]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{eurosym}
+\usepackage{lmodern}
+\usepackage{url}
+\usepackage{multicol}
+
+%Maths
+\usepackage{amsmath,amsfonts,amssymb,amsthm}
+%\usepackage[linesnumbered, ruled, vlined]{algorithm2e}
+%\SetAlFnt{\small\sffamily}
+
+%Autres
+\linespread{1} % Line spacing
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+\renewcommand{\labelenumi}{\alph{enumi}.} % 
+\pagestyle{empty}
+%----------------------------------------------------------------------------------------
+%	DOCUMENT INFORMATION
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+%\maketitle % Insert the title, author and date
+
+\setlength{\columnseprule}{1pt}
+
+\textbf{Nom(s), Prénom(s) :}
+
+\begin{multicols}{2}
+
+  \subsection*{Exercice 1}
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=.8\linewidth]{sources/ie/1_ie-intro-1.pdf}
+  \end{figure}
+
+
+  \textit{Mesurer en centimètre et à l'aide d'une règle ou d'une equerre graduée les longueurs suivantes :}\\
+
+  \begin{itemize}
+  \item $AB = $\\
+  \item $BC = $\\
+  \item $AC = $\\
+  \item $AE = $\\
+  \item $ED = $\\
+  \item $EC = $\\
+  \end{itemize}
+
+\end{multicols}
+
+\subsection*{Exercice 2}
+
+\textit{Faire les calculs suivants à partir des données suivantes :}  $AB = 12$, $AC = 6$, $BC = 2$.
+
+\begin{enumerate}
+\item $\dfrac{AB}{BC} = $\\
+\item $AB - 2*(AC + BC) = $\\
+\item $5 + \dfrac{AB * BC}{AC} = $\\
+\item $2 * \dfrac{AB + BC}{BC} - 4= $\\
+\end{enumerate}
+
+\noindent\hrulefill
+
+\textbf{Nom(s), Prénom(s) :}
+
+\begin{multicols}{2}
+
+  \subsection*{Exercice 1}
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=.8\linewidth]{sources/ie/1_ie-intro-2.pdf}
+  \end{figure}
+
+  \textit{Mesurer en centimètre et à l'aide d'une règle ou d'une equerre graduée les longueurs suivantes :}\\
+
+  \begin{itemize}
+  \item $AB = $\\
+  \item $BC = $\\
+  \item $AC = $\\
+  \item $AE = $\\
+  \item $ED = $\\
+  \item $EC = $\\
+  \end{itemize}
+
+\end{multicols}
+
+\subsection*{Exercice 2}
+
+\textit{Faire les calculs suivants à partir des données suivantes :}  $AB = 18$, $AC = 6$, $BC = 2$.
+
+\begin{enumerate}
+\item $\dfrac{AB}{BC} = $\\
+\item $AB - 2*(AC + BC) = $\\
+\item $5 + \dfrac{AB * BC}{AC} = $\\
+\item $2 * \dfrac{AB + BC}{BC} - 4= $\\
+\end{enumerate}
+
+\end{document}

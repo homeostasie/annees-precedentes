@@ -1,0 +1,142 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LaTeX Template
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Linux and Unix Users Group at Virginia Tech Wiki 
+% (https://vtluug.org/wiki/Example_LaTeX_chem_lab_report)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt]{article}
+\usepackage{geometry} % Pour passer au format A4
+\geometry{hmargin=1cm, vmargin=1cm} % 
+
+\usepackage{graphicx} % Required for including pictures
+\usepackage{float} % 
+
+%Français
+\usepackage[T1]{fontenc} 
+\usepackage[english,francais]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{eurosym}
+\usepackage{lmodern}
+\usepackage{url}
+\usepackage{multicol}
+
+%Maths
+\usepackage{amsmath,amsfonts,amssymb,amsthm}
+%\usepackage[linesnumbered, ruled, vlined]{algorithm2e}
+%\SetAlFnt{\small\sffamily}
+
+%Autres
+\linespread{1} % Line spacing
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+\renewcommand{\labelenumi}{\alph{enumi}.} % 
+\pagestyle{empty}
+%----------------------------------------------------------------------------------------
+%	DOCUMENT INFORMATION
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+%\maketitle % Insert the title, author and date
+
+\textbf{Nom, Prénom :} \hspace{8cm} \textbf{Classe :} \hspace{3cm} \textbf{Date :}
+
+\begin{center}
+  \textit{Il vient une heure où protester ne suffit plus : après la philosophie, il faut l’action.}  - \textbf{Victor Hugo}
+
+\end{center}
+
+\textbf{La calculatrice n'est pas autorisée.}
+
+\subsection*{Ex1 - Entourer le + si le résultat est positif, le - sinon}
+
+\begin{multicols}{2}
+  
+  % Exercice 1
+  \begin{enumerate}
+  \item[] \textbf{( + ) | ( - )} : $ 12 \times -37 \times -23$\\
+  \item[] \textbf{( + ) | ( - )} : $ -45 \times -26 \times -106 \times 7.4$\\
+  \item[] \textbf{( + ) | ( - )} : $ -100 \times -123 \times -234 \times -2$\\
+  \item[] \textbf{( + ) | ( - )} : $ -2.5 \times -\pi \times 42.4 \times -\sqrt{10}$\\
+  \end{enumerate}
+
+  \begin{enumerate}
+  \item[] \textbf{( + ) | ( - )} :  $ \dfrac{-}{-23} \times \dfrac{-1}{19} $ \\
+  \item[] \textbf{( + ) | ( - )} :  $ - \dfrac{-45}{-5} \times \dfrac{-3}{2} \times \dfrac{-5}{-6}$ \\
+  \item[] \textbf{( + ) | ( - )} :  $ \dfrac{-3}{-5} \times \dfrac{-34}{-56} \times \dfrac{-12}{-98} \times  \dfrac{-34}{-68} $ \\
+  \item[] \textbf{( + ) | ( - )} :  $ -23.2 \times -\dfrac{-4}{2} \times \dfrac{7}{4} \div -2.3$ \\
+  \end{enumerate}
+
+\end{multicols}
+
+% Exercice 2
+
+\subsection*{Ex2 - Remplir le tableau}
+
+\begin{center}
+  \begin{tabular}{| l || c | c | c | c | c | c | c | c | }
+    \hline
+    Nombre & 5                 & 7.8               & -2               & $\dfrac{5}{4}$   & $\dfrac{-4}{9}$  & \phantom{azerty} & \phantom{azerty} & \phantom{azerty}  \\
+    \hline
+    Inverse & \phantom{azerty}  & \phantom{azerty}  & \phantom{azerty} & \phantom{azerty} & \phantom{azerty} & $\dfrac{1}{5}$   & $\dfrac{-4}{6}$  & $\sqrt{3}$ \\
+    \hline
+  \end{tabular}
+\end{center}
+
+% Exercice 3
+
+\subsection*{Ex3}
+\textit{Calculer. Laisser une trace des calculs. Mettre le nombre mininal de signe moins.}
+
+\begin{multicols}{2}
+  
+\begin{enumerate}
+\item[1a] $2 \times  -8 \times -6 = $\\
+  \rule{\linewidth}{0.5pt}
+\item[1b] $4 \times  -10 \times -2 \times 4 = $\\
+  \rule{\linewidth}{0.5pt}
+\item[1c] $-5 \times 21 \times 0 \times -36 = $\\
+  \rule{\linewidth}{0.5pt}
+\item[1d] $-1 \times -1 \times -1 \times -1 \times -1 = $\\
+  \rule{\linewidth}{0.5pt}
+\item[1e] $3.1 \times -2 \times -4 \times 10 = $\\
+  \rule{\linewidth}{0.5pt}   
+\end{enumerate}
+
+
+\begin{enumerate}
+\item[2a] $ \dfrac{2}{3} \times \dfrac{4}{3} = $\\
+  \rule{\linewidth}{0.5pt}
+\item[2b] $ \dfrac{3}{-6} \times \dfrac{-1}{7} = $\\
+  \rule{\linewidth}{0.5pt}
+\item[2c] $ 5 \times \dfrac{-5}{-3} \times \dfrac{-7}{-4} = $\\
+    \rule{\linewidth}{0.5pt}
+\item[2d] $ \dfrac{2.1}{10} \times \dfrac{5}{2.4} = $\\
+  \rule{\linewidth}{0.5pt}
+\end{enumerate}
+
+\end{multicols}
+
+\begin{enumerate}
+\item[3a] $ \dfrac{2}{3} \div \dfrac{4}{3} = $\\
+  \rule{\linewidth}{0.5pt}
+\item[3b] $ \dfrac{-3}{-6} \div \dfrac{1}{-7} = $\\
+  \rule{\linewidth}{0.5pt}
+\item[3c] $ 5 \div \dfrac{-5}{-3} = $\\
+    \rule{\linewidth}{0.5pt}
+\item[3d] $ \dfrac{2}{10} \div -4 \div \dfrac{5}{3} = $\\
+  \rule{\linewidth}{0.5pt}
+\end{enumerate}
+
+
+\end{document}

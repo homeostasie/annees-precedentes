@@ -1,0 +1,262 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[textheight=27cm,textwidth=19cm,headheight=10mm,footskip=10mm]{geometry}
+\usepackage[UTF8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{fourier}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{paralist}
+\usepackage{pgf,tikz}
+\usetikzlibrary{shapes,snakes,arrows}
+\usepackage{graphicx,multicol}
+\usepackage{varwidth}
+\usepackage{array}
+\usepackage{color,colortbl}
+\usepackage{pstricks-add}
+
+\pagestyle{empty}
+
+\newcounter {exercice}
+\newcommand{\exdeb}[1]{\par\addvspace{24pt}\noindent\stepcounter{exercice}\textbf{\underline{{Exercice }\theexercice\, :}\; (#1 points)} }
+%fin de la commande \exdeb (entête d'exercice)
+
+\newcommand{\Exdeb}[1]{\par\noindent\stepcounter{exercice}\textbf{\underline{{Exercice }\theexercice\,: }\; (#1 points)}}
+%fin de la commande \exdeb (entête d'exercice 1)
+
+\newcommand{\exfin}{\par\vspace{24 pt}}
+
+\newcommand{\ent}[3]{
+\fbox{\hspace*{2mm}\begin{minipage}{0.98\linewidth}
+$\ $\vspace{-3pt}\\
+\begin{Large}
+Collège Frédéric MISTRAL \hfill #1 $\ $\\
+\end{Large}
+\begin{center}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dotstyle=o,dotsize=3pt 0,linewidth=2pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-8,-0.1)(8,6.1)
+\rput(0,5){\scalebox{4}{\textbf{Classe de 4$^{\text{ème}}$ }}}
+\rput(0,3){\scalebox{4}{\textbf{BREVET BLANC DE}}}
+\rput(0,1){\scalebox{4}{\textbf{MATHEMATIQUES}}}
+\end{pspicture*}
+\end{center}
+\end{minipage}} \vspace{12pt}
+\begin{center}
+\begin{Large}
+L'usage de la calculatrice est autorisé ainsi que les instruments usuels de dessin. \vspace{12pt} \\
+Le sujet comporte #3 pages numérotées 1/#3 à #3/#3
+\end{Large}
+\end{center} }
+%fin de la commande \ent (entête du contrôle)
+
+\begin{document}
+% entête
+\noindent \ent{ mai 2016}{1}{4} \vspace{24pt}
+\begin{center}
+\begin{Large}
+\renewcommand{\arraystretch}{1.25}
+\begin{tabular}{|l|c|}
+\hline
+Exercice n°1&5 points\\
+\hline
+Exercice n°2&4 points\\
+\hline
+Exercice n°3&7 points\\
+\hline
+Exercice n°4&3 points\\
+\hline
+Exercice n°5&4 points\\
+\hline
+Exercice n°6&4 points\\
+\hline
+Exercice n°7&3 points\\
+\hline
+Exercice n°8&6 points\\
+\hline
+Maîtrise de la langue&4 points\\
+\hline
+\end{tabular} 
+\vspace{48pt} \\
+Le sujet comporte 8 exercices indépendants qui peuvent être traités dans le désordre. \vspace{12pt} \\
+\textbf{Toutes les réponses doivent être justifiées}, sauf si une indication contraire est donnée. \vspace{12pt} \\
+Pour chaque question, si le travail n'est pas terminé, laisser tout de même une trace de la recherche, elle sera prise en compte au moment de la notation.
+\end{Large}
+\end{center}
+$\ $\vspace{1.5cm}\\
+\begin{flushright}
+\textbf{1/4}
+\end{flushright}
+\exdeb{5} \vspace{6pt} \\% Exercice 1
+\begin{minipage}{0.5\linewidth}
+Supposons que la hauteur OB du volcan (de la base jusqu'au sommet) soit de 1800 m et que la nuée ardente dévale la pente AB à une vitesse de 4,5 km/min.
+\begin{enumerate}[1{)}]
+\item
+Quelle est la longueur de la pente du volcan ?
+\item
+Transformer la vitesse en m/s.
+\item
+Combien de temps la nuée ardente va-t-elle mettre pour dévaler la pente ?\\
+Exprimer le résultat en seconde.
+\end{enumerate}
+\end{minipage}
+\begin{minipage}{0.05\linewidth}
+$\ $
+\end{minipage}
+\begin{minipage}{0.45\linewidth}
+\includegraphics[scale=0.5]{Brevet_4e_Volcan}
+\end{minipage}
+\exdeb{4} \vspace{3pt} \\% Exercice 2
+\textit{Cet exercice est un questionnaire à choix multiples (QCM). Aucune justification n'est demandée.\\
+Pour chacune des questions, une seule réponse est exacte. L'absence de réponse ou une réponse fausse ne retire aucun point.\\
+Indiquer sur votre copie le numéro de la question et recopier la réponse exacte.\vspace{9 pt}\\}
+\renewcommand{\arraystretch}{2}
+\begin{tabular}{|c|p{10.5cm}|>{\centering\arraybackslash}p{20mm}|>{\centering\arraybackslash}p{20mm}|>{\centering\arraybackslash}p{20mm}|}
+\cline{3-5}
+\multicolumn{2}{c|}{$\ $}&\textbf{Réponse A}&\textbf{Réponse B}&\textbf{Réponse C}\\
+\hline
+1&Lorsqu'on regarde un angle de 18° à la loupe de grossissement 2, on voit un angle de :&9°&18°&36° \\
+\hline
+\rule[-2ex]{0pt}{6ex} 2&A quelle autre expression le nombre $\dfrac{7}{3}\ - \ \dfrac{4}{3}\ \div \ \dfrac{5}{2}$  est-il égal ?&$\dfrac{3}{3}\ \div \ \dfrac{5}{2}$&$\dfrac{7}{3}\ - \ \dfrac{3}{4}\ \times \ \dfrac{2}{5}$&$\dfrac{7}{3}\ - \ \dfrac{8}{15}$\\
+\hline
+3&On donne : 1To (téraoctet) = 10$^{12}$ octets et 1 Go (gigaoctet) = 10$^9$ octets. On partage un disque dur de 1,5 To en dossiers de 60 Go chacun. Le nombre de dossiers obtenus est égal à :&25&2,5 $\times$ 10$^{19}$&4 $\times$ 10$^{22}$\\
+\hline
+4&Quel nombre est en écriture scientifique ?&$17,3 \times 10^{-3}$&$0,97 \times 10^7$&$1,52 \times 10^3$\\
+\hline
+%5&&&&\\
+%\hline
+\end{tabular}
+\exdeb{7} \vspace{3pt} \\% Exercice 3
+Une commune souhaite aménager des parcours de santé sur son territoire.\\
+On fait deux propositions au conseil municipal, schématisées ci-dessous : \vspace{3pt} \\
+•	le parcours ACDA \vspace{3pt} \\
+•	le parcours AEFA \vspace{3pt} \\
+Ils souhaitent faire un parcours dont la longueur s'approche le plus possible de 4 km. \vspace{3pt} \\
+Peux-tu les aider à choisir le parcours? Justifie. \vspace{3pt} \\
+\textit{Attention : la figure proposée au conseil municipal n'est pas à l'échelle, mais les codages et les dimensions données sont correctes.}\\
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dotstyle=o,dotsize=3pt 0,linewidth=0.8pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-3,-1.5)(13,4.5)
+\psline(0,0)(0,3.5)(2,3.5)(0,0)(4,0.5)(4.5,-1)(0,0)
+\psline(0,3.06)(0.44,3.06)(0.44,3.5)
+\psline(2.5,0.31)(2.82,-0.63)
+\rput[tl](0,-0.1){A} \rput[b](0,3.6){C} \rput[b](2,3.6){D} \rput[b](4,0.65){E} \rput[t](4.5,-1.15){F} \rput[b](2.5,0.46){E'} \rput[t](2.82,-0.78){F'}
+\rput[l](7,1.5){\parbox{7 cm}{AC = 1,4 km \vspace{3pt} \\  CD = 1,05 km \vspace{3pt} \\ AE' = 0,5 km \vspace{3pt} \\ AE = 1,3 km \vspace{3pt} \\ AF = 1,6 km \vspace{3pt} \\ E'F'=0,4 km \vspace{3pt} \\ (EF) // (E'F') \vspace{3pt} \\ L'angle $\widehat{\text{A}}$ dans le triangle AEF vaut 30°.}}
+\psline{->}(-1,-1)(-0.1,-0.1)
+\rput(-1,-1.25){Départ et arrivée}
+\end{pspicture*}
+$\ $\vspace{-.5cm}\\
+\begin{flushright}
+\textbf{2/4}
+\end{flushright}
+\exdeb{3} \vspace{3pt} \\% Exercice 4
+On laisse tomber une balle d'une hauteur de 1 mètre.\\
+A chaque rebond elle rebondit des $\dfrac{3}{4}$ de la hauteur d'où elle est tombée.\\
+Quelle hauteur atteint la balle au cinquième rebonds ? Arrondir au cm près.
+\exdeb{4} \vspace{3pt} \\% Exercice 5
+Cédric s'entraîne pour l'épreuve de vélo d'un triathlon.\\
+La courbe ci-dessous représente la distance en kilomètres en fonction du temps écoulé en minutes.\\
+\psset{xunit=1.0mm,yunit=2.0mm}
+\begin{pspicture*}(-20,-5)(150,49)
+% axe abscices
+\multido{\i=10+10}{10}{\psline[linestyle=dashed,dash=3pt 3pt,linecolor=lightgray](\i ,0)(\i ,45)}
+\psline[arrowscale=2.5]{->}(-1.5,0)(100,0)
+\multido{\i=10+10}{9}{\psline(\i ,-0.75)(\i ,0.75) \rput[t](\i ,-1.5){\i}}
+\rput[l](102,0){\textbf{Durée (min)}}
+% axe ordonnées
+\multido{\i=5+5}{9}{\psline[linestyle=dashed,dash=3pt 3pt,linecolor=lightgray](0,\i)(100,\i)}
+\psline[arrowscale=2.5]{->}(0,-0.75)(0,45)
+\multido{\i=10+10}{4}{\psline(-1.5,\i)(1.5,\i) \rput[r](-3,\i){\i}}
+\rput[b](0,46){\textbf{Distance (km)}}
+% Courbe
+\psline[linewidth=1.2pt](0,0)(20,10)(30,20)(70,40)(90,45)
+\end{pspicture*}\\
+\textit{Aucune justification n'est attendue pour les trois premières questions, les réponses seront données grâce à des lectures \\graphiques.}
+\begin{enumerate}[1{)}]
+\item
+Quelle distance Cédric a-t-il parcourue au bout de 20 minutes?
+\item
+Combien de temps a mis Cédric pour faire les 30 premiers kilomètres?
+\item
+Le circuit de Cédric comprend une montée, une descente et deux portions plates.\\
+Reconstituer dans l'ordre le trajet parcouru par Cédric.
+\item
+Calculer la vitesse moyenne de Cédric (exprimée en km/h) sur la première des quatre parties du trajet.
+\end{enumerate}
+\exdeb{4} \vspace{3pt} \\% Exercice 6
+Voici un programme de calcul sur lequel travaillent trois élèves. \vspace*{-3pt}
+\begin{center}
+\fbox{\hspace*{2mm}\begin{minipage}{5cm}
+\begin{itemize}
+\item[\textbullet]
+Prendre un nombre.
+\item[\textbullet]
+Lui ajouter 8.
+\item[\textbullet]
+Multiplier le résultat par 3.
+\item[\textbullet]
+Enlever 24.
+\item[\textbullet]
+Enlever le nombre de départ.
+\end{itemize}
+\end{minipage}}
+\end{center}
+Voici ce qu'ils affirment : \\
+Sophie : \og Quand je prends 4 comme nombre de départ, j'obtiens 8.\fg{} \vspace{3pt} \\
+%Martin : \og En appliquant le programme à 0, je trouve 0. \fg{} \vspace{3pt} \\
+Gabriel : \og Moi, j'ai pris -3 au départ et j'ai obtenu -9 \fg{} \vspace{3pt} \\
+Faïza : \og Le résultat final est égal à $\dfrac{4}{3}$ si je choisis $\dfrac{2}{3}$ comme nombre de départ. \fg{} \vspace{9pt} \\
+Pour chacun de ces quatre élèves expliquer s'il a raison ou s'il a tord.
+$\ $\vspace{-1.25cm}\\
+\begin{flushright}
+\textbf{3/4}
+\end{flushright}
+\exdeb{3} \vspace{3pt} \\% Exercice 7
+\begin{minipage}{0.75\linewidth}
+Les alvéoles des nids d'abeilles présentent une ouverture ayant la forme d'un hexagone régulier de côté 3 mm environ.\\ 
+Construire un agrandissement de cet hexagone de rapport 10. (aucune justification de la construction n'est attendue)\vspace{12pt}\\
+\end{minipage}
+\begin{minipage}{0.25\linewidth}
+$\ $ \vspace{-36pt}\\
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dotstyle=o,dotsize=3pt 0,linewidth=0.8pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-3,-1.6)(1.6,1.6)
+\pspolygon(-1.3,0.75)(0,1.5)(1.3,0.75)(1.3,-0.75)(0,-1.5)(-1.3,-0.75)
+\parametricplot{-2.6179938779914944}{-0.5235987755982987}{0.5*cos(t)+0|0.5*sin(t)+1.5}
+\rput[bl](-0.2,0.65){120$\textrm{\degre}$}
+\end{pspicture*}
+\end{minipage}
+\exdeb{6} \vspace{3pt} \\% Exercice 8
+\textbf{Attention les figures tracées ne respectent ni les mesures de longueur, ni les mesures d'angle.} \vspace{6pt} \\
+Répondre par \og vrai \fg{} ou \og faux \fg{} ou \og on ne peut pas savoir \fg{} à chacune des affirmations suivantes et \underline{expliquer votre choix}. \vspace{-9pt}
+\begin{enumerate}[1{)}]
+\item
+Tout triangle inscrit dans un cercle est rectangle. \vspace{6pt} 
+\item
+Si un point M appartient à la médiatrice d'un segment [AB] alors le triangle AMB est isocèle. \vspace{6pt} 
+\item
+Dans le triangle ABC suivant, AB = 4 cm.\\
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dotstyle=o,dotsize=3pt 0,linewidth=0.8pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-2,0)(4.5,3.5)
+\pspolygon(1,1)(4,1)(1,3)
+\psline(1.39,1)(1.39,1.39)(1,1.39)
+\parametricplot{2.5535900500422257}{3.141592653589793}{0.55*cos(t)+4|0.55*sin(t)+1}
+\rput[tr](0.9,0.9){A} \rput[tl](4.1,0.9){B} \rput[b](1,3.1){C}
+\rput[r](3.4,1.2){60°} \rput[l](2.5,2.3){8 cm}
+\end{pspicture*}
+\item
+Le quadrilatère ABCD ci-dessous est un carré.\\
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dotstyle=o,dotsize=3pt 0,linewidth=0.8pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(0,0)(5,5)
+\pspolygon (1,1)(1,4)(3.98,4.28)(4.15,0.72)
+\psline (1,3.6)(1.4,3.6)(1.4,4.05)
+\psline(0.85,2.6)(1.15,2.4)
+\psline(3.92,2.6)(4.22,2.4)
+\psline(2.59,3.99)(2.39,4.29)
+\psline(2.47,1.01)(2.67,0.71)
+\rput[tr](0.95,0.95){A} \rput[br](0.95,4.05){B} \rput[bl](4.02,4.33){C} \rput[tl](4.2,0.67){D}
+\end{pspicture*}
+\end{enumerate}
+$\ $\vspace{8.1cm}\\
+\begin{flushright}
+\textbf{4/4}
+\end{flushright}
+
+\end{document}
+

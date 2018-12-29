@@ -1,0 +1,132 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LaTeX Template
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Linux and Unix Users Group at Virginia Tech Wiki 
+% (https://vtluug.org/wiki/Example_LaTeX_chem_lab_report)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt]{article}
+\usepackage{geometry} % Pour passer au format A4
+\geometry{hmargin=0.7cm, vmargin=0.7cm} % 
+
+\usepackage{graphicx} % Required for including pictures
+\usepackage{float} % 
+
+%Français
+\usepackage[T1]{fontenc} 
+\usepackage[english,francais]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{eurosym}
+\usepackage{lmodern}
+\usepackage{url}
+\usepackage{multicol}
+\usepackage{multido}
+%Maths
+\usepackage{amsmath,amsfonts,amssymb,amsthm}
+%\usepackage[linesnumbered, ruled, vlined]{algorithm2e}
+%\SetAlFnt{\small\sffamily}
+
+%Autres
+\linespread{1} % Line spacing
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+\renewcommand{\labelenumi}{\alph{enumi}.} %
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+\newcommand{\Pointille}[1][3]{\multido{}{#1}{ \makebox[\linewidth]{\dotfill}\\[\parskip]}}
+
+\pagestyle{empty}
+%----------------------------------------------------------------------------------------
+%	DOCUMENT INFORMATION
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+%\maketitle % Insert the title, author and date
+
+\textbf{Nom, Prénom :} \hspace{8cm} \textbf{Classe :} \hspace{3cm} \textbf{Date :}
+
+\begin{center}
+  \textit{On ne craint que ce que l'on ne connaît pas.}  - \textbf{Marie Curie}
+\end{center}
+
+
+% Exercice 1
+
+\begin{multicols}{2}
+
+  \subsection*{Ex1}
+
+  \begin{itemize}
+  \item[a.] Dans le rond central d'un terrain de foot, on a oublié de signaler le centre par un point. Retrouver le centre du cercle uniquement à l'aide de votre équerre.
+  \item[b.] Écrire le théorème utilisé.\newline
+    \Pointille[6]
+  \end{itemize}
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\linewidth]{sources/2/exo1.pdf}
+  \end{figure}
+  
+\end{multicols}
+
+\horrule{1px}
+
+\begin{multicols}{2}
+
+\textbf{Ex2 :}  On sait que (AE) est parallèle à (CD).\newline
+  Montrer que A est le milieu de [BC].
+  
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\linewidth]{sources/2/exo2.pdf}
+  \end{figure}
+
+  \Pointille[7]
+
+\end{multicols}
+
+\horrule{1px}
+\setlength{\columnseprule}{1pt}
+\begin{multicols}{2}
+
+
+\textbf{Ex3 :} ABCD est un parallélogramme tel que BC = 6 cm et AB = 1,4 cm.
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\linewidth]{sources/2/exo4a.pdf}
+  \end{figure}
+  \begin{itemize}
+  \item[a.] Que peux-tu dire des droites (AM) et (BC) ? Justifie. \newline
+    \Pointille[3]
+  \item[b.] Montre que M est le milieu du segment [NC]. \newline
+    \Pointille[5]
+  \item[c.] Calcule AM. \newline
+    \Pointille[2] 
+  \end{itemize}
+
+
+
+\textbf{Ex4 :} MNOP est un trapèze dont les côtés [MN] et [OP] sont parallèles.
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\linewidth]{sources/2/exo5a.pdf}
+  \end{figure}
+  \begin{itemize}
+  \item[a.] Montre que (MN) et (AB) sont parallèles \newline
+    \Pointille[7]
+  \item[b.] Montre que (AB) et (OP) sont parallèles. \newline
+    \Pointille[7]
+  \end{itemize}
+
+\end{multicols}
+
+\end{document}

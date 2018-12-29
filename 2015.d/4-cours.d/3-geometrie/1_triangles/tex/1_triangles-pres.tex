@@ -1,0 +1,191 @@
+\documentclass{beamer}
+
+\usepackage{geometry} % Pour passer au format A4
+\usepackage{graphicx} % Required for including pictures
+\usepackage{float} %
+
+\usepackage{amsmath,amsfonts,amssymb,amsthm}
+\usepackage[T1]{fontenc}
+\usepackage[english,francais]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{eurosym} % signe Euros
+\usepackage{verbatim}
+
+\usetheme{Warsaw}
+
+\title{Statistique}
+\author{$2^{nd}1$}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\section{Généralités sur la Statistique}
+\subsection{Introduction}
+
+\begin{frame}
+  \frametitle{I - Généralités sur la Statistique}
+
+  \begin{block}{1 - Introduction}
+    \begin{alertblock}{Définition 1}
+      On appelle Statistique l'ensemble des méthodes et des techniques permettant d'analyser et de traiter des ensembles d'observations appelées données.
+    \end{alertblock}
+
+    \begin{alertblock}{Définition 2}
+      La statistique descriptive regroupe des méthodes dont l'objet principal est la description des données étudiées.
+      Cette description des données se fait à travers l'étude de leur caractéristique et leur représentation graphique
+    \end{alertblock}
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \frametitle{I - Généralités sur la Statistique}
+
+  \begin{exampleblock}{Remarques}
+    \begin{itemize}
+    \item Un autre groupe de méthodes provient de la Statistique inférentielle. On les utilise après celle de Statistique descriptive.
+    \item De manière générale, les méthodes statistiques relève du domaine des mathématiques et font largement appel à l'outil informatique.
+    \end{itemize}
+  \end{exampleblock}
+
+  \begin{alertblock}{Définition 3}
+    Une population (statistique) est composé d'un ensemble d'individu. Une étude statistique se fait à l'aide de données recueillies
+    sur un caractère d'étude. Ses caractères peuvent être numérique (ou  qualitative).
+  \end{alertblock}
+\end{frame}
+
+\begin{frame}
+  \frametitle{I - Généralités sur la Statistique}
+
+  \begin{exampleblock}{Activité de chapitre}
+    En s'intéressant à la population de la classe entière de seconde 1, un individu est un élève. On s'intéresse au caractère d'étude du nombre de frère et sœur.\\
+    L'organisation de la récupération de données est une part importante du travail.
+  \end{exampleblock}
+\end{frame}
+
+\section{Structure de données}
+\subsection{Effectifs et fréquences}
+
+\begin{frame}
+  \frametitle{II - Structure de données}
+
+  \begin{block}{1 - Effectifs et fréquences}
+    \begin{alertblock}{Définition 4}
+      \begin{enumerate}
+      \item L'\textbf{effectif} est le nombre d'individus dans une population possédant une certaine \textbf{valeur} d'un caractère.
+      \item L'\textbf{effectif total} noté $n$ est le nombre total d'individus. On parle également de la taille de la population.
+      \item La \textbf{fréquence} d'une valeur est le quotient de l'effectif par l'effectif total : $\text{fréquence} = \dfrac{\text{effectif}}{\text{effectif total}}$
+      \end{enumerate}
+    \end{alertblock}
+  \end{block}
+\end{frame}
+
+\subsection{Effectifs et fréquences cumulés croissants}
+
+\begin{frame}
+  \frametitle{II - Structure de données}
+
+  \begin{block}{2 - Effectifs et fréquences}
+    \begin{alertblock}{Définition 5}
+      \begin{enumerate}
+      \item L'\textbf{effectif cumulé croissant} d'une valeur est la somme des effectifs de toutes les valeurs plus petites ou égales.
+      \item La \textbf{fréquence cumulée croissante} d'une valeur est la somme des fréquences de toutes les valeurs plus petites ou égales.
+      \end{enumerate}
+    \end{alertblock}
+  \end{block}
+\end{frame}
+
+
+%-----------------------------------111111111111111111111111111111111111
+\section{Représentation graphique des données}
+%----------------------------------------------------------------------
+
+\begin{frame}
+  \frametitle{III - Représentation graphique des données}
+
+  \begin{exampleblock}{}
+    La représentation graphique privilégiée en statistique est l'\textbf{histogramme}. On le préfère au nuages de point ainsi qu'au diagramme circulaire.
+  \end{exampleblock}
+\end{frame}
+
+%-----------------------------------111111111111111111111111111111111111
+\section{Caractéristiques des données}
+%----------------------------------------------------------------------
+\subsection{Caractèristiques de position}
+%----------------------------------------------------------------------
+
+\begin{frame}
+  \frametitle{IV - Caractéristiques des données}
+
+  \begin{block}{Données}
+    Soit la série statistique donnée par le tableau suivant. On note $N = n_1 + n_2 + ... + n_3$.
+
+    \begin{center}
+      \begin{tabular}{| l || c | c | c | c | c |}
+        \hline
+        Valeur    & $x_1$ & $x_2$ & $x_3$ & ... & $x_p$\\
+        \hline
+        Effectif  & $n_1$ & $n_2$ & $n_3$ & ... & $n_p$\\
+        \hline
+        Fréquence & $f_1$ & $f_2$ & $f_3$ & ... & $f_p$\\
+        \hline
+      \end{tabular}
+    \end{center}
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \frametitle{1 - Caractéristiques de position}
+  
+  \begin{block}{a) La Moyenne}
+  \end{block}
+  
+  \begin{alertblock}{Définition 6 - Moyenne}
+    La moyenne est le nombre noté $\bar{x} = \dfrac{n_1 x_1 + n_2 x_2 + n_3 x_3 + ... + n_p x_p}{N}$\\
+  \end{alertblock}
+  
+  \begin{block}{Propriété 1}
+    On peut également calculer la moyenne à l'aide des fréquences.\\
+    $\bar{x} = f_1 x_1 + f_2 x_2 + f_3 x_3 + ... + f_p x_p$\\
+  \end{block}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{1 - Caractéristiques de position}
+  
+  \begin{block}{b) La Médiane}
+  \end{block}
+  
+  \begin{alertblock}{Définition 7 - Médiane}
+    On considère une série statistique dont les valeurs sont ordonnées. Selon la valeur de N l'effectif total la médiane n'est pas la même.
+    \begin{itemize}
+    \item Si N est impair, la médiane est le terme du milieu : $x_{\frac{N + 1}{2}}$.
+    \item Si N est pair, la médiane est la somme des deux termes du milieu : $\dfrac{x_{\frac{N}{2}} + x_{\frac{N+1}{2}}}{2}$.
+    \end{itemize}
+  \end{alertblock}
+\end{frame}
+
+\subsection{Caractéristiques de dispersion}
+%----------------------------------------------------------------------
+
+\begin{frame}
+  \frametitle{2 - Caractéristiques de dispersion }
+
+  \begin{alertblock}{Définition 8 - Quartiles}
+    On considère une série statistique dont les valeurs sont ordonnées.
+
+    \begin{enumerate}
+    \item Le premier quartile, noté $Q_1$ est la plus petite valeur de la série telle que 25\% des valeurs lui soient inférieurs : $x_\frac{N}{4}$.
+    \item Le troisième quartile, noté $Q_3$ est la plus petite valeur de la série telle que 75\% des valeurs lui soient inférieurs : $x_\frac{3N}{4}$.
+    \item Le deuxième quartile est la médiane (avec 50\% des valeurs inférieurs)
+    \end{enumerate}
+  \end{alertblock}
+
+  \begin{alertblock}{Définition 9 - Étendue}
+    L'étendue d'une série statistique est la différence entre la plus grande et la plus petite des valeurs.
+  \end{alertblock}
+\end{frame}
+
+\end{document}

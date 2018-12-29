@@ -1,0 +1,232 @@
+\documentclass{beamer}
+
+\usepackage{geometry} % Pour passer au format A4
+\usepackage{graphicx} % Required for including pictures
+\usepackage{float} %
+
+\usepackage{amsmath,amsfonts,amssymb,amsthm}
+\usepackage[T1]{fontenc}
+\usepackage[english,francais]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{eurosym} % signe Euros
+\usepackage{verbatim}
+\usepackage{multicol}
+\usefonttheme[onlymath]{serif}
+\usetheme{m} 
+
+\title{\rmfamily{\textsc{C}}alcul littéral}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\begin{frame}
+  \begin{alertblock}{Définition}
+    Un calcul littéral est un calcul où l'ensemble des nombres ne sont pas connus. On représente ces \textbf{inconnus} par des \textbf{lettres}.
+  \end{alertblock}
+\end{frame}
+
+\section{\rmfamily{\textsc{I - P}}rogramme de calcul}
+
+\begin{frame}
+  \frametitle{\rmfamily{\textsc{I - P}}rogramme de calcul}
+
+  \begin{block}{\textcolor{blue}{Propriété}}
+
+    \begin{multicols}{2}
+      
+      Un programme de calcul est un ensemble d'instructions et d'opérations à faire les unes à la suite des autres.\vspace{2cm}
+      
+      \fbox{\parbox{\textwidth}{
+          \begin{itemize}
+          \item Choisir un nombre.
+          \item Ajouter $2$.
+          \item Multiplier par $2$.
+          \item Soustraire $4$.
+          \item Ajouter le nombre de départ.
+          \item Afficher le résultat.
+          \end{itemize}
+      }}
+    \end{multicols}
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \frametitle{\rmfamily{\textsc{I - P}}rogramme de calcul}
+  \begin{exampleblock}{Exercice}
+    
+    \begin{multicols}{2}
+      
+      \begin{enumerate}
+      \item[a)] Montrer qu'en choississant $5$ comme nombre de départ, on obtient $15$.
+      \item[b)] Essayer avec $-2$, $4$ et $10$.
+      \item[c)] Démontrer que le résultat est toujours le triple du nombre de départ.
+      \end{enumerate}
+      
+      \fbox{\parbox{\textwidth}{
+          \begin{itemize}
+          \item Choisir un nombre.
+          \item Ajouter $2$.
+          \item Multiplier par $2$.
+          \item Soustraire $4$.
+          \item Ajouter le nombre de départ.
+          \item Afficher le résultat.
+          \end{itemize}
+      }}
+    \end{multicols}
+    
+
+  \end{exampleblock}
+\end{frame}
+
+\begin{frame}
+  \frametitle{\rmfamily{\textsc{I - P}}rogramme de calcul}
+  \begin{block}{\textcolor{blue}{Propriétés}}
+    \begin{enumerate}
+    \item[1.] Pour \textbf{démontrer} qu'un résultat est vrai, il faut démontrer qu'il est vrai tout le temps et pour toutes valeurs. On doit utiliser le calcul littéral.
+    \item[2.] Simplifier l'écriture d'une expréssion littéral s'appelle : \textbf{réduire}. Il faut faire tous les calculs possibles.
+    \end{enumerate}
+  \end{block}
+\end{frame}
+
+\section{ \rmfamily{\textsc{II - R}}ègles d'écriture}
+
+\begin{frame}
+  \frametitle{ \rmfamily{\textsc{II - R}}ègles d'écriture}
+  \begin{block}{\textcolor{blue}{Propriétés}}
+    Le signe $\times$ de la multiplication n'est pas nécessairement écrit.
+    \begin{itemize}
+    \item $2 \times x          = 2x$
+    \item $3 \times (2 + x)    = 3(2 + x)$
+    \item $v \times t          = vt$
+    \item $2 \times a \times 3 = 2 \times 3 \times a = 6 \times a = 6a$
+    \end{itemize}
+    Le 1 devant une lettre ne doit pas être écrit. Zéro fois une lettre est égale à 0. 
+    \begin{itemize}
+    \item $1 \times x          = 1x = x$
+    \item $0 \times x          = 0x = 0$
+    \end{itemize}
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \frametitle{ \rmfamily{\textsc{II - R}}ègles d'écriture}
+  \begin{block}{\textcolor{blue}{Propriétés}}
+    On peut additionner (ou soustraire) des mêmes lettres.
+    \begin{itemize}
+    \item $2x + 3x - 10x = 5x - 10x = -5x$
+    \end{itemize}
+    On ne peut pas additionner ou soustraire une lettre et un nombre.
+    \begin{itemize}
+    \item $1 + 2x + 3 - 4x = 4 - 2x$
+    \end{itemize}
+    On ne peut pas additionner ou soustraire deux lettres différentes.
+    \begin{itemize} 
+    \item $1 + a + 2b + 3a +4b = 1 + 4a + 6b$
+    \item $1 + x + x^2 + 2 + 3x + 4x^2 = 3 + 4x + 5x^2$
+    \end{itemize}
+  \end{block}  
+\end{frame}
+
+\section{ \rmfamily{\textsc{III - D}}istributivité}
+
+\begin{frame}
+  \frametitle{ \rmfamily{\textsc{III - D}}istributivité}
+
+  \begin{multicols}{2}
+    \textbf{Programme A}
+    \begin{itemize}
+    \item Choisir un nombre.
+    \item Ajouter $3$.
+    \item Multiplier par $2$.
+    \item Afficher le résultat.
+    \end{itemize}
+
+    \textbf{Programme B}  
+    \begin{itemize}
+    \item Choisir un nombre.
+    \item Multiplier par $2$.
+    \item Ajouter $6$.
+    \item Afficher le résultat.
+    \end{itemize}
+  \end{multicols}
+
+  \begin{enumerate}
+  \item[a)] Essayer les programmes A et B avec les nombres $1$; $2$ et $5$.
+  \item[b)] Faire une conjecture
+  \item[c)] Produire les expressions littérales.
+  \end{enumerate}
+  
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{ \rmfamily{\textsc{III - D}}istributivité}
+
+ \begin{block}{Preuve}
+   \begin{enumerate}
+   \item[a)] Calculer l'aire du grand rectangle.
+   \item[b)] Calculer la somme des aires des petits rectangles.
+   \item[c)] En dédurie une égalité.
+   \end{enumerate}
+ \end{block}
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\linewidth]{sources/1/simple-distri.pdf}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{ \rmfamily{\textsc{III - D}}istributivité}
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\linewidth]{sources/1/simple-distri.pdf}
+  \end{figure}
+
+  $$2 \times (x + 3) = 2 \times x + 2 \times 3 $$
+
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{ \rmfamily{\textsc{III - D}}istributivité}
+  \begin{alertblock}{Distributivité  simple}
+    $$k \times (a + b) = k \times a + k \times b $$
+    $$k \times (a - b) = k \times a - k \times b $$ 
+  \end{alertblock}
+\end{frame}
+
+\section{ \rmfamily{\textsc{E}}t si on démontrait le premier programme de calcul ?}
+
+\begin{frame}
+  \frametitle{\rmfamily{\textsc{I - P}}rogramme de calcul}
+  \begin{exampleblock}{Exercice}
+    
+    \begin{multicols}{2}
+      
+      \begin{enumerate}
+      \item[a)] Montrer qu'en choississant $5$ comme nombre de départ, on obtient $15$.
+      \item[b)] Essayer avec $-2$, $4$ et $10$.
+      \item[c)] Démontrer que le résultat est toujours le triple du nombre de départ.
+      \end{enumerate}
+      
+      \fbox{\parbox{\textwidth}{
+          \begin{itemize}
+          \item Choisir un nombre.
+          \item Ajouter $2$.
+          \item Multiplier par $2$.
+          \item Soustraire $4$.
+          \item Ajouter le nombre de départ.
+          \item Afficher le résultat.
+          \end{itemize}
+      }}
+    \end{multicols}
+    
+
+  \end{exampleblock}
+\end{frame}
+
+\end{document}

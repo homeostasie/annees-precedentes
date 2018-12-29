@@ -1,0 +1,168 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LaTeX Template
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Linux and Unix Users Group at Virginia Tech Wiki 
+% (https://vtluug.org/wiki/Example_LaTeX_chem_lab_report)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt]{article}
+\usepackage{geometry} % Pour passer au format A4
+\geometry{hmargin=1cm, vmargin=1cm} % 
+
+\usepackage{graphicx} % Required for including pictures
+\usepackage{float} % 
+
+%Français
+\usepackage[T1]{fontenc} 
+\usepackage[english,francais]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{eurosym}
+\usepackage{lmodern}
+\usepackage{url}
+\usepackage{multicol}
+
+%Maths
+\usepackage{amsmath,amsfonts,amssymb,amsthm}
+%\usepackage[linesnumbered, ruled, vlined]{algorithm2e}
+%\SetAlFnt{\small\sffamily}
+
+%Autres
+\linespread{1} % Line spacing
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule 
+\renewcommand{\labelenumi}{\alph{enumi}.} % 
+\pagestyle{empty}
+%----------------------------------------------------------------------------------------
+%	DOCUMENT INFORMATION
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+%\maketitle % Insert the title, author and date
+
+\begin{center}
+  \textit{Un tableau ne vit que par celui qui le regarde.} - \textbf{Pablo Picasso}
+\end{center}
+
+\setlength{\columnseprule}{1pt}
+
+\begin{multicols}{2}
+
+  \subsection*{Exercice 1 - Programme de calcul}
+
+  \begin{itemize}
+  \item Choisir un nombre
+  \item Ajouter 2.
+  \item Multiplier par 3.
+  \item Soustraire 6.
+  \item Afficher le résultat
+  \end{itemize}
+
+  \begin{enumerate}
+  \item[1a)] Vérifier qu'avec $5$ comme nombre de départ on obtient $15$.
+  \item[1b)] Effectuer le programme avec $10$ ; $-4$ et $2.2$.
+  \item[2a)] Faire une conjecture.
+  \item[2b)] Essayer de prouver cette hypothèse en prenant $x$ comme nombre de départ.
+  \end{enumerate}
+
+\end{multicols}
+
+\horrule{1px}
+
+\begin{multicols}{2}
+
+  \subsection*{Exercice 2 - Réduction}
+  \textbf{Réduire les expressions suivantes afin de les écrire de la manière la plus simple et compacte possible.}
+
+  \begin{enumerate}
+  \item $A = 10x + 8 - 2x - 4 + 4x$
+  \item $B = 7y -2x + 10 + y + 22$
+  \item $C = 8x^2 + 12 - 5x + 2 - 3x$ 
+  \item $D = 9y - (2y -3) + 8y^2$
+  \end{enumerate}
+
+  \subsection*{Exercice 3 - Distribution}
+
+  \textbf{Développer les expressions suivantes.}
+  \begin{enumerate}
+  \item $A = 4(x + 2)$
+  \item $B = 2(3y - 5)$
+  \item $C = x(2x +12)$ 
+  \item $D = -2(-3y - 4)$
+  \end{enumerate}
+
+\end{multicols}
+
+\horrule{1px}
+
+\begin{multicols}{2}
+  \subsection*{Exercice 4 - Évaluer}
+
+  \begin{enumerate}
+  \item Évaluer l'expression : $2x +5$ pour $x = 4$.
+  \item Évaluer l'expression : $5x^2 - 2x + 5$ pour $x = 2$.
+  \item Évaluer l'expression : $x + 2(x +3)$ pour $x = -10$.
+  \end{enumerate}
+
+  \subsection*{Exercice 5 - Périmètre}
+
+  % include figure
+  Donner les expressions des \textbf{périmètres} des trois figures ci-dessous.
+
+\end{multicols}
+
+\horrule{0.5px}
+
+\begin{multicols}{3}
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\linewidth]{sources/1/peri-1a.pdf}
+  \end{figure}
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{sources/1/peri-2a.pdf}
+  \end{figure}
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{sources/1/peri-3a.pdf}
+  \end{figure}
+
+\end{multicols}
+
+
+\horrule{1px}
+
+\begin{multicols}{2}
+  \subsection*{Exercice 6 - Rectangle}
+
+  \textit{Laisser une trace des calculs et justifier la méthode utilisée.}\\
+
+  Données : 
+  \begin{itemize}
+  \item $AC = 8$, $CB = 2$ et $CD = 5$
+  \item Les points $A$, $B$ et $C$ sont alignés.\\
+  \end{itemize}
+
+  \textbf{Calculer la longueur $AD$}.
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\linewidth]{sources/1/pytha-a.pdf}
+  \end{figure}
+
+\end{multicols}
+
+\end{document}

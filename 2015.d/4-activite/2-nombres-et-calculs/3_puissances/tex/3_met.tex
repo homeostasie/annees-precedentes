@@ -1,0 +1,98 @@
+\documentclass[11pt]{article}
+\usepackage{geometry} % Pour passer au format A4
+\geometry{hmargin=0.7cm, vmargin=0.7cm} % 
+
+\usepackage{graphicx} % Required for including pictures
+\usepackage{float} % 
+
+%Français
+\usepackage[T1]{fontenc} 
+\usepackage[english,francais]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{eurosym}
+\usepackage{lmodern}
+\usepackage{url}
+\usepackage{multicol}
+\usepackage{multido}
+%Maths
+\usepackage{amsmath,amsfonts,amssymb,amsthm}
+%\usepackage[linesnumbered, ruled, vlined]{algorithm2e}
+%\SetAlFnt{\small\sffamily}
+
+%Autres
+\linespread{1} % Line spacing
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+\renewcommand{\labelenumi}{\alph{enumi}.} %
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+\newcommand{\Pointille}[1][3]{\multido{}{#1}{ \makebox[\linewidth]{\dotfill}\\[\parskip]}}
+
+\pagestyle{empty}
+%----------------------------------------------------------------------------------------
+%	DOCUMENT INFORMATION
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+\textbf{Nom, Prénom :}\\
+
+\textbf{MET1 : Mettre les nombres suivants sous forme scientifique.}
+
+\begin{itemize}
+\item Lire le nombre et entouré le premier chiffre différent de 0 en commençant par la gauche.
+\item L'écrire, rajouter une virgule et compléter avec tous les autres chiffres.
+\item Rajouter $\times 10$
+\item Compter le nombre de chiffre entre notre virgule et le chiffre des unités. Compléter l'exposant.
+\end{itemize}
+
+\horrule{1pt}
+
+\begin{enumerate}
+  
+\item $127      = $ \Pointille[1]
+\item $- 1024   = $ \Pointille[1]
+\item $24, 4    = $ \Pointille[1]
+\item $0.42     = $ \Pointille[1]
+\item $2048, 04 = $ \Pointille[1]
+  
+\end{enumerate}
+
+\vspace{-0.3cm}
+\horrule{1pt}
+
+\begin{enumerate}
+  
+\item \Pointille[1]
+\item \Pointille[1]
+\item \Pointille[1]
+\item \Pointille[1]
+\item \Pointille[1]
+  
+\end{enumerate}
+
+\vspace{-0.3cm}
+\horrule{1pt}
+
+\begin{enumerate}
+  
+\item \Pointille[1]
+\item \Pointille[1]
+\item \Pointille[1]
+\item \Pointille[1]
+\item \Pointille[1]
+  
+\end{enumerate}
+
+\vspace{-0.3cm}
+\horrule{1pt}
+
+\begin{enumerate}
+  
+\item \Pointille[1]
+\item \Pointille[1]
+\item \Pointille[1]
+\item \Pointille[1]
+\item \Pointille[1]
+  
+\end{enumerate}
+  
+\end{document}

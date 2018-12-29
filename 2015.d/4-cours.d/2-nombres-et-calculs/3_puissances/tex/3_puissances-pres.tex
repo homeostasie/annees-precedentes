@@ -1,0 +1,208 @@
+\documentclass{beamer}
+
+\usepackage{geometry} % Pour passer au format A4
+\usepackage{graphicx} % Required for including pictures
+\usepackage{float} %
+
+\usepackage{amsmath,amsfonts,amssymb,amsthm}
+\usepackage[T1]{fontenc}
+\usepackage[english,francais]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{eurosym} % signe Euros
+\usepackage{verbatim}
+\usepackage{multicol}
+\usepackage{numprint}
+
+\usefonttheme[onlymath]{serif}
+\usetheme{m} 
+
+\title{\rmfamily{\textsc{P}}uissances}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\begin{frame}
+  \begin{alertblock}{Définition 1. Lecture}
+        $6^5$ se lit 6 à la puissance 5 ou 6 exposant 5.
+  \end{alertblock}
+\end{frame}
+
+\section{\rmfamily{\textsc{I - N}}otations et calculs}
+
+\begin{frame}
+  \frametitle{\rmfamily{\textsc{I - N}}otations et calculs}
+
+  \begin{alertblock}{Définition 2a. Puissances positives}
+
+    \begin{eqnarray*}
+      6^2 &=& 6 \times 6 = 36\\
+      6^3 &=& 6 \times 6 \times 6 = 216\\
+      6^4 &=& 6 \times 6 \times 6 \times 6 = 1296\\
+      &...& \\
+      6^{12} &=& 6 \times ... \times 6 = \numprint{2 176 782 336} \\
+      6^n &=& 6 \times ... \times 6
+    \end{eqnarray*}
+   
+  \end{alertblock}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{\rmfamily{\textsc{I - N}}otations et calculs}
+
+  \begin{alertblock}{Définition 2b. Puissances négatives}
+
+    \begin{eqnarray*}
+      3^{-2} &=& \dfrac{1}{3^{2}} = \dfrac{1}{9} = 0.111\\
+      3^{-3} &=& \dfrac{1}{3^{3}} = \dfrac{1}{27} = 0.037\\
+      &...& \\
+      3^{-7} &=& \dfrac{1}{3^{7}} = \dfrac{1}{2187} = \numprint{0.00046}
+    \end{eqnarray*}
+
+  \end{alertblock}
+
+  \begin{exampleblock}{Remarque}
+
+On obtient des nombres très grands ou très proche de 0 qui \textit{dépassent les capacités des calculatrices} comme $5^{200}$ ou $7^{-150}$.
+
+  \end{exampleblock}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{\rmfamily{\textsc{I - N}}otations et calculs}
+
+  \begin{alertblock}{Définition 3. Quelques conventions}
+
+    \begin{itemize}
+    \item  Un nombre à la puissance 0 est égal à 1. \newline
+      $1^0 = 5^0 = 12^0 = 0^0 = ... = 15.7^0 = 1$ \\
+    \item Un nombre à la puissance 1 est égal à lui-même. \newline
+      $5^1 = 5$
+    \item Un nombre à la puissance -1 est l'inverse de ce nombre. \newline
+      $7^{-1} = \dfrac{1}{7}$
+    \end{itemize}
+
+  \end{alertblock}
+
+\end{frame}
+
+\section{\rmfamily{\textsc{II - Q}}uelques simplifications possibles}
+
+\begin{frame}
+  \frametitle{\rmfamily{\textsc{II - Q}}uelques simplifications possibles}
+
+  \begin{block}{\textcolor{blue}{Propriété 1.}}
+
+	Peu de simplifications sont possibles avec les puissances. \textbf{Il faut toujours le même nombre sous les puissances.}
+	
+    \begin{itemize}
+    \item Lors d'une multiplication on additionne les exposants. \\
+      $5^3 \times 5^7 = 5^{3+7} = 5^{10}$
+    \item Lors d'une division on soustrait l'exposant du dessous à celui de haut. \\
+      $\dfrac{12^{10}}{12^{6}} = 12^{10 - 6} = 12^4$
+    \item On distribue l'ensemble des facteurs dans la parenthèse. \\
+      $(3 x)^4 = 3^4 \times x^4$
+    \end{itemize}
+  
+  \end{block}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{\rmfamily{\textsc{II - Q}}uelques simplifications possibles}
+
+  \begin{block}{\textcolor{blue}{Preuve - Propriété 1.}}
+  \textit{par un retour au produit.}
+  
+  \begin{itemize}
+  \item $5^3 \times 5^7 = 5 \times ... \times 5 \times  5 \times ... \times 5 =  5 \times ... \times 5 = 5^{10}$
+  \item $\dfrac{12^{10}}{12^{6}} = \dfrac{12 \times ... \times 12}{12 \times ... \times 12} =12 \times ... \times 12 = 12^4$
+  \item $(3 x)^4 = (3x) \times ... \times (3x) = 3 \times ... \times 3 \times x \times ... \times x = 3^4 \times x^4.$
+  \end{itemize}
+
+  \begin{exampleblock}{Attention}
+on ne connaît pas directement le résultat d'une addition ou d'une soustraction de nombre avec des puissances : $8^4 + 8^2 \neq 8^6$, $(3 + x)^2 \neq 3^2 + x^2 $.
+
+  \end{exampleblock}
+
+  \end{block}
+\end{frame}
+
+
+\section{\rmfamily{\textsc{III - L}}'écriture scientifique}
+
+
+\begin{frame}
+  \frametitle{\rmfamily{\textsc{III - L}}'écriture scientifique}
+
+Traiter avec des nombres très grands (distance entre les galaxies en mètre) et des nombres très petits (masse d'un atome en kg) est courant en Sciences. \\
+Pour faciliter les calculs, on introduit la \textbf{notation scientifique}.
+
+ \begin{alertblock}{Définition 4.}
+	Tout nombre peut s'écrire en notation scientifique sous la forme : $ \boxed{ a \times 10^n} $\\
+  où $a$ est un nombre décimal compris entre 1 et 10 appelé mantisse. ($a$ peut être négatif)
+
+  \end{alertblock}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{\rmfamily{\textsc{III - L}}'écriture scientifique}
+
+
+ \begin{block}{Exemples}
+	  \begin{itemize}
+  \item $\numprint{1 234} = 1,234 \times 10^3$
+  \item $\numprint{0,00659} = 6,59 \times 10^{-3}$
+  \item Distance de la Terre au soleil :  $\numprint{149 600 000 000}m = 1,49 \times 10^{11}$
+  \item Masse d'un électron : $9,1 \times 10^{-31}kg$
+  \item Vitesse de la lumière : $\numprint{300 000 000}m/s = 3 \times 10 ^8 m/s$
+  \end{itemize}
+
+  \end{block}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{\rmfamily{\textsc{III - L}}'écriture scientifique}
+
+Cette écriture simplifie les calculs.
+
+ \begin{block}{Pour les produits}
+
+  \begin{eqnarray*}
+    & & \numprint{65 000 000 000} \times \numprint{420 000 000} \\
+    &=& 6,, \times 10 ^{10} \times 4,2 \times 10 ^{8} \\
+    &=& 6,5 \times 4,2 \times 10^{10} \times 10^8 \\
+    &=& 27,3 \times 10^{10 + 8}\\
+    &=& 27,3 \times 10^{18} \\
+    &=& 2,73 \times 10^{19}
+  \end{eqnarray*}
+
+
+  \end{block}
+
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{\rmfamily{\textsc{III - L}}'écriture scientifique}
+
+Cette écriture simplifie les calculs.
+
+ \begin{block}{Pour les quotients}
+
+  \begin{eqnarray*}
+    \dfrac{\numprint{0, 000 74}}{\numprint{530 000}} &=& \dfrac{7,4 \times 10^{-4}}{5,3 \times 10^{5}} \\
+    &=& \dfrac{7,4}{5,3} \times \dfrac{10^{-4}}{10^{5}} \\
+    &=& 1,4 \times 10^{( -4 - 5 )} \\
+    &=& 1,4 \times 10^{-9}
+  \end{eqnarray*}
+
+  \end{block}
+
+\end{frame}
+\end{document}

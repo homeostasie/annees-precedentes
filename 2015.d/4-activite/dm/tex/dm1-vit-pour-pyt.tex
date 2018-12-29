@@ -1,0 +1,117 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LaTeX Template
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Linux and Unix Users Group at Virginia Tech Wiki 
+% (https://vtluug.org/wiki/Example_LaTeX_chem_lab_report)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt]{article}
+\usepackage{geometry} % Pour passer au format A4
+\geometry{hmargin=1cm, vmargin=1cm} % 
+
+\usepackage{graphicx} % Required for including pictures
+\usepackage{float} % 
+
+%Français
+\usepackage[T1]{fontenc} 
+\usepackage[english,francais]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{eurosym}
+\usepackage{lmodern}
+\usepackage{url}
+\usepackage{multicol}
+
+%Maths
+\usepackage{amsmath,amsfonts,amssymb,amsthm}
+%\usepackage[linesnumbered, ruled, vlined]{algorithm2e}
+%\SetAlFnt{\small\sffamily}
+
+%Autres
+\linespread{1} % Line spacing
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule 
+\renewcommand{\labelenumi}{\alph{enumi}.} % 
+\pagestyle{empty}
+%----------------------------------------------------------------------------------------
+%	DOCUMENT INFORMATION
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+%\maketitle % Insert the title, author and date
+
+\begin{center}
+  \textit{Laissons l’avenir dire la vérité, et évaluer chacun en fonction de son travail et de ses accomplissements. Le présent est à eux ; le futur, pour lequel j’ai réellement travaillé, est mien.} - \textbf{Nikola TESLA}
+\end{center}
+
+\textbf{Il est demandé de laisser une trace des calculs, de présenter les justifications nécessaires et de répondre aux questions par des phrases. La présentation et la rédaction rentrent en compte dans la notation.}
+
+\subsection*{Exercice 1 - Felix Baumgartner}
+
+En 2012, Felix Baumgartner a atteint une altitude de $39000m$ en $2h30min$ à l'aide d'un ballon stratosphérique. \\
+Il s'est alors élancé dans le vide et a réalisé un saut en chute libre pendant $4$ minutes et $20$ secondes avant d'atterrir à nouveau sur le sol.\\
+
+\begin{enumerate}
+\item[1)] À quelle vitesse moyenne en $m/s$ le ballon est-il monté ? 
+\item[2)] À quelle vitesse moyenne en $m/s$ Felix a-t-il chuté ? \\
+\end{enumerate}
+
+\textit{NB. La vidéo de sa chute peut être vue sur youtube : https://www.youtube.com/watch?v=hLENrBosL-E}
+
+\horrule{1px}
+
+\begin{multicols}{2}
+
+  \subsection*{Exercice 2 - Pyramide de Khéops}
+
+  La pyramide de Khéops est considérée comme l'une des $7$ merveilles du monde.\\ 
+  L'archéologue Indiana souhaite connaître sa \textbf{hauteur}.
+  \begin{itemize}
+  \item Il parcourt sa base carrée et trouve que le côté mesure $230m$.
+  \item Ensuite, il grimpe sur une arête et trouve qu'elle mesure $220m$.
+  \end{itemize}
+
+  \textit{les longueurs seront arrondies aux centimètres.}
+  \begin{enumerate}
+  \item[1)] Quelle est la longueur en mètre de la diagonale de la base carré ?
+  \item[2)] Quelle est la hauteur en mètre de la pyramide ?
+  \end{enumerate}
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.65\linewidth]{sources/dm1/pyramide.pdf}
+  \end{figure}
+
+\end{multicols}
+
+\horrule{1px}
+
+\subsection*{Exercice 3 - Soldes}
+
+Au centre commercial de \textit{La Part-Dieu}, Chloé cherche une paire de \textit{Air Max} pendant les soldes.\\
+\begin{itemize}
+\item Elle coûte 110\euro \: à \textit{Courrir} ; \textit{(avant réduction)}. Chloé remarque un coupon de réduction de $40\%$.
+\item Elle sont également \textbf{au même prix} à \textit{Foot Locker} ; \textit{(avant réduction)}. Chloé remarque cette fois deux tickets de réduction; le premier de $30\%$ et un autre de $10\%$ lors de la deuxième démarque.\\
+\end{itemize}
+
+$a^2 - \dfrac{1}{2} + 5_c $
+
+\textit{les prix seront arrondis aux centimes.}\\
+
+\begin{enumerate}
+\item[1)] Calculer le prix des \textit{Air Max} après remise au magasin \textit{Courrir}.
+\item[2)] Calculer le prix des \textit{Air Max} après les deux remises au magasin \textit{Foot Locker}. Quel est le magasin le plus intéressant pour acheter les \textit{Air Max}.
+\end{enumerate}
+
+\end{document}
+ f

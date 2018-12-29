@@ -1,0 +1,116 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LaTeX Template
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Linux and Unix Users Group at Virginia Tech Wiki 
+% (https://vtluug.org/wiki/Example_LaTeX_chem_lab_report)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt]{article}
+\usepackage{geometry} % Pour passer au format A4
+\geometry{hmargin=1cm, vmargin=1cm} % 
+
+\usepackage{graphicx} % Required for including pictures
+\usepackage{float} % 
+
+%Français
+\usepackage[T1]{fontenc} 
+\usepackage[english,francais]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{eurosym}
+\usepackage{lmodern}
+\usepackage{url}
+\usepackage{multicol}
+
+%Maths
+\usepackage{amsmath,amsfonts,amssymb,amsthm}
+%\usepackage[linesnumbered, ruled, vlined]{algorithm2e}
+%\SetAlFnt{\small\sffamily}
+
+%Autres
+\linespread{1} % Line spacing
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+\renewcommand{\labelenumi}{\alph{enumi}.} % 
+\pagestyle{empty}
+%----------------------------------------------------------------------------------------
+%	DOCUMENT INFORMATION
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+%\maketitle % Insert the title, author and date
+
+\setlength{\columnseprule}{1pt}
+
+\textbf{Nom(s), Prénom(s) :}
+
+\begin{multicols}{2}
+\subsection*{Exercice 1 - Calculer des proportions}
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{sources/exo/1_calcul-thales-1.pdf}
+  \end{figure}
+
+
+  \begin{enumerate}
+  \item[1.] Dans le triangle $ABC$.\\ 
+    \phantom{abc}\\
+    \phantom{abc}\\
+    D'après le théorème de Thalès, on en déduit :\\
+    \phantom{abc}\\
+    \phantom{abc}\\
+    
+  \item[2.] Avec les longueurs : $AM = 3$ et $AC = 12$.
+    \begin{enumerate}
+    \item[a)] Calculer : $\dfrac{AM}{AC} = $\\
+    \item[b)] En déduire : $\dfrac{AN}{AB} = $\\
+    \end{enumerate}
+
+  \item[3.] On a aussi : $AB = 25$.\\
+    En déduire : $AN$.\\
+  \end{enumerate}
+\end{multicols}
+
+\vspace{0.8cm}
+\noindent\hrulefill
+\vspace{0.8cm}
+
+\begin{multicols}{2}
+\subsection*{Exercice 2 - Calculer des proportions}
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{sources/exo/1_calcul-thales-2.pdf}
+  \end{figure}
+
+
+  \begin{enumerate}
+  \item[1.] Dans le triangle $XYZ$.\\ 
+    \phantom{abc}\\
+    \phantom{abc}\\
+    D'après le théorème de Thalès, on en déduit :\\
+    \phantom{abc}\\
+    \phantom{abc}\\
+    
+  \item[2.] Avec les longueurs : $XA = 5$ et $XY = 25$.
+    \begin{enumerate}
+    \item[a)] Calculer : $\dfrac{XA}{XY} = $\\
+    \item[b)] En déduire : $\dfrac{XB}{XZ} = $\\
+    \end{enumerate}
+
+  \item[3.] On a aussi : $AB = 2$.\\
+    En déduire : $YZ$.\\
+  \end{enumerate}
+\end{multicols}
+
+\end{document}

@@ -1,0 +1,241 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Short Sectioned Assignment
+% LaTeX Template
+% Version 1.0 (5/5/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Frits Wenneker (http://www.howtotex.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[paper=a4, fontsize=9pt]{scrartcl} % A4 paper and 11pt font size
+
+
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage[english,francais]{babel} % Français et anglais
+\usepackage[utf8]{inputenc} 
+
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+
+\usepackage{enumitem}
+\usepackage{lmodern}
+\usepackage{url}
+\usepackage{eurosym} % signe Euros
+\usepackage{geometry} % Pour passer au format A4
+\geometry{a4paper} % 
+\usepackage{graphicx} % Required for including pictures
+\usepackage{float} % Allows putting an [H] in \begin{figure} to specify the exact location of the figure
+
+\usepackage{multicol}
+
+\usepackage{verbatim}
+
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{\centering \normalfont\scshape} % Make all sections centered, the default font and small caps
+
+%----------------------------------------------------------------------------------------
+%	Pied de Page
+%----------------------------------------------------------------------------------------
+
+
+\usepackage{fancyhdr} % Custom headers and footers
+\pagestyle{fancyplain} % Makes all pages in the document conform to the custom headers and footers
+\fancyhead{} % No page header - if you want one, create it in the same way as the footers below
+\fancyfoot[C]{Proportionnalité} % Empty center footer
+\fancyfoot[R]{\thepage} % Page numbering for right footer
+
+\renewcommand{\headrulewidth}{0pt} % Remove header underlines
+\renewcommand{\footrulewidth}{0pt} % Remove footer underlines
+
+%\usepackage{titling}
+%\setlength{\droptitle}{-1cm}
+%\setlength{\headheight}{13.6pt} % Customize the height of the header
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs - comment this line for an assignment with lots of text
+
+
+%----------------------------------------------------------------------------------------
+%	Titre
+%----------------------------------------------------------------------------------------
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+\title{
+  \vspace{-10ex}
+  \horrule{0.5pt} % Thin top horizontal rule
+  \huge Proportionnalité\\
+  \horrule{2pt}
+}
+
+\author{}
+\date{\vspace{-10ex}} % Today's date or a custom date
+
+%----------------------------------------------------------------------------------------
+%	Début du document
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+% RE-DEFINITION
+%----------------------------------------------------------------------------------------
+% MATHS
+%-----------
+
+\newtheorem{Definition}{Définition}
+\newtheorem{Theorem}{Théorème}
+\newtheorem{Proposition}{Propriété}
+
+% MATHS
+%-----------
+\renewcommand{\labelitemi}{$\bullet$}
+\renewcommand{\labelitemii}{$\circ$}
+%----------------------------------------------------------------------------------------
+%	Titre
+%----------------------------------------------------------------------------------------
+
+\maketitle % Print the title
+\setlength{\columnseprule}{1pt}
+
+\section{Reconnaître une situation de proportionnalité et produit en croix}
+
+\begin{multicols}{2}
+
+  \subsection{Tableau de proportionnelle}
+
+
+  % ajouter le résultat à droite.
+  \begin{center}
+    \begin{tabular}{| c || c | c | c|}
+      \hline
+      Quantité & 1 & 5  & 12\\
+      \hline
+      Prix     & 4 & 20 & 48\\ 
+      \hline
+    \end{tabular}
+  \end{center}
+
+
+  Un tableau est de proportionnalité si on peut passer d'une ligne à l'autre en multipliant par un même nombre. \\
+  On appelle ce nombre le \textbf{cœfficient de proportionnalité}. \textit{C'est également la valeur d'une unité.}\\
+
+  On calcule le coœfficient en divisant le nombre du bas par le nombre du haut : $\dfrac{20}{5}$.\\
+  Pour avoir la réponse souhaitée, il ne nous reste plus qu'à multiplier la quantité par ce cœfficient.
+
+\end{multicols}
+
+\begin{multicols}{2}
+
+  \subsection*{L'égalité des produits en croix}
+
+  \begin{center}
+    \begin{tabular}{| c || c | c |}
+      \hline
+      Quantité & 5 & 32  \\
+      \hline
+      Prix     & 20 & $x$ \\ 
+      \hline
+    \end{tabular}
+  \end{center}
+
+  On peut voir un tableau de proportionnel comme des fractions dont les rapports sont égaux. 
+
+  $$\dfrac{5}{20} = \dfrac{32}{x}$$
+
+  On parle alors d'égalité des produits en croix.
+  $$ 5 \times x = 20 \times 30 $$
+
+  On peut donc résoudre tout problème de proportionnalité et trouver la quatrième proportionnelle en multipliant les nombres sur la diagonales qu'on divise par la troisième valeur du tabelau.
+
+  $$x = \dfrac{4 \times 20}{5}$$
+
+\end{multicols}
+
+
+
+\section{Pourcentages}
+
+Un pourcentage représente une situation de proportionnalité. 
+
+\subsection{Appliquer un pourcentage}
+
+\subsection{Appliquer une réduction ou une augmentation}
+
+
+\subsection{Calculer un pourcentage}
+
+
+\section{Représentation graphique}
+
+\begin{Proposition}
+  Une situation de proportionnalité se représente graphiquement par des points alignés avec l'origine du repère. On parle également de \textbf{droite passant par l'origine}.
+\end{Proposition}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.8\linewidth]{sources/3/prop-repre.pdf}
+\end{figure}
+
+\section{Mouvements uniformes - Vitesse}
+\subsection{Proportionnalité et vitesse moyenne}
+
+\begin{Definition}
+  La vitesse moyenne sur un trajet est le  quotient de la distance parcourue par la durée du trajet.
+  $$v = \frac{d}{t}$$
+\end{Definition}
+
+\begin{Proposition}
+  À partir de cette relation et de deux grandeurs, on peut toujours en déduire la troisième.
+  \begin{multicols}{2}
+    $$d = v \times t$$
+    $$t = \frac{d}{v}$$
+  \end{multicols}
+\end{Proposition}
+
+\paragraph{Remarque}~~\\
+La distance parcourue est \textbf{proportionnelle} au temps de parcours. Le coefficient de proportionnalité est la vitesse moyenne. On parle alors de \textbf{mouvement uniforme}.
+
+\subsection{Conversions d'unité}
+
+Il existe plusieurs unités de vitesse. 
+
+\begin{itemize}
+\item Pour les voitures, scooters et coureurs. On parle de kilomètre par heure.\\
+  1 kilomètre en 1 heure : $1km/h$ ou $1km.h^{-1}$
+\item Pour les calculs scientifiques. On utilise les unités internationnales. On parle de mètre par seconde.\\
+  1 mètre en 1 seconde   : $1m/s$  ou $m.s^{-1}$ 
+\end{itemize}
+
+Pour comparer des vitesses, il faut qu'elles aient la même unité. \\On sait que : $1km = 1000m$, $1h = 60min = 3600s$ et $1min = 60s$
+
+\begin{multicols}{2}
+  \begin{enumerate}
+  \item[1.] Convertir 54 km /h en m/s
+    \begin{eqnarray*}
+      54 km /h &=& 54 000 m/h\\
+      &=& 900 m/min\\
+      &=& 15 m/s
+    \end{eqnarray*}
+
+  \item[2.] Convertir 2m/s en km/h.
+    \begin{eqnarray*}
+      2 m /s &=& 120  m /min\\
+      &=& 7200 m /h\\
+      &=& 7.2 km /h
+    \end{eqnarray*}
+  \end{enumerate}
+\end{multicols}
+
+\section{Agrandissements - Réductions}
+\section{Conversions d'unités}
+
+\end{document}

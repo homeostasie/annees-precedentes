@@ -1,0 +1,243 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Short Sectioned Assignment
+% LaTeX Template
+% Version 1.0 (5/5/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Frits Wenneker (http://www.howtotex.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt]{article}
+\usepackage{geometry} % Pour passer au format A4
+\geometry{hmargin=0.7cm, vmargin=0.7cm} % 
+
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage[english,francais]{babel} % Français et anglais
+\usepackage[utf8]{inputenc} 
+
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+
+\usepackage{enumitem}
+\usepackage{lmodern}
+\usepackage{url}
+\usepackage{eurosym} % signe Euros
+\usepackage{geometry} % Pour passer au format A4
+\geometry{a4paper} % 
+\usepackage{graphicx} % Required for including pictures
+\usepackage{float} % Allows putting an [H] in \begin{figure} to specify the exact location of the figure
+
+\usepackage{multicol}
+\usepackage{numprint}
+
+\usepackage{verbatim}
+
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{\centering \normalfont\scshape} % Make all sections centered, the default font and small caps
+
+%----------------------------------------------------------------------------------------
+%	Pied de Page
+%----------------------------------------------------------------------------------------
+
+
+\usepackage{fancyhdr} % Custom headers and footers
+\pagestyle{fancyplain} % Makes all pages in the document conform to the custom headers and footers
+\fancyhead{} % No page header - if you want one, create it in the same way as the footers below
+\fancyfoot[C]{Puissances} % Empty center footer
+\fancyfoot[R]{\thepage} % Page numbering for right footer
+
+\renewcommand{\headrulewidth}{0pt} % Remove header underlines
+\renewcommand{\footrulewidth}{0pt} % Remove footer underlines
+
+%\usepackage{titling}
+%\setlength{\droptitle}{-2.5cm}
+%\setlength{\headheight}{13.6pt} % Customize the height of the header
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs - comment this line for an assignment with lots of text
+
+
+%----------------------------------------------------------------------------------------
+%	Titre
+%----------------------------------------------------------------------------------------
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+\title{	
+  \vspace{-6ex}
+  \horrule{0.5pt} \\[0.4cm] % Thin top horizontal rule
+  \huge Puissances \\ % The assignment title
+  \horrule{2pt} \\[0.5cm] % Thick bottom horizontal rule
+}
+
+\author{}
+\date{\vspace{-10ex}} % Today's date or a custom date
+
+%----------------------------------------------------------------------------------------
+%	Début du document
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+% RE-DEFINITION
+%----------------------------------------------------------------------------------------
+% MATHS
+%-----------
+
+\newtheorem{Definition}{Définition}
+\newtheorem{Theorem}{Théorème}
+\newtheorem{Proposition}{Propriété}
+
+% MATHS
+%-----------
+\renewcommand{\labelitemi}{$\bullet$}
+\renewcommand{\labelitemii}{$\circ$}
+%----------------------------------------------------------------------------------------
+%	Titre
+%----------------------------------------------------------------------------------------
+\setlength{\columnseprule}{1pt}
+
+\maketitle % Print the title
+
+\vspace{-4ex}
+
+\begin{multicols}{2}
+
+  \begin{Definition}{Lecture}\\
+    $6^5$ se lit 6 à la puissance 5 ou 6 exposant 5.
+  \end{Definition}
+  
+  \subsection*{I - Notations et calculs}
+  
+\end{multicols}
+
+\horrule{0.5px}
+
+\begin{multicols}{2}
+  
+  \begin{Definition}{Puissances positives}
+    
+    \vspace{-4ex}
+
+    \begin{eqnarray*}
+      6^2 &=& 6 \times 6 = 36\\
+      6^3 &=& 6 \times 6 \times 6 = 216\\
+      6^4 &=& 6 \times 6 \times 6 \times 6 = 1296\\
+      &...& \\
+      6^{12} &=& 6 \times ... \times 6 = \numprint{2 176 782 336} \\
+      6^n &=& 6 \times ... \times 6
+    \end{eqnarray*}
+    Puissances négatives
+    \begin{eqnarray*}
+      3^{-2} &=& \dfrac{1}{3^{2}}  = \dfrac{1}{9} = 0.111\\
+      3^{-3} &=& \dfrac{1}{3^{3}} = \dfrac{1}{27} = 0.037\\
+      &...& \\
+      3^{-7} &=& \dfrac{1}{3^{7}} = \dfrac{1}{2187} = \numprint{0.00046}
+    \end{eqnarray*}
+    
+  \end{Definition}
+\end{multicols}
+
+On obtient des nombres très grands ou très proche de 0 qui \textit{dépassent les capacités des calculatrices} comme $5^{200}$ ou $7^{-150}$.
+
+\horrule{0.5px}
+
+\begin{multicols}{2}
+
+  \begin{Definition}{Quelques conventions}
+    \begin{itemize}
+    \item  Un nombre à la puissance 0 est égal à 1. \newline
+      $1^0 = 5^0 = 12^0 = 0^0 = ... = 15.7^0 = 1$ \\
+    \item Un nombre à la puissance 1 est égal à lui-même. \newline
+      $5^1 = 5$
+    \item Un nombre à la puissance -1 est l'inverse de ce nombre. \newline
+      $7^{-1} = \dfrac{1}{7}$
+    \end{itemize}
+  \end{Definition}
+
+\end{multicols}
+
+\horrule{0.5px}
+
+\subsection*{II - Quelques simplifications possibles}
+
+\begin{multicols}{2}
+
+  \begin{Proposition} {Peu de simplifications sont possibles avec les puissances. \textbf{Il faut toujours le même nombre sous les puissances.}}
+    \begin{itemize}
+    \item Lors d'une multiplication on additionne les exposants. \\
+      $5^3 \times 5^7 = 5^{3+7} = 5^{10}$
+    \item Lors d'une division on soustrait l'exposant du dessous à celui de haut. \\
+      $\dfrac{12^{10}}{12^{6}} = 12^{10 - 6} = 12^4$
+    \item On distribue l'ensemble des facteurs dans la parenthèse. \\
+      $(3 x)^4 = 3^4 \times x^4$
+    \end{itemize}
+  \end{Proposition}
+
+  \textbf{Preuve} par un retour au produit.
+  
+  \begin{itemize}
+  \item $5^3 \times 5^7 = 5 \times ... \times 5 \times  5 \times ... \times 5 =  5 \times ... \times 5 = 5^{10}$
+  \item $\dfrac{12^{10}}{12^{6}} = \dfrac{12 \times ... \times 12}{12 \times ... \times 12} =12 \times ... \times 12 = 12^4$
+  \item $(3 x)^4 = (3x) \times ... \times (3x) = 3 \times ... \times 3 \times x \times ... \times x = 3^4 \times x^4.$
+  \end{itemize}
+
+\end{multicols}
+
+\textbf{Attention}, on ne connaît pas directement le résultat d'une addition ou d'une soustraction de nombre avec des puissances : $8^4 + 8^2 \neq 8^6$, $(3 + x)^2 \neq 3^2 + x^2 $.
+
+\horrule{0.5px}
+
+\subsection*{ III - L'écriture scientifique}
+
+Traiter avec des nombres très grands (distance entre les galaxies en mètre) et des nombres très petits (masse d'un atome) est courant en Sciences. \\
+Pour facilité les calculs, on introduit la \textbf{notation scientifique}.
+
+\begin{Definition}
+  Tout nombre peut s'écrire en notation scientifique sous la forme : $ \boxed{ a \times 10^n} $\\
+  où a est un nombre décimal compris entre 1 et 10 appelé mantisse. (a peut être négatif)
+\end{Definition}
+
+\begin{multicols}{3}
+
+  Exemples :
+  \begin{itemize}
+  \item $\numprint{1 234} = 1,234 \times 10^3$
+  \item $\numprint{0,006 59} = 6,59 \times 10^{-3}$
+  \item Distance de la Terre au soleil :  $\numprint{149 600 000 000}m = 1,49 \times 10^{11}$
+  \item Masse d'un électron : $9,1 \times 10^{-31}kg$
+  \item Vitesse de la lumière : $\numprint{300 000 000}m/s = 3 \times 10 ^8 m/s$
+  \end{itemize}
+
+  Cette écriture simplifie les calculs.
+
+  \begin{eqnarray*}
+    & & \numprint{65 000 000 000} \times \numprint{420 000 000} \\
+    &=& 6,5 \times 10 ^{10} \times 4,2 \times 10 ^{8} \\
+    &=& 6,5 \times 4,2 \times 10^{10} \times 10^8 \\
+    &=& 27,3 \times 10^{10 + 8}\\
+    &=& 27,3 \times 10^{18} \\
+    &=& 2,73 \times 10^{19}
+  \end{eqnarray*}
+
+  \begin{eqnarray*}
+    \dfrac{\numprint{0. 000 74}}{\numprint{530 000}} &=& \dfrac{7,4 \times 10^{-4}}{5,3 \times 10^{5}} \\
+    &=& \dfrac{7,4}{5,3} \times \dfrac{10^{-4}}{10^{5}} \\
+    &=& 1,4 \times 10^{( -4 - 5 )} \\
+    &=& 1,4 \times 10^{-9}
+  \end{eqnarray*}
+
+\end{multicols}
+
+
+\end{document}

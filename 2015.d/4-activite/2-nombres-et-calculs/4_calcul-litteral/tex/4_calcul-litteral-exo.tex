@@ -1,0 +1,236 @@
+\documentclass{beamer}
+
+\usepackage{geometry} % Pour passer au format A4
+\usepackage{graphicx} % Required for including pictures
+\usepackage{float} %
+
+\usepackage{amsmath,amsfonts,amssymb,amsthm}
+\usepackage[T1]{fontenc}
+\usepackage[english,francais]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{eurosym} % signe Euros
+\usepackage{verbatim}
+\usepackage{multicol}
+\usefonttheme[onlymath]{serif}
+\usetheme{m} 
+
+\title{\rmfamily{\textsc{C}}alcul littéral}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\section{\rmfamily{\textsc{I - P}}rogramme de calcul}
+
+\begin{frame}
+  \frametitle{\rmfamily{\textsc{I - P}}rogramme de calcul}
+  \begin{exampleblock}{Programme de calcul 1}
+    
+    \begin{multicols}{2}
+      
+      \begin{enumerate}
+      \item[a)] Montrer qu'en choisissant $4$ comme nombre de départ, on obtient $8$.
+      \item[b)] Essayer avec $2$; $-10$ et $0$.
+      \item[c)] Faire une conjecture.
+      \end{enumerate}
+      
+      \fbox{\parbox{\textwidth}{
+          \begin{itemize}
+          \item Choisir un nombre.
+          \item Ajouter $3$.
+          \item Multiplier par $2$.
+          \item Retrancher $4$.
+          \item Afficher le résultat.
+          \end{itemize}
+      }}
+    \end{multicols}
+  \end{exampleblock}
+\end{frame}
+
+\begin{frame}
+  \frametitle{\rmfamily{\textsc{I - P}}rogramme de calcul}
+  \begin{exampleblock}{Programme de calcul 2}
+    
+    \begin{multicols}{2}
+      
+      \begin{enumerate}
+      \item[a)] Montrer qu'en choisissant $1$ comme nombre de départ, on obtient $20$.
+      \item[b)] Essayer avec $10$; $-5$ et $4$.
+      \item[c)] Faire une conjecture.
+      \item[c')] Peut-on trouver un nombre qui pose problème ?
+      \end{enumerate}
+      
+      \fbox{\parbox{\textwidth}{
+          \begin{itemize}
+          \item Choisir un nombre.
+          \item Multiplier par $5$.
+          \item Multiplier par $2$.
+          \item Diviser par le nombre de départ.
+          \item Ajouter $10$.
+          \item Afficher le résultat.
+          \end{itemize}
+      }}
+    \end{multicols}
+  \end{exampleblock}
+\end{frame}
+
+\begin{frame}
+  \frametitle{\rmfamily{\textsc{I - P}}rogramme de calcul}
+  \begin{exampleblock}{Programme de calcul 3}
+    
+    \begin{multicols}{2}
+      
+      \begin{enumerate}
+      \item[a)] Montrer qu'en choisissant $3$ comme nombre de départ, on obtient $9$.
+      \item[b)] Essayer avec $1$; $-2$ et $11$.
+      \item[c)] Faire une conjecture.
+      \item[c')] Peut-on trouver un nombre qui pose problème ?
+      \end{enumerate}
+      
+      \fbox{\parbox{\textwidth}{
+          \begin{itemize}
+          \item Choisir un nombre.
+          \item Le mettre au carré.
+          \item Soustraire deux fois \\le nombre de départ.
+          \item Ajouter $1$.
+          \item Afficher le résultat.
+          \end{itemize}
+      }}
+    \end{multicols}
+  \end{exampleblock}
+\end{frame}
+
+\section{\rmfamily{\textsc{II - S}}implification}
+
+\begin{frame}
+  \frametitle{\rmfamily{\textsc{II - S}}implification}
+  \begin{exampleblock}{Simplification 1}
+    \begin{itemize}
+    \item<1-> $ 2 \times a               = $
+    \item<2-> $ 2 \times b + 7 \times c  = $
+    \item<3-> $ a \times 5               = $
+    \item<4-> $ 3 \times x + y \times 10 = $
+    \item<5-> $ z + 2                    = $
+    \end{itemize}
+  \end{exampleblock}
+\end{frame}
+
+\begin{frame}
+  \frametitle{\rmfamily{\textsc{II - S}}implification}
+  \begin{exampleblock}{Simplification 2}
+    \begin{itemize}
+    \item<1-> $ 3 \times t + 7              = $
+    \item<2-> $ 2 \times b + 4 \times b     = $
+    \item<3-> $ 2 \times x + x \times 4 - 1 = $
+    \item<4-> $ 3 \times x \times 10 + 4    = $
+    \item<5-> $ a \times a                  = $
+    \end{itemize}
+  \end{exampleblock}
+\end{frame}
+
+\begin{frame}
+  \frametitle{\rmfamily{\textsc{II - S}}implification}
+  \begin{exampleblock}{Réduction 1}
+  \begin{multicols}{2}
+    \begin{itemize}
+    \item<1-> $ x + x                      = $
+    \item<2-> $ x \times x                 = $
+    \item<3-> $ 2x + x                     = $
+    \item<4-> $ 3x + 2                     = $
+    \item<5-> $ 2x \times x                = $
+    \item<6-> $ x^2 + x                    = $
+    \item<7-> $ 0 \times x                  = $
+    \item<8-> $ 1 + 2x                      = $    
+    \item<9-> $  5x \times 6x               = $  
+    \item<10-> $ x \times x + x              = $
+    \end{itemize}
+    \end{multicols}
+  \end{exampleblock}
+\end{frame}
+
+
+\section{\rmfamily{\textsc{III - D}}istribution}
+
+\begin{frame}
+  \frametitle{\rmfamily{\textsc{III - D}}istribution}
+  \begin{exampleblock}{Distribution 1}
+    \begin{itemize}
+    \item<1-> $ 3(x+ 6)                 = $
+    \item<2-> $ 5(6 - y)                = $
+    \item<3-> $ -7(2z - 3)              = $
+    \item<4-> $ -8(- 5 - 3y)            = $
+    \item<5-> $ 6(4x - 9)               = $
+    \item<6-> $ - 12(-5 + 3z)           = $
+    \end{itemize}
+  \end{exampleblock}
+\end{frame}
+
+\begin{frame}
+  \frametitle{\rmfamily{\textsc{III - D}}istribution}
+  \begin{exampleblock}{Distribution 2}
+    \begin{itemize}
+    \item<1-> $ (3 + x) \times 9        = $
+    \item<2-> $ 1 (3x - 7)               = $
+    \item<3-> $ (3x + 4) \times 8         = $
+    \item<4-> $ 5(1 - 7x)               = $
+    \item<5-> $ -8 (10 - 3x)              = $
+    \item<6-> $ 3 (-3 + 6x)             = $
+    \end{itemize}
+  \end{exampleblock}
+\end{frame}
+
+\begin{frame}
+  \frametitle{\rmfamily{\textsc{III - D}}istribution}
+  \begin{exampleblock}{Distribution 3}
+    \begin{itemize}
+    \item<1-> $ (-2 + 3x) \times 10        = $
+    \item<2-> $ x (x + 4)               = $
+    \item<3-> $ (4x + 5) \times 2x         = $
+    \item<4-> $ 2x(2 - x)               = $
+    \item<5-> $ -2 (10 - 3x)              = $
+    \item<6-> $ 3x (2x + 1)             = $
+    \end{itemize}
+  \end{exampleblock}
+\end{frame}
+
+\begin{frame}
+  \frametitle{\rmfamily{\textsc{III - D}}istribution}
+  \begin{exampleblock}{Distribution 4}
+    \begin{itemize}
+    \item<1-> $ (- 3 + y) \times 9        = $
+    \item<2-> $ -6 (2x - 7)               = $
+    \item<3-> $ (3t + 2) \times 8         = $
+    \item<4-> $ -8 (9 - 7x)               = $
+    \item<5-> $ -8z (4 - 3z)              = $
+    \item<6-> $ 3y (- 4 + 6y)             = $
+    \end{itemize}
+  \end{exampleblock}
+\end{frame}
+
+\begin{frame}
+  \frametitle{\rmfamily{\textsc{III - D}}istribution}
+  \begin{exampleblock}{Distribution 5}
+    \begin{itemize}
+    \item $ 3x - 5 + 5(2x - 2)                   = $
+    \item $ 4y - 6(3 - 2y) + 4(y - 1)            = $
+    \item $ 5t^2 + 3(2t - 3) – 2t(t - 5)         = $
+    \end{itemize}
+  \end{exampleblock}
+\end{frame}
+
+\begin{frame}
+  \frametitle{\rmfamily{\textsc{III - D}}istribution}
+  \begin{exampleblock}{Distribution 6}
+    \begin{itemize}
+    \item $ 11 + 2(x - 6) + 4(- 3x - 6)        = $
+    \item $ -2(x - 5) - 3(7 - 4x)              = $
+    \item $ 8 + 2y - 5(2y - 6) + 4             = $
+    \item $ -7y - 4(3y - 6) + 3 + 2(3y - 7)    = $   
+    \item $ -5z + 5z(z - 3) - 7(6 - 8z)        = $    
+    \end{itemize}
+  \end{exampleblock}
+\end{frame}
+
+
+\end{document}

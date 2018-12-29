@@ -1,0 +1,95 @@
+\documentclass{beamer}
+
+\usepackage{geometry} % Pour passer au format A4
+\usepackage{graphicx} % Required for including pictures
+\usepackage{float} %
+
+\usepackage{amsmath,amsfonts,amssymb,amsthm}
+\usepackage[T1]{fontenc}
+\usepackage[english,francais]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{eurosym} % signe Euros
+\usepackage{verbatim}
+\usepackage{multicol}
+\usefonttheme[onlymath]{serif}
+\usetheme{m} 
+
+\title{\rmfamily{\textsc{V}}itesse moyenne}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\section{ \rmfamily{\textsc{I - P}}roportionnalité et vitesse moyenne}
+\begin{frame}
+  \frametitle{\rmfamily{\textsc{I - P}}roportionnalité et vitesse moyenne}
+
+  \begin{alertblock}{Définition}
+    La vitesse moyenne sur un trajet est le  quotient de la distance parcourue par la durée du trajet.
+    $$v = \frac{d}{t}$$
+  \end{alertblock}
+
+  \begin{block}{Propriété}
+    À partir de cette relation et de deux grandeurs, on peut toujours en déduire la troisième.
+    \begin{multicols}{2}
+      $$d = v \times t$$
+      $$t = \frac{d}{v}$$
+    \end{multicols}
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \frametitle{\rmfamily{\textsc{I - P}}roportionnalité et vitesse moyenne}
+  \begin{block}{Remarque}
+    La distance parcourue est \textbf{proportionnelle} au temps de parcours. Le coefficient de proportionnalité est la vitesse moyenne. On parle alors de \textbf{mouvement uniforme}.
+  \end{block}
+\end{frame}
+
+
+
+\section{\rmfamily{\textsc{II - C}}onversions d'unités}
+\begin{frame}
+  \frametitle{\rmfamily{\textsc{II - C}}onversions d'unités}
+
+  \begin{block}{Unités de vitesse}
+    Il existe plusieurs unités de vitesse. 
+
+    \begin{itemize}
+    \item Pour les voitures, scooters et coureurs. On parle de kilomètre par heure.\\
+      1 kilomètre en 1 heure : $1km/h$ ou $1km.h^{-1}$
+    \item Pour les calculs scientifiques. On utilise les unités internationnales. On parle de mètre par seconde.\\
+      1 mètre en 1 seconde   : $1m/s$  ou $m.s^{-1}$ 
+    \end{itemize}
+  \end{block}
+  
+\end{frame}
+
+\begin{frame}
+  \frametitle{\rmfamily{\textsc{II - C}}onversions d'unités}
+
+  \begin{exampleblock}{Exemples}
+    Pour comparer des vitesses, il faut qu'elles aient la même unité. \\On sait que : $1km = 1000m$, $1h = 60min = 3600s$ et $1min = 60s$
+
+    \begin{multicols}{2}
+      \begin{enumerate}
+      \item[1.] Convertir 54 km /h en m/s
+        \begin{eqnarray*}
+          54 km /h &=& 54 000 m/h\\
+          &=& 900 m/min\\
+          &=& 15 m/s
+        \end{eqnarray*}
+
+      \item[2.] Convertir 2m/s en km/h.
+        \begin{eqnarray*}
+          2 m /s &=& 120  m /min\\
+          &=& 7200 m /h\\
+          &=& 7.2 km /h
+        \end{eqnarray*}
+      \end{enumerate}
+    \end{multicols}
+  \end{exampleblock}
+  
+\end{frame}
+
+\end{document}
