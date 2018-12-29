@@ -1,0 +1,266 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LaTeX Template
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Linux and Unix Users Group at Virginia Tech Wiki
+% (https://vtluug.org/wiki/Example_LaTeX_chem_lab_report)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt]{article}
+\usepackage{geometry} % Pour passer au format A4
+\geometry{hmargin=1cm, vmargin=1cm} %
+
+\usepackage{graphicx} % Required for including pictures
+\usepackage{float} %
+
+%Français
+\usepackage[T1]{fontenc}
+\usepackage[english,francais]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{eurosym}
+\usepackage{lmodern}
+\usepackage{url}
+\usepackage{multicol}
+
+%Maths
+\usepackage{amsmath,amsfonts,amssymb,amsthm}
+%\usepackage[linesnumbered, ruled, vlined]{algorithm2e}
+%\SetAlFnt{\small\sffamily}
+
+%Autres
+\linespread{1} % Line spacing
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+\renewcommand{\labelenumi}{\alph{enumi}.} %
+\pagestyle{empty}
+%----------------------------------------------------------------------------------------
+%	DOCUMENT INFORMATION
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+%\maketitle % Insert the title, author and date
+
+\begin{minipage}[t]{\textwidth}
+  \raggedright
+      {\bfseries $2^{nd}1$}\\[.35ex]
+      Série B\\
+      \vspace*{-1cm}
+      \raggedleft
+          {\bfseries Statistiques}\\[.35ex]
+          {\bfseries 19 Décembre 2014}\\[.35ex]
+\end{minipage}\\[1em]
+
+\begin{center}
+  \textsf{A une époque de supercherie universelle, dire la vérité est un acte révolutionnaire. - George Orwell}
+\end{center}
+
+\setlength{\columnseprule}{1pt}
+
+\subsection*{I - Connecté}
+
+\textit{Pour une classe de seconde, on relève par élève le temps en minutes passés par jour devant un écran.}
+
+\begin{center}
+  \begin{tabular}{| c | c | c | c | c | c | c | c | c | c | c | c | c | c | c | c | c | c | }
+    \hline
+    52 & 12 & 25 & 54 & 121 & 204 & 45 & 25 & 15 & 44 & 6 & 125 & 45 & 32 & 20 & 19 & 64 & 69 \\
+    \hline
+    32 & 22 & 54 & 44 & 104 & 14  & 25 & 34 & 31 & 22 & 0 & 129 & 23 &  4 & 32 & 16 & 42 & 21 \\
+    \hline
+  \end{tabular}
+\end{center}
+
+\begin{multicols}{2}
+  \begin{enumerate}
+  \item[1.] Quelle est la population statistique étudiée ? Quel est le caractère étudié ? Comment est-il ?
+  \item[2.] En moyenne combien de temps les élèves de cette classe passent-ils sur l'ordinateur ?
+  \item[3.]
+    \begin{enumerate}
+    \item[a)] Donner \textbf{votre} temps passé sur l'ordinateur hier.
+    \item[b)] En indiquant vos calculs, re-calculer la moyenne en ajoutant votre temps dans les données. Êtes-vous au dessus ou en dessous de la moyenne de la classe ?
+    \item[c)] Modifiez-vous grandement la moyenne précédente ? Pouvez-vous trouver une justification ?
+    \end{enumerate}
+  \end{enumerate}
+\end{multicols}
+
+\subsection*{II - SMS}
+
+\textit{Pour une classe de seconde le jour des vacances, on relève le nombre de SMS envoyés par chaque élève pendant le cours de maths.}
+
+\begin{center}
+  \begin{tabular}{| c | c | c | c | c | c | c | c | c | c | c | c | c | c | c | c | c | c | }
+    \hline
+    4 & 2 & 5 & 6 & 1 & 1 & 0 & 0 & 5 & 7 & 4 & 0 & 2 & 2 & 1 & 1 & 3 & 2 \\
+    \hline
+  \end{tabular}
+\end{center}
+
+\begin{multicols}{2}
+  \begin{enumerate}
+  \item[1.] Proposer un tableau des effectifs. (Lire la question suivante)
+  \item[2.] Sur la ligne d'après, proposer les fréquences cumulées croissantes
+  \item[3.] En moyenne, combien de SMS ont été envoyés ? 
+  \item[4.] À l'aide d'un histogramme représenté au mieux cette série d'effectifs. Utiliser le patron.
+  \end{enumerate}
+\end{multicols}
+
+\subsection*{III - Notes - \textit{Les parties 1 et 2 sont indépendantes.} }
+
+\subsubsection*{1 - Contrôle de stats}
+
+\textit{Lors du dernier contrôle de mathématiques, on relève les notes suivantes sur 20}
+
+\begin{center}
+  \begin{tabular}{| c || c | c | c | c | c | c | c | c | c | c | c | c | c | c | c | c | c | }
+    \hline
+    Notes     & 3 & 4 & 7 & 8 & 9 & 11 & 12 & 14 & 16 & 18 & 20 \\
+    \hline
+    Effectifs & 1 & 3 & 2 & 4 & 7 & 6  & 5  & 2  & 3  & 1  & 1  \\
+    \hline
+    ECC       & \phantom{xxxxxx} & \phantom{xxxxxx} &\phantom{xxxxxx}  & \phantom{xxxxxx} & \phantom{xxxxxx} & \phantom{xxxxxx}  & \phantom{xxxxxx}  & \phantom{xxxxxx}  & \phantom{xxxxxx}  & \phantom{xxxxxx}  & \phantom{xxxxxx}  \\
+    \hline
+  \end{tabular}
+\end{center}
+
+\begin{multicols}{2}
+  \begin{enumerate}
+  \item[1.] Calculer la moyenne de cette série.
+  \item[2.] En rajoutant une ligne au tableau, proposer les effectifs cumulés croissants.
+  \item[3.] Calculer la médiane de cette série. Interpréter ce résultat à l'aide d'une phrase.
+  \item[4.] Calculer les quartiles Q1 et Q3.
+  \item[5.] Quelle est l'étendue de la série.
+  \end{enumerate}
+\end{multicols}
+
+\begin{multicols}{2}
+
+\subsubsection*{2 - Cas particulier de Jean-Heude}
+
+  \textit{Pour toutes notes (sur 20)  en mathématiques, Jean-Heude a obtenu :}
+  \begin{itemize}
+  \item 13 et 18 coefficient 1.
+  \item 14 coefficient 2.
+  \item 15 et 18 coefficient 3.
+  \end{itemize}
+
+  \begin{enumerate}
+  \item[1.] Calculer la moyenne Jean-Heude pour ce trimestre.
+  \item[2.] Comme souvent, le professeur de mathématiques s'est trompé en comptant les points de Jean-Heude. Sa note coefficient $2$ n'est pas de $14/20$ mais de $15/20$. Calculer sa nouvelle moyenne.
+  \item[3.] En partant de la nouvelle moyenne. Jean-Heude se rend compte qu'il lui manque encore une note coefficient $3$. Combien doit-il obtenir \textbf{au minimum} afin d'obtenir une moyenne de 18 ? La notation est de 0.5 en 0.5.
+  \end{enumerate}
+\end{multicols}
+
+\newpage
+
+
+
+\begin{center}
+  \begin{tabular}{| c || c | c | c | c | c | c | c |}
+    \hline
+    NBR  SMS     & \phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} &\phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} & \phantom{xxxxxxxx}\\
+                 & \phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} &\phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} & \phantom{xxxxxxxx}\\
+ 
+    \hline
+    Effectifs    & \phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} &\phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} & \phantom{xxxxxxxx}\\
+                 & \phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} &\phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} & \phantom{xxxxxxxx}\\ 
+
+    \hline
+    FCC          & \phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} &\phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} & \phantom{xxxxxxxx}\\
+                 & \phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} &\phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} & \phantom{xxxxxxxx}\\ 
+    \hline
+  \end{tabular}
+\end{center}
+
+\vspace{0.2cm }
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.55\linewidth]{sources/ie/histogramme.pdf}
+\end{figure}
+
+\begin{center}
+  \begin{tabular}{| c || c | c | c | c | c | c | c |}
+    \hline
+    NBR  SMS     & \phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} &\phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} & \phantom{xxxxxxxx}\\
+                 & \phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} &\phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} & \phantom{xxxxxxxx}\\
+ 
+    \hline
+    Effectifs    & \phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} &\phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} & \phantom{xxxxxxxx}\\
+                 & \phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} &\phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} & \phantom{xxxxxxxx}\\ 
+
+    \hline
+    FCC          & \phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} &\phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} & \phantom{xxxxxxxx}\\
+                 & \phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} &\phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} & \phantom{xxxxxxxx}\\ 
+    \hline
+  \end{tabular}
+\end{center}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.55\linewidth]{sources/ie/histogramme.pdf}
+\end{figure}
+
+
+
+\newpage
+
+
+
+\begin{center}
+  \begin{tabular}{| c || c | c | c | c | c | c | c |}
+    \hline
+    NBR  SMS     & \phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} &\phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} & \phantom{xxxxxxxx}\\
+                 & \phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} &\phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} & \phantom{xxxxxxxx}\\
+ 
+    \hline
+    Effectifs    & \phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} &\phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} & \phantom{xxxxxxxx}\\
+                 & \phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} &\phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} & \phantom{xxxxxxxx}\\ 
+
+    \hline
+    FCC          & \phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} &\phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} & \phantom{xxxxxxxx}\\
+                 & \phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} &\phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} & \phantom{xxxxxxxx}\\ 
+    \hline
+  \end{tabular}
+\end{center}
+
+\vspace{0.2cm }
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.55\linewidth]{sources/ie/histogramme.pdf}
+\end{figure}
+
+\begin{center}
+  \begin{tabular}{| c || c | c | c | c | c | c | c |}
+    \hline
+    NBR  SMS     & \phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} &\phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} & \phantom{xxxxxxxx}\\
+                 & \phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} &\phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} & \phantom{xxxxxxxx}\\
+ 
+    \hline
+    Effectifs    & \phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} &\phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} & \phantom{xxxxxxxx}\\
+                 & \phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} &\phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} & \phantom{xxxxxxxx}\\ 
+
+    \hline
+    FCC          & \phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} &\phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} & \phantom{xxxxxxxx}\\
+                 & \phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} &\phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} & \phantom{xxxxxxxxx} & \phantom{xxxxxxxx}\\ 
+    \hline
+  \end{tabular}
+\end{center}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.55\linewidth]{sources/ie/histogramme.pdf}
+\end{figure}
+
+\end{document}

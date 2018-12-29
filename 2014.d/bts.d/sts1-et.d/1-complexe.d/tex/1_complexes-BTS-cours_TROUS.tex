@@ -1,0 +1,653 @@
+\documentclass[11pt,dvips]{article} 
+\usepackage{hyperref}
+\usepackage[cp1252]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[a4paper,vmargin=1cm,hmargin=1.5cm,includefoot,includehead]{geometry}
+\usepackage{graphicx}
+\usepackage{pstricks,pst-plot} 
+\usepackage{pst-eucl}
+\usepackage{framed}
+\usepackage[fleqn]{amsmath}
+\usepackage{amssymb}
+\usepackage{fancyhdr}
+\usepackage{fancybox}
+\usepackage{multicol}
+\usepackage{xcolor}
+\usepackage{epsfig}
+\usepackage{pifont}
+\usepackage[framed]{ntheorem}
+\usepackage[frenchb]{babel}
+\usepackage{tabularx}
+
+\lhead[]{\small BTS ÉLECTROTECHNIQUE}
+\chead[]{\textsc{Nombres complexes}}
+\rhead[]{\small {$2014$}}
+\lfoot{\small Great thanks to N. DAVAL}
+\rfoot{\small -\thepage-}
+\cfoot{}
+
+\def\R{{\mathbb R}} 
+\def\Q{{\mathbb Q}}
+\def\Z{{\mathbb Z}} 
+\def\D{{\mathbb D}} 
+\def\N{{\mathbb N}} 
+\def\C{{\mathbb C}}
+
+\pagestyle{fancy}
+
+\theoremstyle{break}
+\theorembodyfont{\upshape}
+\newframedtheorem{Th}{Théorème}
+\newframedtheorem{Prop}{Propriété}
+\newtheorem{Rem}{Remarque}
+\theorembodyfont{\small \sffamily}
+\newtheorem{Ex}{Exemple}
+\theorembodyfont{\slshape}
+\shadecolor{lightgray}
+\newshadedtheorem{Def}{Définition}
+\theoremstyle{nonumberbreak}
+\theorembodyfont{\rmfamily}
+\newtheorem{Exo}{EXERCICE}
+\newtheorem{Sol}{Solution}
+
+\renewcommand\thesection{\Roman{section}}
+\renewcommand\FrenchLabelItem{\textbullet}
+\newcommand{\V}{\overrightarrow}
+\newcommand{\Rep}{(O;\V{u};\V{v})}
+\newcommand{\Int}[2]{[\, #1 ; #2 \,]}
+\newcommand{\Ree}{\mathfrak{Re}} 
+\newcommand{\Ima}{\mathfrak{Im}} 
+\newcommand{\Abs}[1]{\left \lvert#1\right \rvert}
+\newcommand{\Coor}[2]{\begin{pmatrix} #1\\#2 \end{pmatrix}}
+\newcommand{\Syst}[2]{\left\{\begin{array}{ccccc} #1\\ #2 \end{array}\right.}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1cm}}
+
+
+
+\begin{document}
+
+\vspace*{1.5cm}
+
+\begin{center}
+   \shadowbox{\begin{Huge}
+      Nombres Complexes
+   \end{Huge}}
+\end{center}
+
+\vspace*{1.5cm}
+
+
+\tableofcontents
+
+\setlength{\parskip}{3ex plus 1ex minus 1ex}
+\setlength{\parindent}{0cm} 
+
+\vspace*{3cm}
+
+Source Wikipédia : Histoire des nombres complexes.
+
+L'histoire des nombres complexes commence vers le milieu du $XVI^{e}$ siècle avec une première apparition en 1545, dans l'oeuvre de \textbf{Cardan}, d'une expression contenant la racine carrée d'un nombre négatif, nombre qu'il appelle \textit{sophistiqué}. C'est \textbf{Raphaël Bombelli} qui met en place les règles de calcul sur ces quantités que l'on appelle alors impossibles.
+\newpage
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Introduction} %___________
+
+Tous les nombres positifs possèdent une racine carrée. Par exemple, $9$ a pour racines carrées $3$ et $-3$. Par contre, aucun réel négatif n'a de racine carrée (réelle). Les nombres complexes offrent la possibilité de pallier à cette injustice !
+
+
+\subsection{Le nombre $j$} %________________
+
+Le \underline{nombre $j$} est un nombre dont le carré vaut $-1$. Ainsi, $j^{2}=-1$.\\
+De plus, son opposé $-j$ a aussi pour carré $-1$. En effet : $(-j)^{2}=j^{2}=-1$.\\
+Les deux racines de $-1$ sont les deux nombres irréels  $j$ et $-j$.
+  
+\underline{Un peu d'histoire :} La notation $j$ fut introduite par \textbf{Euler} en $1777$, puis reprise par \textbf{Gauss} au début du $XIX$ème siècle. Cependant, le premier à parler de nombre imaginaire fut le très cartésien \textbf{Descartes} en $1637$.
+
+
+\subsection{L'ensemble des nombres complexes} %______________________
+
+On connait déjà $5$ ensembles permettant de "ranger" les nombres : il s'agit de $\N, \Z, \D, \Q$ et $\R$ :
+\begin{center}  
+   \psset{unit=0.9}
+   \begin{pspicture}(14,10)
+      % N
+      \psframe[linecolor=green](4,4)(8,6)
+      \rput(4.4,5.6){\textcolor{green}{$\N$}}
+      \rput(5,5){\textcolor{green}{$0$}}
+      \rput(6.4,5.5){\textcolor{green}{$1$}}
+      \rput(6,4.5){\textcolor{green}{$\sqrt{9}$}}
+      \rput(7,5.2){\textcolor{green}{$10^3$}}
+      \rput(7.7,4.4){\textcolor{green}{$\frac{6}{3}$}}
+      % Z
+      \psframe[linecolor=red](3,3)(9.5,7)
+      \rput(3.4,6.6){\textcolor{red}{$\Z$}}
+      \rput(4.5,6.5){\textcolor{red}{$-1$}}
+      \rput(8.5,3.5){\textcolor{red}{$-\sqrt{4}$}}
+      \rput(4.1,3.2){\textcolor{red}{$-37$}}
+      \rput(8.6,6.4){\textcolor{red}{$-10025$}}
+      % D
+      \psframe[linecolor=blue](2,2)(11,8)
+      \rput(2.4,7.6){\textcolor{blue}{$\D$}}
+      \rput(6.5,7.5){\textcolor{blue}{$0.008$}}
+      \rput(4.5,2.5){\textcolor{blue}{$-1.2$}}
+      \rput(10.1,6.2){\textcolor{blue}{$\frac{3}{25}$}}
+      \rput(10.4,3.2){\textcolor{blue}{$\frac{1}{10^6}$}}
+      %Q
+      \psframe[linecolor=orange](1,1)(12.5,9)
+      \rput(1.4,8.6){\textcolor{orange}{$\Q$}}
+      \rput(3,8.5){\textcolor{orange}{$0.33\underline{3}$}}
+      \rput(11.6,5.2){\textcolor{orange}{$-\frac{13}{19}$}}
+      \rput(11,1.5){\textcolor{orange}{$\frac{1}{6}$}}
+      \rput(4,1.5){\textcolor{orange}{$\sqrt{\frac{4}{9}}$}}
+      % R
+      \psframe(0,0)(14,10)
+      \rput(0.4,9.6){$\R$}
+      \rput(4.5,9.6){$\pi$}
+      \rput(9.5,9.4){$1236\pi$}
+      \rput(1.1,0.5){$\sqrt{2}$}
+      \rput(13,4.2){$-\frac{2\pi}{3}$}
+   \end{pspicture}
+\end{center}     
+
+\begin{Def}
+   On  définit l'ensemble $\C$ qui a les caractéristiques suivantes :
+   \begin{dinglist}{228}
+         \item Ses éléments sont appelés \dotfill
+         \item Il contient le nombre $j$ vérifiant \dotfill
+   \end{dinglist}
+\end{Def}
+
+\smallskip
+
+\begin{Rem}
+   $\C$ est alors un ensemble encore plus grand que tous les autres, et on a : $\N \subset \Z \subset \D \subset \Q \subset \R \subset \C$.
+\end{Rem}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Forme algébrique} %______________________________________
+
+\subsection{Définition} %_______________________________________
+
+\begin{Def}
+   Chaque élément $z$ de l'ensemble $\C$ s'écrit de manière unique $z=a+jb$, $a$ et $b$ étant des réels.
+   \begin{dinglist}{228}
+      \item $a$ est appelé \dotfill
+      \item $b$ est appelé \dotfill
+   \end{dinglist}
+\end{Def}
+
+\begin{Rem}
+   \textbf{Nombres particuliers :}
+   \begin{itemize}
+      \item si $b=0$, on a $z=a$, $z$ est donc réel,
+      \item si $a=0$, on a $z=jb$, on dit que $z$ est un \underline{imaginaire pur}.
+   \end{itemize}
+\end{Rem}
+
+\begin{Ex}
+   Dans chacun des exemples suivants, on donne la partie réelle et la partie imaginaire :\\
+   \begin{tabular}{p{0.35cm}!{\ding{212}}lp{2cm}p{2cm}l}
+      & $z=2+3j$ & & $a=$ & $b=$ \\
+      & $z=-1+\frac{1}{2}j$ & & $a=$ & $b=$ \\
+      & $z=-j$ & & $a=$ & $b=$ \\
+      & $z=\pi$ & & $a=$ & $b=$ \\
+      & $z=4j-\frac{1}{3}$ & & $a=$ & $b=$. \\
+   \end{tabular}
+\end{Ex}
+
+\begin{Prop}
+   Deux nombres complexes sont égaux si et seulement si ils ont la même partie réelle et la même partie imaginaire : \vspace{0.5cm} \\ 
+   .\dotfill
+\end{Prop}
+
+
+\subsection{Premiers calculs} %_____________
+
+\begin{Prop}
+   On pose $z=a+jb$, $z'=a'+jb'$ et $k$ un réel, on a :
+   \begin{dinglist}{169}
+      \item $z+z'=$ \dotfill
+      \item $z-z'=$ \dotfill
+      \item $kz=$ \dotfill
+      \item $zz'=$ \dotfill
+   \end{dinglist}
+\end{Prop}
+
+\textbf{Démonstration de la dernière propriété :} \vspace{0.4cm}\\
+   $zz'=$ \dotfill \vspace{0.4cm}\\  
+         .\dotfill \vspace{0.4cm}\\
+         .\dotfill
+        
+\begin{Ex}
+   Soit $z = 2 + 3j$ et $z' =  j - 5$, on a : \\
+   \begin{dinglist}{212}
+      \item $z+z'=$ \dotfill \\
+      \item $z-z'=$ \dotfill \\
+      \item $2z-3z'=$ \dotfill \\
+      \item $zz'=$ \dotfill \\
+      \item $z^{2}=$ \dotfill
+   \end{dinglist}
+\end{Ex}
+
+
+\subsection{Représentation graphique} %_____________
+
+\begin{Def}
+   On se place dans le plan rapporté à un repère orthonormal direct $\Rep$.
+   \begin{dinglist}{228}
+      \item Au point $M$ de coordonnées $(a ; b)$ on peut associer le nombre complexe $z = a + jb$, \\ 
+              \hspace*{0.2cm} On dit que $z = a +j b$  est l'\underline{affixe} du point $M$.
+      \item Au vecteur $\V{w}$ de coordonnées $(a ; b)$ on peut associer le nombre complexe $z = a + jb$, \\
+              \hspace*{0.2cm} On dit que $z = a + jb$  est l'\underline{affixe} du vecteur $\V{w}$.
+      \item Lorsqu'on repère un point ou un vecteur par son \underline{affixe} dans un repère orthonormal direct,\\
+              \hspace*{0.2cm} on dit qu'on se place dans le \underline{plan complexe}.
+   \end{dinglist}
+\end{Def}
+
+\begin{center}
+   \psset{unit=1.5cm} 
+   \begin{pspicture}(-0.5,-0.5)(3.5,2.5)
+      \psaxes{->}(0,0)(1,1)
+      \psline[linewidth=0.05]{->}(0,0)(3,2)
+      \psline(-0.5,0)(3.5,0)
+      \psline(0,-0.5)(0,2.5)
+      \rput(-0.3,-0.3){$0$}
+      \rput(0.5,-0.3){$\V{u}$}
+      \rput(-0.3,0.5){$\V{v}$}
+      \psdot(3,2)
+   \end{pspicture} 
+\end{center}
+
+\medskip
+
+\begin{Ex}
+   On place dans le plan complexe les points $M_i$ d'affixes $z_i$ :
+
+   \begin{minipage}{6cm}
+      \begin{dinglist}{212}
+         \item $z_1=2+3j$
+         \item $z_2=3+j$
+         \item $z_3=-1+2j$ 
+         \item $z_4=2-j$  
+         \item $z_5=j$     
+         \item $z_6=-2j$     
+         \item $z_7=-2$ 
+         \item $z_8=-j-3$   
+      \end{dinglist}
+   \end{minipage}
+   \begin{minipage}{10cm}
+      \begin{pspicture}(-4,-2.5)(4,3)
+         \psgrid[subgriddiv=1,griddots=10,gridlabels=0](-4,-2)(4,3)
+         \psaxes[labels=none]{->}(0,0)(-4,-2)(4,3)
+         \pstGeonode[PosAngle={-135,-90,180}]{0}(1,0){1}(0,1){i}
+      \end{pspicture}
+   \end{minipage}
+\end{Ex}  
+
+\begin{Prop}
+   Si $M$ a pour affixe  $z = a + jb$  et  si $M'$ a pour affixe  $z' = a' + jb'$, alors :  
+   \begin{dinglist}{169}
+      \item Le vecteur $\V{MM'}$ a pour affixe \dotfill
+      \item $||\V{OM}||=$ \dotfill
+      \item $||\V{MM'}||=$ \dotfill
+      \item Le milieu $j$ de $[MM']$ a pour affixe  $z_I =$ \dotfill
+   \end{dinglist}
+\end{Prop}
+
+
+\subsection{Conjugué d'un complexe} %__________________
+
+\begin{Def}
+   On appelle \underline{conjugué} du nombre complexe $z=a+jb$ le nombre \dotfill
+\end{Def}
+
+Géométriquement, si $M_1$  est le point d'affixe $z$, le point  $M_2$  d'affixe $\overline{z}$ est le symétrique de $M_1$ par rapport à l'axe des abscisses.
+
+\begin{center}
+   \psset{unit=0.6} 
+   \begin{pspicture}(-3.7,-2)(3.7,1.1)
+      \psaxes{->}(0,0)(1,1)
+      \psline[linewidth=0.05]{->}(-3,-2)(3,2)
+      \psline[linewidth=0.05]{->}(3,-2)(-3,2)
+      \psline(-3.5,0)(3.5,0)
+      \psline(0,-2.5)(0,2.5)
+      \pspolygon[linestyle=dashed](3,-2)(3,2)(-3,2)(-3,-2)
+      \rput(-0.15,-0.3){$0$}
+      \rput(0.72,-0.25){$\V{u}$}
+      \rput(-0.3,0.5){$\V{v}$}
+      \rput(3.5,2.3){$M_1(z)$}
+      \rput(3.2,0.2){\Large{$\textcolor{red}{a}$}}
+      \rput(0.2,2.2){\Large{$\textcolor{blue}{b}$}}
+   \end{pspicture} 
+\end{center}
+
+\begin{Ex}
+   Soit  $z=3+5j$ et $z'=-2+3j$, on a :
+   \begin{dinglist}{212}
+      \item $z+z'=$ \dotfill \\
+      
+              \hspace*{0.2cm} $z \times z'=$ \dotfill \\
+      \item $\overline{z}=$ \dotfill \\
+      
+              \hspace*{0.2cm} $\overline{z'}=$ \dotfill \\
+      \item $\overline{z}+\overline{z'}=$ \dotfill \\
+      
+              \hspace*{0.2cm} $\overline{z+z'}=$ \dotfill \\
+      \item $\overline{z} \times \overline{z'}=$ \dotfill \\
+      
+              \hspace*{0.2cm} $\overline{z \times z'}=$ \dotfill \\
+   \end{dinglist}
+\end{Ex}
+
+\begin{Prop}
+   Soit $z$ et $z'$ deux nombres complexes, alors :
+   \begin{dinglist}{169}
+      \item $\overline{z+z'}=$ \dots \dots \dots \dots \hspace{3.5cm} \ding{169} $\overline{z \times z'}=$ \dots \dots \dots \dots
+      \item $\overline{\overline{z}}=$ \dots \dots \dots \dots
+      \item $z \in \R \Longleftrightarrow $ \dots \dots \dots \dots \hspace{3.1cm} \ding{169} $z \in j \R \Longleftrightarrow $ \dots \dots \dots \dots
+      \item $\Ree(z)=$ \dots \dots \dots \dots \hspace{3.5cm} \ding{169} $\Ima(z)=$ \dots \dots \dots \dots
+   \end{dinglist}
+\end{Prop}
+
+\subsection{Inverse d'un complexe} %______________
+
+Soit $z=a+jb$, on a : $z \overline{z}=(a+jb)(a-jb)=a^2-(jb)^2=a^2+b^2$ qui est un nombre réel.
+
+Ainsi, on a : 
+$\dfrac{1}{z}=$ \dotfill
+
+\begin{Ex}
+   Calculs d'inverses:
+   \begin{dinglist}{212}
+      \item $\dfrac{1}{1+j}=$ \dotfill \\
+      
+      \item $\dfrac{1}{2-3j}=$ \dotfill \\
+      
+      \item $\dfrac{2}{j}=$ \dotfill \\
+      
+      \item $\dfrac{2+j}{-3+j}=$ \dotfill
+   \end{dinglist}
+\end{Ex}
+
+\begin{Prop}
+   Soit $z$ et $z'$ deux nombres complexes, alors :
+   \begin{dinglist}{169}
+      \item $\overline{\left(\dfrac{1}{z}\right)}=\dots\dots\dots$. \hspace{5cm} \ding{169} $\overline{\left(\dfrac{z}{z'}\right)}=\dots\dots\dots$
+   \end{dinglist}
+\end{Prop}
+
+\newpage
+\section{Forme trigonométrique} %_____________________
+
+\subsection{Module d'un nombre complexe}
+
+\begin{Def}
+   Le \underline{module} du complexe  $z$ est le réel positif noté $\Abs{z}$ tel que $\Abs{z}=\dotfill$
+\end{Def}
+
+\begin{Rem}
+   Si $a$ est un réel, $\Abs{a}=\sqrt{a\ \,\overline{a}}=\sqrt{a \,a}=\sqrt{a^2}$ car $\overline{a}=a$. \\
+   La notion de module dans $\C$ généralise donc celle de valeur absolue dans $\R$.
+\end{Rem}
+
+\smallskip
+
+\begin{Ex}
+   Calcul du module de nombres complexes : \\
+   \begin{dinglist}{212}
+      \item $\Abs{3+4j}=\dotfill$ \\
+      
+      \item $\Abs{1-j}=\dotfill$ \\
+      
+      \item $\Abs{-5-2j}=\dotfill$ \\
+      
+      \item $\Abs{-5}=\dotfill$ \\
+      
+      \item $\Abs{9j}=\dotfill$
+   \end{dinglist}
+\end{Ex}
+
+\begin{Prop}
+  \begin{dinglist}{169}
+      \item $\Abs{z}=0 \Leftrightarrow \dotfill$
+      \item $\Abs{-z}=\dotfill$
+      \item $\Abs{z \times z'}=\dotfill$
+      \item $\Abs{\dfrac{1}{z}}=\dotfill$
+      \item $\Abs{\dfrac{z}{z'}}=\dotfill$
+   \end{dinglist}
+\end{Prop}
+
+
+\subsection{Argument d'un complexe non nul} %_________________________
+
+\begin{Def}
+   Soit $z=a+jb$ un nombre complexe non nul et $M$ le point d'affixe $z$ :
+   \begin{dinglist}{228}
+      \item On appelle \underline{argument} de $z$ tout nombre réel $\theta$ tel que   $\theta=$ \dotfill \\
+      \item On note $\theta=$ \dotfill \\
+      \item $\theta$ vérifie : $\Syst{\cos \theta & = & \dots\dots\dots\dots}{\sin \theta & = & \dots\dots\dots\dots}$
+   \end{dinglist}
+\end{Def}
+
+\begin{Ex}
+   Calcul d'un argument de nombres complexes :
+   \begin{dinglist}{212}
+      \item $z_1=2+2j$ : \vspace{2.5cm}
+      \item $z_2=1+j\sqrt{3}$ : \vspace{2.5cm}
+   \end{dinglist}
+\end{Ex}
+
+\begin{Prop}
+   Propriétés algébriques des arguments :
+   \begin{dinglist}{169}
+      \item $\arg(zz')=$ \dotfill
+      \item $\arg(\dfrac{1}{z})=$ \dotfill
+      \item $\arg (\dfrac{z}{z'})=$ \dotfill
+  \end{dinglist}
+\end{Prop}
+
+\begin{Ex}
+   D'après l'exemple précédent, on obtient :
+   \begin{dinglist}{212}
+      \item $\arg(z_1z_2)=$ \dotfill \\
+      \item $\arg\left(\dfrac{1}{z_1}\right)=$ \dotfill \\
+      \item $\arg\left(\dfrac{z_1}{z_2}\right)=$ \dotfill \\
+   \end{dinglist}
+\end{Ex}
+
+
+\subsection{Ecriture trigonométrique} %___________
+
+On se place dans un plan muni du repère $\Rep$.
+
+\begin{Def}
+   Tout nombre complexe non nul $z$ peut-être écrit sous la forme \dotfill
+   \begin{dinglist}{228}
+      \item $\arg(z)=\theta \in \R$ est l'argument de $z$
+      \item $\Abs{z}=r \in \R^+_*$ est le module de $z$
+   \end{dinglist}
+   cette écriture s'appelle la \underline{forme trigonométrique} de $z$.
+\end{Def}
+
+\begin{center}
+   \psset{unit=1.2cm} 
+   \begin{pspicture}(-0.5,-0.3)(3.5,2.3)
+      \psaxes{->}(0,0)(1,1)
+      \psline[linewidth=0.05,linecolor=blue]{->}(0,0)(3,2)
+      \psline(-0.5,0)(3.5,0)
+      \psline(0,-0.5)(0,2.5)
+      \psline[linestyle=dashed](3,0)(3,2)
+      \psline[linestyle=dashed](0,2)(3,2)
+      \rput(-0.2,-0.2){$0$}
+      \rput(0.5,-0.2){$\V{u}$}
+      \rput(-0.2,0.5){$\V{v}$}
+      \rput(3.2,2.2){$M(z)$}
+   \end{pspicture} 
+\end{center}
+
+Pour trouver la forme trigonométrique d'un nombre $z$, il faut donc calculer successivement le module et l'argument de $z$.
+
+\smallskip
+
+\begin{Ex}
+   Passage de la forme algébrique à la forme trigonométrique : \\
+   \begin{dinglist}{212}
+      \item $z_1=1-j$ \vspace{2.4cm}
+      \item $z_2=\sqrt{3}+j$ \vspace{2.4cm}
+   \end{dinglist}
+\end{Ex}
+
+\begin{Rem}
+   Dans certains cas, il est inutile de faire tous les calculs : la forme trigonométrique se "voit" :
+   \begin{itemize}
+      \item $1=\cos 0+j\sin 0$  donc \dotfill
+      \item $j=\cos\left(\dfrac{\pi}{2}\right)+j\sin \left(\dfrac{\pi}{2}\right)$ donc \dotfill
+   \end{itemize}
+\end{Rem}
+
+\newpage
+
+\section{Forme exponentielle} %____________________________
+
+\subsection{Définitions}%____________________________
+
+\begin{Def}
+   Pour tout nombre réel $\theta$, on pose : \dotfill
+\end{Def}
+
+\begin{Rem}
+   \begin{itemize}
+      \item Il existe une fonction appelée fonction exponentielle $x \longmapsto e^x$ de $\R$ dans $\R$. Mais ici, $j\theta$ est un nombre complexe et la fonction $\theta \longmapsto e^{j\theta}$ n'est pas au programme de terminale.
+      \item $e^1=e$ est un nombre qui a pour valeur approchée $2,718$.
+   \end{itemize}
+\end{Rem}
+
+\smallskip
+
+\begin{Def}
+   Soit $z=a+jb$ un nombre complexe non nul de module $r=\Abs{z}$ et dont un argument est $\theta=arg(z)$.\\
+   On note ce nombre $z$ sous la forme \dotfill.\\
+   Cette écriture est appelée \dotfill
+\end{Def}
+
+\begin{Rem}
+   On a alors $z=r\,e^{j\theta}=r(\cos\theta+j\sin\theta)=r\cos\theta+jr\sin\theta=a+jb$.
+\end{Rem}
+
+\smallskip
+
+\begin{Ex}
+   Différentes écritures des nombres complexes $z_1$ et $z_2$ :\\
+   \renewcommand{\arraystretch}{3.5}
+   \begin{tabular}{|C{5}|C{5}|C{5}|}
+      \hline
+      Forme algébrique & Forme trigonométrique & Forme exponentielle \\ 
+      \hline
+      $1-j$ & & \\ 
+      \hline
+      $\sqrt3+j$ & & \\
+      \hline
+   \end{tabular}
+\end{Ex}
+
+\smallskip
+
+\begin{Ex}
+   Passage de la forme exponentielle à la forme algébrique de $z=4\,e^{j\frac{3\pi}{4}}$ : \\
+   \begin{dinglist}{212}
+      \item $z=\dotfill$ \\
+      \item $z=\dotfill$ \\
+      \item $z=\dotfill$ \\
+   \end{dinglist}
+\end{Ex}
+
+
+\subsection{Règles de calcul en notation exponentielle}%____
+
+\begin{Rem}
+   Pour les calculs du type "somme" ou "différence", on utilisera la forme algébrique.\\
+   On préférera la forme exponentielle pour les calculs de produits ou de quotients.
+\end{Rem}
+
+\begin{Prop}
+   Pour tous $\theta,\theta'\in \R$, tous $r,r' \in\R^+_*$, tout $n\in\N$ :
+   \begin{dinglist}{169}
+      \item $r\,e^{j\theta}\times r'\,e^{j\theta'}=\dotfill$
+      \item $\left(r\,e^{j\theta}\right)^n=\dotfill$
+      \item $\dfrac{r\,e^{j\theta}}{r'\,e^{j\theta'}}=\dotfill$
+   \end{dinglist}
+\end{Prop}
+
+\smallskip
+
+\begin{Ex}
+   Soit $z_1=2\,e^{j\frac{\pi}{3}}$ et $z_2=2\sqrt3\,e^{j\frac{\pi}{6}}$ :
+   \begin{dinglist}{212}
+      \item $z_1 z_2=\dotfill$
+      \item $z_2^4=\dotfill$
+      \item $\dfrac{z_2}{z_1}=\dotfill$
+   \end{dinglist}
+\end{Ex}
+
+\section{Lignes de niveau}%______________________________
+
+\begin{Def}
+   Dans un repère orthonormal $\Rep$, la \underline{ligne de niveau $k$} d'une fonction $f$ est \dotfill \\
+    .\dotfill
+\end{Def}
+
+Les principales lignes de niveau dans $\C$ sont : \\
+\begin{itemize}
+   \item La ligne de niveau $k$ de la fonction \fbox{$z\longmapsto \Ree(z)$} est \dotfill \\
+   .\dotfill \\
+   \item La ligne de niveau $k$ de la fonction \fbox{$z\longmapsto \Ima(z)$} est \dotfill \\
+   .\dotfill \\
+   \item La ligne de niveau $k$ (positif) de la fonction \fbox{$z\longmapsto |z-a|$} est  \dotfill \\
+   .\dotfill \\
+   \item La ligne de niveau $k$ de la fonction  \fbox{$z\longmapsto\arg (z-a)$} est  \dotfill \\
+   .\dotfill
+\end{itemize}
+
+\vspace{1cm}
+
+\begin{Ex}
+On construit les lignes de niveau suivantes : \\
+\begin{itemize}
+   \item En bleu, la ligne de niveau $2$ de la fonction $\Ree(z)$.
+   \item En orange, la ligne de niveau $-4$ de la fonction $\Ima(z)$
+   \item En vert, la ligne de niveau $3$ de la fonction $\abs{z}$.
+   \item En rouge, la ligne de niveau $\frac\pi4$ de la fonction $\arg(z)$.
+\end{itemize}
+\begin{center}
+\begin{pspicture}(-5,-5)(5,5)
+   \psaxes{->}(0,0)(-5,-5)(5,5)
+\end{pspicture}
+\end{center}
+\end{Ex}
+
+\newpage
+\section{Équations du second degré}%___________
+
+\begin{Prop}
+   Soit $az^2+bz+c=0$ une équation du second degré où $a;b;c\in\R$ avec $a\not =0$.\\
+   On pose $\Delta=b^2-4ac$.
+   \begin{dinglist}{169}
+      \item Si $\Delta>0$, l'équation du second degré admet deux solutions réelles distinctes : \vspace{1.2cm} \\      
+      \item Si $\Delta=0$, l'équation du second degré admet une unique solution réelle : \vspace{1.2cm} \\    
+      \item Si $\Delta<0$, l'équation du second degré admet deux solutions complexes conjuguées : \vspace{1.2cm}    
+   \end{dinglist}
+\end{Prop}
+
+\begin{Ex}
+   Résolution dans $\C$ de :
+   \begin{enumerate}
+      \item $z^2-2z+2=0$
+      \item $z^2+6z+9=0$
+      \item $z^2+2z-3=0$
+   \end{enumerate}  
+\end{Ex}
+
+
+\end{document}

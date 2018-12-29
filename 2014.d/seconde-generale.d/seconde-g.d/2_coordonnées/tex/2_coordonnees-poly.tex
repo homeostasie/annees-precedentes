@@ -1,0 +1,213 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Short Sectioned Assignment
+% LaTeX Template
+% Version 1.0 (5/5/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Frits Wenneker (http://www.howtotex.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[paper=a4, fontsize=9pt]{scrartcl} % A4 paper and 11pt font size
+
+
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage[english,francais]{babel} % Français et anglais
+\usepackage[utf8]{inputenc} 
+
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+
+\usepackage{enumitem}
+\usepackage{lmodern}
+\usepackage{url}
+\usepackage{eurosym} % signe Euros
+\usepackage{geometry} % Pour passer au format A4
+\geometry{a4paper} % 
+\usepackage{graphicx} % Required for including pictures
+\usepackage{float} % Allows putting an [H] in \begin{figure} to specify the exact location of the figure
+
+\usepackage{multicol}
+
+\usepackage{verbatim}
+
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{\centering \normalfont\scshape} % Make all sections centered, the default font and small caps
+
+%----------------------------------------------------------------------------------------
+%	Pied de Page
+%----------------------------------------------------------------------------------------
+
+
+\usepackage{fancyhdr} % Custom headers and footers
+\pagestyle{fancyplain} % Makes all pages in the document conform to the custom headers and footers
+\fancyhead{} % No page header - if you want one, create it in the same way as the footers below
+\fancyfoot[L]{$2^{nd}1$} % Empty left footer
+\fancyfoot[C]{Chapitre 2 - Coordonnées} % Empty center footer
+\fancyfoot[R]{\thepage} % Page numbering for right footer
+
+\renewcommand{\headrulewidth}{0pt} % Remove header underlines
+\renewcommand{\footrulewidth}{0pt} % Remove footer underlines
+
+\setlength{\headheight}{13.6pt} % Customize the height of the header
+
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs - comment this line for an assignment with lots of text
+
+
+%----------------------------------------------------------------------------------------
+%	Titre
+%----------------------------------------------------------------------------------------
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+
+\title{	
+  \vspace{-10ex}
+  \horrule{0.5pt} \\[0.4cm] % Thin top horizontal rule
+  \huge Chapitre 2 - Coordonnées dans le plan\\ % The assignment title
+  \horrule{2pt} \\[0.5cm] % Thick bottom horizontal rule
+}
+
+\author{}
+\date{\vspace{-10ex}} % Today's date or a custom date
+
+%----------------------------------------------------------------------------------------
+%	Début du document
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+% RE-DEFINITION
+%----------------------------------------------------------------------------------------
+% MATHS
+%-----------
+
+\newtheorem{Definition}{Définition}
+\newtheorem{Theorem}{Théorème}
+\newtheorem{Proposition}{Propriété}
+
+% MATHS
+%-----------
+\renewcommand{\labelitemi}{$\bullet$}
+\renewcommand{\labelitemii}{$\circ$}
+%----------------------------------------------------------------------------------------
+%	Titre
+%----------------------------------------------------------------------------------------
+
+\maketitle % Print the title
+\setlength{\columnseprule}{1pt}
+
+\section{Repérer dans le plan}
+\subsection{Repère}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.7\linewidth]{sources/cours/2_repere.pdf}
+  \caption{Repère quelconque, repère orthogonal, repère orthonormal}
+\end{figure}
+
+\begin{Definition}Repère\\
+  Un repère est constituer de deux droites sécantes. Chaque droite représente une direction. Le sens est indiqué par une flêche sur chaque axe. Le point d'intersection des deux droites est le centre du repère. 
+\end{Definition}
+
+\begin{Definition}Repère Orthonormal\\
+  Un repère est orthonormal si les droites sécantes sont parallèles et que les unités des deux axes sont les mêmes. On appelle l'axe horizontal, l'axe des abscisses et l'axe vertical, l'axe des ordonnées.
+\end{Definition}
+
+\subsection{Coordonnées d'un point}
+
+\begin{Definition}Coordonnée d'un point\\
+  Soit $M(x; y)$ un point du plan de coordonnée $x, y$. $x$ est l'abscisse de $M$, il se lit sur l'axe horizontal. $y$ est l'ordonnée de $M$, il se lit sur l'axe des ordonnées
+\end{Definition}
+
+\begin{multicols}{2}
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{sources/cours/2_coordonnees.pdf}
+  \end{figure}
+
+  \begin{itemize}
+  \item $O(O;O)$
+  \item $I(1;0)$
+  \item $J(0;1)$
+  \item $A(2;3)$ 
+  \item $B(-2;1)$
+  \item $C(-3;-2)$
+  \item $D(1;-3)$
+  \end{itemize}
+
+  \paragraph{Remarque}~~\\
+  On appelle le repère (O,I,J).
+
+\end{multicols}
+\newpage
+\section{Distance entre deux points}
+
+Une distance est un nombre réel. Il est toujours positif.
+
+\begin{Proposition}Distance entre deux points\\
+  Soient $A(x_A; y_A)$ deux points du plan. On définit la distance d entre $A$ et $B$.
+  $$d = \sqrt{(x_A - x_B)^2 + (y_A - y_B)^2}$$
+\end{Proposition}
+
+\begin{multicols}{2}
+
+  \paragraph{Preuve - enfin pas loin}~~\\
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{sources/cours/2_distance.pdf}
+  \end{figure}
+
+  On s'intéresse au triangle $OHA$ formé par les points $O(0;0)$, $A(x_A ; y_A)$ et $H(x_A,0)$. Par construction le triangle est rectangle en $H$. Naturellement, on a $OH = x_A $ et $HA = y_A$. D'après le théorème de Pythagore :
+  \begin{eqnarray*}
+    OA^2 &=& OH^2 + HA^2 \\
+    OA^2 &=& x_{A}^{2} + y_{A}^{2}\\
+    OA &=& \sqrt{x_{A}^{2} + y_{A}^{2}}\\
+  \end{eqnarray*}
+  En faisant le même calcul mais en étant centré en B.
+  $$AB   = \sqrt{(x_B - x_A)^{2} + (y_B - y_A) ^{2}}$$
+\end{multicols}
+
+\section{Milieu entre deux points}
+
+Le mileu de deux points est également un point.
+
+\begin{Proposition}Milieu de deux points\\
+  Soient $A(x_A; y_A)$ deux points du plan et $I(x_I; y_I)$ le milieu de $[AB]$. 
+  $$I \left(\dfrac{x_A + x_B}{2} ; \dfrac{y_A + y_B}{2} \right) $$
+\end{Proposition}
+
+\begin{multicols}{2}
+
+  \paragraph{Preuve - enfin pas loin}~~\\
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{sources/cours/2_milieu.pdf}
+  \end{figure}
+
+  En partant de A et en faisant la moitié du chemin vers B, on arrive en I.
+
+  \begin{eqnarray*}
+    &I&  \left( x_A + \frac{1}{2} (x_B - x_A) ; y_A + \frac{1}{2} (y_B - y_A )\right )\\
+    &I& \left( \frac{2}{2} x_A + \frac{1}{2} (x_B - x_A) ; \frac{2}{2} y_A + \frac{1}{2} (y_B - y_A)\right )\\
+    &I& \left(\dfrac{x_B + x_A}{2} ; \dfrac{y_B + y_A}{2}\right )\\
+  \end{eqnarray*}
+
+\end{multicols}
+
+
+\end{document}

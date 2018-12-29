@@ -1,0 +1,270 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Short Sectioned Assignment
+% LaTeX Template
+% Version 1.0 (5/5/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Frits Wenneker (http://www.howtotex.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[paper=a4, fontsize=9pt]{scrartcl} % A4 paper and 11pt font size
+
+
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage[english,francais]{babel} % Français et anglais
+\usepackage[utf8]{inputenc}
+
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+
+\usepackage{enumitem}
+\usepackage{lmodern}
+\usepackage{url}
+\usepackage{eurosym} % signe Euros
+\usepackage{geometry} % Pour passer au format A4
+\geometry{a4paper} %
+\usepackage{graphicx} % Required for including pictures
+\usepackage{float} % Allows putting an [H] in \begin{figure} to specify the exact location of the figure
+
+\usepackage{multicol}
+
+\usepackage{verbatim}
+
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{\centering \normalfont\scshape} % Make all sections centered, the default font and small caps
+
+%----------------------------------------------------------------------------------------
+%	Pied de Page
+%----------------------------------------------------------------------------------------
+
+
+\usepackage{fancyhdr} % Custom headers and footers
+\pagestyle{fancyplain} % Makes all pages in the document conform to the custom headers and footers
+\fancyhead{} % No page header - if you want one, create it in the same way as the footers below
+\fancyfoot[L]{$2^{nd}1$} % Empty left footer
+\fancyfoot[C]{Chapitre 4 - Statistiques} % Empty center footer
+\fancyfoot[R]{\thepage} % Page numbering for right footer
+
+\renewcommand{\headrulewidth}{0pt} % Remove header underlines
+\renewcommand{\footrulewidth}{0pt} % Remove footer underlines
+
+\setlength{\headheight}{13.6pt} % Customize the height of the header
+
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs - comment this line for an assignment with lots of text
+
+
+%----------------------------------------------------------------------------------------
+%	Titre
+%----------------------------------------------------------------------------------------
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+
+\title{
+  \vspace{-10ex}
+  \horrule{0.5pt} \\[0.4cm] % Thin top horizontal rule
+  \huge Chapitre 4 - Statistiques\\ % The assignment title
+  Tris
+  \horrule{2pt} \\[0.5cm] % Thick bottom horizontal rule
+}
+
+\author{}
+\date{\vspace{-10ex}} % Today's date or a custom date
+
+%----------------------------------------------------------------------------------------
+%	Début du document
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+% RE-DEFINITION
+%----------------------------------------------------------------------------------------
+% MATHS
+%-----------
+
+\newtheorem{Definition}{Définition}
+\newtheorem{Theorem}{Théorème}
+\newtheorem{Proposition}{Propriété}
+
+% MATHS
+%-----------
+\renewcommand{\labelitemi}{$\bullet$}
+\renewcommand{\labelitemii}{$\circ$}
+%----------------------------------------------------------------------------------------
+%	Titre
+%----------------------------------------------------------------------------------------
+
+\maketitle % Print the title
+\setlength{\columnseprule}{1pt}
+
+Pour une liste d'éléments de taille $n$ (numérotés de 1 à n)
+%-----------------------------------111111111111111111111111111111111111
+\section{Tri par sélection}
+
+\textit{On recherche le plus petit élément qu'on place en bas d'un tas et ainsi de suite: 6; 2; 8; 1; 5; 3; 7; 9; 4; 0.}\\
+Fonction : échanger.
+
+\begin{enumerate}
+\item Rechercher le plus petit élément du tableau, et l'échanger avec l'élément d'indice 1.
+\item Rechercher le second plus petit élément du tableau, et l'échanger avec l'élément d'indice 2.
+\item Continuer de cette façon jusqu'à ce que la liste soit entièrement trié.
+\end{enumerate}
+
+\section{Tri par insertion}
+
+\textit{Le tri typique des jeux de carte : 6; 2; 8; 1; 5; 3; 7; 9; 4; 0.}
+
+\begin{enumerate}
+\item On prend les deux premières cartes et on crée un tas dans la main gauche.
+\item On ordonne les deux cartes de la main gauche.
+\item On prend la prochaine carte dans le tas restant.
+\item On l'insert correctement dans le tas de gauche.
+\item Et on repart de 3.
+\end{enumerate}
+
+\section{Tri par bulle}
+
+\textit{On fait remonter une bulle :  5 1 4 2 8.}\\
+Fonction : échanger
+\begin{enumerate}
+\item On choisit le premièr nombre.
+\item On le compare au nombre du dessus.
+  \begin{itemize}
+  \item S'il est plus grand, on les permutes deux à deux et on repart en 2.
+  \item Sinon on choisit le deuxième nombre et on repart en 2.
+  \end{itemize}
+\end{enumerate}
+
+
+\section{Tri par fusion}
+
+\textit{On sépare en tout petite tas qu'on fusionne petit à petit facilement :  38 ; 27 ; 43 ; 3 ; 9 ; 82 ; 10}\\
+
+\begin{enumerate}
+\item On prend un tas, on le sépare en deux tas égaux.
+\item On répète cette étape jusqu'à obtenir des tas de taille 1.
+\item On ordonne chaque tas de deux.
+\item On fusionne les tas deux par deux.
+\item ... jusqu'à retrouver le premier tas trier.
+\end{enumerate}
+
+
+\newpage
+
+\begin{multicols}{2}
+  \section{Tri par sélection}
+
+\begin{verbatim}
+pour i de 1 à n - 1
+          min = i
+          pour j de i + 1 à n
+              si t[j] < t[min]
+                      alors min = j
+          fin pour
+          si min != i, 
+                 alors échanger t[i] et t[min]
+      fin pour
+\end{verbatim}
+
+\begin{enumerate}
+\item 6281537\textbf{9}40 $\to$ 6281537\textbf{0}4\textbf{9} 
+\item 62\textbf{8}1537049 $\to$ 62\textbf{4}15370\textbf{8}9
+\item 624153\textbf{7}089 $\to$ 624153\textbf{07}89
+\item \textbf{6}241530789 $\to$ \textbf{0}24153\textbf{6}789
+\item 0241\textbf{5}36789 $\to$ 0241\textbf{35}6789
+\item 02\textbf{4}1356789 $\to$ 023\textbf{14}56789
+\item 02\textbf{3}1456789 $\to$ 02\textbf{13}456789
+\item 0\textbf{2}13456789 $\to$ 0\textbf{12}3456789
+\item 0123456789
+\end{enumerate}
+
+\section{Tri par insertion}
+
+\begin{verbatim}
+pour i de 1 à n-1
+     x = t[i]
+     j = i
+     tant que j > 0 et t[j - 1] > x
+          t[j] = t[j - 1]
+          j = j - 1
+     fin tant que
+     t[j] = x
+fin pour
+\end{verbatim}
+
+\begin{enumerate}
+\item 6281537940
+\item 62 ; 81537940  
+\item 26 ; 81537940
+\item 268 ; 1537940
+\item 1268 ; 537940
+\item 12568 ; 37940
+\item 123568 ; 7940
+\item 1235678 ; 940
+\item 12356789 ; 40
+\item 123456789 ; 0
+\item 0123456789
+\end{enumerate}
+
+\section{Tri par bulle}
+
+\begin{verbatim}
+pour i de n - 1 à 1
+    aucun_échange = vrai
+    pour j de 1 à i
+         si t[j] > t[j + 1], alors
+             échanger t[j] et t[j + 1]
+             aucun_échange = faux
+         fin si
+    fin pour 
+    si aucun_échange : fin procédure
+fin pour
+\end{verbatim}
+
+\begin{enumerate}
+\item Première étape:
+  \begin{enumerate}
+  \item ( 5 1 4 2 8 ) $\to$ ( 1 5 4 2 8 ) Les éléments 5 et 1 sont comparés, et comme 5 > 1, l'algorithme les intervertit.
+  \item ( 1 5 4 2 8 ) $\to$ ( 1 4 5 2 8 ) Interversion car 5 > 4.
+  \item ( 1 4 5 2 8 ) $\to$ ( 1 4 2 5 8 ) Interversion car 5 > 2.
+  \item ( 1 4 2 5 8 ) $\to$ ( 1 4 2 5 8 ) Comme 5 < 8, les éléments ne sont pas échangés.
+  \end{enumerate}
+\item Deuxième étape:
+  \begin{enumerate}
+  \item ( 1 4 2 5 8 ) $\to$ ( 1 4 2 5 8 ) Même principe qu'à l'étape 1.
+  \item ( 1 4 2 5 8 ) $\to$ ( 1 2 4 5 8 )
+  \item ( 1 2 4 5 8 ) $\to$ ( 1 2 4 5 8 )
+    À ce stade, la liste est triée, mais pour le détecter, l'algorithme doit effectuer un dernier parcours.
+  \end{enumerate}
+\item Troisième étape:
+  \begin{enumerate}
+  \item ( 1 2 4 5 8 ) $\to$ ( 1 2 4 5 8 )
+  \item ( 1 2 4 5 8 ) $\to$ ( 1 2 4 5 8 )
+    Comme la liste est triée, aucune interversion n'a lieu à cette étape, ce qui provoque l'arrêt de l'algorithme.
+  \end{enumerate}
+\end{enumerate}
+\section{Tri par fusion}
+
+\begin{enumerate}
+\item 38 ; 27 ; 43 ; 3 ; 9 ; 82 ; 10
+\item 38 ; 27 ; 43 ; 3 || 9 ;82 ; 10
+\item 38 ; 27 || 43 ; 3 || 9 ; 82 || 10
+\item 38 || 27 || 43 || 3 || 9 || 82 || 10
+\item 27 ; 38 || 3 ; 43 || 9 ; 82 || 10
+\item 3 ; 27 ; 38 ; 43 || 9 ; 10 ; 82
+\item 3 ; 9 ; 10 ; 27 ; 38 ; 43 ; 82
+\end{enumerate}
+\end{multicols}
+\end{document}

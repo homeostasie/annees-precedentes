@@ -1,0 +1,208 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Short Sectioned Assignment
+% LaTeX Template
+% Version 1.0 (5/5/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Frits Wenneker (http://www.howtotex.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[paper=a4, fontsize=9pt]{scrartcl} % A4 paper and 11pt font size
+
+
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage[english,francais]{babel} % Français et anglais
+\usepackage[utf8]{inputenc} 
+
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+
+\usepackage{enumitem}
+\usepackage{lmodern}
+\usepackage{url}
+\usepackage{eurosym} % signe Euros
+\usepackage{geometry} % Pour passer au format A4
+\geometry{a4paper} % 
+\usepackage{graphicx} % Required for including pictures
+\usepackage{float} % Allows putting an [H] in \begin{figure} to specify the exact location of the figure
+
+\usepackage{multicol}
+\usepackage{caption}
+\usepackage{verbatim}
+
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{\centering \normalfont\scshape} % Make all sections centered, the default font and small caps
+
+%----------------------------------------------------------------------------------------
+%	Pied de Page
+%----------------------------------------------------------------------------------------
+
+
+\usepackage{fancyhdr} % Custom headers and footers
+\pagestyle{fancyplain} % Makes all pages in the document conform to the custom headers and footers
+\fancyhead{} % No page header - if you want one, create it in the same way as the footers below
+\fancyfoot[L]{$2^{nd}1$} % Empty left footer
+\fancyfoot[C]{Chapitre 1 - Second degré} % Empty center footer
+\fancyfoot[R]{\thepage} % Page numbering for right footer
+
+\renewcommand{\headrulewidth}{0pt} % Remove header underlines
+\renewcommand{\footrulewidth}{0pt} % Remove footer underlines
+
+\setlength{\headheight}{13.6pt} % Customize the height of the header
+
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs - comment this line for an assignment with lots of text
+
+
+%----------------------------------------------------------------------------------------
+%	Titre
+%----------------------------------------------------------------------------------------
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+
+\title{	
+  \vspace{-10ex}
+  \horrule{0.5pt} \\[0.4cm] % Thin top horizontal rule
+  \huge Chapitre 1 - Second degré\\ % The assignment title
+  \horrule{2pt} \\[0.5cm] % Thick bottom horizontal rule
+}
+
+\author{}
+\date{\vspace{-10ex}} % Today's date or a custom date
+
+%----------------------------------------------------------------------------------------
+%	Début du document
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+% RE-DEFINITION
+%----------------------------------------------------------------------------------------
+% MATHS
+%-----------
+
+\newtheorem{Definition}{Définition}
+\newtheorem{Theorem}{Théorème}
+\newtheorem{Proposition}{Propriété}
+
+% MATHS
+%-----------
+\renewcommand{\labelitemi}{$\bullet$}
+\renewcommand{\labelitemii}{$\circ$}
+%----------------------------------------------------------------------------------------
+%	Titre
+%----------------------------------------------------------------------------------------
+
+\maketitle % Print the title
+\setlength{\columnseprule}{1pt}
+\begin{multicols}{2}
+
+  %-----------------------------------111111111111111111111111111111111111
+  \section{Fonction du second degré}
+  %-----------------------------------------------------------------------
+
+  Le polynôme du second degré $a x^2 + b x + c$ est appelé un \textbf{trinôme du second degré} si $a \neq 0$ et $a, b, c \in \mathbb{R}$. La fonction est définie sur $\mathbb{R}$ tout entier. On appelle \textbf{parabole} la courbe représentative $\mathcal{C}_f$ de tous les polynômes du second degré.
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\linewidth]{sources/cours/para.pdf}
+    \caption{$f(x) = 2x^2 -4x + 1$}
+  \end{figure}
+
+  \section{Équation du second degré}
+
+  L'équation $a x^2 + b x + c = 0$ consiste à trouver l'intersection entre la parabole et l'axe des abscisses a été originellement résolu par \textbf{Al-Khwarizmi} - \textit{activité 1}. Il est maintenant possible de trouver les deux solutions à l'aide du calcul du \textbf{discriminant}.
+
+  \subsection{Calcul du discriminant}
+
+  Soit $\Delta$ le discriminant. En fonction de son signe, on en déduit les solutions de l'éqution $a x^2 + b x + c = 0$.
+
+  $$\Delta = b^2 - 4ac$$
+\end{multicols}
+
+\subsection{Résolution de l'équation}
+
+\subsubsection{Cas : $\Delta < 0$}
+
+Lorsque $\Delta < 0$, l'équation $a x^2 + b x + c = 0$ n'admet pas de solution dans $\mathbb{R}$.
+
+\subsubsection{Cas : $\Delta = 0$}
+
+Lorsque $\Delta = 0$, l'équation $a x^2 + b x + c = 0$ admet \textbf{une solution double.} On la note $x$.
+$$x = -\dfrac{b}{2a}$$
+
+
+\subsubsection{Cas : $\Delta > 0$}
+
+Lorsque $\Delta > 0$, l'équation $a x^2 + b x + c = 0$ admet \textbf{deux solutions.} On les note $x_1$ et $x_2$.
+
+$$x_1 = \dfrac{-b - \sqrt{\Delta}}{2a} \text{ et } x_2 = \dfrac{-b + \sqrt{\Delta}}{2a}$$
+\newpage
+\section{Étude des paraboles}
+
+\subsection{Sens de variation}
+
+Le sens de variation de la parabole représentative de la fonction $f(x) = ax^2 + bx + c$ \textbf{dépend uniquement du signe de a}.
+
+\subsubsection{Cas $a > 0$}
+Si $a > 0$, alors la parabole est décroissante puis croissante. Son minimum est atteint  en $-\frac{b}{2a}$ et prend la valeur $f( -\frac{b}{2a} ) $.
+
+\begin{multicols}{3}
+  \begin{figure}[H]
+    \centering
+    \includegraphics[height = 4cm]{sources/cours/para-ap-dneg.pdf}
+    \caption*{Cas : $a > 0$ et $\Delta < 0$}
+  \end{figure}
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[height = 4cm]{sources/cours/para-ap-dnul.pdf}
+    \caption*{Cas : $a > 0$ et $\Delta = 0$}
+  \end{figure}
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[height = 4cm]{sources/cours/para-ap-dp.pdf}
+    \caption*{Cas : $a > 0$ et $\Delta > 0$}
+  \end{figure}
+\end{multicols}
+
+\subsubsection{Cas $a < 0$}
+Si $a < 0$, alors la parabole est croissante puis décroissante. Son maximum est atteint  en $-\frac{b}{2a}$ et prend la valeur $f( -\frac{b}{2a} )$.
+
+\begin{multicols}{3}
+  \begin{figure}[H]
+    \centering
+    \includegraphics[height = 4cm]{sources/cours/para-an-dneg.pdf}
+    \caption*{Cas : $a < 0$ et $\Delta < 0$}
+  \end{figure}
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[height = 4cm]{sources/cours/para-an-dnul.pdf}
+    \caption*{Cas : $a < 0$ et $\Delta = 0$}
+  \end{figure}
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[height = 4cm]{sources/cours/para-an-dp.pdf}
+    \caption*{Cas : $a < 0$ et $\Delta > 0$}
+  \end{figure}
+\end{multicols}
+
+\subsection{Étude de signe}
+Le trinôme $ax^2 + bx + c$ est \textbf{du signe de $a$ à l'extérieur des racines}.
+
+\end{document}

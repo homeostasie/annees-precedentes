@@ -1,0 +1,155 @@
+\documentclass[a4paper,dvips]{article}
+\usepackage{fullpage}
+
+\usepackage[14pt]{extsizes}
+\usepackage{hyperref}
+\usepackage[cp1252]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{geometry}
+\geometry{hmargin=1.2cm,vmargin=2.1cm}
+\usepackage{graphicx}
+\usepackage{pstricks,pst-plot,pst-tree}
+%\usepackage{pst-eucl} 
+\usepackage{framed}
+\usepackage{amsmath,bm}
+\usepackage{amssymb}
+\usepackage{fancyhdr}
+\usepackage{fancybox}
+\usepackage{multicol}
+\usepackage{xcolor}
+\usepackage{epsfig}
+\usepackage{pifont}
+\usepackage[framed]{ntheorem}
+\usepackage[frenchb]{babel}
+\usepackage{tabularx}
+\usepackage{multicol}
+
+\lhead[]{\small $2^{nd}1$}
+\chead[]{\textsc{Probabilités}}
+\rhead[]{\small 24 mars 2015}
+
+\def\R{{\mathbb R}}
+
+\pagestyle{fancy}
+
+
+\def\theoremframecommand{\psshadowbox*[framearc=0.5]}
+\newshadedtheorem{Partie}{Partie}
+\theoremstyle{break}
+\theorembodyfont{\upshape}
+%\newframedtheorem{Prop}{Propriété}
+%\newtheorem{Rem}{Remarque}
+\theorembodyfont{\rmfamily}
+%\theorempostwork{\hrule}
+
+\renewcommand\FrenchLabelItem{\textbullet}
+\newcommand{\V}{\overrightarrow}
+\newcommand{\Rep}{(O;\V{i};\V{j})}
+%\newcommand{\Int}[2]{[\, #1 ; #2 \,]}
+%\newcommand{\Reel}{\mathfrak{Re}} 
+%\newcommand{\Ima}{\mathfrak{Im}} 
+%\newcommand{\Abs}[1]{\left \lvert#1\right \rvert}
+\newcommand{\Coor}[2]{\begin{pmatrix} #1\\#2 \end{pmatrix}}
+\newcommand{\Syst}[2]{\left\{\begin{array}{ccccc} #1\\ #2 \end{array}\right.}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1cm}}
+%\renewcommand{\arraystretch}{1.2} 
+\renewcommand{\baselinestretch}{1.26}
+
+%\setlength{\parskip}{3ex plus 1ex minus 1ex}
+%\setlength{\parindent}{0cm} 
+
+\begin{document}
+\setlength{\columnseprule}{1pt}
+
+\subsection*{Prenom, Nom : }
+%%%%%%%%%%%%%%%%%%%%%%%%% EXO 1 %%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{multicols}{2}
+\subsection*{Exercice 1 - Jeu de carte}
+
+\textit{On tire au hasard une carte dans un jeu de 52 cartes.}
+
+  \begin{enumerate}
+  \item Quelle est la probabilité de tirer un trèfle ?
+  \item Quelle est la probabilité de tirer une carte noire     ?
+  \item Quelle est la probabilité de ne pas tirer un carreau ?
+  \item Quelle est la probabilité de tirer une figure (roi, dame ou valet) ?
+  \item Quelle est la probabilité de tirer un as ?
+  \item Quelle est la probabilité de ne pas tirer un valet noir ?
+  \end{enumerate}
+\end{multicols}
+
+%%%%%%%%%%%%%%%%%%%%%%%%% EXO 2 %%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{Exercice 2 - Jeu de dés}
+   \textit{On lance deux dés à six faces équilibrés numérotés de 1 à 6. \textbf{On ne garde que le plus petit des deux numéros sortis.}}
+   \begin{enumerate}
+      \item Utiliser un tableau à double entrée pour modéliser la situation.
+      \item Quel est l'univers $\Omega$ de toutes les issues possibles ?
+      \item Établir la loi de probabilité de l'expérience.
+   \end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%% EXO 3 %%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{multicols}{2}
+\subsection*{Exercice 3 - Digicode}
+   \textit{La porte d'entrée d'un immeuble est muni d'un clavier de trois touches marquées par les lettres $A,B$ et $C$.} \textit{Le code qui déclenche l'ouverture de la porte est formé d'une \textbf{série de deux lettres distinctes.}}
+
+ \begin{center}
+	     \pstree[treemode=R,nodesep=5pt]{\Tdot}
+	      {\pstree{\Tr{A}}{\Tr{B} \Tr{C}}
+	       \pstree{\Tr{B}}{\Tr{$\cdots$}\Tr{$\cdots$}}
+	       \pstree{\Tr{$\cdots$}}{}
+	}
+	     \end{center}
+
+   \begin{enumerate}
+      \item Recopier et compléter l'arbre suivant qui dénombre l'ensemble des codes possibles. 
+      \item Déterminer le nombre de codes différents possibles.
+      \item Déterminer la probabilité de chacun des évènements suivants.
+      \begin{itemize}
+         \item[A :] Le code se termine par A.
+         \item[B :] Le code est formé de deux lettres différentes.
+         \item[C :] Le code comporte au moins une fois la lettre A.
+      \end{itemize}
+   \end{enumerate}
+\end{multicols}
+
+%%%%%%%%%%%%%%%%%%%%%%%%% EXO 4 %%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection*{Exercice 4 - Internet}
+   Voici les résultats d'un sondage effectué auprès de 2\,000 personnes, à propos d'Internet : 
+   \begin{itemize}
+      \item 45\% des personnes interrogées déclarent être intéressées par Internet, 
+      \item 25\% des personnes interrogées ont moins de 30 ans et, parmi celles-ci, quatre cinquièmes déclarent être intéressées par Internet, 
+      \item 30\% des personnes interrogées ont plus de 60 ans et, parmi celles-ci, 75\% ne sont pas intéressées par Internet. 
+   \end{itemize} 
+   \begin{enumerate}
+      \item Reproduire et compléter le tableau suivant : \\
+         \begin{tabular}{|C{2.7}|c|c|C{2.7}|}
+            \hline 
+            & intéressées par Internet & non intéressées par internet & \textbf{total} \\
+            \hline 
+            moins de 30 ans & & & \\
+            \hline 
+            de 30 à 60 ans & & & \\
+            \hline 
+            plus de 60 ans & & & \\
+            \hline 
+            \textbf{total} & & & \textbf{2\,000} \\
+            \hline 
+         \end{tabular} 
+      \item On choisit au hasard une personne parmi les 2\,000 interrogées. On suppose que toutes les personnes ont la même probabilité d'être choisies. On considère les événements :
+      \begin{itemize} 
+         \item[A :]\og{\sl la personne interrogée a moins de 30 ans}\fg,
+         \item[B :] \og{\sl la personne interrogée est intéressée par Internet}\fg. 
+      \end{itemize}
+      \begin{enumerate}
+         \item Calculer les probabilités $P(A)$ et $P(B)$. 
+         \item Définir par une phrase l'événement $\overline{A}$ puis calculer $P(\overline{A})$. 
+         \item Définir par une phrase l'événement $A\cap B$ puis calculer $P(A\cap B)$. En déduire $P(A\cup B)$. 
+      \end{enumerate}
+      \item On sait maintenant que la personne interrogée est intéressée par Internet.\\               
+          Quelle est la probabilité qu'elle ait plus de 30 ans ? 
+   \end{enumerate} 
+\newpage
+
+\end{document}

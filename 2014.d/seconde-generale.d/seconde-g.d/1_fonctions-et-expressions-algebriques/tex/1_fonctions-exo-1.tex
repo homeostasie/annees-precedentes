@@ -1,0 +1,164 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LaTeX Template
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Linux and Unix Users Group at Virginia Tech Wiki 
+% (https://vtluug.org/wiki/Example_LaTeX_chem_lab_report)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt]{article}
+\usepackage{geometry} % Pour passer au format A4
+\geometry{hmargin=1cm, vmargin=1cm} % 
+
+\usepackage{graphicx} % Required for including pictures
+\usepackage{float} % 
+
+%Français
+\usepackage[T1]{fontenc} 
+\usepackage[english,francais]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{eurosym}
+\usepackage{lmodern}
+\usepackage{url}
+\usepackage{multicol}
+\usepackage{fancybox} 
+
+\usepackage{enumitem}
+%Maths
+\usepackage{amsmath,amsfonts,amssymb,amsthm}
+%\usepackage[linesnumbered, ruled, vlined]{algorithm2e}
+%\SetAlFnt{\small\sffamily}
+
+%Autres
+\linespread{1} % Line spacing
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+\renewcommand{\labelenumi}{\alph{enumi}.} % 
+\pagestyle{empty}
+%----------------------------------------------------------------------------------------
+%	DOCUMENT INFORMATION
+%----------------------------------------------------------------------------------------
+\begin{document}
+\subsection*{Exo 1 : Brevet des Collèges, Djibouti, Juin 2000}
+\begin{multicols}{2}
+	\textit{Voici un programme de calcul :}
+	\begin{itemize}
+		\item  on choisit un nombre,
+		\item on lui ajoute 3,
+		\item on élève le résultat au carré,
+		\item on retranche 25 au nombre obtenu.
+	\end{itemize}
+	
+	\begin{enumerate}
+		\item Appliquer ce programme de calcul au nombre 2.
+		Quel nombre obtient-on ?
+		\item On appelle $n$ le nombre auquel on applique le programme de calcul précédent.
+		Exprimer, en fonction de $n$, le résultat de ce programme de calcul.
+		Tester l'expression obtenue en donnant à n la valeur 2.
+	\end{enumerate}
+\end{multicols}
+
+\subsection*{Exo 2 : Brevet, France métropolitaine, Septembre 2009}
+
+\begin{multicols}{2}
+	\textit{On propose deux programmes de calcul :}
+	\subsubsection*{Programme A}
+		\begin{itemize}
+			\item Choisir un nombre.
+			\item Multiplier ce nombre par 3.
+			\item Ajouter 7.
+		\end{itemize}
+
+	\subsubsection*{Programme B}
+		\begin{itemize}
+			\item Choisir un nombre.
+			\item Multiplier ce nombre par 5.
+			\item Retrancher 4.
+			\item Multiplier par 2.
+		\end{itemize}
+\end{multicols}
+
+\begin{enumerate}
+	\item  On choisit 3 comme nombre de départ.
+	Montrer que le résultat du programme B est 22.
+	\item On choisit (-2) comme nombre de départ.
+	Quel est le résultat avec le programme A ?
+	\item 
+	\begin{enumerate}
+		\item Quel nombre de départ faut-il choisir pour que le résultat du programme A soit (-2) ?
+		\item Quel nombre de départ faut-il choisir pour que le résultat du programme B soit 0 ?
+	\end{enumerate}
+	\item Quel nombre doit-on choisir pour obtenir le même résultat avec les deux programmes ?
+	Faire apparaître sur la copie la démarche utilisée.
+\end{enumerate}
+
+\subsection*{Exo 3 : Brevet, France métropolitaine, Juin 2008}
+\begin{multicols}{2}
+	\textit{On donne le programme de calcul suivant :}
+
+	\begin{itemize}
+		\item Choisir un nombre.
+		\item Multiplier ce nombre par 3.
+		\item Ajouter le carré du nombre choisi.
+		\item Multiplier par 2.
+		\item Ecrire le résultat.
+	\end{itemize}
+	
+	\begin{enumerate}
+		\item Montrer que, si on choisit le nombre 10, le résultat obtenu est 260.
+		\item Calculer la valeur exacte du résultat obtenu lorsque :
+			\begin{enumerate}
+			\item Le nombre choisi est $-5$.
+			\item Le nombre choisi est $\dfrac{2}{3}$.
+			\item Le nombre choisi est $\sqrt{5}$
+			\end{enumerate}
+		\item Quels nombres peut-on choisir pour que le résultat obtenu soit 0 ?
+	\end{enumerate}
+\end{multicols}
+
+\subsection*{Exo 4 : Brevet, France métropolitaine, Juin 2010}
+\begin{multicols}{2}
+	\textit{On considère le programme de calcul suivant :}
+
+	\begin{itemize}
+		\item Choisir un nombre de départ.
+		\item Multiplier ce nombre par $-2$
+		\item Ajouter 5 au produit.
+		\item Multiplier le résultat par 5.
+		\item Ecrire le résultat obtenu.
+	\end{itemize}
+
+	\begin{enumerate}
+		\item Vérifier que, lorsque le nombre de départ est 2, on obtient 5.
+		\item Lorsque le nombre de départ est 3, quel résultat obtient on ?
+		\item Quel nombre faut-il choisir au départ pour que le résultat obtenu soit 0 ?
+		\item Arthur prétend que pour n’importe quel nombre de départ $x$, l’expression $(x-5)^{2} - x^{2}$ permet d’obtenir le résultat du programme de calcul. A-t-il raison ?
+	\end{enumerate}
+\end{multicols}
+
+\subsection*{Exo 5}
+\textit{Développer, et réduire si possible : }
+
+\begin{multicols}{3}
+\begin{itemize}[label=$\Diamond$]
+\item $(3t + 1)^{2}$
+\item $(2t - 9)(2t + 9)$
+\item $(4a - 6)^{2}$
+\item $(5a + 8)^{2}$
+\item $(3a + 11)(3a - 11)$
+\item $49 - (3x+ 2)^{2}$
+\item $(x - 3)^{2} + (x - 3)(x + 3)$
+\item $(3x + 2)^{2} - (5 - 2x)(3x+ 2)$
+\item $(7a - 9)^{2} + (7a - 9)(3a + 1)$
+\end{itemize}
+\end{multicols}
+\end{document}

@@ -1,0 +1,131 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LaTeX Template
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Linux and Unix Users Group at Virginia Tech Wiki
+% (https://vtluug.org/wiki/Example_LaTeX_chem_lab_report)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt]{article}
+\usepackage{geometry} % Pour passer au format A4
+\geometry{hmargin=1cm, vmargin=1cm} %
+
+\usepackage{graphicx} % Required for including pictures
+\usepackage{float} %
+
+%Français
+\usepackage[T1]{fontenc}
+\usepackage[english,francais]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{eurosym}
+\usepackage{lmodern}
+\usepackage{url}
+\usepackage{multicol}
+
+%Maths
+\usepackage{amsmath,amsfonts,amssymb,amsthm}
+%\usepackage[linesnumbered, ruled, vlined]{algorithm2e}
+%\SetAlFnt{\small\sffamily}
+
+%Autres
+\linespread{1} % Line spacing
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+
+\renewcommand{\labelenumi}{\alph{enumi}.} %
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENT INFORMATION
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+\setlength{\columnseprule}{1pt}
+
+\begin{multicols}{2}
+
+  \section*{EXERCICE 1 - Primitive - 1}
+  Pour chaque fonction donner une primitive.
+
+  \begin{enumerate}
+  \item $f_{1}(x) = 0$
+  \item $f_{2}(x) = \sqrt(2) + \pi$
+  \item $f_{3}(x) = x + 5x^3 + 9 x^5$
+  \item $f_{4}(x) = 12 + \dfrac{1}{10}x + \dfrac{1}{5}x^{4} \dfrac{1}{2}x^{8}$
+  \item $f_{5}(x) = 3x + \dfrac{4}{x}$ 
+  \item $f_{6}(x) = 2x + e^(x)$
+  \item $f_{7}(x) = 4\cos(x) + 4\sin(x)$
+  \item $f_{8}(x) = \dfrac{4}{x^2} - \dfrac{7}{x^3} + \dfrac{1}{2x^5}$
+  \end{enumerate}
+
+  \section*{EXERCICE 2 - Primitive - 2}
+  Pour chaque fonction donner une primitive.
+
+  \begin{enumerate}
+  \item $g_{1}(x) = (2x +1)^3$
+  \item $g_{2}(x) =  2 \cos(3x + \pi)$
+  \item $g_{3}(x) = -4 \sin(2x - \pi)$
+  \item $g_{4}(x) = \sin(x) \cos^{2}(x)$
+  \item $g_{5}(x) = 8 e^{2x + 1}$ 
+  \item $g_{6}(x) = -x e^{x^2 + 1}$
+  \item $g_{7}(x) = \dfrac{1}{2x + 9}$
+  \item $g_{8}(x) = \dfrac{2x}{x^2 - 8}$
+  \end{enumerate}
+
+\end{multicols}
+
+\rule{\textwidth}{1pt}
+
+\begin{multicols}{2}
+
+  \section*{EXERCICE 3 - Propriétés}
+  Répondre par \textbf{vrai} ou par \textbf{faux}.
+
+  \begin{enumerate}
+  \item $ \int_{1}^{10} f(x) \, \mathrm dx = \int_{1}^{6} f(x) \, \mathrm dx + \int_{6}^{10} f(x) \, \mathrm dx$
+  \item $ \int_{-2}^{12} f(x) \, \mathrm dx = \int_{-2}^{-1} f(x) \, \mathrm dx + \int_{1}^{12} f(x) \, \mathrm dx$
+  \item $f$ est une fonction paire. \\
+$ \int_{-10}^{20} f(x) \, \mathrm dx = 3\int_{0}^{20} f(x) \, \mathrm dx $ 
+  \item $f$ est une fonction paire. \\
+$ \int_{-10}^{20} f(x) \, \mathrm dx = 2\int_{0}^{10} f(x) \, \mathrm dx + \int_{10}^{20} f(x) \, \mathrm dx $ 
+  \item $f$ est une fonction impaire. \\
+$ \int_{-10}^{20} f(x) \, \mathrm dx = \int_{10}^{20} f(x) \, \mathrm dx$ 
+  \item $ \int_{0}^{10} 12f(x) \, \mathrm dx = 12 \int_{0}^{10} f(x) \, \mathrm dx$
+  \item $ \int_{0}^{0} -2f(x) \, \mathrm dx = -2$
+  \end{enumerate}
+
+\end{multicols}
+
+\rule{\textwidth}{1pt}
+
+\section*{EXERCICE 4 -  Graphiques}
+Calculer les intégrales suivantes.
+
+\begin{figure}[H]
+  \centering
+  \fbox{\includegraphics[width=0.6\textwidth]{sources/ie/integrale-1.pdf}}
+\end{figure}
+
+\begin{multicols}{3}
+
+  \begin{enumerate}
+  \item $ \int_{-3}^{4} f_{1}(x) \, \mathrm dx $
+  \item $ \int_{-4}^{2} f_2(x) \, \mathrm dx $
+  \item $ \int_{-3}^{2} f_3(x) \, \mathrm dx $
+  \item $ \int_{-3}^{3} f_4(x) \, \mathrm dx $
+  \item $ \int_{-4}^{4} f_5(x) \, \mathrm dx $
+  \item $ \int_{-2}^{4} f_6(x) \, \mathrm dx $
+  \item $ \int_{-4}^{4} f_2(x) \, \mathrm dx $
+  \item $ \int_{-2}^{4} f_5(x) \, \mathrm dx $
+  \end{enumerate}
+\end{multicols}
+
+\end{document}

@@ -1,0 +1,136 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LaTeX Template
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Linux and Unix Users Group at Virginia Tech Wiki 
+% (https://vtluug.org/wiki/Example_LaTeX_chem_lab_report)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt]{article}
+\usepackage{geometry} % Pour passer au format A4
+\geometry{hmargin=1cm, vmargin=1cm} % 
+
+\usepackage{graphicx} % Required for including pictures
+\usepackage{float} % 
+
+%Français
+\usepackage[T1]{fontenc} 
+\usepackage[english,francais]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{eurosym}
+\usepackage{lmodern}
+\usepackage{url}
+\usepackage{multicol}
+
+%Maths
+\usepackage{amsmath,amsfonts,amssymb,amsthm}
+%\usepackage[linesnumbered, ruled, vlined]{algorithm2e}
+%\SetAlFnt{\small\sffamily}
+
+%Autres
+\linespread{1} % Line spacing
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+\renewcommand{\labelenumi}{\alph{enumi}.} % 
+\pagestyle{empty}
+%----------------------------------------------------------------------------------------
+%	DOCUMENT INFORMATION
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+%\maketitle % Insert the title, author and date
+
+\begin{minipage}[t]{\textwidth}
+  \raggedright
+      {\bfseries Série : \textbf{A}}\\
+      {\bfseries BTS STS ET}\\[.35ex]
+      \vspace*{-1cm}
+      \raggedleft
+          {\bfseries Complexes}\\[.35ex]
+          {\bfseries 15 Septembre 2014}\\[.35ex]
+\end{minipage}\\[1em]
+
+\begin{center}
+  \textsf{Yes, we’re being bought by Microsoft - Mojang - 2.5 Millards \$}\\
+  \textsf{I’m leaving Mojang - It’s not about the money. It’s about my sanity. - Notch}
+\end{center}
+
+\setlength{\columnseprule}{1pt}
+
+\begin{multicols}{2}
+
+\section*{Série A}
+    \subsection*{Données}
+  \begin{eqnarray*}
+    z_{0} & = & 2\\
+    z_{1} & = & 3j\\
+    z_{2} & = & j + 1\\
+    z_{3} & = & 3(j+1)\\
+    z_{4} & = & -2j\\
+    z_{5} & = & -j + 1\\
+    z_{6} & = & -j + 2\\
+    z_{7} & = & 5\\
+    z_{8} & = & -2j\\
+    z_{9} & = & 2 + j\\
+  \end{eqnarray*}
+
+\section*{Série B}
+
+  \subsection*{Données}
+
+  \begin{eqnarray*}
+    z_{0} & = & 1\\
+    z_{1} & = & 2j\\
+    z_{2} & = & j + 1\\
+    z_{3} & = & 2(j+1)\\
+    z_{4} & = & -4j\\
+    z_{5} & = & -j - 1\\
+    z_{6} & = & -j + 2\\
+    z_{7} & = & 6\\
+    z_{8} & = & -5j\\
+    z_{9} & = & 2 + j\\
+  \end{eqnarray*}
+\end{multicols}
+
+  \subsection*{Énoncés et solutions}
+  \textbf{Calculer les expressions suivantes avec un résultat sous la forme $a + jb$ avec $a$, $b$ des réels et $j$ tel que $j^{2} = -1$.}
+
+\begin{multicols}{2}
+
+  \begin{enumerate}
+  \item $z_{1} + z_{2} = 3j + (j+1) = 1 + 4j$
+  \item $z_{0} - z_{3} + z_{2} = 2-3\times(j + 1) + (j + 1) = 2 - 3j -3 + j + 1= -2j$
+  \item $z_{6}+ z_{1} + z_{4} = -j +2 + 3j + -2j = 2$
+  \item $z_{7} \times z_{2} = 5\times (j+1) = 5 + 5j$
+  \item $z_{2} + z_{7} \times z_{2} = j + 1 + (5 + 5j) = 6 + 6j$
+  \item $(z_{2})^{2} = (j+1)^{2} = j^2 + 2\times j \times 1 + 1^2 = 1 + 2j - 1 = 2j$
+  \item $(z_{1} + z_{2})^{2} = (1 + 4j)^2 = (4j)^2 + 2\times 1\times 4j + 1^2 = -16 + 8j + 1 = -15 + 8j$
+  \item $\dfrac{1}{z_{1}} = \dfrac{1}{3j} = \dfrac{j}{-3} = -\dfrac{1}{3}\times j$
+  \item $\dfrac{z_1}{z_5} = z_1 \times \dfrac{\overline{z_5}}{z_5 \overline{z_5}} = 3j \times \dfrac{1+j}{1^2 + 1^2} = 3j \times \dfrac{1+j}{2} = -\dfrac{3}{2} + \dfrac{3}{2}j$
+  \item $\dfrac{z_9}{z_2} = z_9 \times \dfrac{\overline{z_2}}{z_2 \overline{z_2}} = (2+j) \times \dfrac{1-j}{2} = \dfrac{1}{2} \times \left( -2j + 2 + 1 + j \right) = \dfrac{3}{2} - \dfrac{1}{2}j$
+  \end{enumerate}
+
+  \begin{enumerate}
+  \item $z_{1} + z_{2} = 2j + (j+1) = 1 + 3j$
+  \item $z_{0} - z_{3} + z_{2} = 1 - 2\times(j + 1) + (j + 1) = 1 - 2j - 2 + j + 1 = -j$
+  \item $z_{6}+ z_{1} + z_{4} = -j + 2 + 2j + -4j = 2 - 3j$
+  \item $z_{7} \times z_{2} = 6\times (j+1) = 6 + 6j$
+  \item $z_{2} + z_{7} \times z_{2} = j + 1 + (6 + 6j) = 7 + 7j$
+  \item $(z_{2})^{2} = (j+1)^{2} = j^2 + 2\times j \times 1 + 1^2 = 1 + 2j - 1 = 2j$
+  \item $(z_{1} + z_{2})^{2} = (1 + 3j)^2 = (3j)^2 + 2\times 1\times 3j + 1^2 = -9 + 6j + 1 = -8 + 6j$
+  \item $\dfrac{1}{z_{1}} = \dfrac{1}{2j} = \dfrac{j}{-2} = -\dfrac{1}{2}\times j$
+  \item $\dfrac{z_1}{z_5} = z_1 \times \dfrac{\overline{z_5}}{z_5 \overline{z_5}} = 2j \times \dfrac{-1-j}{1^2 + 1^2} = 2j \times \dfrac{-1-j}{2} = -1 - j$
+  \item $\dfrac{z_9}{z_2} = z_9 \times \dfrac{\overline{z_2}}{z_2 \overline{z_2}} = (2+j) \times \dfrac{1-j}{2} = \dfrac{1}{2} \times \left( -2j + 2 + 1 + j \right) = \dfrac{3}{2} - \dfrac{1}{2}j$
+  \end{enumerate}
+\end{multicols}
+
+\end{document}

@@ -1,0 +1,122 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Short Sectioned Assignment
+% LaTeX Template
+% Version 1.0 (5/5/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Frits Wenneker (http://www.howtotex.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[paper=a4, fontsize=9pt]{scrartcl} % A4 paper and 11pt font size
+
+
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage[english,francais]{babel} % Français et anglais
+\usepackage[utf8]{inputenc}
+
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+
+\usepackage{enumitem}
+\usepackage{lmodern}
+\usepackage{url}
+\usepackage{eurosym} % signe Euros
+\usepackage{geometry} % Pour passer au format A4
+\geometry{a4paper} %
+\usepackage{graphicx} % Required for including pictures
+\usepackage{float} % Allows putting an [H] in \begin{figure} to specify the exact location of the figure
+
+\usepackage{multicol}
+
+\usepackage{verbatim}
+
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{\centering \normalfont\scshape} % Make all sections centered, the default font and small caps
+
+%----------------------------------------------------------------------------------------
+%	Pied de Page
+%----------------------------------------------------------------------------------------
+
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+% RE-DEFINITION
+%----------------------------------------------------------------------------------------
+% MATHS
+%-----------
+
+\newtheorem{Definition}{Définition}
+\newtheorem{Theorem}{Théorème}
+\newtheorem{Proposition}{Propriété}
+
+% MATHS
+%-----------
+\renewcommand{\labelitemi}{$\bullet$}
+\renewcommand{\labelitemii}{$\circ$}
+%----------------------------------------------------------------------------------------
+%	Titre
+%----------------------------------------------------------------------------------------
+
+%\maketitle % Print the title
+\setlength{\columnseprule}{1pt}
+
+\textbf{Nom, Prénom :}
+
+\subsection*{fonction carrée - Étude graphique.}
+
+Soit $f$ la fonction du second degré définie sur tout $\mathbb{R}$ par $f(x) = x^3 - \dfrac{5}{2}x^2 - 3x + \dfrac{11}{2}$.
+
+\subsubsection*{Obtenir un graphique exploitable}
+
+On se propose dans cette partie d'étudier la fonction à partir de sa représentation graphique sur l'intervalle [-2 ; 4].
+
+\begin{enumerate}
+\item Reproduire et compléter le tableau de données. (utiliser la fonction table de votre calculette)
+  \begin{center}
+    \begin{tabular}{| l || c | c | c | c | c | c | c | c| c | c | c | c | c |}
+      \hline
+      $x$ & -2.0 & -1.5 & -1.0 & -0.5 & 0.0 & 0.5 & 1.0 & 1.5 & 2.0 & 2.5 & 3.0 & 3.5 & 4.0\\
+      \hline
+      $f(x)$ &  &  &  &  &  &  &  &  &  &  &  &  & \\
+             &  &  &  &  &  &  &  &  &  &  &  &  & \\
+
+      \hline
+    \end{tabular}
+  \end{center}
+
+\item Après avoir reporter les points sur le graphique, tracer la courbe. (Vérifier que la fonction tracée corresponde à celle obtenue à l'aide de votre calculette sur ce même intervalle.
+\end{enumerate}
+
+\subsubsection*{Obtenir un graphique exploitable}
+
+On propose maintenant d'exploiter au mieux la trace obtenue.
+
+\begin{enumerate}
+\item Placer en rouge les solutions de l'équation $f(x) = 0$. On note ces solutions $x_1$, $x_2$ et $x_3$. Donner les coordonnées de ces points. $A_1 = \text{\phantom{azertyuipazertyuiop}} A_2 = \text{\phantom{azertyuipazertyuiop}} A_3 =$
+\item Placer en bleu les solutions de l'équation $f(x) = 4$. On note ces solutions $z_1$, $z_2$ et $z_3$. Donner les coordonnées de ces points. $B_1 = \text{\phantom{azertyuipazertyuiop}} B_2 = \text{\phantom{azertyuipazertyuiop}} B_3$
+\item Placer en vert la solution de l'équation $f(x) = 7$. On note cette solution $u_1$. Donner les coordonnées de ce point. $D =$ 
+\item Placer des points au niveau des extremums locaux. Donner leurs coordonnées. $E_1 = \text{\phantom{azertyuipazertyuiop}} E_2 = $
+ 
+\end{enumerate}
+
+
+\subsection*{Annexe}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\linewidth]{grille.png}
+\end{figure}
+
+
+\end{document}

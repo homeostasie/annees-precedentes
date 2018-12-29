@@ -1,0 +1,213 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LaTeX Template
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Linux and Unix Users Group at Virginia Tech Wiki 
+% (https://vtluug.org/wiki/Example_LaTeX_chem_lab_report)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt]{article}
+\usepackage{geometry} % Pour passer au format A4
+\geometry{hmargin=1cm, vmargin=1cm} % 
+
+\usepackage{graphicx} % Required for including pictures
+\usepackage{float} % 
+
+%Français
+\usepackage[T1]{fontenc} 
+\usepackage[english,francais]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{eurosym}
+\usepackage{lmodern}
+\usepackage{url}
+\usepackage{multicol}
+
+%Maths
+\usepackage{amsmath,amsfonts,amssymb,amsthm}
+%\usepackage[linesnumbered, ruled, vlined]{algorithm2e}
+%\SetAlFnt{\small\sffamily}
+
+%Autres
+\linespread{1} % Line spacing
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+\renewcommand{\labelenumi}{\alph{enumi}.} % 
+\pagestyle{empty}
+%----------------------------------------------------------------------------------------
+%	DOCUMENT INFORMATION
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+%\maketitle % Insert the title, author and date
+
+\begin{minipage}[t]{\textwidth}
+  \raggedright
+      {\bfseries Série A et B}\\[.35ex]
+      {\bfseries $2^{nd}1$}\\[.35ex]
+      \vspace*{-1cm}
+      \raggedleft
+          {\bfseries Fonctions 1}\\[.35ex]
+          {\bfseries 29 Septembre 2014}\\[.35ex]
+\end{minipage}\\[1em]
+
+\begin{center}
+  \textsf{La vie, c'est comme une bicyclette, il faut avancer pour ne pas perdre l'équilibre. - Albert Einstein}\\
+\end{center}
+
+\setlength{\columnseprule}{1pt}
+
+% ------ Exercice 1 ------
+\section*{1 - Programme de calcul}
+
+\begin{verbatim}
+- Choisir un nombre
+- Soustraire 10
+- Élever le résultat au carré
+\end{verbatim}
+
+\begin{enumerate}
+% -- 1
+\item[1]
+  \begin{enumerate}
+  \item On choisit le nombre $ 7$. Quel est le résultat du programme de calcul.\\
+    \begin{eqnarray*}
+	7 &=& 7\\
+	7-10 &=& -3\\
+	(-3)^2 &=& 9
+  \end{eqnarray*}
+  \item On choisit le nombre $-2$. Quel est le résultat du programme de calcul.
+    \begin{eqnarray*}
+	-2 &=& -2\\
+	-2-10 &=& -12\\
+	(-12)^2 &=& 144
+  \end{eqnarray*}  
+  \item On choisit le nombre $ 6$. Quel est le résultat du programme de calcul.
+    \begin{eqnarray*}
+	6 &=& 6\\
+	6-10 &=& -4\\
+	(-4)^2 &=& 16
+  \end{eqnarray*}  
+  \item On choisit le nombre $-3$. Quel est le résultat du programme de calcul.
+    \begin{eqnarray*}
+	-3 &=& -3\\
+	-3-10 &=& -13\\
+	(-13)^2 &=& 169
+  \end{eqnarray*}  
+  \end{enumerate}
+% -- 2
+\item[2] On décide de ne pas choisir de nombre précisément. On pose $x$ le nombre choisi.
+  \begin{enumerate}
+  \item Effectuer le programme de calcul avec $x$ le nombre choisi.\\
+    \begin{eqnarray*}
+	x\\
+	x-10\\
+	(x-10)^2
+  \end{eqnarray*}    
+  \item Charles trouve que le résultat est égale à $x^2 - 100$. A-t-il raison ? S'il a tort, proposer une solution juste.\\
+  $(x-10)^2 = x^2 - 20x + 100 \neq x^2 - 100$\\
+  Charles ne sait pas développer une identité remarquable.
+  \end{enumerate}
+\end{enumerate}
+
+% ------ Exercice 2 ------
+\noindent\hrulefill
+\newpage
+\section*{2 - Images et antécédents}
+
+\begin{multicols}{2}
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{sources/ie/ie-courbe.pdf}
+  \end{figure}
+
+  \begin{center}
+    \begin{tabular}{| l || c | c | c | c | c |}
+      \hline			
+      $x$    & -4 & -2 & -0.5 & 0  & 2\\
+      \hline  
+      $f(x)$ & -2 & -3 & -1   & -1  & 0.5\\
+      \hline  
+    \end{tabular}
+  \end{center}
+
+
+  \begin{enumerate}
+    % -- 1
+  \item[1] Remplir le tableau précédent :
+    % -- 2
+  \item[2] 
+    \begin{enumerate}
+    \item Quelle est l'image de $-2$ par la fonction $f$.\\
+  L'image de $-2$ par la fonction $f$ est $-3$ : $f(-2) = -3$.  
+    \item Quels sont les antécédents de $-2$ par la fonction $f$.
+    Les antécédents de $-2$ par la fonction $f$ sont $-4$ et $-1.25$ : $f(-4) = -2$ et $f(--1.25) = -2$.
+    \end{enumerate}
+  \end{enumerate}
+
+\end{multicols}
+
+% ------ Exercice 3 ------
+\noindent\hrulefill
+
+\section*{3 - Un problème de longueur }
+
+\begin{multicols}{2}
+
+  Charles possède le terrain rectangulaire suivant. 
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{sources/ie/ie-terrain.pdf}
+  \end{figure}
+ 
+  \begin{enumerate}
+  \item[1] Exprimer en fonction de $x$ le périmètre du terrain.
+  \textbf{Le périmitère d'un térrain est la somme de tous les côtés.} \\
+  $P = 2 \left( (2x-1) + (x+5) \right) = 2 ( 3x + 4) = 6x + 8$
+  Le périmètre du terrain mesure : $6x+8$
+  \item[2A] Sachant que le périmètre du terrain mesure exactement $86m$.\\
+  Quelles sont les dimensions (longueur ET largeur) du terrain.
+     \begin{eqnarray*}
+	6x + 8 &=& 86\\
+	6x &=& 78\\
+	x &=& \frac{78}{6}\\
+	x &=& 13
+  \end{eqnarray*}
+  Le périmètre du terrain mesure $13$ mètres.\\
+  \begin{itemize}
+  \item La longueur mesure 25 mètres.\\
+  $2x-1 = 2*13 -1 = 25$
+   \item La largeur mesure 18 mètres\\
+   $x+5 = 13 + 5 = 18$
+   \end{itemize}
+   
+   \item[2B] Sachant que le périmètre du terrain mesure exactement $70m$.\\
+  Quelles sont les dimensions (longueur ET largeur) du terrain.
+     \begin{eqnarray*}
+	6x + 8 &=& 70\\
+	6x &=& 62\\
+	x &=& \frac{62}{6}\\
+	x &\simeq& 10.3
+  \end{eqnarray*}
+  Le périmètre du terrain mesure $10.3$ mètres.\\
+  \begin{itemize}
+  \item La longueur mesure 19.6 mètres.\\
+  $2x-1 = 2*10.3 -1 = 19.6$
+   \item La largeur mesure 15.3mètres\\
+   $x+5 = 13 + 5 = 15.3$
+   \end{itemize}  
+  \end{enumerate}
+
+\end{multicols}
+
+\end{document}

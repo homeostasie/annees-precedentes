@@ -1,0 +1,103 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LaTeX Template
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Linux and Unix Users Group at Virginia Tech Wiki 
+% (https://vtluug.org/wiki/Example_LaTeX_chem_lab_report)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt]{article}
+\usepackage{geometry} % Pour passer au format A4
+\geometry{hmargin=1cm, vmargin=1cm} % 
+
+\usepackage{graphicx} % Required for including pictures
+\usepackage{float} % 
+
+%Français
+\usepackage[T1]{fontenc} 
+\usepackage[english,francais]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{eurosym}
+\usepackage{lmodern}
+\usepackage{url}
+\usepackage{multicol}
+
+%Maths
+\usepackage{amsmath,amsfonts,amssymb,amsthm}
+%\usepackage[linesnumbered, ruled, vlined]{algorithm2e}
+%\SetAlFnt{\small\sffamily}
+
+%Autres
+\linespread{1} % Line spacing
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+\renewcommand{\labelenumi}{\alph{enumi}.} % 
+\pagestyle{empty}
+%----------------------------------------------------------------------------------------
+%	DOCUMENT INFORMATION
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+%\maketitle % Insert the title, author and date
+
+\begin{minipage}[t]{\textwidth}
+  \raggedright
+      {\bfseries Série : \textbf{A}}\\
+      {\bfseries BTS STS ET}\\[.35ex]
+      \vspace*{-1cm}
+      \raggedleft
+          {\bfseries Complexes}\\[.35ex]
+          {\bfseries 15 Septembre 2014}\\[.35ex]
+\end{minipage}\\[1em]
+
+\begin{center}
+  \textsf{Yes, we’re being bought by Microsoft - Mojang - 2.5 Millards \$}\\
+  \textsf{I’m leaving Mojang - It’s not about the money. It’s about my sanity. - Notch}
+\end{center}
+
+\setlength{\columnseprule}{1pt}
+\begin{multicols}{2}
+
+  \subsection*{Données}
+  \begin{eqnarray*}
+    z_{0} & = & 2\\
+    z_{1} & = & 3j\\
+    z_{2} & = & j + 1\\
+    z_{3} & = & 3(j+1)\\
+    z_{4} & = & -2j\\
+    z_{5} & = & -j + 1\\
+    z_{6} & = & -j + 2\\
+    z_{7} & = & 5\\
+    z_{8} & = & -2j\\
+    z_{9} & = & 2 + j\\
+  \end{eqnarray*}
+
+  \subsection*{Énoncé}
+  \textbf{Calculer les expressions suivantes avec un résultat sous la forme $a + jb$ avec $a$, $b$ des réels et $j$ tel que $j^{2} = -1$.}
+
+  \begin{enumerate}
+  \item $z_{1} + z_{2}$
+  \item $z_{0} - z_{3} + z_{2}$
+  \item $z_{6}+ z_{1} + z_{4}$
+  \item $z_{7} \times z_{2}$
+  \item $z_{2} + z_{7} \times z_{2}$
+  \item $(z_{2})^{2}$
+  \item $(z_{1} + z_{2})^{2}$
+  \item $\dfrac{1}{z_{1}}$
+  \item $\dfrac{z_1}{z_5}$
+  \item $\dfrac{z_9}{z_2}$
+  \end{enumerate}
+
+\end{multicols}
+
+
+\end{document}

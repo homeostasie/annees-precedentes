@@ -1,0 +1,170 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LaTeX Template
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Linux and Unix Users Group at Virginia Tech Wiki
+% (https://vtluug.org/wiki/Example_LaTeX_chem_lab_report)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt]{article}
+\usepackage{geometry} % Pour passer au format A4
+\geometry{hmargin=1cm, vmargin=1cm} %
+
+\usepackage{graphicx} % Required for including pictures
+\usepackage{float} %
+
+%Français
+\usepackage[T1]{fontenc}
+\usepackage[english,francais]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{eurosym}
+\usepackage{lmodern}
+\usepackage{url}
+\usepackage{multicol}
+
+%Maths
+\usepackage{amsmath,amsfonts,amssymb,amsthm}
+%\usepackage[linesnumbered, ruled, vlined]{algorithm2e}
+%\SetAlFnt{\small\sffamily}
+
+%Autres
+\linespread{1} % Line spacing
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+\renewcommand{\labelenumi}{\alph{enumi}.} %
+\pagestyle{empty}
+
+%-----------------------------------------------------------
+%	DOCUMENT INFORMATION
+%-----------------------------------------------------------
+
+\begin{document}
+\begin{titlepage}
+
+  \newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+
+  \center % Center everything on the page
+  
+  \textsc{\LARGE Lycée Edouard Branly}\\[1.5cm] % Name of your university/college
+  
+  \textsc{\Large Devoir Bilan}\\[0.5cm] % Major heading such as course name
+
+  \textsc{\large STS1 SN2}\\[0.5cm] % Minor heading such as course title
+
+  \HRule \\[0.4cm]
+
+  { \huge \bfseries Mathématiques}\\[0.4cm] % Title of your document
+  
+  \HRule\\[2cm]
+
+  {\huge Durée de l'épreuve : 2 heures.}\\[1.5cm]
+  
+  \begin{minipage}{0.8\textwidth}
+    \begin{flushleft} \large
+      Le sujet comporte $3$  pages numérotées de   $1/3$   à  $3/3$.\\
+      Le sujet doit être rendu avec la copie à la fin de l’épreuve.\\
+      Les 4 exercices à traiter sont indépendants.\\
+      L'utilisation de la calculatrice est autorisée.\\
+      Aucun formulaire n'est autorisé.\\
+      Répondre sur feuille de copie.\\
+    \end{flushleft}
+  \end{minipage}\\[4cm]
+
+  {\huge Mercredi 14 Janvier 2015}\\[3cm] 
+
+  {\textbf{Le résultat du devoir bilan sera pris en compte pour la validation du CCF.}}
+
+  \vfill % Fill the rest of the page with whitespace
+
+\end{titlepage}
+\newpage
+
+\begin{titlepage}
+
+  \newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+
+  \center % Center everything on the page
+  
+  \textsc{\LARGE Lycée Edouard Branly}\\[1.5cm] % Name of your university/college
+  
+  \textsc{\Large Devoir Bilan}\\[0.5cm] % Major heading such as course name
+
+  \textsc{\large STS1 SN1}\\[0.5cm] % Minor heading such as course title
+
+  \HRule \\[0.4cm]
+
+  { \huge \bfseries Mathématiques}\\[0.4cm] % Title of your document
+  
+  \HRule\\[2cm]
+
+  {\huge Durée de l'épreuve : 2 heures.}\\[1.5cm]
+  
+  \begin{minipage}{0.8\textwidth}
+    \begin{flushleft} \large
+      Le sujet comporte $3$  pages numérotées de   $1/3$   à  $3/3$.\\
+      Le sujet doit être rendu avec la copie à la fin de l’épreuve.\\
+      Les 4 exercices à traiter sont indépendants.\\
+      L'utilisation de la calculatrice est autorisée.\\
+      Aucun formulaire n'est autorisé.\\
+      Répondre sur feuille de copie.\\
+    \end{flushleft}
+  \end{minipage}\\[4cm]
+
+  {\huge Mercredi 14 Janvier 2015}\\[3cm] 
+
+  {\textbf{Le résultat du devoir bilan sera être pris en compte pour la validation du CCF.}}
+
+  \vfill % Fill the rest of the page with whitespace
+
+\end{titlepage}
+
+\newpage
+
+
+\begin{titlepage}
+
+  \newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+
+  \center % Center everything on the page
+  
+  \textsc{\LARGE Lycée Edouard Branly}\\[1.5cm] % Name of your university/college
+  
+  \textsc{\Large Devoir Bilan}\\[0.5cm] % Major heading such as course name
+
+  \textsc{\large STS1 ET}\\[0.5cm] % Minor heading such as course title
+
+  \HRule \\[0.4cm]
+
+  { \huge \bfseries Mathématiques}\\[0.4cm] % Title of your document
+  
+  \HRule\\[2cm]
+
+  {\huge Durée de l'épreuve : 2 heures.}\\[1.5cm]
+  
+  \begin{minipage}{0.8\textwidth}
+    \begin{flushleft} \large
+      Le sujet comporte $3$  pages numérotées de   $1/3$   à  $3/3$.\\
+      Le sujet doit être rendu avec la copie à la fin de l’épreuve.\\
+      Les 4 exercices à traiter sont indépendants.\\
+      L'utilisation de la calculatrice est autorisée.\\
+      Aucun formulaire n'est autorisé.\\
+      Répondre sur feuille de copie.\\
+    \end{flushleft}
+  \end{minipage}\\[4cm]
+
+  {\huge Mardi 13 Janvier 2015}\\[3cm] 
+
+  \vfill % Fill the rest of the page with whitespace
+
+\end{titlepage}
+
+\end{document}

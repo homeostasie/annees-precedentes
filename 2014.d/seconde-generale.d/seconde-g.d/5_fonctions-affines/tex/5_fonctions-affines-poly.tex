@@ -1,0 +1,345 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Short Sectioned Assignment
+% LaTeX Template
+% Version 1.0 (5/5/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Frits Wenneker (http://www.howtotex.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[paper=a4, fontsize=9pt]{scrartcl} % A4 paper and 11pt font size
+
+
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage[english,francais]{babel} % Français et anglais
+\usepackage[utf8]{inputenc}
+
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+
+\usepackage{enumitem}
+\usepackage{lmodern}
+\usepackage{url}
+\usepackage{eurosym} % signe Euros
+\usepackage{geometry} % Pour passer au format A4
+\geometry{a4paper} %
+\usepackage{graphicx} % Required for including pictures
+\usepackage{float} % Allows putting an [H] in \begin{figure} to specify the exact location of the figure
+
+\usepackage{multicol}
+
+\usepackage{verbatim}
+
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{\centering \normalfont\scshape} % Make all sections centered, the default font and small caps
+
+%----------------------------------------------------------------------------------------
+%	Pied de Page
+%----------------------------------------------------------------------------------------
+
+
+\usepackage{fancyhdr} % Custom headers and footers
+\pagestyle{fancyplain} % Makes all pages in the document conform to the custom headers and footers
+\fancyhead{} % No page header - if you want one, create it in the same way as the footers below
+\fancyfoot[L]{$2^{nd}1$} % Empty left footer
+\fancyfoot[C]{Chapitre 5 - Fonctions affines} % Empty center footer
+\fancyfoot[R]{\thepage} % Page numbering for right footer
+
+\renewcommand{\headrulewidth}{0pt} % Remove header underlines
+\renewcommand{\footrulewidth}{0pt} % Remove footer underlines
+
+\setlength{\headheight}{13.6pt} % Customize the height of the header
+
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs - comment this line for an assignment with lots of text
+
+
+%----------------------------------------------------------------------------------------
+%	Titre
+%----------------------------------------------------------------------------------------
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+
+\title{
+  \vspace{-10ex}
+  \horrule{0.5pt} \\[0.4cm] % Thin top horizontal rule
+  \huge Chapitre 5 - Fonctions affines\\ % The assignment title
+  \horrule{2pt} \\[0.5cm] % Thick bottom horizontal rule
+}
+
+\author{}
+\date{\vspace{-10ex}} % Today's date or a custom date
+
+%----------------------------------------------------------------------------------------
+%	Début du document
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+% RE-DEFINITION
+%----------------------------------------------------------------------------------------
+% MATHS
+%-----------
+
+\newtheorem{Definition}{Définition}
+\newtheorem{Theorem}{Théorème}
+\newtheorem{Proposition}{Propriété}
+
+% MATHS
+%-----------
+\renewcommand{\labelitemi}{$\bullet$}
+\renewcommand{\labelitemii}{$\circ$}
+%----------------------------------------------------------------------------------------
+%	Titre
+%----------------------------------------------------------------------------------------
+
+\maketitle % Print the title
+\setlength{\columnseprule}{1pt}
+
+%-----------------------------------111111111111111111111111111111111111
+\section{Formule}
+%-----------------------------------------------------------------------
+
+Soit $f$ la fonction définie sur $\mathbb{R}$ par $x : \to f(x) = ax + b$.\\
+
+\begin{itemize}
+\item $f$ est une fonction affine.
+\item La représentation graphique de $f$ est une droite qu'on note souvent $d$.
+\end{itemize}
+
+\subsection{Ordonnée à l'origine}
+
+Le paramètre $b$ est l'ordonnée à l'origine. Il se trouve algébriquement en calculant $f(0)$ et graphiquement en cherchant l'ordonnée du point d'intersection entre la droite $d$ et la droite d'équation x=0.
+
+$$f(0) = a \times 0 + b = 0 + b = b$$
+
+
+\subsection{Coefficient directeur}
+
+Le paramètre $a$ est le coefficient directeur de la droite $d$. Il correspond à la pente de la droite.\\
+Soient $A(x_a, y_a)$ et $B(x_b, y_b)$ deux points appartenant à la droite d. On a les relations $y_a = ax_a + b$ et $y_b = ax_b + b$.
+$$\dfrac{y_b - y_a}{x_b - x_a} = \dfrac{ax_b + b - ax_a + b}{x_b - x_a} = \dfrac{a(x_b - x_a)}{x_b - x_a} = a = \dfrac{\Delta y}{\Delta x}$$
+
+\begin{multicols}{2}
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{sources/cours/droite-1.pdf}
+  \end{figure}
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{sources/cours/droite-2.pdf}
+  \end{figure}
+\end{multicols}
+
+\newpage
+
+%-----------------------------------111111111111111111111111111111111111
+\section{Étude des variations d'une fonction affine}
+%-----------------------------------------------------------------------
+
+\subsection{Cas général}
+
+\begin{Proposition}
+  Soit $f$ la fonction affine définie par $f : x \to ax + b$.
+  \begin{itemize}
+  \item Si $a > 0$, la fonction $f$ est croissante.
+  \item Si $a < 0$, la fonction $f$ est décroissante.
+  \item Si $a = 0$, la fonction $f$ est constante et égale à $b$ pour tout $x$. 
+  \end{itemize}
+\end{Proposition}
+
+\paragraph{Preuve}
+Soit $f$ la fonction affine définie par $f : x \to ax + b$.
+Soient $x_1$ et $x_2$ deux réels distincts tel que $x_1 < x_2$.
+
+\begin{multicols}{2}
+  \begin{enumerate}
+  \item Si $a > 0$.\\
+    \begin{eqnarray*}
+      x_1 &<& x_2\\
+      a x_1 &<& a x_2\\
+      a x_1 + b &<& a x_2 + b\\
+      f(x_1) &<& f(x_2)
+    \end{eqnarray*}
+    Si $a>0$, alors la fonction $f$ est croissante.
+  \item Si $a < 0$.\\
+    \begin{eqnarray*}
+      x_1 &<& x_2\\
+      a x_1 &>& a x_2\\
+      a x_1 + b &>& a x_2 + b\\
+      f(x_1) &>& f(x_2)
+    \end{eqnarray*}
+    Si $a>0$, alors la fonction $f$ est décroissante.
+  \end{enumerate}
+\end{multicols}
+
+\subsection{Exemples}
+
+\begin{itemize}
+\item $f_1(x) = 7 - 3x$ est décroissante.
+\item $f_1(x) = \frac{1}{-2} x$ est décroissante.
+\item $f_1(x) = 3 + x$ est croissante.
+\item $f_1(x) = \frac{1}{x} + 3$ n'est pas une fonction affine.
+\end{itemize}
+
+\newpage
+
+%-----------------------------------111111111111111111111111111111111111
+\section{Étude du signe d'une fonction affine}
+%-----------------------------------------------------------------------
+
+Il est possible de déterminer graphiquement et algébriquement le signe du fonction affine. Cela revient à résoudre des équations et des inéquations avec des fonctions affines. Soit $f$ la fonction affine définie par $f : x \to ax + b$ et $d$ sa représentation graphique.
+
+\subsection{Résolution de l'équation $f(x) = 0$}
+
+\begin{multicols}{2}
+
+  \begin{eqnarray*}
+    a x + b &=& 0\\
+    a x &=& -b\\
+    x &=& -\dfrac{b}{a}
+  \end{eqnarray*}
+
+  $x = -\dfrac{b}{a}$ est solution de l'équation $f(x) = 0$. \\
+  Le point $(-\dfrac{b}{a} ; 0)$ est situé à l'intersection de la droite $d$ et de l'axe des abscisses.
+
+\end{multicols}
+
+\subsection{Résolution de $f(x) \leq 0$}
+
+\begin{multicols}{2}
+  \begin{Proposition}
+    Soit $f_1(x) = \frac{1}{3} x - 1$.\\
+    La solution de l'équation $f(x) = 0$ est $x = -\dfrac{b}{a} = 3$.\\
+    Comme $a = \frac{1}{3} > 0$, la fonction est strictement croissante sur $\mathbb{R}$.\\ 
+    $f$ est négative jusqu'à 3 où elle s'annule puis devient positive.
+  \end{Proposition}
+
+  \paragraph{Preuve}
+
+  \begin{eqnarray*}
+    f_1(x) & \leq & 0\\
+    \frac{1}{3} x - 1 & \leq & 0 \\
+    \frac{1}{3} x & \leq & 1 \\
+    x & \leq & 3
+  \end{eqnarray*}
+
+
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{sources/cours/signe-1.pdf}
+  \end{figure}
+
+\end{multicols}
+
+\begin{multicols}{2}
+  \begin{Proposition}
+    Soit $f_2(x) = -x + 4$.\\
+    La solution de l'équation $f(x) = 0$ est $x = -\dfrac{b}{a} = 4$.\\
+    Comme $a = -1 < 0$, la fonction est strictement décroissante sur $\mathbb{R}$.\\ 
+    $f$ est positive jusq'à 4 où elle s'annule puis devient négative.
+  \end{Proposition}
+  \paragraph{Preuve}
+
+  \begin{eqnarray*}
+    f_2(x) & \leq & 0\\
+    -x + 4 & \leq & 0 \\
+    -x & \leq & -4 \\
+    x & \geq & 4
+  \end{eqnarray*}
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{sources/cours/signe-2.pdf}
+  \end{figure}
+
+\end{multicols}
+
+\newpage 
+
+%-----------------------------------111111111111111111111111111111111111
+\section{Équations et inéquations}
+%-----------------------------------------------------------------------
+
+\subsection{Les problèmes du type : $f(x) = k$, $f(x) \leq k$ et $f(x) \geq k$}
+
+\begin{multicols}{2}
+
+  Dans ces problèmes de modélisation, on étudie quand notre fonction est au dessous ou au dessus de la droite horizontale d'équation $y = k$.
+
+  Algébriquement, il est possible de résoudre ces (in)équations de manière similaire.\\
+  \begin{eqnarray*}
+    f(x) & = & k\\
+    f(x) - k & = & 0\\
+    ax + b - k & = & 0\\
+    ax &=& k-b\\
+    x &=& \dfrac{k-b}{a}
+  \end{eqnarray*}
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{sources/cours/ineq-1.pdf}
+  \end{figure}
+
+\end{multicols}
+
+\subsection{Les problèmes du type : $f(x) = g(x)$, $f(x) \leq g(x)$ et $f(x) \geq g(x)$}
+
+\begin{multicols}{2}
+
+  Dans ces problèmes de modélisation, on étudie la position relative de notre fonction $f$ avec une autre fonction $g$. On cherche ainsi quand $f$ est au dessous ou au dessus de $g$.
+
+  Si $g$ est une fonction affine définie par $ g : x \to cx + d$, il es possible de les résoudre algébriquement.
+
+
+  \begin{eqnarray*}
+    f(x) & = & g(x)\\
+    f(x) - g(x) & = & 0\\
+    ax + b - (cx + d) & = & 0\\
+    (a - c) x + (b - d) &=& 0\\
+    x &=& \dfrac{b-d}{a-c}
+  \end{eqnarray*}
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{sources/cours/ineq-2.pdf}
+  \end{figure}
+
+\end{multicols}
+
+\subsection{(In)Équations produit}
+
+\begin{Proposition}
+  \begin{itemize}
+  \item Un produit de facteur est nul si l'un de ses facteurs est nulle.
+  \item Un produit de facteurs est positif s'il possède un nombre pair de facteurs négatifs. 
+  \item Un produit de facteurs est négatif s'il possède un nombre impair de facteurs négatifs.
+  \end{itemize} 
+\end{Proposition}
+
+
+\subsection{(In)Équations quotient}
+
+\begin{Proposition}
+  \begin{itemize}
+  \item Un quotient de facteur est nul si son nominateur est nul et que so dénominateur est non nul.
+  \item Un quotient de facteurs est positif si son dénominateur et son numérateur sont du même signe. 
+  \item Un quotient de facteurs est négatif si son dénominateur et son numérateur sont de signe contraire.
+  \end{itemize} 
+\end{Proposition}
+
+\end{document}

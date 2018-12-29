@@ -1,0 +1,104 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LaTeX Template
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Linux and Unix Users Group at Virginia Tech Wiki 
+% (https://vtluug.org/wiki/Example_LaTeX_chem_lab_report)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt]{article}
+\usepackage{geometry} % Pour passer au format A4
+\geometry{hmargin=1cm, vmargin=1cm} % 
+
+\usepackage{graphicx} % Required for including pictures
+\usepackage{float} % 
+
+%Français
+\usepackage[T1]{fontenc} 
+\usepackage[english,francais]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{eurosym}
+\usepackage{lmodern}
+\usepackage{url}
+\usepackage{multicol}
+
+%Maths
+\usepackage{amsmath,amsfonts,amssymb,amsthm}
+%\usepackage[linesnumbered, ruled, vlined]{algorithm2e}
+%\SetAlFnt{\small\sffamily}
+
+%Autres
+\linespread{1} % Line spacing
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+\renewcommand{\labelenumi}{\alph{enumi}.} % 
+\pagestyle{empty}
+%----------------------------------------------------------------------------------------
+%	DOCUMENT INFORMATION
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+%\maketitle % Insert the title, author and date
+
+\begin{minipage}[t]{\textwidth}
+  \raggedright
+      {\bfseries $2^{nd}1$}\\[.35ex]
+      \vspace*{-1cm}
+      \raggedleft
+          {\bfseries Coordonnées}\\[.35ex]
+          {\bfseries 17 Octobre 2014}\\[.35ex]
+\end{minipage}\\[1em]
+
+\begin{center}
+  \textsf{Une méthode est un truc qui a été utilisé plusieurs fois. - George Polya}\\
+\end{center}
+
+\setlength{\columnseprule}{1pt}
+
+\begin{multicols}{2}
+% ------ Exercice 1 ------
+\section*{1 - Dans un triangle}
+
+Soit $A(-2;-2)$, $B(6.5;-2)$ et $C(2;2)$. On note également $O(0;0)$ l'origine du repère.
+
+\begin{enumerate}
+
+\item[1.] Placer les points $O$, $A$, $B$ et $C$ dans un repère orthonormal.
+\item[2.] Montrer que $O$ est le milieu de $[AC]$.
+\item[3.] 
+	\begin{enumerate}
+	\item[a.] Le triangle $ABC$ est-il isocèle. Justifier.
+	\item[b.] Le triangle $ABC$ est-il rectangle. Justifier.
+	\end{enumerate}
+
+\end{enumerate}
+
+% ------ Exercice 2 ------
+
+\section*{2 - Dans un quadrilatère}
+
+Soit $A(-5;-2)$, $B(2;0)$, $C(2;4)$ et $D(-5,5)$. 
+
+\begin{enumerate}
+
+\item[1.] Placer les points $A$, $B$, $C$ et $D$ dans un repère orthonormal.
+\item[2.] Calculer $E$ le milieu de $[AC]$.
+\item[3.] Calculer $E'$ le milieu de $[BD]$.
+\item[4.] 
+	\begin{enumerate}
+	\item[a.] En déduire la nature du quadrilatère ABCD. Justifier.
+	\item[b.] En déduire une relation entre [AB] et [CD]. Justifier.
+	\end{enumerate}
+\end{enumerate}
+\end{multicols}
+
+\end{document}

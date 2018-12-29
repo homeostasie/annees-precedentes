@@ -1,0 +1,109 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LaTeX Template
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Linux and Unix Users Group at Virginia Tech Wiki
+% (https://vtluug.org/wiki/Example_LaTeX_chem_lab_report)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt]{article}
+\usepackage{geometry} % Pour passer au format A4
+\geometry{hmargin=1cm, vmargin=1cm} %
+
+\usepackage{graphicx} % Required for including pictures
+\usepackage{float} %
+
+%Français
+\usepackage[T1]{fontenc}
+\usepackage[english,francais]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{eurosym}
+\usepackage{lmodern}
+\usepackage{url}
+\usepackage{multicol}
+
+%Maths
+\usepackage{amsmath,amsfonts,amssymb,amsthm}
+%\usepackage[linesnumbered, ruled, vlined]{algorithm2e}
+%\SetAlFnt{\small\sffamily}
+
+%Autres
+\linespread{1} % Line spacing
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+\renewcommand{\labelenumi}{\alph{enumi}.} %
+\pagestyle{empty}
+%----------------------------------------------------------------------------------------
+%	DOCUMENT INFORMATION
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+%\maketitle % Insert the title, author and date
+
+\begin{minipage}[t]{\textwidth}
+  \raggedright
+      {\bfseries $2^{nd}1$}\\[.35ex]
+      Série A\\
+      \vspace*{-1cm}
+      \raggedleft
+          {\bfseries Variations}\\[.35ex]
+          {\bfseries 10 Novembre 2014}\\[.35ex]
+\end{minipage}\\[1em]
+
+\begin{center}
+  \textsf{Le principe de l'évolution est beaucoup plus rapide en informatique que chez le bipède. - Jean Dion}\\
+\end{center}
+
+\setlength{\columnseprule}{1pt}
+
+\begin{multicols}{2}
+  % ------ Exercice 1 ------
+  \section*{1 - De la courbe au tableau}
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{sources/ie/ie-1-A.pdf}
+  \end{figure}
+
+  Soit $f$ la fonction définie sur l'intervalle $I=[-1,2.5]$ à partir de sa représentation graphique.
+  \begin{enumerate}
+  \item[1.] À partir de la courbe, établir son tableau de variation complet.
+  \item[2.]
+    \begin{enumerate}
+    \item[a.] Quel est le maximum de la fonction $f$. Pour quelle valeur est-il atteint ?
+    \item[b.] Quel est le minimum de la fonction $f$. Pour quelle valeur est-il atteint ?
+    \end{enumerate}
+  \end{enumerate}
+
+  % ------ Exercice 2 ------
+  \section*{2 - Du tableau à la courbe}
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{sources/ie/ie-2-A.pdf}
+  \end{figure}
+
+  Soit $f$ la fonction définie sur l'intervalle $I=[-6,4]$ à partir de son tableau de variation.
+  \begin{enumerate}
+  \item[1.] Proposer une représentation graphique (Échelle 1cm) pouvant correspondre à ce tableau de variation.
+  \item[2.]
+    \begin{enumerate}
+    \item[a.] Quel est le maximum de la fonction $f$. Pour quelle valeur est-il atteint ?
+    \item[b.] Quel est le minimum de la fonction $f$. Pour quelle valeur est-il atteint ?
+    \end{enumerate}
+  \end{enumerate}
+
+  % ------ Exercice 2 ------
+  \section*{3 - Comparaison d'images}
+
+  Soit $f$ une fonction décroissante sur un intervalle $I=[-4,4]$. Comparer $f(-2)$ et $f(2)$.
+\end{multicols}
+\end{document}

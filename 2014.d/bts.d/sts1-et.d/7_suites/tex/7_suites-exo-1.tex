@@ -1,0 +1,132 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LaTeX Template
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Linux and Unix Users Group at Virginia Tech Wiki 
+% (https://vtluug.org/wiki/Example_LaTeX_chem_lab_report)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt]{article}
+\usepackage{geometry} % Pour passer au format A4
+\geometry{hmargin=1cm, vmargin=1cm} % 
+
+\usepackage{graphicx} % Required for including pictures
+\usepackage{float} % 
+
+%Français
+\usepackage[T1]{fontenc} 
+\usepackage[english,francais]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{eurosym}
+\usepackage{lmodern}
+\usepackage{url}
+\usepackage{multicol}
+
+%Maths
+\usepackage{amsmath,amsfonts,amssymb,amsthm}
+%\usepackage[linesnumbered, ruled, vlined]{algorithm2e}
+%\SetAlFnt{\small\sffamily}
+
+%Autres
+\linespread{1} % Line spacing
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+\renewcommand{\labelenumi}{\alph{enumi}.} % 
+\pagestyle{empty}
+%----------------------------------------------------------------------------------------
+%	DOCUMENT INFORMATION
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+%\maketitle % Insert the title, author and date
+
+\setlength{\columnseprule}{1pt}
+
+\begin{multicols}{2}
+\subsection*{1 - Fibonacci}
+
+Leonardo Fibonacci mathématicien italien du $XIII^e$ siècle, proposa le problème suivant.
+
+`` Un homme met un couple de lapins dans un lieu isolé. Combien de couples obtient-on en un an si chaque couple engendre tous les mois un nouveau couple à compter du troisième mois de son existence ?''\\
+
+Si on note $C_n$ le nombre de couples de lapins le n-ième mois, on a alors : $C_1 = 1$, $C_2 = 1$, $C_3 = 2$, $C_4 = 1 + 2 = 3$, $C_5 = 2 + 3 = 5$...\\
+D'une manière plus générale : le $n-ième$ mois.
+$$C_n = C_{n-2} + C_{n-1}$$.
+
+\begin{enumerate}
+\item[1.] Calculer les valeurs de $C_6$, $C_7$ et $C_8$.
+\item[2.] Combien de couples de lapin y-a-t'il au bout d'un an ?
+\item[3.] Ce modèle est-il réaliste ? quelle critique peut-on émettre ?
+\end{enumerate}
+
+\noindent\hrulefill
+
+\subsection*{2 - Abonnés}
+
+Le service abonnement du monde diplomatique constate pour chaque année les éléments suivants.
+
+\begin{itemize}
+\item En 2015, $4000$ personnes sont abonnées.
+\item 100 nouveaux abonnés sont enregistrés en plus chaque année.
+\item la moitié des abonnées de l’année précédente ne renouvellent pas leur abonnement d'une année sur l'autre..
+\end{itemize}
+On note $a_n$ le nombre d’abonnées de l’année $2015 + n$, ainsi, $a_0 = 4000$.
+
+\begin{enumerate}
+\item[1.] Déterminer le nombre d’abonnées en 2016, 2017 et 2018.
+\item[2.] Exprimer le nombre d’abonnées $a_{n+1}$ en fonction du nombre d’abonnées $a_n$.
+\item[3.] La suite $(a_n)_n$ est-elle géométrique ? 
+\end{enumerate}
+
+\subsection*{3 - Habitants}
+
+Dans Un village du Jura.
+\begin{itemize}
+\item En 2015, le village compte 2000 habitants
+\item Chaque année sa population baisse de 5 \%.
+\end{itemize}
+Soit $P_n$ sa population l’année $2015 + n$, ainsi $P_0 = 2000$
+
+\begin{enumerate}
+\item[1.] Calculer $P_1$ , $P_2$ et $P_3$.
+\item[3.] Donner l’expression de $P_{n+1}$ en fonction de $P_n$.
+\item[2.] Quelle est la nature de la suite $(P_n)_n$ ?
+\item[3.] Donner l’expression de $P_n$ en fonction de $n$.
+\item[4.] La suite $(P_n)_n$ admet-elle une limite ? si oui, laquelle ?
+\end{enumerate}
+
+\noindent\hrulefill
+
+\subsection*{4 - Échecs}
+
+En Inde, un roi, à qui un mathématicien venait de présenter le jeu d'échec, fut si émerveillé qu'il lui proposa de choisir lui-même sa récompense. \\
+Le mathématicien demanda au roi de le récompenser en grains de blé de la façon suivante :
+
+\begin{itemize}
+\item sur la $1^{ère}$ case de l'échiquier : 1 grain de blé.
+\item sur la $2^{ème}$ case de l'échiquier : 2 grain de blé.
+\item sur la $3^{ème}$ case de l'échiquier : 4 grain de blé.
+\item et ainsi de suite, en déposant sur chaque nouvelle case le double de grains de blé de celui de la case précédente.
+\end{itemize}
+
+Un  échiquier comporte 64 cases. On note $u_1$ le nombre de grains de blé sur la $1^{ère}$ case, $u_2$ sur la $2^{ème}$ case...
+
+\begin{enumerate}
+\item[1.] Quelle est la nature de la suite $(u_n)_n$ ?
+\item[2.] Quelle est le nombre de grain de riz sur la dernière case ?
+\item[3.] Bonus : On note S la somme des grains de blé sur l'échiquier.
+Écrire un algorithme qui permet de calculer et d’afficher S - en français, ti ou casio.
+Programmer sur calculatrice cet algorithme, et donner la valeur de S. Si un grain de riz pèse 0,02g, donner, en tonnes, le poids de blé sur l'échiquier.
+\end{enumerate}
+
+\end{multicols}
+\end{document}

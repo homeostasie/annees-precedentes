@@ -1,0 +1,225 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Short Sectioned Assignment
+% LaTeX Template
+% Version 1.0 (5/5/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Frits Wenneker (http://www.howtotex.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt]{article}%{scrartcl} % A4 paper and 11pt font size
+\usepackage{geometry} 
+\geometry{hmargin=1cm, vmargin=1cm} %
+
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage[english,francais]{babel} % Français et anglais
+\usepackage[utf8]{inputenc} 
+
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+
+\usepackage{enumitem}
+\usepackage{lmodern}
+\usepackage{url}
+\usepackage{eurosym} % signe Euros
+\usepackage{geometry} % Pour passer au format A4
+\geometry{a4paper} % 
+\usepackage{graphicx} % Required for including pictures
+\usepackage{float} % Allows putting an [H] in \begin{figure} to specify the exact location of the figure
+
+\usepackage{multicol}
+\usepackage{caption}
+\usepackage{verbatim}
+\usepackage{pst-node,pst-tree}
+
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{\centering \normalfont\scshape} % Make all sections centered, the default font and small caps
+
+%----------------------------------------------------------------------------------------
+%	Pied de Page
+%----------------------------------------------------------------------------------------
+
+
+\setlength{\headheight}{13.6pt} % Customize the height of the header
+
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs - comment this line for an assignment with lots of text
+
+
+%----------------------------------------------------------------------------------------
+%	Titre
+%----------------------------------------------------------------------------------------
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+
+\title{	
+  \vspace{-10ex}
+  \horrule{0.5pt} \\[0.4cm] % Thin top horizontal rule
+  \huge Suites Numériques\\ % The assignment title
+  \horrule{2pt} \\[0.5cm] % Thick bottom horizontal rule
+}
+
+\author{}
+\date{\vspace{-10ex}} % Today's date or a custom date
+
+%----------------------------------------------------------------------------------------
+%	Début du document
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+% RE-DEFINITION
+%----------------------------------------------------------------------------------------
+% MATHS
+%-----------
+
+\newtheorem{Definition}{Définition}
+\newtheorem{Theorem}{Théorème}
+\newtheorem{Proposition}{Propriété}
+
+% MATHS
+%-----------
+\renewcommand{\labelitemi}{$\bullet$}
+\renewcommand{\labelitemii}{$\circ$}
+%----------------------------------------------------------------------------------------
+%	Titre
+%----------------------------------------------------------------------------------------
+
+\maketitle % Print the title
+\setlength{\columnseprule}{1pt}
+\begin{multicols}{2}
+\section{Introduction}
+
+\begin{Definition}{Suites Numériques}\\
+Une suites numériques est une suite indexée de nombre. Elle a un premier terme, un second terme...
+\end{Definition}
+
+Une suite numérique est une fonction qui a tout entier naturel associe un nombre noté $u(n)$ ou $u_n$. La suite est notée dans sa globalité $(u_n)$.
+
+\subsection{Générations d'une suite}
+
+\subsubsection{Formule implicite}
+
+On définit la suite $(u_n)$ à l'aide d'une fonction de $n$ : 
+ 
+$$u_n = f(n) \text{ où } f \text{ est une fonction}$$ 
+
+\paragraph{Exemple : }
+$u_n = -n^2 + n - 2$\\
+Premiers termes : $u_0 = 2 , u_1 = -2, ...$
+
+\subsubsection{Formule de récurrence}
+
+On définit la suite $(u_n)$ à partir d'un premier terme et d'une relation de recurrence nous permettant de passer d'un terme à l'autre.
+
+
+\begin{equation*}
+  \left\lbrace
+  \begin{array}{ccc}
+    v_0 \text{ est donnée }\\
+    v_{n+1} &=& f(v_n)
+  \end{array}\right.
+\end{equation*}
+
+\paragraph{Exemple : }
+
+\begin{equation*}
+  \left\lbrace
+  \begin{array}{ccc}
+    v_0    &=& 5\\
+    v_{n+1} &=& \dfrac{v_n + 3}{2}
+  \end{array}\right.
+\end{equation*}
+
+Premiers termes : $v_1 = 4, v_2 = \dfrac{7}{2},...$
+
+\paragraph{Remarques}
+
+\begin{itemize}
+\item On dit également utiliser un procédé : Prendre le terme précédent, lui rajouter 3 et diviser par 2.
+\item Pour calculer le 10-ième terme, il nous faut calculer tous les termes précédents.
+\end{itemize}
+
+\end{multicols}
+
+\hrulefill
+
+\begin{multicols}{2}
+\section{Suites Arithmétiques}
+
+\begin{Definition}{Suite Arithmétique}\\
+  Une suite $(u_n)$ est arithmétique si on passe d'un terme au suivant en additionnant toujours par le même nombre.
+  $$u_n = u_n + r$$
+  On appele le nombre $r$ la raison de la suite $u_n$.
+\end{Definition}
+
+\begin{Proposition}{Démonstration}\\
+ Une suite $(u_n)$ est arithmétique si et seulement si la différence $u_{n+1} - u_n$ est constante pour tout n.
+\end{Proposition}
+
+\begin{Proposition}{}
+  Une suite $(u_n)$ est arithmétique si on peut l'écrire : $u_{n} = u_0 + nr$.
+\end{Proposition}
+
+\paragraph{Exemples : }
+\begin{itemize}
+\item $1, 6, 11, 16, 21, ... $
+\item $0, 1, 2, 3, 4, 5, 6, 7, ...$
+\item 
+\begin{equation*}
+  \left\lbrace
+  \begin{array}{ccc}
+    u_0 = 2\\
+    r = 2
+  \end{array}\right.
+\end{equation*}
+
+\item $u_n  = 3n - 2$
+\end{itemize}
+
+\section{Suites Géométriques}
+
+\begin{Definition}{Suite Géométrique}\\
+  Une suite $(u_n)$ est géométrique si on passe d'un terme au suivant en multipliant toujours par le même nombre.
+  $$u_n = q \times u_n$$
+  On appele le nombre $q$ la raison de la suite $u_n$.
+\end{Definition}
+
+\begin{Proposition}{Démonstration}\\
+ Une suite $(u_n)$ est géométrique si et seulement si le quotient $\dfrac{u_{n+1}}{u_n}$ est constant pour tout n.
+\end{Proposition}
+
+\begin{Proposition}{}
+  Une suite $(u_n)$ est géométrique si on peut l'écrire : $u_{n} = u_0 \times q^n$.
+\end{Proposition}
+
+\paragraph{Exemples : }
+\begin{itemize}
+\item $1, 2, 4, 8, 16, ... $
+\item $1, -1, 1, - 1 , 1 , ...$
+\item 
+\begin{equation*}
+  \left\lbrace
+  \begin{array}{ccc}
+    u_0 = 5\\
+    q = 10
+  \end{array}\right.
+\end{equation*}
+
+\item $u_n  = 5 \times 3^{n+1}$
+\end{itemize}
+\end{multicols}
+
+\end{document}

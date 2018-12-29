@@ -1,0 +1,298 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Short Sectioned Assignment
+% LaTeX Template
+% Version 1.0 (5/5/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Frits Wenneker (http://www.howtotex.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[paper=a4, fontsize=9pt]{scrartcl} % A4 paper and 11pt font size
+
+
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage[english,francais]{babel} % Français et anglais
+\usepackage[utf8]{inputenc}
+
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+
+\usepackage{enumitem}
+\usepackage{lmodern}
+\usepackage{url}
+\usepackage{eurosym} % signe Euros
+\usepackage{geometry} % Pour passer au format A4
+\geometry{a4paper} %
+\usepackage{graphicx} % Required for including pictures
+\usepackage{float} % Allows putting an [H] in \begin{figure} to specify the exact location of the figure
+
+\usepackage{multicol}
+
+\usepackage{verbatim}
+
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{\centering \normalfont\scshape} % Make all sections centered, the default font and small caps
+
+%----------------------------------------------------------------------------------------
+%	Pied de Page
+%----------------------------------------------------------------------------------------
+
+
+\usepackage{fancyhdr} % Custom headers and footers
+\pagestyle{fancyplain} % Makes all pages in the document conform to the custom headers and footers
+\fancyhead{} % No page header - if you want one, create it in the same way as the footers below
+\fancyfoot[L]{$2^{nd}1$} % Empty left footer
+\fancyfoot[C]{Chapitre 4 - Statistiques} % Empty center footer
+\fancyfoot[R]{\thepage} % Page numbering for right footer
+
+\renewcommand{\headrulewidth}{0pt} % Remove header underlines
+\renewcommand{\footrulewidth}{0pt} % Remove footer underlines
+
+\setlength{\headheight}{13.6pt} % Customize the height of the header
+
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs - comment this line for an assignment with lots of text
+
+
+%----------------------------------------------------------------------------------------
+%	Titre
+%----------------------------------------------------------------------------------------
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+
+\title{
+  \vspace{-10ex}
+  \horrule{0.5pt} \\[0.4cm] % Thin top horizontal rule
+  \huge Chapitre 4 - Statistiques\\ % The assignment title
+  \horrule{2pt} \\[0.5cm] % Thick bottom horizontal rule
+}
+
+\author{}
+\date{\vspace{-10ex}} % Today's date or a custom date
+
+%----------------------------------------------------------------------------------------
+%	Début du document
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+% RE-DEFINITION
+%----------------------------------------------------------------------------------------
+% MATHS
+%-----------
+
+\newtheorem{Definition}{Définition}
+\newtheorem{Theorem}{Théorème}
+\newtheorem{Proposition}{Propriété}
+
+% MATHS
+%-----------
+\renewcommand{\labelitemi}{$\bullet$}
+\renewcommand{\labelitemii}{$\circ$}
+%----------------------------------------------------------------------------------------
+%	Titre
+%----------------------------------------------------------------------------------------
+
+\maketitle % Print the title
+\setlength{\columnseprule}{1pt}
+
+%-----------------------------------111111111111111111111111111111111111
+\section{Généralités sur la Statistique}
+%-----------------------------------------------------------------------
+\begin{multicols}{2}
+
+  \subsection{Introduction}
+
+  \begin{Definition}
+    On appelle Statistique l'ensemble des méthodes et des techniques permettant d'analyser et de traiter des ensembles d'observations appelées données.
+  \end{Definition}
+
+  \begin{Definition}
+    La statistique descriptive regroupe des méthodes dont l'objet principal est la description des données étudiées.
+    Cette description des données se fait à travers l'étude de leur caractéristique et leur représentation graphique
+  \end{Definition}
+
+  \paragraph{Remarques}~~\\
+  \begin{itemize}
+  \item Un autre groupe de méthodes provient de la Statistique inférentielle. On les utilise après celle de Statistique descriptive.
+  \item De manière générale, les méthodes statistiques relève du domaine des mathématiques et font largement appel à l'outil informatique.
+  \end{itemize}
+
+  \begin{Definition}
+    Une population (statistique) est composé d'un ensemble d'individu. Une étude statistique se fait à l'aide de données recueillies
+    sur un caractère d'étude. Ses caractères peuvent être numérique (ou  qualitative).
+  \end{Definition}
+
+  \subsubsection{Activité de présentation}~~\\
+  En s'intéressant à la population de la classe entière de seconde 1, un individu est un élève. On s'intéresse au caractère d'étude du nombre de frère et sœur.
+  L'organisation de la récupération de données est une part importante du travail.
+
+  \begin{center}
+    \begin{tabular}{| l || c | c | c | c | c |}
+      \hline
+      Personnes    &  a. & b. & c. & d. & ...\\
+      \hline
+      Nombre de frères et sœurs & 1 & 0 & 3 & 1 & ...\\
+      \hline
+    \end{tabular}
+  \end{center}
+
+  Une meilleur organisation consiste à s'intéresser aux effectifs et aux fréquences.
+\end{multicols}
+%-----------------------------------111111111111111111111111111111111111
+\section{Structure de données}
+%----------------------------------------------------------------------
+\begin{multicols}{2}
+
+  \subsection{Effectifs et fréquences}
+  %----------------------------------------------------------------------
+
+  \begin{Definition}~~\\
+    \begin{enumerate}
+    \item L'\textbf{effectif} est le nombre d'individus dans une population possédant une certaine \textbf{valeur} d'un caractère.
+    \item L'\textbf{effectif total} noté n est le nombre total d'individu. On parle également de la taille de la population.
+    \item La \textbf{fréquence} d'une valeur est le quotient de l'effectif par l'effectif total : $\text{fréquence} = \dfrac{\text{effectif}}{\text{effectif total}}$
+    \end{enumerate}
+  \end{Definition}
+
+  \subsection{Effectifs et fréquences cumulé croissant}
+  %----------------------------------------------------------------------
+
+  \begin{Definition}~~\\
+    \begin{enumerate}
+    \item L'\textbf{effectif cumulé croissant} d'une valeur est la somme des effectifs de toutes les valeurs plus petites ou égales.
+    \item La \textbf{fréquence cumulée croissante} d'une valeur est la somme des fréquences de toutes les valeurs plus petites ou égales.
+    \end{enumerate}
+  \end{Definition}
+
+\end{multicols}
+
+\subsection{Activité de présentation}
+
+L'effectif total de la classe est n=35.
+
+\begin{multicols}{2}
+
+  \begin{center}
+    \begin{tabular}{| l || c | c | c | c | c |}
+      \hline
+      Nbr de frères & 0 & 1 & 2 & 3 & ...\\
+      \hline
+      Effectif      & 4 & 2 & 6 & 1 & ...\\
+      \hline
+      Fréquence     & 0.11 & 0.057 & 0.17 & 0.029 & ...\\
+      \hline
+    \end{tabular}
+  \end{center}
+
+  \begin{center}
+    \begin{tabular}{| l || c | c | c | c | c |}
+      \hline
+      Nbr de frères & 0 & 1 & 2 & 3 & ...\\
+      \hline
+      Effectif cumulé croissant & 4 & 6 & 12 & 13 & ...\\
+      \hline
+      Fréquence cumulée croissante & 0.11 & 0.17 & 0.34 & 0.35 & ...\\
+      \hline
+    \end{tabular}
+  \end{center}
+
+\end{multicols}
+\begin{multicols}{2}
+  %-----------------------------------111111111111111111111111111111111111
+  \section{Représentation graphique des données}
+  %----------------------------------------------------------------------
+
+  La représentation graphique privilégié en statistique est l'histogramme. On le préfère au nuage de point ainsi qu'au diagramme circulaire.
+
+  %-----------------------------------111111111111111111111111111111111111
+  \section{Caractéristiques des données}
+  %----------------------------------------------------------------------
+
+  Soit la série statistique donnée par le tableau suivant. On note $N = n_1 + n_2 + ... + n_3$.
+
+  \begin{center}
+    \begin{tabular}{| l || c | c | c | c | c |}
+      \hline
+      Valeur    & $x_1$ & $x_2$ & $x_3$ & ... & $x_p$\\
+      \hline
+      Effectif  & $n_1$ & $n_2$ & $n_3$ & ... & $n_p$\\
+      \hline
+      Fréquence & $f_1$ & $f_2$ & $f_3$ & ... & $f_p$\\
+      \hline
+    \end{tabular}
+  \end{center}
+\end{multicols}
+\subsection{Caractéristiques de position}
+%----------------------------------------------------------------------
+
+\begin{multicols}{2}
+  \subsubsection{Moyenne}~~\\
+
+  \begin{Definition} La moyenne\\
+    La moyenne est le nombre noté $\bar{x} = \dfrac{n_1 x_1 + n_2 x_2 + n_3 x_3 + ... + n_p x_p}{N}$\\
+  \end{Definition}
+
+  \begin{Proposition}
+    On peut également calculer la moyenne à l'aide des fréquences.\\
+    $\bar{x} = f_1 x_1 + f_2 x_2 + f_3 x_3 + ... + f_p x_p$\\
+  \end{Proposition}
+
+  \subsubsection{Médiane}~~\\
+
+  \begin{Definition}La médiane\\
+    On considère une série statistique dont les valeurs sont ordonnées. Selon la valeur de N l'effectif total la médiane n'est pas la même.
+    \begin{itemize}
+    \item Si N est impair, la médiane est le terme du milieu : $x_{\frac{N + 1}{2}}$.
+    \item Si N est pair, la médiane est la somme des deux termes du milieu : $\dfrac{x_{\frac{N}{2}} + x_{\frac{N+1}{2}}}{2}$.
+    \end{itemize}
+  \end{Definition}
+\end{multicols}
+\subsection{Caractéristiques de dispersion}
+
+\begin{Definition}Quartiles\\
+  On considère une série statistique dont les valeurs sont ordonnées.
+
+  \begin{enumerate}
+  \item Le premier quartile, noté $Q_1$ est la plus petite valeur de la série telle que 25\% des valeurs lui soient inférieurs : $x_\frac{N}{4}$.
+  \item Le troisième quartile, noté $Q_3$ est la plus petite valeur de la série telle que 75\% des valeurs lui soient inférieurs : $x_\frac{3N}{4}$.
+  \item Le deuxième quartile est la médiane (avec 50\% des valeurs inférieurs)
+  \end{enumerate}
+\end{Definition}
+
+\begin{Definition}Étendue\\
+  L'étendue d'une série statistique est la différence entre la plus grande et la plus petite des valeurs.
+\end{Definition}
+
+\subsection{Exemple de cours - Ex 49 p159}
+\begin{multicols}{2}
+  Soit la série : 12, 9, 6, 13, 10, 9, 8, 16, 11, 17, 9, 9, 16, 13, 17, 9, 14
+  \begin{enumerate}
+  \item On calcul l'effectif total : $N = 17$. Puis la moyenne : $\bar{x}  = \frac{1}{17} \times (12+9+6+13+10+9+8+16+11+17+9+9+16+13+17+9+14) = \frac{198}{17} = 11.65$ 
+  \item Il faut proposer une série statistique ordonnée.
+    \begin{itemize}
+    \item N est impair, on choisit la valeur du milieu, la médiane est 11.
+    \item $\frac{17}{4} = 4.25$, on s'intéresse à la cinquième valeur : $Q_1 = 9$
+    \item $\frac{3*17}{4} = 12.75$, on s'intéresse à la treizième valeur : $Q2 = 14$
+    \end{itemize}
+  \end{enumerate}
+\end{multicols}
+\begin{verbatim}
+# Sous R
+data=c(12, 9, 6, 13, 10, 9, 8, 16, 11, 17, 9, 9, 16, 13, 17, 9, 14) # Données
+hist(data,breaks=17,col=''red'') # Histogramme
+summary(data) # Caractéristiques
+\end{verbatim}
+\end{document}

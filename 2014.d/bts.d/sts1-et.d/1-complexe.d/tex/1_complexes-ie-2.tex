@@ -1,0 +1,116 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LaTeX Template
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Linux and Unix Users Group at Virginia Tech Wiki 
+% (https://vtluug.org/wiki/Example_LaTeX_chem_lab_report)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt]{article}
+\usepackage{geometry} % Pour passer au format A4
+\geometry{hmargin=1cm, vmargin=1cm} % 
+
+\usepackage{graphicx} % Required for including pictures
+\usepackage{float} % 
+
+%Français
+\usepackage[T1]{fontenc} 
+\usepackage[english,francais]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{eurosym}
+\usepackage{lmodern}
+\usepackage{url}
+\usepackage{multicol}
+
+%Maths
+\usepackage{amsmath,amsfonts,amssymb,amsthm}
+%\usepackage[linesnumbered, ruled, vlined]{algorithm2e}
+%\SetAlFnt{\small\sffamily}
+
+%Autres
+\linespread{1} % Line spacing
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+\renewcommand{\labelenumi}{\alph{enumi}.} % 
+\pagestyle{empty}
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENT INFORMATION
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+%\maketitle % Insert the title, author and date
+
+\begin{minipage}[t]{\textwidth}
+  \raggedright
+      {\bfseries $BTS STS ET$}\\[.35ex]
+      \vspace*{-1cm}
+      \raggedleft
+          {\bfseries ie Complexes 2}\\[.35ex]
+          {\bfseries 17 Octobre 2014}\\[.35ex]
+\end{minipage}\\[1em]
+
+\begin{center}
+  \textsf{Une méthode est un truc qui a été utilisé plusieurs fois. - George Polya}\\
+\end{center}
+
+
+\setlength{\columnseprule}{1pt}
+
+\begin{multicols}{2}
+
+% ------ Exercice 1 ------
+\section*{1 - Forme algébrique}
+Mettre sous la forme algébrique : $a+jb$ avec $j^2 = -1$ et $a,b \in \mathbb{R}$.
+
+\begin{eqnarray*}
+	z_1 &=& -j \times (j -1) \times (2j+4) \\
+	z_2 &=& 1 + j + j^2 + j^3 + j^4 \\
+	z_3 &=& (2 - 3j)^2 \\
+	z_4 &=& \dfrac{j+4}{j+5} 
+\end{eqnarray*}
+
+% ------ Exercice 2 ------
+\section*{2 - Forme exponentielle}
+Mettre sous la forme exponentielle : $r \times e^{j\theta}$ avec $r \in \mathbb{R^{+}}$ et $\theta \in \mathbb{R}$.
+
+\begin{eqnarray*}
+	z_5 &=& 2 + 2j \\
+	z_6 &=& -1 + j\sqrt{3} \\
+	z_7 &=& -\sqrt{6} + j\sqrt{2} \\
+	z_8 &=& -12 j
+\end{eqnarray*}
+
+
+% ------ Exercice 3 ------
+\section*{3 - Par la forme trigonométrique}
+Mettre sous la forme algébrique : $a+jb$ avec $j^2 = -1$ et $a,b \in \mathbb{R}$.
+
+\begin{eqnarray*}
+	z_9 &=& 2 e^{j \frac{\pi}{3}} \\
+	z_{10} &=& 5 e^{-j \frac{\pi}{6}} \\
+	z_{11} &=& 2 e^{j \frac{3\pi}{2}}\\
+	z_{12} &=& 12 e^{j \pi}
+\end{eqnarray*}
+
+% ------ Exercice 4 ------
+\section*{4 - Dans un repère}
+Placer les points dans un repère orthonormal.
+
+\begin{eqnarray*}
+	z_{13} &=& 1 + 2j \\
+	z_{14} &=& -2 \\
+	z_{15} &=&  4j \\
+	z_{16} &=&  -2 + 3j
+\end{eqnarray*}
+\end{multicols}
+\end{document}

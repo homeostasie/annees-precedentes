@@ -1,0 +1,121 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LaTeX Template
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Linux and Unix Users Group at Virginia Tech Wiki
+% (https://vtluug.org/wiki/Example_LaTeX_chem_lab_report)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt]{article}
+\usepackage{geometry} % Pour passer au format A4
+\geometry{hmargin=1cm, vmargin=1cm} %
+
+\usepackage{graphicx} % Required for including pictures
+\usepackage{float} %
+
+%Français
+\usepackage[T1]{fontenc}
+\usepackage[english,francais]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{eurosym}
+\usepackage{lmodern}
+\usepackage{url}
+\usepackage{multicol}
+
+%Maths
+\usepackage{amsmath,amsfonts,amssymb,amsthm}
+%\usepackage[linesnumbered, ruled, vlined]{algorithm2e}
+%\SetAlFnt{\small\sffamily}
+
+%Autres
+\linespread{1} % Line spacing
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+
+\renewcommand{\labelenumi}{\alph{enumi}.} %
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENT INFORMATION
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+\begin{minipage}[t]{\textwidth}
+  \raggedright
+      {\bfseries $BTS STS ET 1$}\\[.35ex]
+      \vspace*{-1cm}
+      \raggedleft
+          {\bfseries Intégration}\\[.35ex]
+          {\bfseries 17 Mars 2014}\\[.35ex]
+\end{minipage}\\[1em]
+
+\begin{center}
+  \textsf{A une époque de supercherie universelle, dire la vérité est un acte révolutionnaire. - George Orwell}
+\end{center}
+
+
+\setlength{\columnseprule}{1pt}
+
+  \section*{EXERCICE 1 - Primitive}
+  \textit{Pour chaque fonction donner une primitive.}
+
+\begin{multicols}{2}
+
+
+  \begin{enumerate}
+  \item $f_{1}(x) = \sqrt(2) + \pi$
+  \item $f_{2}(x) = x + 5x^3 + 9 x^5$
+  \item $f_{3}(x) = 12 + \dfrac{1}{10}x + \dfrac{1}{5}x^{4} \dfrac{1}{2}x^{8} + \dfrac{4}{x} $
+  \item $f_{4}(x) = 2x + 4\cos(x) + 4\sin(x) e^{(x)}$
+  \item $f_{5}(x) = \dfrac{4}{x^2} - \dfrac{7}{x^3} + \dfrac{1}{2x^5}$
+  \end{enumerate}
+
+\end{multicols}
+
+\rule{\textwidth}{1pt}
+
+\section*{EXERCICE 2 -  Intégrales graphiques}
+\textit{Calculer les intégrales suivantes.}
+
+\begin{figure}[H]
+  \centering
+  \fbox{\includegraphics[width=0.6\textwidth]{sources/ie/integrale-1.pdf}}
+\end{figure}
+
+\begin{multicols}{3}
+
+  \begin{enumerate}
+  \item $ \int_{-4}^{4} f_{1}(x) \, \mathrm dx $
+  \item $ \int_{-4}^{4} f_2(x) \, \mathrm dx $
+  \item $ \int_{-4}^{4} f_3(x) \, \mathrm dx $
+  \item $ \int_{-4}^{4} f_4(x) \, \mathrm dx $
+  \item $ \int_{-4}^{4} f_5(x) \, \mathrm dx $
+  \item $ \int_{-2}^{2} f_6(x) \, \mathrm dx $
+  \end{enumerate}
+\end{multicols}
+
+  \section*{EXERCICE 3 - Intégrale}
+  \textit{Pour chaque fonction calculer la valeur de l'intégrale.}
+
+  \begin{enumerate}
+  \item $f_{1}(x) = \int_{- \pi}^{4\pi} x^3 - 2x           \, \mathrm dx $
+  \item $f_{2}(x) = \int_{- \pi}^{4\pi} \cos(x) + 2\sin(x) \, \mathrm dx $
+  \item $f_{3}(x) = \int_{-1}^{2}      e^{x} - 3          \, \mathrm dx $
+  \item $f_{4}(x) = \int_{- \pi}^{2\pi} 8\cos(3x)          \, \mathrm dx $
+  \end{enumerate}
+
+
+  \section*{EXERCICE 4 - Intégrale - 2}
+  \textit{À l'aide d'une intégration par partie, calculer la valeur de l'intégrale.}
+
+$f(x) = \int_{0}^{5} 3x e^{-x} \, \mathrm dx $
+
+\end{document}

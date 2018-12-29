@@ -1,0 +1,150 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LaTeX Template
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Linux and Unix Users Group at Virginia Tech Wiki 
+% (https://vtluug.org/wiki/Example_LaTeX_chem_lab_report)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt]{article}
+\usepackage{geometry} % Pour passer au format A4
+\geometry{hmargin=1cm, vmargin=1cm} % 
+
+\usepackage{graphicx} % Required for including pictures
+\usepackage{float} % 
+
+%Français
+\usepackage[T1]{fontenc} 
+\usepackage[english,francais]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{eurosym}
+\usepackage{lmodern}
+\usepackage{url}
+\usepackage{multicol}
+
+%Maths
+\usepackage{amsmath,amsfonts,amssymb,amsthm}
+%\usepackage[linesnumbered, ruled, vlined]{algorithm2e}
+%\SetAlFnt{\small\sffamily}
+
+%Autres
+\linespread{1} % Line spacing
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+\renewcommand{\labelenumi}{\alph{enumi}.} % 
+\pagestyle{empty}
+%----------------------------------------------------------------------------------------
+%	DOCUMENT INFORMATION
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+%\maketitle % Insert the title, author and date
+
+\begin{minipage}[t]{\textwidth}
+  \raggedright
+      {\bfseries Série B}\\[.35ex]
+      {\bfseries $2^{nd}1$}\\[.35ex]
+      \vspace*{-1cm}
+      \raggedleft
+          {\bfseries Fonctions 1}\\[.35ex]
+          {\bfseries 29 Septembre 2014}\\[.35ex]
+\end{minipage}\\[1em]
+
+\begin{center}
+  \textsf{La vie, c'est comme une bicyclette, il faut avancer pour ne pas perdre l'équilibre. - Albert Einstein}\\
+\end{center}
+
+\setlength{\columnseprule}{1pt}
+
+% ------ Exercice 1 ------
+\section*{1 - Programme de calcul}
+
+\begin{verbatim}
+- Choisir un nombre
+- Soustraire 10
+- Élever le résultat au carré
+\end{verbatim}
+
+\begin{enumerate}
+% -- 1
+\item[1]
+  \begin{enumerate}
+  \item On choisit le nombre $ 6$. Quel est le résultat du programme de calcul.
+  \item On choisit le nombre $-3$. Quel est le résultat du programme de calcul.
+  \end{enumerate}
+% -- 2
+\item[2] On décide de ne pas choisir de nombre précisément. On pose $x$ le nombre choisi.
+  \begin{enumerate}
+  \item Effectuer le programme de calcul avec $x$ le nombre choisi.
+  \item Trouver la forme développée du calcul.
+  \end{enumerate}
+\end{enumerate}
+
+% ------ Exercice 2 ------
+\noindent\hrulefill
+
+\section*{2 - Images et antécédents}
+
+\begin{multicols}{2}
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{sources/ie/ie-courbe.pdf}
+  \end{figure}
+
+  \begin{center}
+    \begin{tabular}{| l || c | c | c | c | c |}
+      \hline			
+      $x$    & -4 & -2 & -0.5 & 0 & 2\\
+      \hline  
+      $f(x)$ &    &    &      &   & \\
+      \hline  
+    \end{tabular}
+  \end{center}
+
+
+  \begin{enumerate}
+    % -- 1
+  \item[1] Remplir le tableau précédent :
+    % -- 2
+  \item[2] 
+    \begin{enumerate}
+    \item Quelle est l'image de $-2$ par la fonction $f$.
+    \item Quel sont les antécédents de $-2$ par la fonction $f$.
+    \end{enumerate}
+  \end{enumerate}
+
+\end{multicols}
+
+% ------ Exercice 3 ------
+\noindent\hrulefill
+
+\section*{3 - Un problème de longueur }
+
+\begin{multicols}{2}
+
+  Charles possède le terrain rectangulaire suviant : 
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{sources/ie/ie-terrain.pdf}
+  \end{figure}
+ 
+  \begin{enumerate}
+  \item[1] Exprimer en fonction de $x$ le périmètre du terrain.
+  \item[2]   Sachant que le périmètre du terrain mesure exactement $70m$.\\
+  Quelles sont les dimensions (longueur ET largeur) du terrain.
+  \end{enumerate}
+
+\end{multicols}
+
+\end{document}

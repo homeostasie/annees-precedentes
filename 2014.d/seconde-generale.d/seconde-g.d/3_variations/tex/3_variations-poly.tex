@@ -1,0 +1,209 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Short Sectioned Assignment
+% LaTeX Template
+% Version 1.0 (5/5/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Frits Wenneker (http://www.howtotex.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[paper=a4, fontsize=9pt]{scrartcl} % A4 paper and 11pt font size
+
+
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage[english,francais]{babel} % Français et anglais
+\usepackage[utf8]{inputenc} 
+
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+
+\usepackage{enumitem}
+\usepackage{lmodern}
+\usepackage{url}
+\usepackage{eurosym} % signe Euros
+\usepackage{geometry} % Pour passer au format A4
+\geometry{a4paper} % 
+\usepackage{graphicx} % Required for including pictures
+\usepackage{float} % Allows putting an [H] in \begin{figure} to specify the exact location of the figure
+
+\usepackage{multicol}
+
+\usepackage{verbatim}
+
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{\centering \normalfont\scshape} % Make all sections centered, the default font and small caps
+
+%----------------------------------------------------------------------------------------
+%	Pied de Page
+%----------------------------------------------------------------------------------------
+
+
+\usepackage{fancyhdr} % Custom headers and footers
+\pagestyle{fancyplain} % Makes all pages in the document conform to the custom headers and footers
+\fancyhead{} % No page header - if you want one, create it in the same way as the footers below
+\fancyfoot[L]{$2^{nd}1$} % Empty left footer
+\fancyfoot[C]{Chapitre 3 - Variations} % Empty center footer
+\fancyfoot[R]{\thepage} % Page numbering for right footer
+
+\renewcommand{\headrulewidth}{0pt} % Remove header underlines
+\renewcommand{\footrulewidth}{0pt} % Remove footer underlines
+
+\setlength{\headheight}{13.6pt} % Customize the height of the header
+
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs - comment this line for an assignment with lots of text
+
+
+%----------------------------------------------------------------------------------------
+%	Titre
+%----------------------------------------------------------------------------------------
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+
+\title{	
+  \vspace{-10ex}
+  \horrule{0.5pt} \\[0.4cm] % Thin top horizontal rule
+  \huge Chapitre 3 - Variations\\ % The assignment title
+  \horrule{2pt} \\[0.5cm] % Thick bottom horizontal rule
+}
+
+\author{}
+\date{\vspace{-10ex}} % Today's date or a custom date
+
+%----------------------------------------------------------------------------------------
+%	Début du document
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+% RE-DEFINITION
+%----------------------------------------------------------------------------------------
+% MATHS
+%-----------
+
+\newtheorem{Definition}{Définition}
+\newtheorem{Theorem}{Théorème}
+\newtheorem{Proposition}{Propriété}
+
+% MATHS
+%-----------
+\renewcommand{\labelitemi}{$\bullet$}
+\renewcommand{\labelitemii}{$\circ$}
+%----------------------------------------------------------------------------------------
+%	Titre
+%----------------------------------------------------------------------------------------
+
+\maketitle % Print the title
+\setlength{\columnseprule}{1pt}
+
+\section{Variations d'une fonction sur un intervalle}
+
+\begin{multicols}{2}
+
+  \subsection{Fonction croissante sur un intervalle}
+
+  \begin{Proposition}
+    $f$ est une fonction croissante sur un intervalle $I$.
+    Si les valeurs de $x$ augmente, alors les valeurs de $f(x)$ augmente. Pour $a,b \in I$ avec $a \leq b$ on a $f(a) \leq f(b)$
+  \end{Proposition}
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{sources/cours/3_croissant.pdf}
+  \end{figure}
+
+  \subsection{Fonction décroissante sur un intervalle}
+
+  \begin{Proposition} $f$ est une fonction constante sur un intervalle $I$.
+    Pour toutes valeurs de $x$ sur I, alors les valeurs de $f(x)$ diminue. Pour $a,b \in I$ avec $a \leq b$ on a $f(a) \geq f(b)$
+  \end{Proposition}
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{sources/cours/3_decroissant.pdf}
+  \end{figure}
+
+\end{multicols}
+
+\subsection{Fonction constante sur un intervalle}
+
+\begin{Proposition} $f$ est une fonction décroissante sur un intervalle $I$.
+  Si les valeurs de $x$ augmente, alors les valeurs de f(x) ne change pas. Pour $a,b \in I$ on a $f(a) = f(b)$
+\end{Proposition}
+
+\paragraph{Remarques}~~\\
+\begin{itemize}
+\item Si $f$ est une fonction croissante et jamais constante, on dit qu'elle est strictement croissante.
+\item Si $f$ est une fonction décroissante et jamais constante, on dit qu'elle est strictement décroissante.
+\item Une fonction ni croissante, ni décroissante est une fonction quelconque.
+\end{itemize}
+
+\section{Extremum d'une fonction sur un intervalle}
+\begin{multicols}{2}
+  \subsection{Maximum}
+
+  \begin{Definition}
+    Soit $f$ une fonction définie sur un intervalle $I$. I admet un maximum $f(a)$ en $a \in I$ si pour tout $x \in I$ on a $f(x) \leq f(b)b$.  
+  \end{Definition}
+
+  \subsection{Minimum}
+
+  \begin{Definition}
+    Soit $f$ une fonction définie sur un intervalle $I$. I admet un minimum $f(a)$ en $a \in I$ si pour tout $x \in I$ on a $f(x) \geq f(a)$.  
+  \end{Definition}
+\end{multicols}
+
+\newpage
+\section{Méthodes}
+
+\begin{multicols}{2}
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{sources/cours/3_courbe.pdf}
+    \caption{$f$ est définie sur $[-1; 2]$}
+  \end{figure}
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{sources/cours/3_tableau.pdf}
+    \caption{$f$ est définie sur $[-1; 2]$}
+  \end{figure}
+
+  Il est très facile de remarquer les extremum à partir du tableau de variation.
+
+\end{multicols}
+
+\subsection{De la courbe au tableau de variation}
+
+Soit $f$ une fonction dont la courbe représentative est donnée.
+
+\begin{enumerate}
+\item On repère le domaine de définition que seront les bornes de notre tableau.
+\item On repère les variations par des flèches vers le haut pour croissante et vers le bas pour décroissante.
+\item On remplit les différentes valeurs $x$ à chaque changement de variation.
+\item On remplit alors les différentes valeurs de $f(x)$ manquantes.
+\end{enumerate}
+
+\subsection{Du tableau de variation à la courbe}
+
+Soit une fonction $f$ dont on connaît le tableau de variation. Il est possible de tracer une (ou plusieurs) courbe correspondant au tableau.
+
+\begin{enumerate}
+\item On commence par placer les points $(x ; f(x) )$ présents sur le tableau.
+\item On relie ces différents points en conservant les variations indiquées dans le tableau.
+\end{enumerate}
+
+\end{document}
