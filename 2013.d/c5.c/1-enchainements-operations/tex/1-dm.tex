@@ -1,0 +1,143 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Short Sectioned Assignment
+% LaTeX Template
+% Version 1.0 (5/5/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Frits Wenneker (http://www.howtotex.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+\documentclass[11pt]{article}
+\usepackage{geometry} % Pour passer au format A4
+\geometry{hmargin=1cm, vmargin=1cm} % 
+
+
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage[english,francais]{babel} % Français et anglais
+\usepackage[utf8]{inputenc} 
+
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+
+\usepackage{lmodern}
+\usepackage{url}
+\usepackage{eurosym} % signe Euros
+\usepackage{geometry} % Pour passer au format A4
+\geometry{a4paper} % 
+\usepackage{graphicx} % Required for including pictures
+\usepackage{float} % Allows putting an [H] in \begin{figure} to specify the exact location of the figure
+
+\usepackage{multicol}
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{\centering \normalfont\scshape} % Make all sections centered, the default font and small caps
+
+%----------------------------------------------------------------------------------------
+%	Pied de Page
+%----------------------------------------------------------------------------------------
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs - comment this line for an assignment with lots of text
+
+
+%----------------------------------------------------------------------------------------
+%	Titre
+%----------------------------------------------------------------------------------------
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+
+%----------------------------------------------------------------------------------------
+%	Début du document
+%----------------------------------------------------------------------------------------
+
+\title{Problème Déco  \copyright Valérie Damidot} % Title
+\author{$5^e 1$}
+%\date{3 Avril 2014} % Date for the report
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	Titre
+%----------------------------------------------------------------------------------------
+
+\maketitle % Print the title
+
+%-----------------------------------------------------------------
+%-------- 1. Rappel sur les aires
+
+
+\section{L'aire d'un rectangle}
+Rappeller la formule de l'aire d'un rectangle en fonction de la longueur l et de largeur L. \\
+Préciser l'unité de l'aire.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=.6\linewidth]{sources/ie/valdami-sol.pdf}
+  \caption{Plan du sol}
+  \label{fig:ch1-plan}
+\end{figure}
+
+%-- fin partie 1
+
+%-------- 2. Superficie au sol et béton
+\section{Refaire le sol en béton}
+
+%-------- 2.1 Superficie au sol
+\subsection{Superficie au sol}
+Calculer la superficie des trois pièces A, B et C et donner la superficie totale de la maison.\\
+
+%-------- 2.2 Béton
+\subsection{Coulage de la dalle de béton}
+Une bétonnière recouvre $31m^2$ de superficie. Pour en remplir une il faut réunir et mélanger les ingrédients suivants :
+
+\begin{itemize}
+\item 2 sacs de sable.
+\item 1 sac de graviers.
+\item 15 L d'eau.
+\end{itemize}
+
+1 sac de sable coûte : $P_s = 2$\euro, 1 sac de gravier coûte : $P_g = 4$  \euro, on suppose que l'eau est gratuite : $P_e = 0$ \euro(évidemment faux pour l'eau de ville, pensez à fermer les robinets !!!.
+
+\begin{enumerate}
+  %-------- 2.2.1 nombre de bétonnières
+\item Calculer le nombre nécessaire de bétonnière utilisé pour recouvrir l'ensemble de la maison.\\
+  
+  %-------- 2.2.2 quantité d'ingrédient
+\item Calculer la quantité nécessaire de sacs de sable et de sac de graviers et d'eau en litre néssaire pour la réalisation du sol0.\\
+
+  %-------- 2.2.3 prix du sol
+\item Estimer le prix de cette opération.\\
+
+\end{enumerate} %-- fin 2.2          
+
+
+%-------- 3 repeindre les murs
+\section{Repeindre les murs}
+Maintenant que le sol est bien bétonné, on s'intéresse à refaire les murs. On souhaite repeindre la pièce A en rose et les pièces B et C en bleue. On ne repeint ni le plafond, ni le sol, on suppose que les pièces n'ont pas de porte. Tous les murs de la maison ont une hauteur de $h=3m$.\\
+Chaque pot de peinture recouvre une surface maximale de de $10m^2$. 
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=.4\linewidth]{sources/ie/valdami-sol-col.pdf}
+  \caption{Plan du sol}
+  \label{fig:ch1-plan}
+\end{figure}
+
+\begin{enumerate}
+  %-------- 3.1 nombre de pots
+\item Calculer la surface totale à repeindre pour la pièce A.\\
+  En déduire le nombre de pots de peinture rose nécessaire.\\
+\item Calculer la surface totale à repeindre pour la pièce B et pour la pièce C\\
+  En déduire le nombre de pots de peinture rose nécessaire.\\
+\end{enumerate}
+
+
+\end{document}

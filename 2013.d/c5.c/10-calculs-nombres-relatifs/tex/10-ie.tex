@@ -1,0 +1,101 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LaTeX Template
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Linux and Unix Users Group at Virginia Tech Wiki 
+% (https://vtluug.org/wiki/Example_LaTeX_chem_lab_report)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt]{article}
+\usepackage{geometry} % Pour passer au format A4
+\geometry{hmargin=1cm, vmargin=1cm} % 
+
+\usepackage{graphicx} % Required for including pictures
+\usepackage{float} % 
+
+%Français
+\usepackage[T1]{fontenc} 
+\usepackage[english,francais]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{eurosym}
+\usepackage{lmodern}
+\usepackage{url}
+\usepackage{multicol}
+\usepackage{fancybox} 
+
+%Maths
+\usepackage{amsmath,amsfonts,amssymb,amsthm}
+%\usepackage[linesnumbered, ruled, vlined]{algorithm2e}
+%\SetAlFnt{\small\sffamily}
+
+%Autres
+\linespread{1} % Line spacing
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+\renewcommand{\labelenumi}{\alph{enumi}.} % 
+\pagestyle{empty}
+%----------------------------------------------------------------------------------------
+%	DOCUMENT INFORMATION
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+\cornersize{1}
+%\maketitle % Insert the title, author and date
+
+\begin{minipage}[t]{\textwidth}
+  \raggedright
+      {\bfseries Série : \textbf{A}}\\
+      {\bfseries $5^{e}1$}\\[.35ex]
+      \vspace*{-1cm}
+      \raggedleft
+          {\bfseries Opérations relatifs}\\[.35ex]
+          {\bfseries 27 Mai 2014}\\[.35ex]
+\end{minipage}\\[1em]
+
+\begin{center}
+  \textsf{Bien souvent, les réponses les plus simples dans la vie sont celles qui ne nous viennent pas aussitôt à l'esprit.}\\
+  \texttt{Stephen King}
+\end{center}
+  \begin{eqnarray*}
+    Samia &=& \ovalbox{-3} \; \ovalbox{15} \; \ovalbox{-20} \; \ovalbox{0} \; \ovalbox{5} \; \ovalbox{-7} \; \ovalbox{6} \; \ovalbox{8} \; \ovalbox{-12} \; \ovalbox{2}\\
+    Kévin &=& \ovalbox{1} \; \ovalbox{-4} \; \ovalbox{-10} \; \ovalbox{-7} \; \ovalbox{3} \; \ovalbox{0} \; \ovalbox{1} \; \ovalbox{15} \; \ovalbox{-7} \; \ovalbox{3}\\
+    Caroline &=& \ovalbox{0} \; \ovalbox{1} \; \ovalbox{2} \; \ovalbox{-3} \; \ovalbox{-10} \; \ovalbox{11} \; \ovalbox{-7} \; \ovalbox{9} \; \ovalbox{4} \; \ovalbox{14}
+  \end{eqnarray*}
+
+
+    \begin{enumerate}
+    \item[1]
+          \begin{enumerate}
+          \item Écrire une ligne de calcul permettant de calculer le score de Samia.
+          \item Calculer le score.
+          \end{enumerate}
+    \item[2] 
+          \begin{enumerate}
+          \item Écrire une ligne de calcul permettant de calculer le score de Kévin.
+          \item Calculer le score.
+          \end{enumerate}
+    \item[3] 
+          \begin{enumerate}
+          \item Écrire une ligne de calcul permettant de calculer le score de Caroline.
+          \item Calculer le score.
+          \end{enumerate}
+    \item[4] Classer les scores des trois joueurs dans l'ordre croissant.
+    \item[5]   
+          \begin{enumerate}
+          \item Enlever un jeton à Samia pour que son score augmente.
+          \item Enlever un jeton à Kévin pour que son score diminue.
+          \item Enlever un jeton à Caroline pour que son score reste inchangé.
+          \end{enumerate}
+    \end{enumerate}
+
+
+\end{document}

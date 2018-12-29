@@ -1,0 +1,193 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Short Sectioned Assignment
+% LaTeX Template
+% Version 1.0 (5/5/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Frits Wenneker (http://www.howtotex.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+\documentclass[11pt]{article}
+\usepackage{geometry} % Pour passer au format A4
+\geometry{hmargin=1cm, vmargin=1cm} % 
+
+
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage[english,francais]{babel} % Français et anglais
+\usepackage[utf8]{inputenc} 
+
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+
+\usepackage{lmodern}
+\usepackage{url}
+\usepackage{eurosym} % signe Euros
+\usepackage{geometry} % Pour passer au format A4
+\geometry{a4paper} % 
+\usepackage{graphicx} % Required for including pictures
+\usepackage{float} % Allows putting an [H] in \begin{figure} to specify the exact location of the figure
+
+\usepackage{multicol}
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{\centering \normalfont\scshape} % Make all sections centered, the default font and small caps
+
+%----------------------------------------------------------------------------------------
+%	Pied de Page
+%----------------------------------------------------------------------------------------
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs - comment this line for an assignment with lots of text
+
+
+%----------------------------------------------------------------------------------------
+%	Titre
+%----------------------------------------------------------------------------------------
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+
+%----------------------------------------------------------------------------------------
+%	Début du document
+%----------------------------------------------------------------------------------------
+
+\title{Problème Déco  \copyright Valérie Damidot} % Title
+\author{$5^e 1$}
+%\date{3 Avril 2014} % Date for the report
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	Titre
+%----------------------------------------------------------------------------------------
+
+\maketitle % Print the title
+
+%-----------------------------------------------------------------
+%-------- 1. Rappel sur les aires
+\section{L'aire d'un rectangle}
+
+La surface au sol, la surface recouvrante d'un mur représente un calcul d'aire, de superficie. Son unité est le $m^2$.\\
+Pour un rectangle de longueur l et de largeur L, la formule d'aire est le produit de la longueur et de la largeur :
+$$\mathcal{A}_{rec} = l \times L$$.
+%-- fin partie 1
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=.6\linewidth]{sources/ie/valdami-sol.pdf}
+  \caption{Plan du sol}
+  \label{fig:ch1-plan}
+\end{figure}
+
+%-------- 2. Superficie au sol et béton
+\section{Refaire le sol en béton}
+
+%-------- 2.1 Superficie au sol
+\subsection{Superficie au sol}
+
+La superficie au sol est un rectangle. Pour connaître sa valeur, on calcul le produit de la longueur et de la largeur de la pièce.
+$$\mathcal{A}_{A} = l_A \times L_A$$
+\begin{eqnarray*}
+  \mathcal{A}_{A} & = & 10 \times 3)  \text{// On termine le calcul avec la multiplication.}\\
+  & = & 30 m^2\\
+\end{eqnarray*}
+$$\mathcal{A}_{B} = l_B \times L_B$$
+\begin{eqnarray*}
+  \mathcal{A}_{B} & = & 10 \times (14 - 3) \text{//  Le calcul dans la parenthèse est prioritaire.}\\
+  & = & 10 \times 11 \text {// On termine le calcul avec la multiplication.}\\
+  & = & 110 m^2\\
+\end{eqnarray*}
+$$\mathcal{A}_{C} = l_C \times L_C$$
+\begin{eqnarray*}
+  \mathcal{A}_{C} & = & 3 \times 5 \text{// On termine le calcul avec la multiplication.}\\
+  & = & 15 m^2
+\end{eqnarray*}
+
+On a trouvé l'aire de chacune des pièces : A, B et C. La superficie totale de la maison est la somme de la superficie de chacune des pièces.\\
+$$ \mathcal{A}_{M} = \mathcal{A}_{A} + \mathcal{A}_{B} \mathcal{A}_{C} = 30 + 110 + 15$$\\
+$$ \mathcal{A}_{M} = 155 m^2$$\\
+
+La superficie totale de la maison est $155m^2$.
+
+%-- fin partie 2.1 super sol
+%-------- 2.2 Béton
+\subsection{Coulage de la dalle de béton}
+
+
+\begin{enumerate}
+  %-------- 2.2.1 nombre de bétonnières
+\item On sait qu'une bétonière recouvre $\mathcal{A}_{béton} = 31m^2$ de superficie.\\
+  La superficie totale de la maison est $\mathcal{A}_{M} = 155 m^2$.\\
+  On note $n_b$ le nombre de bétonnière nécessaire.\\
+  Pour trouver le nombre nécessaire de bétonnière ($n_b$) pour recouvrir le sol, on effectue un calcul de proportionalité :\\
+  
+  $$n_b = \frac{\mathcal{A}_M}{\mathcal{A}_{béton}} = \frac{155}{31} = 5$$\\
+  
+  Pour recouvrir l'intégralité du sol de la maison, il est nécessaire d'utiliser \textbf{5 bétonnières}.
+
+  %-------- 2.2.2 quantité d'ingrédient
+\item On sait d'après la question précédente qu'on a besoin de 5 bétonnières. Pour réaliser 5 bétonnières, on multiplie par 5 les quantités nécessaires à la réalisation d'une seule bétonnière :
+  \begin{itemize}
+  \item $2 \times 5 = 10$ sacs de sable.
+  \item $1 \times 5 = 5$ sacs de graviers.
+  \item $15 \times 5 = 75$L d'eau.
+  \end{itemize}
+  
+  Pour recouvrir l'intégralité du sol de la maison, il est nécéssaire d'avoir \textbf{10 sacs de sable, 5 sacs de graviers et 75L d'eau}.
+
+  %-------- 2.2.3 prix du sol
+\item Possédant la quantité d'ingrédient et leur prix, on cherche la somme de leurs coûts. \\
+  $$P_{sol} = 10 \times P_s + 5 \times P_g + 75 \times P_e$$
+  \begin{eqnarray*}
+    P_{sol} & = & 10 \times 2 + 5 \times 4 + 75 \times 0\\
+    & = & 20 + 20 + 0\\
+    & = & 40
+  \end{eqnarray*}
+  Pour recouvrir l'intégralité du sol de la maison en béton, il est nécessaire de dépenser \textbf{40 \euro}.
+\end{enumerate} %-- fin 2.2          
+%-- fin partie 2 béton au sol
+
+%-------- 3 repeindre les murs
+\section{Repeindre les murs}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=.4\linewidth]{sources/ie/valdami-sol-col.pdf}
+  \caption{Plan du sol}
+  \label{fig:ch1-plan}
+\end{figure}
+
+
+%-------- 3.1 nombre de pots
+\subsection{Pièce en rose}
+\subsubsection{Calcul de la surface totale à repeindre pour la pièce A}
+Le sol de la pièce A est un rectangle de périmètre $ \mathcal{P}_{A} = 10 \times 2 + 3 \times 2 = 20 + 6 = 26m$.\\
+La surface a repeindre est $\mathcal{P}_{A} \times h = 26 \times 3 = 78m^2$.\\
+
+\subsubsection{Calcul du nombre de pots de peinture nécéssaire}
+Un pot de peinture recouvre $10m^2$. Il nous faut recouvrir $78m^2$.\\
+7 pots ne recouvrent que $7 \times 10 = 70m^2$ alors que 8 pots recouvrent $8 \times 10 = 80m^2$.\\
+Il faut \textbf{8 pots} de peinture rose.  
+
+\subsection{Pièce en bleue}
+\subsubsection{Calcul de la surface totale à repeindre pour les pièces B et C}
+Le sol de la pièce B est un rectangle de périmètre $ \mathcal{P}_{B} = 10 \times 2 + 11 \times 2 = 20 + 22 = 42m$.\\
+Le sol de la pièce C est un rectangle de périmètre $ \mathcal{P}_{C} = 5 \times 2 + 3 \times 2 = 10 + 6 = 16m$.\\  
+
+La surface totale est $(\mathcal{P}_{B} + \mathcal{P}_{C}) \times h = (42 + 16) \times 3 = 58 \times 3 = 174m^2$.\\
+
+\subsubsection{Calcul du nombre de pots de peinture nécéssaire}
+Un pot de peinture recouvre $10m^2$. Il nous faut recouvrir $174m^2$.\\
+17 pots ne recouvrent que $17 \times 10 = 170m^2$ alors que 18 pots recouvrent $18 \times 10 = 180m^2$.\\
+Il faut \textbf{18 pots} de peinture bleue.
+
+%-- fin exo
+
+\end{document}

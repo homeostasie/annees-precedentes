@@ -1,0 +1,121 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LaTeX Template
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Linux and Unix Users Group at Virginia Tech Wiki 
+% (https://vtluug.org/wiki/Example_LaTeX_chem_lab_report)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt]{article}
+\usepackage{geometry} % Pour passer au format A4
+\geometry{hmargin=1cm, vmargin=1cm} % 
+
+\usepackage{graphicx} % Required for including pictures
+\usepackage{float} % 
+
+%Français
+\usepackage[T1]{fontenc} 
+\usepackage[english,francais]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{eurosym}
+\usepackage{lmodern}
+\usepackage{url}
+\usepackage{multicol}
+
+%Maths
+\usepackage{amsmath,amsfonts,amssymb,amsthm}
+%\usepackage[linesnumbered, ruled, vlined]{algorithm2e}
+%\SetAlFnt{\small\sffamily}
+
+%Autres
+\linespread{1} % Line spacing
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+\renewcommand{\labelenumi}{\alph{enumi}.} % 
+\pagestyle{empty}
+%----------------------------------------------------------------------------------------
+%	DOCUMENT INFORMATION
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+%\maketitle % Insert the title, author and date
+
+\begin{minipage}[t]{\textwidth}
+\raggedright
+{\bfseries Nom, Prénom : \underline{\phantom{123456789123456789}}}\\
+{\bfseries $5^{e}1$}\\[.35ex]
+\vspace*{-1cm}
+\raggedleft
+{\bfseries Découverte des relatifs}\\[.35ex]
+{\bfseries 22 avril 2014}\\[.35ex]
+\end{minipage}\\[1em]
+
+\begin{center}
+  \textsf{Les mathématiques consistent à prouver des choses évidentes par des moyens complexes.}
+  \texttt{George Polya}\\
+\end{center}
+
+\vspace{-1cm}
+\subsection*{1 - It's time}
+
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\linewidth]{sources/ie/doctor.pdf}
+\end{figure}
+
+\begin{enumerate}
+\item[1] Graduer la frise de -3000 ans avant JV à 3000 ans après JC. \textbf{Placer une graduation tous les 500 ans}.
+\item[2] Placer les différents évènements sur la frise chronologique :
+\begin{multicols}{2}
+  \begin{itemize}
+  \item D : \textbf{476} : Dispartion de l'empire Romain.
+  \item C : \textbf{-2300} : Civilisation Olmèque au Mexique.
+  \item R : \textbf{-1279} : Ramsès II monte sur le Trône.	  
+  \item V : \textbf{-52} : Vercingétorix est vaincu à Alésia par Jules César.
+  \item M : \textbf{2014} : Maintenant, vous profitez d'un superbe sours de Mathématiques.
+  \item N : \textbf{1687} : Isaac Newton prend une pomme sur la tête.
+  \end{itemize}
+\end{multicols}  
+\end{enumerate}
+
+\subsection*{2 - Toucher / Couler}
+
+\setlength{\columnseprule}{1pt}
+\begin{multicols}{2}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.8\linewidth]{sources/exo/tc-0.pdf}
+  \caption{Votre plateau}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.8\linewidth]{sources/exo/tc-1.pdf}
+  \caption{Plateau de l'adversaire}
+\end{figure}
+\end{multicols}  
+
+\subsubsection*{1 - Mise en place : une graduation = 10m}
+\begin{enumerate}
+\item Placer horizontalement ou verticalement sur votre plateau : un porte-avion de taille \textbf{5}, un zodiac de taille \textbf{2} et \textbf{2} frégates de taille \textbf{3}.
+\item Donner les coordonnées de toutes les cases composant chacun de vos navires.
+\end{enumerate}
+
+\subsubsection*{2 - Destruction  : une graduation = 10m}
+Grâce à Turing et sa machine enigma vous avez réussi à décoder les plans adverses. Sur le plateau de l'adversaire : 
+\begin{enumerate}
+\item Donner les coordonnées de 4 tirs permettant de toucher chacun des 4 bateaux.
+\item Donner les coordonnées de 6 tirs permettant de couler (toucher toutes les cases) les deux frégates.
+\end{enumerate}
+
+\end{document}

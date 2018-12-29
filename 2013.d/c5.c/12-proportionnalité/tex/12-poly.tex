@@ -1,0 +1,198 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Short Sectioned Assignment
+% LaTeX Template
+% Version 1.0 (5/5/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Frits Wenneker (http://www.howtotex.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[paper=a4, fontsize=9pt]{scrartcl} % A4 paper and 11pt font size
+
+
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage[english,francais]{babel} % Français et anglais
+\usepackage[utf8]{inputenc} 
+
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+
+\usepackage{enumitem}
+\usepackage{lmodern}
+\usepackage{url}
+\usepackage{eurosym} % signe Euros
+\usepackage{geometry} % Pour passer au format A4
+\geometry{a4paper} % 
+\usepackage{graphicx} % Required for including pictures
+\usepackage{float} % Allows putting an [H] in \begin{figure} to specify the exact location of the figure
+
+\usepackage{multicol}
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{\centering \normalfont\scshape} % Make all sections centered, the default font and small caps
+
+%----------------------------------------------------------------------------------------
+%	Pied de Page
+%----------------------------------------------------------------------------------------
+
+
+\usepackage{fancyhdr} % Custom headers and footers
+\pagestyle{fancyplain} % Makes all pages in the document conform to the custom headers and footers
+\fancyhead{} % No page header - if you want one, create it in the same way as the footers below
+\fancyfoot[L]{$5^{e}1$} % Empty left footer
+\fancyfoot[C]{Chapitre 12 - Proportionnalité} % Empty center footer
+\fancyfoot[R]{\thepage} % Page numbering for right footer
+
+\renewcommand{\headrulewidth}{0pt} % Remove header underlines
+\renewcommand{\footrulewidth}{0pt} % Remove footer underlines
+
+\setlength{\headheight}{13.6pt} % Customize the height of the header
+
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs - comment this line for an assignment with lots of text
+
+
+%----------------------------------------------------------------------------------------
+%	Titre
+%----------------------------------------------------------------------------------------
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+
+\title{	
+  \vspace{-10ex}
+  \horrule{0.5pt} \\[0.4cm] % Thin top horizontal rule
+  \huge Chapitre 12 - Proportionnalité\\ % The assignment title
+  \horrule{2pt} \\[0.5cm] % Thick bottom horizontal rule
+}
+
+\author{}
+\date{\vspace{-10ex}} % Today's date or a custom date
+
+%----------------------------------------------------------------------------------------
+%	Début du document
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+% RE-DEFINITION
+%----------------------------------------------------------------------------------------
+% MATHS
+%-----------
+
+\newtheorem{Definition}{Définition}
+\newtheorem{Theorem}{Théorème}
+\newtheorem{Proposition}{Propriété}
+
+% MATHS
+%-----------
+\renewcommand{\labelitemi}{$\bullet$}
+\renewcommand{\labelitemii}{$\circ$}
+%----------------------------------------------------------------------------------------
+%	Titre
+%----------------------------------------------------------------------------------------
+
+\maketitle % Print the title
+
+%-----------------------------------111111111111111111111111111111111111
+\section{Tableau de proportionnalité}
+%-----------------------------------------------------------------------
+\begin{multicols}{2}
+  \subsection{Reconnaître une situation de proportionnalité}
+  %-----------------------------------------------------------------------
+
+  \begin{Definition}
+    Deux quantités sont proportionnelles si on peut passer de l'une à l'autre en multipliant par un même nombre non nul : \textbf{le coefficient de proportionnalité}.
+  \end{Definition}
+
+  \subsection{Exploiter une situation de proportionnalité}
+  %-----------------------------------------------------------------------
+
+  \begin{Proposition}
+    Dans un tableau de proportionnalité, on peut additionner des colonnes et multiplier une colonne par un nombre.
+  \end{Proposition}
+
+  \begin{Proposition}
+    La représentation graphique de deux quantités proportionnelles est une droite passant par le point 0 de coordonnée (0,0).
+  \end{Proposition}
+
+  \subsection{Croissance des bambous}
+  %-----------------------------------------------------------------------
+
+  La croissance des bambous est de 7cm par jours. La taille d'un bambou et son âge sont proportionnels.
+  \begin{center}
+    \begin{tabular}{| l || c | c | c | c | c |}
+      \hline			
+      Âge du bambou (en jours) & 1 &  2 &  3 & 10 &  25\\
+      \hline  
+      Taille du bambou (en cm) & 7 & 14 & 21 & 70 & 175\\
+      \hline  
+    \end{tabular}
+  \end{center}
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\linewidth]{sources/cours/bambou.pdf}
+  \end{figure}
+\end{multicols}
+%-----------------------------------222222222222222222222222222222222222
+\section{Pourcentages}
+%-----------------------------------------------------------------------
+\begin{multicols}{2}
+  \subsection{Appliquer un pourcentage}
+  %-----------------------------------------------------------------------
+
+  \begin{Definition}
+    Un pourcentage est une fraction avec 100 comme dénominateur. Elle traduit une situation de proportionnalité.
+  \end{Definition}
+
+  \paragraph{Exemple}~~\\
+  Un magasin de vêtement propose 20\% de réduction sur un article de 72\euro.\\
+  $20\% \text{ de } 72 = \dfrac{20}{100} \times 72 = \dfrac{1440}{100} = 14.4$\euro.\\
+  Le prix de l'article après la réduction est : 72 - 14.4 = 57.6\euro.
+
+  \subsection{Rechercher un pourcentage}
+  %-----------------------------------------------------------------------
+
+  \begin{Definition}
+    Pour exprimer une proportion sous forme de pourcentage, on écrit la proportion comme une fraction avec 100 comme dénominateur.
+  \end{Definition}
+
+  \paragraph{Exemple}~~\\
+  Dans la classe de $5^{e}1$, il y a 25 élèves dont 13 filles et 12 garçons.\\
+  $\dfrac{13}{25} = \dfrac{52}{100} = 52 \text{\% de filles et } \dfrac{12}{25} = \dfrac{48}{100} = 48$\% de garçon.
+\end{multicols}
+
+\begin{multicols}{2}
+
+  %-----------------------------------333333333333333333333333333333333333
+  \section{Echelles et temps}
+  %-----------------------------------------------------------------------
+
+  \subsection{Temps}
+  %-----------------------------------------------------------------------
+
+  durée en jours $\stackrel{\times 24}{=}$ durée en heures $\stackrel{\times 60}{=}$ durée en minute $\stackrel{\times 60}{=}$ durée en seconde.
+  \subsection{Echelles}
+  %-----------------------------------------------------------------------
+
+  \begin{Definition}
+    L'échelle d'un plan est le quotient à la même unité d'une longueur sur le plan par la longueur réelle qu'elle représente.
+  \end{Definition}
+
+  \begin{Proposition}
+    Sur un plan, les longueurs mesurés sont proportionnelles au longueurs qu'elles représentent.
+  \end{Proposition}
+
+\end{multicols}
+\end{document}

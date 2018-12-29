@@ -1,0 +1,117 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Short Sectioned Assignment
+% LaTeX Template
+% Version 1.0 (5/5/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Frits Wenneker (http://www.howtotex.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+\documentclass[11pt]{article}
+\usepackage{geometry} % Pour passer au format A4
+\geometry{hmargin=1cm, vmargin=1cm} % 
+
+
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage[english,francais]{babel} % Français et anglais
+\usepackage[utf8]{inputenc} 
+
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+
+\usepackage{lmodern}
+\usepackage{url}
+\usepackage{eurosym} % signe Euros
+\usepackage{geometry} % Pour passer au format A4
+\geometry{a4paper} % 
+\usepackage{graphicx} % Required for including pictures
+\usepackage{float} % Allows putting an [H] in \begin{figure} to specify the exact location of the figure
+
+\usepackage{multicol}
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{\centering \normalfont\scshape} % Make all sections centered, the default font and small caps
+
+%----------------------------------------------------------------------------------------
+%	Pied de Page
+%----------------------------------------------------------------------------------------
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs - comment this line for an assignment with lots of text
+
+
+%----------------------------------------------------------------------------------------
+%	Titre
+%----------------------------------------------------------------------------------------
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+
+%----------------------------------------------------------------------------------------
+%	Début du document
+%----------------------------------------------------------------------------------------
+
+
+
+\begin{document}
+
+
+%----------------------------------------------------------------------------------------
+%	SECTION 1
+%----------------------------------------------------------------------------------------
+\section*{$Bêh^2$ - Ex 104 p167} % Title
+\vspace{1cm}
+
+\subsection*{Données de l'énoncés}
+
+\begin{itemize}
+\item Les poteaux $P_1$ et $P_2$ sont distants de 8 mètres.
+\item La corde attachant la première chèvre au poteau $P_1$ mesure 5 mètres.
+\end{itemize}
+
+\setlength{\columnseprule}{1pt}
+\begin{multicols}{2}
+
+
+\begin{enumerate}
+\item La corde attachant la deuxième chèvre au poteau $P_1$ mesure 2 mètres.
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\linewidth]{chevres-1.pdf}
+\end{figure}
+
+\item La corde attachant la deuxième chèvre au poteau $P_1$ mesure 13 mètres.
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\linewidth]{chevres-2.pdf}
+\end{figure}
+
+\item À partir des deux questions précédentes, nous pouvons faire deux observations.
+
+\begin{itemize}
+\item Si la corde mesure seulement 2m, les deux chèvres ne peuvent se rencontrer.
+\item Si la corde mesure au moins 13m, la première chèvre ne peut s'isoler.
+\end{itemize}
+On en déduit que la longueur de corde attachant la deuxième chèvre doit être plus petite que 13m tout en étant suffisament grande pour que les chèvres puissent se rencontrer.\\
+Cette longueur est : $8m - 5m = 3m$\\
+\textbf{La longueur de corde doit être comprise entre 3m et 13m.}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\linewidth]{chevres-3.pdf}
+\end{figure}
+\end{enumerate}
+\end{multicols}
+
+\end{document}
+
+
+
+
+

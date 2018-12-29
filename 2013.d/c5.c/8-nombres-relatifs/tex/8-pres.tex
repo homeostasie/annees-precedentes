@@ -1,0 +1,194 @@
+\documentclass{beamer}
+
+\usepackage{geometry} % Pour passer au format A4
+\usepackage{graphicx} % Required for including pictures
+\usepackage{float} % 
+
+\usepackage{amsmath,amsfonts,amssymb,amsthm}
+\usepackage[T1]{fontenc} 
+\usepackage[english,francais]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+
+\usetheme{Warsaw}
+
+\title{Découverte des nombres relatifs}
+\author{$5^{e}1$}
+
+\begin{document}
+
+\frame{\titlepage}
+
+%-----------------------------------111111111111111111111111111111111111
+\section{Notations et Vocabulaires}
+%----------------------------------------------------------------------
+
+
+\frame{\tableofcontents[sectionstyle=show/shaded, subsectionstyle=show/shaded]}
+
+\begin{frame}
+  1. Notations et Vocabulaires
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=.8\linewidth]{sources/cours/axe-g.pdf}
+  \end{figure}
+
+  \begin{alertblock}{Définition :}	
+    \begin{itemize}
+    \item Un nombre supérieur à 0 est un nombre positif :  
+    \item Un nombre inférieur à 0 est un nombre négatif :\\
+      On le note avec le signe \textbf{-} devant.
+    \item 0 est à la fois négatif et positif.
+    \end{itemize}
+  \end{alertblock}
+  
+  \begin{exampleblock}{Remarque}
+    L'ensemble des nombres positifs et des nombres relatifs forme l'ensemble des nombres relatifs.
+  \end{exampleblock}
+\end{frame}
+
+\begin{frame}
+  \only<1->
+      {
+        \begin{block}{Utilisation :}	
+          On peut trouver des nombres négatifs dans les situations suivantes :\\
+          Température l'hiver, frise chronologique, étage d'un ascenseur...
+        \end{block}
+      }
+      \only<2>
+          {
+            \begin{alertblock}{Définition : l'opposé d'un nombre}	
+              Deux nombres sont opposés s'ils ne diffèrent que du signe \textbf{-}.
+            \end{alertblock}
+
+            \begin{exampleblock}{Exemples}
+	      \begin{itemize}
+              \item L'opposé de 102 est -102.
+	      \item L'opposé de -42 est 42.
+	      \end{itemize}
+            \end{exampleblock}
+          }
+\end{frame}
+
+%-----------------------------------111111111111111111111111111111111111
+\section{Repérer sur une droite graduée}
+%----------------------------------------------------------------------
+\frame{\tableofcontents[sectionstyle=show/shaded, subsectionstyle=show/shaded]}
+
+\begin{frame}
+  2. Repérer sur une droite graduée
+
+  \begin{figure}[h!]
+    \centering
+    \includegraphics[width=.6\linewidth]{sources/cours/axe-g-2.pdf}
+  \end{figure}
+
+  \begin{alertblock}{Définition : Abscisse d'un nombre}	
+    On repère un point sur un axe horizontal à l'aide du nombre situé au niveau de sa graduation. Ce nombre représente son \textbf{abscisse}.
+  \end{alertblock}
+
+  \begin{exampleblock}{Remarques :}	
+    \begin{itemize}
+    \item A est le point d'abscisse 6.
+    \item A est le point d'abscisse -1.5.
+    \item Sur un axe gradué, on appelle 0 l'\textbf{origine}.
+    \end{itemize}
+  \end{exampleblock}
+\end{frame}
+
+%-----------------------------------111111111111111111111111111111111111
+\section{Comparer}
+%----------------------------------------------------------------------
+\frame{\tableofcontents[sectionstyle=show/shaded, subsectionstyle=show/shaded]}
+
+\begin{frame}
+  3. Comparer
+  \only<1>
+      {
+        \begin{block}{Rappel : Comparaison}	
+          Comparer deux nombres revient à dire lequel des deux est le plus grand.\\
+          \begin{itemize}
+          \item Plus grand $>$ Plus petit
+          \item Plus petit $<$ Plus grand
+          \end{itemize}
+        \end{block}
+      }
+      \begin{alertblock}{Proposition}	
+        Sur un axe gradué de la gauche vers la droite, les nombres lus dans le même sens sont classés du plus petit au plus grand.
+      \end{alertblock}
+      \only<2>{
+        \begin{block}{Exemples}	
+          \begin{figure}[h!]
+            \centering
+            \includegraphics[width=.6\linewidth]{sources/cours/axe-g-2.pdf}
+          \end{figure}
+          $$-6 < -4.5 < -3 < -1.5 < 0 < 1.5 < 3 < 4.5 < 6 < 7.5 < 9$$
+          
+          \begin{columns}[t]
+            \begin{column}{4cm}
+              \begin{figure}[h!]
+                \centering
+                \includegraphics[width=\linewidth]{sources/cours/axe-g-3.pdf}
+              \end{figure}
+            \end{column}
+            \begin{column}{6cm}
+              $$-7.2 < -7.1 < -7.01 < 7 < -6.99$$
+            \end{column}
+          \end{columns} 
+
+          
+        \end{block}
+      }
+\end{frame}
+
+
+%-----------------------------------111111111111111111111111111111111111
+\section{Repérer dans le plan}
+%----------------------------------------------------------------------
+\frame{\tableofcontents[sectionstyle=show/shaded, subsectionstyle=show/shaded]}
+
+\begin{frame}
+  4. Repérer dans le plan
+  \begin{alertblock}{Définition : Repère dans le plan}	
+    On définit un repère dans un plan à partir d'\textbf{un point d'origine} et de \textbf{deux axes} :
+    \begin{itemize}
+    \item L'axe horizontal est l'axe des \textbf{abscisses}.
+    \item L'axe vertical est l'axe des \textbf{ordonnées}.
+    \item Le point d'intersection des deux axes s'appelle l'\textbf{origine}.
+    \end{itemize}
+  \end{alertblock}
+  
+  \begin{alertblock}{Définition : Point dans un repère du plan}	
+    Pour repérer un point dans le plan, on utilise des coordonnées :
+    \begin{itemize}
+    \item L'\textbf{abscisse} est la première coordonnée situe le point sur l'axe horizontal.
+    \item L'\textbf{ordonnée} est la deuxième coordonnée situe le point sur l'axe vertical.
+    \end{itemize}
+  \end{alertblock}
+\end{frame}
+
+\begin{frame}
+  \begin{columns}[t]
+    \begin{column}{5cm}
+      \begin{figure}[h!]
+        \centering
+        \includegraphics[width=\linewidth]{sources/cours/repere.pdf}
+      \end{figure}
+    \end{column}
+    \begin{column}{5cm}
+      \begin{block}{Exemples}	
+        L'abscisse du point O est 0 et son ordonnée 0.\\
+        L'abscisse du point A est 2 et son ordonnée 1.\\
+        L'abscisse du point B est -1 et son ordonnée 3.\\
+        L'abscisse du point C est 2.5 et son ordonnée -1.\\
+        L'abscisse du point D est 2 et son ordonnée -2.\\
+
+      \end{block}
+    \end{column}
+  \end{columns} 
+
+
+\end{frame}
+
+\end{document}

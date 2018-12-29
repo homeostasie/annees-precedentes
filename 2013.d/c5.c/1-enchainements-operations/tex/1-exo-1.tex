@@ -1,0 +1,305 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Short Sectioned Assignment
+% LaTeX Template
+% Version 1.0 (5/5/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Frits Wenneker (http://www.howtotex.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+\documentclass[11pt]{article}
+\usepackage{geometry} % Pour passer au format A4
+\geometry{hmargin=1cm, vmargin=1cm} % 
+
+
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage[english,francais]{babel} % Français et anglais
+\usepackage[utf8]{inputenc} 
+
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+
+\usepackage{lmodern}
+\usepackage{url}
+\usepackage{eurosym} % signe Euros
+\usepackage{geometry} % Pour passer au format A4
+\geometry{a4paper} % 
+\usepackage{graphicx} % Required for including pictures
+\usepackage{float} % Allows putting an [H] in \begin{figure} to specify the exact location of the figure
+
+\usepackage{multicol}
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{\centering \normalfont\scshape} % Make all sections centered, the default font and small caps
+
+%----------------------------------------------------------------------------------------
+%	Pied de Page
+%----------------------------------------------------------------------------------------
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs - comment this line for an assignment with lots of text
+
+
+%----------------------------------------------------------------------------------------
+%	Titre
+%----------------------------------------------------------------------------------------
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+
+%----------------------------------------------------------------------------------------
+%	Début du document
+%----------------------------------------------------------------------------------------
+
+
+\title{Enchaînements d'opérations} % Title
+\author{$5^e 1$}
+\begin{document}
+
+\maketitle % Insert the title, author and date
+
+
+%------------------------------------------------
+\section{Exercices}
+%------------------------------------------------
+
+%-----------------------------------111111111111111111111111111111
+\subsection{Connaître et utiliser le vocabulaire}
+%-----------------------------------------------------------------
+
+\textbf{EXO : 2 - p11} - \underline{J'utilise un vocabulaire précis}
+\begin{enumerate}
+\item
+  \begin{enumerate}
+  \item Le résultat d'une addition est une \textbf{somme}.
+  \item Le résultat d'une soustraction est une \textbf{différence}.
+  \item Les nombres que l'on ajoute ou que l'on soustrait s'appellent des \textbf{termes}.
+  \end{enumerate}
+\item
+  \begin{enumerate}
+  \item Le résultat d'une multiplication est un \textbf{produit}.
+  \item Les nombres que l'on multiplient s'appellent des \textbf{facteurs}.
+  \end{enumerate}
+
+\item Le résultat d'une division est un \textbf{quotient}.
+\end{enumerate}
+
+
+%-----------------------------------222222222222222222222222222222
+\subsection{Connaître et utiliser les règles de priorités opératoires}
+%-----------------------------------------------------------------
+
+%-----------------------------------------------------------------
+\subsubsection{Priorités de calcul sans les parenthèses}
+
+\textbf{EXO : 34 - p19} - \underline{Recopier et calculer en détaillant les étapes}
+
+\begin{enumerate}
+\item $$A = 5 + 4 \times 7 - 3 $$
+  \begin{enumerate}
+  \item $A = 5 + \underline{4 \times 7} - 3 $
+    On remarque, une multiplication : $4 \times 7$. On effectue en premier son calcul.\\
+    $4 \times 7 = 28$\\
+    Le produit de 4 et 7 est égale à 28.
+  \item On remplace la multiplication par la valeur du produit dans A.\\
+    $A = 5 + 4 \times 7 - 3 = 5 + 28 - 3$\\
+  \item Il n'y a plus que des opérations de mêmes priorités opératoires. On effectue maintenant les opérations de gauche à droite, dans le sens de la lecture.
+    $A = \underline{5 + 28} - 3$\\
+    La somme de 5 et 28 est égale à 33.\\
+    $5 + 28 = 33$\\
+  \item On remplace l'addition par la valeur de la somme dans A.\\
+    $A = 5 + 28 - 3 = 33 - 3$\\
+    On poursuit le calcul avec la dernière opération : 33 - 3.\\
+    $33 - 3 = 30$\\
+  \item \textbf{A = 30}\\
+  \end{enumerate}
+
+
+\item $$B = 30 - 25 /5 + 11 $$
+  $B = 30 -  \underline{25 /5} + 11 $ // On commence par la division.\\
+  $25 / 5 = 5$\\
+  $B = \underline{30 - 5} + 11$ // On effectue les opérations dans le sens de la lecture.\\
+  $30 - 5 = 25$\\
+  $B = 25 + 11$ // On finit avec l'addition.\\
+  $25 + 11 = 36$\\
+  \textbf{B = 36}\\
+  
+\item $$C = 24 + 42 /6 - 30 $$
+  $C = 24 +  \underline{42 /6} - 30 $ // On commence par la division.\\
+  $42 / 6 = 7$\\
+  $C =  \underline{24 + 7} - 30 $ // On effectue les opérations dans le sens de la lecture.\\
+  $24 + 7 = 33$\\
+  $C = 33 - 30$ // On finit avec la soustraction.\\
+  $33 - 30$\\
+  \textbf{C = 30}\\
+  
+
+\item $$D = 51 - 12 \times 4 + 33 $$
+  $D = 51 - \underline{12 \times 4} + 33 $ // On commence par la multiplication.\\
+  $12 \times 4 = 48$\\
+  $D = \underline{51 - 48} + 33 $ // On effectue les opérations dans le sens de la lecture.\\
+  $51 - 48 = 3$\\
+  $D = 3 + 33$ // On finit avec l'addition.\\
+  $3 + 33$\\
+  \textbf{D = 36}\\
+\end{enumerate}
+
+\textbf{EXO : 35 - p19} - \underline{Recopier et calculer en détaillant les étapes}
+\begin{enumerate}
+
+\item $$A = 4 \times 3 + 45 / 5$$
+  $A =  \underline{4 \times 3} + 45 / 5$ // On commence par la multiplication.\\
+  $4 \times 3 = 12$\\
+  $A =  12 + \underline{45 / 5}$ // On poursuit avec la division.\\
+  $45 / 5 = 9$\\
+  $A = 12 + 9$ // On finit avec l'addition.\\
+  $12 + 9 = 21$\\ 
+  \textbf{A = 21}\\
+  
+\item $$B = 88/4 - 6 \times 3$$
+  $B = \underline{88/4} - 6 \times 3$ // On commence avec la division.\\
+  $88/4 = 22$\\
+  $B = 22 - \underline{6 \times 3}$ // On poursuit avec la multiplication.\\
+  $6 \times 3 = 18$\\
+  $B = 22 - 18$  // On finit avec la soustraction.\\
+  $22 - 18 = 4$\\
+  \textbf{B = 4}\\
+  
+\item $$C = 17 \times 2 - 81/9$$
+
+  $C =  \underline{17 \times 2} - 81/9$ // On commence par la multiplication.\\
+  $17 \times 2 = 34$\\
+  $C =  34 - \underline{81/9}$ // On poursuit avec la division.\\
+  $81/9 = 9$\\
+  $C =  34 - 9$ // On finit avec la soutraction.\\
+  $34 - 9 = 25$\\
+  \textbf{C = 25}\\
+
+\item $$D = 56/7 + 8 \times 4$$
+
+  $D = \underline{56/7} + 8 \times 4$ // On commence avec la division.\\
+  $56/7 = 8$\\
+  $D = 8 + \underline{8 \times 4}$ // On poursuit avec la multiplication.\\
+  $8 \times 4 = 32$\\
+  $D = 8 + 32$ // On finit avec l'addition.\\
+  $8 + 32 = 40$\\
+  \textbf{D = 40}\\
+\end{enumerate}
+%-----------------------------------------------------------------
+\subsubsection{Priorités de calcul avec des parenthèses}
+
+\textbf{Rédaction détaillée}
+
+$$A = 1 + (6 + 2 \times (5 - 3))/5 $$
+
+Le calcul est composé des quatre opérations et de deux couples de parenthèses. Un calcul à l'intérieur d'une parenthèse est prioritaire face aux autres opérations. On commence par le calcul de l'intérieur de la première parenthèse.
+\begin{enumerate}
+\item Le calcul intermédiaire de  $6 + 2 \times (5 - 3)$.\\
+  Le calcul est composé de plusieurs opérations et d'un couple de parenthèses. Le calcul à l'intérieur de la parenthèse est prioritaire.
+  
+  \begin{enumerate}
+  \item Le calcul intermédiaire de  $5 - 3$.\\
+    $5 - 3 = 2$\\
+  \item On revient au calcul $6 + 2 \times 2$.
+    On effectue en priorité la multiplication :\\
+    $2 \times 2 = 4$\\
+    Puis, on calcule ensuite l'addition :\\
+    $6 + 4 = 10$
+  \end{enumerate}
+  L'intérieur de la première parenthèse est égale à 10.
+
+\item On revient au calcul de A : $A =  1 + 10/5$.\\
+  La division est prioritaire sur l'addition. Le premier calcul a effectuer est la division de 10 par 5 et le deuxième l'addition.\\
+  $10/5 = 2$\\
+  $1 + 2 = 3$
+\end{enumerate}
+Le résultat du calcul est A = 3.\\
+
+\paragraph{Placement des parenthèses}~~\\
+
+\textbf{EXO : 40 - p19} - \underline{Ajouter les parenthèses pour que les égalités soit vraies}
+\begin{enumerate}
+\item $$8 + 5 \times 2 = 26 $$
+  $8 + 5 \times 2 = 8 + 10 = 18 $ $\bigotimes$\\  
+  $(8 + 5) \times 2 =  13 \times 2 = 26$ $\surd$
+
+\item $$9 \times 7 - 4 = 27$$
+  $9 \times 7 - 4 = 63 - 4 = 59$ $\bigotimes$\\
+  $9 \times (7 - 4) = 9 \times 3 = 27$  $\surd$
+
+\item $$12 - 9 + 3 = 0$$
+  $12 - 9 + 3 = 3 + 3 = 6$ $\bigotimes$\\
+  $12 - (9 + 3) = 12 - 12 = 0$ $\surd$
+
+\item $$3 \times 4 + 2 \times 5 = 90$$
+  $3 \times 4 + 2 \times 5 = 12 + 2 \times 5 = 12 + 10 = 22$  $\bigotimes$ \\
+  $3 \times (4 + 2 \times 5) = 3 \times (4 + 10) = 3 \times 14 = 42$  $\bigotimes$\\
+  $(3 \times 4 + 2) \times 5 = (12 + 2) \times 5 = 14 \times 5 = 70$ $\bigotimes$\\
+  $3 \times (4 + 2) \times 5 = 3 \times 6 \times 5 = 18 \times 5 = 90$  $\surd$
+
+\end{enumerate}
+
+\paragraph{Calculs ``simples'' avec des parenthèses}~~\\
+
+\textbf{EXO : 41 - p19} - \underline{Calculer en détaillant les étapes}
+
+\begin{enumerate}
+\item $$A = 17 + (13 - 4 + 2)$$
+  (remarques : la parenthèse n'était pas nécessaire)\\
+  $A = 17 + \underline{(13 - 4 + 2)}$ // On commence par l'intérieur de la parenthèse.\\
+  $\underline{13 - 4} + 2$ // On calcul dans le sens de lecture.\\
+  $13 - 4 = 9$\\
+  $9 + 2 = 11$\\
+  $A = 17 + 11$ // On finit par l'addition.\\
+  $17 + 11 = 28$\\
+  \textbf{A = 28}\\
+
+\item $$B = 39 / (25 - 14 + 2)$$
+  $B = 39 / \underline{(25 - 14 + 2)}$ // On commence par l'intérieur de la parenthèse.\\
+  $\underline{25 - 14} + 2$ // On calcul dans le sens de lecture.\\
+  $25 - 14 = 11$\\
+  $11 + 2 = 13$\\
+  $B = 39/13$ // On finit avec la division.\\
+  $39/13 = 3$\\
+  \textbf{B = 3}\\
+
+\item $$C = (31 + 15)/(7 + 16)$$
+  $C =\underline{(31 + 15)}/(7 + 16)$// On commence par l'intérieur de la parenthèse.\\
+  $31 + 15 = 46$\\ 
+  $C =31/ \underline{(7 + 16)}$// On continue par l'intérieur de la parenthèse.\\
+  $7 + 16 = 23$\\
+  $C = 46 / 23$ // On finit avec la division.\\
+  $46 / 23 = 2$\\
+  \textbf{C = 2}
+
+\item $$D = 8 \times (19 - 16 + 3)$$
+
+  $D = 8 \times \underline{(19 - 16 + 3)}$ // On commence par l'intérieur de la parenthèse.\\
+  $\underline{19 - 16} + 3$ // On effectue les calculs dans le sens de lecture.\\
+  $19 - 16 = 3$\\
+  $3 + 3 = 6$\\
+  $D = 8 \times 6$\\
+  $8 \times 6 = 48$ //On finit le calcul avec la multiplication. \\
+  \textbf{D = 48}\\
+  
+\end{enumerate}
+
+\paragraph{Calculs avec des parenthèses}~~\\
+
+\textbf{EXO : 39 - p19} - \underline{Supprimer les parenthèses en trop et calculer.}
+\begin{enumerate}
+\item $$A = $$
+\item $$B = $$
+\item $$C = $$
+\item $$D = $$
+\end{enumerate}
+
+
+\end{document}

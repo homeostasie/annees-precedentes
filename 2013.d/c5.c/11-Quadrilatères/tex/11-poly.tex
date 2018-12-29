@@ -1,0 +1,218 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Short Sectioned Assignment
+% LaTeX Template
+% Version 1.0 (5/5/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Frits Wenneker (http://www.howtotex.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[paper=a4, fontsize=9pt]{scrartcl} % A4 paper and 11pt font size
+
+
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage[english,francais]{babel} % Français et anglais
+\usepackage[utf8]{inputenc} 
+
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+
+\usepackage{enumitem}
+\usepackage{lmodern}
+\usepackage{url}
+\usepackage{eurosym} % signe Euros
+\usepackage{geometry} % Pour passer au format A4
+\geometry{a4paper} % 
+\usepackage{graphicx} % Required for including pictures
+\usepackage{float} % Allows putting an [H] in \begin{figure} to specify the exact location of the figure
+
+\usepackage{multicol}
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{\centering \normalfont\scshape} % Make all sections centered, the default font and small caps
+
+%----------------------------------------------------------------------------------------
+%	Pied de Page
+%----------------------------------------------------------------------------------------
+
+
+\usepackage{fancyhdr} % Custom headers and footers
+\pagestyle{fancyplain} % Makes all pages in the document conform to the custom headers and footers
+\fancyhead{} % No page header - if you want one, create it in the same way as the footers below
+\fancyfoot[L]{$5^{e}1$} % Empty left footer
+\fancyfoot[C]{Chapitre 11 - Quadrilatères} % Empty center footer
+\fancyfoot[R]{\thepage} % Page numbering for right footer
+
+\renewcommand{\headrulewidth}{0pt} % Remove header underlines
+\renewcommand{\footrulewidth}{0pt} % Remove footer underlines
+
+\setlength{\headheight}{13.6pt} % Customize the height of the header
+
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs - comment this line for an assignment with lots of text
+
+
+%----------------------------------------------------------------------------------------
+%	Titre
+%----------------------------------------------------------------------------------------
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+
+\title{	
+  \vspace{-10ex}
+  \horrule{0.5pt} \\[0.4cm] % Thin top horizontal rule
+  \huge Chapitre 11 - Quadrilatères\\ % The assignment title
+  \horrule{2pt} \\[0.5cm] % Thick bottom horizontal rule
+}
+
+\author{}
+\date{\vspace{-10ex}} % Today's date or a custom date
+
+%----------------------------------------------------------------------------------------
+%	Début du document
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+% RE-DEFINITION
+%----------------------------------------------------------------------------------------
+% MATHS
+%-----------
+
+\newtheorem{Definition}{Définition}
+\newtheorem{Theorem}{Théorème}
+\newtheorem{Proposition}{Propriété}
+
+% MATHS
+%-----------
+\renewcommand{\labelitemi}{$\bullet$}
+\renewcommand{\labelitemii}{$\circ$}
+%----------------------------------------------------------------------------------------
+%	Titre
+%----------------------------------------------------------------------------------------
+
+\maketitle % Print the title
+
+%-----------------------------------111111111111111111111111111111111111
+\section{Parallélogramme}
+%-----------------------------------------------------------------------
+
+\begin{multicols}{2}
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\linewidth]{sources/cours/para-0.pdf}
+  \end{figure}
+
+  \begin{Definition}
+    Un parallélogramme est un quadrilatère dont les côtés opposés sont parallèles.
+  \end{Definition}
+
+  \paragraph{Remarques}
+  Un quadrilatère est une figure avec quatre côtés.
+\end{multicols}
+
+\subsection{Propriétés du parallélogramme}
+%-----------------------------------------------------------------------
+\setlength{\columnseprule}{1pt}
+\begin{multicols}{2}
+  \begin{Proposition}
+    Un quadrilatère avec ses côtés opposés de même longueur est un parallélogramme.
+  \end{Proposition}
+
+  \begin{Proposition}
+    Un quadrilatère avec deux côtés opposés parallèles et de même longueur est un parallélogramme.
+  \end{Proposition}
+
+  \begin{Proposition}
+    Un quadrilatère dont les diagonales se coupent en leur milieu est un parallélogramme.
+  \end{Proposition}
+
+  \begin{Proposition}
+    Un quadrilatère dont les angles opposés ont une même mesure.
+  \end{Proposition}
+  \subsection{Aire du parallélogramme}
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\linewidth]{sources/cours/aire-0.pdf}
+  \end{figure}
+
+  $$\mathcal{A} = base \times hauteur$$
+\end{multicols}
+%-----------------------------------------------------------------------
+
+%-----------------------------------111111111111111111111111111111111111
+\section{Parallélogrammes particuliers}
+%-----------------------------------------------------------------------
+
+\begin{Proposition}
+  Le rectangle, le losange et le carré sont des parallélogrammes.
+\end{Proposition}
+
+\begin{multicols}{3}
+  \subsection{Le rectangle}
+  %-----------------------------------------------------------------------
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\linewidth]{sources/cours/rec-0.pdf}
+  \end{figure}
+
+  \begin{Definition}
+    Un rectangle est un quadrilatère avec quatre angles droits.
+  \end{Definition}
+
+  \paragraph{Propriétés}
+  \begin{itemize}[label=$\Diamond$]
+  \item Les diagonnales d'un rectangle sont de même longueur.
+  \item Un rectangle a deux axes de symétrie : les médiatrices de ses côtés.
+  \end{itemize}
+
+
+  \subsection{Le losange}
+  %-----------------------------------------------------------------------
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\linewidth]{sources/cours/los-0.pdf}
+  \end{figure}
+
+  \begin{Definition}
+    Un losange est un quadrilatère avec quatre côtés de même longueur.
+  \end{Definition}
+
+  \paragraph{Propriétés}
+  \begin{itemize}[label=$\Diamond$]
+  \item Les diagonnales d'un losange sont perpendiculaires.
+  \item Un losange a deux axes de symétrie : ses diagonales.
+  \end{itemize}
+
+  \subsection{Le carré}
+  %-----------------------------------------------------------------------
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.3\linewidth]{sources/cours/car-0.pdf}
+  \end{figure}
+  
+  \begin{Definition}
+    Un carré est un quadrilatère avec quatre angles droits et quatre côtés de même longueur.
+  \end{Definition}
+
+  \paragraph{Propriétés}
+  \begin{itemize}[label=$\Diamond$]
+  \item Les diagonnales d'un rectangle sont perpendiculaires et de même longueur.
+  \item Un rectangle a quatre axes de symétrie : les médiatrices de ses côtés et ses diagonales.
+  \end{itemize}
+\end{multicols}
+\end{document}

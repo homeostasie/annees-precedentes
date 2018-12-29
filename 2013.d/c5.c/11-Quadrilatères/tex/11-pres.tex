@@ -1,0 +1,197 @@
+\documentclass{beamer}
+
+\usepackage{geometry} % Pour passer au format A4
+\usepackage{graphicx} % Required for including pictures
+\usepackage{float} % 
+
+\usepackage{amsmath,amsfonts,amssymb,amsthm}
+\usepackage[T1]{fontenc} 
+\usepackage[english,francais]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+
+\usetheme{Warsaw}
+
+\title{Quadrilatères}
+\author{$5^{e}1$}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\section{Parallélogramme}
+
+\begin{frame}
+  \frametitle{Le parallélogramme}
+  \begin{alertblock}{Définition}	
+    Un parallélogramme est un quadrilatère dont les côtés opposés sont parallèles. 
+
+    \begin{columns}[t]
+      \begin{column}{6cm}
+        \begin{figure}[H]
+          \centering
+          \includegraphics[width=\linewidth]{sources/cours/para-2.pdf}
+        \end{figure}
+      \end{column}
+      \begin{column}{4cm}
+        \vspace{1cm}
+        \[
+        \left \{
+        \begin{array}{r c l}
+          (AB) & \slash \slash & (CD) \\
+          (AD) & \slash \slash & (BC)\\
+        \end{array}
+        \right .
+        \]
+      \end{column}
+    \end{columns} 
+  \end{alertblock}
+
+  \begin{exampleblock}{Remarques}
+    Un quadrilatère est une figure avec quatre côtés.
+  \end{exampleblock}
+
+\end{frame}
+
+\subsection{Propriétés du parallélogramme}
+
+\begin{frame}
+  \frametitle{Propriétés du parallélogramme}
+  \begin{block}{ABCD est un parallélogramme si ABCD est :}	
+
+    \begin{columns}[t]
+      \begin{column}{4cm}
+        \begin{figure}[H]
+          \centering
+          \includegraphics[width=\linewidth]{sources/cours/para-1.pdf}
+        \end{figure}
+      \end{column}
+      \begin{column}{6cm}
+        \begin{enumerate}
+        \item<1-> Un quadrilatère avec ses quatre côtés opposés de même longueur.
+        \item<2-> Un quadrilatère avec ses deux côtés opposés parallèles et de même longueur.
+        \item<3-> Un quadrilatère dont les diagonales se coupent en leur milieu.
+        \item<4> Un quadrilatère dont les angles opposés sont de même mesure.     
+        \end{enumerate}
+      \end{column}
+    \end{columns} 
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \frametitle{L'aire du parallélogramme}
+
+  \begin{columns}[t]
+    \begin{column}{6cm}
+      \begin{block}{}	
+        \begin{figure}[H]
+          \centering
+          \includegraphics[height=2.3cm]{sources/cours/aire-0.pdf} \\
+          \includegraphics[height=2.3cm]{sources/cours/aire-1.pdf} \\
+          \includegraphics[height=2.3cm]{sources/cours/aire-2.pdf}       
+        \end{figure}
+      \end{block}
+    \end{column}
+    \begin{column}{5.5cm}
+      \vspace{2.5cm}
+      \begin{alertblock}{Aire du parallélogramme}
+        $$\mathcal{A} = base \times hauteur$$
+      \end{alertblock}
+      
+    \end{column}
+  \end{columns} 
+
+\end{frame}
+
+\section{Parallélogrammes particuliers}
+
+\subsection{Le rectangle}
+
+\begin{frame}
+  \frametitle{Le rectangle}
+  
+  \begin{columns}[t]
+    \begin{column}{4cm}
+      \begin{block}{}	
+        \begin{figure}[H]
+          \centering
+          \includegraphics[width=\linewidth]{sources/cours/rec-0.pdf}
+        \end{figure}
+      \end{block} 
+    \end{column}
+    \begin{column}{6cm}
+      \begin{alertblock}{Définition}	
+	Un rectangle est un quadrilatère avec quatre angles droits.
+      \end{alertblock}
+    \end{column}
+  \end{columns} 
+  
+  \begin{block}{Propriétés du rectangle}	
+    \begin{itemize}
+    \item Les diagonales d'un rectangle sont de même longueur et se coupent en leur milieu.
+    \item Un rectangle a deux axes de symétrie : les médiatrices de ses côtés.
+    \end{itemize}
+  \end{block} 
+  
+\end{frame}
+
+\subsection{Le losange}
+
+\begin{frame}
+  \frametitle{Le losange}
+  
+  \begin{columns}[t]
+    \begin{column}{4cm}
+      \begin{block}{}	
+        \begin{figure}[H]
+          \centering
+          \includegraphics[width=\linewidth]{sources/cours/los-0.pdf}
+        \end{figure}
+      \end{block} 
+    \end{column}
+    \begin{column}{6cm}
+      \begin{alertblock}{Définition}	
+	Un losange est un quadrilatère avec quatre côtés de même longueur.
+      \end{alertblock}
+    \end{column}
+  \end{columns} 
+  
+  \begin{block}{Propriétés du losange}	
+    \begin{itemize}
+    \item Les diagonales d'un losange se coupent en leur milieu perpendiculairement.
+    \item Un losange a deux axes de symétrie : ses diagonales.
+    \end{itemize}
+  \end{block} 
+  
+\end{frame}
+
+\subsection{Le carré}
+
+\begin{frame}
+  \frametitle{Le carré}
+  
+  \begin{columns}[t]
+    \begin{column}{4cm}
+      \begin{block}{}	
+        \begin{figure}[H]
+          \centering
+          \includegraphics[width=0.8\linewidth]{sources/cours/car-0.pdf}
+        \end{figure}
+      \end{block} 
+    \end{column}
+    \begin{column}{6cm}
+      \begin{alertblock}{Définition}	
+	Un carré est un quadrilatère avec quatre angles droits et quatre côtés de même longueur.
+      \end{alertblock}
+    \end{column}
+  \end{columns} 
+  
+  \begin{block}{Propriétés du carré}	
+    \begin{itemize}
+    \item Les diagonales d'un carré sont perpendiculaires et sont de même longueur.
+    \item Un carré a quatre axes de symétrie : ses diagonales et les médiatrices de ses côtés.
+    \end{itemize}
+  \end{block} 
+\end{frame}
+
+\end{document}

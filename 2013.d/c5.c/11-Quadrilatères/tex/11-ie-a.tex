@@ -1,0 +1,102 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LaTeX Template
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Linux and Unix Users Group at Virginia Tech Wiki 
+% (https://vtluug.org/wiki/Example_LaTeX_chem_lab_report)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt]{article}
+\usepackage{geometry} % Pour passer au format A4
+\geometry{hmargin=1cm, vmargin=1cm} % 
+
+\usepackage{graphicx} % Required for including pictures
+\usepackage{float} % 
+
+%Français
+\usepackage[T1]{fontenc} 
+\usepackage[english,francais]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{eurosym}
+\usepackage{lmodern}
+\usepackage{url}
+\usepackage{multicol}
+\usepackage{fancybox} 
+
+%Maths
+\usepackage{amsmath,amsfonts,amssymb,amsthm}
+%\usepackage[linesnumbered, ruled, vlined]{algorithm2e}
+%\SetAlFnt{\small\sffamily}
+
+%Autres
+\linespread{1} % Line spacing
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+\renewcommand{\labelenumi}{\alph{enumi}.} % 
+\pagestyle{empty}
+%----------------------------------------------------------------------------------------
+%	DOCUMENT INFORMATION
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+\cornersize{1}
+%\maketitle % Insert the title, author and date
+
+\begin{minipage}[t]{\textwidth}
+  \raggedright
+      {\bfseries Série : \textbf{A}}\\
+      {\bfseries $5^{e}1$}\\[.35ex]
+      \vspace*{-1cm}
+      \raggedleft
+          {\bfseries Opérations relatifs}\\[.35ex]
+          {\bfseries 27 Mai 2014}\\[.35ex]
+\end{minipage}\\[1em]
+
+\begin{center}
+  \textsf{Un peuple prêt à sacrifier un peu de liberté pour un peu de sécurité ne mérite ni l'une ni l'autre, et finit par perdre les deux.}\\
+  \texttt{Benjamin Franklin}
+\end{center}
+
+\subsection*{1 - Tracer}
+\begin{enumerate}
+\item Tracer un parallélogramme ABCD tel que [AB] = 6cm, [AD] = 3cm et [DB] = 8cm.
+\item Tracer un parallélogramme EFGH tel que [HF] = 10cm, [EG] = 8cm et [EH] = 4cm.
+\end{enumerate}
+
+\subsection*{2 - Reconnaître}
+
+Donner la nature : quadrilatère, parallélogramme, losange, rectangle ou carré. \textbf{JUSTIFIER} avec la propriété correspondant au codage.
+\begin{multicols}{2}
+  \begin{enumerate}
+  \item 
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=0.8\linewidth]{sources/ie/qu-1.pdf}
+    \end{figure}
+  \item
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=0.8\linewidth]{sources/ie/qu-2.pdf}
+    \end{figure}
+  \item 
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=0.8\linewidth]{sources/ie/qu-3.pdf}
+    \end{figure}
+  \item  
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=0.8\linewidth]{sources/ie/qu-4.pdf}
+    \end{figure}
+  \end{enumerate}
+\end{multicols}
+\end{document}

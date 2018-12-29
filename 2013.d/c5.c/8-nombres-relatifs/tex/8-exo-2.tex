@@ -1,0 +1,109 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LaTeX Template
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Linux and Unix Users Group at Virginia Tech Wiki 
+% (https://vtluug.org/wiki/Example_LaTeX_chem_lab_report)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt]{article}
+\usepackage{geometry} % Pour passer au format A4
+\geometry{hmargin=1cm, vmargin=1cm} % 
+
+\usepackage{graphicx} % Required for including pictures
+\usepackage{float} % 
+
+%Français
+\usepackage[T1]{fontenc} 
+\usepackage[english,francais]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{eurosym}
+\usepackage{lmodern}
+\usepackage{url}
+\usepackage{multicol}
+
+%Maths
+\usepackage{amsmath,amsfonts,amssymb,amsthm}
+%\usepackage[linesnumbered, ruled, vlined]{algorithm2e}
+%\SetAlFnt{\small\sffamily}
+
+%Autres
+\linespread{1} % Line spacing
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+\renewcommand{\labelenumi}{\alph{enumi}.} % 
+\pagestyle{empty}
+%----------------------------------------------------------------------------------------
+%	DOCUMENT INFORMATION
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+%\maketitle % Insert the title, author and date
+
+\begin{minipage}[t]{\textwidth}
+\raggedright
+{\bfseries Nom, Prénom : \underline{\phantom{123456789123456789}}}\\
+{\bfseries $5^{e}1$}\\[.35ex]
+\vspace*{-1cm}
+\raggedleft
+{\bfseries Découverte des relatifs}\\[.35ex]
+{\bfseries 22 avril 2014}\\[.35ex]
+\end{minipage}\\[1em]
+
+\begin{center}
+  \textsf{--}\\
+  \textsf{Les mathématiques consistent à prouver des choses évidentes par des moyens complexes.}
+  \texttt{George Polya}\\
+  \textsf{--}
+\end{center}
+
+\section{Toucher - Couler}
+
+\setlength{\columnseprule}{1pt}
+\begin{multicols}{2}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\linewidth]{sources/exo/tc-0.pdf}
+  \caption{Votre plateau}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\linewidth]{sources/exo/tc-1.pdf}
+  \caption{Plateau de l'adversaire}
+\end{figure}
+\end{multicols}  
+
+\subsection{Mise en place}
+\begin{enumerate}
+\item Placer horizontalement ou verticalement sur votre plateau  :
+\begin{itemize}
+\item Un porte-avion de taille 5.
+\item Un zodiac de taille 2.
+\item Deux frégates de taille 3.
+\end{itemize}
+
+\item Donner les coordonnées de toutes les cases composants chacun de vos navires.
+\end{enumerate}
+
+\subsection{Destruction}
+\begin{enumerate}
+\item Donner les coordonnées de 4 tirs permettant de toucher une fois les 4 bateaux.
+\item Donner les coordonnées de 8 tirs permettant de couler le deux frégates.
+\end{enumerate}
+
+
+
+
+
+
+\end{document}
