@@ -1,0 +1,104 @@
+\documentclass[12pt]{article}
+\usepackage{geometry} % Pour passer au format A4
+\geometry{hmargin=1cm, vmargin=1cm} % 
+
+% Page et encodage
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage[english,french]{babel} % Français et anglais
+\usepackage[utf8]{inputenc} 
+
+\usepackage{lmodern}
+\setlength\parindent{0pt}
+
+% Graphiques
+\usepackage{graphicx,float,grffile}
+
+% Maths et divers
+\usepackage{amsmath,amsfonts,amssymb,amsthm,verbatim}
+\usepackage{multicol,enumitem,url,eurosym,gensymb}
+
+% Sections
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{\centering \normalfont\scshape}
+
+% Tête et pied de page
+
+\usepackage{fancyhdr} 
+\pagestyle{fancyplain} 
+
+\fancyhead{} % No page header
+\fancyfoot{}
+
+\renewcommand{\headrulewidth}{0pt} % Remove header underlines
+\renewcommand{\footrulewidth}{0pt} % Remove footer underlines
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+%----------------------------------------------------------------------------------------
+%	Début du document
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+% RE-DEFINITION
+%----------------------------------------------------------------------------------------
+% MATHS
+%-----------
+
+\newtheorem{Definition}{Définition}
+\newtheorem{Theorem}{Théorème}
+\newtheorem{Proposition}{Propriété}
+
+% MATHS
+%-----------
+\renewcommand{\labelitemi}{$\bullet$}
+\renewcommand{\labelitemii}{$\circ$}
+%----------------------------------------------------------------------------------------
+%	Titre
+%----------------------------------------------------------------------------------------
+
+\setlength{\columnseprule}{1pt}
+
+\horrule{2px}
+\section*{Chapitre 1 - Théorème de Pythagore}
+\horrule{2px}
+
+\subsection*{Programme des exercices}
+
+\subsection*{Calculer des carrés}
+
+\begin{itemize}
+	\item \textit{On donne des côtés, on cherche les aires des carrés.}
+	\item \textit{On donne des nombres entiers, on cherche les carrés correspondants.}
+	\item \textit{On donne des nombres décimaux, on cherche les carrés correspondants.}
+	\item \textit{Pour les plus rapides : fractions, nombres négatifs, ...}
+\end{itemize}
+
+\subsection*{Calculer des racines carrés}
+
+\begin{itemize}
+	\item \textit{On donne des aires de carré, on cherche les côtés.}
+	\item \textit{On donne des carrés parfaits, on cherche les racines.}
+	\item \textit{On donne des nombres décimaux, on cherche les racines.}
+	\item \textit{Pour les plus rapides : fractions, nombres négatifs, ...}
+\end{itemize}
+
+\subsection*{Écrire le théorème}
+
+\begin{itemize}
+	\item \textit{On donne des triangles rectangles avec des valeurs, on écrit l'égalité et on l'a vérifie.}
+	\item \textit{On donne des triangles rectangles avec des lettres, on écrit l'égalité.}
+	\item \textit{On donne des situations de problèmes, on dit si oui ou non on peut utiliser le théorème de Pythagore.}
+\end{itemize}
+
+\subsection*{Calcul de longueurs manquantes}
+
+\begin{itemize}
+	\item \textit{Triangles rectangles, on donne deux côtés, on dit si on doit additionner ou soustraire.}
+	\item \textit{Triangles rectangles, on donne deux côtés, on calcule le troisième côté.}
+\end{itemize}
+
+\subsection*{Problèmes}
+
+\end{document}

@@ -1,0 +1,95 @@
+\documentclass[12pt]{article}
+\usepackage{geometry} % Pour passer au format A4
+\geometry{hmargin=1cm, vmargin=1cm} % 
+
+% Page et encodage
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage[english,french]{babel} % Français et anglais
+\usepackage[utf8]{inputenc} 
+
+\usepackage{lmodern}
+\setlength\parindent{0pt}
+
+% Graphiques
+\usepackage{graphicx,float,grffile}
+
+% Maths et divers
+\usepackage{amsmath,amsfonts,amssymb,amsthm,verbatim}
+\usepackage{multicol,enumitem,url,eurosym,gensymb}
+
+% Sections
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{\centering \normalfont\scshape}
+
+% Tête et pied de page
+
+\usepackage{fancyhdr} 
+\pagestyle{fancyplain} 
+
+\fancyhead{} % No page header
+\fancyfoot{}
+
+\renewcommand{\headrulewidth}{0pt} % Remove header underlines
+\renewcommand{\footrulewidth}{0pt} % Remove footer underlines
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+%----------------------------------------------------------------------------------------
+%	Début du document
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+% RE-DEFINITION
+%----------------------------------------------------------------------------------------
+% MATHS
+%-----------
+
+\newtheorem{Definition}{Définition}
+\newtheorem{Theorem}{Théorème}
+\newtheorem{Proposition}{Propriété}
+
+% MATHS
+%-----------
+\renewcommand{\labelitemi}{$\bullet$}
+\renewcommand{\labelitemii}{$\circ$}
+%----------------------------------------------------------------------------------------
+%	Titre
+%----------------------------------------------------------------------------------------
+
+\setlength{\columnseprule}{1pt}
+
+\horrule{2px}
+\section*{Chapitre 2 - Trigonometrie}
+\horrule{2px}
+
+\subsection*{Programme des exercices}
+
+
+\subsection*{Triangle}
+
+\begin{itemize}
+	\item \textit{On rappelle la propriété : la somme des angles dans un triangle fait $180 \degree$.}
+	\item \textit{On signale un angle dans un triangle, on écrit le nom des côtés : hypoténuse, adjacent, opposé.}
+\end{itemize}
+
+\subsection*{Modéliser}
+
+\begin{itemize}
+	\item \textit{On donne des situations de problèmes, on dit si on peut utiliser la trigonométrie.}
+	\item \textit{On donne un angle, trois côtés, on écrit les trois relations trigonométriques.}
+	\item \textit{On donne un angle, un côté, on cherche un autre côté, on dit quelle relation trigonométrique utiliser.}
+\end{itemize}
+
+
+\subsection*{Calculer}
+
+\begin{itemize}
+	\item \textit{On calcule des cosinus, sinus, tangente d'angle remarquable.}
+	\item \textit{On calcule des côtés avec un angle et un côté.}
+\end{itemize}
+
+\subsection*{Problèmes}
+
+\end{document}

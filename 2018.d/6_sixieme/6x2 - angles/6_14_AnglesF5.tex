@@ -1,0 +1,151 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[textheight=28cm,textwidth=19cm,headheight=1mm,footskip=1mm]{geometry}
+\usepackage[UTF8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{fourier}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{paralist,array}
+\usepackage{pgf,tikz}
+\usetikzlibrary{shapes,snakes,arrows,patterns}
+\usepackage{graphicx,multicol}
+\usepackage{varwidth}
+
+\pagestyle{empty}
+
+\newcommand{\ent}[3]{\par \noindent #1$^{\text{ème}}$ $-$ #2 $-$ #3.}
+%fin de la commande \ent (entête)
+
+\newcounter {exercice}
+
+\newcommand{\Exdeb}{\par \noindent \stepcounter{exercice} \textbf{\underline{{Exercice }\theexercice\,: }}\vspace{3 pt}}
+%fin de la commande \exdeb (entête d'exercice 1)
+
+\newcommand{\exdeb}{\vspace{24pt} \par \noindent \stepcounter{exercice} \textbf{\underline{{Exercice }\theexercice\,: }}\vspace{3 pt}}
+
+\begin{document}
+\ent{6}{Angles}{Fiche 5* : Savoir nommer et mesurer les angles dans une figure} \vspace{24 pt}\\
+Nommer et mesurer les angles marqués sur les figures.\vspace{12pt} \\
+% Figure 1
+\begin{minipage}{0.5\linewidth}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\clip(-1,-1) rectangle (6,3.5);
+\draw (0,0)-- (3.19,2.4)-- (5,0)-- cycle;
+\draw [shift={(0,0)}] (0:0.64) arc (0:37:0.64) ;
+\draw [shift={(5,0)}] (127:0.64) arc (127:180:0.64);
+\draw [shift={(3.19,2.4)}] (-143:0.64) arc (-143:-53:0.64);
+\draw (0,0) node [anchor=east] {A};
+\draw (5,0) node [anchor=west] {B};
+\draw (3.19,2.4) node [anchor=south] {C};
+\end{tikzpicture}
+\end{minipage}
+\begin{minipage}{0.5\linewidth}
+\vspace{12pt}
+. \dotfill \vspace{12pt} \\
+. \dotfill \vspace{12pt }\\
+. \dotfill \vspace{12pt}  \\
+\end{minipage}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\clip(0,-0.5) rectangle (19,0.5);
+\draw [line width=1.5pt](0,0)-- (19,0);
+\end{tikzpicture}
+\\
+% Figure 2
+\begin{minipage}{0.5\linewidth}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\clip(-1,-1) rectangle (6,4);
+\draw (0,0)-- (4.3,0)-- (3.87,2.46)-- (0.8,3)--cycle;
+\draw [shift={(4.3,0)}] (100:0.51) arc (100:180:0.51);
+\draw [shift={(3.87,2.46)}] (170:0.51) arc (170:280:0.51);
+\draw [shift={(0,0)}] (0:0.51) arc (0:75:0.51);
+\draw [shift={(0.8,3)}] (-105:0.51) arc (-105:-10:0.51);
+\draw (0,0) node [anchor=east] {A};
+\draw (4.3,0) node [anchor=west] {B};
+\draw (3.87,2.46) node [anchor=west] {C};
+\draw (0.8,3) node [anchor=east] {D};
+\end{tikzpicture}
+\end{minipage}
+\begin{minipage}{0.5\linewidth}
+\vspace{18pt}
+. \dotfill \vspace{12pt} \\
+. \dotfill \vspace{12pt} \\
+. \dotfill \vspace{12pt} \\
+. \dotfill \vspace{12pt} \\
+\end{minipage}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\clip(0,-0.5) rectangle (19,0.5);
+\draw [line width=1.5pt](0,0)-- (19,0);
+\end{tikzpicture}
+\\
+% Figure 3
+\begin{minipage}{0.5\linewidth}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\clip(-0.5,-0.36) rectangle (6.41,4.66);
+\draw (0,0)-- (5.3,0)-- (4.92,2.37)-- (5.8,4.17) -- (1.63,4.24)-- cycle;
+\draw [shift={(0,0)}] (0:0.55) arc (0:69:0.55);
+\draw [shift={(5.3,0)}] (99:0.55) arc (99:180:0.55);
+\draw [shift={(4.92,2.37)}] (64:0.55) arc (64:279:0.55);
+\draw [shift={(5.8,4.17)}] (179:0.55) arc (179:244:0.55);
+\draw [shift={(1.63,4.24)}] (-111:0.55) arc (-111:-1:0.55);
+\draw (0,0) node [anchor=east] {S};
+\draw (5.3,0) node [anchor=west] {C};
+\draw (4.92,2.37) node [anchor=west] {U};
+\draw (5.8,4.17) node [anchor=west] {R};
+\draw (1.63,4.24) node [anchor=east] {T};
+\end{tikzpicture}
+\end{minipage}
+\begin{minipage}{0.5\linewidth}
+\vspace{18pt}
+. \dotfill \vspace{12pt} \\
+. \dotfill \vspace{12pt} \\
+. \dotfill \vspace{12pt} \\
+. \dotfill \vspace{12pt} \\
+. \dotfill \vspace{12pt} \\
+. \dotfill \vspace{12pt} \\
+\end{minipage}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\clip(0,-0.5) rectangle (19,0.5);
+\draw [line width=1.5pt](0,0)-- (19,0);
+\end{tikzpicture}
+\\
+% Figure 4
+\begin{minipage}{0.5\linewidth}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\clip(-1,-1) rectangle (5,3.5);
+\draw (0,0)-- (0.26,2.97)-- (3.28,2.97)-- (3.8,0) -- cycle;
+\draw [shift={(0,0)}] (0:0.6) arc (0:85:0.6);
+\draw [shift={(3.28,2.97)}] (180:0.6) arc (180:280:0.6);
+\draw [shift={(3.8,0)}] (140:0.6) arc (140:180:0.6);
+\draw [shift={(0.26,2.97)}] (-94.98:0.6) arc (-94.98:-40:0.6);
+\draw [shift={(3.8,0)}] (140:0.6) arc (140:180:0.6);
+\draw(3.29,0.18) -- (3.18,0.23);
+\draw [shift={(0.26,2.97)}] (-94.98:0.6) arc (-94.98:-40:0.6);
+\draw(0.47,2.47) -- (0.51,2.36);
+\draw(0.4,2.45) -- (0.44,2.34);
+\draw(0.52,2.5) -- (0.58,2.4);
+\draw (3.8,0)-- (0.26,2.97);
+\draw [shift={(0.26,2.97)}] (-40:0.6) arc (-40:0.06:0.6);
+\draw(0.78,2.82) -- (0.89,2.79);
+\draw(0.75,2.75) -- (0.86,2.7);
+\draw [shift={(3.8,0)}] (100:0.6) arc (100:140:0.6);
+\draw [shift={(3.8,0)}] (100:0.5) arc (100:140:0.5);
+\draw (0,0) node [anchor=east] {A};
+\draw (3.8,0) node [anchor=west] {B};
+\draw (3.28,2.97) node [anchor=west] {C};
+\draw (0.26,2.97) node [anchor=east] {D};
+\end{tikzpicture}
+\end{minipage}
+\begin{minipage}{0.5\linewidth}
+\vspace{18pt}
+. \dotfill \vspace{12pt} \\
+. \dotfill \vspace{12pt} \\
+. \dotfill \vspace{12pt} \\
+. \dotfill \vspace{12pt} \\
+. \dotfill \vspace{12pt} \\
+. \dotfill \vspace{12pt} \\
+\end{minipage}
+
+
+\end{document}
+
+

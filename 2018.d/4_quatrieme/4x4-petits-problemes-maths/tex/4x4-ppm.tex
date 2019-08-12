@@ -1,0 +1,130 @@
+\documentclass[12pt]{article}
+\usepackage{geometry} % Pour passer au format A4
+\geometry{hmargin=1cm, vmargin=1cm} % 
+
+% Page et encodage
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage[english,french]{babel} % Français et anglais
+\usepackage[utf8]{inputenc} 
+
+\usepackage{lmodern}
+\setlength\parindent{0pt}
+
+% Graphiques
+\usepackage{graphicx,float,grffile}
+
+% Maths et divers
+\usepackage{amsmath,amsfonts,amssymb,amsthm,verbatim}
+\usepackage{multicol,enumitem,url,eurosym,gensymb}
+
+% Sections
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{\centering \normalfont\scshape}
+
+% Tête et pied de page
+
+\usepackage{fancyhdr} 
+\pagestyle{fancyplain} 
+
+\fancyhead{} % No page header
+\fancyfoot{}
+
+\renewcommand{\headrulewidth}{0pt} % Remove header underlines
+\renewcommand{\footrulewidth}{0pt} % Remove footer underlines
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+%----------------------------------------------------------------------------------------
+%   Début du document
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+% RE-DEFINITION
+%----------------------------------------------------------------------------------------
+% MATHS
+%-----------
+
+\newtheorem{Definition}{Définition}
+\newtheorem{Theorem}{Théorème}
+\newtheorem{Proposition}{Propriété}
+
+% MATHS
+%-----------
+\renewcommand{\labelitemi}{$\bullet$}
+\renewcommand{\labelitemii}{$\circ$}
+%----------------------------------------------------------------------------------------
+%   Titre
+%----------------------------------------------------------------------------------------
+
+\setlength{\columnseprule}{1pt}
+
+\horrule{2px}
+\section*{Chapitre 4 - Petits problèmes de mathématiques}
+\horrule{2px}
+
+\begin{enumerate}
+\item[1.] Connaissances
+  \begin{itemize}
+  \item Opération Puissance positive : $x^n$.
+  \item Opération Puissance négative : $x^{-n}$.
+  \item Connaître les simplifications avec des puissances.
+  \item Connaître l'écriture scientifique.
+  \end{itemize}
+\item[2.] Compétences
+  \begin{itemize}
+  \item Calculer avec des puissances.
+  \item Comprendre quelques limites de sa calculatrice.
+  \end{itemize}
+\end{enumerate}
+
+\section*{1 - Vitesse moyenne}
+
+Une vitesse est une grandeur composée d'une distance et d'un temps.
+
+\subsection*{Distance}
+
+$$1 km = 1\,000m$$
+
+On en déduit : 
+	\begin{eqnarray*}
+  2km &=& 2 \,000m \\
+  25km &=& 25 \, 000m \\
+  0.5 km &=& 500m
+\end{eqnarray*}
+
+$$1m = 1\div 1000 = \frac{1}{1000} m$$
+
+On en déduit : 
+	\begin{eqnarray*}
+  2m &=& 2 \div 1\,000 km \\
+  17m &=& 17 \div 1\, 000 km \\
+  0.4 m &=& 0.4 \div 1\, 000 km
+\end{eqnarray*}
+
+\subsection*{Temps}
+
+$$ 1h = 60min $$
+
+On en déduit : 
+	\begin{eqnarray*}
+  2h &=& 2 \times 60 = 120 min \\
+  0.5h &=& 0.5 \times 60min = 30 min \\
+  0.3h &=& 0.3 \times 60min = 18 min \\
+  5.3h &=& 5.3 \times 60min = 318 min \\
+  5h33min &=& 5 \times 60min + 33min = 300 + 33 min = 333min\\
+\end{eqnarray*}
+
+Il en est de même pour les secondes.
+
+\begin{eqnarray*}
+  1min = 60s \\
+  1h = 60 \times 60s = 3600s
+\end{eqnarray*}
+
+\section*{2 - Pourcentage}
+
+\section*{3 - Echelle}
+
+\end{document}

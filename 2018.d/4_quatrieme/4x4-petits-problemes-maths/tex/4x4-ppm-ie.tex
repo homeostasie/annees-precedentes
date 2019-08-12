@@ -1,0 +1,237 @@
+\documentclass[12pt]{article}
+\usepackage{geometry} % Pour passer au format A4
+\geometry{hmargin=1cm, vmargin=1cm} % 
+
+% Page et encodage
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage[english,french]{babel} % Français et anglais
+\usepackage[utf8]{inputenc} 
+
+\usepackage{lmodern}
+\setlength\parindent{0pt}
+
+% Graphiques
+\usepackage{graphicx,float,grffile}
+\usepackage{tikz}
+
+% Maths et divers
+\usepackage{amsmath,amsfonts,amssymb,amsthm,verbatim}
+\usepackage{multicol,enumitem,url,eurosym,gensymb}
+\usepackage{multido}
+
+% Sections
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{\centering \normalfont\scshape}
+
+% Tête et pied de page
+\usepackage{fancyhdr} 
+\pagestyle{fancyplain} 
+\fancyhead{} % No page header
+\fancyfoot{}
+
+\renewcommand{\headrulewidth}{0pt} % Remove header underlines
+\renewcommand{\footrulewidth}{0pt} % Remove footer underlines
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+\newcommand{\Pointilles}[1]{%
+  \par\nobreak
+  \noindent\rule{0pt}{1.5\baselineskip}% Provides a larger gap between the preceding paragraph and the dots
+  \multido{}{#1}{\noindent\makebox[\linewidth]{\dotfill}\endgraf}% ... dotted lines ...
+  \bigskip% Gap between dots and next paragraph
+}
+%----------------------------------------------------------------------------------------
+%	Début du document
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+% RE-DEFINITION
+%----------------------------------------------------------------------------------------
+% MATHS
+%-----------
+
+\newtheorem{Definition}{Définition}
+\newtheorem{Theorem}{Théorème}
+\newtheorem{Proposition}{Propriété}
+
+% MATHS
+%-----------
+\renewcommand{\labelitemi}{$\bullet$}
+\renewcommand{\labelitemii}{$\circ$}
+%----------------------------------------------------------------------------------------
+%	Titre
+%----------------------------------------------------------------------------------------
+
+\setlength{\columnseprule}{1pt}
+
+\textbf{Nom, Prénom : }
+
+\section*{ie 5 - Petits Problèmes de Maths}
+\begin{center}
+  \textit{René Char - L’essentiel est sans cesse menacé par l’insignifiant.}
+\end{center}
+\horrule{2px}
+
+
+\begin{multicols}{2}
+\subsection*{Ex1}
+Un glacier avance de 17 m par jour. De combien aura-t-il avancé :
+\begin{itemize}
+\item[1a.] au bout d’un mois de 30 jours ?
+\item[1b.] au bout d’une année de 365 jours ?
+\item[1c.] au bout de deux siècles ?
+\end{itemize}
+
+\subsection*{Ex2}
+Un automobiliste roule à allure constante. Il parcourt 140 km en une heure. Quelle distance parcourt-il en :
+\begin{itemize}
+\item[2a.] 2 h ? 	
+\item[2b.] 3 h 30 min ? 	
+\item[2c.] c. 33 min ? 
+\end{itemize}
+\end{multicols}
+
+\begin{multicols}{2}
+\subsection*{Ex3}
+\begin{itemize}
+\item[3a.] L'ouragan Lothar touche le Finistère le 26 décembre à 2 h du matin et atteint Strasbourg (soit 900 km plus loin) vers 13 h. \\
+Calcule la vitesse moyenne à laquelle cette tempête a traversé la France.
+\item[3b.] L'ouragan Martin aborde le sud Finistère le 27 décembre vers 15 h et se propage à 75 km/h sur une distance égale à celle de Lothar. \\
+À quelle heure arrive-t-il en Alsace ?
+\end{itemize}
+
+\subsection*{Ex4}
+Une entreprise a produit 250 tonnes de clous.\\
+Elle a vendu : 
+\begin{itemize}
+\item Un quart de sa production sur le marché national
+\item 25 \% sur le marché européen
+\item 12 \% sur le marché américain
+\item Le reste sur le marché asiatique.
+\end{itemize}
+
+ Dans chaque cas, calcule la production en tonnes correspondante.
+\end{multicols}
+
+\begin{multicols}{2}
+\subsection*{Ex5}
+ Au collège de Noémie, le foyer socio-éducatif (FSE) prend en charge 25 \% du financement des voyages scolaires alors que dans celui de Didier, pour un voyage de 180 \euro, le FSE a donné 54 \euro.
+
+\begin{itemize}
+\item[5a.] Si Noémie participe à un voyage qui coûte 230 \euro, quel montant est-il pris en charge par son FSE ?
+\item[5b.] En proportion, dans quel collège le FSE participe-t-il le plus au financement des voyages ?
+\end{itemize}
+
+\subsection*{Ex6}
+Recopier et completer les phrases suivantes.
+\begin{itemize}
+\item[6a.] 1 cm sur le plan correspond à 40 cm en réalité.\\
+L’échelle du plan est donc : 
+\item[6b.] 1 cm sur le plan correspond à 80 000 cm en réalité. \\
+L’échelle du plan est donc : 
+\item[6c.] 1 cm sur le plan correspond à 7 km en réalité.\\
+L’échelle du plan est donc : 
+\end{itemize}
+\end{multicols}
+\begin{multicols}{2}
+\subsection*{Ex7}
+\begin{itemize}
+\item[7a.] Sur un plan de maison à l’échelle 1/125, la salle à manger est représentée par un rectangle de 7.2 cm de long sur 6.3 cm de large. \\
+Quelles sont les dimensions réelles de cette pièce en mètre?
+\item[7b.] La chambre mesure en réalité 7m de long par 4m de large. \\
+Quelles sont les dimensions sur le plan de cette pièce en cm?
+\end{itemize}
+
+\subsection*{Ex8}
+Sur le plan d'une maison, les portes sont représentées par un segment de 1,4 cm de long. \\
+En réalité, elles sont larges de 0,60 m. Quelle est l'échelle de ce plan ?
+\end{multicols}
+
+
+\newpage
+
+\textbf{Nom, Prénom : }
+
+\section*{ie 5 - Petits Problèmes de Maths}
+\begin{center}
+  \textit{René Char - L’essentiel est sans cesse menacé par l’insignifiant.}
+\end{center}
+\horrule{2px}
+
+
+\begin{multicols}{2}
+\subsection*{Ex1}
+Un glacier avance de 27 m par jour. De combien aura-t-il avancé :
+\begin{itemize}
+\item[1a.] au bout d’un mois de 30 jours ?
+\item[1b.] au bout d’une année de 365 jours ?
+\item[1c.] au bout de trois siècles ?
+\end{itemize}
+
+\subsection*{Ex2}
+Un automobiliste roule à allure constante. Il parcourt 120 km en une heure. Quelle distance parcourt-il en :
+\begin{itemize}
+\item[2a.] 4 h ? 	
+\item[2b.] 2 h 30 min ? 	
+\item[2c.] c. 27 min ? 
+\end{itemize}
+\end{multicols}
+
+\begin{multicols}{2}
+\subsection*{Ex3}
+\begin{itemize}
+\item[3a.] L'ouragan Lothar touche le Finistère le 25 novembre à 3 h du matin et atteint Strasbourg (soit 800 km plus loin) vers 12 h. \\
+Calcule la vitesse moyenne à laquelle cette tempête a traversé la France.
+\item[3b.] L'ouragan Martin aborde le sud Finistère le 24 décembre vers 14 h et se propage à 85 km/h sur une distance égale à celle de Lothar. \\
+À quelle heure arrive-t-il en Alsace ?
+\end{itemize}
+
+\subsection*{Ex4}
+Une entreprise a produit 350 tonnes de clous.\\
+Elle a vendu : 
+\begin{itemize}
+\item Un quart de sa production sur le marché national
+\item 35 \% sur le marché européen
+\item 22 \% sur le marché américain
+\item Le reste sur le marché asiatique.
+\end{itemize}
+
+ Dans chaque cas, calcule la production en tonnes correspondante.
+\end{multicols}
+
+\begin{multicols}{2}
+\subsection*{Ex5}
+ Au collège de Noémie, le foyer socio-éducatif (FSE) prend en charge 15 \% du financement des voyages scolaires alors que dans celui de Didier, pour un voyage de 280 \euro, le FSE a donné 84 \euro.
+
+\begin{itemize}
+\item[5a.] Si Noémie participe à un voyage qui coûte 330 \euro, quel montant est-il pris en charge par son FSE ?
+\item[5b.] En proportion, dans quel collège le FSE participe-t-il le plus au financement des voyages ?
+\end{itemize}
+
+\subsection*{Ex6}
+Recopier et completer les phrases suivantes.
+\begin{itemize}
+\item[6a.] 1 cm sur le plan correspond à 50 cm en réalité.\\
+L’échelle du plan est donc : 
+\item[6b.] 1 cm sur le plan correspond à 5 000 cm en réalité. \\
+L’échelle du plan est donc : 
+\item[6c.] 1 cm sur le plan correspond à 2 km en réalité.\\
+L’échelle du plan est donc : 
+\end{itemize}
+\end{multicols}
+\begin{multicols}{2}
+\subsection*{Ex7}
+\begin{itemize}
+\item[7a.] Sur un plan de maison à l’échelle 1/115, la salle à manger est représentée par un rectangle de 7.4 cm de long sur 6.7 cm de large. \\
+Quelles sont les dimensions réelles de cette pièce en mètre?
+\item[7b.] La chambre mesure en réalité 6m de long par 5m de large. \\
+Quelles sont les dimensions sur le plan de cette pièce en cm?
+\end{itemize}
+
+\subsection*{Ex8}
+Sur le plan d'une maison, les portes sont représentées par un segment de 1,2 cm de long. \\
+En réalité, elles sont larges de 0,80 m. Quelle est l'échelle de ce plan ?
+\end{multicols}
+\end{document}

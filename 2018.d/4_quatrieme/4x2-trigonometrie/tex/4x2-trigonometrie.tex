@@ -1,0 +1,85 @@
+\documentclass[12pt]{article}
+\usepackage{geometry} % Pour passer au format A4
+\geometry{hmargin=1cm, vmargin=1cm} % 
+
+% Page et encodage
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage[english,french]{babel} % Français et anglais
+\usepackage[utf8]{inputenc} 
+
+\usepackage{lmodern}
+\setlength\parindent{0pt}
+
+% Graphiques
+\usepackage{graphicx,float,grffile}
+
+% Maths et divers
+\usepackage{amsmath,amsfonts,amssymb,amsthm,verbatim}
+\usepackage{multicol,enumitem,url,eurosym,gensymb}
+
+% Sections
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{\centering \normalfont\scshape}
+
+% Tête et pied de page
+
+\usepackage{fancyhdr} 
+\pagestyle{fancyplain} 
+
+\fancyhead{} % No page header
+\fancyfoot{}
+
+\renewcommand{\headrulewidth}{0pt} % Remove header underlines
+\renewcommand{\footrulewidth}{0pt} % Remove footer underlines
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+%----------------------------------------------------------------------------------------
+%	Début du document
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+% RE-DEFINITION
+%----------------------------------------------------------------------------------------
+% MATHS
+%-----------
+
+\newtheorem{Definition}{Définition}
+\newtheorem{Theorem}{Théorème}
+\newtheorem{Proposition}{Propriété}
+
+% MATHS
+%-----------
+\renewcommand{\labelitemi}{$\bullet$}
+\renewcommand{\labelitemii}{$\circ$}
+%----------------------------------------------------------------------------------------
+%	Titre
+%----------------------------------------------------------------------------------------
+
+\setlength{\columnseprule}{1pt}
+
+\horrule{2px}
+\section*{Chapitre 2 - Trigonometrie}
+\horrule{2px}
+
+\begin{enumerate}
+	\item[1.] Connaissances
+	      \begin{itemize}
+		  	  \item Les côtés dans un triangle rectangle. 
+		      \item Les relations trigonométriques Sinus, Cosinus, Tangente : SohCahToa
+	      \end{itemize}
+	\item[2.] Compétences
+	      \begin{itemize}
+		      \item Savoir quand utiliser la trigonométrie.
+			  \item Savoir quelle relation trigonométrique utiliser.
+		      \item Savoir calculer une longueur à l'aide de la trigonométrie.
+	      \end{itemize}
+\end{enumerate}
+
+\section*{1 - Contexte}
+ 
+Une des limites du théorème de Pythagore est qu'il demande deux mesures de longueurs. Or toutes les longueurs ne sont pas facilement mesurables. Exemple : la hauteur d'un immeuble. 
+
+\end{document}
