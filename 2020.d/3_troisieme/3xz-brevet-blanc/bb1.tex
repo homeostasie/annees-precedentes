@@ -1,0 +1,514 @@
+\documentclass[10pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}%ATTENTION codage UTF8
+\usepackage{fourier}
+\usepackage[scaled=0.875]{helvet}
+\renewcommand{\ttdefault}{lmtt}
+\usepackage{amsmath,amssymb,makeidx}
+\usepackage[normalem]{ulem}
+\usepackage{diagbox,fancybox,tabularx,booktabs,colortbl}
+\usepackage{pifont,multirow,dcolumn,enumitem,textcomp,lscape}
+\newcommand{\euro}{\eurologo{}}
+\usepackage{graphics,graphicx}
+\usepackage{pstricks,pst-plot,pst-tree,pstricks-add}
+\usepackage[left=1.5cm, right=1.5cm, top=1cm, bottom=1.5cm]{geometry}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\D}{\mathbb{D}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\C}{\mathbb{C}}
+\usepackage{scratch}
+\renewcommand{\theenumi}{\textbf{\arabic{enumi}}}
+\renewcommand{\labelenumi}{\textbf{\theenumi.}}
+\renewcommand{\theenumii}{\textbf{\alph{enumii}}}
+\renewcommand{\labelenumii}{\textbf{\theenumii.}}
+\newcommand{\vect}[1]{\overrightarrow{\,\mathstrut#1\,}}
+\def\Oij{$\left(\text{O}~;~\vect{\imath},~\vect{\jmath}\right)$}
+\def\Oijk{$\left(\text{O}~;~\vect{\imath},~\vect{\jmath},~\vect{k}\right)$}
+\def\Ouv{$\left(\text{O}~;~\vect{u},~\vect{v}\right)$}
+\usepackage{fancyhdr} 
+%\fancyfoot[C]{\textbf{page \thepage}} 
+\pagestyle{fancyplain} 
+
+\fancyhead{} % No page header
+%\fancyfoot{}
+
+\renewcommand{\headrulewidth}{0pt} % Remove header underlines
+%\renewcommand{\footrulewidth}{0pt} % Remove footer underlines
+\usepackage[french]{babel}
+\usepackage[dvips]{hyperref}
+
+\usepackage[np]{numprint}
+%\frenchbsetup{StandardLists=true}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+
+\begin{document}
+
+\setlength{\columnseprule}{1pt}
+
+\begin{titlepage}
+
+  \center % Center everything on the page
+
+  \textsc{\LARGE Collège Faubert}\\[2cm] % Name of your university/college
+  %\textsc{\Large }\\[0.5cm] % Major heading such as course name
+  \textsc{\large Villefranche}\\[2cm] % Minor heading such as course title
+         {\large Janvier 2021}\\[2cm] 
+
+
+         \HRule \\[2cm]
+                { \Huge \bfseries Brevet blanc}\\[2cm] % Title of your document
+                { \Huge \bfseries Mathématiques}\\[2cm] % Title of your document
+
+                \HRule \\[2cm]
+
+\begin{center}
+  \begin{tabularx}{0.4\linewidth}{|l|*{2}{>{\centering \arraybackslash}X|}}\hline
+    \textsc{Exercice 1} \hfill & 12 points \\ \hline
+    \textsc{Exercice 2} \hfill & 14 points \\ \hline
+    \textsc{Exercice 3} \hfill & 16 points \\ \hline
+    \textsc{Exercice 4} \hfill & 18 points \\ \hline
+    \textsc{Exercice 5} \hfill & 14 points \\ \hline
+    \textsc{Exercice 6} \hfill & 6 points \\ \hline
+    \textsc{Exercice 7} \hfill & 14 points \\ \hline
+    \textsc{Présentation et soin} \hfill & 6 points \\ \hline
+  \end{tabularx}
+\end{center}
+
+\begin{itemize}
+    \item L'usage de la calculatrice est autorisé.
+    \item \textbf{Le numéro de candidat est à reporter sur l'annexe.} et uniquement lui.
+    \item \textbf{L'annexe est à mettre dans la copie.}
+\end{itemize}
+
+\vfill 
+
+\end{titlepage}
+
+\subsection*{Exercice 1 \hfill \textit{12 points}}
+
+Cet exercice est un QCM (questionnaire à choix multiples). Pour chacune des questions suivantes, une seule des réponses proposées est exacte. Aucune justification n’est demandée. Une mauvaise réponse, plusieurs réponses ou l’absence de réponse ne rapportent, ni n’enlèvent aucun point. Indiquer sur la copie le numéro de la question et la réponse choisie.
+
+\begin{enumerate}
+    \item Un article coûte 100 euros pendant les soldes après avoir subi une baisse de 20\%. Son prix initial avant les soldes était de : 
+
+    \parbox{0.25\linewidth}{\textbf{a} : 120 euros}
+    \parbox{0.35\linewidth}{\textbf{b} : 125 euros}
+    \parbox{0.35\linewidth}{\textbf{c} : plus de 125 euros}
+    \item On admet que :
+    \begin{itemize}
+        \item 1 Mo = 1 Méga-octet = 1 000 000 octets = $10^6$ octets;
+        \item 1 Go = 1 Giga-octet = 1 000 000 000 octets
+        \item 1 To = 1 Tera-octet = 1 000 000 000 000 octets
+    \end{itemize} 
+    Un film vidéo de 1,7 Giga-octets est compressé. Le taux de compression revient à diminuer son poids en octets de 45\%. Après compression, le poids du fichier vidéo sera de :
+
+    \parbox{0.25\linewidth}{\textbf{a} : 935 Méga-octets}
+    \parbox{0.35\linewidth}{\textbf{b} : 765 Méga-octets}
+    \parbox{0.35\linewidth}{\textbf{c} : moins de 700 Méga-octets} 
+    \item Le prix d’un article augmente de 20\% puis diminue de 20 \%, après ces deux évolutions, le prix de l’article est : 
+
+    \parbox{0.25\linewidth}{\textbf{a} : inchangé.}
+    \parbox{0.35\linewidth}{\textbf{b} : supérieur au prix initial.}
+    \parbox{0.35\linewidth}{\textbf{c} : inférieur au prix initial.}   
+\end{enumerate}
+
+
+\subsection*{Exercice 2 \hfill \textit{14 points}}
+
+Une famille a effectué une randonnée en montagne. Le graphique ci-dessous donne la distance parcourue en km en fonction du temps en heures.
+
+\begin{center}
+    \psset{xunit=1.5cm,yunit=0.3cm}
+    \begin{pspicture*}(-0.5,-4)(7.4,27)
+        \uput[r](0,26){Distance en km}
+        \uput[d](6.5,-2){Temps en heures}
+        \psgrid[gridlabels=0,subgriddiv=5](0,0)(8,25)
+        \psaxes[linewidth=1pt,Dy=5](0,0)(0,0)(8,25)
+        \psline[linewidth=1.25pt](0,0)(1,4)(2,7)(3,8)(4,15)(5,15)(6,18)(7,20)
+    \end{pspicture*}
+\end{center}
+
+\begin{enumerate}
+\item Ce graphique traduit-il une situation de proportionnalité ? Justifier la réponse.
+\item On utilisera le graphique pour répondre aux questions suivantes. Aucune justification n'est
+demandée.
+	\begin{enumerate}
+		\item Quelle est la durée totale de cette randonnée?
+		\item Quelle distance cette famille a-t-elle parcourue au total?
+		\item Quelle est la distance parcourue au bout de $6$~h de marche?
+		\item Au bout de combien de temps ont-ils parcouru les $8$ premiers km ?
+		\item Que s'est-il passé entre la $4$\up{e} et la $5$\up{e} heure de randonnée?
+	\end{enumerate}
+\item  Un randonneur expérimenté marche à une vitesse moyenne de $4$~km/h sur toute la randonnée.
+Cette famille est-elle expérimentée? Justifier la réponse.
+\end{enumerate}
+
+\newpage
+
+\subsection*{Exercice 3 \hfill \textit{16 points}}
+
+\emph{Dans cet exercice, toutes les questions sont indépendantes. Il faut rédiger et justifier les réponses.}
+
+\parbox{0.6\linewidth}{\textbf{1.} Quel nombre obtient-on avec le programme de calcul ci- contre, si l'on choisit comme nombre de départ $-7$ ?}\hfill
+\parbox{0.38\linewidth}{
+    \begin{tabular}{|l|}\hline
+        \multicolumn{1}{|c|}{\textbf{Programme de calcul}}\\
+        Choisir un nombre de départ.\\
+        Ajouter 2 au nombre de départ.\\
+        Calculer le carré du résultat obtenu.\\ \hline
+    \end{tabular}}
+
+
+    \parbox{0.6\linewidth}{\textbf{2.} Sur la figure ci-contre, qui n'est pas à l'échelle, les droites (AB) et (DE) sont parallèles.
+       
+    Les points A, C et D sont alignés.
+    
+    Les points B, C et E sont alignés.
+    
+    Calculer la longueur CB.}\hfill
+    \parbox{0.38\linewidth}{\psset{unit=0.9cm}
+        \begin{pspicture}(5.5,5)
+            \psline(0.3,0)(5.4,1.6)
+            \psline(0,2.8)(5.3,4.6)
+            \psline(1.6,0.4)(5,4.5)%EB
+            \psline(0.6,3)(3.5,1)%AD
+            \uput[u](0.6,3){A} \uput[u](5,4.5){B} \uput[u](2.6,1.6){C} 
+            \uput[d](3.5,1){D} \uput[d](1.6,0.4){E}
+            \uput[l](2.2,1.2){1,5 cm}\uput[ur](3,1.3){1 cm}\uput[u](1.9,2.3){3,5 cm} 
+        \end{pspicture}
+    }
+
+    \begin{enumerate}
+        \item[\textbf{3.}] Un article coûte 22~\euro. Son prix baisse de 15\,\%. Quel est son nouveau prix ?
+        \item[\textbf{4.}] Développer et réduire l'expression $(2x - 3)(4x + 1)$.
+    \end{enumerate}
+    
+
+\subsection*{Exercice 4 \hfill \textit{18 points}}
+
+
+Une association propose diverses activités pour occuper les enfants pendant les vacances scolaires. Plusieurs tarifs sont proposés:
+
+\begin{itemize}
+    \item Tarif A : 8 \euro{} par demi-journée ;
+    \item Tarif B : un forfait de 30 \euro{} à acheter une seule fois et donnant droit à un tarif préférentiel de 5~\euro{} par demi-journée.
+\end{itemize}
+
+\medskip
+
+Un fichier sur tableur a été préparé pour calculer le coût à payer en fonction du nombre de demi-journées d'activités pour chacun des tarifs proposés :
+
+\begin{center}
+    \begin{tabularx}{\linewidth}{|c|c|*{5}{>{\centering \arraybackslash}X|}}\hline
+            &A						&B	&C	&D	&E	&F\\ \hline
+        1	&Nombre de demi-journées&1	&2	&3	&4	&5\\ \hline
+        2	& Tarif A				&8 	&16	&	&	&\\ \hline
+        3	& Tarif B				&35	&40	&	&	&\\ \hline
+    \end{tabularx}
+\end{center}
+
+Les questions 1, 2, 4 et 5 ne nécessitent pas de justification. 
+
+\medskip
+
+\begin{enumerate}
+    \item Compléter ce tableau sur l'annexe 1.
+    \item On considère les fonctions $f$ et $g$ qui donnent les tarifs à payer en fonction du nombre $x$ de demi-journées d'activités.
+   
+    \begin{itemize}
+        \item Tarif A :\quad Exprimer la fonction $f$ en fonction de $x$.
+        \item Tarif B :\quad Exprimer la fonction $g$ en fonction de $x$.
+    \end{itemize}
+
+    \item Parmi ces fonctions, quelle est celle qui traduit une situation de proportionnalité ?
+    \item Sur le graphique de l'annexe 2, on a représenté la fonction $g$. Représenter sur ce même graphique la fonction $f$.
+    \item Déterminer le nombre de demi-journées d'activités pour lequel le tarif A est égal au tarif B.
+    \item Avec un budget de 100~\euro, déterminer le nombre maximal de demi-journées auxquelles on peut participer.
+
+    Décrire la méthode choisie.
+\end{enumerate}
+
+\newpage
+
+\subsection*{Exercice 5 \hfill \textit{14 points}}
+
+\medskip
+
+Une entreprise fabrique des portiques pour installer des balançoires sur des aires de jeux.
+
+\medskip
+
+\begin{tabularx}{\linewidth}{|X m{5cm}|}\hline
+    \multicolumn{2}{|l|}{\textbf{Document 1 : croquis d'un portique}}\\
+    Vue d'ensemble&Vue de côté\\
+    \psset{unit=1cm}
+    \begin{pspicture}(6.5,4.5)
+        %\psgrid
+        \psline[linewidth=1.2pt](0.3,1)(1,3.6)(4.5,3.6)(6.4,0.2)
+        \psline(1,3.6)(2.9,0.2)\psline(4.5,3.6)(3.8,1)
+        \psline[linewidth=1.2pt,linestyle=dashed](0.7,2.3)(1.85,2.1)
+        \psline[linewidth=1.2pt,linestyle=dashed](4.2,2.3)(5.35,2.1)
+        \psline{<->}(1,3.8)(4.5,3.8)\uput[u](2.75,3.8){384 cm}
+        \uput[ul](1,3.6){A}\uput[dr](0.3,1){B}\uput[dr](2.9,0.2){C}
+    \end{pspicture}&\vspace*{-2cm}
+    \psset{unit=1cm}
+    \begin{pspicture}(-2,0)(2,4.5)
+        %\psgrid
+        \psline[linewidth=1.2pt](-1,1)(0,4.3)(1,1)
+        \psline[linewidth=1.2pt,linestyle=dashed](-0.5,2.8)(0.5,2.8)
+        \psline[linewidth=1.2pt,linestyle=dashed](0,4.3)(0,1)
+        \psline[linewidth=1.2pt,linestyle=dashed,dash=4pt 2pt](-1,1)(1,1)
+        \psframe(0,1)(0.25,1.25)
+        \psline{<->}(0.5,4.35)(1.8,1)\uput[r](1.15,2.7){342 cm}
+        \psline{<->}(-1,0.5)(1,0.5)\uput[d](0,0.5){290 cm}
+        \uput[ul](0,4.3){A}\uput[dl](-1,1){B}\uput[dr](1,1){C}
+        \uput[l](-0.55,2.8){M}\uput[r](0.55,2.8){N}\uput[dr](0,1){H}
+    \end{pspicture}\\
+    \psline[linewidth=1.2pt](0,0)(1,0) \qquad \qquad \qquad : poutres en bois de diamètre 100 mm 
+
+    \psline[linewidth=1.2pt,linestyle=dashed](0,0)(1,0) \qquad \qquad \qquad : barres de maintien latérales en bois.&
+    ABC est un triangle isocèle en A.
+
+    H est le milieu de [BC]
+    
+    (MN)est parallèle à (BC).\\ \hline
+\end{tabularx}
+
+\bigskip
+
+\begin{tabularx}{\linewidth}{|X X|}\hline
+    \multicolumn{2}{|l|}{\textbf{Document 2 : coût du matériel} }\\
+    \vspace*{-4cm}Poutres en bois de diamètre 100 mm :
+
+    -- Longueur 4 m : 12,99 \euro{} l'unité ;
+
+    -- Longueur 3, 5 m : 11,75 \euro{} l'unité ;
+
+    -- Longueur 3 m : 10,25 \euro{} l'unité.
+
+    Barres de maintien latérales en bois:
+
+    -- Longueur 3 m : 6,99 \euro{} l'unité ;
+
+    -- Longueur 2 m : 4,75 \euro{} l'unité;
+
+    -- Longueur 1,5 m : 3,89 \euro{} l'unité.&\psset{unit=1cm}
+    \begin{pspicture}(6.5,4.5)
+        %\psgrid
+        \psline[linewidth=1.2pt](0.3,1)(1,3.6)(4.8,3.6)(5.8,0.6)
+        \psline(1,3.6)(2,0.6)\psline(4.8,3.6)(4.1,1)
+        \psline[linewidth=1.2pt,linestyle=dashed](0.7,2.3)(1.42,2.1)
+        \psline[linewidth=1.2pt,linestyle=dashed](4.5,2.3)(5.3,2.1)
+        \psline(2.2,3.6)(2.2,1.8)(2,1.6)\psline(2.7,3.6)(2.7,1.8)(2.5,1.6)
+        \psline(2.2,1.8)(2.3,1.4)\psline(2.7,1.8)(2.8,1.4)
+        \pspolygon(1.9,1.7)(2.7,1.7)(2.9,1.35)(2.1,1.35)%balancegauche
+        \psline(3.4,3.6)(3.4,1.8)(3.2,1.6)\psline(3.9,3.6)(3.9,1.8)(3.7,1.6)
+        \psline(3.4,1.8)(3.5,1.4)\psline(3.9,1.8)(4,1.4)
+        \pspolygon(3.1,1.7)(3.9,1.7)(4.1,1.35)(3.3,1.35)%balancedroite
+    \end{pspicture}
+    \\
+    &\\
+    \multicolumn{2}{|l|}{Ensemble des fixations nécessaires pour un portique: 80 \euro.}\\
+    \multicolumn{2}{|l|}{Ensemble de deux balançoires pour un portique : 50 \euro.}\\ \hline
+\end{tabularx}
+
+\medskip
+
+\begin{enumerate}
+    \item Déterminer la hauteur AH du portique, arrondie au cm près.
+    \item Les barres de maintien doivent être fixées à 165 cm du sommet (AN $= 165$ cm).
+    Montrer que la longueur MN de chaque barre de maintien est d'environ $140$ cm.
+    \item Montrer que le coût minimal d'un tel portique équipé de balançoires s'élève à 196,98 \euro.
+    \item L'entreprise veut vendre ce portique équipé 20\,\% plus cher que son coût minimal. Déterminer ce prix de vente arrondi au centime près.
+\end{enumerate}
+
+
+\newpage
+
+\subsection*{Exercice 6 \hfill \textit{6 points}}
+
+Le script suivant permet de tracer le carré de côté $50$ unités .
+\begin{center}
+    \begin{scratch}
+        \blockinit{quand \greenflag est cliqué}
+        \blockmove{s’orienter à \ovaloperator{\selectmenu{90}}}
+        \blockpen{stylo en position d’écriture}
+        \blockinfloop{répéter \ovalnum{4} fois}
+        {
+            \blockmove{avancer de \ovalnum{50}}
+            \blockmove{tourner \turnleft{} de \ovalnum{90} degrés}
+        }
+    \end{scratch}
+\end{center}
+
+
+\begin{enumerate}
+\item Compléter le script en Annexe 3 pour obtenir un triangle équilatéral de coté $80$ unités.
+    
+\item On a lancé le script suivant :
+
+\begin{center}
+    \begin{scratch}
+        \blockinit{quand \greenflag est cliqué}
+        \blockmove{s’orienter à \ovaloperator{\selectmenu{90}}}
+        \blockmove{mettre \selectmenu{longueur} à \ovalnum{40}}
+        \blockpen{stylo en position d’écriture}
+        \blockinfloop{répéter \ovalnum{12} fois}
+        {
+            \blockmove{avancer de \selectmenu{longueur}}
+            \blockmove{tourner \turnleft{} de \ovalnum{90} degrés}
+            \blockmove{ajouter  à \selectmenu{longueur}\ovalnum{10}}
+        }
+    \end{scratch}
+\end{center}
+
+Quelle est la figure obtenue avec ce script. Justifier.
+
+\end{enumerate}
+
+\begin{tabularx}{\linewidth}{*{3}{>{\centering \arraybackslash}X}}
+    Figure 1&Figure 2& Figure 3\\
+    \psset{unit=1mm,linecolor=red}
+    \begin{pspicture}(33,33)
+        %\psgrid
+        \psline(0,0)(0,34)(32,34)(32,4)(4,4)(4,30)(28,30)(28,8)(8,8)(8,26)(24,26)
+        (24,12)(12,12)(12,22)(20,22)(20,16)(16,16)
+    \end{pspicture}&
+    \psset{unit=1mm,linecolor=red}
+    \begin{pspicture}(34,34)
+        %\psgrid
+        \psline(0,0)(0,34)(32,34)(32,4)(4,4)(4,30)(28,30)(28,8)(8,8)(8,26)(24,26)
+        (24,12)(12,12)
+    \end{pspicture}&
+    \psset{unit=1mm,linecolor=red}
+    \begin{pspicture}(-20,-12)(20,20)
+        %\psgrid
+        \psline(20;210)(18;90)(16.2;-30)(14.58;210)(13.122;90)(11.8098;-30)(10.629;210)(9.56;90)(8.61;-30)(7.75;210)(6.974;90)(6.276;-30)(5.649;210)
+    \end{pspicture}
+\end{tabularx}
+
+\newpage
+
+\subsection*{Exercice 7 \hfill \textit{14 points}}
+
+Le graphique ci-dessous donne les hauteurs d'eau au port de La Rochelle le mercredi 15 août 2018.
+
+\begin{center}
+    \psset{xunit=0.45cm,yunit=1cm}
+    %Origine : http://maree.info/127?d=20180815
+    \begin{pspicture}(-2,-0.75)(26,7.5)
+    \multido{\n=0+2}{14}{\psline[linewidth=0.2pt](\n,0)(\n,7)}
+    \multido{\n=0+1}{8}{\psline[linewidth=0.2pt](0,\n)(26,\n)}
+    \psaxes[linewidth=1.25pt,Dx=2](0,0)(0,0)(25.9,7)
+    %\pscurve[linecolor=blue,linewidth=1.25pt](0,3)(0.5,2.25)(1,1.53)(1.5,0.95)(2,0.65)(3,1.05)(3.75,2)(4,2.45)(5,3.93)(5.5,4.52)(6,4.99)(7,5.63)(8,5.88)(8.5,5.88)(9,5.81)(10,5.41)(11,4.62)(12,3.47)(13,2.12)(14,1.07)(14.17,0.98)(14.5,0.9)(15,1.07)(16,2.22)(17,3.74)(18,4.92)(19,5.61)(20,5.91)(21,5.91)(22,5.66)(23,5.09)(23.917,4.22)(24,4.1)
+    \pscurve[linecolor=blue,linewidth=1.25pt](3.75,2)(4,2.4)(5,3.93)(5.5,4.52)(6,4.99)(7,5.63)(8,5.88)(8.5,5.88)(9,5.81)(10,5.41)(11,4.62)(12,3.47)(13,2.12)(14,1.07)(14.17,0.98)(14.5,0.9)(15,1.07)(16,2.22)(17,3.74)(18,4.92)(19,5.61)(20,5.91)(21,5.91)(22,5.66)(23,5.09)(23.917,4.22)(24,4.1)
+    \psbezier[linecolor=blue,linewidth=1.25pt](0,3)(2,-0.2)(2,-0.2)(3.75,2)
+    \uput[r](0,7.2){Hauteur (m)}\uput[u](24,0){Heures}
+    \end{pspicture}
+\end{center}
+
+\begin{enumerate}
+\item Quel a été le plus haut niveau d'eau dans le port ?
+\item À quelles heures approximativement la hauteur d'eau a-t-elle été de 5 m ?
+\item En utilisant les données du tableau ci-contre, calculer:
+
+\parbox{0.43\linewidth}{
+\textbf{a.} le temps qui s'est écoulé entre la marée haute et la marée basse.
+
+\textbf{b.} la différence de hauteur d'eau entre la marée
+haute et la marée basse.} \hfill
+\parbox{0.55\linewidth}{\begin{tabularx}{\linewidth}{|c|*{2}{>{\centering \arraybackslash}X|}}\cline{2-3}
+\multicolumn{1}{c|}{~}	&Heure	&\small Hauteur (en m)\\ \hline
+Marée haute 			&8 h 16 &5,89\\ \hline
+Marée basse 			&14 h 30&0,90\\ \hline
+\end{tabularx}
+}
+
+\item  À l'aide des deux documents suivants et du tableau ci-dessus, déterminer si la marée du 15 août 2018 entre 8 h 16 et 14 h 30 à la Rochelle est qualifiée de \og vives-eaux \fg ou de \og mortes-eaux \fg .
+\end{enumerate}
+
+\parbox{0.48\linewidth}{
+\begin{tabularx}{\linewidth}{|X|}\hline
+\textbf{Document 1} :\\
+Le coefficient de marée peut être calculé de la façon suivante à La Rochelle :\\
+$C = \dfrac{H_{\text{h}} - H_{\text{b}}}{5,34} \times 100$\\
+avec :\\
+\hspace{1cm}$\bullet~~$ $H_{\text{h}}$ : hauteur d'eau à marée haute.\\
+\hspace{1cm}$\bullet~~$ $H_{\text{b}}$  : hauteur d'eau à marée basse.\\ \hline
+\end{tabularx}
+}\hfill
+\parbox{0.48\linewidth}{
+\begin{tabularx}{\linewidth}{|X|}\hline
+\textbf{Document 2 :}\\
+Le coefficient de marée prend une valeur comprise entre $20$ et $120$.\\
+\hspace{1cm}$\bullet~~$ Une marée de coefficient supérieur à 70 est qualifiée de marée de
+vives-eaux.\\
+\hspace{1cm}$\bullet~~$ Une marée de coefficient inférieur à
+70 est qualifiée de marée de mortes-eaux.\\ \hline
+\end{tabularx}
+}
+
+\newpage
+
+\textbf{Numéro de candidat : }
+\HRule \\[0.5cm]
+\textbf{Mettre l'annexe dans la copie. Mettre uniquement son numéro de candidat.}
+
+\begin{center}
+
+    \textbf{\large ANNEXES à rendre avec votre copie}
+    
+    \medskip
+    
+    \textbf{Annexe 1}
+    
+    \medskip
+    
+    \begin{tabularx}{\linewidth}{|c|c|*{5}{>{\centering \arraybackslash}X|}}\hline
+            &A						&B	&C	&D	&E	&F\\ \hline
+        1	&Nombre de demi-journées&1	&2	&3	&4	&5\\ \hline
+        2	& Tarif A				&8 	&16	&	&	&\\ \hline
+        3	& Tarif B				&35	&40	&	&	&\\ \hline
+    \end{tabularx}
+    
+    \medskip
+    
+    \textbf{Annexe 2}
+    
+    \medskip
+    
+    \psset{xunit=0.8cm,yunit=0.08cm}
+    \begin{pspicture}(-1,-10)(15,120)
+        \multido{\n=0+1}{16}{\psline[linecolor=orange,linewidth=0.15pt](\n,0)(\n,120)}
+        \multido{\n=0+10}{13}{\psline[linecolor=orange,linewidth=0.15pt](0,\n)(15,\n)}
+        \psaxes[linewidth=1.25pt,Dy=20]{->}(0,0)(0,0)(15,120)
+        \psplot[plotpoints=2000,linewidth=1.25pt,linecolor=blue]{0}{15}{5 x mul 30 add}
+        \uput[dr](14,100){\blue $\mathcal{C}_g$}
+        \uput[r](0,118){Tarif en \euro}
+        \uput[u](13,0){Nombre de demi-journées}
+    \end{pspicture}
+
+    \medskip
+    
+    \textbf{Annexe 3}
+    
+    \medskip
+    
+    \begin{scratch}
+        \blockinit{quand \greenflag est cliqué}
+        \blockmove{s’orienter à \ovalnum{\selectmenu{90}}}
+        \blockpen{stylo en position d’écriture}
+        \blockinfloop{répéter \ovalnum{\ldots} fois}
+        {
+        \blockmove{avancer de \ovalnum{\ldots}}
+        \blockmove{tourner \turnleft{} de \ovalnum{\ldots} degrés}
+        }
+        \end{scratch}
+
+\end{center}
+
+\end{document}

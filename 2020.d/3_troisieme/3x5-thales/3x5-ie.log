@@ -1,0 +1,3015 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.9.6)  15 DEC 2020 23:09
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex
+(/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex
+LaTeX2e <2020-02-02> patch level 2
+L3 programming layer <2020-02-14> (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+)
+\c@part=\count167
+\c@section=\count168
+\c@subsection=\count169
+\c@subsubsection=\count170
+\c@paragraph=\count171
+\c@subparagraph=\count172
+\c@figure=\count173
+\c@table=\count174
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen134
+) (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
+) (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
+) (/usr/share/texmf/tex/latex/lm/lmodern.sty
+Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 23.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 24.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 25.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 27.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
+) (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2020/02/14 3.40 The Babel package
+ (/usr/share/texlive/texmf-dist/tex/generic/babel/switch.def
+File: switch.def 2020/02/14 3.40 Babel switching mechanism
+) (/usr/share/texlive/texmf-dist/tex/generic/babel-french/frenchb.ldf
+Language: frenchb 2020/01/30 v3.5g French support from the babel system
+
+
+Package babel-french Warning: Option `frenchb' for Babel is *deprecated*,
+(babel-french)                it might be removed sooner or later. Please
+(babel-french)                use `french' instead; reported on input line 35.
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel-french/french.ldf
+Language: french 2020/01/30 v3.5g French support from the babel system
+ (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2020/02/14 3.40 Babel common definitions
+\babel@savecnt=\count175
+\U@D=\dimen135
+ (/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count176
+)
+Package babel Info: \l@acadian = using hyphenrules for french
+(babel)             (\language83) on input line 91.
+Package babel Info: \l@canadien = using hyphenrules for french
+(babel)             (\language83) on input line 92.
+\FB@nonchar=\count177
+Package babel Info: Making : an active character on input line 419.
+Package babel Info: Making ; an active character on input line 420.
+Package babel Info: Making ! an active character on input line 421.
+Package babel Info: Making ? an active character on input line 422.
+\FBguill@level=\count178
+\FBold@everypar=\toks16
+\FB@Mht=\dimen136
+\mc@charclass=\count179
+\mc@charfam=\count180
+\mc@charslot=\count181
+\std@mcc=\count182
+\dec@mcc=\count183
+\c@FBcaption@count=\count184
+\listindentFB=\dimen137
+\descindentFB=\dimen138
+\labelindentFB=\dimen139
+\labelwidthFB=\dimen140
+\leftmarginFB=\dimen141
+\parindentFFN=\dimen142
+\FBfnindent=\dimen143
+))) (/usr/share/texlive/texmf-dist/tex/latex/carlisle/scalefnt.sty) (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+) (/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+Package: adjustbox 2019/01/04 v1.2 Adjusting TeX boxes (trim, clip, ...)
+ (/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+ (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks18
+\XKV@tempa@toks=\toks19
+)
+\XKV@depth=\count185
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)) (/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back-ends (calc, etex, pgfmath)
+) (/usr/share/texlive/texmf-dist/tex/latex/adjustbox/trimclip.sty
+Package: trimclip 2018/04/08 v1.1 Trim and clip general TeX material
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen144
+\Gin@req@width=\dimen145
+) (/usr/share/texlive/texmf-dist/tex/latex/collectbox/collectbox.sty
+Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
+\collectedbox=\box45
+)
+\tc@llx=\dimen146
+\tc@lly=\dimen147
+\tc@urx=\dimen148
+\tc@ury=\dimen149
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+ (/usr/share/texlive/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
+File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen150
+\adjbox@Height=\dimen151
+\adjbox@Depth=\dimen152
+\adjbox@Totalheight=\dimen153
+\adjbox@pwidth=\dimen154
+\adjbox@pheight=\dimen155
+\adjbox@pdepth=\dimen156
+\adjbox@ptotalheight=\dimen157
+ (/usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
+\c@checkoddpage=\count186
+) (/usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box46
+\sift@deathcycles=\count187
+\@vwid@loff=\dimen158
+\@vwid@roff=\dimen159
+)) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2020/01/20 v2.17e AMS math features
+\@mathmargin=\skip49
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+ (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks20
+\ex@=\dimen160
+)) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen161
+) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count188
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count189
+\leftroot@=\count190
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count191
+\DOTSCASE@=\count192
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box47
+\strutbox@=\box48
+\big@size=\dimen162
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count193
+\c@MaxMatrixCols=\count194
+\dotsspace@=\muskip16
+\c@parentequation=\count195
+\dspbrk@lvl=\count196
+\tag@help=\toks21
+\row@=\count197
+\column@=\count198
+\maxfields@=\count199
+\andhelp@=\toks22
+\eqnshift@=\dimen163
+\alignsep@=\dimen164
+\tagshift@=\dimen165
+\tagwidth@=\dimen166
+\totwidth@=\dimen167
+\lineht@=\dimen168
+\@envbody=\toks23
+\multlinegap=\skip50
+\multlinetaggap=\skip51
+\mathdisplay@stack=\toks24
+LaTeX Info: Redefining \[ on input line 2859.
+LaTeX Info: Redefining \] on input line 2860.
+) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Package option `usenames' ignored on input line 216.
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+ (/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
+ (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
+\col@sep=\dimen169
+\ar@mcellbox=\box49
+\extrarowheight=\dimen170
+\NC@list=\toks25
+\extratabsurround=\skip52
+\backup@length=\skip53
+\ar@cellbox=\box50
+)
+\everycr=\toks26
+\minrowclearance=\skip54
+)
+\rownum=\count266
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+ (/usr/share/texlive/texmf-dist/tex/latex/xcolor/svgnam.def
+File: svgnam.def 2016/05/11 v2.12 Predefined colors according to SVG 1.1 (UK)
+)) (/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
+\c@tracingmulticols=\count267
+\mult@box=\box51
+\multicol@leftmargin=\dimen171
+\c@unbalance=\count268
+\c@collectmore=\count269
+\doublecol@number=\count270
+\multicoltolerance=\count271
+\multicolpretolerance=\count272
+\full@width=\dimen172
+\page@free=\dimen173
+\premulticols=\dimen174
+\postmulticols=\dimen175
+\multicolsep=\skip55
+\multicolbaselineskip=\skip56
+\partial@page=\box52
+\last@line=\box53
+\maxbalancingoverflow=\dimen176
+\mult@rightbox=\box54
+\mult@grightbox=\box55
+\mult@gfirstbox=\box56
+\mult@firstbox=\box57
+\@tempa=\box58
+\@tempa=\box59
+\@tempa=\box60
+\@tempa=\box61
+\@tempa=\box62
+\@tempa=\box63
+\@tempa=\box64
+\@tempa=\box65
+\@tempa=\box66
+\@tempa=\box67
+\@tempa=\box68
+\@tempa=\box69
+\@tempa=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\c@minrows=\count273
+\c@columnbadness=\count274
+\c@finalcolumnbadness=\count275
+\last@try=\dimen177
+\multicolovershoot=\dimen178
+\multicolundershoot=\dimen179
+\mult@nat@firstbox=\box95
+\colbreak@box=\box96
+\mc@col@check@num=\count276
+) (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footers
+\f@nch@headwidth=\skip57
+\f@nch@O@elh=\skip58
+\f@nch@O@erh=\skip59
+\f@nch@O@olh=\skip60
+\f@nch@O@orh=\skip61
+\f@nch@O@elf=\skip62
+\f@nch@O@erf=\skip63
+\f@nch@O@olf=\skip64
+\f@nch@O@orf=\skip65
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count277
+\calc@Bcount=\count278
+\calc@Adimen=\dimen180
+\calc@Bdimen=\dimen181
+\calc@Askip=\skip66
+\calc@Bskip=\skip67
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count279
+\calc@Cskip=\skip68
+) (/usr/share/texlive/texmf-dist/tex/latex/marvosym/marvosym.sty
+Package: marvosym 2011/07/20 v2.2 Martin Vogel's Symbols font definitions
+) (/usr/share/texlive/texmf-dist/tex/latex/cancel/cancel.sty
+Package: cancel 2013/04/12 v2.2 Cancel math terms
+) (/usr/share/texlive/texmf-dist/tex/latex/units/units.sty
+Package: units 1998/08/04 v0.9b Typesetting units
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+) (/usr/share/texlive/texmf-dist/tex/latex/units/nicefrac.sty
+Package: nicefrac 1998/08/04 v0.9b Nice fractions
+\L@UnitsRaiseDisplaystyle=\skip69
+\L@UnitsRaiseTextstyle=\skip70
+\L@UnitsRaiseScriptstyle=\skip71
+)) (/usr/share/texlive/texmf-dist/tex/latex/numprint/numprint.sty
+Package: numprint 2012/08/20 v1.39 Print numbers (HH)
+\c@nprt@mantissa@digitsbefore=\count280
+\c@nprt@mantissa@digitsafter=\count281
+\c@nprt@exponent@digitsbefore=\count282
+\c@nprt@exponent@digitsafter=\count283
+\nprt@digitwidth=\skip72
+\nprt@sepwidth=\skip73
+\nprt@decimalwidth=\skip74
+\nprt@blockwidth=\skip75
+\nprt@digittoks=\toks27
+\nprt@pretoks=\toks28
+\nprt@posttoks=\toks29
+\nprt@thisdigit=\count284
+\nprt@curpos=\count285
+\nprt@rndpos=\count286
+\c@nprt@digitsfirstblock=\count287
+\c@nprt@blockcnt=\count288
+\c@nprt@cntprint=\count289
+ No configuration file `numprint.cfg' found.) (/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
+\TX@col@width=\dimen182
+\TX@old@table=\dimen183
+\TX@old@col=\dimen184
+\TX@target=\dimen185
+\TX@delta=\dimen186
+\TX@cols=\count290
+\TX@ftn=\toks30
+) (/usr/share/texlive/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen187
+\WF@size=\dimen188
+\c@WF@wrappedlines=\count291
+\WF@box=\box97
+\WF@everypar=\toks31
+Package: wrapfig 2003/01/31  v 3.6
+) (/usr/share/texlive/texmf-dist/tex/latex/pst-eucl/pst-eucl.sty (/usr/share/texlive/texmf-dist/tex/latex/pstricks/pstricks.sty
+Package: pstricks 2018/12/21 v0.69 LaTeX wrapper for `PSTricks' (RN,HV)
+ (/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2019/11/07 v1.0c TeX engine tests
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/shellesc.sty
+Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
+Package shellesc Info: Restricted shell escape enabled on input line 77.
+) (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/pst-xkey.tex
+File: pst-xkey.tex 2005/11/25 v1.6 PSTricks specialization of xkeyval (HA)
+) (/usr/share/texlive/texmf-dist/tex/generic/pstricks/pstricks.tex (/usr/share/texlive/texmf-dist/tex/generic/pstricks/pst-fp.tex `pst-fp' v0.05, 2010/01/17 (hv)
+\pstFP@xs=\count292
+\pstFP@xia=\count293
+\pstFP@xib=\count294
+\pstFP@xfa=\count295
+\pstFP@xfb=\count296
+\pstFP@rega=\count297
+\pstFP@regb=\count298
+\pstFP@regs=\count299
+\pstFP@times=\count300
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks32
+\pgfutil@tempdima=\dimen189
+\pgfutil@tempdimb=\dimen190
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks33
+\pgfkeys@temptoks=\toks34
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
+\pgfkeys@tmptoks=\toks35
+)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Loading pgffor.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex
+\pgf@x=\dimen191
+\pgf@xa=\dimen192
+\pgf@xb=\dimen193
+\pgf@xc=\dimen194
+\pgf@y=\dimen195
+\pgf@ya=\dimen196
+\pgf@yb=\dimen197
+\pgf@yc=\dimen198
+\c@pgf@counta=\count301
+\c@pgf@countb=\count302
+\c@pgf@countc=\count303
+\c@pgf@countd=\count304
+\pgfutil@tempcnta=\count305
+\pgfutil@tempcntb=\count306
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen199
+\pgfmath@count=\count307
+\pgfmath@box=\box98
+\pgfmath@toks=\toks36
+\pgfmath@stack@operand=\toks37
+\pgfmath@stack@operation=\toks38
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex))) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count308
+))
+\pgffor@iter=\dimen256
+\pgffor@skip=\dimen257
+\pgffor@stack=\toks39
+\pgffor@toks=\toks40
+)
+\psLoopIndex=\count309
+
+`PSTricks' v2.97  <2019/05/11> (tvz,hv)
+\pst@dima=\dimen258
+\pst@dimb=\dimen259
+\pst@dimc=\dimen260
+\pst@dimd=\dimen261
+\pst@dimg=\dimen262
+\pst@dimh=\dimen263
+\pst@dimm=\dimen264
+\pst@dimn=\dimen265
+\pst@dimo=\dimen266
+\pst@dimp=\dimen267
+\pst@hbox=\box99
+\pst@ibox=\box100
+\pst@boxg=\box101
+\pst@cnta=\count310
+\pst@cntb=\count311
+\pst@cntc=\count312
+\pst@cntd=\count313
+\pst@cntg=\count314
+\pst@cnth=\count315
+\pst@cntm=\count316
+\pst@cntn=\count317
+\pst@cnto=\count318
+\pst@cntp=\count319
+\@zero=\count320
+\pst@toks=\toks41
+(/usr/share/texlive/texmf-dist/tex/generic/pstricks/pstricks.con)
+\psunit=\dimen268
+\psxunit=\dimen269
+\psyunit=\dimen270
+\pst@C@@rType=\count321
+\pslinewidth=\dimen271
+\psk@startLW=\dimen272
+\psk@endLW=\dimen273
+\pst@customdefs=\toks42
+\pslinearc=\dimen274
+\pst@symbolStep=\dimen275
+\pst@symbolWidth=\dimen276
+\pst@symbolLinewidth=\dimen277
+\everypsbox=\toks43
+\psframesep=\dimen278
+\pslabelsep=\dimen279
+\sh@wgridXunit=\dimen280
+\sh@wgridYunit=\dimen281
+\pst@shift=\dimen282
+)
+File: pstricks.tex 2019/05/11 v2.97 `PSTricks' (tvz,hv)
+ (/usr/share/texlive/texmf-dist/tex/generic/pstricks/pst-fp.tex)
+File: pst-fp.tex 2019/05/11 v2.97 `PST-fp' (hv)
+) (/usr/share/texlive/texmf-dist/tex/latex/pst-node/pst-node.sty
+Package: pst-node 2012/09/18 v1.01 LaTeX wrapper for `pst-node' (HV)
+Package: pst-node 2010/04/22 package wrapper for pst-node.tex
+ (/usr/share/texlive/texmf-dist/tex/generic/pst-node/pst-node.tex  v1.42, 2019/03/03
+\psrow=\count322
+\pscol=\count323
+\psmatrixcnt=\count324
+\psrowsep=\skip76
+\pscolsep=\skip77
+\pst@args=\count325
+\num@pts=\count326
+\pst@argcnt=\count327
+)
+File: pst-node.tex 2019/03/03 1.42 `pst-node' (tvz,hv)
+) (/usr/share/texlive/texmf-dist/tex/latex/pst-tools/pst-tools.sty
+Package: pst-tools 2012/01/01 package wrapper for pst-tools.tex (hv)
+ (/usr/share/texlive/texmf-dist/tex/generic/pst-tools/pst-tools.tex `PST-tools' v0.09b, 2017/12/03 (hv))
+File: pst-tools.tex 2017/12/03 v0.09b `PST-tools' (hv)
+) (/usr/share/texlive/texmf-dist/tex/latex/pst-calculate/pst-calculate.sty
+Package: pst-calculate 2019/01/24 v. 0.02(Herbert Voss) Support for caculations with floating point numbers.
+ (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2020-02-14 L3 programming layer (loader) 
+ (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count328
+\l__pdf_internal_box=\box102
+))
+Package: xparse 2020-02-14 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count329
+\g__xparse_grabber_int=\count330
+\l__xparse_m_args_int=\count331
+\l__xparse_v_nesting_int=\count332
+) (/usr/share/texlive/texmf-dist/tex/latex/siunitx/siunitx.sty
+Package: siunitx 2020/01/15 v2.7u A comprehensive (SI) units package
+ (/usr/share/texlive/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2020-02-14 LaTeX2e option processing using LaTeX3 keys
+)
+\l__siunitx_tmp_box=\box103
+\l__siunitx_tmp_dim=\dimen283
+\l__siunitx_tmp_int=\count333
+\l__siunitx_number_mantissa_length_int=\count334
+\l__siunitx_number_uncert_length_int=\count335
+\l__siunitx_round_int=\count336
+\l__siunitx_process_decimal_int=\count337
+\l__siunitx_process_uncertainty_int=\count338
+\l__siunitx_process_fixed_int=\count339
+\l__siunitx_process_integer_min_int=\count340
+\l__siunitx_process_precision_int=\count341
+\l__siunitx_group_min_int=\count342
+\l__siunitx_angle_marker_box=\box104
+\l__siunitx_angle_unit_box=\box105
+\l__siunitx_angle_marker_dim=\dimen284
+\l__siunitx_angle_unit_dim=\dimen285
+\l__siunitx_unit_int=\count343
+\l__siunitx_unit_denominator_int=\count344
+\l__siunitx_unit_numerator_int=\count345
+\l__siunitx_unit_prefix_int=\count346
+\l__siunitx_unit_prefix_base_int=\count347
+\l__siunitx_unit_prefix_gram_int=\count348
+\l__siunitx_number_product_int=\count349
+\c__siunitx_one_fill_skip=\skip78
+\l__siunitx_table_unit_align_skip=\skip79
+\l__siunitx_table_exponent_dim=\dimen286
+\l__siunitx_table_integer_dim=\dimen287
+\l__siunitx_table_mantissa_dim=\dimen288
+\l__siunitx_table_marker_dim=\dimen289
+\l__siunitx_table_result_dim=\dimen290
+\l__siunitx_table_uncert_dim=\dimen291
+\l__siunitx_table_fill_pre_dim=\dimen292
+\l__siunitx_table_fill_post_dim=\dimen293
+\l__siunitx_table_fill_mid_dim=\dimen294
+\l__siunitx_table_pre_box=\box106
+\l__siunitx_table_post_box=\box107
+\l__siunitx_table_mantissa_box=\box108
+\l__siunitx_table_result_box=\box109
+\l__siunitx_table_number_align_skip=\skip80
+\l__siunitx_table_text_align_skip=\skip81
+ (/usr/share/texlive/texmf-dist/tex/latex/translator/translator.sty
+Package: translator 2019-05-31 v1.12a Easy translation of strings in LaTeX
+)))
+Package: pst-eucl 2014/05/17 package wrapper for PSTricks pst-eucl.tex
+ (/usr/share/texlive/texmf-dist/tex/generic/pst-eucl/pst-eucl.tex (/usr/share/texlive/texmf-dist/tex/generic/pst-arrow/pst-arrow.tex `pst-arrow' v0.01, 2016/09/01 (dr,hv)
+\pshooklength=\dimen295
+\pshookwidth=\dimen296
+) (/usr/share/texlive/texmf-dist/tex/generic/pst-plot/pst-plot.tex (/usr/share/texlive/texmf-dist/tex/generic/pst-tools/pst-tools.tex) (/usr/share/texlive/texmf-dist/tex/generic/pstricks-add/pstricks-add.tex (/usr/share/texlive/texmf-dist/tex/generic/pst-3d/pst-3d.tex `PST-3d' v1.11, 2010/02/14 (tvz)) (/usr/share/texlive/texmf-dist/tex/generic/multido/multido.tex  v1.42, 2010/05/14 <tvz>
+\multido@count=\count350
+\multidocount=\count351
+\multido@stuff=\toks44
+) (/usr/share/texlive/texmf-dist/tex/generic/pst-math/pst-math.tex `pst-math' v0.64 , (CJ,hv)) `pstricks-add' v3.89a, 2020/02/12 (dr,hv)
+\psparallelogramsep=\dimen297
+\pst@cntC=\count352
+\pst@stepcount=\count353
+\chart@ColorIndex=\dimen298
+\chart@ColorStep=\dimen299
+\pst@chartHeight=\dimen300
+\pst@chartStackDepth=\dimen301
+\pst@chartStackWidth=\dimen302
+\chart@Toggle=\count354
+\psVectorCtr=\count355
+) (/usr/share/texlive/texmf-dist/tex/generic/multido/multido.tex  v1.42, 2010/05/14 <tvz>)  v1.92, 2019/05/16 (tvz,hv)
+\pstRadUnit=\dimen303
+\pstRadUnitInv=\dimen304
+\pst@linecnt=\count356
+\RCD@file=\read3
+\psxlabelsep=\dimen305
+\psylabelsep=\dimen306
+\psk@subticksize=\dimen307
+\pst@xticksizeA=\dimen308
+\pst@xticksizeB=\dimen309
+\pst@xticksizeC=\dimen310
+\pst@yticksizeA=\dimen311
+\pst@yticksizeB=\dimen312
+\pst@yticksizeC=\dimen313
+\@digitcounter=\count357
+\psk@llx=\dimen314
+\psk@lly=\dimen315
+\psk@urx=\dimen316
+\psk@ury=\dimen317
+\pst@xunit=\dimen318
+\pst@yunit=\dimen319
+) (/usr/share/texlive/texmf-dist/tex/generic/multido/multido.tex  v1.42, 2010/05/14 <tvz>) `PST-Euclide v1.70, 2020/01/29 (dr,hv)
+\psMarkHashLength=\dimen320
+\psMarkHashSep=\dimen321
+)
+File: pst-eucl.tex 2020/01/29 v1.70 `PST-eucl' (dr,hv)
+) (/usr/share/texlive/texmf-dist/tex/latex/pst-plot/pst-plot.sty
+Package: pst-plot 2011/06/05 v1.00 LaTeX wrapper for `pst-plot' (HV)
+ (/usr/share/texlive/texmf-dist/tex/latex/xkeyval/pst-xkey.sty
+Package: pst-xkey 2005/11/25 v1.6 package wrapper for pst-xkey.tex (HA)
+) (/usr/share/texlive/texmf-dist/tex/latex/multido/multido.sty
+Package: multido 2004/05/17 package wrapper for PSTricks `multido.tex', (HV/RN)
+)
+Package: pst-plot 2011/04/13 package wrapper for pst-plot.tex (hv)
+ (/usr/share/texlive/texmf-dist/tex/generic/pst-plot/pst-plot.tex)
+File: pst-plot.tex 2020/01/29 1.70 `pst-plot' (tvz,hv)
+) (/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip82
+\enit@outerparindent=\dimen322
+\enit@toks=\toks45
+\enit@inbox=\box110
+\enit@count@id=\count358
+\enitdp@description=\count359
+) (/usr/share/texlive/texmf-dist/tex/latex/interval/interval.sty
+Package: interval 2019/03/06 v0.4
+ (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))) (/usr/share/texlive/texmf-dist/tex/latex/wasysym/wasysym.sty
+Package: wasysym 2020/01/19 v2.4 Wasy-2 symbol support package
+\symwasy=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `wasy' in version `bold'
+(Font)                  U/wasy/m/n --> U/wasy/b/n on input line 93.
+) (/usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2020/01/17 v1.23 mathematical typesetting tools
+ (/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
+)
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
+\g_MT_multlinerow_int=\count360
+\l_MT_multwidth_dim=\dimen323
+\origjot=\skip83
+\l_MT_shortvdotswithinadjustabove_dim=\dimen324
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen325
+\l_MT_above_intertext_sep=\dimen326
+\l_MT_below_intertext_sep=\dimen327
+\l_MT_above_shortintertext_sep=\dimen328
+\l_MT_below_shortintertext_sep=\dimen329
+) (/usr/share/texmf/tex/latex/asymptote/asymptote.sty
+Package: asymptote 2020/01/12 v1.35 Asymptote style file for LaTeX
+ (/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.pre)
+\ASYbox=\box111
+\ASYdimen=\dimen330
+\c@asy=\count361
+\AsyStream=\write3
+\AsyPreStream=\write4
+ (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifpdf.sty
+Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
+) (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifxetex.sty
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+) (/usr/share/texlive/texmf-dist/tex/generic/catchfile/catchfile.sty
+Package: catchfile 2019/12/09 v1.8 Catch the contents of a file (HO)
+ (/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+))
+\openout4 = `3x5-ie.pre'.
+
+) (/usr/share/texlive/texmf-dist/tex/latex/tkz-tab/tkz-tab.sty
+Package: tkz-tab 2019/01/19 v1.4e variations (ctan version) 
+ (/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks46
+\pgfutil@tempdima=\dimen331
+\pgfutil@tempdimb=\dimen332
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box112
+ (/usr/share/texlive/texmf-dist/tex/latex/ms/everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2020/01/08 v3.1.5b (3.1.5b)
+))
+Package: pgf 2020/01/08 v3.1.5b (3.1.5b)
+ (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2020/01/08 v3.1.5b (3.1.5b)
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)
+\pgf@x=\dimen333
+\pgf@y=\dimen334
+\pgf@xa=\dimen335
+\pgf@ya=\dimen336
+\pgf@xb=\dimen337
+\pgf@yb=\dimen338
+\pgf@xc=\dimen339
+\pgf@yc=\dimen340
+\pgf@xd=\dimen341
+\pgf@yd=\dimen342
+\w@pgf@writea=\write5
+\r@pgf@reada=\read4
+\c@pgf@counta=\count362
+\c@pgf@countb=\count363
+\c@pgf@countc=\count364
+\c@pgf@countd=\count365
+\t@pgf@toka=\toks47
+\t@pgf@tokb=\toks48
+\t@pgf@tokc=\toks49
+\pgf@sys@id@count=\count366
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2020/01/08 v3.1.5b (3.1.5b)
+)
+Driver file for pgf: pgfsys-pdftex.def
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2020/01/08 v3.1.5b (3.1.5b)
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2020/01/08 v3.1.5b (3.1.5b)
+))) (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfsyssoftpath@smallbuffer@items=\count367
+\pgfsyssoftpath@bigbuffer@items=\count368
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2020/01/08 v3.1.5b (3.1.5b)
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@picminx=\dimen343
+\pgf@picmaxx=\dimen344
+\pgf@picminy=\dimen345
+\pgf@picmaxy=\dimen346
+\pgf@pathminx=\dimen347
+\pgf@pathmaxx=\dimen348
+\pgf@pathminy=\dimen349
+\pgf@pathmaxy=\dimen350
+\pgf@xx=\dimen351
+\pgf@xy=\dimen352
+\pgf@yx=\dimen353
+\pgf@yy=\dimen354
+\pgf@zx=\dimen355
+\pgf@zy=\dimen356
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@path@lastx=\dimen357
+\pgf@path@lasty=\dimen358
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@shorten@end@additional=\dimen359
+\pgf@shorten@start@additional=\dimen360
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfpic=\box113
+\pgf@hbox=\box114
+\pgf@layerbox@main=\box115
+\pgf@picture@serial@count=\count369
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgflinewidth=\dimen361
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@pt@x=\dimen362
+\pgf@pt@y=\dimen363
+\pgf@pt@temp=\dimen364
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfarrowsep=\dimen365
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@max=\dimen366
+\pgf@sys@shading@range@num=\count370
+\pgf@shadingcount=\count371
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfexternal@startupbox=\box116
+)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+))) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfnodeparttextbox=\box117
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+) (/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@nodesepstart=\dimen367
+\pgf@nodesepend=\dimen368
+) (/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2020/01/08 v3.1.5b (3.1.5b)
+)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (/usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2020/01/08 v3.1.5b (3.1.5b)
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen369
+\pgffor@skip=\dimen370
+\pgffor@stack=\toks50
+\pgffor@toks=\toks51
+)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2020/01/08 v3.1.5b (3.1.5b)
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@plot@mark@count=\count372
+\pgfplotmarksize=\dimen371
+)
+\tikz@lastx=\dimen372
+\tikz@lasty=\dimen373
+\tikz@lastxsaved=\dimen374
+\tikz@lastysaved=\dimen375
+\tikz@lastmovetox=\dimen376
+\tikz@lastmovetoy=\dimen377
+\tikzleveldistance=\dimen378
+\tikzsiblingdistance=\dimen379
+\tikz@figbox=\box118
+\tikz@figbox@bg=\box119
+\tikz@tempbox=\box120
+\tikz@tempbox@bg=\box121
+\tikztreelevel=\count373
+\tikznumberofchildren=\count374
+\tikznumberofcurrentchild=\count375
+\tikz@fig@count=\count376
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfmatrixcurrentrow=\count377
+\pgfmatrixcurrentcolumn=\count378
+\pgf@matrix@numberofcolumns=\count379
+)
+\tikz@expandcount=\count380
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+))) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryarrows.code.tex
+File: tikzlibraryarrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.tex
+File: pgflibraryarrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\arrowsize=\dimen380
+)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypatterns.code.tex
+File: tikzlibrarypatterns.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibrarypatterns.code.tex
+File: pgflibrarypatterns.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+))
+\tkz@XF=\dimen381
+\tkz@YF=\dimen382
+\c@tkz@cnt@line=\count381
+\c@tkz@cnt@lg=\count382
+\c@tkz@cnt@cl=\count383
+\c@tkz@cnt@pred=\count384
+\c@tkz@cnt@temp=\count385
+\c@tkz@cnt@arrow=\count386
+\c@tkz@cnt@zone=\count387
+\c@tkz@cnt@lgnext=\count388
+\c@tkz@cnt@clnext=\count389
+\c@tkz@cnt@pair=\count390
+\c@tkz@cnt@impair=\count391
+\c@tkz@cnt@aw=\count392
+) (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count393
+\float@exts=\toks52
+\float@box=\box122
+\@float@everytoks=\toks53
+\@floatcapt=\box123
+) (/usr/share/texlive/texmf-dist/tex/latex/grffile/grffile.sty
+Package: grffile 2019/11/11 v2.1 Extended file name support for graphics (legacy)
+Package grffile Info: This package is an empty stub for compatibility on input line 40.
+) (/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/libraries/tikzlibraryexternal.code.tex (/usr/share/texlive/texmf-dist/tex/latex/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+) (/usr/share/texlive/texmf-dist/tex/latex/atveryend/atveryend.sty
+Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzexternalshared.code.tex))
+\openout5 = `3x5-ie.auxlock'.
+
+ (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+ (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count394
+\Gm@cntv=\count395
+\c@Gm@tempcnt=\count396
+\Gm@bindingoffset=\dimen383
+\Gm@wd@mp=\dimen384
+\Gm@odd@mp=\dimen385
+\Gm@even@mp=\dimen386
+\Gm@layoutwidth=\dimen387
+\Gm@layoutheight=\dimen388
+\Gm@layouthoffset=\dimen389
+\Gm@layoutvoffset=\dimen390
+\Gm@dimlist=\toks54
+)
+\c@exo=\count397
+ (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2020/01/14 v7.00d Hypertext links for LaTeX
+ (/usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+) (/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+) (/usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+) (/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+) (/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
+)
+\@linkdim=\dimen391
+\Hy@linkcounter=\count398
+\Hy@pagecounter=\count399
+ (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2020/01/14 v7.00d Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+) (/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count400
+\pdfmajorversion=\count401
+Package hyperref Info: Option `bookmarks' set `true' on input line 4421.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 4421.
+
+
+/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty:4421: Package hyperref Error: Wrong DVI mode driver option `ps2pdf',
+(hyperref)                because pdfTeX or LuaTeX is running in PDF mode.
+
+See the hyperref package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4421 \ProcessKeyvalOptions{Hyp}
+                                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Package hyperref Info: Option `colorlinks' set `true' on input line 4421.
+Package hyperref Info: Option `plainpages' set `true' on input line 4421.
+Package hyperref Info: Option `unicode' set `true' on input line 4421.
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2020/01/14 v7.00d Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Hyper figures OFF on input line 4547.
+Package hyperref Info: Link nesting OFF on input line 4552.
+Package hyperref Info: Hyper index ON on input line 4555.
+Package hyperref Info: Plain pages ON on input line 4560.
+Package hyperref Info: Backreferencing ON on input line 4565.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4800.
+ (/usr/share/texlive/texmf-dist/tex/latex/hyperref/backref.sty
+Package: backref 2020/01/14 v1.40 Bibliographical back referencing
+ (/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+ (/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+ (/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
+))
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 286.
+))
+\c@Hy@tempcnt=\count402
+ (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5159.
+\XeTeXLinkMargin=\dimen392
+ (/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+)
+\Fld@menulength=\count403
+\Field@Width=\dimen393
+\Fld@charsize=\dimen394
+Package hyperref Info: Hyper figures OFF on input line 6430.
+Package hyperref Info: Link nesting OFF on input line 6435.
+Package hyperref Info: Hyper index ON on input line 6438.
+Package hyperref Info: backreferencing ON on input line 6443.
+Package hyperref Info: Link coloring ON on input line 6448.
+Package hyperref Info: Link coloring with OCG OFF on input line 6455.
+Package hyperref Info: PDF/A mode OFF on input line 6460.
+LaTeX Info: Redefining \ref on input line 6500.
+LaTeX Info: Redefining \pageref on input line 6504.
+ (/usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty
+Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
+)
+\Hy@abspage=\count404
+\c@Item=\count405
+\c@Hfootnote=\count406
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+ (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2020/01/14 v7.00d Hyperref driver for pdfTeX
+\Fld@listcount=\count407
+\c@bookmark@seq@number=\count408
+\Hy@SectionHShift=\skip84
+)
+\ltxt=\skip85
+\mybox=\box124
+\wdofmybox=\skip86
+ (/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.aux)
+\openout1 = `3x5-ie.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 112.
+ (/usr/share/texmf/tex/latex/lm/t1lmr.fd
+File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Info: Redefining \degres on input line 112.
+LaTeX Info: Redefining \dots on input line 112.
+Package french.ldf Info: Setting StandardItemizeEnv=true for
+(french.ldf)             compatibility with enumitem package,
+(french.ldf)             reported on input line 112.
+Package french.ldf Info: Setting StandardEnumerateEnv=true for
+(french.ldf)             compatibility with enumitem package,
+(french.ldf)             reported on input line 112.
+LaTeX Info: Redefining \up on input line 112.
+ (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count409
+\scratchdimen=\dimen395
+\scratchbox=\box125
+\nofMPsegments=\count410
+\nofMParguments=\count411
+\everyMPshowfont=\toks55
+\MPscratchCnt=\count412
+\MPscratchDim=\dimen396
+\MPnumerator=\count413
+\makeMPintoPDFobject=\count414
+\everyMPtoPDFconversion=\toks56
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+)) (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
+Dictionary: translator-basic-dictionary, Language: English 
+) (/usr/share/texlive/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
+File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
+) ABD: EveryShipout initializing macros
+*geometry* detected driver: dvips
+*geometry* verbose mode - [ preamble ] result:
+* driver: dvips
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(42.67912pt, 512.14963pt, 42.67912pt)
+* v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=512.14963pt
+* \textheight=731.23584pt
+* \oddsidemargin=-29.59087pt
+* \evensidemargin=-29.59087pt
+* \topmargin=-52.36449pt
+* \headheight=18.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=14.22636pt
+* \marginparsep=5.0pt
+* \columnsep=30.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+\AtBeginShipoutBox=\box126
+Package hyperref Info: Link coloring ON on input line 112.
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
+ (/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count415
+)
+LaTeX Info: Redefining \ref on input line 112.
+LaTeX Info: Redefining \pageref on input line 112.
+LaTeX Info: Redefining \nameref on input line 112.
+\@outlinefile=\write6
+\openout6 = `3x5-ie.out'.
+
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 112.
+ (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 112.
+ (/usr/share/texmf/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 112.
+ (/usr/share/texmf/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 112.
+ (/usr/share/texmf/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 112.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 112.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 112.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 112.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 112.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 112.
+ (/usr/share/texlive/texmf-dist/tex/latex/wasysym/uwasy.fd
+File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
+)
+LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 112.
+ (/usr/share/texmf/tex/latex/lm/ot1lmss.fd
+File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 112.
+ (/usr/share/texmf/tex/latex/lm/ot1lmtt.fd
+File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+\c@Definition=\count416
+\c@Theorem=\count417
+\c@Proposition=\count418
+
+
+LaTeX Warning: File `3x5-thales/thales-ie.eps' not found on input line 152.
+
+Package epstopdf Info: Source file: <3x5-thales/thales-ie.eps>
+(epstopdf)             Output file: <3x5-thales/thales-ie-eps-converted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=3x5-thales/thales-ie-eps-converted-to.pdf 3x5-thales/thales-ie.eps>
+(epstopdf)             \includegraphics on input line 152.
+Package epstopdf Info: Output file is already uptodate.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:152: Package pdftex.def Error: File `3x5-thales/thales-ie-eps-converted-to.pdf' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.152 ...=0.9\linewidth]{3x5-thales/thales-ie.eps}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 152.
+(/usr/share/texmf/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:206: Undefined control sequence.
+\c@lor@to@ps ->\PSTricks 
+                         _Not_Configured_For_This_Format
+l.206   }
+         \par
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:206: Undefined control sequence.
+\XC@usec@lor ...string \color@ #1#2\endcsname \@@ 
+                                                  \fi \space 
+l.206   }
+         \par
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:206: Undefined control sequence.
+\c@lor@to@ps ->\PSTricks 
+                         _Not_Configured_For_This_Format
+l.206   }
+         \par
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:206: Undefined control sequence.
+\XC@usec@lor ...string \color@ #1#2\endcsname \@@ 
+                                                  \fi \space 
+l.206   }
+         \par
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:206: Undefined control sequence.
+\c@lor@to@ps ->\PSTricks 
+                         _Not_Configured_For_This_Format
+l.206   }
+         \par
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:206: Undefined control sequence.
+\XC@usec@lor ...string \color@ #1#2\endcsname \@@ 
+                                                  \fi \space 
+l.206   }
+         \par
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:206: Undefined control sequence.
+\c@lor@to@ps ->\PSTricks 
+                         _Not_Configured_For_This_Format
+l.206   }
+         \par
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:206: Undefined control sequence.
+\XC@usec@lor ...string \color@ #1#2\endcsname \@@ 
+                                                  \fi \space 
+l.206   }
+         \par
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:206: Undefined control sequence.
+\c@lor@to@ps ->\PSTricks 
+                         _Not_Configured_For_This_Format
+l.206   }
+         \par
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:206: Undefined control sequence.
+\XC@usec@lor ...string \color@ #1#2\endcsname \@@ 
+                                                  \fi \space 
+l.206   }
+         \par
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:206: Undefined control sequence.
+\c@lor@to@ps ->\PSTricks 
+                         _Not_Configured_For_This_Format
+l.206   }
+         \par
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:206: Undefined control sequence.
+\XC@usec@lor ...string \color@ #1#2\endcsname \@@ 
+                                                  \fi \space 
+l.206   }
+         \par
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:206: Undefined control sequence.
+\c@lor@to@ps ->\PSTricks 
+                         _Not_Configured_For_This_Format
+l.206   }
+         \par
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:206: Undefined control sequence.
+\XC@usec@lor ...string \color@ #1#2\endcsname \@@ 
+                                                  \fi \space 
+l.206   }
+         \par
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:206: Undefined control sequence.
+\c@lor@to@ps ->\PSTricks 
+                         _Not_Configured_For_This_Format
+l.206   }
+         \par
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:206: Undefined control sequence.
+\XC@usec@lor ...string \color@ #1#2\endcsname \@@ 
+                                                  \fi \space 
+l.206   }
+         \par
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:218: Undefined control sequence.
+\c@lor@to@ps ->\PSTricks 
+                         _Not_Configured_For_This_Format
+l.218   }
+         \par
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:218: Undefined control sequence.
+\XC@usec@lor ...string \color@ #1#2\endcsname \@@ 
+                                                  \fi \space 
+l.218   }
+         \par
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:218: Undefined control sequence.
+\c@lor@to@ps ->\PSTricks 
+                         _Not_Configured_For_This_Format
+l.218   }
+         \par
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:218: Undefined control sequence.
+\XC@usec@lor ...string \color@ #1#2\endcsname \@@ 
+                                                  \fi \space 
+l.218   }
+         \par
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:218: Undefined control sequence.
+\c@lor@to@ps ->\PSTricks 
+                         _Not_Configured_For_This_Format
+l.218   }
+         \par
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:218: Undefined control sequence.
+\XC@usec@lor ...string \color@ #1#2\endcsname \@@ 
+                                                  \fi \space 
+l.218   }
+         \par
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:218: Undefined control sequence.
+\c@lor@to@ps ->\PSTricks 
+                         _Not_Configured_For_This_Format
+l.218   }
+         \par
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:218: Undefined control sequence.
+\XC@usec@lor ...string \color@ #1#2\endcsname \@@ 
+                                                  \fi \space 
+l.218   }
+         \par
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[1
+Non-PDF special ignored!
+<special> header=pstricks.pro
+Non-PDF special ignored!
+<special> header=pst-algparser.pro
+Non-PDF special ignored!
+<special> header=pst-tools.pro
+Non-PDF special ignored!
+<special> header=pst-dots.pro
+Non-PDF special ignored!
+<special> header=pst-node.pro
+Non-PDF special ignored!
+<special> header=pst-3d.pro
+Non-PDF special ignored!
+<special> header=pst-math.pro
+Non-PDF special ignored!
+<special> header=pstricks-add.pro
+Non-PDF special ignored!
+<special> header=pst-eucl.pro
+Non-PDF special ignored!
+<special> papersize=597.50787pt,845.04684pt
+
+Non-PDF special ignored!
+<special> ps: /pssetRGBcolor /setrgbcolor load def /pssetCMYKcolor /setcmyk...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot 0 def grestore  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@refangle 0.  def grestore  e...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot 0 def grestore  end
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:218: Undefined control sequence.
+\c@lor@to@ps ->\PSTricks 
+                         _Not_Configured_For_This_Format
+l.218   }
+         \par
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:218: Undefined control sequence.
+\XC@usec@lor ...string \color@ #1#2\endcsname \@@ 
+                                                  \fi \space 
+l.218   }
+         \par
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:218: Undefined control sequence.
+\c@lor@to@ps ->\PSTricks 
+                         _Not_Configured_For_This_Format
+l.218   }
+         \par
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:218: Undefined control sequence.
+\XC@usec@lor ...string \color@ #1#2\endcsname \@@ 
+                                                  \fi \space 
+l.218   }
+         \par
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:218: Undefined control sequence.
+\c@lor@to@ps ->\PSTricks 
+                         _Not_Configured_For_This_Format
+l.218   }
+         \par
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:218: Undefined control sequence.
+\XC@usec@lor ...string \color@ #1#2\endcsname \@@ 
+                                                  \fi \space 
+l.218   }
+         \par
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:218: Undefined control sequence.
+\c@lor@to@ps ->\PSTricks 
+                         _Not_Configured_For_This_Format
+l.218   }
+         \par
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:218: Undefined control sequence.
+\XC@usec@lor ...string \color@ #1#2\endcsname \@@ 
+                                                  \fi \space 
+l.218   }
+         \par
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:226: Undefined control sequence.
+\c@lor@to@ps ->\PSTricks 
+                         _Not_Configured_For_This_Format
+l.226 ...ntNameC=H](0,0){a}(12.8,0){b}(12.0;27){c}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:226: Undefined control sequence.
+\XC@usec@lor ...string \color@ #1#2\endcsname \@@ 
+                                                  \fi \space 
+l.226 ...ntNameC=H](0,0){a}(12.8,0){b}(12.0;27){c}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:226: Undefined control sequence.
+\c@lor@to@ps ->\PSTricks 
+                         _Not_Configured_For_This_Format
+l.226 ...ntNameC=H](0,0){a}(12.8,0){b}(12.0;27){c}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:226: Undefined control sequence.
+\XC@usec@lor ...string \color@ #1#2\endcsname \@@ 
+                                                  \fi \space 
+l.226 ...ntNameC=H](0,0){a}(12.8,0){b}(12.0;27){c}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:227: Undefined control sequence.
+\c@lor@to@ps ->\PSTricks 
+                         _Not_Configured_For_This_Format
+l.227 ...ointNameC=I](0,0){a}(8.0,0){b}(7.5;27){c}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:227: Undefined control sequence.
+\XC@usec@lor ...string \color@ #1#2\endcsname \@@ 
+                                                  \fi \space 
+l.227 ...ointNameC=I](0,0){a}(8.0,0){b}(7.5;27){c}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:227: Undefined control sequence.
+\c@lor@to@ps ->\PSTricks 
+                         _Not_Configured_For_This_Format
+l.227 ...ointNameC=I](0,0){a}(8.0,0){b}(7.5;27){c}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:227: Undefined control sequence.
+\XC@usec@lor ...string \color@ #1#2\endcsname \@@ 
+                                                  \fi \space 
+l.227 ...ointNameC=I](0,0){a}(8.0,0){b}(7.5;27){c}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:239: Undefined control sequence.
+\c@lor@to@ps ->\PSTricks 
+                         _Not_Configured_For_This_Format
+l.239 ...ointNameC=C](0,0){a}(4.0,0){b}(6.4;75){c}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:239: Undefined control sequence.
+\XC@usec@lor ...string \color@ #1#2\endcsname \@@ 
+                                                  \fi \space 
+l.239 ...ointNameC=C](0,0){a}(4.0,0){b}(6.4;75){c}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:239: Undefined control sequence.
+\c@lor@to@ps ->\PSTricks 
+                         _Not_Configured_For_This_Format
+l.239 ...ointNameC=C](0,0){a}(4.0,0){b}(6.4;75){c}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:239: Undefined control sequence.
+\XC@usec@lor ...string \color@ #1#2\endcsname \@@ 
+                                                  \fi \space 
+l.239 ...ointNameC=C](0,0){a}(4.0,0){b}(6.4;75){c}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:240: Undefined control sequence.
+\c@lor@to@ps ->\PSTricks 
+                         _Not_Configured_For_This_Format
+l.240 ...ointNameC=H](0,0){a}(1.5,0){b}(2.4;75){c}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:240: Undefined control sequence.
+\XC@usec@lor ...string \color@ #1#2\endcsname \@@ 
+                                                  \fi \space 
+l.240 ...ointNameC=H](0,0){a}(1.5,0){b}(2.4;75){c}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:240: Undefined control sequence.
+\c@lor@to@ps ->\PSTricks 
+                         _Not_Configured_For_This_Format
+l.240 ...ointNameC=H](0,0){a}(1.5,0){b}(2.4;75){c}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:240: Undefined control sequence.
+\XC@usec@lor ...string \color@ #1#2\endcsname \@@ 
+                                                  \fi \space 
+l.240 ...ointNameC=H](0,0){a}(1.5,0){b}(2.4;75){c}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[2
+Non-PDF special ignored!
+<special> ps: 0.0 0.0  75.49118 0.0  exch 4 1 roll 57.46341 61.85  tx@Dict ...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  tx@NodeDict begin {0.0 0.0 } false /N@a 10 {Ini...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot 0 def grestore  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot  mark RAngle /ps@a ED cl...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin { tx@NodeDict begin tx@NodeDict /N@a known { 11....
+Non-PDF special ignored!
+<special> ps:tx@Dict begin ps@rot  RotBegin  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin RotEnd  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  PutEnd  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  tx@NodeDict begin {75.49118 0.0 } false /N@b 10...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot 0 def grestore  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot  mark RAngle /ps@a ED cl...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin { tx@NodeDict begin tx@NodeDict /N@b known { 11....
+Non-PDF special ignored!
+<special> ps:tx@Dict begin ps@rot  RotBegin  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin RotEnd  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  PutEnd  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  tx@NodeDict begin {57.46341 61.85  tx@Dict begi...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot 0 def grestore  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot  mark RAngle /ps@a ED cl...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin { tx@NodeDict begin tx@NodeDict /N@c known { 11....
+Non-PDF special ignored!
+<special> ps:tx@Dict begin ps@rot  RotBegin  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin RotEnd  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  PutEnd  end
+Non-PDF special ignored!
+<special> "  tx@Dict begin STP newpath /ArrowA { moveto } def /ArrowB { } d...
+Non-PDF special ignored!
+<special> ps: 0.0 0.0  52.5809 0.0  exch 4 1 roll 40.06163 61.85  tx@Dict b...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  tx@NodeDict begin {0.0 0.0 } false /N@a 10 {Ini...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  tx@NodeDict begin {52.5809 0.0 } false /N@b 10 ...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot 0 def grestore  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot  mark RAngle /ps@a ED cl...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin { tx@NodeDict begin tx@NodeDict /N@b known { 11....
+Non-PDF special ignored!
+<special> ps:tx@Dict begin ps@rot  RotBegin  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin RotEnd  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  PutEnd  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  tx@NodeDict begin {40.06163 61.85  tx@Dict begi...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot 0 def grestore  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot  mark RAngle /ps@a ED cl...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin { tx@NodeDict begin tx@NodeDict /N@c known { 11....
+Non-PDF special ignored!
+<special> ps:tx@Dict begin ps@rot  RotBegin  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin RotEnd  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  PutEnd  end
+Non-PDF special ignored!
+<special> "  tx@Dict begin STP newpath /ArrowA { moveto } def /ArrowB { } d...
+Non-PDF special ignored!
+<special> ps: 0.0 0.0  61.3997 0.0  exch 4 1 roll 49.56357 44.74  tx@Dict b...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  tx@NodeDict begin {0.0 0.0 } false /N@a 10 {Ini...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot 0 def grestore  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot  mark RAngle /ps@a ED cl...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin { tx@NodeDict begin tx@NodeDict /N@a known { 11....
+Non-PDF special ignored!
+<special> ps:tx@Dict begin ps@rot  RotBegin  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin RotEnd  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  PutEnd  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  tx@NodeDict begin {61.3997 0.0 } false /N@b 10 ...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot 0 def grestore  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot  mark RAngle /ps@a ED cl...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin { tx@NodeDict begin tx@NodeDict /N@b known { 11....
+Non-PDF special ignored!
+<special> ps:tx@Dict begin ps@rot  RotBegin  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin RotEnd  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  PutEnd  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  tx@NodeDict begin {49.56357 44.74  tx@Dict begi...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot 0 def grestore  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot  mark RAngle /ps@a ED cl...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin { tx@NodeDict begin tx@NodeDict /N@c known { 11....
+Non-PDF special ignored!
+<special> ps:tx@Dict begin ps@rot  RotBegin  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin RotEnd  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  PutEnd  end
+Non-PDF special ignored!
+<special> "  tx@Dict begin STP newpath /ArrowA { moveto } def /ArrowB { } d...
+Non-PDF special ignored!
+<special> ps: 0.0 0.0  -28.11072 0.0  exch 4 1 roll -22.63649 44.74  tx@Dic...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  tx@NodeDict begin {0.0 0.0 } false /N@a 10 {Ini...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  tx@NodeDict begin {-28.11072 0.0 } false /N@b 1...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot 0 def grestore  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot  mark RAngle /ps@a ED cl...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin { tx@NodeDict begin tx@NodeDict /N@b known { 11....
+Non-PDF special ignored!
+<special> ps:tx@Dict begin ps@rot  RotBegin  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin RotEnd  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  PutEnd  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  tx@NodeDict begin {-22.63649 44.74  tx@Dict beg...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot 0 def grestore  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot  mark RAngle /ps@a ED cl...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin { tx@NodeDict begin tx@NodeDict /N@c known { 11....
+Non-PDF special ignored!
+<special> ps:tx@Dict begin ps@rot  RotBegin  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin RotEnd  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  PutEnd  end
+Non-PDF special ignored!
+<special> "  tx@Dict begin STP newpath /ArrowA { moveto } def /ArrowB { } d...
+Non-PDF special ignored!
+<special> ps: 0.0 0.0  91.04865 0.0  exch 4 1 roll 85.3581 27.  tx@Dict beg...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  tx@NodeDict begin {0.0 0.0 } false /N@a 10 {Ini...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot 0 def grestore  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot  mark RAngle /ps@a ED cl...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin { tx@NodeDict begin tx@NodeDict /N@a known { 11....
+Non-PDF special ignored!
+<special> ps:tx@Dict begin ps@rot  RotBegin  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin RotEnd  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  PutEnd  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  tx@NodeDict begin {91.04865 0.0 } false /N@b 10...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot 0 def grestore  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot  mark RAngle /ps@a ED cl...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin { tx@NodeDict begin tx@NodeDict /N@b known { 11....
+Non-PDF special ignored!
+<special> ps:tx@Dict begin ps@rot  RotBegin  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin RotEnd  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  PutEnd  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  tx@NodeDict begin {85.3581 27.  tx@Dict begin P...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot 0 def grestore  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot  mark RAngle /ps@a ED cl...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin { tx@NodeDict begin tx@NodeDict /N@c known { 11....
+Non-PDF special ignored!
+<special> ps:tx@Dict begin ps@rot  RotBegin  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin RotEnd  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  PutEnd  end
+Non-PDF special ignored!
+<special> "  tx@Dict begin STP newpath /ArrowA { moveto } def /ArrowB { } d...
+Non-PDF special ignored!
+<special> ps: 0.0 0.0  56.9054 0.0  exch 4 1 roll 53.3488 27.  tx@Dict begi...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  tx@NodeDict begin {0.0 0.0 } false /N@a 10 {Ini...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  tx@NodeDict begin {56.9054 0.0 } false /N@b 10 ...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot 0 def grestore  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot  mark RAngle /ps@a ED cl...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin { tx@NodeDict begin tx@NodeDict /N@b known { 11....
+Non-PDF special ignored!
+<special> ps:tx@Dict begin ps@rot  RotBegin  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin RotEnd  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  PutEnd  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  tx@NodeDict begin {53.3488 27.  tx@Dict begin P...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot 0 def grestore  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot  mark RAngle /ps@a ED cl...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin { tx@NodeDict begin tx@NodeDict /N@c known { 11....
+Non-PDF special ignored!
+<special> ps:tx@Dict begin ps@rot  RotBegin  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin RotEnd  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  PutEnd  end
+Non-PDF special ignored!
+<special> "  tx@Dict begin STP newpath /ArrowA { moveto } def /ArrowB { } d...
+Non-PDF special ignored!
+<special> ps: 0.0 0.0  54.62872 0.0  exch 4 1 roll 87.40587 75.  tx@Dict be...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  tx@NodeDict begin {0.0 0.0 } false /N@a 10 {Ini...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot 0 def grestore  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot  mark RAngle /ps@a ED cl...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin { tx@NodeDict begin tx@NodeDict /N@a known { 11....
+Non-PDF special ignored!
+<special> ps:tx@Dict begin ps@rot  RotBegin  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin RotEnd  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  PutEnd  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  tx@NodeDict begin {54.62872 0.0 } false /N@b 10...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot 0 def grestore  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot  mark RAngle /ps@a ED cl...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin { tx@NodeDict begin tx@NodeDict /N@b known { 11....
+Non-PDF special ignored!
+<special> ps:tx@Dict begin ps@rot  RotBegin  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin RotEnd  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  PutEnd  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  tx@NodeDict begin {87.40587 75.  tx@Dict begin ...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot 0 def grestore  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot  mark RAngle /ps@a ED cl...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin { tx@NodeDict begin tx@NodeDict /N@c known { 11....
+Non-PDF special ignored!
+<special> ps:tx@Dict begin ps@rot  RotBegin  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin RotEnd  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  PutEnd  end
+Non-PDF special ignored!
+<special> "  tx@Dict begin STP newpath /ArrowA { moveto } def /ArrowB { } d...
+Non-PDF special ignored!
+<special> ps: 0.0 0.0  20.48576 0.0  exch 4 1 roll 32.77715 75.  tx@Dict be...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  tx@NodeDict begin {0.0 0.0 } false /N@a 10 {Ini...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  tx@NodeDict begin {20.48576 0.0 } false /N@b 10...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot 0 def grestore  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot  mark RAngle /ps@a ED cl...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin { tx@NodeDict begin tx@NodeDict /N@b known { 11....
+Non-PDF special ignored!
+<special> ps:tx@Dict begin ps@rot  RotBegin  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin RotEnd  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  PutEnd  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  tx@NodeDict begin {32.77715 75.  tx@Dict begin ...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot 0 def grestore  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot  mark RAngle /ps@a ED cl...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin { tx@NodeDict begin tx@NodeDict /N@c known { 11....
+Non-PDF special ignored!
+<special> ps:tx@Dict begin ps@rot  RotBegin  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin RotEnd  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  PutEnd  end
+Non-PDF special ignored!
+<special> "  tx@Dict begin STP newpath /ArrowA { moveto } def /ArrowB { } d...
+]
+
+LaTeX Warning: File `3x5-thales/thales-ie.eps' not found on input line 264.
+
+Package epstopdf Info: Source file: <3x5-thales/thales-ie.eps>
+(epstopdf)             Output file: <3x5-thales/thales-ie-eps-converted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=3x5-thales/thales-ie-eps-converted-to.pdf 3x5-thales/thales-ie.eps>
+(epstopdf)             \includegraphics on input line 264.
+Package epstopdf Info: Output file is already uptodate.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:264: Package pdftex.def Error: File `3x5-thales/thales-ie-eps-converted-to.pdf' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.264 ...=0.9\linewidth]{3x5-thales/thales-ie.eps}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:317: Undefined control sequence.
+\c@lor@to@ps ->\PSTricks 
+                         _Not_Configured_For_This_Format
+l.317 }
+       \par
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:317: Undefined control sequence.
+\XC@usec@lor ...string \color@ #1#2\endcsname \@@ 
+                                                  \fi \space 
+l.317 }
+       \par
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:317: Undefined control sequence.
+\c@lor@to@ps ->\PSTricks 
+                         _Not_Configured_For_This_Format
+l.317 }
+       \par
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:317: Undefined control sequence.
+\XC@usec@lor ...string \color@ #1#2\endcsname \@@ 
+                                                  \fi \space 
+l.317 }
+       \par
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:317: Undefined control sequence.
+\c@lor@to@ps ->\PSTricks 
+                         _Not_Configured_For_This_Format
+l.317 }
+       \par
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:317: Undefined control sequence.
+\XC@usec@lor ...string \color@ #1#2\endcsname \@@ 
+                                                  \fi \space 
+l.317 }
+       \par
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:317: Undefined control sequence.
+\c@lor@to@ps ->\PSTricks 
+                         _Not_Configured_For_This_Format
+l.317 }
+       \par
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:317: Undefined control sequence.
+\XC@usec@lor ...string \color@ #1#2\endcsname \@@ 
+                                                  \fi \space 
+l.317 }
+       \par
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:317: Undefined control sequence.
+\c@lor@to@ps ->\PSTricks 
+                         _Not_Configured_For_This_Format
+l.317 }
+       \par
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:317: Undefined control sequence.
+\XC@usec@lor ...string \color@ #1#2\endcsname \@@ 
+                                                  \fi \space 
+l.317 }
+       \par
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:317: Undefined control sequence.
+\c@lor@to@ps ->\PSTricks 
+                         _Not_Configured_For_This_Format
+l.317 }
+       \par
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:317: Undefined control sequence.
+\XC@usec@lor ...string \color@ #1#2\endcsname \@@ 
+                                                  \fi \space 
+l.317 }
+       \par
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:317: Undefined control sequence.
+\c@lor@to@ps ->\PSTricks 
+                         _Not_Configured_For_This_Format
+l.317 }
+       \par
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:317: Undefined control sequence.
+\XC@usec@lor ...string \color@ #1#2\endcsname \@@ 
+                                                  \fi \space 
+l.317 }
+       \par
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:317: Undefined control sequence.
+\c@lor@to@ps ->\PSTricks 
+                         _Not_Configured_For_This_Format
+l.317 }
+       \par
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:317: Undefined control sequence.
+\XC@usec@lor ...string \color@ #1#2\endcsname \@@ 
+                                                  \fi \space 
+l.317 }
+       \par
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:329: Undefined control sequence.
+\c@lor@to@ps ->\PSTricks 
+                         _Not_Configured_For_This_Format
+l.329 }
+       \par
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:329: Undefined control sequence.
+\XC@usec@lor ...string \color@ #1#2\endcsname \@@ 
+                                                  \fi \space 
+l.329 }
+       \par
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:329: Undefined control sequence.
+\c@lor@to@ps ->\PSTricks 
+                         _Not_Configured_For_This_Format
+l.329 }
+       \par
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:329: Undefined control sequence.
+\XC@usec@lor ...string \color@ #1#2\endcsname \@@ 
+                                                  \fi \space 
+l.329 }
+       \par
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:329: Undefined control sequence.
+\c@lor@to@ps ->\PSTricks 
+                         _Not_Configured_For_This_Format
+l.329 }
+       \par
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:329: Undefined control sequence.
+\XC@usec@lor ...string \color@ #1#2\endcsname \@@ 
+                                                  \fi \space 
+l.329 }
+       \par
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:329: Undefined control sequence.
+\c@lor@to@ps ->\PSTricks 
+                         _Not_Configured_For_This_Format
+l.329 }
+       \par
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:329: Undefined control sequence.
+\XC@usec@lor ...string \color@ #1#2\endcsname \@@ 
+                                                  \fi \space 
+l.329 }
+       \par
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:329: Undefined control sequence.
+\c@lor@to@ps ->\PSTricks 
+                         _Not_Configured_For_This_Format
+l.329 }
+       \par
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:329: Undefined control sequence.
+\XC@usec@lor ...string \color@ #1#2\endcsname \@@ 
+                                                  \fi \space 
+l.329 }
+       \par
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:329: Undefined control sequence.
+\c@lor@to@ps ->\PSTricks 
+                         _Not_Configured_For_This_Format
+l.329 }
+       \par
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:329: Undefined control sequence.
+\XC@usec@lor ...string \color@ #1#2\endcsname \@@ 
+                                                  \fi \space 
+l.329 }
+       \par
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:329: Undefined control sequence.
+\c@lor@to@ps ->\PSTricks 
+                         _Not_Configured_For_This_Format
+l.329 }
+       \par
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:329: Undefined control sequence.
+\XC@usec@lor ...string \color@ #1#2\endcsname \@@ 
+                                                  \fi \space 
+l.329 }
+       \par
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:329: Undefined control sequence.
+\c@lor@to@ps ->\PSTricks 
+                         _Not_Configured_For_This_Format
+l.329 }
+       \par
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:329: Undefined control sequence.
+\XC@usec@lor ...string \color@ #1#2\endcsname \@@ 
+                                                  \fi \space 
+l.329 }
+       \par
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[3
+Non-PDF special ignored!
+<special> ps: 0.0 0.0  49.93443 0.0  exch 4 1 roll 66.57925 31.26  tx@Dict ...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  tx@NodeDict begin {0.0 0.0 } false /N@a 10 {Ini...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot 0 def grestore  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot  mark RAngle /ps@a ED cl...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin { tx@NodeDict begin tx@NodeDict /N@a known { 11....
+Non-PDF special ignored!
+<special> ps:tx@Dict begin ps@rot  RotBegin  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin RotEnd  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  PutEnd  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  tx@NodeDict begin {49.93443 0.0 } false /N@b 10...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot 0 def grestore  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot  mark RAngle /ps@a ED cl...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin { tx@NodeDict begin tx@NodeDict /N@b known { 11....
+Non-PDF special ignored!
+<special> ps:tx@Dict begin ps@rot  RotBegin  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin RotEnd  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  PutEnd  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  tx@NodeDict begin {66.57925 31.26  tx@Dict begi...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot 0 def grestore  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot  mark RAngle /ps@a ED cl...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin { tx@NodeDict begin tx@NodeDict /N@c known { 11....
+Non-PDF special ignored!
+<special> ps:tx@Dict begin ps@rot  RotBegin  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin RotEnd  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  PutEnd  end
+Non-PDF special ignored!
+<special> "  tx@Dict begin STP newpath /ArrowA { moveto } def /ArrowB { } d...
+Non-PDF special ignored!
+<special> ps: 0.0 0.0  -18.86407 0.0  exch 4 1 roll -25.07811 31.26  tx@Dic...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  tx@NodeDict begin {0.0 0.0 } false /N@a 10 {Ini...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  tx@NodeDict begin {-18.86407 0.0 } false /N@b 1...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot 0 def grestore  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot  mark RAngle /ps@a ED cl...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin { tx@NodeDict begin tx@NodeDict /N@b known { 11....
+Non-PDF special ignored!
+<special> ps:tx@Dict begin ps@rot  RotBegin  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin RotEnd  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  PutEnd  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  tx@NodeDict begin {-25.07811 31.26  tx@Dict beg...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot 0 def grestore  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot  mark RAngle /ps@a ED cl...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin { tx@NodeDict begin tx@NodeDict /N@c known { 11....
+Non-PDF special ignored!
+<special> ps:tx@Dict begin ps@rot  RotBegin  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin RotEnd  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  PutEnd  end
+Non-PDF special ignored!
+<special> "  tx@Dict begin STP newpath /ArrowA { moveto } def /ArrowB { } d...
+]
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:338: Undefined control sequence.
+\c@lor@to@ps ->\PSTricks 
+                         _Not_Configured_For_This_Format
+l.338 ...ointNameC=G](0,0){a}(2.2,0){b}(7.7;86){c}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:338: Undefined control sequence.
+\XC@usec@lor ...string \color@ #1#2\endcsname \@@ 
+                                                  \fi \space 
+l.338 ...ointNameC=G](0,0){a}(2.2,0){b}(7.7;86){c}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:338: Undefined control sequence.
+\c@lor@to@ps ->\PSTricks 
+                         _Not_Configured_For_This_Format
+l.338 ...ointNameC=G](0,0){a}(2.2,0){b}(7.7;86){c}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:338: Undefined control sequence.
+\XC@usec@lor ...string \color@ #1#2\endcsname \@@ 
+                                                  \fi \space 
+l.338 ...ointNameC=G](0,0){a}(2.2,0){b}(7.7;86){c}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:339: Undefined control sequence.
+\c@lor@to@ps ->\PSTricks 
+                         _Not_Configured_For_This_Format
+l.339 ...ntNameC=D](0,0){a}(-1.2,0){b}(-4.2;86){c}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:339: Undefined control sequence.
+\XC@usec@lor ...string \color@ #1#2\endcsname \@@ 
+                                                  \fi \space 
+l.339 ...ntNameC=D](0,0){a}(-1.2,0){b}(-4.2;86){c}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:339: Undefined control sequence.
+\c@lor@to@ps ->\PSTricks 
+                         _Not_Configured_For_This_Format
+l.339 ...ntNameC=D](0,0){a}(-1.2,0){b}(-4.2;86){c}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:339: Undefined control sequence.
+\XC@usec@lor ...string \color@ #1#2\endcsname \@@ 
+                                                  \fi \space 
+l.339 ...ntNameC=D](0,0){a}(-1.2,0){b}(-4.2;86){c}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:351: Undefined control sequence.
+\c@lor@to@ps ->\PSTricks 
+                         _Not_Configured_For_This_Format
+l.351 ...ointNameC=A](0,0){a}(5.1,0){b}(8.5;37){c}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:351: Undefined control sequence.
+\XC@usec@lor ...string \color@ #1#2\endcsname \@@ 
+                                                  \fi \space 
+l.351 ...ointNameC=A](0,0){a}(5.1,0){b}(8.5;37){c}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:351: Undefined control sequence.
+\c@lor@to@ps ->\PSTricks 
+                         _Not_Configured_For_This_Format
+l.351 ...ointNameC=A](0,0){a}(5.1,0){b}(8.5;37){c}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:351: Undefined control sequence.
+\XC@usec@lor ...string \color@ #1#2\endcsname \@@ 
+                                                  \fi \space 
+l.351 ...ointNameC=A](0,0){a}(5.1,0){b}(8.5;37){c}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:352: Undefined control sequence.
+\c@lor@to@ps ->\PSTricks 
+                         _Not_Configured_For_This_Format
+l.352 ...ointNameC=H](0,0){a}(2.4,0){b}(4.0;37){c}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:352: Undefined control sequence.
+\XC@usec@lor ...string \color@ #1#2\endcsname \@@ 
+                                                  \fi \space 
+l.352 ...ointNameC=H](0,0){a}(2.4,0){b}(4.0;37){c}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:352: Undefined control sequence.
+\c@lor@to@ps ->\PSTricks 
+                         _Not_Configured_For_This_Format
+l.352 ...ointNameC=H](0,0){a}(2.4,0){b}(4.0;37){c}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.tex:352: Undefined control sequence.
+\XC@usec@lor ...string \color@ #1#2\endcsname \@@ 
+                                                  \fi \space 
+l.352 ...ointNameC=H](0,0){a}(2.4,0){b}(4.0;37){c}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[4
+Non-PDF special ignored!
+<special> ps: 0.0 0.0  52.92165 0.0  exch 4 1 roll 65.26997 24.93  tx@Dict ...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  tx@NodeDict begin {0.0 0.0 } false /N@a 10 {Ini...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot 0 def grestore  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot  mark RAngle /ps@a ED cl...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin { tx@NodeDict begin tx@NodeDict /N@a known { 11....
+Non-PDF special ignored!
+<special> ps:tx@Dict begin ps@rot  RotBegin  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin RotEnd  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  PutEnd  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  tx@NodeDict begin {52.92165 0.0 } false /N@b 10...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot 0 def grestore  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot  mark RAngle /ps@a ED cl...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin { tx@NodeDict begin tx@NodeDict /N@b known { 11....
+Non-PDF special ignored!
+<special> ps:tx@Dict begin ps@rot  RotBegin  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin RotEnd  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  PutEnd  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  tx@NodeDict begin {65.26997 24.93  tx@Dict begi...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot 0 def grestore  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot  mark RAngle /ps@a ED cl...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin { tx@NodeDict begin tx@NodeDict /N@c known { 11....
+Non-PDF special ignored!
+<special> ps:tx@Dict begin ps@rot  RotBegin  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin RotEnd  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  PutEnd  end
+Non-PDF special ignored!
+<special> "  tx@Dict begin STP newpath /ArrowA { moveto } def /ArrowB { } d...
+Non-PDF special ignored!
+<special> ps: 0.0 0.0  16.40558 0.0  exch 4 1 roll 20.28651 24.93  tx@Dict ...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  tx@NodeDict begin {0.0 0.0 } false /N@a 10 {Ini...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  tx@NodeDict begin {16.40558 0.0 } false /N@b 10...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot 0 def grestore  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot  mark RAngle /ps@a ED cl...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin { tx@NodeDict begin tx@NodeDict /N@b known { 11....
+Non-PDF special ignored!
+<special> ps:tx@Dict begin ps@rot  RotBegin  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin RotEnd  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  PutEnd  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  tx@NodeDict begin {20.28651 24.93  tx@Dict begi...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot 0 def grestore  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot  mark RAngle /ps@a ED cl...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin { tx@NodeDict begin tx@NodeDict /N@c known { 11....
+Non-PDF special ignored!
+<special> ps:tx@Dict begin ps@rot  RotBegin  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin RotEnd  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  PutEnd  end
+Non-PDF special ignored!
+<special> "  tx@Dict begin STP newpath /ArrowA { moveto } def /ArrowB { } d...
+Non-PDF special ignored!
+<special> ps: 0.0 0.0  17.52675 0.0  exch 4 1 roll 61.34372 86.  tx@Dict be...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  tx@NodeDict begin {0.0 0.0 } false /N@a 10 {Ini...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot 0 def grestore  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot  mark RAngle /ps@a ED cl...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin { tx@NodeDict begin tx@NodeDict /N@a known { 11....
+Non-PDF special ignored!
+<special> ps:tx@Dict begin ps@rot  RotBegin  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin RotEnd  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  PutEnd  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  tx@NodeDict begin {17.52675 0.0 } false /N@b 10...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot 0 def grestore  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot  mark RAngle /ps@a ED cl...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin { tx@NodeDict begin tx@NodeDict /N@b known { 11....
+Non-PDF special ignored!
+<special> ps:tx@Dict begin ps@rot  RotBegin  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin RotEnd  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  PutEnd  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  tx@NodeDict begin {61.34372 86.  tx@Dict begin ...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot 0 def grestore  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot  mark RAngle /ps@a ED cl...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin { tx@NodeDict begin tx@NodeDict /N@c known { 11....
+Non-PDF special ignored!
+<special> ps:tx@Dict begin ps@rot  RotBegin  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin RotEnd  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  PutEnd  end
+Non-PDF special ignored!
+<special> "  tx@Dict begin STP newpath /ArrowA { moveto } def /ArrowB { } d...
+Non-PDF special ignored!
+<special> ps: 0.0 0.0  -9.56003 0.0  exch 4 1 roll -33.46019 86.  tx@Dict b...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  tx@NodeDict begin {0.0 0.0 } false /N@a 10 {Ini...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  tx@NodeDict begin {-9.56003 0.0 } false /N@b 10...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot 0 def grestore  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot  mark RAngle /ps@a ED cl...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin { tx@NodeDict begin tx@NodeDict /N@b known { 11....
+Non-PDF special ignored!
+<special> ps:tx@Dict begin ps@rot  RotBegin  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin RotEnd  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  PutEnd  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  tx@NodeDict begin {-33.46019 86.  tx@Dict begin...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot 0 def grestore  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot  mark RAngle /ps@a ED cl...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin { tx@NodeDict begin tx@NodeDict /N@c known { 11....
+Non-PDF special ignored!
+<special> ps:tx@Dict begin ps@rot  RotBegin  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin RotEnd  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  PutEnd  end
+Non-PDF special ignored!
+<special> "  tx@Dict begin STP newpath /ArrowA { moveto } def /ArrowB { } d...
+Non-PDF special ignored!
+<special> ps: 0.0 0.0  58.04276 0.0  exch 4 1 roll 96.73782 37.  tx@Dict be...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  tx@NodeDict begin {0.0 0.0 } false /N@a 10 {Ini...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot 0 def grestore  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot  mark RAngle /ps@a ED cl...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin { tx@NodeDict begin tx@NodeDict /N@a known { 11....
+Non-PDF special ignored!
+<special> ps:tx@Dict begin ps@rot  RotBegin  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin RotEnd  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  PutEnd  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  tx@NodeDict begin {58.04276 0.0 } false /N@b 10...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot 0 def grestore  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot  mark RAngle /ps@a ED cl...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin { tx@NodeDict begin tx@NodeDict /N@b known { 11....
+Non-PDF special ignored!
+<special> ps:tx@Dict begin ps@rot  RotBegin  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin RotEnd  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  PutEnd  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  tx@NodeDict begin {96.73782 37.  tx@Dict begin ...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot 0 def grestore  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot  mark RAngle /ps@a ED cl...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin { tx@NodeDict begin tx@NodeDict /N@c known { 11....
+Non-PDF special ignored!
+<special> ps:tx@Dict begin ps@rot  RotBegin  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin RotEnd  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  PutEnd  end
+Non-PDF special ignored!
+<special> "  tx@Dict begin STP newpath /ArrowA { moveto } def /ArrowB { } d...
+Non-PDF special ignored!
+<special> ps: 0.0 0.0  27.31413 0.0  exch 4 1 roll 45.52368 37.  tx@Dict be...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  tx@NodeDict begin {0.0 0.0 } false /N@a 10 {Ini...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  tx@NodeDict begin {27.31413 0.0 } false /N@b 10...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot 0 def grestore  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot  mark RAngle /ps@a ED cl...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin { tx@NodeDict begin tx@NodeDict /N@b known { 11....
+Non-PDF special ignored!
+<special> ps:tx@Dict begin ps@rot  RotBegin  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin RotEnd  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  PutEnd  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  tx@NodeDict begin {45.52368 37.  tx@Dict begin ...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot 0 def grestore  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot  mark RAngle /ps@a ED cl...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin { tx@NodeDict begin tx@NodeDict /N@c known { 11....
+Non-PDF special ignored!
+<special> ps:tx@Dict begin ps@rot  RotBegin  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin RotEnd  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  PutEnd  end
+Non-PDF special ignored!
+<special> "  tx@Dict begin STP newpath /ArrowA { moveto } def /ArrowB { } d...
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 360.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 360.
+ (/home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 360.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 360.
+
+
+Package rerunfilecheck Warning: File `3x5-ie.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `3x5-ie.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 360.
+ ) 
+Here is how much of TeX's memory you used:
+ 34068 strings out of 481239
+ 631979 string characters out of 5920378
+ 1110406 words of memory out of 5000000
+ 48636 multiletter control sequences out of 15000+600000
+ 582250 words of font info for 60 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 65i,12n,65p,654b,804s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbxi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
+Output written on /home/thom/Documents/2020.d/2020-2021_tea/3_troisieme/3x5-thales/3x5-ie.pdf (4 pages, 117652 bytes).
+PDF statistics:
+ 65 PDF objects out of 1000 (max. 8388607)
+ 52 compressed objects within 1 object stream
+ 11 named destinations out of 1000 (max. 500000)
+ 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+

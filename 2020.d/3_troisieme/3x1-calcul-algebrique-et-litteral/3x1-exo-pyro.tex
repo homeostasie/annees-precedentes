@@ -1,0 +1,481 @@
+%%!TEX TS-program = latex
+\documentclass[a4paper,11pt]{article}
+\usepackage[utf8]{inputenc} % UTF-8
+\usepackage[T1]{fontenc}
+\usepackage[frenchb]{babel} % francisation
+\usepackage[fleqn]{amsmath} % aligne le mode maths à gauche
+\usepackage{amssymb} % the amsfont symbols
+\usepackage[table, usenames, svgnames]{xcolor} % Couleurs
+\usepackage{multicol} % Multi-colonnes
+\usepackage{fancyhdr} % Mise en page, en-tête et pied de page
+\usepackage{calc} % Opérations
+\usepackage{marvosym} % Martin Vogels Symbole (\EUR)
+\usepackage{cancel} % draw diagonal lines
+\usepackage{units} % typesetting units and nice fractions
+\usepackage[autolanguage]{numprint} % écrituredes virgules
+\usepackage{tabularx} % creates a paragraph-like column whose width
+% automatically expands
+\usepackage{wrapfig} % allows figures or tables to have text wrapped around
+\usepackage{pst-eucl, pst-plot} % figures géométriques
+\usepackage{wasysym} % Symbole Euro
+%\usepackage{textcomp}
+\input{/usr/share/pyromaths/packages/tabvar.tex}
+
+\usepackage[a4paper, dvips, left=1.5cm, right=1.5cm, top=2cm,%
+bottom=2cm, marginpar=5mm, marginparsep=5pt]{geometry}
+\newcounter{exo}
+\setlength{\headheight}{18pt}
+\setlength{\fboxsep}{1em}
+\setlength\parindent{0em}
+\setlength\mathindent{0em}
+\setlength{\columnsep}{30pt}
+\usepackage[bookmarks=true, bookmarksnumbered=true, ps2pdf, pagebackref=true,%
+colorlinks=true,linkcolor=blue,plainpages=true]{hyperref}
+\hypersetup{pdfauthor={Jérôme Ortais},pdfsubject={Exercices de
+    mathématiques},pdftitle={Exercices créés par Pyromaths, un logiciel libre
+    en Python sous licence GPL}}
+\makeatletter
+\newcommand\styleexo[1][]{
+  \renewcommand{\theenumi}{\arabic{enumi}}
+  \renewcommand{\labelenumi}{$\blacktriangleright$\textbf{\theenumi.}}
+  \renewcommand{\theenumii}{\alph{enumii}}
+  \renewcommand{\labelenumii}{\textbf{\theenumii)}}
+  {\fontfamily{pag}\fontseries{b}\selectfont \underline{#1 \theexo}}
+  \par\@afterheading\vspace{0.5\baselineskip minus 0.2\baselineskip}}
+\newcommand*\exercice{%
+  \psset{unit=1cm, dash=4pt 4pt, PointName=default,linecolor=Maroon,
+    dotstyle=x, linestyle=solid, hatchcolor=Peru, gridcolor=Olive,
+    subgridcolor=Olive, fillcolor=Peru}
+  %\ifthenelse{\equal{\theexo}{0}}{}{\filbreak}
+  \refstepcounter{exo}%
+  \stepcounter{nocalcul}%
+  \par\addvspace{1.5\baselineskip minus 1\baselineskip}%
+  \@ifstar%
+  {\penalty-130\styleexo[Corrigé de l'exercice]}%
+  {\penalty-130\styleexo[Exercice]}%
+  }
+\makeatother
+\newlength{\ltxt}
+\newcounter{fig}
+\newcommand{\figureadroite}[2]{
+  \setlength{\ltxt}{\linewidth}
+  \setbox\thefig=\hbox{#1}
+  \addtolength{\ltxt}{-\wd\thefig}
+  \addtolength{\ltxt}{-10pt}
+  \begin{minipage}{\ltxt}
+    #2
+  \end{minipage}
+  \hfill
+  \begin{minipage}{\wd\thefig}
+    #1
+  \end{minipage}
+  \refstepcounter{fig}
+  }
+\count1=\year \count2=\year
+\ifnum\month<8\advance\count1by-1\else\advance\count2by1\fi
+\pagestyle{fancy}
+\cfoot{\textsl{\footnotesize{Année \number\count1/\number\count2}}}
+\rfoot{\textsl{\tiny{http://www.pyromaths.org}}}
+\lhead{\textsl{\footnotesize{Page \thepage/ \pageref{LastPage}}}}
+\chead{\Large{\textsc{Fiche de révisions}}}
+\rhead{\textsl{\footnotesize{Classe de 3\ieme}}}
+\DecimalMathComma
+\begin{document}
+  \currentpdfbookmark{Les énoncés des exercices}{Énoncés}
+  \newcounter{nocalcul}[exo]
+  \renewcommand{\thenocalcul}{\Alph{nocalcul}}
+  \raggedcolumns
+  \setlength{\columnseprule}{0.5pt}
+
+  \exercice
+  Effectuer les calculs suivants et donner le résultat sous la forme d'une
+  fraction simplifiée :
+  \begin{multicols}{4}
+    \noindent
+    \[ \thenocalcul = \dfrac{8}{5}-\dfrac{9}{50} \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = \dfrac{10}{7}-\dfrac{9}{49} \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = \dfrac{9}{8}+\dfrac{5}{32} \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = \dfrac{10}{63}+\dfrac{6}{7} \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = \dfrac{1}{5}-\dfrac{3}{25} \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = \dfrac{4}{15}+\dfrac{1}{3} \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = \dfrac{3}{100}+\dfrac{1}{10} \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = \dfrac{3}{10}-\dfrac{9}{80} \]
+    \stepcounter{nocalcul}%
+  \end{multicols}
+
+
+  \exercice
+  Effectuer les calculs suivants et donner le résultat sous la forme d'une
+  fraction simplifiée :
+  \begin{multicols}{4}
+    \noindent%
+    \[\thenocalcul = \dfrac{9}{2} - \dfrac{5}{18}\]
+    \stepcounter{nocalcul}%
+    \[\thenocalcul = 1 + \dfrac{13}{6}\]
+    \stepcounter{nocalcul}%
+    \[\thenocalcul = \dfrac{8}{3} + \dfrac{13}{2}\]
+    \stepcounter{nocalcul}%
+    \[\thenocalcul = \dfrac{2}{5} - \dfrac{5}{2}\]
+    \stepcounter{nocalcul}%
+    \[\thenocalcul = \dfrac{-15}{2} + \dfrac{-14}{5}\]
+    \stepcounter{nocalcul}%
+    \[\thenocalcul = \dfrac{-3}{4} - \dfrac{8}{3}\]
+    \stepcounter{nocalcul}%
+    \[\thenocalcul = \dfrac{-1}{9} - \dfrac{-7}{6}\]
+    \stepcounter{nocalcul}%
+    \[\thenocalcul = \dfrac{1}{6} + \dfrac{-11}{21}\]
+    \stepcounter{nocalcul}%
+  \end{multicols}
+
+
+  \exercice
+  Effectuer les calculs suivants et donner le résultat sous la forme d'une
+  fraction simplifiée :
+  \begin{multicols}{4}
+    \noindent
+    \[ \thenocalcul = \dfrac{35}{48} \times \dfrac{48}{25} \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = \dfrac{1}{12} \times \dfrac{8}{3} \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = \dfrac{70}{81} \times \dfrac{63}{80} \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = \dfrac{27}{14} \times \dfrac{35}{81} \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = \dfrac{20}{81} \times \dfrac{9}{16} \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = \dfrac{28}{45} \times \dfrac{45}{14} \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = \dfrac{25}{54} \times \dfrac{9}{10} \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = \dfrac{49}{90} \times \dfrac{81}{35} \]
+    \stepcounter{nocalcul}%
+  \end{multicols}
+
+
+  \exercice
+  Effectuer les calculs suivants et donner le résultat sous la forme d'une
+  fraction simplifiée :
+  \begin{multicols}{4}
+    \noindent
+    \[ \thenocalcul = \dfrac{1}{36} \times \dfrac{6}{7} \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = \dfrac{5}{49} \times \dfrac{49}{4} \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = \dfrac{16}{45} \times \dfrac{81}{16} \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = \dfrac{25}{72} \times \dfrac{8}{25} \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = \dfrac{9}{40} \times \dfrac{40}{21} \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = \dfrac{9}{8} \times \dfrac{16}{45} \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = \dfrac{50}{21} \times \dfrac{49}{90} \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = \dfrac{16}{27} \times \dfrac{3}{64} \]
+    \stepcounter{nocalcul}%
+  \end{multicols}
+
+
+  \exercice
+  \begin{minipage}{4cm}
+    \begin{pspicture}(-2,-2)(2,2)
+      \pscircle[fillstyle=solid](0,0){1.5}
+      \pscircle[fillstyle=solid, fillcolor=white](0,0){1}
+      \psdots[dotstyle=x](0,0)
+      \rput(0.3;60){$O$}
+    \end{pspicture}
+  \end{minipage}\hfill
+  \begin{minipage}{13cm}
+    On considère deux cercles de centre $O$ et de rayons respectifs
+    $\unit[8]{cm}$ et $\unit[12]{cm}$.\par
+    Calculer l'aire de la couronne circulaire (partie colorée) comprise entre
+    les deux cercles en arrondissant le résultat au $\unit{cm^2}$ le plus
+    proche.
+  \end{minipage}
+
+
+  \exercice
+  \begin{minipage}{4cm}
+    \begin{pspicture}(-2,-2)(2,2)
+      \pscircle[fillstyle=solid](0,0){1.5}
+      \pscircle[fillstyle=solid, fillcolor=white](0,0){1}
+      \psdots[dotstyle=x](0,0)
+      \rput(0.3;60){$O$}
+    \end{pspicture}
+  \end{minipage}\hfill
+  \begin{minipage}{13cm}
+    On considère deux cercles de centre $O$ et de rayons respectifs
+    $\unit[54]{cm}$ et $\unit[81]{cm}$.\par
+    Calculer l'aire de la couronne circulaire (partie colorée) comprise entre
+    les deux cercles en arrondissant le résultat au $\unit{cm^2}$ le plus
+    proche.
+  \end{minipage}
+
+  \label{LastPage}
+  \newpage
+  \currentpdfbookmark{Le corrigé des
+    exercices}{Corrigé}\lhead{\textsl{\footnotesize{Page \thepage/
+        \pageref{LastCorPage}}}}
+  \setcounter{page}{1} \setcounter{exo}{0}
+
+  \exercice*
+  Effectuer les calculs suivants et donner le résultat sous la forme d'une
+  fraction simplifiée :
+  \begin{multicols}{4}
+    \noindent
+    \[ \thenocalcul = \dfrac{8}{5}-\dfrac{9}{50} \]
+    \[ \thenocalcul = \dfrac{8_{\times 10}}{5_{\times 10}}-\dfrac{9}{50} \]
+    \[ \boxed{\thenocalcul = \dfrac{71}{50}} \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = \dfrac{10}{7}-\dfrac{9}{49} \]
+    \[ \thenocalcul = \dfrac{10_{\times 7}}{7_{\times 7}}-\dfrac{9}{49} \]
+    \[ \boxed{\thenocalcul = \dfrac{61}{49}} \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = \dfrac{9}{8}+\dfrac{5}{32} \]
+    \[ \thenocalcul = \dfrac{9_{\times 4}}{8_{\times 4}}+\dfrac{5}{32} \]
+    \[ \boxed{\thenocalcul = \dfrac{41}{32}} \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = \dfrac{10}{63}+\dfrac{6}{7} \]
+    \[ \thenocalcul = \dfrac{10}{63}+\dfrac{6_{\times 9}}{7_{\times 9}} \]
+    \[ \boxed{\thenocalcul = \dfrac{64}{63}} \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = \dfrac{1}{5}-\dfrac{3}{25} \]
+    \[ \thenocalcul = \dfrac{1_{\times 5}}{5_{\times 5}}-\dfrac{3}{25} \]
+    \[ \boxed{\thenocalcul = \dfrac{2}{25}} \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = \dfrac{4}{15}+\dfrac{1}{3} \]
+    \[ \thenocalcul = \dfrac{4}{15}+\dfrac{1_{\times 5}}{3_{\times 5}} \]
+    \[ \thenocalcul = \dfrac{3_{\times 3}}{5_{\times 3}} \]
+    \[ \boxed{\thenocalcul = \dfrac{3}{5}} \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = \dfrac{3}{100}+\dfrac{1}{10} \]
+    \[ \thenocalcul = \dfrac{3}{100}+\dfrac{1_{\times 10}}{10_{\times 10}} \]
+    \[ \boxed{\thenocalcul = \dfrac{13}{100}} \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = \dfrac{3}{10}-\dfrac{9}{80} \]
+    \[ \thenocalcul = \dfrac{3_{\times 8}}{10_{\times 8}}-\dfrac{9}{80} \]
+    \[ \thenocalcul = \dfrac{3_{\times 5}}{16_{\times 5}} \]
+    \[ \boxed{\thenocalcul = \dfrac{3}{16}} \]
+    \stepcounter{nocalcul}%
+  \end{multicols}
+
+
+  \exercice*
+  Effectuer les calculs suivants et donner le résultat sous la forme d'une
+  fraction simplifiée :
+  \begin{multicols}{4}
+    \noindent%
+    \[\thenocalcul = \dfrac{9}{2} - \dfrac{5}{18}\]
+    \[\thenocalcul = \dfrac{9_{\times 9}}{2_{\times 9}}-\dfrac{5}{18}\]
+    \[\thenocalcul = \dfrac{76}{18}\]
+    \[\thenocalcul = \dfrac{38_{\times 2}}{9_{\times 2}}\]
+    \[\boxed{\thenocalcul = \dfrac{38}{9}}\]
+    \stepcounter{nocalcul}%
+    \[\thenocalcul = 1 + \dfrac{13}{6}\]
+    \[\thenocalcul = \dfrac{1_{\times 6}}{1_{\times 6}}+\dfrac{13}{6}\]
+    \[\boxed{\thenocalcul = \dfrac{19}{6}}\]
+    \stepcounter{nocalcul}%
+    \[\thenocalcul = \dfrac{8}{3} + \dfrac{13}{2}\]
+    \[\thenocalcul = \dfrac{8_{\times 2}}{3_{\times 2}}+\dfrac{13_{\times
+          3}}{2_{\times 3}}\]
+    \[\boxed{\thenocalcul = \dfrac{55}{6}}\]
+    \stepcounter{nocalcul}%
+    \[\thenocalcul = \dfrac{2}{5} - \dfrac{5}{2}\]
+    \[\thenocalcul = \dfrac{2_{\times 2}}{5_{\times 2}}-\dfrac{5_{\times
+          5}}{2_{\times 5}}\]
+    \[\boxed{\thenocalcul = \dfrac{-21}{10}}\]
+    \stepcounter{nocalcul}%
+    \[\thenocalcul = \dfrac{-15}{2} + \dfrac{-14}{5}\]
+    \[\thenocalcul = \dfrac{-15_{\times 5}}{2_{\times 5}}+\dfrac{-14_{\times
+          2}}{5_{\times 2}}\]
+    \[\boxed{\thenocalcul = \dfrac{-103}{10}}\]
+    \stepcounter{nocalcul}%
+    \[\thenocalcul = \dfrac{-3}{4} - \dfrac{8}{3}\]
+    \[\thenocalcul = \dfrac{-3_{\times 3}}{4_{\times 3}}-\dfrac{8_{\times
+          4}}{3_{\times 4}}\]
+    \[\boxed{\thenocalcul = \dfrac{-41}{12}}\]
+    \stepcounter{nocalcul}%
+    \[\thenocalcul = \dfrac{-1}{9} - \dfrac{-7}{6}\]
+    \[\thenocalcul = \dfrac{-1_{\times 2}}{9_{\times 2}}-\dfrac{-7_{\times
+          3}}{6_{\times 3}}\]
+    \[\boxed{\thenocalcul = \dfrac{19}{18}}\]
+    \stepcounter{nocalcul}%
+    \[\thenocalcul = \dfrac{1}{6} + \dfrac{-11}{21}\]
+    \[\thenocalcul = \dfrac{1_{\times 7}}{6_{\times 7}}+\dfrac{-11_{\times
+          2}}{21_{\times 2}}\]
+    \[\thenocalcul = \dfrac{-15}{42}\]
+    \[\thenocalcul = \dfrac{-5_{\times 3}}{14_{\times 3}}\]
+    \[\boxed{\thenocalcul = \dfrac{-5}{14}}\]
+    \stepcounter{nocalcul}%
+  \end{multicols}
+
+
+  \exercice*
+  Effectuer les calculs suivants et donner le résultat sous la forme d'une
+  fraction simplifiée :
+  \begin{multicols}{4}
+    \noindent
+    \[ \thenocalcul = \dfrac{35}{48} \times \dfrac{48}{25} \]
+    \[ \thenocalcul = \dfrac{7 \times \cancel{5}}{1 \times \bcancel{48}} \times
+      \dfrac{1 \times \bcancel{48}}{5 \times \cancel{5}} \]
+    \[ \boxed{\thenocalcul = \dfrac{7}{5}} \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = \dfrac{1}{12} \times \dfrac{8}{3} \]
+    \[ \thenocalcul = \dfrac{1}{3 \times \bcancel{4}} \times \dfrac{2 \times
+        \bcancel{4}}{3} \]
+    \[ \boxed{\thenocalcul = \dfrac{2}{9}} \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = \dfrac{70}{81} \times \dfrac{63}{80} \]
+    \[ \thenocalcul = \dfrac{7 \times \cancel{10}}{9 \times \bcancel{9}} \times
+      \dfrac{7 \times \bcancel{9}}{8 \times \cancel{10}} \]
+    \[ \boxed{\thenocalcul = \dfrac{49}{72}} \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = \dfrac{27}{14} \times \dfrac{35}{81} \]
+    \[ \thenocalcul = \dfrac{1 \times \cancel{27}}{2 \times \bcancel{7}} \times
+      \dfrac{5 \times \bcancel{7}}{3 \times \cancel{27}} \]
+    \[ \boxed{\thenocalcul = \dfrac{5}{6}} \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = \dfrac{20}{81} \times \dfrac{9}{16} \]
+    \[ \thenocalcul = \dfrac{5 \times \cancel{4}}{9 \times \bcancel{9}} \times
+      \dfrac{1 \times \bcancel{9}}{4 \times \cancel{4}} \]
+    \[ \boxed{\thenocalcul = \dfrac{5}{36}} \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = \dfrac{28}{45} \times \dfrac{45}{14} \]
+    \[ \thenocalcul = \dfrac{2 \times \cancel{14}}{1 \times \bcancel{45}}
+      \times \dfrac{1 \times \bcancel{45}}{1 \times \cancel{14}} \]
+    \[ \boxed{\thenocalcul = 2} \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = \dfrac{25}{54} \times \dfrac{9}{10} \]
+    \[ \thenocalcul = \dfrac{5 \times \cancel{5}}{6 \times \bcancel{9}} \times
+      \dfrac{1 \times \bcancel{9}}{2 \times \cancel{5}} \]
+    \[ \boxed{\thenocalcul = \dfrac{5}{12}} \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = \dfrac{49}{90} \times \dfrac{81}{35} \]
+    \[ \thenocalcul = \dfrac{7 \times \cancel{7}}{10 \times \bcancel{9}} \times
+      \dfrac{9 \times \bcancel{9}}{5 \times \cancel{7}} \]
+    \[ \boxed{\thenocalcul = \dfrac{63}{50}} \]
+    \stepcounter{nocalcul}%
+  \end{multicols}
+
+
+  \exercice*
+  Effectuer les calculs suivants et donner le résultat sous la forme d'une
+  fraction simplifiée :
+  \begin{multicols}{4}
+    \noindent
+    \[ \thenocalcul = \dfrac{1}{36} \times \dfrac{6}{7} \]
+    \[ \thenocalcul = \dfrac{1}{6 \times \bcancel{6}} \times \dfrac{1 \times
+        \bcancel{6}}{7} \]
+    \[ \boxed{\thenocalcul = \dfrac{1}{42}} \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = \dfrac{5}{49} \times \dfrac{49}{4} \]
+    \[ \thenocalcul = \dfrac{5}{1 \times \bcancel{49}} \times \dfrac{1 \times
+        \bcancel{49}}{4} \]
+    \[ \boxed{\thenocalcul = \dfrac{5}{4}} \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = \dfrac{16}{45} \times \dfrac{81}{16} \]
+    \[ \thenocalcul = \dfrac{1 \times \cancel{16}}{5 \times \bcancel{9}} \times
+      \dfrac{9 \times \bcancel{9}}{1 \times \cancel{16}} \]
+    \[ \boxed{\thenocalcul = \dfrac{9}{5}} \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = \dfrac{25}{72} \times \dfrac{8}{25} \]
+    \[ \thenocalcul = \dfrac{1 \times \cancel{25}}{9 \times \bcancel{8}} \times
+      \dfrac{1 \times \bcancel{8}}{1 \times \cancel{25}} \]
+    \[ \boxed{\thenocalcul = \dfrac{1}{9}} \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = \dfrac{9}{40} \times \dfrac{40}{21} \]
+    \[ \thenocalcul = \dfrac{3 \times \cancel{3}}{1 \times \bcancel{40}} \times
+      \dfrac{1 \times \bcancel{40}}{7 \times \cancel{3}} \]
+    \[ \boxed{\thenocalcul = \dfrac{3}{7}} \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = \dfrac{9}{8} \times \dfrac{16}{45} \]
+    \[ \thenocalcul = \dfrac{1 \times \cancel{9}}{1 \times \bcancel{8}} \times
+      \dfrac{2 \times \bcancel{8}}{5 \times \cancel{9}} \]
+    \[ \boxed{\thenocalcul = \dfrac{2}{5}} \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = \dfrac{50}{21} \times \dfrac{49}{90} \]
+    \[ \thenocalcul = \dfrac{5 \times \cancel{10}}{3 \times \bcancel{7}} \times
+      \dfrac{7 \times \bcancel{7}}{9 \times \cancel{10}} \]
+    \[ \boxed{\thenocalcul = \dfrac{35}{27}} \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = \dfrac{16}{27} \times \dfrac{3}{64} \]
+    \[ \thenocalcul = \dfrac{1 \times \cancel{16}}{9 \times \bcancel{3}} \times
+      \dfrac{1 \times \bcancel{3}}{4 \times \cancel{16}} \]
+    \[ \boxed{\thenocalcul = \dfrac{1}{36}} \]
+    \stepcounter{nocalcul}%
+  \end{multicols}
+
+
+  \exercice*
+  \begin{minipage}{4cm}
+    \begin{pspicture}(-2,-2)(2,2)
+      \pscircle[fillstyle=solid](0,0){1.5}
+      \pscircle[fillstyle=solid, fillcolor=white](0,0){1}
+      \psdots[dotstyle=x](0,0)
+      \rput(0.3;60){$O$}
+    \end{pspicture}
+  \end{minipage}\hfill
+  \begin{minipage}{13cm}
+    On considère deux cercles de centre $O$ et de rayons respectifs
+    $\unit[8]{cm}$ et $\unit[12]{cm}$.\par
+    Calculer l'aire de la couronne circulaire (partie colorée) comprise entre
+    les deux cercles en arrondissant le résultat au $\unit{cm^2}$ le plus
+    proche.
+    \par\dotfill{}\\
+
+    On calcule l'aire du disque de rayon $\unit[12]{cm}$:
+    \[\pi \times 12^2 = \pi \times 12 \times 12 = \unit[144 \pi]{cm^2}\]
+    On calcule l'aire du disque de rayon $\unit[8]{cm}$:
+    \[ \pi \times 8^2 = \pi \times 8 \times 8 = \unit[64 \pi]{cm^2}\]
+    L'aire $\mathcal{A}$ de la couronne est obtenue en retranchant l'aire du
+    disque de rayon  $\unit[8]{cm}$  à l'aire du disque de rayon 
+    $\unit[12]{cm}$:
+    \[\mathcal{A} = 144 \pi  - 64 \pi= (144 - 64)\pi =\unit[80 \pi]{cm^2}\]
+    L'aire exacte de la couronne est $\unit[80 \pi]{cm^2}$.
+    En prenant 3,14 comme valeur approchée du nombre $\pi$, on obtient :
+    \[\mathcal{A}  \approx 80 \times 3,14\]
+    \[\boxed{\mathcal{A} \approx  \unit[251]{cm^2}}\]
+  \end{minipage}
+
+
+  \exercice*
+  \begin{minipage}{4cm}
+    \begin{pspicture}(-2,-2)(2,2)
+      \pscircle[fillstyle=solid](0,0){1.5}
+      \pscircle[fillstyle=solid, fillcolor=white](0,0){1}
+      \psdots[dotstyle=x](0,0)
+      \rput(0.3;60){$O$}
+    \end{pspicture}
+  \end{minipage}\hfill
+  \begin{minipage}{13cm}
+    On considère deux cercles de centre $O$ et de rayons respectifs
+    $\unit[54]{cm}$ et $\unit[81]{cm}$.\par
+    Calculer l'aire de la couronne circulaire (partie colorée) comprise entre
+    les deux cercles en arrondissant le résultat au $\unit{cm^2}$ le plus
+    proche.
+    \par\dotfill{}\\
+
+    On calcule l'aire du disque de rayon $\unit[81]{cm}$:
+    \[\pi \times 81^2 = \pi \times 81 \times 81 = \unit[6\,561 \pi]{cm^2}\]
+    On calcule l'aire du disque de rayon $\unit[54]{cm}$:
+    \[ \pi \times 54^2 = \pi \times 54 \times 54 = \unit[2\,916 \pi]{cm^2}\]
+    L'aire $\mathcal{A}$ de la couronne est obtenue en retranchant l'aire du
+    disque de rayon  $\unit[54]{cm}$  à l'aire du disque de rayon 
+    $\unit[81]{cm}$:
+    \[\mathcal{A} = 6\,561 \pi  - 2\,916 \pi= (6\,561 - 2\,916)\pi
+      =\unit[3\,645 \pi]{cm^2}\]
+    L'aire exacte de la couronne est $\unit[3\,645 \pi]{cm^2}$.
+    En prenant 3,14 comme valeur approchée du nombre $\pi$, on obtient :
+    \[\mathcal{A}  \approx 3\,645 \times 3,14\]
+    \[\boxed{\mathcal{A} \approx  \unit[11\,445]{cm^2}}\]
+  \end{minipage}
+
+  \label{LastCorPage}
+\end{document}

@@ -1,0 +1,214 @@
+\documentclass[12pt]{article}
+\usepackage{geometry} % Pour passer au format A4
+\geometry{hmargin=1cm, vmargin=1cm} % 
+
+% Page et encodage
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage[english,french]{babel} % Français et anglais
+\usepackage[utf8]{inputenc} 
+
+\usepackage{lmodern}
+\setlength\parindent{0pt}
+
+% Graphiques
+\usepackage{graphicx,float,grffile}
+
+% Maths et divers
+\usepackage{amsmath,amsfonts,amssymb,amsthm,verbatim}
+\usepackage{multicol,enumitem,url,eurosym,gensymb}
+
+% Sections
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{\centering \normalfont\scshape}
+
+% Tête et pied de page
+
+\usepackage{fancyhdr} 
+\pagestyle{fancyplain} 
+
+\fancyhead{} % No page header
+\fancyfoot{}
+
+\renewcommand{\headrulewidth}{0pt} % Remove header underlines
+\renewcommand{\footrulewidth}{0pt} % Remove footer underlines
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+%----------------------------------------------------------------------------------------
+%   Début du document
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+% RE-DEFINITION
+%----------------------------------------------------------------------------------------
+% MATHS
+%-----------
+
+\newtheorem{Definition}{Définition}
+\newtheorem{Theorem}{Théorème}
+\newtheorem{Proposition}{Propriété}
+
+% MATHS
+%-----------
+\renewcommand{\labelitemi}{$\bullet$}
+\renewcommand{\labelitemii}{$\circ$}
+%----------------------------------------------------------------------------------------
+%   Titre
+%----------------------------------------------------------------------------------------
+
+\setlength{\columnseprule}{1pt}
+
+\horrule{2px}
+\section*{Chapitre 5 - Calculer avec des fractions}
+\horrule{2px}
+
+\section*{Comprendre l'heure et l'addition de fractions}
+
+\subsection*{30 minutes}
+
+un quart d'heure plus un quart d'heure égale deux quarts d'heure.
+$$\dfrac{1}{4} + \dfrac{1}{4} = \dfrac{2}{4}$$
+
+un quart d'heure plus un quart d'heure égale une demi-heure.
+$$\dfrac{1}{4} + \dfrac{1}{4} = \dfrac{1}{2}$$
+
+\subsection*{45 minutes}
+
+un quart d'heure plus un quart d'heure plus un quart d'heure égale trois quarts d'heure.
+$$\dfrac{1}{4} + \dfrac{1}{4} + \dfrac{1}{4} = \dfrac{3}{4}$$
+une demi-heure plus un quart d'heure égale trois quarts d'heure.
+$$\dfrac{1}{2} + \dfrac{1}{4} = \dfrac{3}{4}$$
+
+\subsection*{60 minutes}
+
+un quart d'heure plus un quart d'heure plus un quart d'heure égale quatre quarts d'heure.
+$$\dfrac{1}{4} + \dfrac{1}{4} + \dfrac{1}{4} + \dfrac{1}{4}= \dfrac{4}{4}$$
+
+une demi-heure plus une demi-heure égale deux demi-heures.
+$$\dfrac{1}{2} + \dfrac{1}{2} = \dfrac{2}{2}$$
+
+une demi-heure plus une demi-heure égale une heure.
+$$\dfrac{1}{2} + \dfrac{1}{2} = \dfrac{2}{2}$$
+
+\newpage
+\subsection*{On formalise}
+
+Pour additionner des fractions, il faut le même dénominateur. Alors on additionne les numérateurs. 
+
+$$\dfrac{1}{5} + \dfrac{2}{5} = \dfrac{3}{5}$$
+
+Et si on n'a pas les mêmes dénominateurs. Pas le choix, on passe les fractions sur le même dénominateurs. (Fractions égales)
+
+\begin{align*}
+\dfrac{5}{12} + \dfrac{4}{3} &= \dfrac{5}{12} + \dfrac{4 \times 4}{3 \times 4}\\
+							 &= \dfrac{5}{12} + \dfrac{16}{12} \\
+                             &= \dfrac{21}{12}								 
+\end{align*}
+
+
+Parfois, après le résultat, on peut simplifier la fraction.
+
+\begin{align*}
+\dfrac{6}{2} + \dfrac{10}{4} &= \dfrac{12}{4} + \dfrac{10}{4}\\
+							 &= \dfrac{22}{4} \\
+							 &= \dfrac{11}{2}					 
+\end{align*}
+
+
+Et il est même possible que le résultat soit un nombre entier.
+
+\begin{align*}
+\dfrac{5}{3} + \dfrac{4}{3} &= \dfrac{9}{3}\\
+							&= 3			 
+\end{align*}
+
+Parfois on additionne un nombre entier et une fraction.
+
+\begin{align*}
+5 + \dfrac{42}{4} &=  \dfrac{5}{1} + \dfrac{42}{4}\\
+				  &= \dfrac{20}{4} + \dfrac{42}{4}\\
+				  &= \dfrac{62}{4} \\
+				  &= \dfrac{31}{2}					 
+\end{align*}
+
+On peut utiliser la calculatrice, mais il faudra rédiger :
+
+\begin{itemize}
+	\item Le passage au même dénominateur.
+	\item La simplification de fraction.
+\end{itemize}
+
+\newpage
+
+\section*{Comprendre la soustraction de fractions}
+
+La soustraction de fractions se passe exactement pareil que l'addition.
+
+\section*{Comprendre la multiplication de fractions}
+
+Lors d'un partage, on a tendance à dire : \textbf{de, des, du}. Cela signifie \textbf{fois} : $\times$.
+
+
+\subsection*{La fraction d'une quantité}
+
+La moitié des 24 élèves la classe correspond à 12 élèves. 
+$$\dfrac{1}{2} \times 24 = 12$$
+
+
+\subsection*{La fraction d'une fraction}
+
+La moitié des deux sixièmes de la classe est un sixième
+$$\dfrac{1}{2} \times \dfrac{2}{6} = \dfrac{1}{6}$$
+
+\subsection*{On formalise}
+
+Pour multiplier des fractions, on multiplie les numérateurs entre eux et les dénominateurs entre eux.
+
+\begin{align*}
+\dfrac{2}{5} \times \dfrac{4}{3} &= \dfrac{2 \times 4}{5 \times 3}  \\
+								 &= \dfrac{8}{15}								 
+\end{align*}
+
+Parfois on multiplie un nombre entier et une fraction.
+
+\begin{align*}
+5 \times \dfrac{2}{7} &=  \dfrac{5}{1} \times \dfrac{2}{7}\\
+				      &= \dfrac{5 \times 2}{7}\\
+				      &= \dfrac{10}{7} \\			 
+\end{align*}
+
+On peut utiliser la calculatrice, mais il faudra rédiger :
+
+\begin{itemize}
+	\item La multiplication dans la fraction.
+	\item La simplification de fraction.
+\end{itemize}
+
+
+\newpage
+
+\section*{On simplifie}
+
+Il est intéressant dans ce chapitre d'utiliser sa calculatrice, notamment pour vérifier les calculs. Les touches intéressantes sont : 
+
+\begin{itemize}
+	\item Fraction (affichage maths)
+	\item Division (parenthèse)
+	\item Valeur approchée
+\end{itemize}
+
+On remarque que le résultat n'est pas forcément le même que lorsqu'on rédige le calcul. Pourquoi ? Réponse : \textbf{Les fractions égales}.\\
+
+Une calculatrice propose toujours une \textbf{fraction simplifiée}.
+
+Pour simplifier une fraction, on cherche une fraction égale écrit avec des nombres plus petits. On utilise les critières de divisibilités :
+
+\begin{itemize}
+	\item 2 : Les deux nombres se terminent pas un chiffre pair : 0, 2, 4, 6 ou 8
+	\item 3 : La somme des chiffres pour chaque nombre est un multiple de 3. 
+	\item 5 : Les deux nombres se terminent pas un chiffre pair : 0 ou 5
+\end{itemize}
+
+\end{document}

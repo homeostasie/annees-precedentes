@@ -1,0 +1,532 @@
+%%!TEX TS-program = latex
+\documentclass[a4paper,11pt]{article}
+\usepackage[utf8]{inputenc} % UTF-8
+\usepackage[T1]{fontenc}
+\usepackage[frenchb]{babel} % francisation
+\usepackage[fleqn]{amsmath} % aligne le mode maths à gauche
+\usepackage{amssymb} % the amsfont symbols
+\usepackage[table, usenames, svgnames]{xcolor} % Couleurs
+\usepackage{multicol} % Multi-colonnes
+\usepackage{fancyhdr} % Mise en page, en-tête et pied de page
+\usepackage{calc} % Opérations
+\usepackage{marvosym} % Martin Vogels Symbole (\EUR)
+\usepackage{cancel} % draw diagonal lines
+\usepackage{units} % typesetting units and nice fractions
+\usepackage[autolanguage]{numprint} % écrituredes virgules
+\usepackage{tabularx} % creates a paragraph-like column whose width
+% automatically expands
+\usepackage{wrapfig} % allows figures or tables to have text wrapped around
+\usepackage{pst-eucl, pst-plot} % figures géométriques
+\usepackage{wasysym} % Symbole Euro
+%\usepackage{textcomp}
+\input{/usr/share/pyromaths/packages/tabvar.tex}
+
+\usepackage[a4paper, dvips, left=1.5cm, right=1.5cm, top=2cm,%
+bottom=2cm, marginpar=5mm, marginparsep=5pt]{geometry}
+\newcounter{exo}
+\setlength{\headheight}{18pt}
+\setlength{\fboxsep}{1em}
+\setlength\parindent{0em}
+\setlength\mathindent{0em}
+\setlength{\columnsep}{30pt}
+\usepackage[bookmarks=true, bookmarksnumbered=true, ps2pdf, pagebackref=true,%
+colorlinks=true,linkcolor=blue,plainpages=true]{hyperref}
+\hypersetup{pdfauthor={Jérôme Ortais},pdfsubject={Exercices de
+    mathématiques},pdftitle={Exercices créés par Pyromaths, un logiciel libre
+    en Python sous licence GPL}}
+\makeatletter
+\newcommand\styleexo[1][]{
+  \renewcommand{\theenumi}{\arabic{enumi}}
+  \renewcommand{\labelenumi}{$\blacktriangleright$\textbf{\theenumi.}}
+  \renewcommand{\theenumii}{\alph{enumii}}
+  \renewcommand{\labelenumii}{\textbf{\theenumii)}}
+  {\fontfamily{pag}\fontseries{b}\selectfont \underline{#1 \theexo}}
+  \par\@afterheading\vspace{0.5\baselineskip minus 0.2\baselineskip}}
+\newcommand*\exercice{%
+  \psset{unit=1cm, dash=4pt 4pt, PointName=default,linecolor=Maroon,
+    dotstyle=x, linestyle=solid, hatchcolor=Peru, gridcolor=Olive,
+    subgridcolor=Olive, fillcolor=Peru}
+  %\ifthenelse{\equal{\theexo}{0}}{}{\filbreak}
+  \refstepcounter{exo}%
+  \stepcounter{nocalcul}%
+  \par\addvspace{1.5\baselineskip minus 1\baselineskip}%
+  \@ifstar%
+  {\penalty-130\styleexo[Corrigé de l'exercice]}%
+  {\penalty-130\styleexo[Exercice]}%
+  }
+\makeatother
+\newlength{\ltxt}
+\newcounter{fig}
+\newcommand{\figureadroite}[2]{
+  \setlength{\ltxt}{\linewidth}
+  \setbox\thefig=\hbox{#1}
+  \addtolength{\ltxt}{-\wd\thefig}
+  \addtolength{\ltxt}{-10pt}
+  \begin{minipage}{\ltxt}
+    #2
+  \end{minipage}
+  \hfill
+  \begin{minipage}{\wd\thefig}
+    #1
+  \end{minipage}
+  \refstepcounter{fig}
+  }
+\count1=\year \count2=\year
+\ifnum\month<8\advance\count1by-1\else\advance\count2by1\fi
+\pagestyle{fancy}
+\cfoot{\textsl{\footnotesize{Année \number\count1/\number\count2}}}
+\rfoot{\textsl{\tiny{http://www.pyromaths.org}}}
+\lhead{\textsl{\footnotesize{Page \thepage/ \pageref{LastPage}}}}
+\chead{\Large{\textsc{Fiche de révisions}}}
+\rhead{\textsl{\footnotesize{Classe de 5\ieme}}}
+\DecimalMathComma
+\begin{document}
+  \currentpdfbookmark{Les énoncés des exercices}{Énoncés}
+  \newcounter{nocalcul}[exo]
+  \renewcommand{\thenocalcul}{\Alph{nocalcul}}
+  \raggedcolumns
+  \setlength{\columnseprule}{0.5pt}
+
+  \exercice 
+  Cocher les bonnes réponses :\par
+  \begin{tabular}{c@{ est divisible : \kern1cm}r@{ par 2\kern1cm}r@{ par
+        3\kern1cm}r@{ par 5\kern1cm}r@{ par 9\kern1cm}r@{ par 10}}
+    400 & $\square$ & $\square$ & $\square$ & $\square$ & $\square$ \\
+    154 & $\square$ & $\square$ & $\square$ & $\square$ & $\square$ \\
+    700 & $\square$ & $\square$ & $\square$ & $\square$ & $\square$ \\
+    531 & $\square$ & $\square$ & $\square$ & $\square$ & $\square$ \\
+    210 & $\square$ & $\square$ & $\square$ & $\square$ & $\square$ \\
+  \end{tabular}
+
+  \exercice
+  Cocher les bonnes réponses :\par
+  \begin{tabular}{c@{ est divisible : \kern1cm}r@{ par 2\kern1cm}r@{ par
+        3\kern1cm}r@{ par 5\kern1cm}r@{ par 9\kern1cm}r@{ par 10}}
+    720 & $\square$ & $\square$ & $\square$ & $\square$ & $\square$ \\
+    540 & $\square$ & $\square$ & $\square$ & $\square$ & $\square$ \\
+    48 & $\square$ & $\square$ & $\square$ & $\square$ & $\square$ \\
+    124 & $\square$ & $\square$ & $\square$ & $\square$ & $\square$ \\
+    210 & $\square$ & $\square$ & $\square$ & $\square$ & $\square$ \\
+  \end{tabular}
+
+  \exercice
+  \begin{multicols}{3}\noindent
+    \begin{enumerate}
+    \item $\cfrac{\ldots}{100}=47{,}8$
+    \item $\cfrac{52\,190}{1\,000}=\ldots$
+    \item $\cfrac{\ldots}{10\,000}=3{,}097$
+    \item $\cfrac{\ldots}{1\,000}=99{,}71$
+    \item $\cfrac{\ldots}{1\,000}=7{,}08$
+    \item $\cfrac{4\,706}{10}=\ldots$
+    \end{enumerate}
+  \end{multicols}
+
+  \exercice
+  \begin{multicols}{3}\noindent
+    \begin{enumerate}
+    \item $\cfrac{\ldots}{100}=29{,}4$
+    \item $\cfrac{5\,448}{10}=\ldots$
+    \item $\cfrac{1\,143}{\ldots}=11{,}43$
+    \item $\cfrac{\ldots}{10}=139{,}5$
+    \item $\cfrac{\ldots}{10\,000}=1{,}366$
+    \item $\cfrac{19\,380}{\ldots}=193{,}8$
+    \end{enumerate}
+  \end{multicols}
+
+  \exercice
+  Compléter avec un nombre décimal :
+  \begin{multicols}{2}\noindent
+    \begin{enumerate}
+    \item $7\times 100 + 7\times \cfrac{1}{10} + 7\times \cfrac{1}{100} =
+      \dotfill$
+    \item $2\times 1\,000 + 2\times 1 + 9\times \cfrac{1}{1\,000} = \dotfill$
+    \item $1\times \cfrac{1}{1\,000} + 8\times \cfrac{1}{10} + 8\times 10 =
+      \dotfill$
+    \item $9\times 1 + 7\times \cfrac{1}{10} + 4\times 100 = \dotfill$
+    \item $1\times \cfrac{1}{100} + 4\times 10 + 7\times 100 = \dotfill$
+    \item $3\times 1\,000 + 1\times \cfrac{1}{100} + 8\times \cfrac{1}{10} =
+      \dotfill$
+    \end{enumerate}
+  \end{multicols}
+
+  \exercice
+  Compléter avec un nombre décimal :
+  \begin{multicols}{2}\noindent
+    \begin{enumerate}
+    \item $8\times 10 + 8\times 1 + 5\times \cfrac{1}{1\,000} = \dotfill$
+    \item $2\times \cfrac{1}{1\,000} + 3\times 1 + 2\times 1\,000 = \dotfill$
+    \item $5\times 10 + 7\times \cfrac{1}{1\,000} + 5\times \cfrac{1}{100} =
+      \dotfill$
+    \item $5\times 1 + 9\times \cfrac{1}{100} + 4\times 10 = \dotfill$
+    \item $4\times 1\,000 + 6\times 10 + 3\times 100 = \dotfill$
+    \item $8\times \cfrac{1}{1\,000} + 4\times 10 + 7\times \cfrac{1}{10} =
+      \dotfill$
+    \end{enumerate}
+  \end{multicols}
+
+  \exercice
+  \begin{multicols}{2}
+    \begin{enumerate}
+    \item Colorer $\frac{3}{5}$ de ce rectangle.\par
+      \psset{unit=4mm}
+      \begin{pspicture}(16,5)
+        \psgrid[gridcolor=Olive,subgriddiv=0,gridlabels=0pt]
+        \psframe[linewidth=1.5\pslinewidth,linecolor=Maroon](0,0)(7,5)
+      \end{pspicture}
+    \item Colorer $\frac{5}{3}$ de ce rectangle.\par
+      \psset{unit=4mm}
+      \begin{pspicture}(16,5)
+        \psgrid[gridcolor=Olive,subgriddiv=0,gridlabels=0pt]
+        \psframe[linewidth=1.5\pslinewidth,linecolor=Maroon](0,0)(6,5)
+      \end{pspicture}
+      \columnbreak
+    \item Colorer $\frac{3}{6}$ de ce rectangle.\par
+      \psset{unit=4mm}
+      \begin{pspicture}(16,6)
+        \psgrid[gridcolor=Olive,subgriddiv=0,gridlabels=0pt]
+        \psframe[linewidth=1.5\pslinewidth,linecolor=Maroon](0,0)(6,6)
+      \end{pspicture}
+    \item Colorer $\frac{10}{10}$ de ce rectangle.\par
+      \psset{unit=4mm}
+      \begin{pspicture}(16,4)
+        \psgrid[gridcolor=Olive,subgriddiv=0,gridlabels=0pt]
+        \psframe[linewidth=1.5\pslinewidth,linecolor=Maroon](0,0)(5,4)
+      \end{pspicture}
+    \end{enumerate}
+  \end{multicols}
+
+  \exercice
+  \begin{multicols}{2}
+    \begin{enumerate}
+    \item Colorer $\frac{3}{10}$ de ce rectangle.\par
+      \psset{unit=4mm}
+      \begin{pspicture}(16,4)
+        \psgrid[gridcolor=Olive,subgriddiv=0,gridlabels=0pt]
+        \psframe[linewidth=1.5\pslinewidth,linecolor=Maroon](0,0)(5,4)
+      \end{pspicture}
+    \item Colorer $\frac{4}{4}$ de ce rectangle.\par
+      \psset{unit=4mm}
+      \begin{pspicture}(16,4)
+        \psgrid[gridcolor=Olive,subgriddiv=0,gridlabels=0pt]
+        \psframe[linewidth=1.5\pslinewidth,linecolor=Maroon](0,0)(7,4)
+      \end{pspicture}
+      \columnbreak
+    \item Colorer $\frac{8}{6}$ de ce rectangle.\par
+      \psset{unit=4mm}
+      \begin{pspicture}(16,4)
+        \psgrid[gridcolor=Olive,subgriddiv=0,gridlabels=0pt]
+        \psframe[linewidth=1.5\pslinewidth,linecolor=Maroon](0,0)(6,4)
+      \end{pspicture}
+    \item Colorer $\frac{5}{6}$ de ce rectangle.\par
+      \psset{unit=4mm}
+      \begin{pspicture}(16,5)
+        \psgrid[gridcolor=Olive,subgriddiv=0,gridlabels=0pt]
+        \psframe[linewidth=1.5\pslinewidth,linecolor=Maroon](0,0)(6,5)
+      \end{pspicture}
+    \end{enumerate}
+  \end{multicols}
+
+  \exercice
+  Effectuer sans calculatrice :
+  \begin{multicols}{4}\noindent
+    \begin{enumerate}
+    \item $3 \times 2 = \ldots\ldots$
+    \item $\ldots\ldots \times 7 = 28$
+    \item $12 \div 3 = \ldots\ldots$
+    \item $\ldots\ldots + 3 = 4$
+    \item $8 \times 8 = \ldots\ldots$
+    \item $3 \times \ldots\ldots = 15$
+    \item $\ldots\ldots - 2 = 7$
+    \item $10 - \ldots\ldots = 8$
+    \item $40 \div 10 = \ldots\ldots$
+    \item $18 \div 2 = \ldots\ldots$
+    \item $10 \times 7 = \ldots\ldots$
+    \item $\ldots\ldots + 8 = 11$
+    \item $10 + \ldots\ldots = 19$
+    \item $5 + \ldots\ldots = 11$
+    \item $6 \div 2 = \ldots\ldots$
+    \item $\ldots\ldots - 5 = 4$
+    \item $10 + 5 = \ldots\ldots$
+    \item $\ldots\ldots \div 1 = 8$
+    \item $11 - \ldots\ldots = 2$
+    \item $7 - 3 = \ldots\ldots$
+    \end{enumerate}
+  \end{multicols}
+
+  \exercice
+  Effectuer sans calculatrice :
+  \begin{multicols}{4}\noindent
+    \begin{enumerate}
+    \item $5 \times 3 = \ldots\ldots$
+    \item $2 + 6 = \ldots\ldots$
+    \item $4 \times 10 = \ldots\ldots$
+    \item $15 - 7 = \ldots\ldots$
+    \item $2 + 5 = \ldots\ldots$
+    \item $\ldots\ldots \div 1 = 10$
+    \item $11 - 3 = \ldots\ldots$
+    \item $7 \times \ldots\ldots = 70$
+    \item $\ldots\ldots - 5 = 1$
+    \item $\ldots\ldots \div 2 = 2$
+    \item $10 \times 6 = \ldots\ldots$
+    \item $10 + \ldots\ldots = 17$
+    \item $9 - 3 = \ldots\ldots$
+    \item $60 \div 10 = \ldots\ldots$
+    \item $11 - 5 = \ldots\ldots$
+    \item $\ldots\ldots \times 1 = 8$
+    \item $\ldots\ldots + 5 = 11$
+    \item $54 \div 6 = \ldots\ldots$
+    \item $40 \div \ldots\ldots = 8$
+    \item $9 + \ldots\ldots = 19$
+    \end{enumerate}
+  \end{multicols}
+  \label{LastPage}
+  \newpage
+  \currentpdfbookmark{Le corrigé des
+    exercices}{Corrigé}\lhead{\textsl{\footnotesize{Page \thepage/
+        \pageref{LastCorPage}}}}
+  \setcounter{page}{1} \setcounter{exo}{0}
+
+  \exercice*
+  Cocher les bonnes réponses :\par
+  \begin{tabular}{c@{ est divisible : \kern1cm}r@{ par 2\kern1cm}r@{ par
+        3\kern1cm}r@{ par 5\kern1cm}r@{ par 9\kern1cm}r@{ par 10}}
+    400 & $\CheckedBox$ & $\Square$ & $\CheckedBox$ & $\Square$ & $\CheckedBox$
+    \\
+    154 & $\CheckedBox$ & $\Square$ & $\Square$ & $\Square$ & $\Square$ \\
+    700 & $\CheckedBox$ & $\Square$ & $\CheckedBox$ & $\Square$ & $\CheckedBox$
+    \\
+    531 & $\Square$ & $\CheckedBox$ & $\Square$ & $\CheckedBox$ & $\Square$ \\
+    210 & $\CheckedBox$ & $\CheckedBox$ & $\CheckedBox$ & $\Square$ &
+    $\CheckedBox$ \\
+  \end{tabular}
+
+  \exercice*
+  Cocher les bonnes réponses :\par
+  \begin{tabular}{c@{ est divisible : \kern1cm}r@{ par 2\kern1cm}r@{ par
+        3\kern1cm}r@{ par 5\kern1cm}r@{ par 9\kern1cm}r@{ par 10}}
+    720 & $\CheckedBox$ & $\CheckedBox$ & $\CheckedBox$ & $\CheckedBox$ &
+    $\CheckedBox$ \\
+    540 & $\CheckedBox$ & $\CheckedBox$ & $\CheckedBox$ & $\CheckedBox$ &
+    $\CheckedBox$ \\
+    48 & $\CheckedBox$ & $\CheckedBox$ & $\Square$ & $\Square$ & $\Square$ \\
+    124 & $\CheckedBox$ & $\Square$ & $\Square$ & $\Square$ & $\Square$ \\
+    210 & $\CheckedBox$ & $\CheckedBox$ & $\CheckedBox$ & $\Square$ &
+    $\CheckedBox$ \\
+  \end{tabular}
+
+  \exercice*
+  Compléter :
+  \begin{multicols}{3}\noindent
+    \begin{enumerate}
+    \item $\cfrac{\mathbf{4\,780}}{100}=47{,}8$
+    \item $\cfrac{52\,190}{1\,000}=\mathbf{52{,}19}$
+    \item $\cfrac{\mathbf{30\,970}}{10\,000}=3{,}097$
+    \item $\cfrac{\mathbf{99\,710}}{1\,000}=99{,}71$
+    \item $\cfrac{\mathbf{7\,080}}{1\,000}=7{,}08$
+    \item $\cfrac{4\,706}{10}=\mathbf{470{,}6}$
+    \end{enumerate}
+  \end{multicols}
+
+  \exercice*
+  Compléter :
+  \begin{multicols}{3}\noindent
+    \begin{enumerate}
+    \item $\cfrac{\mathbf{2\,940}}{100}=29{,}4$
+    \item $\cfrac{5\,448}{10}=\mathbf{544{,}8}$
+    \item $\cfrac{1\,143}{\mathbf{100}}=11{,}43$
+    \item $\cfrac{\mathbf{1\,395}}{10}=139{,}5$
+    \item $\cfrac{\mathbf{13\,660}}{10\,000}=1{,}366$
+    \item $\cfrac{19\,380}{\mathbf{100}}=193{,}8$
+    \end{enumerate}
+  \end{multicols}
+
+  \exercice*
+  Compléter avec un nombre décimal :
+  \begin{multicols}{2}\noindent
+    \begin{enumerate}
+    \item $7\times 100 + 7\times \cfrac{1}{10} + 7\times \cfrac{1}{100} =
+      700{,}77$
+    \item $2\times 1\,000 + 2\times 1 + 9\times \cfrac{1}{1\,000} =
+      2\,002{,}009$
+    \item $1\times \cfrac{1}{1\,000} + 8\times \cfrac{1}{10} + 8\times 10 =
+      80{,}801$
+    \item $9\times 1 + 7\times \cfrac{1}{10} + 4\times 100 = 409{,}7$
+    \item $1\times \cfrac{1}{100} + 4\times 10 + 7\times 100 = 740{,}01$
+    \item $3\times 1\,000 + 1\times \cfrac{1}{100} + 8\times \cfrac{1}{10} =
+      3\,000{,}81$
+    \end{enumerate}
+  \end{multicols}
+\newpage
+  \exercice*
+  Compléter avec un nombre décimal :
+  \begin{multicols}{2}\noindent
+    \begin{enumerate}
+    \item $8\times 10 + 8\times 1 + 5\times \cfrac{1}{1\,000} = 88{,}005$
+    \item $2\times \cfrac{1}{1\,000} + 3\times 1 + 2\times 1\,000 =
+      2\,003{,}002$
+    \item $5\times 10 + 7\times \cfrac{1}{1\,000} + 5\times \cfrac{1}{100} =
+      50{,}057$
+    \item $5\times 1 + 9\times \cfrac{1}{100} + 4\times 10 = 45{,}09$
+    \item $4\times 1\,000 + 6\times 10 + 3\times 100 = 4\,360$
+    \item $8\times \cfrac{1}{1\,000} + 4\times 10 + 7\times \cfrac{1}{10} =
+      40{,}708$
+    \end{enumerate}
+  \end{multicols}
+
+  \exercice*
+  \begin{multicols}{2}
+    \begin{enumerate}
+    \item Colorer $\frac{3}{5}$ de ce rectangle.\par
+      \psset{unit=4mm}
+      \begin{pspicture}(16,5)
+        \psframe[fillstyle=solid](0,0)(7,1)
+        \psframe[fillstyle=solid](0,1)(7,2)
+        \psframe[fillstyle=solid](0,2)(7,3)
+        \psgrid[gridcolor=Olive,subgriddiv=0,gridlabels=0pt]
+        \psframe[linewidth=1.5\pslinewidth,linecolor=Maroon](0,0)(7,5)
+        \multips(0,1)(0,1){4}{\psline[linecolor=Maroon](0,0)(7,0)}
+      \end{pspicture}
+    \item Colorer $\frac{5}{3}$ de ce rectangle.\par
+      \psset{unit=4mm}
+      \begin{pspicture}(16,5)
+        \psframe[fillstyle=solid](0,0)(2,5)
+        \psframe[fillstyle=solid](2,0)(4,5)
+        \psframe[fillstyle=solid](4,0)(6,5)
+        \rput(7,0){\psframe[fillstyle=solid](0,0)(2,5)}
+        \rput(7,0){\psframe[fillstyle=solid](2,0)(4,5)}
+        \psgrid[gridcolor=Olive,subgriddiv=0,gridlabels=0pt]
+        \psframe[linewidth=1.5\pslinewidth,linecolor=Maroon](0,0)(6,5)
+        \psframe[linewidth=1.5\pslinewidth,linecolor=Maroon](7,0)(13,5)
+        \multips(2,0)(2,0){2}{\psline[linecolor=Maroon](0,0)(0,5)}
+        \rput(7,0){\multips(2,0)(2,0){2}{\psline[linecolor=Maroon](0,0)(0,5)}}
+      \end{pspicture}
+      \columnbreak
+    \item Colorer $\frac{3}{6}$ de ce rectangle.\par
+      \psset{unit=4mm}
+      \begin{pspicture}(16,6)
+        \psframe[fillstyle=solid](0,0)(1,6)
+        \psframe[fillstyle=solid](1,0)(2,6)
+        \psframe[fillstyle=solid](2,0)(3,6)
+        \psgrid[gridcolor=Olive,subgriddiv=0,gridlabels=0pt]
+        \psframe[linewidth=1.5\pslinewidth,linecolor=Maroon](0,0)(6,6)
+        \multips(1,0)(1,0){5}{\psline[linecolor=Maroon](0,0)(0,6)}
+      \end{pspicture}
+    \item Colorer $\frac{10}{10}$ de ce rectangle.\par
+      \psset{unit=4mm}
+      \begin{pspicture}(16,4)
+        \psframe[fillstyle=solid](0,0)(5,4)
+        \psgrid[gridcolor=Olive,subgriddiv=0,gridlabels=0pt]
+        \psframe[linewidth=1.5\pslinewidth,linecolor=Maroon](0,0)(5,4)
+      \end{pspicture}
+    \end{enumerate}
+  \end{multicols}
+
+  \exercice*
+  \begin{multicols}{2}
+    \begin{enumerate}
+    \item Colorer $\frac{3}{10}$ de ce rectangle.\par
+      \psset{unit=4mm}
+      \begin{pspicture}(16,4)
+        \psframe[fillstyle=solid](0,0)(1,2)
+        \psframe[fillstyle=solid](1,0)(2,2)
+        \psframe[fillstyle=solid](2,0)(3,2)
+        \psgrid[gridcolor=Olive,subgriddiv=0,gridlabels=0pt]
+        \psframe[linewidth=1.5\pslinewidth,linecolor=Maroon](0,0)(5,4)
+        \multips(1,0)(1,0){4}{\psline[linecolor=Maroon](0,0)(0,4)}
+        \multips(0,2)(0,2){1}{\psline[linecolor=Maroon](0,0)(5,0)}
+      \end{pspicture}
+    \item Colorer $\frac{4}{4}$ de ce rectangle.\par
+      \psset{unit=4mm}
+      \begin{pspicture}(16,4)
+        \psframe[fillstyle=solid](0,0)(7,4)
+        \psgrid[gridcolor=Olive,subgriddiv=0,gridlabels=0pt]
+        \psframe[linewidth=1.5\pslinewidth,linecolor=Maroon](0,0)(7,4)
+      \end{pspicture}
+      \columnbreak
+    \item Colorer $\frac{8}{6}$ de ce rectangle.\par
+      \psset{unit=4mm}
+      \begin{pspicture}(16,4)
+        \psframe[fillstyle=solid](0,0)(1,4)
+        \psframe[fillstyle=solid](1,0)(2,4)
+        \psframe[fillstyle=solid](2,0)(3,4)
+        \psframe[fillstyle=solid](3,0)(4,4)
+        \psframe[fillstyle=solid](4,0)(5,4)
+        \psframe[fillstyle=solid](5,0)(6,4)
+        \rput(7,0){\psframe[fillstyle=solid](0,0)(1,4)}
+        \rput(7,0){\psframe[fillstyle=solid](1,0)(2,4)}
+        \psgrid[gridcolor=Olive,subgriddiv=0,gridlabels=0pt]
+        \psframe[linewidth=1.5\pslinewidth,linecolor=Maroon](0,0)(6,4)
+        \psframe[linewidth=1.5\pslinewidth,linecolor=Maroon](7,0)(13,4)
+        \multips(1,0)(1,0){5}{\psline[linecolor=Maroon](0,0)(0,4)}
+        \rput(7,0){\multips(1,0)(1,0){5}{\psline[linecolor=Maroon](0,0)(0,4)}}
+      \end{pspicture}
+    \item Colorer $\frac{5}{6}$ de ce rectangle.\par
+      \psset{unit=4mm}
+      \begin{pspicture}(16,5)
+        \psframe[fillstyle=solid](0,0)(1,5)
+        \psframe[fillstyle=solid](1,0)(2,5)
+        \psframe[fillstyle=solid](2,0)(3,5)
+        \psframe[fillstyle=solid](3,0)(4,5)
+        \psframe[fillstyle=solid](4,0)(5,5)
+        \psgrid[gridcolor=Olive,subgriddiv=0,gridlabels=0pt]
+        \psframe[linewidth=1.5\pslinewidth,linecolor=Maroon](0,0)(6,5)
+        \multips(1,0)(1,0){5}{\psline[linecolor=Maroon](0,0)(0,5)}
+      \end{pspicture}
+    \end{enumerate}
+  \end{multicols}
+
+  \exercice*
+  Effectuer sans calculatrice :
+  \begin{multicols}{4}\noindent
+    \begin{enumerate}
+    \item $3 \times 2 = \mathbf{6}$
+    \item $\mathbf{4} \times 7 = 28$
+    \item $12 \div 3 = \mathbf{4}$
+    \item $\mathbf{1} + 3 = 4$
+    \item $8 \times 8 = \mathbf{64}$
+    \item $3 \times \mathbf{5} = 15$
+    \item $\mathbf{9} - 2 = 7$
+    \item $10 - \mathbf{2} = 8$
+    \item $40 \div 10 = \mathbf{4}$
+    \item $18 \div 2 = \mathbf{9}$
+    \item $10 \times 7 = \mathbf{70}$
+    \item $\mathbf{3} + 8 = 11$
+    \item $10 + \mathbf{9} = 19$
+    \item $5 + \mathbf{6} = 11$
+    \item $6 \div 2 = \mathbf{3}$
+    \item $\mathbf{9} - 5 = 4$
+    \item $10 + 5 = \mathbf{15}$
+    \item $\mathbf{8} \div 1 = 8$
+    \item $11 - \mathbf{9} = 2$
+    \item $7 - 3 = \mathbf{4}$
+    \end{enumerate}
+  \end{multicols}
+\newpage
+  \exercice*
+  Effectuer sans calculatrice :
+  \begin{multicols}{4}\noindent
+    \begin{enumerate}
+    \item $5 \times 3 = \mathbf{15}$
+    \item $2 + 6 = \mathbf{8}$
+    \item $4 \times 10 = \mathbf{40}$
+    \item $15 - 7 = \mathbf{8}$
+    \item $2 + 5 = \mathbf{7}$
+    \item $\mathbf{10} \div 1 = 10$
+    \item $11 - 3 = \mathbf{8}$
+    \item $7 \times \mathbf{10} = 70$
+    \item $\mathbf{6} - 5 = 1$
+    \item $\mathbf{4} \div 2 = 2$
+    \item $10 \times 6 = \mathbf{60}$
+    \item $10 + \mathbf{7} = 17$
+    \item $9 - 3 = \mathbf{6}$
+    \item $60 \div 10 = \mathbf{6}$
+    \item $11 - 5 = \mathbf{6}$
+    \item $\mathbf{8} \times 1 = 8$
+    \item $\mathbf{6} + 5 = 11$
+    \item $54 \div 6 = \mathbf{9}$
+    \item $40 \div \mathbf{5} = 8$
+    \item $9 + \mathbf{10} = 19$
+    \end{enumerate}
+  \end{multicols}
+  \label{LastCorPage}
+\end{document}

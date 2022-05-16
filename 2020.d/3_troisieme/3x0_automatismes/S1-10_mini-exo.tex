@@ -1,0 +1,562 @@
+%%!TEX TS-program = latex
+\documentclass[a4paper,11pt]{article}
+\usepackage[utf8]{inputenc} % UTF-8
+\usepackage[T1]{fontenc}
+\usepackage[frenchb]{babel} % francisation
+\usepackage[fleqn]{amsmath} % aligne le mode maths à gauche
+\usepackage{amssymb} % the amsfont symbols
+\usepackage[table, usenames, svgnames]{xcolor} % Couleurs
+\usepackage{multicol} % Multi-colonnes
+\usepackage{fancyhdr} % Mise en page, en-tête et pied de page
+\usepackage{calc} % Opérations
+\usepackage{marvosym} % Martin Vogels Symbole (\EUR)
+\usepackage{cancel} % draw diagonal lines
+\usepackage{units} % typesetting units and nice fractions
+\usepackage[autolanguage]{numprint} % écrituredes virgules
+\usepackage{tabularx} % creates a paragraph-like column whose width
+% automatically expands
+\usepackage{wrapfig} % allows figures or tables to have text wrapped around
+\usepackage{pst-eucl, pst-plot} % figures géométriques
+\usepackage{wasysym} % Symbole Euro
+%\usepackage{textcomp}
+\input{/usr/share/pyromaths/packages/tabvar.tex}
+
+\usepackage[a4paper, dvips, left=1.5cm, right=1.5cm, top=2cm,%
+bottom=2cm, marginpar=5mm, marginparsep=5pt]{geometry}
+\newcounter{exo}
+\setlength{\headheight}{18pt}
+\setlength{\fboxsep}{1em}
+\setlength\parindent{0em}
+\setlength\mathindent{0em}
+\setlength{\columnsep}{30pt}
+\usepackage[bookmarks=true, bookmarksnumbered=true, ps2pdf, pagebackref=true,%
+colorlinks=true,linkcolor=blue,plainpages=true]{hyperref}
+\hypersetup{pdfauthor={Jérôme Ortais},pdfsubject={Exercices de
+    mathématiques},pdftitle={Exercices créés par Pyromaths, un logiciel libre
+    en Python sous licence GPL}}
+\makeatletter
+\newcommand\styleexo[1][]{
+  \renewcommand{\theenumi}{\arabic{enumi}}
+  \renewcommand{\labelenumi}{$\blacktriangleright$\textbf{\theenumi.}}
+  \renewcommand{\theenumii}{\alph{enumii}}
+  \renewcommand{\labelenumii}{\textbf{\theenumii)}}
+  {\fontfamily{pag}\fontseries{b}\selectfont \underline{#1 \theexo}}
+  \par\@afterheading\vspace{0.5\baselineskip minus 0.2\baselineskip}}
+\newcommand*\exercice{%
+  \psset{unit=1cm, dash=4pt 4pt, PointName=default,linecolor=Maroon,
+    dotstyle=x, linestyle=solid, hatchcolor=Peru, gridcolor=Olive,
+    subgridcolor=Olive, fillcolor=Peru}
+  %\ifthenelse{\equal{\theexo}{0}}{}{\filbreak}
+  \refstepcounter{exo}%
+  \stepcounter{nocalcul}%
+  \par\addvspace{1.5\baselineskip minus 1\baselineskip}%
+  \@ifstar%
+  {\penalty-130\styleexo[Corrigé de l'exercice]}%
+  {\penalty-130\styleexo[Exercice]}%
+  }
+\makeatother
+\newlength{\ltxt}
+\newcounter{fig}
+\newcommand{\figureadroite}[2]{
+  \setlength{\ltxt}{\linewidth}
+  \setbox\thefig=\hbox{#1}
+  \addtolength{\ltxt}{-\wd\thefig}
+  \addtolength{\ltxt}{-10pt}
+  \begin{minipage}{\ltxt}
+    #2
+  \end{minipage}
+  \hfill
+  \begin{minipage}{\wd\thefig}
+    #1
+  \end{minipage}
+  \refstepcounter{fig}
+  }
+\count1=\year \count2=\year
+\ifnum\month<8\advance\count1by-1\else\advance\count2by1\fi
+\pagestyle{fancy}
+\cfoot{\textsl{\footnotesize{Année \number\count1/\number\count2}}}
+\rfoot{\textsl{\tiny{http://www.pyromaths.org}}}
+\lhead{\textsl{\footnotesize{Page \thepage/ \pageref{LastPage}}}}
+\chead{\Large{\textsc{Fiche de révisions}}}
+\rhead{\textsl{\footnotesize{Classe de 3\ieme}}}
+\DecimalMathComma
+\begin{document}
+  \currentpdfbookmark{Les énoncés des exercices}{Énoncés}
+  \newcounter{nocalcul}[exo]
+  \renewcommand{\thenocalcul}{\Alph{nocalcul}}
+  \raggedcolumns
+  \setlength{\columnseprule}{0.5pt}
+
+  \exercice
+  Compléter :
+  \begin{multicols}{4}
+    \begin{enumerate}
+    \item $\dfrac{5}{7}=\dfrac{\ldots}{42}$
+    \item $\dfrac{81}{36}=\dfrac{9}{\ldots}$
+    \item $\dfrac{6}{3}=\dfrac{\ldots}{30}$
+    \item $\dfrac{\ldots}{56}=\dfrac{6}{8}$
+    \item $\dfrac{63}{81}=\dfrac{7}{\ldots}$
+    \item $\dfrac{9}{\ldots}=\dfrac{72}{16}$
+    \item $\dfrac{\ldots}{4}=\dfrac{6}{8}$
+    \item $\dfrac{1}{3}=\dfrac{\ldots}{6}$
+    \end{enumerate}
+  \end{multicols}
+
+
+  \exercice
+  Compléter :
+  \begin{multicols}{4}
+    \begin{enumerate}
+    \item $\dfrac{20}{40}=\dfrac{\ldots}{10}$
+    \item $\dfrac{4}{\ldots}=\dfrac{32}{48}$
+    \item $\dfrac{32}{28}=\dfrac{8}{\ldots}$
+    \item $\dfrac{\ldots}{9}=\dfrac{12}{36}$
+    \item $\dfrac{3}{8}=\dfrac{9}{\ldots}$
+    \item $\dfrac{\ldots}{2}=\dfrac{90}{20}$
+    \item $\dfrac{14}{18}=\dfrac{7}{\ldots}$
+    \item $\dfrac{54}{\ldots}=\dfrac{6}{7}$
+    \end{enumerate}
+  \end{multicols}
+
+
+  \exercice
+  Effectuer les calculs suivants et donner le résultat sous la forme d'une
+  fraction simplifiée :
+  \begin{multicols}{4}
+    \noindent%
+    \[\thenocalcul = \dfrac{1}{2} - \dfrac{13}{20}\]
+    \stepcounter{nocalcul}%
+    \[\thenocalcul = \dfrac{12}{35} + \dfrac{14}{5}\]
+    \stepcounter{nocalcul}%
+    \[\thenocalcul = \dfrac{13}{3} + \dfrac{4}{5}\]
+    \stepcounter{nocalcul}%
+    \[\thenocalcul = \dfrac{3}{4} - \dfrac{11}{3}\]
+    \stepcounter{nocalcul}%
+    \[\thenocalcul = \dfrac{-11}{3} + \dfrac{5}{4}\]
+    \stepcounter{nocalcul}%
+    \[\thenocalcul = \dfrac{-2}{5} - \dfrac{-10}{3}\]
+    \stepcounter{nocalcul}%
+    \[\thenocalcul = \dfrac{-2}{21} - \dfrac{-8}{35}\]
+    \stepcounter{nocalcul}%
+    \[\thenocalcul = \dfrac{-8}{15} + \dfrac{7}{12}\]
+    \stepcounter{nocalcul}%
+  \end{multicols}
+
+
+  \exercice
+  Effectuer les calculs suivants et donner le résultat sous la forme d'une
+  fraction simplifiée :
+  \begin{multicols}{4}
+    \noindent%
+    \[\thenocalcul = 14 + \dfrac{13}{10}\]
+    \stepcounter{nocalcul}%
+    \[\thenocalcul = \dfrac{1}{12} - \dfrac{4}{3}\]
+    \stepcounter{nocalcul}%
+    \[\thenocalcul = \dfrac{5}{9} - \dfrac{9}{2}\]
+    \stepcounter{nocalcul}%
+    \[\thenocalcul = \dfrac{6}{7} + \dfrac{1}{2}\]
+    \stepcounter{nocalcul}%
+    \[\thenocalcul = \dfrac{-7}{2} + \dfrac{-7}{5}\]
+    \stepcounter{nocalcul}%
+    \[\thenocalcul = \dfrac{3}{2} - \dfrac{-2}{9}\]
+    \stepcounter{nocalcul}%
+    \[\thenocalcul = \dfrac{3}{14} + \dfrac{-1}{21}\]
+    \stepcounter{nocalcul}%
+    \[\thenocalcul = \dfrac{-10}{9} - \dfrac{1}{6}\]
+    \stepcounter{nocalcul}%
+  \end{multicols}
+
+
+  \exercice
+  Écrire sous la forme d'une puissance de 10 puis donner l'écriture
+  décimale de ces nombres :
+  \begin{multicols}{2}
+    \noindent%
+    \begin{enumerate}
+    \item $10^{-5} \times 10^{0} = \dotfill$
+    \item $10^{3} \times 10^{-4} = \dotfill$
+    \item $(10^{5})^{2}=\dotfill$
+    \item $(10^{-5})^{2}=\dotfill$
+    \item $\dfrac{10^{0}}{10^{1}}=\dotfill$
+    \item $\dfrac{10^{1}}{10^{2}}=\dotfill$
+    \end{enumerate}
+  \end{multicols}
+
+
+  \exercice
+  Écrire sous la forme d'une puissance de 10 puis donner l'écriture
+  décimale de ces nombres :
+  \begin{multicols}{2}
+    \noindent%
+    \begin{enumerate}
+    \item $\dfrac{10^{-4}}{10^{-4}}=\dotfill$
+    \item $10^{5} \times 10^{-1} = \dotfill$
+    \item $(10^{2})^{-3}=\dotfill$
+    \item $10^{-6} \times 10^{-2} = \dotfill$
+    \item $\dfrac{10^{-6}}{10^{3}}=\dotfill$
+    \item $(10^{2})^{-2}=\dotfill$
+    \end{enumerate}
+  \end{multicols}
+
+\newpage
+  \exercice
+  Calculer les expressions suivantes et donner l'écriture scientifique du
+  résultat.
+  \begin{multicols}{2}
+    \noindent%
+    \[ \thenocalcul = \cfrac{\nombre{500} \times 10^{7} \times \nombre{810}
+        \times 10^{2}}{\nombre{2,25} \times \big( 10^{9} \big) ^4} \]
+    \columnbreak\stepcounter{nocalcul}%
+    \[ \thenocalcul = \cfrac{\nombre{300} \times 10^{-5} \times \nombre{1800}
+        \times 10^{-8}}{\nombre{3,6} \times \big( 10^{-10} \big) ^2} \]
+  \end{multicols}
+
+
+  \exercice
+  Calculer les expressions suivantes et donner l'écriture scientifique du
+  résultat.
+  \begin{multicols}{2}
+    \noindent%
+    \[ \thenocalcul = \cfrac{\nombre{640} \times 10^{8} \times \nombre{1,4}
+        \times 10^{-5}}{\nombre{1,12} \times \big( 10^{-10} \big) ^2} \]
+    \columnbreak\stepcounter{nocalcul}%
+    \[ \thenocalcul = \cfrac{\nombre{28} \times 10^{5} \times \nombre{0,8}
+        \times 10^{7}}{\nombre{280} \times \big( 10^{3} \big) ^4} \]
+  \end{multicols}
+
+
+  \exercice
+  Effectuer sans calculatrice :
+  \begin{multicols}{3}\noindent
+    \begin{enumerate}
+    \item $-56 \div \left( -7\right) = \ldots\ldots$
+    \item $4 \div \left( -1\right) = \ldots\ldots$
+    \item $3 \times \left( -5\right) = \ldots\ldots$
+    \item $-54 \div 6 = \ldots\ldots$
+    \item $-3 - \ldots\ldots = -9$
+    \item $9 \div \ldots\ldots = 1$
+    \item $\ldots\ldots \times 9 = 72$
+    \item $7 \times \left( -5\right) = \ldots\ldots$
+    \item $\ldots\ldots - \left( -5\right) = 5$
+    \item $10 \times \left( -9\right) = \ldots\ldots$
+    \item $3 + \left( -3\right) = \ldots\ldots$
+    \item $56 \div 7 = \ldots\ldots$
+    \item $\ldots\ldots + 4 = -5$
+    \item $-5 + \ldots\ldots = -11$
+    \item $9 + \ldots\ldots = 4$
+    \item $-2 - 1 = \ldots\ldots$
+    \item $-13 - \ldots\ldots = -10$
+    \item $1 + \ldots\ldots = -2$
+    \item $-8 \times \ldots\ldots = -48$
+    \item $2 - \left( -7\right) = \ldots\ldots$
+    \end{enumerate}
+  \end{multicols}
+
+  \exercice
+  Effectuer sans calculatrice :
+  \begin{multicols}{3}\noindent
+    \begin{enumerate}
+    \item $32 \div \ldots\ldots = -8$
+    \item $-3 + \left( -8\right) = \ldots\ldots$
+    \item $\ldots\ldots + \left( -6\right) = -13$
+    \item $\ldots\ldots \div 1 = -4$
+    \item $-12 - \left( -9\right) = \ldots\ldots$
+    \item $-6 \times \left( -1\right) = \ldots\ldots$
+    \item $11 - \ldots\ldots = 5$
+    \item $\ldots\ldots \times \left( -7\right) = -42$
+    \item $\ldots\ldots - 9 = 1$
+    \item $-3 + \ldots\ldots = -2$
+    \item $\ldots\ldots + \left( -8\right) = -10$
+    \item $-9 - \ldots\ldots = -5$
+    \item $-9 \div \ldots\ldots = 1$
+    \item $-10 - \left( -7\right) = \ldots\ldots$
+    \item $-20 \div \ldots\ldots = -4$
+    \item $80 \div \ldots\ldots = -10$
+    \item $-5 \times \left( -5\right) = \ldots\ldots$
+    \item $6 \times \left( -10\right) = \ldots\ldots$
+    \item $\ldots\ldots \times \left( -9\right) = -45$
+    \item $-9 + \ldots\ldots = -10$
+    \end{enumerate}
+  \end{multicols}
+  \label{LastPage}
+  \newpage
+  \currentpdfbookmark{Le corrigé des
+    exercices}{Corrigé}\lhead{\textsl{\footnotesize{Page \thepage/
+        \pageref{LastCorPage}}}}
+  \setcounter{page}{1} \setcounter{exo}{0}
+
+  \exercice*
+  Compléter :
+  \begin{multicols}{4}
+    \begin{enumerate}
+    \item $\dfrac{5_{(\times 6)}}{7_{(\times 6)}}=\dfrac{\mathbf{30}}{42}$
+    \item $\dfrac{81}{36}=\dfrac{9_{(\times 9)}}{\mathbf{4}_{(\times 9)}}$
+    \item $\dfrac{6_{(\times 10)}}{3_{(\times 10)}}=\dfrac{\mathbf{60}}{30}$
+    \item $\dfrac{\mathbf{42}}{56}=\dfrac{6_{(\times 7)}}{8_{(\times 7)}}$
+    \item $\dfrac{63}{81}=\dfrac{7_{(\times 9)}}{\mathbf{9}_{(\times 9)}}$
+    \item $\dfrac{9_{(\times 8)}}{\mathbf{2}_{(\times 8)}}=\dfrac{72}{16}$
+    \item $\dfrac{\mathbf{3}_{(\times 2)}}{4_{(\times 2)}}=\dfrac{6}{8}$
+    \item $\dfrac{1_{(\times 2)}}{3_{(\times 2)}}=\dfrac{\mathbf{2}}{6}$
+    \end{enumerate}
+  \end{multicols}
+
+
+  \exercice*
+  Compléter :
+  \begin{multicols}{4}
+    \begin{enumerate}
+    \item $\dfrac{20}{40}=\dfrac{\mathbf{5}_{(\times 4)}}{10_{(\times 4)}}$
+    \item $\dfrac{4_{(\times 8)}}{\mathbf{6}_{(\times 8)}}=\dfrac{32}{48}$
+    \item $\dfrac{32}{28}=\dfrac{8_{(\times 4)}}{\mathbf{7}_{(\times 4)}}$
+    \item $\dfrac{\mathbf{3}_{(\times 4)}}{9_{(\times 4)}}=\dfrac{12}{36}$
+    \item $\dfrac{3_{(\times 3)}}{8_{(\times 3)}}=\dfrac{9}{\mathbf{24}}$
+    \item $\dfrac{\mathbf{9}_{(\times 10)}}{2_{(\times 10)}}=\dfrac{90}{20}$
+    \item $\dfrac{14}{18}=\dfrac{7_{(\times 2)}}{\mathbf{9}_{(\times 2)}}$
+    \item $\dfrac{54}{\mathbf{63}}=\dfrac{6_{(\times 9)}}{7_{(\times 9)}}$
+    \end{enumerate}
+  \end{multicols}
+
+
+  \exercice*
+  Effectuer les calculs suivants et donner le résultat sous la forme d'une
+  fraction simplifiée :
+  \begin{multicols}{4}
+    \noindent%
+    \[\thenocalcul = \dfrac{1}{2} - \dfrac{13}{20}\]
+    \[\thenocalcul = \dfrac{1_{\times 10}}{2_{\times 10}}-\dfrac{13}{20}\]
+    \[\boxed{\thenocalcul = \dfrac{-3}{20}}\]
+    \stepcounter{nocalcul}%
+    \[\thenocalcul = \dfrac{12}{35} + \dfrac{14}{5}\]
+    \[\thenocalcul = \dfrac{12}{35}+\dfrac{14_{\times 7}}{5_{\times 7}}\]
+    \[\thenocalcul = \dfrac{110}{35}\]
+    \[\thenocalcul = \dfrac{22_{\times 5}}{7_{\times 5}}\]
+    \[\boxed{\thenocalcul = \dfrac{22}{7}}\]
+    \stepcounter{nocalcul}%
+    \[\thenocalcul = \dfrac{13}{3} + \dfrac{4}{5}\]
+    \[\thenocalcul = \dfrac{13_{\times 5}}{3_{\times 5}}+\dfrac{4_{\times
+          3}}{5_{\times 3}}\]
+    \[\boxed{\thenocalcul = \dfrac{77}{15}}\]
+    \stepcounter{nocalcul}%
+    \[\thenocalcul = \dfrac{3}{4} - \dfrac{11}{3}\]
+    \[\thenocalcul = \dfrac{3_{\times 3}}{4_{\times 3}}-\dfrac{11_{\times
+          4}}{3_{\times 4}}\]
+    \[\boxed{\thenocalcul = \dfrac{-35}{12}}\]
+    \stepcounter{nocalcul}%
+    \[\thenocalcul = \dfrac{-11}{3} + \dfrac{5}{4}\]
+    \[\thenocalcul = \dfrac{-11_{\times 4}}{3_{\times 4}}+\dfrac{5_{\times
+          3}}{4_{\times 3}}\]
+    \[\boxed{\thenocalcul = \dfrac{-29}{12}}\]
+    \stepcounter{nocalcul}%
+    \[\thenocalcul = \dfrac{-2}{5} - \dfrac{-10}{3}\]
+    \[\thenocalcul = \dfrac{-2_{\times 3}}{5_{\times 3}}-\dfrac{-10_{\times
+          5}}{3_{\times 5}}\]
+    \[\boxed{\thenocalcul = \dfrac{44}{15}}\]
+    \stepcounter{nocalcul}%
+    \[\thenocalcul = \dfrac{-2}{21} - \dfrac{-8}{35}\]
+    \[\thenocalcul = \dfrac{-2_{\times 5}}{21_{\times 5}}-\dfrac{-8_{\times
+          3}}{35_{\times 3}}\]
+    \[\thenocalcul = \dfrac{14}{105}\]
+    \[\thenocalcul = \dfrac{2_{\times 7}}{15_{\times 7}}\]
+    \[\boxed{\thenocalcul = \dfrac{2}{15}}\]
+    \stepcounter{nocalcul}%
+    \[\thenocalcul = \dfrac{-8}{15} + \dfrac{7}{12}\]
+    \[\thenocalcul = \dfrac{-8_{\times 4}}{15_{\times 4}}+\dfrac{7_{\times
+          5}}{12_{\times 5}}\]
+    \[\thenocalcul = \dfrac{3}{60}\]
+    \[\thenocalcul = \dfrac{1_{\times 3}}{20_{\times 3}}\]
+    \[\boxed{\thenocalcul = \dfrac{1}{20}}\]
+    \stepcounter{nocalcul}%
+  \end{multicols}
+
+\newpage
+  \exercice*
+  Effectuer les calculs suivants et donner le résultat sous la forme d'une
+  fraction simplifiée :
+  \begin{multicols}{4}
+    \noindent%
+    \[\thenocalcul = 14 + \dfrac{13}{10}\]
+    \[\thenocalcul = \dfrac{14_{\times 10}}{1_{\times 10}}+\dfrac{13}{10}\]
+    \[\boxed{\thenocalcul = \dfrac{153}{10}}\]
+    \stepcounter{nocalcul}%
+    \[\thenocalcul = \dfrac{1}{12} - \dfrac{4}{3}\]
+    \[\thenocalcul = \dfrac{1}{12}-\dfrac{4_{\times 4}}{3_{\times 4}}\]
+    \[\thenocalcul = \dfrac{-15}{12}\]
+    \[\thenocalcul = \dfrac{-5_{\times 3}}{4_{\times 3}}\]
+    \[\boxed{\thenocalcul = \dfrac{-5}{4}}\]
+    \stepcounter{nocalcul}%
+    \[\thenocalcul = \dfrac{5}{9} - \dfrac{9}{2}\]
+    \[\thenocalcul = \dfrac{5_{\times 2}}{9_{\times 2}}-\dfrac{9_{\times
+          9}}{2_{\times 9}}\]
+    \[\boxed{\thenocalcul = \dfrac{-71}{18}}\]
+    \stepcounter{nocalcul}%
+    \[\thenocalcul = \dfrac{6}{7} + \dfrac{1}{2}\]
+    \[\thenocalcul = \dfrac{6_{\times 2}}{7_{\times 2}}+\dfrac{1_{\times
+          7}}{2_{\times 7}}\]
+    \[\boxed{\thenocalcul = \dfrac{19}{14}}\]
+    \stepcounter{nocalcul}%
+    \[\thenocalcul = \dfrac{-7}{2} + \dfrac{-7}{5}\]
+    \[\thenocalcul = \dfrac{-7_{\times 5}}{2_{\times 5}}+\dfrac{-7_{\times
+          2}}{5_{\times 2}}\]
+    \[\boxed{\thenocalcul = \dfrac{-49}{10}}\]
+    \stepcounter{nocalcul}%
+    \[\thenocalcul = \dfrac{3}{2} - \dfrac{-2}{9}\]
+    \[\thenocalcul = \dfrac{3_{\times 9}}{2_{\times 9}}-\dfrac{-2_{\times
+          2}}{9_{\times 2}}\]
+    \[\boxed{\thenocalcul = \dfrac{31}{18}}\]
+    \stepcounter{nocalcul}%
+    \[\thenocalcul = \dfrac{3}{14} + \dfrac{-1}{21}\]
+    \[\thenocalcul = \dfrac{3_{\times 3}}{14_{\times 3}}+\dfrac{-1_{\times
+          2}}{21_{\times 2}}\]
+    \[\thenocalcul = \dfrac{7}{42}\]
+    \[\thenocalcul = \dfrac{1_{\times 7}}{6_{\times 7}}\]
+    \[\boxed{\thenocalcul = \dfrac{1}{6}}\]
+    \stepcounter{nocalcul}%
+    \[\thenocalcul = \dfrac{-10}{9} - \dfrac{1}{6}\]
+    \[\thenocalcul = \dfrac{-10_{\times 2}}{9_{\times 2}}-\dfrac{1_{\times
+          3}}{6_{\times 3}}\]
+    \[\boxed{\thenocalcul = \dfrac{-23}{18}}\]
+    \stepcounter{nocalcul}%
+  \end{multicols}
+
+
+  \exercice*
+  Écrire sous la forme d'une puissance de 10 puis donner l'écriture
+  décimale de ces nombres :
+  \begin{multicols}{2}
+    \noindent%
+    \begin{enumerate}
+    \item $10^{-5}\times 10^{0}=
+      10^{-5+}=
+      10^{-5}=0{,}000\,01$
+    \item $10^{3}\times 10^{-4}=
+      10^{3+\left( -4\right)}=
+      10^{-1}=0{,}1$
+    \item $(10^{5})^{2}=
+      10^{5 \times 2}=
+      10^{10}=10\,000\,000\,000$
+    \item $(10^{-5})^{2}=
+      10^{-5 \times 2}=
+      10^{-10}=0{,}000\,000\,000\,1$
+    \item $\dfrac{10^{0}}{10^{1}}=
+      10^{0-1}=
+      10^{-1}=0{,}1$
+    \item $\dfrac{10^{1}}{10^{2}}=
+      10^{1-2}=
+      10^{-1}=0{,}1$
+    \end{enumerate}
+  \end{multicols}
+
+
+  \exercice*
+  Écrire sous la forme d'une puissance de 10 puis donner l'écriture
+  décimale de ces nombres :
+  \begin{multicols}{2}
+    \noindent%
+    \begin{enumerate}
+    \item $\dfrac{10^{-4}}{10^{-4}}=
+      10^{-4-\left( -4\right)}=
+      10^{0}=1$
+    \item $10^{5}\times 10^{-1}=
+      10^{5+\left( -1\right)}=
+      10^{4}=10\,000$
+    \item $(10^{2})^{-3}=
+      10^{2 \times \left( -3\right)}=
+      10^{-6}=0{,}000\,001$
+    \item $10^{-6}\times 10^{-2}=
+      10^{-6+\left( -2\right)}=
+      10^{-8}=0{,}000\,000\,01$
+    \item $\dfrac{10^{-6}}{10^{3}}=
+      10^{-6-3}=
+      10^{-9}=0{,}000\,000\,001$
+    \item $(10^{2})^{-2}=
+      10^{2 \times \left( -2\right)}=
+      10^{-4}=0{,}000\,1$
+    \end{enumerate}
+  \end{multicols}
+\newpage
+
+  \exercice*
+  Calculer les expressions suivantes et donner l'écriture scientifique du
+  résultat.
+  \begin{multicols}{2}
+    \noindent%
+    \[ \thenocalcul = \cfrac{\nombre{500} \times 10^{7} \times \nombre{810}
+        \times 10^{2}}{\nombre{2,25} \times \big( 10^{9} \big) ^4} \]
+        \[ \boxed{\thenocalcul = \nombre{1,8}  \times 10^{-22}} \]
+    \columnbreak\stepcounter{nocalcul}%
+    \[ \thenocalcul = \cfrac{\nombre{300} \times 10^{-5} \times \nombre{1800}
+        \times 10^{-8}}{\nombre{3,6} \times \big( 10^{-10} \big) ^2} \]
+        \[ \boxed{\thenocalcul = \nombre{1,5}  \times 10^{12}} \]
+  \end{multicols}
+
+
+  \exercice*
+  Calculer les expressions suivantes et donner l'écriture scientifique du
+  résultat.
+  \begin{multicols}{2}
+    \noindent%
+    \[ \thenocalcul = \cfrac{\nombre{640} \times 10^{8} \times \nombre{1,4}
+        \times 10^{-5}}{\nombre{1,12} \times \big( 10^{-10} \big) ^2} \]
+    \[ \boxed{\thenocalcul = \nombre{8}  \times 10^{25}} \]
+    \columnbreak\stepcounter{nocalcul}%
+    \[ \thenocalcul = \cfrac{\nombre{28} \times 10^{5} \times \nombre{0,8}
+        \times 10^{7}}{\nombre{280} \times \big( 10^{3} \big) ^4} \]
+    \[ \boxed{\thenocalcul = \nombre{8}  \times 10^{-2}} \]
+  \end{multicols}
+
+
+  \exercice
+  Effectuer sans calculatrice :
+  \begin{multicols}{3}\noindent
+    \begin{enumerate}
+    \item $-56 \div \left( -7\right) = \mathbf{8}$
+    \item $4 \div \left( -1\right) = \mathbf{-4}$
+    \item $3 \times \left( -5\right) = \mathbf{-15}$
+    \item $-54 \div 6 = \mathbf{-9}$
+    \item $-3 - \mathbf{6} = -9$
+    \item $9 \div \mathbf{9} = 1$
+    \item $\mathbf{8} \times 9 = 72$
+    \item $7 \times \left( -5\right) = \mathbf{-35}$
+    \item $\mathbf{0} - \left( -5\right) = 5$
+    \item $10 \times \left( -9\right) = \mathbf{-90}$
+    \item $3 + \left( -3\right) = \mathbf{0}$
+    \item $56 \div 7 = \mathbf{8}$
+    \item $\mathbf{-9} + 4 = -5$
+    \item $-5 + \mathbf{\left( -6\right)} = -11$
+    \item $9 + \mathbf{\left( -5\right)} = 4$
+    \item $-2 - 1 = \mathbf{-3}$
+    \item $-13 - \mathbf{\left( -3\right)} = -10$
+    \item $1 + \mathbf{\left( -3\right)} = -2$
+    \item $-8 \times \mathbf{6} = -48$
+    \item $2 - \left( -7\right) = \mathbf{9}$
+    \end{enumerate}
+  \end{multicols}
+
+  \exercice
+  Effectuer sans calculatrice :
+  \begin{multicols}{3}\noindent
+    \begin{enumerate}
+    \item $32 \div \mathbf{\left( -4\right)} = -8$
+    \item $-3 + \left( -8\right) = \mathbf{-11}$
+    \item $\mathbf{-7} + \left( -6\right) = -13$
+    \item $\mathbf{-4} \div 1 = -4$
+    \item $-12 - \left( -9\right) = \mathbf{-3}$
+    \item $-6 \times \left( -1\right) = \mathbf{6}$
+    \item $11 - \mathbf{6} = 5$
+    \item $\mathbf{6} \times \left( -7\right) = -42$
+    \item $\mathbf{10} - 9 = 1$
+    \item $-3 + \mathbf{1} = -2$
+    \item $\mathbf{-2} + \left( -8\right) = -10$
+    \item $-9 - \mathbf{\left( -4\right)} = -5$
+    \item $-9 \div \mathbf{\left( -9\right)} = 1$
+    \item $-10 - \left( -7\right) = \mathbf{-3}$
+    \item $-20 \div \mathbf{5} = -4$
+    \item $80 \div \mathbf{\left( -8\right)} = -10$
+    \item $-5 \times \left( -5\right) = \mathbf{25}$
+    \item $6 \times \left( -10\right) = \mathbf{-60}$
+    \item $\mathbf{5} \times \left( -9\right) = -45$
+    \item $-9 + \mathbf{\left( -1\right)} = -10$
+    \end{enumerate}
+  \end{multicols}
+  \label{LastCorPage}
+\end{document}

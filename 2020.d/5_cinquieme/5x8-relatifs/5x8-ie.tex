@@ -1,0 +1,279 @@
+%%!TEX TS-program = latex
+\documentclass[a4paper,11pt]{article}
+\usepackage[utf8]{inputenc} % UTF-8
+\usepackage[T1]{fontenc}
+\usepackage{lmodern} % Prévient un bug d'affichage evince lié à [T1]{fontenc}
+\usepackage[frenchb]{babel} % francisation
+\usepackage{adjustbox}
+\usepackage[fleqn]{amsmath} % aligne le mode maths à gauche
+\usepackage{amssymb} % the amsfont symbols
+\usepackage[table, usenames, svgnames]{xcolor} % Couleurs
+\usepackage{multicol} % Multi-colonnes
+\usepackage{fancyhdr} % Mise en page, en-tête et pied de page
+\usepackage{calc} % Opérations
+\usepackage{marvosym} % Martin Vogels Symbole (\EUR)
+\usepackage{cancel} % draw diagonal lines
+\usepackage{units} % typesetting units and nice fractions
+\usepackage[autolanguage]{numprint} % écrituredes virgules
+\usepackage{tabularx} % creates a paragraph-like column whose width
+                          % automatically expands
+\usepackage{wrapfig} % allows figures or tables to have text wrapped around
+\usepackage{pst-eucl, pst-plot} % figures géométriques
+\usepackage{enumitem}
+\usepackage{interval}
+\usepackage{wasysym} % Symbole Euro
+\usepackage{mathtools} % Encadrement dans align*
+\usepackage[inline]{asymptote}
+\usepackage{tkz-tab}
+\usetikzlibrary{external} % set up externalization
+\tikzexternalize[shell escape=-enable-write18] % activate externalisation
+\tikzset{%
+  external/system call={%
+    latex \tikzexternalcheckshellescape -halt-on-error
+    -interaction=batchmode -jobname "\image" "\texsource" &&
+    dvips -o "\image".ps "\image".dvi &&
+    ps2eps -f "\image.ps"
+  }
+}
+\intervalconfig{ separator symbol={\,;\,}}
+
+%\usepackage{textcomp}
+
+\usepackage[a4paper, dvips, left=1cm, right=1cm, top=1cm,%
+  bottom=1cm, marginpar=5mm, marginparsep=5pt]{geometry}
+\newcounter{exo}
+\frenchbsetup{StandardItemLabels} % remet \textbullet pour les listes
+\setlength{\headheight}{18pt}
+\setlength{\fboxsep}{5pt}
+\setlength\parindent{0em}
+\setlength\mathindent{0em}
+\setlength{\columnsep}{30pt}
+\usepackage[bookmarks=true, bookmarksnumbered=true, ps2pdf, pagebackref=true,%
+            colorlinks=true,linkcolor=blue,plainpages=true,unicode]{hyperref}
+\hypersetup{pdfauthor={Jérôme Ortais},pdfsubject={Exercices de
+    mathématiques},pdftitle={Exercices créés par Pyromaths, un logiciel libre
+    en Python sous licence GPL}}
+
+\def\pshlabel#1{\psframebox*[fillcolor=White,framearc=.2]{\footnotesize $#1$}}
+\def\psvlabel#1{\psframebox*[fillcolor=White,framearc=.2]{\footnotesize $#1$}}
+
+\makeatletter
+\newcommand\styleexo[1][]{
+  \renewcommand{\theenumi}{\arabic{enumi}}
+  \renewcommand{\labelenumi}{$\blacktriangleright$\textbf{\theenumi.}}
+  \renewcommand{\theenumii}{\alph{enumii}}
+  \renewcommand{\labelenumii}{\textbf{\theenumii)}}
+  {\fontfamily{pag}\fontseries{b}\selectfont \underline{#1 \theexo}}
+  \par\@afterheading\vspace{0.5\baselineskip minus 0.2\baselineskip}}
+\newcommand*\exercice{%
+  \psset{unit=1cm, dash=4pt 4pt, PointName=default,linecolor=Maroon,
+    dotstyle=x, linestyle=solid, hatchcolor=Peru, gridcolor=Olive,
+    subgridcolor=Olive, fillcolor=Peru}
+  %\ifthenelse{\equal{\theexo}{0}}{}{\filbreak}
+  \refstepcounter{exo}%
+  \stepcounter{nocalcul}%
+  \par\addvspace{1.5\baselineskip minus 1\baselineskip}%
+  \@ifstar%
+  {\penalty-130\styleexo[Corrigé de l'exercice]}%
+  {\penalty-130\styleexo[Exercice]}%
+  }
+\newcommand{\checkedbox}[0]{\makebox[0pt][l]{$\square$}\raisebox{.15ex}{\hspace{0pt}$\checkmark$}}
+\makeatother
+\newlength{\ltxt}
+\newsavebox{\mybox}
+\newlength{\wdofmybox}
+\newcommand{\figureadroite}[2]{%
+  \setlength{\ltxt}{\linewidth}
+  \sbox{\mybox}{\hbox{#1}}
+  \settowidth{\wdofmybox}{\usebox{\mybox}}
+  \addtolength{\ltxt}{-\wdofmybox}
+  \addtolength{\ltxt}{-10pt}
+  \begin{minipage}{\ltxt}
+    #2
+  \end{minipage}
+  \hfill
+  \begin{minipage}{\wdofmybox}
+    #1
+  \end{minipage}
+}
+
+\usepackage{fancyhdr} 
+\pagestyle{fancyplain} 
+
+\fancyhead{} % No page header
+\fancyfoot{}
+
+\renewcommand{\headrulewidth}{0pt} % Remove header underlines
+\renewcommand{\footrulewidth}{0pt} % Remove footer underlines
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+\newcommand{\Pointilles}[1][3]{%
+  \multido{}{#1}{\makebox[\linewidth]{\dotfill}\\[\parskip]
+}}
+
+
+
+\begin{document}
+
+\textbf{Nom, Prénom :} \hspace{8cm} \textbf{Classe :} \hspace{3cm} \textbf{Date :}\\
+
+\begin{center}
+  \textit{Les propositions mathématiques sont reçues comme vraies parce que personne n'a intérêt qu'elles soient fausses.}  - \textbf{Montesquieu}
+\end{center}
+
+\subsection*{Ex1 - Cours}
+
+\begin{enumerate}
+  \item[1.] Donner la définition d'opposé. \\
+  \Pointilles[2]
+  \item[2.] Donner la définition de la soustraction d'un nombre.\\
+  \Pointilles[2]
+\end{enumerate}
+
+\subsection*{Ex2 - Transformation soustraction en addition}
+
+Transformer les soustractions en des additions sans changer le résultat.
+
+\begin{multicols}{2}\noindent
+  \begin{enumerate}
+    \item[a.] $4 - 6 = \dotfill$
+    \item[b.] $-4 - 6 = \dotfill$
+    \item[c.] $4 - (-6) = \dotfill$
+    \item[d.] $-4 - (-6) = \dotfill$    
+    \item[e.] $14 - 5 = \dotfill$
+    \item[f.] $-14 - 5 = \dotfill$    
+    \item[g.] $14 - (-5) = \dotfill$
+    \item[h.] $-14 - (-5) = \dotfill$    
+
+  \end{enumerate}
+\end{multicols}
+
+\subsection*{Ex3 - Calculs relatifs}
+
+\begin{multicols}{3}\noindent
+  \begin{enumerate}
+    \item[a.] $4 + \ldots\ldots\ldots = 6$
+    \item[b.] $6 + \left( -1\right) = \ldots\ldots\ldots$
+    \item[c.] $\ldots\ldots\ldots + 7 = 11$
+    \item[d.] $2 + \ldots\ldots\ldots = -8$
+    \item[e.] $-6 + 2 = \ldots\ldots\ldots$
+    \item[f.] $\ldots\ldots\ldots + 9 = 7$
+    \item[g.] $6 + \left( -1\right) = \ldots\ldots\ldots$
+    \item[h.] $-7 + \ldots\ldots\ldots = -11$
+    \item[i.] $\ldots\ldots\ldots - \left( -5\right) = -1$
+    \item[j.] $\ldots\ldots\ldots + \left( -10\right) = -8$
+    \item[k.] $\ldots\ldots\ldots + \left( -6\right) = -11$
+    \item[l.] $4 + 10 = \ldots\ldots\ldots$
+    \item[m.] $-18 - \left( -10\right) = \ldots\ldots\ldots$
+    \item[n.] $7 - \left( -1\right) = \ldots\ldots\ldots$
+    \item[o.] $\ldots\ldots\ldots + \left( -8,1\right) = -8,6$
+    \item[p.] $5,4 + \ldots\ldots\ldots = 9$
+    \item[q.] $-11,6 - \left( -3,6\right) = \ldots\ldots\ldots$
+    \item[r.] $-11,6 - \left( -8\right) = \ldots\ldots\ldots$
+    \item[s.] $-7,4 - \ldots\ldots\ldots = -2,4$
+    \item[t.] $14,4 - \ldots\ldots\ldots = 6,7$
+  \end{enumerate}
+\end{multicols}
+
+\subsection*{Ex4 - Repérage}
+
+\parbox{0.4\linewidth}{
+\begin{enumerate}
+  \item Donner les coordonnées des points A, B, F, G, J et K.\\
+  \Pointilles[3]
+  \item Placer dans le repère les points M, S, T, V, W et Y de coordonnées respectives \hbox{$(4{,}5~;~0)$}, \hbox{$(2{,}5~;~1{,}5)$}, \hbox{$(0~;~-2)$}, \hbox{$(-1~;~-0{,}5)$}, \hbox{$(-4~;~2{,}5)$} et \hbox{$(2{,}5~;~-1{,}5)$}. 
+  \item Placer dans le repère le point Z d'ordonnée -1,5 et d'abscisse 1,5
+\end{enumerate}}\hfill 
+\parbox{0.55\linewidth}{
+\psset{unit=0.8cm}
+\begin{pspicture}(-4.95,-4.95)(4.95,4.95)
+  \psgrid[subgriddiv=2, subgridcolor=lightgray, gridlabels=8pt](0,0)(-5,-5)(5,5)
+  \psline[linewidth=1.2pt]{->}(-5,0)(5,0)
+  \psline[linewidth=1.2pt]{->}(0,-5)(0,5)
+  \pstGeonode[PointSymbol=x,PosAngle={45,-135,45,-45,45,135,},PointNameSep=0.4](0, 0.0){A}(-2.0, -2.5){B}(2.5, 0){F}(2.0, -2.5){G}(4.5, 2.5){J}(-2.0, 4.0){K}
+\end{pspicture}}
+
+
+\newpage
+
+
+\textbf{Nom, Prénom :} \hspace{8cm} \textbf{Classe :} \hspace{3cm} \textbf{Date :}\\
+
+\begin{center}
+  \textit{Les propositions mathématiques sont reçues comme vraies parce que personne n'a intérêt qu'elles soient fausses.}  - \textbf{Montesquieu}
+\end{center}
+
+\subsection*{Ex1 - Cours}
+
+\begin{enumerate}
+  \item[1.] Donner la définition d'opposé. \\
+  \Pointilles[2]
+  \item[2.] Donner la définition de la soustraction d'un nombre.\\
+  \Pointilles[2]
+\end{enumerate}
+
+\subsection*{Ex2 - Transformation soustraction en addition}
+
+Transformer les soustractions en des additions sans changer le résultat.
+
+\begin{multicols}{2}\noindent
+  \begin{enumerate}
+    \item[a.] $6 - 8 = \dotfill$
+    \item[b.] $-6 - 8 = \dotfill$
+    \item[c.] $6 - (-8) = \dotfill$
+    \item[d.] $-6 - (-8) = \dotfill$    
+    \item[e.] $13 - 4 = \dotfill$
+    \item[f.] $-13 - 4 = \dotfill$    
+    \item[g.] $13 - (-4) = \dotfill$
+    \item[h.] $-13 - (-4) = \dotfill$    
+
+  \end{enumerate}
+\end{multicols}
+
+\subsection*{Ex3 - Calculs relatifs}
+
+\begin{multicols}{3}\noindent
+  \begin{enumerate}
+    \item $5 + \left( -6\right) = \ldots\ldots\ldots$
+    \item $\ldots\ldots\ldots + 2 = 8$
+    \item $9 + \left( -6\right) = \ldots\ldots\ldots$
+    \item $20 + \ldots\ldots\ldots = 30$
+    \item $-6 + \ldots\ldots\ldots = 3$
+    \item $-8 + 2 = \ldots\ldots\ldots$
+    \item $\ldots\ldots\ldots - \left( -7\right) = 2$
+    \item $\ldots\ldots\ldots - 4 = -7$
+    \item $5 + \ldots\ldots\ldots = 3$
+    \item $9 + 2 = \ldots\ldots\ldots$
+    \item $\ldots\ldots\ldots - \left( -2\right) = -9$
+    \item $-4 - \left( -5\right) = \ldots\ldots\ldots$
+    \item $10 - \ldots\ldots\ldots = 5$
+    \item $\ldots\ldots\ldots + 10 = 3$
+    \item $-9,1 - \left( -1,7\right) = \ldots\ldots\ldots$
+    \item $4,4 + 4,2 = \ldots\ldots\ldots$
+    \item $4,4 + \ldots\ldots\ldots = 12,9$
+    \item $\ldots\ldots\ldots + 7,6 = 1,3$
+    \item $7,3 - \left( -2,7\right) = \ldots\ldots\ldots$
+    \item $-10,8 - \ldots\ldots\ldots = -4,7$
+  \end{enumerate}
+\end{multicols}
+
+\subsection*{Ex4 - Repérage}
+
+
+\parbox{0.4\linewidth}{
+\begin{enumerate}
+\item Donner les coordonnées des points B, C, F, G, H et J. \\
+\Pointilles[3]
+\item Placer dans le repère les points L, O, P, R, S et T de coordonnées respectives \hbox{$(0~;~-0{,}5)$}, \hbox{$(4{,}5~;~4)$}, \hbox{$(-1{,}5~;~0)$}, \hbox{$(-3{,}5~;~-3)$}, \hbox{$(1{,}5~;~-0{,}5)$} et \hbox{$(-4~;~4{,}5)$}. 
+\item Placer dans le repère le point W d'ordonnée -2 et d'abscisse -4
+\end{enumerate}}\hfill 
+\parbox{0.55\linewidth}{
+\psset{unit=0.8cm}
+\begin{pspicture}(-4.95,-4.95)(4.95,4.95)
+\psgrid[subgriddiv=2, subgridcolor=lightgray, gridlabels=8pt](0,0)(-5,-5)(5,5)
+\psline[linewidth=1.2pt]{->}(-5,0)(5,0)
+\psline[linewidth=1.2pt]{->}(0,-5)(0,5)
+\pstGeonode[PointSymbol=x,PosAngle={-45,45,-135,45,45,135,},PointNameSep=0.4](2.5, -1.0){B}(4.0, 0){C}(-1.5, -4.0){F}(0, 1.0){G}(3.0, 1.5){H}(-0.5, 2.0){J}
+\end{pspicture}}
+\end{document}

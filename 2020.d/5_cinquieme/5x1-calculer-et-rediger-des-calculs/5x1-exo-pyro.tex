@@ -1,0 +1,612 @@
+%%!TEX TS-program = latex
+\documentclass[a4paper,11pt]{article}
+\usepackage[utf8]{inputenc} % UTF-8
+\usepackage[T1]{fontenc}
+\usepackage[frenchb]{babel} % francisation
+\usepackage[fleqn]{amsmath} % aligne le mode maths à gauche
+\usepackage{amssymb} % the amsfont symbols
+\usepackage[table, usenames, svgnames]{xcolor} % Couleurs
+\usepackage{multicol} % Multi-colonnes
+\usepackage{fancyhdr} % Mise en page, en-tête et pied de page
+\usepackage{calc} % Opérations
+\usepackage{marvosym} % Martin Vogels Symbole (\EUR)
+\usepackage{cancel} % draw diagonal lines
+\usepackage{units} % typesetting units and nice fractions
+\usepackage[autolanguage]{numprint} % écrituredes virgules
+\usepackage{tabularx} % creates a paragraph-like column whose width
+% automatically expands
+\usepackage{wrapfig} % allows figures or tables to have text wrapped around
+\usepackage{pst-eucl, pst-plot} % figures géométriques
+\usepackage{wasysym} % Symbole Euro
+%\usepackage{textcomp}
+\input{/usr/share/pyromaths/packages/tabvar.tex}
+
+\usepackage[a4paper, dvips, left=1.5cm, right=1.5cm, top=2cm,%
+bottom=2cm, marginpar=5mm, marginparsep=5pt]{geometry}
+\newcounter{exo}
+\setlength{\headheight}{18pt}
+\setlength{\fboxsep}{1em}
+\setlength\parindent{0em}
+\setlength\mathindent{0em}
+\setlength{\columnsep}{30pt}
+\usepackage[bookmarks=true, bookmarksnumbered=true, ps2pdf, pagebackref=true,%
+colorlinks=true,linkcolor=blue,plainpages=true]{hyperref}
+\hypersetup{pdfauthor={Jérôme Ortais},pdfsubject={Exercices de
+    mathématiques},pdftitle={Exercices créés par Pyromaths, un logiciel libre
+    en Python sous licence GPL}}
+\makeatletter
+\newcommand\styleexo[1][]{
+  \renewcommand{\theenumi}{\arabic{enumi}}
+  \renewcommand{\labelenumi}{$\blacktriangleright$\textbf{\theenumi.}}
+  \renewcommand{\theenumii}{\alph{enumii}}
+  \renewcommand{\labelenumii}{\textbf{\theenumii)}}
+  {\fontfamily{pag}\fontseries{b}\selectfont \underline{#1 \theexo}}
+  \par\@afterheading\vspace{0.5\baselineskip minus 0.2\baselineskip}}
+\newcommand*\exercice{%
+  \psset{unit=1cm, dash=4pt 4pt, PointName=default,linecolor=Maroon,
+    dotstyle=x, linestyle=solid, hatchcolor=Peru, gridcolor=Olive,
+    subgridcolor=Olive, fillcolor=Peru}
+  %\ifthenelse{\equal{\theexo}{0}}{}{\filbreak}
+  \refstepcounter{exo}%
+  \stepcounter{nocalcul}%
+  \par\addvspace{1.5\baselineskip minus 1\baselineskip}%
+  \@ifstar%
+  {\penalty-130\styleexo[Corrigé de l'exercice]}%
+  {\penalty-130\styleexo[Exercice]}%
+  }
+\makeatother
+\newlength{\ltxt}
+\newcounter{fig}
+\newcommand{\figureadroite}[2]{
+  \setlength{\ltxt}{\linewidth}
+  \setbox\thefig=\hbox{#1}
+  \addtolength{\ltxt}{-\wd\thefig}
+  \addtolength{\ltxt}{-10pt}
+  \begin{minipage}{\ltxt}
+    #2
+  \end{minipage}
+  \hfill
+  \begin{minipage}{\wd\thefig}
+    #1
+  \end{minipage}
+  \refstepcounter{fig}
+  }
+\count1=\year \count2=\year
+\ifnum\month<8\advance\count1by-1\else\advance\count2by1\fi
+\pagestyle{fancy}
+\cfoot{\textsl{\footnotesize{Année \number\count1/\number\count2}}}
+\rfoot{\textsl{\tiny{http://www.pyromaths.org}}}
+\lhead{\textsl{\footnotesize{Page \thepage/ \pageref{LastPage}}}}
+\chead{\Large{\textsc{Fiche de révisions}}}
+\rhead{\textsl{\footnotesize{Classe de 5\ieme}}}
+\DecimalMathComma
+\begin{document}
+  \currentpdfbookmark{Les énoncés des exercices}{Énoncés}
+  \newcounter{nocalcul}[exo]
+  \renewcommand{\thenocalcul}{\Alph{nocalcul}}
+  \raggedcolumns
+  \setlength{\columnseprule}{0.5pt}
+
+  \exercice
+  Effectuer sans calculatrice :
+  \begin{multicols}{4}\noindent
+    \begin{enumerate}
+    \item $54 \div 6 = \ldots\ldots$
+    \item $10 - \ldots\ldots = 2$
+    \item $7 - \ldots\ldots = 4$
+    \item $\ldots\ldots - 7 = 5$
+    \item $\ldots\ldots + 7 = 16$
+    \item $8 \div 4 = \ldots\ldots$
+    \item $20 \div \ldots\ldots = 5$
+    \item $18 - \ldots\ldots = 9$
+    \item $8 \times 7 = \ldots\ldots$
+    \item $7 \div \ldots\ldots = 7$
+    \item $\ldots\ldots + 3 = 5$
+    \item $16 - \ldots\ldots = 7$
+    \item $\ldots\ldots + 7 = 9$
+    \item $20 \div \ldots\ldots = 4$
+    \item $2 \times \ldots\ldots = 14$
+    \item $6 \times 5 = \ldots\ldots$
+    \item $10 \times 3 = \ldots\ldots$
+    \item $\ldots\ldots + 9 = 15$
+    \item $4 \times \ldots\ldots = 16$
+    \item $8 + 1 = \ldots\ldots$
+    \end{enumerate}
+  \end{multicols}
+
+  \exercice
+  Effectuer sans calculatrice :
+  \begin{multicols}{4}\noindent
+    \begin{enumerate}
+    \item $\ldots\ldots + 2 = 4$
+    \item $42 \div 6 = \ldots\ldots$
+    \item $9 - 8 = \ldots\ldots$
+    \item $3 - 1 = \ldots\ldots$
+    \item $10 \times \ldots\ldots = 50$
+    \item $\ldots\ldots \times 4 = 20$
+    \item $\ldots\ldots - 10 = 10$
+    \item $6 \times 6 = \ldots\ldots$
+    \item $7 + 2 = \ldots\ldots$
+    \item $18 \div 3 = \ldots\ldots$
+    \item $1 + 9 = \ldots\ldots$
+    \item $\ldots\ldots + 3 = 13$
+    \item $2 \times 4 = \ldots\ldots$
+    \item $20 \div \ldots\ldots = 10$
+    \item $18 \div 9 = \ldots\ldots$
+    \item $13 - 10 = \ldots\ldots$
+    \item $8 \times 8 = \ldots\ldots$
+    \item $24 \div \ldots\ldots = 8$
+    \item $4 + \ldots\ldots = 14$
+    \item $3 - 2 = \ldots\ldots$
+    \end{enumerate}
+  \end{multicols}
+
+  \exercice
+  Compléter sans calculatrice :
+  \begin{multicols}{2}\noindent
+    \begin{enumerate}
+    \item $\dotfill \quad\times\quad 6{,}11 \quad = \quad 0{,}000\,611$
+    \item $\dotfill \quad\div\quad 1\,000 \quad = \quad 0{,}045\,1$
+    \item $0{,}001 \quad\times\quad 20{,}1 \quad = \quad \dotfill$
+    \item $54{,}4 \quad\div\quad 10 \quad = \quad \dotfill$
+    \item $0{,}01 \quad\times\quad 0{,}66 \quad = \quad \dotfill$
+    \item $\dotfill \quad\times\quad 1{,}12 \quad = \quad 11{,}2$
+    \item $0{,}748 \quad\div\quad 10\,000 \quad = \quad \dotfill$
+    \item $100 \quad\times\quad 1{,}79 \quad = \quad \dotfill$
+    \item $0{,}1 \quad\times\quad 21{,}2 \quad = \quad \dotfill$
+    \item $10\,000 \quad\times\quad 6{,}06 \quad = \quad \dotfill$
+    \item $40{,}8 \quad\div\quad \dotfill \quad = \quad 0{,}408$
+    \item $1\,000 \quad\times\quad 8{,}53 \quad = \quad \dotfill$
+    \end{enumerate}
+  \end{multicols}
+
+  \exercice
+  Compléter sans calculatrice :
+  \begin{multicols}{2}\noindent
+    \begin{enumerate}
+    \item $100 \quad\times\quad \dotfill \quad = \quad 362$
+    \item $\dotfill \quad\div\quad 10 \quad = \quad 3$
+    \item $10 \quad\times\quad 4{,}38 \quad = \quad \dotfill$
+    \item $0{,}23 \quad\div\quad \dotfill \quad = \quad 0{,}000\,23$
+    \item $0{,}818 \quad\div\quad 100 \quad = \quad \dotfill$
+    \item $0{,}001 \quad\times\quad 12{,}6 \quad = \quad \dotfill$
+    \item $0{,}1 \quad\times\quad 7{,}07 \quad = \quad \dotfill$
+    \item $0{,}01 \quad\times\quad 2{,}66 \quad = \quad \dotfill$
+    \item $10\,000 \quad\times\quad 4{,}98 \quad = \quad \dotfill$
+    \item $0{,}963 \quad\div\quad \dotfill \quad = \quad 0{,}000\,096\,3$
+    \item $1\,000 \quad\times\quad \dotfill \quad = \quad 17\,200$
+    \item $\dotfill \quad\times\quad 41{,}1 \quad = \quad 0{,}004\,11$
+    \end{enumerate}
+  \end{multicols}
+
+  \exercice
+  Calculer les expressions suivantes en détaillant les calculs.
+
+  \begin{multicols}{3}
+    \noindent
+    \[ \thenocalcul = 7+6-2 \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = 4\times (5-2) \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = 13\times (2+12) \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = 7+13\div 13\times 7+9-2 \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = 12\times (12+6)-9\div 3+10 \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = 8\times 3+12+9\div (11-10) \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = 10\times 5\div 10+11+8-10 \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = 5{,}2\times (2{,}3+3{,}2)+4{,}5-1{,}9 \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = 8{,}5+4{,}4\times (1{,}3+9{,}2)-6{,}1 \]
+    \stepcounter{nocalcul}%
+  \end{multicols}
+
+  \exercice
+  Calculer les expressions suivantes en détaillant les calculs.
+
+  \begin{multicols}{3}
+    \noindent
+    \[ \thenocalcul = 8+10\times 7 \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = 13\times 2-10 \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = 13\times (11+5) \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = 9+9\times 5\div 9-11+2 \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = 2\times 3+10-(13+2)\div 5 \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = 6\times 8-12+13\div 13+9 \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = 4\div 2+6\times (4+5)-9 \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = 8{,}2-2{,}7\div 1{,}8+5{,}5\times 6{,}9 \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = 3{,}2\times 6{,}3-9{,}6+5{,}7+1{,}3 \]
+    \stepcounter{nocalcul}%
+  \end{multicols}
+
+  \exercice
+  Calculer les expressions suivantes en détaillant les calculs.
+
+  \begin{multicols}{3}
+    \noindent
+    \[ \thenocalcul = 13-(2+10) \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = 6-3+5 \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = 4+8\times 10 \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = 8+7\times 4-7+12\div 2 \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = 6+12+5\div 5\times 10-3 \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = 5+4\times (2+4)\div 4-9 \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = 4+12\times 8+12\div 2-9 \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = 8{,}8-8{,}6+6{,}9\times (6{,}2+3{,}9) \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = 9{,}1\times (3{,}7+5{,}3)+3-9{,}9 \]
+    \stepcounter{nocalcul}%
+  \end{multicols}
+
+  \exercice
+  Calculer les expressions suivantes en détaillant les calculs.
+
+  \begin{multicols}{3}
+    \noindent
+    \[ \thenocalcul = 4\times (10-8) \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = 13\times 10-10 \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = 6\div 3\times 11 \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = 7-5+7\times 6+5\div 5 \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = 7\times 11-(10+13)+12\div 3 \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = 4+9\div (9-8)\times (11+13) \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = 11\times 9+13-7+4\div 4 \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = 6{,}7\times 4{,}7+8{,}9+8{,}5-8{,}4 \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = 6{,}1\times 2-2{,}8+7{,}6+1{,}8 \]
+    \stepcounter{nocalcul}%
+  \end{multicols}
+  \label{LastPage}
+  \newpage
+  \currentpdfbookmark{Le corrigé des
+    exercices}{Corrigé}\lhead{\textsl{\footnotesize{Page \thepage/
+        \pageref{LastCorPage}}}}
+  \setcounter{page}{1} \setcounter{exo}{0}
+
+  \exercice*
+  Effectuer sans calculatrice :
+  \begin{multicols}{4}\noindent
+    \begin{enumerate}
+    \item $54 \div 6 = \mathbf{9}$
+    \item $10 - \mathbf{8} = 2$
+    \item $7 - \mathbf{3} = 4$
+    \item $\mathbf{12} - 7 = 5$
+    \item $\mathbf{9} + 7 = 16$
+    \item $8 \div 4 = \mathbf{2}$
+    \item $20 \div \mathbf{4} = 5$
+    \item $18 - \mathbf{9} = 9$
+    \item $8 \times 7 = \mathbf{56}$
+    \item $7 \div \mathbf{1} = 7$
+    \item $\mathbf{2} + 3 = 5$
+    \item $16 - \mathbf{9} = 7$
+    \item $\mathbf{2} + 7 = 9$
+    \item $20 \div \mathbf{5} = 4$
+    \item $2 \times \mathbf{7} = 14$
+    \item $6 \times 5 = \mathbf{30}$
+    \item $10 \times 3 = \mathbf{30}$
+    \item $\mathbf{6} + 9 = 15$
+    \item $4 \times \mathbf{4} = 16$
+    \item $8 + 1 = \mathbf{9}$
+    \end{enumerate}
+  \end{multicols}
+
+  \exercice*
+  Effectuer sans calculatrice :
+  \begin{multicols}{4}\noindent
+    \begin{enumerate}
+    \item $\mathbf{2} + 2 = 4$
+    \item $42 \div 6 = \mathbf{7}$
+    \item $9 - 8 = \mathbf{1}$
+    \item $3 - 1 = \mathbf{2}$
+    \item $10 \times \mathbf{5} = 50$
+    \item $\mathbf{5} \times 4 = 20$
+    \item $\mathbf{20} - 10 = 10$
+    \item $6 \times 6 = \mathbf{36}$
+    \item $7 + 2 = \mathbf{9}$
+    \item $18 \div 3 = \mathbf{6}$
+    \item $1 + 9 = \mathbf{10}$
+    \item $\mathbf{10} + 3 = 13$
+    \item $2 \times 4 = \mathbf{8}$
+    \item $20 \div \mathbf{2} = 10$
+    \item $18 \div 9 = \mathbf{2}$
+    \item $13 - 10 = \mathbf{3}$
+    \item $8 \times 8 = \mathbf{64}$
+    \item $24 \div \mathbf{3} = 8$
+    \item $4 + \mathbf{10} = 14$
+    \item $3 - 2 = \mathbf{1}$
+    \end{enumerate}
+  \end{multicols}
+
+  \exercice*
+  Compléter sans calculatrice :
+  \begin{multicols}{2}\noindent
+    \begin{enumerate}
+    \item $\mathbf{0{,}000\,1} \times 6{,}11 = 0{,}000\,611$
+    \item $\mathbf{45{,}1} \div 1\,000 = 0{,}045\,1$
+    \item $0{,}001 \times 20{,}1 = \mathbf{0{,}020\,1}$
+    \item $54{,}4 \div 10 = \mathbf{5{,}44}$
+    \item $0{,}01 \times 0{,}66 = \mathbf{0{,}006\,6}$
+    \item $\mathbf{10} \times 1{,}12 = 11{,}2$
+    \item $0{,}748 \div 10\,000 = \mathbf{0{,}000\,074\,8}$
+    \item $100 \times 1{,}79 = \mathbf{179}$
+    \item $0{,}1 \times 21{,}2 = \mathbf{2{,}12}$
+    \item $10\,000 \times 6{,}06 = \mathbf{60\,600}$
+    \item $40{,}8 \div \mathbf{100} = 0{,}408$
+    \item $1\,000 \times 8{,}53 = \mathbf{8\,530}$
+    \end{enumerate}
+  \end{multicols}
+
+  \exercice*
+  Compléter sans calculatrice :
+  \begin{multicols}{2}\noindent
+    \begin{enumerate}
+    \item $100 \times \mathbf{3{,}62} = 362$
+    \item $\mathbf{30} \div 10 = 3$
+    \item $10 \times 4{,}38 = \mathbf{43{,}8}$
+    \item $0{,}23 \div \mathbf{1\,000} = 0{,}000\,23$
+    \item $0{,}818 \div 100 = \mathbf{0{,}008\,18}$
+    \item $0{,}001 \times 12{,}6 = \mathbf{0{,}012\,6}$
+    \item $0{,}1 \times 7{,}07 = \mathbf{0{,}707}$
+    \item $0{,}01 \times 2{,}66 = \mathbf{0{,}026\,6}$
+    \item $10\,000 \times 4{,}98 = \mathbf{49\,800}$
+    \item $0{,}963 \div \mathbf{10\,000} = 0{,}000\,096\,3$
+    \item $1\,000 \times \mathbf{17{,}2} = 17\,200$
+    \item $\mathbf{0{,}000\,1} \times 41{,}1 = 0{,}004\,11$
+    \end{enumerate}
+  \end{multicols}
+
+  \exercice*
+  Calculer les expressions suivantes en détaillant les calculs.
+  \begin{multicols}{3}
+    \noindent
+    \[ \thenocalcul = 7+6-2 \]
+    \[ \thenocalcul = 13-2 \]
+    \[ \boxed{\thenocalcul = 11} \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = 4\times (5-2) \]
+    \[ \thenocalcul = 4\times 3 \]
+    \[ \boxed{\thenocalcul = 12} \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = 13\times (2+12) \]
+    \[ \thenocalcul = 13\times 14 \]
+    \[ \boxed{\thenocalcul = 182} \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = 7+13\div 13\times 7+9-2 \]
+    \[ \thenocalcul = 7+1\times 7+9-2 \]
+    \[ \thenocalcul = 7+7+9-2 \]
+    \[ \thenocalcul = 14+9-2 \]
+    \[ \thenocalcul = 23-2 \]
+    \[ \boxed{\thenocalcul = 21} \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = 12\times (12+6)-9\div 3+10 \]
+    \[ \thenocalcul = 12\times 18-9\div 3+10 \]
+    \[ \thenocalcul = 216-9\div 3+10 \]
+    \[ \thenocalcul = 216-3+10 \]
+    \[ \thenocalcul = 213+10 \]
+    \[ \boxed{\thenocalcul = 223} \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = 8\times 3+12+9\div (11-10) \]
+    \[ \thenocalcul = 8\times 3+12+9\div 1 \]
+    \[ \thenocalcul = 24+12+9\div 1 \]
+    \[ \thenocalcul = 24+12+9 \]
+    \[ \thenocalcul = 36+9 \]
+    \[ \boxed{\thenocalcul = 45} \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = 10\times 5\div 10+11+8-10 \]
+    \[ \thenocalcul = 50\div 10+11+8-10 \]
+    \[ \thenocalcul = 5+11+8-10 \]
+    \[ \thenocalcul = 16+8-10 \]
+    \[ \thenocalcul = 24-10 \]
+    \[ \boxed{\thenocalcul = 14} \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = 5{,}2\times (2{,}3+3{,}2)+4{,}5-1{,}9 \]
+    \[ \thenocalcul = 5{,}2\times 5{,}5+4{,}5-1{,}9 \]
+    \[ \thenocalcul = 28{,}6+4{,}5-1{,}9 \]
+    \[ \thenocalcul = 33{,}1-1{,}9 \]
+    \[ \boxed{\thenocalcul = 31{,}2} \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = 8{,}5+4{,}4\times (1{,}3+9{,}2)-6{,}1 \]
+    \[ \thenocalcul = 8{,}5+4{,}4\times 10{,}5-6{,}1 \]
+    \[ \thenocalcul = 8{,}5+46{,}2-6{,}1 \]
+    \[ \thenocalcul = 54{,}7-6{,}1 \]
+    \[ \boxed{\thenocalcul = 48{,}6} \]
+    \stepcounter{nocalcul}%
+  \end{multicols}
+
+  \exercice*
+  Calculer les expressions suivantes en détaillant les calculs.
+  \begin{multicols}{3}
+    \noindent
+    \[ \thenocalcul = 8+10\times 7 \]
+    \[ \thenocalcul = 8+70 \]
+    \[ \boxed{\thenocalcul = 78} \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = 13\times 2-10 \]
+    \[ \thenocalcul = 26-10 \]
+    \[ \boxed{\thenocalcul = 16} \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = 13\times (11+5) \]
+    \[ \thenocalcul = 13\times 16 \]
+    \[ \boxed{\thenocalcul = 208} \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = 9+9\times 5\div 9-11+2 \]
+    \[ \thenocalcul = 9+45\div 9-11+2 \]
+    \[ \thenocalcul = 9+5-11+2 \]
+    \[ \thenocalcul = 14-11+2 \]
+    \[ \thenocalcul = 3+2 \]
+    \[ \boxed{\thenocalcul = 5} \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = 2\times 3+10-(13+2)\div 5 \]
+    \[ \thenocalcul = 2\times 3+10-15\div 5 \]
+    \[ \thenocalcul = 6+10-15\div 5 \]
+    \[ \thenocalcul = 6+10-3 \]
+    \[ \thenocalcul = 16-3 \]
+    \[ \boxed{\thenocalcul = 13} \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = 6\times 8-12+13\div 13+9 \]
+    \[ \thenocalcul = 48-12+13\div 13+9 \]
+    \[ \thenocalcul = 48-12+1+9 \]
+    \[ \thenocalcul = 36+1+9 \]
+    \[ \thenocalcul = 37+9 \]
+    \[ \boxed{\thenocalcul = 46} \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = 4\div 2+6\times (4+5)-9 \]
+    \[ \thenocalcul = 4\div 2+6\times 9-9 \]
+    \[ \thenocalcul = 2+6\times 9-9 \]
+    \[ \thenocalcul = 2+54-9 \]
+    \[ \thenocalcul = 56-9 \]
+    \[ \boxed{\thenocalcul = 47} \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = 8{,}2-2{,}7\div 1{,}8+5{,}5\times 6{,}9 \]
+    \[ \thenocalcul = 8{,}2-1{,}5+5{,}5\times 6{,}9 \]
+    \[ \thenocalcul = 8{,}2-1{,}5+37{,}95 \]
+    \[ \thenocalcul = 6{,}7+37{,}95 \]
+    \[ \boxed{\thenocalcul = 44{,}65} \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = 3{,}2\times 6{,}3-9{,}6+5{,}7+1{,}3 \]
+    \[ \thenocalcul = 20{,}16-9{,}6+5{,}7+1{,}3 \]
+    \[ \thenocalcul = 10{,}56+5{,}7+1{,}3 \]
+    \[ \thenocalcul = 16{,}26+1{,}3 \]
+    \[ \boxed{\thenocalcul = 17{,}56} \]
+    \stepcounter{nocalcul}%
+  \end{multicols}
+
+  \exercice*
+  Calculer les expressions suivantes en détaillant les calculs.
+  \begin{multicols}{3}
+    \noindent
+    \[ \thenocalcul = 13-(2+10) \]
+    \[ \thenocalcul = 13-12 \]
+    \[ \boxed{\thenocalcul = 1} \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = 6-3+5 \]
+    \[ \thenocalcul = 3+5 \]
+    \[ \boxed{\thenocalcul = 8} \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = 4+8\times 10 \]
+    \[ \thenocalcul = 4+80 \]
+    \[ \boxed{\thenocalcul = 84} \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = 8+7\times 4-7+12\div 2 \]
+    \[ \thenocalcul = 8+28-7+12\div 2 \]
+    \[ \thenocalcul = 8+28-7+6 \]
+    \[ \thenocalcul = 36-7+6 \]
+    \[ \thenocalcul = 29+6 \]
+    \[ \boxed{\thenocalcul = 35} \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = 6+12+5\div 5\times 10-3 \]
+    \[ \thenocalcul = 6+12+1\times 10-3 \]
+    \[ \thenocalcul = 6+12+10-3 \]
+    \[ \thenocalcul = 18+10-3 \]
+    \[ \thenocalcul = 28-3 \]
+    \[ \boxed{\thenocalcul = 25} \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = 5+4\times (2+4)\div 4-9 \]
+    \[ \thenocalcul = 5+4\times 6\div 4-9 \]
+    \[ \thenocalcul = 5+24\div 4-9 \]
+    \[ \thenocalcul = 5+6-9 \]
+    \[ \thenocalcul = 11-9 \]
+    \[ \boxed{\thenocalcul = 2} \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = 4+12\times 8+12\div 2-9 \]
+    \[ \thenocalcul = 4+96+12\div 2-9 \]
+    \[ \thenocalcul = 4+96+6-9 \]
+    \[ \thenocalcul = 100+6-9 \]
+    \[ \thenocalcul = 106-9 \]
+    \[ \boxed{\thenocalcul = 97} \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = 8{,}8-8{,}6+6{,}9\times (6{,}2+3{,}9) \]
+    \[ \thenocalcul = 8{,}8-8{,}6+6{,}9\times 10{,}1 \]
+    \[ \thenocalcul = 8{,}8-8{,}6+69{,}69 \]
+    \[ \thenocalcul = 0{,}2+69{,}69 \]
+    \[ \boxed{\thenocalcul = 69{,}89} \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = 9{,}1\times (3{,}7+5{,}3)+3-9{,}9 \]
+    \[ \thenocalcul = 9{,}1\times 9+3-9{,}9 \]
+    \[ \thenocalcul = 81{,}9+3-9{,}9 \]
+    \[ \thenocalcul = 84{,}9-9{,}9 \]
+    \[ \boxed{\thenocalcul = 75} \]
+    \stepcounter{nocalcul}%
+  \end{multicols}
+
+  \exercice*
+  Calculer les expressions suivantes en détaillant les calculs.
+  \begin{multicols}{3}
+    \noindent
+    \[ \thenocalcul = 4\times (10-8) \]
+    \[ \thenocalcul = 4\times 2 \]
+    \[ \boxed{\thenocalcul = 8} \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = 13\times 10-10 \]
+    \[ \thenocalcul = 130-10 \]
+    \[ \boxed{\thenocalcul = 120} \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = 6\div 3\times 11 \]
+    \[ \thenocalcul = 2\times 11 \]
+    \[ \boxed{\thenocalcul = 22} \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = 7-5+7\times 6+5\div 5 \]
+    \[ \thenocalcul = 7-5+42+5\div 5 \]
+    \[ \thenocalcul = 7-5+42+1 \]
+    \[ \thenocalcul = 2+42+1 \]
+    \[ \thenocalcul = 44+1 \]
+    \[ \boxed{\thenocalcul = 45} \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = 7\times 11-(10+13)+12\div 3 \]
+    \[ \thenocalcul = 7\times 11-23+12\div 3 \]
+    \[ \thenocalcul = 77-23+12\div 3 \]
+    \[ \thenocalcul = 77-23+4 \]
+    \[ \thenocalcul = 54+4 \]
+    \[ \boxed{\thenocalcul = 58} \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = 4+9\div (9-8)\times (11+13) \]
+    \[ \thenocalcul = 4+9\div 1\times (11+13) \]
+    \[ \thenocalcul = 4+9\div 1\times 24 \]
+    \[ \thenocalcul = 4+9\times 24 \]
+    \[ \thenocalcul = 4+216 \]
+    \[ \boxed{\thenocalcul = 220} \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = 11\times 9+13-7+4\div 4 \]
+    \[ \thenocalcul = 99+13-7+4\div 4 \]
+    \[ \thenocalcul = 99+13-7+1 \]
+    \[ \thenocalcul = 112-7+1 \]
+    \[ \thenocalcul = 105+1 \]
+    \[ \boxed{\thenocalcul = 106} \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = 6{,}7\times 4{,}7+8{,}9+8{,}5-8{,}4 \]
+    \[ \thenocalcul = 31{,}49+8{,}9+8{,}5-8{,}4 \]
+    \[ \thenocalcul = 40{,}39+8{,}5-8{,}4 \]
+    \[ \thenocalcul = 48{,}89-8{,}4 \]
+    \[ \boxed{\thenocalcul = 40{,}49} \]
+    \stepcounter{nocalcul}%
+    \[ \thenocalcul = 6{,}1\times 2-2{,}8+7{,}6+1{,}8 \]
+    \[ \thenocalcul = 12{,}2-2{,}8+7{,}6+1{,}8 \]
+    \[ \thenocalcul = 9{,}4+7{,}6+1{,}8 \]
+    \[ \thenocalcul = 17+1{,}8 \]
+    \[ \boxed{\thenocalcul = 18{,}8} \]
+    \stepcounter{nocalcul}%
+  \end{multicols}
+  \label{LastCorPage}
+\end{document}

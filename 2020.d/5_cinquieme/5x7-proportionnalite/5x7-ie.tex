@@ -1,0 +1,294 @@
+\documentclass[12pt]{article}
+\usepackage{geometry} % Pour passer au format A4
+\geometry{hmargin=1cm, vmargin=1cm} % 
+
+% Page et encodage
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage[english,french]{babel} % Français et anglais
+\usepackage[utf8]{inputenc} 
+
+\usepackage{lmodern}
+\setlength\parindent{0pt}
+
+% Graphiques
+\usepackage{graphicx,float,grffile}
+
+% Maths et divers
+\usepackage{amsmath,amsfonts,amssymb,amsthm,verbatim}
+\usepackage{multicol,enumitem,url,eurosym,gensymb,multido}
+
+% Sections
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{\centering \normalfont\scshape}
+
+% Tête et pied de page
+
+\usepackage{fancyhdr} 
+\pagestyle{fancyplain} 
+
+\fancyhead{} % No page header
+\fancyfoot{}
+
+\renewcommand{\headrulewidth}{0pt} % Remove header underlines
+\renewcommand{\footrulewidth}{0pt} % Remove footer underlines
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+\newcommand{\Pointilles}[1][3]{%
+  \multido{}{#1}{\makebox[\linewidth]{\dotfill}\\[\parskip]
+}}
+
+\setlength{\columnseprule}{1pt}
+
+\begin{document}
+
+\textbf{Nom, Prénom :} \hspace{8cm} \textbf{Classe :} \hspace{3cm} \textbf{Date :}\\
+
+\begin{center}
+  \textit{En mathématiques, on ne comprend pas les choses, on s'y habitue.}  - \textbf{John Von Neumann}
+\end{center}
+
+\subsection*{Ex1 - Leçon}
+
+\textit{\textbf{Donner la définition d'un tableau de proportionnalité.}}
+
+\Pointilles[4]
+
+\subsection*{Ex2 - Démonstration}
+
+\textit{\textbf{Les tableaux sont-ils proportionnels ?}}
+
+\begin{multicols}{3}
+
+  \begin{center}
+      \begin{tabular}{|c|c|c|}
+        \hline
+        42 & 100.8 & 75.6 \\  \hline
+        2.5 & 6 & 4.5 \\  \hline
+      \end{tabular}
+    \end{center}
+
+    \Pointilles[6]
+
+    \begin{center}
+      \begin{tabular}{|c|c|c|}
+        \hline
+        10 & 20 & 30   \\  \hline
+        20 & 30 & 40   \\  \hline
+      \end{tabular}
+    \end{center}
+
+    \Pointilles[6]
+
+    \begin{center}
+      \begin{tabular}{|c|c|c|}
+        \hline
+        2.94 & 58.8 & 30   \\  \hline
+           5 &  100 & 51   \\  \hline
+      \end{tabular}
+    \end{center}    
+
+    \Pointilles[6]
+
+  \end{multicols}
+
+\subsection*{Ex3 - Calculer}
+
+\textit{Les tableaux sont proportionnels.} \textit{\textbf{Calculer et écrire le calcul.}}
+
+\begin{multicols}{4}
+
+\begin{center}
+    \begin{tabular}{|c|c|}
+      \hline
+      1 & 12  \\  \hline
+      24 & \phantom{$\dfrac{\dfrac{123456789}{1}}{1}$}  \\  \hline
+    \end{tabular}
+
+    \vspace{0.5cm}
+    \textbf{Calcul :}\dotfill 
+  \end{center}
+
+  \begin{center}
+    \begin{tabular}{|c|c|c|}
+      \hline
+      13 & \phantom{$\dfrac{\dfrac{123456789}{1}}{1}$} \\  \hline
+      25 & 13 \\  \hline
+    \end{tabular}
+
+    \vspace{0.5cm}
+    \textbf{Calcul :}\dotfill 
+  \end{center}
+
+  \begin{center}
+    \begin{tabular}{|c|c|c|}
+      \hline
+      124 & 290 \\  \hline
+      \phantom{$\dfrac{\dfrac{123456789}{1}}{1}$} & 48 \\  \hline
+    \end{tabular}
+    
+    \vspace{0.5cm}
+    \textbf{Calcul :}\dotfill 
+  \end{center}
+
+  \begin{center}
+    \begin{tabular}{|c|c|c|}
+      \hline
+      \phantom{$\dfrac{\dfrac{123456789}{1}}{1}$} & 0.12 \\  \hline
+      3 & 15 \\  \hline
+    \end{tabular}
+    
+    \vspace{0.5cm}
+    \textbf{Calcul :}\dotfill 
+  \end{center}
+
+\end{multicols}
+
+\subsection*{Ex4 - Calculer}
+
+\textit{Les tableaux sont proportionnels.} \textit{\textbf{Calculer.}}
+
+\begin{center}
+  \begin{tabular}{|c|c|c|c|c|c|c|c|}
+    \hline
+    2  &               5 &              12 & \phantom{$\dfrac{\dfrac{123456789}{1}}{1}$} &             1.5 & \phantom{$\dfrac{\dfrac{123456789}{1}}{1}$} & \phantom{$\dfrac{\dfrac{123456789}{1}}{1}$} & \phantom{$\dfrac{\dfrac{123456789}{1}}{1}$}  \\  \hline
+    25 & \phantom{$\dfrac{\dfrac{123456789}{1}}{1}$} & \phantom{$\dfrac{\dfrac{123456789}{1}}{1}$} &              75 & \phantom{$\dfrac{\dfrac{123456789}{1}}{1}$} &             110 &            2500 &              0.5 \\  \hline
+  \end{tabular}
+\end{center} 
+
+\begin{center}
+  \begin{tabular}{|c|c|c|c|c|c|c|c|}
+    \hline
+    \phantom{$\dfrac{\dfrac{123456789}{1}}{1}$} &               11 &            0.42 & \phantom{$\dfrac{\dfrac{123456789}{1}}{1}$} &             712 & 3.6 & \phantom{$\dfrac{\dfrac{123456789}{1}}{1}$} & \phantom{$\dfrac{\dfrac{123456789}{1}}{1}$} \\  \hline
+    24              &  \phantom{$\dfrac{\dfrac{123456789}{1}}{1}$} & \phantom{$\dfrac{\dfrac{123456789}{1}}{1}$} &             512 & \phantom{$\dfrac{\dfrac{123456789}{1}}{1}$} & 4.8 &            11.8 &             444 \\  \hline
+  \end{tabular}
+\end{center} 
+
+
+\newpage
+
+
+\textbf{Nom, Prénom :} \hspace{8cm} \textbf{Classe :} \hspace{3cm} \textbf{Date :}\\
+
+\begin{center}
+  \textit{En mathématiques, on ne comprend pas les choses, on s'y habitue.}  - \textbf{John Von Neumann}
+\end{center}
+
+\subsection*{Ex1 - Leçon}
+
+\textit{\textbf{Donner la définition d'un tableau de proportionnalité.}}
+
+\Pointilles[4]
+
+\subsection*{Ex2 - Démonstration}
+
+\textit{\textbf{Les tableaux sont-ils proportionnels ?}}
+
+\begin{multicols}{3}
+
+  \begin{center}
+      \begin{tabular}{|c|c|c|}
+        \hline
+        10 & 20 & 30 \\  \hline
+        50 & 60 & 70 \\  \hline
+      \end{tabular}
+    \end{center}
+
+    \Pointilles[6]
+
+    \begin{center}
+      \begin{tabular}{|c|c|c|}
+        \hline
+        42 & 67.2 & 100.8 \\  \hline
+         5 &    8 &    12 \\  \hline
+      \end{tabular}
+    \end{center}
+
+    \Pointilles[6]
+
+    \begin{center}
+      \begin{tabular}{|c|c|c|}
+        \hline
+        2.2 & 13.7 & 27 \\  \hline
+          4 &   25 & 49 \\  \hline
+      \end{tabular}
+    \end{center}    
+
+    \Pointilles[6]
+
+  \end{multicols}
+
+\subsection*{Ex3 - Calculer}
+
+\textit{Les tableaux sont proportionnels.} \textit{\textbf{Calculer et écrire le calcul.}}
+
+\begin{multicols}{4}
+
+\begin{center}
+    \begin{tabular}{|c|c|}
+      \hline
+      1 & 14  \\  \hline
+      22 & \phantom{$\dfrac{\dfrac{123456789}{1}}{1}$}  \\  \hline
+    \end{tabular}
+
+    \vspace{0.5cm}
+    \textbf{Calcul :}\dotfill 
+  \end{center}
+
+  \begin{center}
+    \begin{tabular}{|c|c|c|}
+      \hline
+      23 & \phantom{$\dfrac{\dfrac{123456789}{1}}{1}$} \\  \hline
+      35 & 23 \\  \hline
+    \end{tabular}
+
+    \vspace{0.5cm}
+    \textbf{Calcul :}\dotfill 
+  \end{center}
+
+  \begin{center}
+    \begin{tabular}{|c|c|c|}
+      \hline
+      224 & 190 \\  \hline
+      \phantom{$\dfrac{\dfrac{123456789}{1}}{1}$} & 45 \\  \hline
+    \end{tabular}
+    
+    \vspace{0.5cm}
+    \textbf{Calcul :}\dotfill 
+  \end{center}
+
+  \begin{center}
+    \begin{tabular}{|c|c|c|}
+      \hline
+      \phantom{$\dfrac{\dfrac{123456789}{1}}{1}$} & 0.15 \\  \hline
+      6 & 21 \\  \hline
+    \end{tabular}
+    
+    \vspace{0.5cm}
+    \textbf{Calcul :}\dotfill 
+  \end{center}
+
+\end{multicols}
+
+\subsection*{Ex4 - Calculer}
+
+\textit{Les tableaux sont proportionnels.} \textit{\textbf{Calculer.}}
+
+\begin{center}
+  \begin{tabular}{|c|c|c|c|c|c|c|c|}
+    \hline
+    2  &               7 &              13 & \phantom{$\dfrac{\dfrac{123456789}{1}}{1}$} &             1.4 & \phantom{$\dfrac{\dfrac{123456789}{1}}{1}$} & \phantom{$\dfrac{\dfrac{123456789}{1}}{1}$} & \phantom{$\dfrac{\dfrac{123456789}{1}}{1}$}  \\  \hline
+    21 & \phantom{$\dfrac{\dfrac{123456789}{1}}{1}$} & \phantom{$\dfrac{\dfrac{123456789}{1}}{1}$} &              65 & \phantom{$\dfrac{\dfrac{123456789}{1}}{1}$} &             90 &            3500 &              0.5 \\  \hline
+  \end{tabular}
+\end{center} 
+
+\begin{center}
+  \begin{tabular}{|c|c|c|c|c|c|c|c|}
+    \hline
+    \phantom{$\dfrac{\dfrac{123456789}{1}}{1}$} &               13 &            0.34 & \phantom{$\dfrac{\dfrac{123456789}{1}}{1}$} &             612 & 3.4 & \phantom{$\dfrac{\dfrac{123456789}{1}}{1}$} & \phantom{$\dfrac{\dfrac{123456789}{1}}{1}$} \\  \hline
+    22              &  \phantom{$\dfrac{\dfrac{123456789}{1}}{1}$} & \phantom{$\dfrac{\dfrac{123456789}{1}}{1}$} &             512 & \phantom{$\dfrac{\dfrac{123456789}{1}}{1}$} & 4.5 &            11.9 &             644 \\  \hline
+  \end{tabular}
+\end{center} 
+
+
+\end{document}
