@@ -1,0 +1,300 @@
+\documentclass[11pt]{article}
+\usepackage{geometry} % Pour passer au format A4
+\geometry{hmargin=1cm, vmargin=1cm} % 
+
+% Page et encodage
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage[english,french]{babel} % Français et anglais
+\usepackage[utf8]{inputenc} 
+
+\usepackage{lmodern}
+\setlength\parindent{0pt}
+
+% Graphiques
+\usepackage{graphicx,float,grffile}
+
+% Maths et divers
+\usepackage{amsmath,amsfonts,amssymb,amsthm,verbatim}
+\usepackage{multicol,enumitem,url,eurosym,gensymb}
+
+% Sections
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{\centering \normalfont\scshape}
+
+% Tête et pied de page
+
+\usepackage{fancyhdr} 
+\pagestyle{fancyplain} 
+
+\fancyhead{} % No page header
+\fancyfoot{}
+
+\renewcommand{\headrulewidth}{0pt} % Remove header underlines
+\renewcommand{\footrulewidth}{0pt} % Remove footer underlines
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+%----------------------------------------------------------------------------------------
+%	Début du document
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+% RE-DEFINITION
+%----------------------------------------------------------------------------------------
+% MATHS
+%-----------
+
+\newtheorem{Definition}{Définition}
+\newtheorem{Theorem}{Théorème}
+\newtheorem{Proposition}{Propriété}
+
+% MATHS
+%-----------
+\renewcommand{\labelitemi}{$\bullet$}
+\renewcommand{\labelitemii}{$\circ$}
+%----------------------------------------------------------------------------------------
+%	Titre
+%----------------------------------------------------------------------------------------
+
+\setlength{\columnseprule}{1pt}
+
+\textbf{Nom, Prénom :} \hspace{8cm} \textbf{Classe :} \hspace{3cm} \textbf{Date :}\\
+\vspace{-0.8cm}
+\begin{center}
+  \textit{Les mathématiques ne sont une moindre immensité que la mer.}  - \textbf{Victor Hugo}
+\end{center}
+\vspace{-0.8cm}
+
+\subsection*{Calcul}
+\begin{multicols}{3}\noindent
+  \begin{enumerate}
+  \item $12 - 3 = \ldots\ldots$
+  \item $-5 + \ldots\ldots = -11$
+  \item $3 + \left( -1\right) = \ldots\ldots$
+  \item $-2 + \ldots\ldots = -11$
+  \item $-2 \times 2 = \ldots\ldots$
+  \item $\ldots\ldots + 7 = 16$
+  \item $\ldots\ldots \div 10 = 4$
+  \item $5 \times \left( -10\right) = \ldots\ldots$
+  \item $10 \div \left( -5\right) = \ldots\ldots$
+  \item $\ldots\ldots \times 8 = -64$
+  \item $42 \div 6 = \ldots\ldots$
+  \item $11 - \ldots\ldots = 5$
+  \item $\ldots\ldots \times \left( -1\right) = 3$
+  \item $-30 \div 6 = \ldots\ldots$
+  \item $0 - \ldots\ldots = 3$
+  \item $40 \div 4 = \ldots\ldots$
+  \item $10 + 3 = \ldots\ldots$
+  \item $-19 - \left( -9\right) = \ldots\ldots$
+  \item $-5 \times \ldots\ldots = -20$
+  \item $7 - \ldots\ldots = 5$
+  \end{enumerate}
+\end{multicols}
+
+\vspace{-0.4cm}
+\horrule{1px}
+\vspace{-0.8cm}
+
+\begin{multicols}{2}
+  \subsection*{exercice 1}
+  Dans une urne, il y a 4 boules jaunes (J), 5 boules bleues (B) et 5 boules rouges (R), indiscernables au toucher. On tire successivement et sans remise deux boules.
+  \begin{enumerate}
+  \item Quelle est la probabilité de tirer une boule bleue au premier tirage?
+  \item Construire un arbre des probabilités décrivant l'expérience aléatoire.
+  \item Quelle est la probabilité que la première boule soit rouge et la deuxième soit bleue?
+  \item Quelle est la probabilité que la deuxième boule soit jaune ?
+  \item Quelle est la probabilité de tirer deux boules de même couleur ?
+  \end{enumerate}
+
+  \subsection*{exercice 2}
+
+  On lance trois fois une pièce de monnaie et on regarde sur quelle face celle-ci tombe. On note P s’il s’agit de Pile et F s’il s’agit de Face. 
+  PPF signifie que la pièce est tombée sur Pile, Pile et Face, dans cet ordre-là.
+
+  \begin{enumerate}
+  \item Quelles sont les issues possibles ?
+  \item Quelle est la probabilité de faire trois fois pile : PPP ?  \textit{(Justifier)}
+  \item On vient de faire 2 fois pile. Quelle est la probabilité de faire une troisième fois pile ? \textit{(Justifier)}
+  \item Quelle est la probabilité de faire au moins une fois sur Pile ? \textit{(Justifier)}
+  \end{enumerate}
+\end{multicols}
+
+\vspace{-0.4cm}
+\horrule{1px}
+\vspace{-0.8cm}
+
+\begin{multicols}{2}
+  \subsection*{exercice 3}
+
+  On lance deux dés à six faces, numérotées de 1 à 6, puis on conserve uniquement le plus grand résultat. Par exemple, on obtient 2 et 4. Je conserve 4.
+
+  \begin{enumerate}
+  \item Quelles sont les issues possibles ?
+  \item Compléter le tableau ci-contre, indiquant le nombre que l’on retient suivant le résultat des deux dés
+  \item En déduire la probabilité associée à chaque issue de cette expérience. 
+    \begin{center}
+      \begin{tabular}{|c|c|c|c|c|c|c|}
+        \hline
+        & 1 & 2 & 3 & 4 & 5 & 6 \\
+        \hline
+        1 &   &   &   &   &   &\\  
+        \hline
+        2 &   &   &   &   &   &\\  
+        \hline
+        3 &   &   &   &   &   &\\  
+        \hline
+        4 &   &   &   &   &   &\\  
+        \hline
+        5 &   &   &   &   &   &\\  
+        \hline
+        6 &   &   &   &   &   &\\
+        \hline     
+      \end{tabular}
+    \end{center}
+  \item Quelle est l'issue la plus probable. \textit{(celle qui a le plus de chance de se réaliser.)}
+  \item Quelle est la probabilité de faire 5 ou plus ?  \textit{(Justifier)}
+  \end{enumerate}
+\end{multicols}
+
+\vspace{-0.4cm}
+\horrule{1px}
+\vspace{-0.8cm}
+
+\begin{multicols}{2}
+  \subsection*{exercice 4}
+  Sam préfère les bonbons bleus. 
+  Dans son paquet de 500 bonbons, 140 sont bleus, les autres sont rouges, jaunes ou verts.
+
+  \begin{enumerate}
+  \item Quelle est la probabilité qu’il pioche au hasard un bonbon bleu dans son paquet ?
+  \item 20\% des bonbons de ce paquet sont rouges. Combien y a-t-il de bonbons rouges ?
+  \item Sachant qu’il y a 130 bonbons verts dans ce paquet, Sam a-t-il plus de chance de piocher au hasard un bonbon vert ou un bonbon jaune ?
+  \item Aïcha avait acheté le même paquet il y a quinze jours, il ne lui reste que 130 bonbons bleus,100 jaunes, 60 rouges et 100 verts. Elle dit à Sam : \og Tu devrais piocher dans mon paquet plutôt que dans le tien, tu aurais plus de chance d’obtenir un bleu \fg.
+    A-t-elle raison? 
+  \end{enumerate}
+\end{multicols}
+
+
+\newpage
+
+\textbf{Nom, Prénom :} \hspace{8cm} \textbf{Classe :} \hspace{3cm} \textbf{Date :}\\
+\vspace{-0.8cm}
+\begin{center}
+  \textit{Les mathématiques ne sont une moindre immensité que la mer.}  - \textbf{Victor Hugo}
+\end{center}
+\vspace{-0.8cm}
+
+\subsection*{Calcul}
+\begin{multicols}{3}\noindent
+    \begin{enumerate}
+    \item $-4 - \ldots\ldots = -1$
+    \item $-10 \times 6 = \ldots\ldots$
+    \item $\ldots\ldots + 2 = 5$
+    \item $7 + \left( -8\right) = \ldots\ldots$
+    \item $7 - 8 = \ldots\ldots$
+    \item $5 + \ldots\ldots = 13$
+    \item $-45 \div \left( -9\right) = \ldots\ldots$
+    \item $-6 - \ldots\ldots = -8$
+    \item $\ldots\ldots - \left( -5\right) = 7$
+    \item $63 \div 7 = \ldots\ldots$
+    \item $-4 + 4 = \ldots\ldots$
+    \item $12 \div \ldots\ldots = -3$
+    \item $-6 \times \left( -9\right) = \ldots\ldots$
+    \item $1 + 2 = \ldots\ldots$
+    \item $-10 \times \ldots\ldots = 100$
+    \item $5 - \left( -5\right) = \ldots\ldots$
+    \item $12 \div 4 = \ldots\ldots$
+    \item $-8 \times \left( -8\right) = \ldots\ldots$
+    \item $\ldots\ldots \div 5 = 4$
+    \item $-7 \times \left( -7\right) = \ldots\ldots$
+    \end{enumerate}
+\end{multicols}
+
+\vspace{-0.4cm}
+\horrule{1px}
+\vspace{-0.8cm}
+
+\begin{multicols}{2}
+  \subsection*{exercice 1}
+  Dans une urne, il y a 3 boules vertes (V), 3 boules rouges (R) et 6 boules jaunes (J), indiscernables au toucher. On tire successivement et sans remise
+  deux boules.
+  \begin{enumerate}
+  \item Quelle est la probabilité de tirer une boule rouge au premier tirage?
+  \item Construire un arbre des probabilités décrivant l'expérience aléatoire.
+  \item Quelle est la probabilité que la première boule soit jaune et la deuxième soit rouge?
+  \item Quelle est la probabilité que la deuxième boule soit verte ?
+  \item Quelle est la probabilité de tirer deux boules de même couleur ?
+  \end{enumerate}
+
+  \subsection*{exercice 2}
+
+  On lance trois fois une pièce de monnaie et on regarde sur quelle face celle-ci tombe. On note P s’il s’agit de Pile et F s’il s’agit de Face. 
+  PPF signifie que la pièce est tombée sur Pile, Pile et Face, dans cet ordre-là.
+
+  \begin{enumerate}
+  \item Quelles sont les issues possibles ?
+  \item Quelle est la probabilité de faire trois fois face : FFF ?  \textit{(Justifier)}
+  \item On vient de faire 2 fois face. Quelle est la probabilité de faire une troisième fois face ? \textit{(Justifier)}
+  \item Quelle est la probabilité de faire au moins une fois sur face ? \textit{(Justifier)}
+  \end{enumerate}
+\end{multicols}
+
+\vspace{-0.4cm}
+\horrule{1px}
+\vspace{-0.8cm}
+
+\begin{multicols}{2}
+  \subsection*{exercice 3}
+
+  On lance deux dés à six faces, numérotées de 1 à 6, puis on conserve uniquement le plus petit résultat. Par exemple, on obtient 2 et 4. Je conserve 2.
+
+  \begin{enumerate}
+  \item Quelles sont les issues possibles ?
+  \item Compléter le tableau ci-contre, indiquant le nombre que l’on retient suivant le résultat des deux dés
+  \item En déduire la probabilité associée à chaque issue de cette expérience. 
+    \begin{center}
+      \begin{tabular}{|c|c|c|c|c|c|c|}
+        \hline
+        & 1 & 2 & 3 & 4 & 5 & 6 \\
+        \hline
+        1 &   &   &   &   &   &\\  
+        \hline
+        2 &   &   &   &   &   &\\  
+        \hline
+        3 &   &   &   &   &   &\\  
+        \hline
+        4 &   &   &   &   &   &\\  
+        \hline
+        5 &   &   &   &   &   &\\  
+        \hline
+        6 &   &   &   &   &   &\\
+        \hline     
+      \end{tabular}
+    \end{center}
+  \item Quelle est l'issue la plus probable. \textit{(celle qui a le plus de chance de se réaliser.)}
+  \item Quelle est la probabilité de faire 3 ou plus ?  \textit{(Justifier)}
+  \end{enumerate}
+\end{multicols}
+
+\vspace{-0.4cm}
+\horrule{1px}
+\vspace{-0.8cm}
+
+\begin{multicols}{2}
+  \subsection*{exercice 4}
+  Sam préfère les bonbons bleus. 
+  Dans son paquet de 600 bonbons, 180 sont bleus, les autres sont rouges, jaunes ou verts.
+
+  \begin{enumerate}
+  \item Quelle est la probabilité qu’il pioche au hasard un bonbon bleu dans son paquet ?
+  \item 20\% des bonbons de ce paquet sont rouges. Combien y a-t-il de bonbons rouges ?
+  \item Sachant qu’il y a 130 bonbons verts dans ce paquet, Sam a-t-il plus de chance de piocher au hasard un bonbon vert ou un bonbon jaune ?
+  \item Aïcha avait acheté le même paquet il y a quinze jours, il ne lui reste que 140 bonbons bleus,100 jaunes, 60 rouges et 100 verts. Elle dit à Sam : \og Tu devrais piocher dans mon paquet plutôt que dans le tien, tu aurais plus de chance d’obtenir un bleu \fg.
+    A-t-elle raison? 
+  \end{enumerate}
+\end{multicols}
+
+
+\end{document}

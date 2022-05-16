@@ -1,0 +1,334 @@
+\documentclass[12pt]{article}
+\usepackage{geometry} % Pour passer au format A4
+\geometry{hmargin=1cm, vmargin=1cm} % 
+
+% Page et encodage
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage[english,french]{babel} % Français et anglais
+\usepackage[utf8]{inputenc} 
+
+\usepackage{lmodern}
+\setlength\parindent{0pt}
+
+% Graphiques
+\usepackage{graphicx,float,grffile}
+\usepackage{pgf,tikz}
+\usetikzlibrary{arrows}
+
+% Maths et divers
+\usepackage{amsmath,amsfonts,amssymb,amsthm,verbatim}
+\usepackage{multicol,multido,enumitem,url,eurosym,gensymb}
+
+% Sections
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{\centering \normalfont\scshape}
+
+% Tête et pied de page
+
+\usepackage{fancyhdr} 
+\pagestyle{fancyplain} 
+
+\fancyhead{} % No page header
+\fancyfoot{}
+
+\renewcommand{\headrulewidth}{0pt} % Remove header underlines
+\renewcommand{\footrulewidth}{0pt} % Remove footer underlines
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+%----------------------------------------------------------------------------------------
+%	Début du document
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+% RE-DEFINITION
+%----------------------------------------------------------------------------------------
+% MATHS
+%-----------
+
+\newtheorem{Definition}{Définition}
+\newtheorem{Theorem}{Théorème}
+\newtheorem{Proposition}{Propriété}
+
+% MATHS
+%-----------
+\renewcommand{\labelitemi}{$\bullet$}
+\renewcommand{\labelitemii}{$\circ$}
+\newcommand{\Pointilles}[1][3]{%
+  \multido{}{#1}{\makebox[\linewidth]{\dotfill}\\[\parskip]
+}}
+
+%----------------------------------------------------------------------------------------
+%	Titre
+%----------------------------------------------------------------------------------------
+
+\setlength{\columnseprule}{1pt}
+
+\textbf{Nom, Prénom :} \hspace{8cm} \textbf{Classe :} \hspace{3cm} \textbf{Date :}\\
+\vspace{-0.2cm}
+\begin{center}
+  \textit{On vit de ce que l’on obtient. On construit sa vie sur ce que l’on donne.}  - \textbf{Winston Churchill}
+\end{center}
+\vspace{-0.2cm}
+
+
+\subsection*{ex1 - Calculer}
+\begin{multicols}{3}
+\begin{enumerate}
+\item[1a.] $\sqrt{\sqrt{25} + 5^2} = $ \dotfill\\
+\item[1b.] $\sqrt{\dfrac{9}{10}} = $ \dotfill\\
+\item[1c.] $\dfrac{56}{4 + 3^2 + 3} = $ \dotfill \\
+\item[1d.] $ \sqrt{24 + 4^2} + \sqrt{3} = $ \dotfill\\
+\item[1e.] $\dfrac{\sqrt{25}}{\sqrt{6}} = $ \dotfill \\
+\item[1f.] $(2\sqrt{24})^2 = $ \dotfill 
+\end{enumerate}
+\end{multicols}
+
+\subsection*{ex2 - DRILL - Calculer une longueur}
+\textbf{Écrire le calcul et le résultat.}
+  
+  \begin{center}
+  \definecolor{zzttqq}{rgb}{0.6,0.2,0}
+  \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm,scale=0.5]
+  \clip(-1.73,-4.29) rectangle (25.18,5.94);
+  \fill[color=zzttqq,fill=zzttqq,fill opacity=0.1] (-0.24,2.54) -- (4.28,2.54) -- (-0.22,4.76) -- cycle;
+  \fill[color=zzttqq,fill=zzttqq,fill opacity=0.1] (6.86,2.48) -- (10.7,2.44) -- (10.72,5.14) -- cycle;
+  \fill[color=zzttqq,fill=zzttqq,fill opacity=0.1] (13.18,5.06) -- (13.51,-1.46) -- (17.57,-1.24) -- cycle;
+  \fill[color=zzttqq,fill=zzttqq,fill opacity=0.1] (0.55,0.81) -- (-0.21,-2.41) -- (7.23,-3.72) -- cycle;
+  \fill[color=zzttqq,fill=zzttqq,fill opacity=0.1] (19.07,4.46) -- (23.57,4.43) -- (23.46,-4.05) -- cycle;
+  \draw [color=zzttqq] (-0.24,2.54)-- (4.28,2.54);
+  \draw [color=zzttqq] (4.28,2.54)-- (-0.22,4.76);
+  \draw [color=zzttqq] (-0.22,4.76)-- (-0.24,2.54);
+  \draw [color=zzttqq] (6.86,2.48)-- (10.7,2.44);
+  \draw [color=zzttqq] (10.7,2.44)-- (10.72,5.14);
+  \draw [color=zzttqq] (10.72,5.14)-- (6.86,2.48);
+  \draw [color=zzttqq] (13.18,5.06)-- (13.51,-1.46);
+  \draw [color=zzttqq] (13.51,-1.46)-- (17.57,-1.24);
+  \draw [color=zzttqq] (17.57,-1.24)-- (13.18,5.06);
+  \draw [color=zzttqq] (0.55,0.81)-- (-0.21,-2.41);
+  \draw [color=zzttqq] (-0.21,-2.41)-- (7.23,-3.72);
+  \draw [color=zzttqq] (7.23,-3.72)-- (0.55,0.81);
+  \draw [color=zzttqq] (19.07,4.46)-- (23.57,4.43);
+  \draw [color=zzttqq] (23.57,4.43)-- (23.46,-4.05);
+  \draw [color=zzttqq] (23.46,-4.05)-- (19.07,4.46);
+  \end{tikzpicture}
+\end{center}
+
+\begin{multicols}{5}
+\begin{enumerate}
+\item[2a.] \dotfill 
+\item[2b.] \dotfill
+\item[2c.] \dotfill 
+\item[2d.] \dotfill 
+\item[2e.] \dotfill 
+\end{enumerate}
+\end{multicols}
+\begin{multicols}{5}
+\begin{enumerate}
+\item[] \dotfill 
+\item[] \dotfill
+\item[] \dotfill 
+\item[] \dotfill 
+\item[] \dotfill 
+\end{enumerate}
+\end{multicols}
+
+
+\subsection*{ex3 - \textbf{RÉDIGER} - Rectangle ?}
+
+\begin{enumerate}
+  \item[5a.]Soit WEQ un triangle tel que : EQ = 9,1 cm, QW = 3,5 cm et EW = 8,4 cm.\\
+  \textbf{Quelle est la nature du triangle WEQ ?} \\ \Pointilles[4]
+
+  \item[5b.]Soit HZM un triangle tel que : MH = 9,6 cm, ZH = 11 cm et ZM = 14,8 cm. \\
+  \textbf{Quelle est la nature du triangle HZM ?} \\ \Pointilles[4]
+\end{enumerate}
+
+
+\newpage
+
+\paragraph{Le premier problème est obligatoire. Ensuite au choix, vous faites le problème 2 \textbf{OU} le problème 3. L'autre problème est à rendre en DM.}
+
+\subsection*{Problème 1 - Câble}
+
+Deux immeubles sont distants de 45m. 
+  \begin{itemize}
+  \item Le premier mesure 13m de haut.
+  \item Le deuxième mesure 9m. 
+  \end{itemize}
+
+On souhaite tendre un câble entre leur toit. 
+
+\begin{enumerate}
+  \item[I a.] Représenter \textit{(proprement)} la situation.
+
+  \item[I b.] Calculer la longueur de ce câble. \textbf{calculer et justifier}
+
+  \item[I c.] Pour acheter le câble à Bricoman (magasin), deux formules sont possibles :  
+  \begin{itemize}
+  \item Le câble est vendu  au prix de 6 \euro \, le mètre. 
+  \item Une bobine de 5 mètres est vendu 25 \euro \,(la bobine de 5m). 
+  \end{itemize} 
+  Quelle est la meilleure offre ? \textbf{calculer et justifier}
+\end{enumerate}
+
+\subsection*{Problème 2 - Nappe}
+
+\textsc{M. Lafond} a dans son salon une belle table rectangulaire au dimension de 2m par 1,20m. \\
+Un brin distrait, il se trompe et achète une nappe chez Gifi qui est ronde et de diamètre de 2.50m. \\
+Il n'a pas le temps d'aller la faire changer... \\
+La nappe recouvre-t-elle toute la table ?
+
+\begin{enumerate}
+  \item[II a.] Que doit-on calculer afin de répondre à cette question ?
+
+  \item[II b.] Répondre à la question. \textbf{calculer et justifier}
+\end{enumerate}
+
+\subsection*{Problème 3 - Zut, mes clés}
+
+\textsc{M. Lafond} à oublié les clés de sa maison et doit passer par la fenêtre ouverte du premier étage pour rentrer chez lui. \\
+Il possède une échelle de 5.6m. Afin d'être stable et ne pas tomber, l'échelle doit être écartée du bord de 1.30m. 
+
+\begin{enumerate}
+\item[III a.] Représenter \textit{(proprement)} la situation.
+
+\item[III b.] \textsc{M. Lafond} peut-il atteindre sans danger la fenêtre du premier étage situé à 5m du sol ?  \textbf{calculer et justifier}
+\end{enumerate}
+
+\newpage
+
+
+\textbf{Nom, Prénom :} \hspace{8cm} \textbf{Classe :} \hspace{3cm} \textbf{Date :}\\
+\vspace{-0.2cm}
+\begin{center}
+  \textit{On vit de ce que l’on obtient. On construit sa vie sur ce que l’on donne.}  - \textbf{Winston Churchill}
+\end{center}
+\vspace{-0.2cm}
+
+
+\subsection*{ex1 - Calculer}
+\begin{multicols}{3}
+\begin{enumerate}
+\item[1a.] $\sqrt{\sqrt{45} + 4^2} = $ \dotfill\\
+\item[1b.] $\sqrt{\dfrac{8}{9}} = $ \dotfill\\
+\item[1c.] $\dfrac{26}{4 + 6^2 + 3} = $ \dotfill \\
+\item[1d.] $\sqrt{23 + 3^2} + \sqrt{6} = $ \dotfill\\
+\item[1e.] $\dfrac{\sqrt{35}}{\sqrt{6}} = $ \dotfill \\
+\item[1f.] $(2\sqrt{14})^2 = $ \dotfill 
+\end{enumerate}
+\end{multicols}
+
+\subsection*{ex2 - DRILL - Calculer une longueur}
+\textbf{Écrire le calcul et le résultat.}
+  
+  \begin{center}
+  \definecolor{zzttqq}{rgb}{0.6,0.2,0}
+  \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm,scale=0.5]
+  \clip(-1.73,-4.29) rectangle (25.18,5.94);
+  \fill[color=zzttqq,fill=zzttqq,fill opacity=0.1] (-0.24,2.54) -- (4.28,2.54) -- (-0.22,4.76) -- cycle;
+  \fill[color=zzttqq,fill=zzttqq,fill opacity=0.1] (6.86,2.48) -- (10.7,2.44) -- (10.72,5.14) -- cycle;
+  \fill[color=zzttqq,fill=zzttqq,fill opacity=0.1] (13.18,5.06) -- (13.51,-1.46) -- (17.57,-1.24) -- cycle;
+  \fill[color=zzttqq,fill=zzttqq,fill opacity=0.1] (0.55,0.81) -- (-0.21,-2.41) -- (7.23,-3.72) -- cycle;
+  \fill[color=zzttqq,fill=zzttqq,fill opacity=0.1] (19.07,4.46) -- (23.57,4.43) -- (23.46,-4.05) -- cycle;
+  \draw [color=zzttqq] (-0.24,2.54)-- (4.28,2.54);
+  \draw [color=zzttqq] (4.28,2.54)-- (-0.22,4.76);
+  \draw [color=zzttqq] (-0.22,4.76)-- (-0.24,2.54);
+  \draw [color=zzttqq] (6.86,2.48)-- (10.7,2.44);
+  \draw [color=zzttqq] (10.7,2.44)-- (10.72,5.14);
+  \draw [color=zzttqq] (10.72,5.14)-- (6.86,2.48);
+  \draw [color=zzttqq] (13.18,5.06)-- (13.51,-1.46);
+  \draw [color=zzttqq] (13.51,-1.46)-- (17.57,-1.24);
+  \draw [color=zzttqq] (17.57,-1.24)-- (13.18,5.06);
+  \draw [color=zzttqq] (0.55,0.81)-- (-0.21,-2.41);
+  \draw [color=zzttqq] (-0.21,-2.41)-- (7.23,-3.72);
+  \draw [color=zzttqq] (7.23,-3.72)-- (0.55,0.81);
+  \draw [color=zzttqq] (19.07,4.46)-- (23.57,4.43);
+  \draw [color=zzttqq] (23.57,4.43)-- (23.46,-4.05);
+  \draw [color=zzttqq] (23.46,-4.05)-- (19.07,4.46);
+  \end{tikzpicture}
+\end{center}
+
+\begin{multicols}{5}
+\begin{enumerate}
+\item[2a.] \dotfill 
+\item[2b.] \dotfill
+\item[2c.] \dotfill 
+\item[2d.] \dotfill 
+\item[2e.] \dotfill 
+\end{enumerate}
+\end{multicols}
+\begin{multicols}{5}
+\begin{enumerate}
+\item[] \dotfill 
+\item[] \dotfill
+\item[] \dotfill 
+\item[] \dotfill 
+\item[] \dotfill 
+\end{enumerate}
+\end{multicols}
+
+\subsection*{ex3 - \textbf{RÉDIGER} - Rectangle ?}
+
+\begin{enumerate}
+  \item[5a.]Soit WEQ un triangle tel que : EQ = 10,1 cm, QW = 4,5 cm et EW = 8,4 cm.\\
+  \textbf{Quelle est la nature du triangle WEQ ?} \\ \Pointilles[4]
+
+  \item[5b.]Soit HZM un triangle tel que : MH = 8,6 cm, ZH = 12 cm et ZM = 15,8 cm. \\
+  \textbf{Quelle est la nature du triangle HZM ?} \\ \Pointilles[4]
+\end{enumerate}
+
+\newpage
+
+\paragraph{Le premier problème est obligatoire. Ensuite au choix, vous faites le problème 2 \textbf{OU} le problème 3. L'autre problème est à rendre en DM.}
+
+\subsection*{Problème 1 - Câble}
+
+Deux immeubles sont distants de 54m. 
+  \begin{itemize}
+  \item Le premier mesure 16m de haut.
+  \item Le deuxième mesure 12m. 
+  \end{itemize}
+
+On souhaite tendre un câble entre leur toit. 
+
+\begin{enumerate}
+  \item[I a.] Représenter \textit{(proprement)} la situation.
+
+  \item[I b.] Calculer la longueur de ce câble. \textbf{calculer et justifier}
+
+  \item[I c.] Pour acheter le câble à Bricoman (magasin), deux formules sont possibles :  
+  \begin{itemize}
+  \item Le câble est vendu  au prix de 5 \euro \, le mètre. 
+  \item Une bobine de 5 mètres est vendu 22 \euro \,(la bobine de 5m). 
+  \end{itemize} 
+  Quelle est la meilleure offre ? \textbf{calculer et justifier}
+\end{enumerate}
+
+\subsection*{Problème 2 - Nappe}
+
+\textsc{M. Lafond} a dans son salon une belle table rectangulaire au dimension de 2m par 1,30m. \\
+Un brin distrait, il se trompe et achète une nappe chez Gifi qui est ronde et de diamètre de 2.60m. \\
+Il n'a pas le temps d'aller la faire changer... \\
+La nappe recouvre-t-elle toute la table ?
+
+\begin{enumerate}
+  \item[II a.] Que doit-on calculer afin de répondre à cette question ?
+
+  \item[II b.] Répondre à la question. \textbf{calculer et justifier}
+\end{enumerate}
+
+\subsection*{Problème 3 - Zut, mes clés}
+
+\textsc{M. Lafond} à oublié les clés de sa maison et doit passer par la fenêtre ouverte du premier étage pour rentrer chez lui. \\
+Il possède une échelle de 5.4m. Afin d'être stable et ne pas tomber, l'échelle doit être écartée du bord de 1.20m. 
+
+\begin{enumerate}
+\item[III a.] Représenter \textit{(proprement)} la situation.
+
+\item[III b.] \textsc{M. Lafond} peut-il atteindre sans danger la fenêtre du premier étage situé à 5m du sol ?  \textbf{calculer et justifier}
+\end{enumerate}
+
+\end{document}

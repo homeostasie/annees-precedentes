@@ -1,0 +1,390 @@
+\documentclass[11pt]{article}
+\usepackage{geometry} % Pour passer au format A4
+\geometry{hmargin=1cm, vmargin=1cm} % 
+
+% Page et encodage
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage[english,french]{babel} % Français et anglais
+\usepackage[utf8]{inputenc} 
+
+\usepackage{lmodern}
+\setlength\parindent{0pt}
+
+% Graphiques
+\usepackage{graphicx,float,grffile}
+
+% Maths et divers
+\usepackage{amsmath,amsfonts,amssymb,amsthm,verbatim}
+\usepackage{multicol,enumitem,url,eurosym,gensymb}
+
+% Sections
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{\centering \normalfont\scshape}
+
+% Tête et pied de page
+
+\usepackage{fancyhdr} 
+\pagestyle{fancyplain} 
+
+\fancyhead{} % No page header
+\fancyfoot{}
+
+\renewcommand{\headrulewidth}{0pt} % Remove header underlines
+\renewcommand{\footrulewidth}{0pt} % Remove footer underlines
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+%----------------------------------------------------------------------------------------
+%	Début du document
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+% RE-DEFINITION
+%----------------------------------------------------------------------------------------
+% MATHS
+%-----------
+
+\newtheorem{Definition}{Définition}
+\newtheorem{Theorem}{Théorème}
+\newtheorem{Proposition}{Propriété}
+
+% MATHS
+%-----------
+\renewcommand{\labelitemi}{$\bullet$}
+\renewcommand{\labelitemii}{$\circ$}
+%----------------------------------------------------------------------------------------
+%	Titre
+%----------------------------------------------------------------------------------------
+
+\setlength{\columnseprule}{1pt}
+
+\textbf{Nom, Prénom :} \hspace{8cm} \textbf{Classe :} \hspace{3cm} \textbf{Date :}\\
+\vspace{-0.8cm}
+\begin{center}
+  \textit{If you do the work, you get rewarded. There are no shortcuts in life.}  - \textbf{Michael Jordan}
+\end{center}
+\vspace{-0.8cm}
+
+\subsection*{Équations}
+\begin{multicols}{3}\noindent
+  \begin{enumerate}
+  \item[a.)] $-2x + 5 = 9$
+  \item[b.)] $x - 10 = -11$
+  \item[c.)] $-3x - 2 = 3x + 34$
+  \item[d.)] $4x + 10 = -4x + 18$
+  \item[e.)] $-4(x - 1) = 2x + 16$
+  \item[f.)] $-3x = 12$
+  \item[g.)] $x + 10 = 18$
+  \item[h.)] $3(x + 8) = -3x + 18$
+  \item[i.)] $x + 3 = -6$
+  \item[j.)] $-4(x + 2) = -3x - 3$
+  \item[k.)] $-3x + 7 = 3x - 35$
+  \item[l.)] $-x - 9 = -17$
+  \item[m.)] $-3x - 9 = -x - 23$
+  \item[n.)] $4(x + 8) = 68$
+  \item[o.)] $4x + 2 = 3x - 4$
+  \end{enumerate}
+\end{multicols}
+
+\vspace{-0.4cm}
+\horrule{1px}
+\vspace{-0.8cm}
+
+\subsection*{Programme de calcul}
+\fbox{\begin{minipage}{0.4\textwidth}
+  {\fontfamily{lmtt}\selectfont 
+    \begin{itemize}
+      \item Prendre le nombre de départ.
+      \item Ajouter 10.
+      \item multiplier par 4.
+      \item Retrancher 40.
+    \end{itemize}
+  }
+\end{minipage}}
+
+\begin{enumerate}
+  \item Essayer le programme de calcul avec 1, 2, 4, 512 et 1234.
+  \item Peut-on prévoir le résultat si on prend 5000 comme nombre de départ ?
+  \item Dire ce que fait le programme de calcul en une phrase.
+  \item Est-ce suffisant pour démontrer que cela est vrai de prendre des exemples ?
+  \item On pose $x$ comme nombre de départ. Effectuer le programme de calcul avec x. Réduire l’expression afin de conclure votre démonstration.
+\end{enumerate}
+
+\vspace{1cm}
+\horrule{1px}
+\vspace{1cm}
+
+\textbf{Nom, Prénom :} \hspace{8cm} \textbf{Classe :} \hspace{3cm} \textbf{Date :}\\
+\vspace{-0.8cm}
+\begin{center}
+  \textit{If you do the work, you get rewarded. There are no shortcuts in life.}  - \textbf{Michael Jordan}
+\end{center}
+\vspace{-0.8cm}
+
+\subsection*{Équations}
+\begin{multicols}{3}\noindent
+  \begin{enumerate}
+  \item[a.)] $x + 1 = 9$
+  \item[b.)] $-5(x + 3) = 0$
+  \item[c.)] $-4x - 4 = 3x + 38$
+  \item[d.)] $x + 19 = 29$
+  \item[e.)] $2x - 8 = -4x - 14$
+  \item[f.)] $-3(x + 8) = 32$
+  \item[g.)] $-4(x + 8) = -52$
+  \item[h.)] $4(x - 3) = 12$
+  \item[i.)] $-x + 5 = 5x + 11$
+  \item[j.)] $x - 6 = -12$
+  \item[k.)] $-4(x + 4) = 0$
+  \item[l.)] $3x + 1 = -14$
+  \item[m.)] $-x - 7 = x - 11$
+  \item[n.)] $x + 3 = 8$
+  \item[o.)] $2(x - 4) = 4x - 2$
+  \end{enumerate}
+\end{multicols}
+
+\vspace{-0.4cm}
+\horrule{1px}
+\vspace{-0.8cm}
+
+\subsection*{Programme de calcul}
+\fbox{\begin{minipage}{0.4\textwidth}
+  {\fontfamily{lmtt}\selectfont 
+    \begin{itemize}
+      \item Prendre le nombre de départ.
+      \item Ajouter 10.
+      \item multiplier par 6.
+      \item Retrancher 60.
+    \end{itemize}
+  }
+\end{minipage}}
+
+\begin{enumerate}
+  \item Essayer le programme de calcul avec 1, 2, 5, 412 et 2345.
+  \item Peut-on prévoir le résultat si on prend 5000 comme nombre de départ ?
+  \item Dire ce que fait le programme de calcul en une phrase.
+  \item Est-ce suffisant pour démontrer que cela est vrai de prendre des exemples ?
+  \item On pose $x$ comme nombre de départ. Effectuer le programme de calcul avec x. Réduire l’expression afin de conclure votre démonstration.
+\end{enumerate}
+
+\newpage
+
+\textbf{Nom, Prénom :} \hspace{8cm} \textbf{Classe :} \hspace{3cm} \textbf{Date :}\\
+\vspace{-0.8cm}
+\begin{center}
+  \textit{If you do the work, you get rewarded. There are no shortcuts in life.}  - \textbf{Michael Jordan}
+\end{center}
+\vspace{-0.8cm}
+
+\subsection*{Équations}
+\begin{multicols}{3}\noindent
+  \begin{enumerate}
+  \item[a.)] $x + 1 = 3x + 13$
+  \item[b.)] $x - 4 = 0$
+  \item[c.)] $-2x + 3 = -1$
+  \item[d.)] $-5(x + 3) = -x - 33$
+  \item[e.)] $-2(x + 2) = 3x - 39$
+  \item[f.)] $-3x - 5 = -2x - 9$
+  \item[g.)] $-4x - 7 = 1$
+  \item[h.)] $x - 3 = -12$
+  \item[i.)] $2x - 1 = -2x + 27$
+  \item[j.)] $2(x - 9) = -4x - 72$
+  \item[k.)] $x + 10 = 1$
+  \item[l.)] $x + 20 = 29$
+  \item[m.)] $2x - 6 = x - 8$
+  \item[n.)] $4(x + 8) = 3x + 17$
+  \item[o.)] $-2(x + 8) = -3x + 10$
+  \end{enumerate}
+\end{multicols}
+
+\vspace{-0.4cm}
+\horrule{1px}
+\vspace{-0.8cm}
+
+\subsection*{Programme de calcul}
+\fbox{\begin{minipage}{0.4\textwidth}
+  {\fontfamily{lmtt}\selectfont 
+    \begin{itemize}
+      \item Prendre le nombre de départ.
+      \item Ajouter 6.
+      \item multiplier par 5.
+      \item Retrancher 30.
+    \end{itemize}
+  }
+\end{minipage}}
+
+\begin{enumerate}
+  \item Essayer le programme de calcul avec 1, 2, 6, 612 et 4567.
+  \item Peut-on prévoir le résultat si on prend 5000 comme nombre de départ ?
+  \item Dire ce que fait le programme de calcul en une phrase.
+  \item Est-ce suffisant pour démontrer que cela est vrai de prendre des exemples ?
+  \item On pose $x$ comme nombre de départ. Effectuer le programme de calcul avec x. Réduire l’expression afin de conclure votre démonstration.
+\end{enumerate}
+
+\vspace{1cm}
+\horrule{1px}
+\vspace{1cm}
+
+\textbf{Nom, Prénom :} \hspace{8cm} \textbf{Classe :} \hspace{3cm} \textbf{Date :}\\
+\vspace{-0.8cm}
+\begin{center}
+  \textit{If you do the work, you get rewarded. There are no shortcuts in life.}  - \textbf{Michael Jordan}
+\end{center}
+\vspace{-0.8cm}
+
+\subsection*{Équations}
+\begin{multicols}{3}\noindent
+  \begin{enumerate}
+  \item[a.)] $	x + 3 = 5$
+  \item[b.)] $x - 10 = -2x - 34$
+  \item[c.)] $	3x + 6 = 2x + 10$
+  \item[d.)] $4(x + 1) = -12$
+  \item[e.)] $3(x - 20) = 21$
+  \item[f.)] $x + 4 = 3$
+  \item[g.)] $-3x + 3 = -x - 11$
+  \item[h.)] $-3(x + 2) = -7$
+  \item[i.)] $x + 12 = 16$
+  \item[j.)] $	-2x + 4 = -4x + 6$
+  \item[k.)] $4x = -32$
+  \item[l.)] $3(x + 1) = 18$
+  \item[m.)] $x + 12 = 19$
+  \item[n.)] $-2(x + 2) = 1$
+  \item[o.)] $2x = -4$
+  \end{enumerate}
+\end{multicols}
+
+\vspace{-0.4cm}
+\horrule{1px}
+\vspace{-0.8cm}
+
+\subsection*{Programme de calcul}
+\fbox{\begin{minipage}{0.4\textwidth}
+  {\fontfamily{lmtt}\selectfont 
+    \begin{itemize}
+      \item Prendre le nombre de départ.
+      \item Ajouter 5
+      \item multiplier par 8.
+      \item Retrancher 40.
+    \end{itemize}
+  }
+\end{minipage}}
+
+\begin{enumerate}
+  \item Essayer le programme de calcul avec 1, 2, 4, 312 et 7654.
+  \item Peut-on prévoir le résultat si on prend 5000 comme nombre de départ ?
+  \item Dire ce que fait le programme de calcul en une phrase.
+  \item Est-ce suffisant pour démontrer que cela est vrai de prendre des exemples ?
+  \item On pose $x$ comme nombre de départ. Effectuer le programme de calcul avec x. Réduire l’expression afin de conclure votre démonstration.
+\end{enumerate}
+
+\newpage
+
+\textbf{Nom, Prénom :} \hspace{8cm} \textbf{Classe :} \hspace{3cm} \textbf{Date :}\\
+\vspace{-0.8cm}
+\begin{center}
+  \textit{If you do the work, you get rewarded. There are no shortcuts in life.}  - \textbf{Michael Jordan}
+\end{center}
+\vspace{-0.8cm}
+
+\subsection*{Équations}
+\begin{multicols}{3}\noindent
+  \begin{enumerate}
+  \item[a.)] $-x - 5 = -4x + 16$
+  \item[b.)] $4x = -24$
+  \item[c.)] $4(x + 6) = 2x + 26$
+  \item[d.)] $-3x + 3 = 24$
+  \item[e.)] $x + 17 = 10$
+  \item[f.)] $x - 10 = -19$
+  \item[g.)] $-x - 10 = 5x + 44$
+  \item[h.)] $x + 3 = 4$
+  \item[i.)] $-2(x - 9) = 47$
+  \item[j.)] $2x - 9 = 5x + 18$
+  \item[k.)] $-2(x - 4) = 22$
+  \item[l.)] $	3(x - 4) = -21$
+  \item[m.)] $x + 5 = -2$
+  \item[n.)] $-4x - 4 = 28$
+  \item[o.)] $-4(x - 5) = 3x + 69$
+  \end{enumerate}
+\end{multicols}
+
+\vspace{-0.4cm}
+\horrule{1px}
+\vspace{-0.8cm}
+
+\subsection*{Programme de calcul}
+\fbox{\begin{minipage}{0.4\textwidth}
+  {\fontfamily{lmtt}\selectfont 
+    \begin{itemize}
+      \item Prendre le nombre de départ.
+      \item Ajouter 8.
+      \item multiplier par 8.
+      \item Retrancher 64.
+    \end{itemize}
+  }
+\end{minipage}}
+
+\begin{enumerate}
+  \item Essayer le programme de calcul avec 1, 2, 4, 212 et 5765.
+  \item Peut-on prévoir le résultat si on prend 5000 comme nombre de départ ?
+  \item Dire ce que fait le programme de calcul en une phrase.
+  \item Est-ce suffisant pour démontrer que cela est vrai de prendre des exemples ?
+  \item On pose $x$ comme nombre de départ. Effectuer le programme de calcul avec x. Réduire l’expression afin de conclure votre démonstration.
+\end{enumerate}
+
+\vspace{1cm}
+\horrule{1px}
+\vspace{1cm}
+
+\textbf{Nom, Prénom :} \hspace{8cm} \textbf{Classe :} \hspace{3cm} \textbf{Date :}\\
+\vspace{-0.8cm}
+\begin{center}
+  \textit{If you do the work, you get rewarded. There are no shortcuts in life.}  - \textbf{Michael Jordan}
+\end{center}
+\vspace{-0.8cm}
+
+\subsection*{Équations}
+\begin{multicols}{3}\noindent
+  \begin{enumerate}
+  \item[a.)] $	4x - 10 = -3x + 32$
+  \item[b.)] $3x - 4 = 4x - 7$
+  \item[c.)] $-2x - 7 = -9$
+  \item[d.)] $2x = -2$
+  \item[e.)] $	-x - 1 = 2x + 23$
+  \item[f.)] $-5(x - 2) = 2x - 53$
+  \item[g.)] $	x - 12 = -8$
+  \item[h.)] $4x + 10 = 5x + 12$
+  \item[i.)] $-2(x - 2) = 18$
+  \item[j.)] $4x - 1 = -x + 44$
+  \item[k.)] $	3(x - 4) = 5x - 12$
+  \item[l.)] $	4(x + 10) = 8$
+  \item[m.)] $4(x + 8) = 60$
+  \item[n.)] $-5x = -10$
+  \item[o.)] $-3x - 3 = -24$
+  \end{enumerate}
+\end{multicols}
+
+\vspace{-0.4cm}
+\horrule{1px}
+\vspace{-0.8cm}
+
+\subsection*{Programme de calcul}
+\fbox{\begin{minipage}{0.4\textwidth}
+  {\fontfamily{lmtt}\selectfont 
+    \begin{itemize}
+      \item Prendre le nombre de départ.
+      \item Ajouter 4
+      \item multiplier par 11.
+      \item Retrancher 44.
+    \end{itemize}
+  }
+\end{minipage}}
+
+\begin{enumerate}
+  \item Essayer le programme de calcul avec 1, 2, 4, 312 et 7654.
+  \item Peut-on prévoir le résultat si on prend 5000 comme nombre de départ ?
+  \item Dire ce que fait le programme de calcul en une phrase.
+  \item Est-ce suffisant pour démontrer que cela est vrai de prendre des exemples ?
+  \item On pose $x$ comme nombre de départ. Effectuer le programme de calcul avec x. Réduire l’expression afin de conclure votre démonstration.
+\end{enumerate}
+\end{document}

@@ -1,0 +1,204 @@
+\documentclass[11pt]{article}
+\usepackage{geometry} % Pour passer au format A4
+\geometry{hmargin=1cm, vmargin=1cm} % 
+
+% Page et encodage
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage[english,french]{babel} % Français et anglais
+\usepackage[utf8]{inputenc} 
+
+\usepackage{lmodern}
+\setlength\parindent{0pt}
+
+% Graphiques
+\usepackage{graphicx,float,grffile}
+
+% Maths et divers
+\usepackage{amsmath,amsfonts,amssymb,amsthm,verbatim}
+\usepackage{multicol,enumitem,url,eurosym,gensymb,multido}
+
+% Sections
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{\centering \normalfont\scshape}
+
+% Tête et pied de page
+
+\usepackage{fancyhdr} 
+\pagestyle{fancyplain} 
+
+\fancyhead{} % No page header
+\fancyfoot{}
+
+\renewcommand{\headrulewidth}{0pt} % Remove header underlines
+\renewcommand{\footrulewidth}{0pt} % Remove footer underlines
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+%----------------------------------------------------------------------------------------
+%   Début du document
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+% RE-DEFINITION
+%----------------------------------------------------------------------------------------
+% MATHS
+%-----------
+
+\newtheorem{Definition}{Définition}
+\newtheorem{Theorem}{Théorème}
+\newtheorem{Proposition}{Propriété}
+
+% MATHS
+%-----------
+\renewcommand{\labelitemi}{$\bullet$}
+\renewcommand{\labelitemii}{$\circ$}
+%----------------------------------------------------------------------------------------
+%   Titre
+%----------------------------------------------------------------------------------------
+
+\setlength{\columnseprule}{1pt}
+
+\horrule{2px}
+\section*{Chapitre 2 - Calcul littéral}
+\horrule{2px}
+
+
+Ce chapitre est l’équivalent de la grammaire en français. Il est utilisé \og de partout \fg en sciences. On va l’utiliser dans les formules, les démonstrations, les équations, les fonctions… On va apprendre à utiliser des lettres en mathématiques.
+
+\subsection*{1 - Formules}
+
+$$\text{Aire du disque : }A = \pi ~ R^2$$
+
+\begin{itemize}
+\item $\pi$ est une lettre grecque. C’est une constante. $\pi = 3,14159 ...$ (DM)
+\item $\pi ~ R^2 = \pi \times R^2 = \pi \times R \times R $ \textit{(Multiplication implicite entre deux lettres.)}
+\item Pour utiliser la formule : On remplace R par sa valeur. \\
+  Calculer l'aire d'un disque de rayon 6cm :\\
+  $\pi ~ R^2 = \pi \times 6^2 =\pi \times 36 = 36\pi \approx 113$ \textit{(On préfère écrire $2x$ plutôt que $x2$)} \\
+  L'aire du disque est $113 ~ cm^2$.
+\end{itemize} 
+
+$$\text{Périmètre d’un rectangle : }P = 2 ~ (l + L)$$
+\begin{itemize}
+\item Je ne peux pas toucher, modifier, mélanger deux lettres différentes…
+\item $P = 2(l + L) = 2 \times (l + L)$ \textit{(Multiplication implicite devant une parenthèse.)}
+\item On peut enlever les parenthèses : $P = 2 ~ (l + L) = 2\times l + 2\times L = 2l + 2L$.
+\item On appele cela : \textbf{Distribuer, Développer}.
+\end{itemize}
+
+\subsection*{2 - Démonstrations}
+
+Au collège, en dehors des démonstrations en géométrie, on doit connaître deux types de démonstration.
+
+\begin{itemize}
+\item Démontrer que quelque chose est faux à l’aide d’un \textbf{contre-exemple}.
+\item Démontrer que quelque chose est vrai… est plus compliqué… on doit montrer que c’est vrai tout le temps, pour tous les nombres… Des exemples ne suffiront pas$...$ L’emploi de la lettre va nous permettre cela. (DM - Petit Prince)
+\end{itemize} 
+
+Remarque : La question posée est souvent de démontrer si une proposition est \textbf{Vrai ou Fausse}. Il faut commencer par des exemples. Si un exemple ne marche pas : On peut s'arrêter et dire que c'est faux. Sinon, si les exemples marchent, on essaye avec une lettre pour démontrer que cela est vrai tout le temps.
+
+\subsubsection*{Quelques exemples}
+\begin{multicols}{2}
+  \begin{enumerate}
+  \item[1.]
+
+    \fbox{\begin{minipage}{0.4\textwidth}
+        {\fontfamily{lmtt}\selectfont 
+          \begin{itemize}
+          \item Prendre le nombre de départ.
+          \item Ajouter 10.
+          \item multiplier par 4
+          \item Enlever 3 fois le nombre de départ.
+          \end{itemize}
+        }
+    \end{minipage}}
+
+    \begin{align*}
+      &x \\
+      &x + 10 \\
+      (&x + 10) \times 4 \\
+      (&x + 10) \times 4 - 3x
+    \end{align*}
+  \end{enumerate}
+\end{multicols}
+\begin{enumerate}
+\item[2.]
+  Soit $n$ un nombre entier. \\
+  $n+1$ est l'entier d'après, n+2 l'entier encore après... (pas de $m$ ni de $o$.)\\
+  $2n$ est deux fois ce nombre. $2n$ est un nombre pair. $2n+1$ est un nombre impair.
+\end{enumerate}
+
+\newpage
+
+\subsection*{3 - Phrases}
+
+Avec l’introduction de la lettre en mathématique, on écrit des phrases, des \textbf{expressions}. On peut rédiger des phrases de plusieurs façons et certaines sont plus élégantes. En exercice, on demande de simplifier ou de \textbf{réduire}.\\
+
+Je peux réunir ce qui est identique : 
+\begin{itemize}
+\item $2x + 4x - 8x + 5x * 2 =  (2+4-8+5 \times 2)x = 8x$
+\end{itemize} Je ne peux pas réunir ce qui est différent :
+\begin{itemize}
+\item $1 + a + b + x + x^2 + ...$
+\end{itemize} 
+
+Je reste malin : 
+
+\begin{itemize}
+\item $10 + x - x = 10 + 0 = 10$   donc : $0x = 0$
+\item $3x + x = (3+1)x + = 4x$ donc : $x=1x$
+\item $8y - y = (8-1)y = 7y$ donc : $-x = -1x$
+\end{itemize}
+
+Je reste prudent avec les parenthèses et je pense à distribuer : 
+
+\begin{itemize}
+\item $2(x+12) = 2 \times x+2 \times12 = 2x + 24$
+\item $x(5 - 2x) = x \times 5 - x  \times 2x = 5x  - 2x^2$
+\item $-(12 - y) = -1 \times (12-y) = -1 \times 12 + (-1) \times -y = -12 + y$
+\end{itemize} 
+
+\subsection*{4 - Équations}
+
+L’un des objectifs en mathématiques est de ramener un problème à une équation. On connaît une méthode efficace pour résoudre une équation.
+\begin{multicols}{2}
+  \subsubsection*{La méthode d’Al Khwarizmi.}
+  \begin{enumerate}
+  \item On met les x à gauche, les nombres à droite. Si on changer de côté, on change le signe et on met le nombre \og à la fin \fg.
+  \item On divise le nombre par ce qui est devant x. Pas la peine de diviser si on a déjà $x= ...$. On divise par -1 si on a $-x = ...$.
+  \end{enumerate}
+
+  \begin{align*}
+    -2x - 3 &= 5x - 4 \\
+    -2x -5x &= -4 + 3 \\
+    -7x &= -1  \\
+    x &= -1 \div -7 \\
+    x &= \dfrac{1}{7}
+  \end{align*}
+  \textit{(On préféra une fraction plutôt qu'une valeur approchée.)}
+\end{multicols}
+
+Dans un problème, une bonne initiative est d’appelé $x$ ce qu’on cherche et de l’utiliser dans notre rédaction. On gagne alors en rigueur dans beaucoup de chapitres : Pythagore, trigonométrie, Thalès,…
+
+\subsection*{5 - Avancé}
+
+\subsubsection*{Factoriser et équation produit}
+
+Un produit est nul si l’un des facteurs est nul. Il peut être intéressant de factoriser par un nombre ou par une lettre.
+
+\begin{itemize}
+\item $(x-4) ~ (x + 2) = 0 $ si  $(x-4) = 0 $ ou $(x + 2) = 0 $
+\item $5x + 15 = 5(x + 3)$
+\item $x^2 + 2x = x(x + 2)$ 
+\end{itemize} 
+
+\subsubsection*{Double distribution et égalités remarquables}
+  \begin{align*}
+  &k (a + b) = ka + kb \\
+  &(a + b)(c + d) = ac + ad + bc + bd \\
+  &(a + b)^2 = a^2 + b^2 + 2 ab \\
+  &(a - b)^2 = a^2 + b^2 - 2 ab 
+  \end{align*}
+\end{document}

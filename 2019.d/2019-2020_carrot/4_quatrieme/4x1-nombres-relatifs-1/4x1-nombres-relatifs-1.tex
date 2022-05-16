@@ -1,0 +1,111 @@
+\documentclass[12pt]{article}
+\usepackage{geometry} % Pour passer au format A4
+\geometry{hmargin=1cm, vmargin=1cm} % 
+
+% Page et encodage
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage[english,french]{babel} % Français et anglais
+\usepackage[utf8]{inputenc} 
+
+\usepackage{lmodern}
+\setlength\parindent{0pt}
+
+% Graphiques
+\usepackage{graphicx,float,grffile}
+
+% Maths et divers
+\usepackage{amsmath,amsfonts,amssymb,amsthm,verbatim}
+\usepackage{multicol,enumitem,url,eurosym,gensymb}
+
+% Sections
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{\centering \normalfont\scshape}
+
+% Tête et pied de page
+
+\usepackage{fancyhdr} 
+\pagestyle{fancyplain} 
+
+\fancyhead{} % No page header
+\fancyfoot{}
+
+\renewcommand{\headrulewidth}{0pt} % Remove header underlines
+\renewcommand{\footrulewidth}{0pt} % Remove footer underlines
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+%----------------------------------------------------------------------------------------
+%   Début du document
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+% RE-DEFINITION
+%----------------------------------------------------------------------------------------
+% MATHS
+%-----------
+
+\newtheorem{Definition}{Définition}
+\newtheorem{Theorem}{Théorème}
+\newtheorem{Proposition}{Propriété}
+
+% MATHS
+%-----------
+\renewcommand{\labelitemi}{$\bullet$}
+\renewcommand{\labelitemii}{$\circ$}
+%----------------------------------------------------------------------------------------
+%   Titre
+%----------------------------------------------------------------------------------------
+
+\setlength{\columnseprule}{1pt}
+
+\horrule{2px}
+\section*{Chapitre 1 - Nombres relatifs}
+\horrule{2px}
+
+\subsection*{Calcul avec deux nombres}
+
+Un nombre doit être compris avec le signe qui est devant... et non celui d'après. On a tendance à ne pas mettre le $(+)$ quand il est inutile.
+
+\begin{itemize}
+\item $2 - 3 = 2 + (-3) = -1$
+\end{itemize}
+
+Deux signes $-$ $-$ qui se suivent se transforment en $+$. Le produit de deux nombres négatifs est positif. Une fraction avec deux nombres négatifs est positive. On doit simplifier (au moins mentalement) s'il y a trop de signe de $-$. 
+
+\begin{itemize}
+\item $4- (-6) =  4 + 6 = 10$
+\item $2 \times 3 = -2 \times  -3 = 6 $ 
+\item $\dfrac{12}{4} = \dfrac{-12}{-4} = 3 $
+\item $- (-12) = 12$
+\end{itemize} 
+  
+Pour le sens, une soustraction correspond à un écart.
+
+\begin{itemize}
+\item $2 - 7$ est l'écart entre 2 et 7 donc 5.
+\item $3 - (-6)$ est l'écart entre 3 et $-6$ donc 9.
+\end{itemize}
+
+
+\subsection*{Calculs à plus de deux nombres}
+
+Il faut respecter les priorités de calcul tout en acceptant de \og déplacer les nombres \fg \textbf{avec leurs signes} afin d'être astucieux. Il est important de créer sa propre méthode. 
+
+Dans des produits et des fractions, on compte le nombre de signe de $-$ puis on les simplifie deux par deux.
+
+$\dfrac{2 \times -3 \times -4}{5 \times  -2} = \dfrac{2 \times 3 \times 4}{5 \times  2}$ , on simplifie deux par deux. Il reste un seul signe $-$. La fraction est négative.
+
+
+\subsection*{Activités possibles}
+
+\begin{itemize}
+\item Calcul à trou : On cherche un nombre dans un calcul dont on connait le résultat. On peut aussi chercher l'operation manquante. 
+\item Comprendre le signe d'un calcul sans effectuer les opérations. 
+\item Carré magique : On remplit des tableaux selon certaines règles.
+\item Calcul à lettre. On écrit un calcul avec des lettres. On remplace les lettres par des nombres.
+\item Programme de calcul : On effectue une suite d'instruction écrite en français.
+\end{itemize}
+
+\end{document}

@@ -1,0 +1,111 @@
+\documentclass[11pt]{article}
+\usepackage{geometry} % Pour passer au format A4
+\geometry{hmargin=1cm, vmargin=1cm} % 
+
+% Page et encodage
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage[english,french]{babel} % Français et anglais
+\usepackage[utf8]{inputenc} 
+
+\usepackage{lmodern}
+\setlength\parindent{0pt}
+
+% Graphiques
+\usepackage{graphicx,float,grffile}
+
+% Maths et divers
+\usepackage{amsmath,amsfonts,amssymb,amsthm,verbatim}
+\usepackage{multicol,enumitem,url,eurosym,gensymb}
+
+% Sections
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{\centering \normalfont\scshape}
+
+% Tête et pied de page
+
+\usepackage{fancyhdr} 
+\pagestyle{fancyplain} 
+
+\fancyhead{} % No page header
+\fancyfoot{}
+
+\renewcommand{\headrulewidth}{0pt} % Remove header underlines
+\renewcommand{\footrulewidth}{0pt} % Remove footer underlines
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+\newcommand{\tempsexo}[1]{\textit{\textbf{(#1)}}}
+%----------------------------------------------------------------------------------------
+%   Début du document
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+% RE-DEFINITION
+%----------------------------------------------------------------------------------------
+% MATHS
+%-----------
+
+\newtheorem{Definition}{Définition}
+\newtheorem{Theorem}{Théorème}
+\newtheorem{Proposition}{Propriété}
+\newtheorem{Exo}{Éxercice}
+
+% MATHS
+%-----------
+\renewcommand{\labelitemi}{$\bullet$}
+\renewcommand{\labelitemii}{$\circ$}
+%----------------------------------------------------------------------------------------
+%   Titre
+%----------------------------------------------------------------------------------------
+
+\setlength{\columnseprule}{1pt}
+
+\section{S1 : Correction - Semaine du 16/03 au 22/03}
+
+\subsection{Travail sur le chapitre - Calcul littéral}
+
+\Exo{p102 ex15}\\
+
+\textit{L'objectif ici est de mieux comprendre comment se combinent les additions et les multiplications.}\\
+On pouvait / devait aussi vérifier les calculs avec la calculatrice.
+
+\begin{enumerate}
+    \item[a.] $ 101 \times 17= (100 + 1) \times 17 = 100 \times 17 + 1 \times 17 = 1700 + 17 = 1717$
+    \item[b.] $ 96 \times 5 + 4 \times 5 = (96 + 4) \times 5 = 100 \times 5 = 500$
+    \item[c.] $ 99 \times 13= (100 - 1) \times 13 = 100 \times 13 - 1 \times 13 = 1300 - 13 = 1287$
+    \item[d.] $ 5.4 \times 7 + 5.4 \times 3 = 5.4 \times (7 + 3) = 5.4 \times 10 = 54$
+    \item[e.] $ 1002 \times 14= (1000 + 2) \times 14 = 1000 \times 14 + 2 \times 14 = 14000 + 28 = 14028$
+    \item[f.] $ 8 \times 19 + 2 \times 19 = (8 + 2) \times 19 = 10 \times 19 = 190$
+    \item[g.] $ 98 \times 22 = (100 - 2) \times 22 = 100 \times 22 - 2 \times 22 = 2200 - 44 = 2156$
+    \item[h.] $ 13 \times 103 - 3 \times 13 = (103 - 3) \times 13 = 100 \times 13 = 1300$
+\end{enumerate}
+
+\Exo{p102 ex17}\\
+
+\begin{enumerate}
+    \item[a.] $5 \times (2x + 3) = 5 \times 2x + 5 \times 3 = 10x + 15$
+    \item[b.] $5 + (2x + 3)$ : \textbf{NON}\\
+    On peut réduire, mais on ne peut pas développer car il n'y a pas de $\times$ devant la parenthèse.\\
+    $5 + (2x + 3) =  5 + 2x + 3 = 2x + 8$
+    \item[c.] $(5 + 2x) \times 3 = 5  \times 3 + 2x \times 3 = 15 + 6x$
+    \item[d.] $4 \times (5x - 2) = 4 \times 5x - 4 \times 2 = 20x - 8$
+    \item[e.] $4 \times (5x \times 2)$ : \textbf{NON}\\
+    On peut réduire, mais on ne peut pas développer car il n'y a pas de $+$ dans la parenthèse.\\
+    $4 \times (5x \times 2) = 4 \times 5x \times 2 = 40x$
+    \item[f.] $4 \times (3 \times x + 2) = 4 \times 3x + 4 \times 2 = 12x + 8$
+\end{enumerate}
+
+
+\Exo{p102 ex19}\\
+
+\begin{enumerate}
+    \item[a.] $3 \times x + 3 \times 7 = 3 \times (x+7)$
+    \item[b.] $y \times 9 + y \times y = y \times (9+y)$
+    \item[c.] $2.5x^2 - 0.3x^2 = 2.2x^2$
+    \item[d.] $9 - 3 \times 4 \times N = 3 \times 3 - 3 \times 4 \times N = 3 \times (3 - 4N)$
+    \item[e.] $3 \times x \times 4 \times x = 12 \times x \times x = 12 x^2$
+    \item[f.] $x - x^2 = x \times 1 - x \times x = x \times (1 - x)$
+\end{enumerate}   
+\end{document}

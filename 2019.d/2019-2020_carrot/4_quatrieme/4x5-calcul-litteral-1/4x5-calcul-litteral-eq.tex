@@ -1,0 +1,130 @@
+\documentclass[12pt]{article}
+\usepackage{geometry} % Pour passer au format A4
+\geometry{hmargin=1cm, vmargin=1cm} % 
+
+% Page et encodage
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage[english,french]{babel} % Français et anglais
+\usepackage[utf8]{inputenc} 
+
+\usepackage{lmodern}
+\setlength\parindent{0pt}
+
+% Graphiques
+\usepackage{graphicx,float,grffile}
+
+% Maths et divers
+\usepackage{amsmath,amsfonts,amssymb,amsthm,verbatim}
+\usepackage{multicol,enumitem,url,eurosym,gensymb}
+
+% Sections
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{\centering \normalfont\scshape}
+
+% Tête et pied de page
+
+\usepackage{fancyhdr} 
+\pagestyle{fancyplain} 
+
+\fancyhead{} % No page header
+\fancyfoot{}
+
+\renewcommand{\headrulewidth}{0pt} % Remove header underlines
+\renewcommand{\footrulewidth}{0pt} % Remove footer underlines
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+%----------------------------------------------------------------------------------------
+%   Début du document
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+% RE-DEFINITION
+%----------------------------------------------------------------------------------------
+% MATHS
+%-----------
+
+\newtheorem{Definition}{Définition}
+\newtheorem{Theorem}{Théorème}
+\newtheorem{Proposition}{Propriété}
+
+% MATHS
+%-----------
+\renewcommand{\labelitemi}{$\bullet$}
+\renewcommand{\labelitemii}{$\circ$}
+%----------------------------------------------------------------------------------------
+%   Titre
+%----------------------------------------------------------------------------------------
+
+\setlength{\columnseprule}{1pt}
+
+\horrule{2px}
+\section*{DM - Modélisation du monde}
+\horrule{2px}
+
+Après avoir entourer votre équation. 
+\textbf{Écrire l'équation en grand sur une feuille A4. Coller des images en lien / dessiner pour l'illustrer. Dire une ou deux phrases pour résumer \og de quoi elle parle \fg}
+
+\textit{Les équations avec (*) sont un peu plus complexes à illustrer.}
+\begin{multicols}{2}
+
+\subsection*{Équation de la chaleur}
+
+$$ \frac {\partial \phi }{\partial t} +\nabla \cdot (\phi \mathbf {V} )=S $$
+
+\subsection*{Équation des ondes}
+
+$$ \nabla ^{2}{\vec {E}} = {\frac {1}{c^{2}}}{\frac {\partial ^{2}{\vec {E}}}{\partial t^{2}}} $$
+
+\subsection*{Loi des gaz parfaits (*)}
+
+$$ PV = nRT $$
+
+\subsection*{Équation de Schrödinger (**)}
+
+$$ {\frac {{\hat {\vec {\mathbf {p} }}}^{2}}{2m}}|\Psi (t)\rangle + V{\Bigl (}{\hat {\vec {\mathbf {r} }}},t{\Bigr )}|\Psi (t)\rangle =i\hbar {\partial \over \partial t}|\Psi (t) \rangle $$
+
+\subsection*{Équation d'Einstein (*)}
+
+$$ E = mc^2 $$
+
+\subsection*{Chute libre}
+
+$$  \frac {\mathrm {d} ^{2}x(t)}{\mathrm {d} t^{2}} = -g $$
+
+\subsection*{Chute libre avec frottement}
+
+$$ mg + {\frac {1}{2}}\,C_{x}\,\rho \,S\,v^{2} = ma $$
+
+\subsection*{Circuit électrique RLC (*)}
+
+$$ L\,C\, {\frac {\mathrm {d} ^{2}u_{C}}{\mathrm {d} t^{2}}}+R_{t}\,C\,{\frac {\mathrm {d} u_{C}}{\mathrm {d} t}}+u_{C} = E $$
+
+\subsection*{Désintégration radioactive}
+
+$$ N(t)=N_{0}\,e^{-{\lambda }t}$$
+
+\subsection*{Équation de Saint Venant}
+
+$$ {\frac {\partial ^{2}}{\partial t^{2}}}(s{\sqrt {g}})={\frac {\partial }{\partial x}}\left(c^{2}\,{\frac {\partial }{\partial x}}(s{\sqrt {g}}\,)\right)$$
+
+\subsection*{Théorème Central Limite (**)}
+
+$$ \lim _{n\to \infty }\mathbb {P} (Z_{n}\leq z)=\Phi (z)$$
+
+\subsection*{Navier Stokes}
+
+$$ \rho \left({\dfrac {\partial e}{\partial t}}+\mathbf {V} \cdot \mathbf {\nabla } e\right)={\mathsf {P}}:\mathbf {\nabla } \mathbf {V} +\mathbf {\nabla } \cdot \mathbf {q} +\mathbf {\nabla } \cdot \mathbf {q} _{R}$$
+
+\subsection*{Lois de Kepler}
+$$A(t) = {\frac{ \| {\vec {L} \|}}{2 \cdot m} \cdot t}$$
+
+\subsection*{Loi de Darcy}
+
+$$ Q = K A \dfrac{\Delta H}{L}$$
+\end{multicols}
+
+
+\end{document}

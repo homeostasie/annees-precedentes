@@ -1,0 +1,372 @@
+%%!TEX TS-program = latex
+\documentclass[a4paper,11pt]{article}
+\usepackage[utf8]{inputenc} % UTF-8
+\usepackage[T1]{fontenc}
+\usepackage[frenchb]{babel} % francisation
+\usepackage[fleqn]{amsmath} % aligne le mode maths à gauche
+\usepackage{amssymb} % the amsfont symbols
+\usepackage[table, usenames, svgnames]{xcolor} % Couleurs
+\usepackage{multicol} % Multi-colonnes
+\usepackage{fancyhdr} % Mise en page, en-tête et pied de page
+\usepackage{calc} % Opérations
+\usepackage{marvosym} % Martin Vogels Symbole (\EUR)
+\usepackage{cancel} % draw diagonal lines
+\usepackage{units} % typesetting units and nice fractions
+\usepackage[autolanguage]{numprint} % écrituredes virgules
+\usepackage{tabularx} % creates a paragraph-like column whose width
+% automatically expands
+\usepackage{wrapfig} % allows figures or tables to have text wrapped around
+\usepackage{pst-eucl, pst-plot} % figures géométriques
+\usepackage{wasysym} % Symbole Euro
+%\usepackage{textcomp}
+\input{/usr/share/pyromaths/packages/tabvar.tex}
+
+\usepackage[a4paper, dvips, left=1.5cm, right=1.5cm, top=2cm,%
+bottom=2cm, marginpar=5mm, marginparsep=5pt]{geometry}
+\newcounter{exo}
+\setlength{\headheight}{18pt}
+\setlength{\fboxsep}{1em}
+\setlength\parindent{0em}
+\setlength\mathindent{0em}
+\setlength{\columnsep}{30pt}
+\usepackage[bookmarks=true, bookmarksnumbered=true, ps2pdf, pagebackref=true,%
+colorlinks=true,linkcolor=blue,plainpages=true]{hyperref}
+\hypersetup{pdfauthor={Jérôme Ortais},pdfsubject={Exercices de
+    mathématiques},pdftitle={Exercices créés par Pyromaths, un logiciel libre
+    en Python sous licence GPL}}
+\makeatletter
+\newcommand\styleexo[1][]{
+  \renewcommand{\theenumi}{\arabic{enumi}}
+  \renewcommand{\labelenumi}{$\blacktriangleright$\textbf{\theenumi.}}
+  \renewcommand{\theenumii}{\alph{enumii}}
+  \renewcommand{\labelenumii}{\textbf{\theenumii)}}
+  {\fontfamily{pag}\fontseries{b}\selectfont \underline{#1 \theexo}}
+  \par\@afterheading\vspace{0.5\baselineskip minus 0.2\baselineskip}}
+\newcommand*\exercice{%
+  \psset{unit=1cm, dash=4pt 4pt, PointName=default,linecolor=Maroon,
+    dotstyle=x, linestyle=solid, hatchcolor=Peru, gridcolor=Olive,
+    subgridcolor=Olive, fillcolor=Peru}
+  %\ifthenelse{\equal{\theexo}{0}}{}{\filbreak}
+  \refstepcounter{exo}%
+  \stepcounter{nocalcul}%
+  \par\addvspace{1.5\baselineskip minus 1\baselineskip}%
+  \@ifstar%
+  {\penalty-130\styleexo[Corrigé de l'exercice]}%
+  {\penalty-130\styleexo[Exercice]}%
+  }
+\makeatother
+\newlength{\ltxt}
+\newcounter{fig}
+\newcommand{\figureadroite}[2]{
+  \setlength{\ltxt}{\linewidth}
+  \setbox\thefig=\hbox{#1}
+  \addtolength{\ltxt}{-\wd\thefig}
+  \addtolength{\ltxt}{-10pt}
+  \begin{minipage}{\ltxt}
+    #2
+  \end{minipage}
+  \hfill
+  \begin{minipage}{\wd\thefig}
+    #1
+  \end{minipage}
+  \refstepcounter{fig}
+  }
+\count1=\year \count2=\year
+\ifnum\month<8\advance\count1by-1\else\advance\count2by1\fi
+\pagestyle{fancy}
+\cfoot{\textsl{\footnotesize{Année \number\count1/\number\count2}}}
+\rfoot{\textsl{\tiny{http://www.pyromaths.org}}}
+\lhead{\textsl{\footnotesize{Page \thepage/ \pageref{LastPage}}}}
+\chead{\Large{\textsc{Fiche de révisions}}}
+\rhead{\textsl{\footnotesize{Classe de 3\ieme}}}
+\DecimalMathComma
+\begin{document}
+  \currentpdfbookmark{Les énoncés des exercices}{Énoncés}
+  \newcounter{nocalcul}[exo]
+  \renewcommand{\thenocalcul}{\Alph{nocalcul}}
+  \raggedcolumns
+  \setlength{\columnseprule}{0.5pt}
+
+  \exercice
+  Dans une urne, il y a 3 boules vertes (V), 5 boules marrons (M) et 1 boule
+  orange (O), indiscernables au toucher. On tire successivement et sans remise
+  deux boules.
+  \begin{enumerate}
+  \item Quelle est la probabilité de tirer une boule marron au premier tirage?
+  \item Construire un arbre des probabilités décrivant l'expérience aléatoire.
+  \item Quelle est la probabilité que la première boule soit orange et la
+    deuxième soit marron?
+  \item Quelle est la probabilité que la deuxième boule soit verte ?
+  \end{enumerate}
+
+  \exercice
+  Dans une urne, il y a 1 boule bleue (B), 1 boule marron (M) et 1 boule orange
+  (O), indiscernables au toucher. On tire successivement et sans remise deux
+  boules.
+  \begin{enumerate}
+  \item Quelle est la probabilité de tirer une boule marron au premier tirage?
+  \item Construire un arbre des probabilités décrivant l'expérience aléatoire.
+  \item Quelle est la probabilité que la première boule soit orange et la
+    deuxième soit marron?
+  \item Quelle est la probabilité que la deuxième boule soit bleue ?
+  \end{enumerate}
+
+  \exercice
+  Dans une urne, il y a 5 boules rouges (R), 1 boule orange (O) et 4 boules
+  bleues (B), indiscernables au toucher. On tire successivement et sans remise
+  deux boules.
+  \begin{enumerate}
+  \item Quelle est la probabilité de tirer une boule orange au premier tirage?
+  \item Construire un arbre des probabilités décrivant l'expérience aléatoire.
+  \item Quelle est la probabilité que la première boule soit bleue et la
+    deuxième soit orange?
+  \item Quelle est la probabilité que la deuxième boule soit rouge ?
+  \end{enumerate}
+
+  \exercice
+  Dans une urne, il y a 4 boules jaunes (J), 2 boules vertes (V) et 1 boule
+  marron (M), indiscernables au toucher. On tire successivement et sans remise
+  deux boules.
+  \begin{enumerate}
+  \item Quelle est la probabilité de tirer une boule verte au premier tirage?
+  \item Construire un arbre des probabilités décrivant l'expérience aléatoire.
+  \item Quelle est la probabilité que la première boule soit marron et la
+    deuxième soit verte?
+  \item Quelle est la probabilité que la deuxième boule soit jaune ?
+  \end{enumerate}
+  \label{LastPage}
+  \newpage
+  \currentpdfbookmark{Le corrigé des
+    exercices}{Corrigé}\lhead{\textsl{\footnotesize{Page \thepage/
+        \pageref{LastCorPage}}}}
+  \setcounter{page}{1} \setcounter{exo}{0}
+
+  \exercice*
+  Dans une urne, il y a 3 boules vertes (V), 5 boules marrons (M) et 1 boule
+  orange (O), indiscernables au toucher. On tire successivement et sans remise
+  deux boules.
+  \begin{enumerate}
+  \item Quelle est la probabilité de tirer une boule marron au premier
+    tirage?\par
+    Il y a 9 boules dans l'urne dont 5 boules marrons. \par
+    La probabilité de tirer une boule marron au premier tirage est donc
+    $\dfrac{5}{9}$.
+  \item Construire un arbre des probabilités décrivant l'expérience
+    aléatoire.\\ [0,3cm]
+    \psset{unit=1 mm}
+    \psset{linewidth=0.3,dotsep=1,hatchwidth=0.3,hatchsep=1.5,shadowsize=1,dimen=middle}
+    \psset{dotsize=0.7 2.5,dotscale=1 1,fillcolor=black}
+    \psset{arrowsize=1 2,arrowlength=1,arrowinset=0.25,tbarsize=0.7
+      5,bracketlength=0.15,rbracketlength=0.15}
+    \begin{pspicture}(0,0)(80,53)
+      \psline(0,3)(10,23)
+      \psline(10,3)(10,23)
+      \psline(20,3)(10,23)
+      \psline(30,3)(40,23)
+      \psline(40,3)(40,23)
+      \psline(50,3)(40,23)
+      \psline(60,3)(70,23)
+      \psline(80,3)(70,23)
+      \psline(70,3)(70,23)
+      \psline(15,28)(40,53)
+      \psline(40,53)(65,28)
+      \psline(40,53)(40,28)
+      \rput(20,40){$\dfrac{3}{9}$} \rput(37,40){$\dfrac{5}{9}$}
+      \rput(60,40){$\dfrac{1}{9}$}
+      \rput(10,26){V} \rput(40,26){M} \rput(70,26){O}
+      \rput(0,10){$\dfrac{2}{8}$} \rput(7,10){$\dfrac{5}{8}$}
+      \rput(20,10){$\dfrac{1}{8}$}
+      \rput(0,0){V} \rput(10,0){M} \rput(20,0){O}
+      \rput(30,10){$\dfrac{3}{8}$} \rput(37,10){$\dfrac{4}{8}$}
+      \rput(50,10){$\dfrac{1}{8}$}
+      \rput(30,0){V} \rput(40,0){M} \rput(50,0){O}
+      \rput(60,10){$\dfrac{3}{8}$} \rput(67,10){$\dfrac{5}{8}$}
+      \rput(80,10){$\dfrac{0}{8}$}
+      \rput(60,0){V} \rput(70,0){M} \rput(80,0){O}
+    \end{pspicture}
+    \vspace{0.3cm}
+  \item Quelle est la probabilité que la première boule soit orange et la
+    deuxième soit marron?\par
+    On utilise l'arbre construit précédemment.\par
+    $p(O,M)=\dfrac{1}{9} \times \dfrac{5}{8} = \dfrac{5}{72}$\par
+    La probabilité que la première boule soit orange et la deuxième soit marron
+    est égale à $\dfrac{5}{72}$.
+  \item Quelle est la probabilité que la deuxième boule soit verte ?\par
+    On note (?, V) l'évènement: la deuxième boule tirée est verte. \par
+    $p(?,V)=p(V,V)+p(M,V)+p(O,V,)=\dfrac{3}{9}\times
+    \dfrac{2}{8}+\dfrac{5}{9}\times \dfrac{3}{8}+\dfrac{1}{9}\times
+    \dfrac{3}{8}=\dfrac{24}{72}$
+  \end{enumerate}
+
+  \exercice*
+  Dans une urne, il y a 1 boule bleue (B), 1 boule marron (M) et 1 boule orange
+  (O), indiscernables au toucher. On tire successivement et sans remise deux
+  boules.
+  \begin{enumerate}
+  \item Quelle est la probabilité de tirer une boule marron au premier
+    tirage?\par
+    Il y a 3 boules dans l'urne dont 1 boule marron. \par
+    La probabilité de tirer une boule marron au premier tirage est donc
+    $\dfrac{1}{3}$.
+  \item Construire un arbre des probabilités décrivant l'expérience
+    aléatoire.\\ [0,3cm]
+    \psset{unit=1 mm}
+    \psset{linewidth=0.3,dotsep=1,hatchwidth=0.3,hatchsep=1.5,shadowsize=1,dimen=middle}
+    \psset{dotsize=0.7 2.5,dotscale=1 1,fillcolor=black}
+    \psset{arrowsize=1 2,arrowlength=1,arrowinset=0.25,tbarsize=0.7
+      5,bracketlength=0.15,rbracketlength=0.15}
+    \begin{pspicture}(0,0)(80,53)
+      \psline(0,3)(10,23)
+      \psline(10,3)(10,23)
+      \psline(20,3)(10,23)
+      \psline(30,3)(40,23)
+      \psline(40,3)(40,23)
+      \psline(50,3)(40,23)
+      \psline(60,3)(70,23)
+      \psline(80,3)(70,23)
+      \psline(70,3)(70,23)
+      \psline(15,28)(40,53)
+      \psline(40,53)(65,28)
+      \psline(40,53)(40,28)
+      \rput(20,40){$\dfrac{1}{3}$} \rput(37,40){$\dfrac{1}{3}$}
+      \rput(60,40){$\dfrac{1}{3}$}
+      \rput(10,26){B} \rput(40,26){M} \rput(70,26){O}
+      \rput(0,10){$\dfrac{0}{2}$} \rput(7,10){$\dfrac{1}{2}$}
+      \rput(20,10){$\dfrac{1}{2}$}
+      \rput(0,0){B} \rput(10,0){M} \rput(20,0){O}
+      \rput(30,10){$\dfrac{1}{2}$} \rput(37,10){$\dfrac{0}{2}$}
+      \rput(50,10){$\dfrac{1}{2}$}
+      \rput(30,0){B} \rput(40,0){M} \rput(50,0){O}
+      \rput(60,10){$\dfrac{1}{2}$} \rput(67,10){$\dfrac{1}{2}$}
+      \rput(80,10){$\dfrac{0}{2}$}
+      \rput(60,0){B} \rput(70,0){M} \rput(80,0){O}
+    \end{pspicture}
+    \vspace{0.3cm}
+  \item Quelle est la probabilité que la première boule soit orange et la
+    deuxième soit marron?\par
+    On utilise l'arbre construit précédemment.\par
+    $p(O,M)=\dfrac{1}{3} \times \dfrac{1}{2} = \dfrac{1}{6}$\par
+    La probabilité que la première boule soit orange et la deuxième soit marron
+    est égale à $\dfrac{1}{6}$.
+  \item Quelle est la probabilité que la deuxième boule soit bleue ?\par
+    On note (?, B) l'évènement: la deuxième boule tirée est bleue. \par
+    $p(?,B)=p(B,B)+p(M,B)+p(O,B,)=\dfrac{1}{3}\times
+    \dfrac{0}{2}+\dfrac{1}{3}\times \dfrac{1}{2}+\dfrac{1}{3}\times
+    \dfrac{1}{2}=\dfrac{2}{6}$
+  \end{enumerate}
+
+  \exercice*
+  Dans une urne, il y a 5 boules rouges (R), 1 boule orange (O) et 4 boules
+  bleues (B), indiscernables au toucher. On tire successivement et sans remise
+  deux boules.
+  \begin{enumerate}
+  \item Quelle est la probabilité de tirer une boule orange au premier
+    tirage?\par
+    Il y a 10 boules dans l'urne dont 1 boule orange. \par
+    La probabilité de tirer une boule orange au premier tirage est donc
+    $\dfrac{1}{10}$.
+  \item Construire un arbre des probabilités décrivant l'expérience
+    aléatoire.\\ [0,3cm]
+    \psset{unit=1 mm}
+    \psset{linewidth=0.3,dotsep=1,hatchwidth=0.3,hatchsep=1.5,shadowsize=1,dimen=middle}
+    \psset{dotsize=0.7 2.5,dotscale=1 1,fillcolor=black}
+    \psset{arrowsize=1 2,arrowlength=1,arrowinset=0.25,tbarsize=0.7
+      5,bracketlength=0.15,rbracketlength=0.15}
+    \begin{pspicture}(0,0)(80,53)
+      \psline(0,3)(10,23)
+      \psline(10,3)(10,23)
+      \psline(20,3)(10,23)
+      \psline(30,3)(40,23)
+      \psline(40,3)(40,23)
+      \psline(50,3)(40,23)
+      \psline(60,3)(70,23)
+      \psline(80,3)(70,23)
+      \psline(70,3)(70,23)
+      \psline(15,28)(40,53)
+      \psline(40,53)(65,28)
+      \psline(40,53)(40,28)
+      \rput(20,40){$\dfrac{5}{10}$} \rput(37,40){$\dfrac{1}{10}$}
+      \rput(60,40){$\dfrac{4}{10}$}
+      \rput(10,26){R} \rput(40,26){O} \rput(70,26){B}
+      \rput(0,10){$\dfrac{4}{9}$} \rput(7,10){$\dfrac{1}{9}$}
+      \rput(20,10){$\dfrac{4}{9}$}
+      \rput(0,0){R} \rput(10,0){O} \rput(20,0){B}
+      \rput(30,10){$\dfrac{5}{9}$} \rput(37,10){$\dfrac{0}{9}$}
+      \rput(50,10){$\dfrac{4}{9}$}
+      \rput(30,0){R} \rput(40,0){O} \rput(50,0){B}
+      \rput(60,10){$\dfrac{5}{9}$} \rput(67,10){$\dfrac{1}{9}$}
+      \rput(80,10){$\dfrac{3}{9}$}
+      \rput(60,0){R} \rput(70,0){O} \rput(80,0){B}
+    \end{pspicture}
+    \vspace{0.3cm}
+  \item Quelle est la probabilité que la première boule soit bleue et la
+    deuxième soit orange?\par
+    On utilise l'arbre construit précédemment.\par
+    $p(B,O)=\dfrac{4}{10} \times \dfrac{1}{9} = \dfrac{4}{90}$\par
+    La probabilité que la première boule soit bleue et la deuxième soit orange
+    est égale à $\dfrac{4}{90}$.
+  \item Quelle est la probabilité que la deuxième boule soit rouge ?\par
+    On note (?, R) l'évènement: la deuxième boule tirée est rouge. \par
+    $p(?,R)=p(R,R)+p(O,R)+p(B,R,)=\dfrac{5}{10}\times
+    \dfrac{4}{9}+\dfrac{1}{10}\times \dfrac{5}{9}+\dfrac{4}{10}\times
+    \dfrac{5}{9}=\dfrac{45}{90}$
+  \end{enumerate}
+
+  \exercice*
+  Dans une urne, il y a 4 boules jaunes (J), 2 boules vertes (V) et 1 boule
+  marron (M), indiscernables au toucher. On tire successivement et sans remise
+  deux boules.
+  \begin{enumerate}
+  \item Quelle est la probabilité de tirer une boule verte au premier
+    tirage?\par
+    Il y a 7 boules dans l'urne dont 2 boules vertes. \par
+    La probabilité de tirer une boule verte au premier tirage est donc
+    $\dfrac{2}{7}$.
+  \item Construire un arbre des probabilités décrivant l'expérience
+    aléatoire.\\ [0,3cm]
+    \psset{unit=1 mm}
+    \psset{linewidth=0.3,dotsep=1,hatchwidth=0.3,hatchsep=1.5,shadowsize=1,dimen=middle}
+    \psset{dotsize=0.7 2.5,dotscale=1 1,fillcolor=black}
+    \psset{arrowsize=1 2,arrowlength=1,arrowinset=0.25,tbarsize=0.7
+      5,bracketlength=0.15,rbracketlength=0.15}
+    \begin{pspicture}(0,0)(80,53)
+      \psline(0,3)(10,23)
+      \psline(10,3)(10,23)
+      \psline(20,3)(10,23)
+      \psline(30,3)(40,23)
+      \psline(40,3)(40,23)
+      \psline(50,3)(40,23)
+      \psline(60,3)(70,23)
+      \psline(80,3)(70,23)
+      \psline(70,3)(70,23)
+      \psline(15,28)(40,53)
+      \psline(40,53)(65,28)
+      \psline(40,53)(40,28)
+      \rput(20,40){$\dfrac{4}{7}$} \rput(37,40){$\dfrac{2}{7}$}
+      \rput(60,40){$\dfrac{1}{7}$}
+      \rput(10,26){J} \rput(40,26){V} \rput(70,26){M}
+      \rput(0,10){$\dfrac{3}{6}$} \rput(7,10){$\dfrac{2}{6}$}
+      \rput(20,10){$\dfrac{1}{6}$}
+      \rput(0,0){J} \rput(10,0){V} \rput(20,0){M}
+      \rput(30,10){$\dfrac{4}{6}$} \rput(37,10){$\dfrac{1}{6}$}
+      \rput(50,10){$\dfrac{1}{6}$}
+      \rput(30,0){J} \rput(40,0){V} \rput(50,0){M}
+      \rput(60,10){$\dfrac{4}{6}$} \rput(67,10){$\dfrac{2}{6}$}
+      \rput(80,10){$\dfrac{0}{6}$}
+      \rput(60,0){J} \rput(70,0){V} \rput(80,0){M}
+    \end{pspicture}
+    \vspace{0.3cm}
+  \item Quelle est la probabilité que la première boule soit marron et la
+    deuxième soit verte?\par
+    On utilise l'arbre construit précédemment.\par
+    $p(M,V)=\dfrac{1}{7} \times \dfrac{2}{6} = \dfrac{2}{42}$\par
+    La probabilité que la première boule soit marron et la deuxième soit verte
+    est égale à $\dfrac{2}{42}$.
+  \item Quelle est la probabilité que la deuxième boule soit jaune ?\par
+    On note (?, J) l'évènement: la deuxième boule tirée est jaune. \par
+    $p(?,J)=p(J,J)+p(V,J)+p(M,J,)=\dfrac{4}{7}\times
+    \dfrac{3}{6}+\dfrac{2}{7}\times \dfrac{4}{6}+\dfrac{1}{7}\times
+    \dfrac{4}{6}=\dfrac{24}{42}$
+  \end{enumerate}
+  \label{LastCorPage}
+\end{document}

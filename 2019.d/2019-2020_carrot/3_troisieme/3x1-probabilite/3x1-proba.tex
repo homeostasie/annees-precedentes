@@ -1,0 +1,115 @@
+\documentclass[12pt]{article}
+\usepackage{geometry} % Pour passer au format A4
+\geometry{hmargin=1cm, vmargin=1cm} % 
+
+% Page et encodage
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage[english,french]{babel} % Français et anglais
+\usepackage[utf8]{inputenc} 
+
+\usepackage{lmodern}
+\setlength\parindent{0pt}
+
+% Graphiques
+\usepackage{graphicx,float,grffile}
+
+% Maths et divers
+\usepackage{amsmath,amsfonts,amssymb,amsthm,verbatim}
+\usepackage{multicol,enumitem,url,eurosym,gensymb}
+
+% Sections
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{\centering \normalfont\scshape}
+
+% Tête et pied de page
+
+\usepackage{fancyhdr} 
+\pagestyle{fancyplain} 
+
+\fancyhead{} % No page header
+\fancyfoot{}
+
+\renewcommand{\headrulewidth}{0pt} % Remove header underlines
+\renewcommand{\footrulewidth}{0pt} % Remove footer underlines
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+%----------------------------------------------------------------------------------------
+%   Début du document
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+% RE-DEFINITION
+%----------------------------------------------------------------------------------------
+% MATHS
+%-----------
+
+\newtheorem{Definition}{Définition}
+\newtheorem{Theorem}{Théorème}
+\newtheorem{Proposition}{Propriété}
+
+% MATHS
+%-----------
+\renewcommand{\labelitemi}{$\bullet$}
+\renewcommand{\labelitemii}{$\circ$}
+%----------------------------------------------------------------------------------------
+%   Titre
+%----------------------------------------------------------------------------------------
+
+\setlength{\columnseprule}{1pt}
+
+\horrule{2px}
+\section*{Chapitre 1 - Hasard}
+\horrule{2px}
+
+\subsection*{1 - Vocabulaire}
+
+\begin{Definition}{Expérience aléatoire}\\
+Une expérience est aléatoire si elle vérifie deux conditions.
+\begin{itemize}
+\item On connait toutes les \textbf{issues} possibles. \textit{On sait ce qui peut se passer.}
+\item Le résultat n'est pas \textbf{prévisible}. \textit{On ne sait pas ce qui va se passer.}
+\end{itemize}
+\end{Definition}
+
+\begin{Definition}{Évènement}\\
+Un évènement est un ensemble d'issues possibles.
+\end{Definition}
+
+\begin{Definition}{Probabilité}\\
+La probabilité d'un évènement exprime la \og chance\fg\, de le voir se produire. C'est un nombre compris entre 0 et 1.  \textit{Ce n'est pas un pourcentage}.
+
+\begin{itemize}
+\item Si la probabilité d'un évènement est 0, alors il ne se réalise jamais. Il est \textbf{impossible}.
+\item Si la probabilité d'un évènement est 1, alors il se réalise à chaque fois. Il est \textbf{certain}.
+\item Si la probabilité d'un évènement est $\frac{1}{2}=0.5$, alors il se réalise en moyenne une fois sur deux. 
+\end{itemize}
+\end{Definition}
+
+\subsection*{2 - Fréquences}
+
+On peut comprendre une expérience aléatoire en la répétant un grand nombre de fois. On étudie alors les fréquences des issues. Elles sont proches des résultats théoriques. On utilise alors l'informatique.
+
+Sur un tableur : \textit{\textbf{ALEA.ENTRE.BORNES(1;6)}} retourne un nombre entier au hasard entre 1 et 6.
+Sur calculatrice : \textit{\textbf{ran}} et \textit{\textbf{ranit(1;6)}}
+
+
+\subsection*{3 - Calculer des probabilités}
+
+On n'est pas obligé d'avoir des dés, des cartes ou un ordinateur pour calculer des probabilités. On peut aussi les chercher \og à la main \fg . 
+
+\begin{enumerate}
+\item[1.] Le \textbf{dénombrement}. On compte à la main. On liste les issues possibles au brouillon et on réfléchit...
+\item[2.] Le \textbf{tableau}. Très pratique pour représenter les expériences qui se répètent deux fois.
+\item[3.] Les \textbf{arbres}. Très pratique pour représenter les expériences avec des enchainements.
+\end{enumerate}
+
+Du coup, pour calculer la probabilité :
+$$p = \dfrac{\text{Nombre de fois que l'issue se répète}}{\text{Nombre total des issues}}$$
+
+Remarque : Une probabilité est souvent écrite comme une fraction... il y a donc plusieurs écritures possibles.
+
+
+\end{document}

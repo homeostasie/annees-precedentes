@@ -1,0 +1,478 @@
+\documentclass[11pt]{article}
+\usepackage{geometry} % Pour passer au format A4
+\geometry{hmargin=1cm, vmargin=2cm} % 
+
+% Page et encodage
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage[english,french]{babel} % Français et anglais
+\usepackage[utf8]{inputenc} 
+
+\usepackage{lmodern}
+\setlength\parindent{0pt}
+
+
+\usepackage{fourier}
+%\usepackage[scaled=0.875]{helvet} 
+\renewcommand{\ttdefault}{lmtt} 
+\usepackage{amsmath,amssymb,makeidx}
+\usepackage[normalem]{ulem}
+\usepackage{fancybox,graphicx}
+\usepackage{tabularx,booktabs}
+\usepackage{pifont}
+\usepackage{ulem}
+\usepackage{dcolumn}
+\usepackage{textcomp}
+\usepackage{diagbox}
+\usepackage{tabularx}
+\usepackage{multirow,multicol}
+\usepackage{lscape}
+\newcommand{\euro}{\eurologo{}}
+
+%Tapuscrit : François Kriegk
+\usepackage{pst-eucl}
+\usepackage{diagbox}% à mettre après pst-eucl
+\usepackage{graphicx,pstricks,pst-plot,pst-grad,pst-node,pst-text,pstricks-add}
+\usepackage{pgf,tikz,pgfplots}
+\usetikzlibrary{patterns,calc,decorations.pathmorphing}
+\setlength\paperheight{297mm}
+\setlength\paperwidth{210mm}
+\setlength{\textheight}{25cm}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\D}{\mathbb{D}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\C}{\mathbb{C}}
+
+\renewcommand{\theenumi}{\textbf{\arabic{enumi}}}
+\renewcommand{\labelenumi}{\textbf{\theenumi.}}
+\renewcommand{\theenumii}{\textbf{\alph{enumii}}}
+\renewcommand{\labelenumii}{\textbf{\theenumii.}}
+
+\newcommand{\vect}[1]{\mathchoice%
+  {\overrightarrow{\displaystyle\mathstrut#1\,\,}}%
+  {\overrightarrow{\textstyle\mathstrut#1\,\,}}%
+  {\overrightarrow{\scriptstyle\mathstrut#1\,\,}}%
+  {\overrightarrow{\scriptscriptstyle\mathstrut#1\,\,}}}
+\def\Oij{$\left(\text{O},~\vect{\imath},~\vect{\jmath}\right)$}
+\def\Oijk{$\left(\text{O},~\vect{\imath},~\vect{\jmath},~\vect{k}\right)$}
+\def\Ouv{$\left(\text{O},~\vect{u},~\vect{v}\right)$}
+\setlength{\voffset}{-1,5cm}
+
+\usepackage{fancyhdr} 
+\pagestyle{fancyplain} 
+
+\fancyhead{} % No page header
+\fancyfoot{}
+
+\renewcommand{\headrulewidth}{0pt} % Remove header underlines
+\renewcommand{\footrulewidth}{0pt} % Remove footer underlines
+
+\usepackage{hyperref}
+
+\thispagestyle{empty}
+\usepackage[np]{numprint}
+
+\usepackage{tikz}
+\usepackage{colortbl}
+\usetikzlibrary{backgrounds}
+\usetikzlibrary{calc,shapes.arrows,decorations.pathreplacing}
+
+
+\begin{document}
+%----------------------------------------------------------------------------------------
+% RE-DEFINITION
+%----------------------------------------------------------------------------------------
+% MATHS
+%-----------
+
+\newtheorem{Definition}{Définition}
+\newtheorem{Theorem}{Théorème}
+\newtheorem{Proposition}{Propriété}
+
+% MATHS
+%-----------
+\renewcommand{\labelitemi}{$\bullet$}
+\renewcommand{\labelitemii}{$\circ$}
+\newcommand{\Pointilles}[1][3]{%
+  \multido{}{#1}{\makebox[\linewidth]{\dotfill}\\[\parskip]
+}}
+
+% LINES
+%-----------
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+%----------------------------------------------------------------------------------------
+%	Titre
+%----------------------------------------------------------------------------------------
+
+\setlength{\columnseprule}{1pt}
+
+\begin{titlepage}
+
+  \center % Center everything on the page
+
+  \textsc{\LARGE Collège Faubert}\\[2cm] % Name of your university/college
+  %\textsc{\Large }\\[0.5cm] % Major heading such as course name
+  \textsc{\large Villefranche}\\[2cm] % Minor heading such as course title
+         {\large Février 2020}\\[2cm] 
+
+
+         \HRule \\[2cm]
+                { \Huge \bfseries Brevet blanc}\\[2cm] % Title of your document
+                { \Huge \bfseries Mathématiques}\\[2cm] % Title of your document
+
+                \HRule \\[2cm]
+
+\begin{center}
+  \begin{tabularx}{0.4\linewidth}{|l|*{2}{>{\centering \arraybackslash}X|}}\hline
+    \textsc{Exercice 1} \hfill & 6 points \\ \hline
+    \textsc{Exercice 2} \hfill & 15 points \\ \hline
+    \textsc{Exercice 3} \hfill & 10 points \\ \hline
+    \textsc{Exercice 4} \hfill & 14 points \\ \hline
+    \textsc{Exercice 5} \hfill &15 points \\ \hline
+    \textsc{Exercice 6} \hfill &10 points \\ \hline
+    \textsc{Exercice 7} \hfill &15 points \\ \hline
+    \textsc{Exercice 8} \hfill &15 points \\ \hline
+  \end{tabularx}
+\end{center}
+
+
+  \begin{itemize}
+  \item 
+
+  \end{itemize}
+
+                L'usage de la calculatrice est autorisé ainsi que les instruments usuels de dessin. 
+
+                \vfill 
+
+\end{titlepage}
+
+\newpage
+
+\textbf{\textsc{Exercice 1 \hfill 6 points}}
+
+Dans ce questionnaire à choix multiples, pour chaque question des réponses sont proposées,
+une seule est exacte. Sur la copie, écrire le numéro de la question et recopier la bonne réponse.
+Aucune justification n'est attendue.
+
+\begin{center}
+  \begin{tabularx}{\linewidth}{m{6cm}*{3}{>{\centering \arraybackslash}X}} \toprule
+    Questions &A &B &C\\ \hline
+    \textbf{1.~~} Le nombre $(- 2)^4$ est égal à :& 16 &$- 8$ &\np{20000}\\ \midrule
+    \textbf{2.~~} Une vitesse de $90$ km/h est égale à : &$0,025$ m/s &\np{25000} m/s &25 m/s\\ \midrule
+    \textbf{3.~~} Soit $f$ la fonction affine définie par
+
+    $f : x \longmapsto 2x + 5$ 
+
+    L'image de $- 1$ par la fonction $f$ est :&3 &6 &$- 7$\\ \midrule
+    \textbf{4.~~} Si on multiplie par 3 toutes les dimensions d'un rectangle, son aire est multipliée par:	&3	&6	&9\\ \bottomrule
+  \end{tabularx}
+\end{center}
+
+
+\vspace{0,5cm}
+\textbf{\textsc{Exercice 2 \hfill 15 points}}
+
+\emph{Dans l'exercice suivant, les figures ne sont pas à l'échelle.}
+
+
+\begin{tabular}{m{5cm}m{8cm}}
+  \psset{unit=1.2cm}
+  \def\etage{\pspolygon(0,0)(2.8,0)(0,1.9)(0,0)(1.9,1.9)(0,1.9)}
+  \def\plateau{\psframe[fillstyle=solid,fillcolor=lightgray](0,0)(3.4,0.2)}
+
+  \begin{pspicture}(0,-2)(4,8.5)
+    %\psgrid
+    \multido{\n=0.20+2.05,\na=0.00+2.05}{4}{\rput(0.4,\n){\etage}\rput(0,\na){\plateau}}
+    \rput(0,8.25){\plateau}
+    \rput(2,-0.25){Plateau en bois}
+    \rput(2,-0.6){d'épaisseur 2 cm}
+    \rput(3,1){Étage}
+    \rput(3,3){Étage}
+    \uput[d](2,-1){Figure 1}
+  \end{pspicture}
+  &Un décorateur a dessiné une vue de côté d'un meuble de rangement
+  composé d'une structure métallique et de plateaux en bois d'épaisseur 2
+  cm, illustré par la figure 1.
+
+  Les étages de la structure métallique de ce meuble de rangement sont
+  tous identiques et la figure 2 représente l'un d'entre eux.
+
+  \psset{unit=2.25cm}
+  \hspace{0.25cm}\begin{pspicture}(3,2)
+    \pspolygon(0,0)(2.8,0)(0,1.8)(0,0)(1.9,1.8)(0,1.8)%CDACBA
+    \uput[ul](0,1.8){A} \uput[ur](1.9,1.8){B} \uput[dl](0,0){C} \uput[dr](2.8,0){D} \uput[d](1.15,1.1){O}
+    \uput[d](1.5,0){Figure 2} 
+  \end{pspicture}\\
+\end{tabular}
+
+On donne :
+
+$\bullet~~$ OC = 48 cm ; OD = 64 cm ; OB = 27 cm ; OA = 36 cm et CD = 80 cm ;
+
+$\bullet~~$ les droites (AC) et (CD) sont perpendiculaires.
+
+\begin{enumerate}
+\item Démontrer que les droites (AB) et (CD) sont parallèles.\index{Thalès}
+\item Montrer par le calcul que AB $= 45$ cm.\index{Pythagore}
+\item Calculer la hauteur totale du meuble de rangement.
+\end{enumerate}
+
+\newpage
+
+\textbf{\textsc{Exercice 3 \hfill 10 points}}
+
+\textbf{Absorption du principe actif d'un médicament}
+
+Lorsqu'on absorbe un médicament, que ce soit par voie orale ou non, la quantité de principe actif de ce médicament dans le sang évolue en fonction du temps. Cette quantité se mesure en milligrammes par litre de sang.
+
+Le graphique ci-dessous représente la quantité de principe actif d'un médicament dans le sang, en fonction du temps écoulé, depuis la prise de ce médicament.\index{lecture graphique}
+
+\begin{center}
+  \begin{tikzpicture}[x=2cm,y=2.8mm,>=stealth, scale=0.8 ]
+
+    \begin{axis}[
+        x=1.9cm,y=2.8mm, xmin=0, xmax=7., ymin=0, ymax=31,
+        xtick={0,1,...,7}, ytick={0,10,20,30},
+        minor xtick={0,0.5,...,7}, minor ytick={0,1,...,31},
+        xmajorgrids=true, ymajorgrids=true, xminorgrids=true, yminorgrids=true]
+      
+      \addplot[line width=1pt,smooth]
+      coordinates {	(0,0)(0.5,10)(1,20)(1.5,26)(2,27)(2.5,26)(3,20)(3.5,9)(4,5)(5,1.5)(7,0.5)};
+
+      \addplot[line width=1pt,smooth]
+      coordinates {	(0,0)(0.5,10)(1,20)(1.5,26)(2,27.1)(2.5,25.9)(3,20)(3.5,9)(4,5)(5,1.5)(7,0.5)};
+    \end{axis}	
+
+    \draw [line width=0.7pt,<->] (0,33) node[fill=white, rounded corners,below right=3mm] {Quantité de principe actif (en mg/L)}--(0,0)--(7,0) node[above left=4.5mm, text width=4 cm,fill=white,rounded corners] {Temps écoulé (en h) après la prise du médicament};
+  \end{tikzpicture}
+\end{center}
+\begin{enumerate}
+\item  Quelle est la quantité de principe actif dans le sang, trente minutes après la prise de ce médicament ?
+  
+\item Combien de temps après la prise de ce médicament, la quantité de principe actif est-elle la plus élevée ?
+\end{enumerate}
+
+
+
+\vspace{0,5cm}
+\textbf{\textsc{Exercice 4 \hfill 14 points}}
+
+Sur un télésiège de la station de ski, on peut lire les informations suivantes :
+
+\begin{center}
+
+  \renewcommand{\arraystretch}{1.2}
+
+  \begin{tabular}{|p{4cm} p{4cm}|} \hline
+    \multicolumn{2}{|c|}{\textbf{Télésiège 6 places}} \\
+    Vitesse : $5,5 ~\mathrm{m}\cdot \mathrm{s}^{-1}$ & Puissance : 690 kW \\
+    \multicolumn{2}{|l|}{Débit maxi : $\np{3000}$ skieurs par heure} \\
+    Altitude du départ : $\np{1839}$ m& Altitude de l'arrivée : $\np{2261}$ m\\
+    \multicolumn{2}{|l|}{Distance parcourue entre le départ et l'arrivée : $\np{1453}$ m} \\
+    \multicolumn{2}{|c|}{ \begin{tikzpicture}[x=0.8cm,y=1.0cm] 
+	\draw [line width = 2mm, color = gray] (0.,0.)-- (1.8,0.) -- (8.,2.6)-- (9.8,2.6);
+	\draw (1.7,0.1) node [above left] {Alt. : $\np{1839}$ m};
+	\draw (8.1,2.7) node [above right] {Alt. : $\np{2261}$ m};
+	\draw (4.9,1.3) node [above left] {$\np{1453}$ m};
+    \end{tikzpicture} 	} \\
+    Ouverture du télésiège : 9h & Fermeture : 16h \\ \hline	
+  \end{tabular}
+\end{center}
+
+\begin{enumerate}
+\item Une journée de vacances d'hiver, ce télésiège fonctionne avec son débit maximum pendant toute sa durée d'ouverture.
+  
+  Combien de skieurs peuvent prendre ce télésiège ?
+  
+\item Calculer la durée du trajet d'un skieur qui prend ce télésiège.
+  
+  On arrondira le résultat à la seconde, puis on l'exprimera en minutes et secondes.
+
+\end{enumerate}
+
+\newpage
+
+\textbf{\textsc{Exercice 5 \hfill 15 points}}
+
+
+\parbox{0.48\linewidth}{Afin de faciliter l'accès à sa piscine,
+  Monsieur Joseph décide de construire un escalier constitué de deux prismes superposés dont les bases sont des triangles rectangles.}\hfill\parbox{0.48\linewidth}{
+  \psset{unit=0.8cm}
+  \begin{pspicture}(5.5,4.2)
+    %\psgrid
+    \psframe(0,0)(5.5,1)
+    \psframe(1.75,2.2)(4,3.2)
+    \pspolygon(1.75,3.2)(2.92,4)(4,3.2)
+    \psline(0,1)(1.75,2.2)
+    \psline(5.5,1)(4,2.2)
+\end{pspicture}}
+
+Voici ses plans :
+
+\begin{center}
+  \psset{unit=1.2cm}
+  \begin{pspicture}(5.5,4.2)
+    %\psgrid
+    \psframe(0,0)(5.5,1)
+    \psframe(1.75,2.2)(4,3.2)
+    \pspolygon(1.75,3.2)(2.92,4)(4,3.2)
+    \psline(0,1)(1.75,2.2)
+    \psline(5.5,1)(4,2.2)
+    \psline[linestyle=dotted](2.92,4)(2.92,2)
+    \psline[linestyle=dotted](1.75,2.2)(2.92,3)(5.5,1)
+    \psline[linestyle=dotted](0,0)(2.92,2)(5.5,0)
+    \rput{-38}(3.5,3.8){1,28 m}\rput{34}(2.4,3.8){1,36 m}
+    \rput(1.35,2.7){0,20 m}
+    \psline{<->}(0,0.2)(2.92,2.2)\rput{35}(1.46,1.4){3,40 m}
+    \psline{<->}(5.5,0.2)(2.92,2.2)\rput{-35}(4.2,1.4){3,20 m}
+    \psdots(1.75,2.7)(4,2.7)(0,0.5)(5.5,0.5)
+    \psline(2.8,3.9)(2.92,3.8)(3.06,3.89)
+    \psline[linestyle=dotted](2.8,2.9)(2.92,2.8)(3.06,2.89)
+  \end{pspicture}
+\end{center}
+
+\textbf{Information 1 :} Volume du prisme = aire de la base $\times$ hauteur ;\quad  1~L = 1~dm$^3$
+
+\textbf{Information 2 :} Voici la reproduction d'une étiquette figurant au dos d'un sac de ciment
+de 35~kg.
+
+\begin{center}
+  \begin{tabularx}{\linewidth}{|m{2cm}|*{4}{>{\centering \arraybackslash}X|}}\hline
+    Dosage pour 1 sac de 35 kg	&Volume de béton obtenu	&Sable (seaux)	&Gravillons (seaux)	&Eau\\ \hline
+    Mortier courant 			&105 L					&10				&					&16 L\\ \hline
+    Ouvrages en béton courant	&100 L					&5				&8 					&17 L\\ \hline
+    Montage de murs 			&120 L 					&12				&					&18~L\\ \hline
+    \multicolumn{5}{m{11cm}}{\emph{Dosages donnés à titre indicatif et pouvant varier suivant les matériaux régionaux et le taux d'hygrométrie des granulats}} 
+  \end{tabularx}
+\end{center}
+
+\begin{enumerate}
+\item Démontrer que le volume de l'escalier est égal à environ \np{1,26} m$^3$.
+\item Sachant que l'escalier est un ouvrage en béton courant, déterminer le nombre de sacs
+  de ciment de 35 kg nécessaires à la réalisation de l'escalier.
+\item Déterminer la quantité d'eau nécessaire à cet ouvrage.
+\end{enumerate}
+
+\textbf{\textsc{Exercice 6 \hfill 10 points}}
+
+Hugo a téléchargé des titres musicaux sur son téléphone. Il les a classés par genre musical
+comme indiqué dans le tableau ci-dessous :
+
+\begin{center}
+  \begin{tabularx}{0.7\linewidth}{|l|*{4}{>{\centering \arraybackslash}X|}}\hline
+    Genre musical &Pop &Rap &Techno &Variété\\ \hline
+    Nombre de titres &35 &23 &14 &28\\ \hline
+  \end{tabularx}
+\end{center}
+
+\begin{enumerate}
+\item Combien de titres a-t-il téléchargés?
+\item  Il souhaite utiliser la fonction \og lecture aléatoire\fg{} de son téléphone qui consiste à choisir
+  au hasard parmi tous les titres musicaux téléchargés, un titre à diffuser. Tous les titres
+  sont différents et chaque titre a autant de chances d'être choisi. On s'intéresse au genre
+  musical du premier titre diffusé.
+  \begin{enumerate}
+  \item Quelle est la probabilité de l'évènement: \og Obtenir un titre Pop\fg{} ?
+  \item Quelle est la probabilité de l'évènement \og Le titre diffusé n'est pas du Rap \fg{} ?
+  \end{enumerate}
+\end{enumerate}
+
+\newpage
+
+\textbf{\textsc{Exercice 7 \hfill 15 points}}
+
+Un couple et leurs deux enfants Thomas et Anaïs préparent leur séjour au ski du 20 au 27 février.
+
+Il réservent un studio pour 4 personnes pour la semaine.
+
+Pendant 6 jours, Anaïs et ses parents font du ski et Thomas du snowboard. Ils doivent tous louer leur matériel.
+
+Ils prévoient \textbf{une dépense de 500 \euro} pour la nourriture et les sorties de la semaine.
+\begin{center}
+  
+  \begin{tabularx}{\linewidth}{|>{\centering \arraybackslash }m{3cm} | *{4}{>{\centering \arraybackslash} X |}} \cline{2-5}
+    \multicolumn{1}{l |}{~}	& \textbf{06/02 - 13/02} & \textbf{13/02 - 20/02}  & \textbf{20/02 - 27/02} & \textbf{27/02 - 05/03}  \\  \hline
+    Studio 4 personnes \linebreak 29~m$^2$	&  $\np{870}~$\euro &  $\np{1020}~$\euro& $\np{1020}~$\euro & $\np{1020}~$\euro \\ \hline
+    T2 6  personnes \linebreak 36~m$^2$	&  $\np{1050}~$\euro &  $\np{1250}~$\euro& $\np{1250}~$\euro & $\np{1250}~$\euro \\ \hline
+    T3 8 personnes \linebreak 58~m$^2$	&  $\np{1300}~$\euro &  $\np{1550}~$\euro& $\np{1550}~$\euro & $\np{1550}~$\euro \\ \hline
+  \end{tabularx} 
+
+  \vspace{5mm}
+
+  \begin{tabularx}{0.8\linewidth}{|X l|} \hline
+    \multicolumn{2}{| c |}{\textbf{Location de matériel de ski :}}  \\  
+    Adulte : skis, casque, chaussures : & 17~\euro~par jour \\
+    Enfant : skis, casque, chaussures : & 10~\euro~par jour \\
+    Enfant : snowboard, casque, chaussures : & 19~\euro~par jour \\ \hline
+  \end{tabularx} 
+
+  \vspace{5mm}
+
+  \begin{tabularx}{\linewidth}{|c | p{2mm} |X r|} \cline{1-1} \cline{3-4}
+    \textbf{Formule 1}					&&\multicolumn{2}{c|}{\textbf{Formule 2}} \\
+    && Achat d'une Carte Famille & 120~\euro \\
+    1 adulte 187,50~\euro{} pour 6 jours&& \multicolumn{2}{c |}{Puis :}\\
+    1 enfant 162,50~\euro{} pour 6 jours&&1 forfait adulte 				& 25~\euro~par jour \\
+    &&1 forfait enfant 				& 20~\euro~par jour \\  \cline{1-1} \cline{3-4}
+  \end{tabularx} 
+\end{center}
+
+\begin{enumerate}
+\item Déterminer pour cette famille, la formule la plus intéressante pour l'achat des forfaits pour six jours.
+  
+\item Déterminer alors le budget total à prévoir pour leur séjour au ski.
+\end{enumerate}
+
+\vspace{0,5cm}
+\textbf{\textsc{Exercice 8 \hfill 15 points}}
+
+\begin{multicols}{2}
+  La figure ci-dessous donne un schéma d'un programme de calcul.
+
+  \begin{center}
+    \psset{unit =0.7cm, linewidth=1.5\pslinewidth}
+    \begin{pspicture}(13,12)
+      \psframe(13,12)
+      \rput(6.5,11.2){Choisir un nombre}
+      \psline{->}(6.5,11)(6.5,10.7)
+      \psframe(4.1,10.7)(8.9,9.7)
+      \psline{->}(6.5,9.7)(3.7,8.8)\psline{->}(6.5,9.7)(9.3,8.8)
+      \rput(2.5,8.5){Calculer son double}\psline{->}(2.5,8.4)(2.5,8.1)
+      \rput(10.3,8.5){Calculer son triple}\psline{->}(10.5,8.4)(10.5,8.1)
+      \psframe(0.5,8.1)(4.5,7.1)\psframe(8.5,8.1)(12.5,7.1)
+      \psline{->}(2.5,7)(2.5,6.7)  \psline{->}(10.5,7)(10.5,6.7)
+      \rput(2.5,6.5){Soustraire 5}\rput(10.5,6.5){Ajouter 2}
+      \psline{->}(2.5,6.3)(2.5,6)\psline{->}(10.5,6.3)(10.5,6)
+      \psframe(0.5,6)(4.5,5)\psframe(8.5,6)(12.5,5)
+      \psline{->}(2.5,5)(6.5,2.4)\psline{->}(10.5,5)(6.5,2.4)
+      \rput(6.5,3.7){Multiplier les deux}
+      \rput(6.5,3.4){nombres obtenus}
+      \psline{->}(6.5,2.4)(6.5,2.1)
+      \psframe(4.5,2.1)(8.5,1.1)
+    \end{pspicture}
+  \end{center}
+
+  \begin{enumerate}
+  \item Si le nombre de départ est 1, montrer que le résultat obtenu est $-15$.
+  \item Si on choisit un nombre quelconque $x$ comme nombre de départ, parmi les expressions suivantes, quelle est celle qui donne le résultat obtenu par le programme de calcul ? Justifier.
+
+    \begin{itemize}
+      \item $A = \left(x^2 - 5\right) \times  (3x + 2)$ 
+      \item $B = (2x - 5) \times (3x + 2)$ 
+      \item $C = 2x - 5 \times 3x + 2$
+    \end{itemize}
+
+  \item Lily prétend que l'expression : \\
+  $D = (3x + 2)^2 - (x + 7)(3x + 2)$ \\
+  donne les mêmes résultats que l'expression $B$ pour toutes les valeurs de $x$.
+
+    L'affirmation de Lily est-elle vraie ? Justifier.
+  \end{enumerate}
+\end{multicols}
+
+
+
+\end{document}

@@ -1,0 +1,125 @@
+\documentclass[11pt]{article}
+\usepackage{geometry} % Pour passer au format A4
+\geometry{hmargin=1cm, vmargin=1cm} % 
+
+% Page et encodage
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage[english,french]{babel} % Français et anglais
+\usepackage[utf8]{inputenc} 
+
+\usepackage{lmodern}
+\setlength\parindent{0pt}
+
+% Graphiques
+\usepackage{graphicx,float,grffile}
+
+% Maths et divers
+\usepackage{amsmath,amsfonts,amssymb,amsthm,verbatim}
+\usepackage{multicol,enumitem,url,eurosym,gensymb}
+
+% Sections
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{\centering \normalfont\scshape}
+
+% Tête et pied de page
+
+\usepackage{fancyhdr} 
+\pagestyle{fancyplain} 
+
+\fancyhead{} % No page header
+\fancyfoot{}
+
+\renewcommand{\headrulewidth}{0pt} % Remove header underlines
+\renewcommand{\footrulewidth}{0pt} % Remove footer underlines
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+\newcommand{\tempsexo}[1]{\textit{\textbf{(#1)}}}
+%----------------------------------------------------------------------------------------
+%   Début du document
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+% RE-DEFINITION
+%----------------------------------------------------------------------------------------
+% MATHS
+%-----------
+
+\newtheorem{Definition}{Définition}
+\newtheorem{Theorem}{Théorème}
+\newtheorem{Proposition}{Propriété}
+\newtheorem{Exo}{Éxercice}
+
+% MATHS
+%-----------
+\renewcommand{\labelitemi}{$\bullet$}
+\renewcommand{\labelitemii}{$\circ$}
+%----------------------------------------------------------------------------------------
+%   Titre
+%----------------------------------------------------------------------------------------
+
+\setlength{\columnseprule}{1pt}
+
+\section*{S3 : Correction - Semaine du 30/04 au 05/04}
+
+\subsection*{Travail sur le chapitre - Arithmétiques}
+
+\Exo{p42 ex4}\\
+\textit{Les nombres suivant sont-ils des nombres premiers ?}
+\begin{multicols}{3}
+\begin{enumerate}
+    \item[a.] $12 = 3 \times 4 = 2^2 \times 3$ : \textbf{NON}.
+    \item[b.] $13$ : \textbf{OUI}. 
+    \item[c.] $14 = 2 \times 7$ : \textbf{NON}.
+    \item[d.] $15 = 3 \times 5$ : \textbf{NON}.
+    \item[e.] $17$ : \textbf{OUI}.
+    \item[f.] $18 = 9 \times 2$ : \textbf{NON}.
+    \item[g.] $19$ : \textbf{OUI}.
+    \item[h.] $20 = 2 \times 10 = 2^2 \times 5$ : \textbf{NON}.
+\end{enumerate}
+\end{multicols}
+Remarque : C'est également une bonne occasion pour utiliser la touche / fonction Décomp de sa calculatrice. 
+
+\Exo{p42 ex5}\\
+\textit{Trouver tous les diviseurs des nombre suivants : }
+\begin{multicols}{2}
+\begin{enumerate}
+    \item[a.] 10 : Les diviseurs sont : 1,2,5 et 10.
+    \item[b.] 12 : Les diviseurs sont : 1,2,3,4,6 et 12.
+    \item[c.] 16 : Les diviseurs sont : 1,2,4,8 et 16.
+    \item[d.] 25 : Les diviseurs sont : 1,5 et 25.
+\end{enumerate}
+\end{multicols}
+Remarque : C'est également une bonne occasion pour utiliser la touche / fonction Décomp de sa calculatrice. 
+
+\Exo{p42 ex7}\\
+\textit{Parmi les nombres suivants, trouver ceux qui sont divisibles par 2 et par 3 mais par 4 ni par 9.} \\
+2 : Un nombre est divisible par 2 si le chiffre des unités est divisible par 2. \\
+3 : Un nombre est divisible par 3 si la somme des chiffres est divisible par 3. \\
+4 : Un nombre est divisible par 4 si on peut les deux derniers chiffres sont divisibles par 4. \\
+9 : Un nombre est divisible par 9 si la somme des chiffres est divisible par 9. \\
+\begin{multicols}{2}
+\begin{itemize}
+    \item \textbf{42} : divisible par 2 : $42 = 21 \times 2$ ; divisible par 3 : $42 = 14 \times 3$ ; pas divisible par 4 et 9. \textbf{OUI}.
+    \item \textbf{43} : pas divisible par : 2, 3, 4 et 9. \textbf{NON}.
+    \item \textbf{54} : divisible par 2 : $54 = 27 \times 2$ ; divisible par 3 : $54 = 18 \times 3$ ; pas divisible par 4 ; divisible par 9 : $54 = 9 \times 6$. \textbf{NON}. \columnbreak
+    \item \textbf{84} : divisible par 2 : $84 = 42 \times 2$ ; divisible par 3 : $84 = 42 \times 3$ ; divisible par 4 : $84 = 21 \times 4$ ; pas divisible par 9. \textbf{NON}.
+    \item \textbf{102} : divisible par 2 : $102 = 51 \times 2$ ; divisible par 3 : $102 = 34 \times 3$ ; pas divisible par 4 et 9. \textbf{OUI}.
+    \item \textbf{138} : divisible par 2 : $138 = 69 \times 2$ ; divisible par 3 : $138 = 46 \times 3$ ; pas divisible par 4 et 9. \textbf{OUI}.
+\end{itemize}
+\end{multicols}
+
+\Exo{p42 ex8}\\
+\textit{Parmi les 5 nombres suivants, un seul nombre est premier. Lequel ?}
+\begin{multicols}{3}
+\begin{itemize}
+    \item 12 : $12 = 2 \times 6$ : NON.
+    \item 13 : OUI.
+    \item 14 : $14 = 2 \times 7$ : NON.
+    \item 15 : $15 = 3 \times 5$ : NON. 
+    \item 16 : $16 = 2 \times 8$ : NON.
+\end{itemize}
+\end{multicols}
+\end{document}

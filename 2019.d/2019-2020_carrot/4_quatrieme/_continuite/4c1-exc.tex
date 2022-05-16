@@ -1,0 +1,239 @@
+\documentclass[11pt]{article}
+\usepackage{geometry} % Pour passer au format A4
+\geometry{hmargin=1cm, vmargin=2cm} % 
+
+% Page et encodage
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage[english,french]{babel} % Français et anglais
+\usepackage[utf8]{inputenc} 
+
+\usepackage{lmodern}
+\setlength\parindent{0pt}
+
+
+\usepackage{fourier}
+%\usepackage[scaled=0.875]{helvet} 
+\renewcommand{\ttdefault}{lmtt} 
+\usepackage{amsmath,amssymb,makeidx}
+\usepackage[normalem]{ulem}
+\usepackage{fancybox,graphicx}
+\usepackage{tabularx,booktabs}
+\usepackage{pifont}
+\usepackage{ulem}
+\usepackage{dcolumn}
+\usepackage{textcomp}
+\usepackage{diagbox}
+\usepackage{tabularx}
+\usepackage{multirow,multicol}
+\usepackage{lscape}
+\newcommand{\euro}{\eurologo{}}
+
+%Tapuscrit : François Kriegk
+\usepackage{pst-eucl}
+\usepackage{diagbox}% à mettre après pst-eucl
+\usepackage{graphicx,pstricks,pst-plot,pst-grad,pst-node,pst-text,pstricks-add}
+\usepackage{pgf,tikz,pgfplots}
+\usetikzlibrary{patterns,calc,decorations.pathmorphing}
+\setlength\paperheight{297mm}
+\setlength\paperwidth{210mm}
+\setlength{\textheight}{25cm}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\D}{\mathbb{D}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\C}{\mathbb{C}}
+
+\renewcommand{\theenumi}{\textbf{\arabic{enumi}}}
+\renewcommand{\labelenumi}{\textbf{\theenumi.}}
+\renewcommand{\theenumii}{\textbf{\alph{enumii}}}
+\renewcommand{\labelenumii}{\textbf{\theenumii.}}
+
+\newcommand{\vect}[1]{\mathchoice%
+  {\overrightarrow{\displaystyle\mathstrut#1\,\,}}%
+  {\overrightarrow{\textstyle\mathstrut#1\,\,}}%
+  {\overrightarrow{\scriptstyle\mathstrut#1\,\,}}%
+  {\overrightarrow{\scriptscriptstyle\mathstrut#1\,\,}}}
+\def\Oij{$\left(\text{O},~\vect{\imath},~\vect{\jmath}\right)$}
+\def\Oijk{$\left(\text{O},~\vect{\imath},~\vect{\jmath},~\vect{k}\right)$}
+\def\Ouv{$\left(\text{O},~\vect{u},~\vect{v}\right)$}
+\setlength{\voffset}{-1,5cm}
+
+\usepackage{fancyhdr} 
+\pagestyle{fancyplain} 
+
+\fancyhead{} % No page header
+\fancyfoot{}
+
+\renewcommand{\headrulewidth}{0pt} % Remove header underlines
+\renewcommand{\footrulewidth}{0pt} % Remove footer underlines
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+\newcommand{\tempsexo}[1]{\textit{\textbf{(#1)}}}
+%----------------------------------------------------------------------------------------
+%   Début du document
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+% RE-DEFINITION
+%----------------------------------------------------------------------------------------
+% MATHS
+%-----------
+
+\newtheorem{Definition}{Définition}
+\newtheorem{Theorem}{Théorème}
+\newtheorem{Proposition}{Propriété}
+
+% MATHS
+%-----------
+\renewcommand{\labelitemi}{$\bullet$}
+\renewcommand{\labelitemii}{$\circ$}
+%----------------------------------------------------------------------------------------
+%   Titre
+%----------------------------------------------------------------------------------------
+
+\setlength{\columnseprule}{1pt}
+
+\horrule{2px}
+\section*{Troisième}
+\horrule{2px}
+
+\section*{S1 : Semaine du 16/03 au 22/03 - Exercice complémentaire}
+
+\begin{itemize}
+  \item Brevet 2019 - Centres Amérique du nord
+  \item 15 points
+  \item 10 / 30 minutes pour l'exercice
+  \item 5 / 10 minutes pour la lecture et la compréhension de la correction
+\end{itemize}
+
+ \horrule{2px}
+
+
+Pour ranger les boulets de canon, les soldats du XVI\up{e} siècle utilisaient souvent un type d'empilement pyramidal à base carrée, comme le montrent les dessins suivants :
+
+\hspace{-12mm}
+\begin{tabular}{>{\centering \arraybackslash} p{2.5cm}
+		>{\centering \arraybackslash} p{3.5cm}
+		>{\centering \arraybackslash} p{4.5cm}
+		>{\centering \arraybackslash} p{5.5cm}}
+\begin{tikzpicture}[x={(6:8mm)},y=(145:4mm),z={(90:8.50mm)},baseline={(current bounding box.center)}]
+\foreach \x in {2.5,3.5}{
+	\shade[ball color=gray!30] (\x,3.5,1.697) circle (4mm);}
+\shade[ball color=gray!30] (3,3,2.263) circle (4mm);
+\foreach \x in {2.5,3.5}{
+	\shade[ball color=gray!30] (\x,2.5,1.697) circle (4mm);}
+\end{tikzpicture}
+&
+ \begin{tikzpicture}[x={(6:8mm)},y=(145:4mm),z={(90:8.50mm)},baseline={(current bounding box.center)}]
+\foreach \x in {2,3,4}{
+	\shade[ball color=gray!30] (\x,4,1.131) circle (4mm);}
+\foreach \x in {2.5,3.5}{
+	\shade[ball color=gray!30] (\x,3.5,1.697) circle (4mm);}
+\foreach \x in {2,3,4}{
+	\shade[ball color=gray!30] (\x,3,1.131) circle (4mm);}
+\shade[ball color=gray!30] (3,3,2.263) circle (4mm);
+\foreach \x in {2.5,3.5}{
+	\shade[ball color=gray!30] (\x,2.5,1.697) circle (4mm);}
+\foreach \x in {2,3,4}{
+	\shade[ball color=gray!30] (\x,2,1.131) circle (4mm);}
+\end{tikzpicture}
+&
+\begin{tikzpicture}[x={(6:8mm)},y=(145:4mm),z={(90:8.50mm)},baseline={(current bounding box.center)}]
+\foreach \x in {1.5,2.5,...,4.5}{
+	\shade[ball color=gray!30] (\x,4.5,0.5657) circle (4mm);}
+\foreach \x in {2,3,4}{
+	\shade[ball color=gray!30] (\x,4,1.131) circle (4mm);}
+\foreach \x in {1.5,2.5,...,4.5}{
+	\shade[ball color=gray!30] (\x,3.5,0.5657) circle (4mm);}
+\foreach \x in {2.5,3.5}{
+	\shade[ball color=gray!30] (\x,3.5,1.697) circle (4mm);}
+\foreach \x in {2,3,4}{
+	\shade[ball color=gray!30] (\x,3,1.131) circle (4mm);}
+\shade[ball color=gray!30] (3,3,2.263) circle (4mm);
+\foreach \x in {1.5,2.5,...,4.5}{
+	\shade[ball color=gray!30] (\x,2.5,0.5657) circle (4mm);}
+\foreach \x in {2.5,3.5}{
+	\shade[ball color=gray!30] (\x,2.5,1.697) circle (4mm);}
+\foreach \x in {2,3,4}{
+	\shade[ball color=gray!30] (\x,2,1.131) circle (4mm);}
+\foreach \x in {1.5,2.5,...,4.5}{
+	\shade[ball color=gray!30] (\x,1.5,0.5657) circle (4mm);}
+\end{tikzpicture}
+&
+ \begin{tikzpicture}[x={(6:8mm)},y=(145:4mm),z={(90:8.50mm)},baseline={(current bounding box.center)}]
+ \foreach \x in {1,...,5}{
+ 	\shade[ball color=gray!30] (\x,5,0) circle (4mm);}
+ \foreach \x in {1.5,2.5,...,4.5}{
+	\shade[ball color=gray!30] (\x,4.5,0.5657) circle (4mm);}
+ \foreach \x in {1,...,5}{
+ 	\shade[ball color=gray!30] (\x,4,0) circle (4mm);}
+ \foreach \x in {2,3,4}{
+	\shade[ball color=gray!30] (\x,4,1.131) circle (4mm);}
+ \foreach \x in {1.5,2.5,...,4.5}{
+	\shade[ball color=gray!30] (\x,3.5,0.5657) circle (4mm);}
+ \foreach \x in {2.5,3.5}{
+	\shade[ball color=gray!30] (\x,3.5,1.697) circle (4mm);}
+ \foreach \x in {1,...,5}{
+	\shade[ball color=gray!30] (\x,3,0) circle (4mm);}
+ \foreach \x in {2,3,4}{
+	\shade[ball color=gray!30] (\x,3,1.131) circle (4mm);}
+	\shade[ball color=gray!30] (3,3,2.263) circle (4mm);
+ \foreach \x in {1.5,2.5,...,4.5}{
+	\shade[ball color=gray!30] (\x,2.5,0.5657) circle (4mm);}
+ \foreach \x in {2.5,3.5}{
+	\shade[ball color=gray!30] (\x,2.5,1.697) circle (4mm);}
+ \foreach \x in {1,...,5}{
+	\shade[ball color=gray!30] (\x,2,0) circle (4mm);}
+ \foreach \x in {2,3,4}{
+	\shade[ball color=gray!30] (\x,2,1.131) circle (4mm);}
+ \foreach \x in {1.5,2.5,...,4.5}{
+	\shade[ball color=gray!30] (\x,1.5,0.5657) circle (4mm);}
+  \foreach \x in {1,...,5}{
+ 	\shade[ball color=gray!30] (\x,1,0) circle (4mm);}
+ \end{tikzpicture}\\ [1.8cm]
+ Empilement \linebreak à 2 niveaux&Empilement à 3 niveaux&
+ Empilement à 4 niveaux&Empilement à 5 niveaux
+\end{tabular}
+
+\begin{enumerate}
+	\item Combien de boulets contient l'empilement à 2 niveaux ?	
+	\item Expliquer pourquoi l'empilement à 3 niveaux contient 14 boulets.	
+	\item On range 55 boulets de canon selon cette méthode. Combien de niveaux comporte alors l'empilement obtenu ?	
+	\item Ces boulets sont en fonte; la masse volumique de cette fonte est de $7300 kg/m^3$.
+	
+On modélise un boulet de canon par une boule de rayon 6cm.
+	
+Montrer que l'empilement à 3 niveaux de ces boulets pèse 92 kg, au kg près.
+	
+\emph{Rappels:}
+\begin{itemize}
+		\item $\emph{volume d'une boule} = \dfrac{4}{3}\times \pi \times \text{\emph{rayon}} \times \text{\emph{rayon}} \times \text{\emph{rayon}}$.	
+		\item une masse volumique de $7300 kg/m^3$ signifie que $1 m^3$ pèse $7300 kg$.
+\end{itemize}
+\end{enumerate}
+
+\newpage
+
+\section*{Correction}
+
+\begin{enumerate}
+	\item L'empilement à 2 niveaux contient $4 + 1 = 5$~boulets.	
+	\item L'empilement à 3 niveaux contient $9 + 4 + 1 = 14$~boulets.
+	\item Avec 4 niveaux on peut ranger $16 + 9 + 4 + 1 = 30$~boulets. Il faut donc un niveau de plus de $5 \times 5 = 25$ boulets.
+
+Sur 5 niveaux il y aura $25 + 16 + 9 + 4 + 1 = 55$~boulets exactement.
+	\item -- Volume d'un boulet : $\dfrac{4}{3} \times \pi \times 6 \times 6 \times 6 = 288\pi$~cm$^3$.
+
+-- L'empilement à 3 niveaux contient 14 boulets qui ont un volume de $14 \times 288 \pi = 4032 \pi cm^3$.
+
+$1 m^3$ de fonte a une masse de $7300 kg/m^3$, donc $1 dm^3$ de fonte a une masse de $7,3 k$ et $1 cm^3$ de fonte a une masse de $0,0073 kg$, donc les 14 boulets ont une masse de :
+
+$ 4032\pi \times 0,0073 = 29,4336 \pi \approx 92,46 kg$, soit 92kg au kilogramme près.
+	
+\end{enumerate}
+ 
+\end{document}

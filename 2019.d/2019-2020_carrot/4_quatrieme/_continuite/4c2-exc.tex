@@ -1,0 +1,158 @@
+\documentclass[11pt]{article}
+\usepackage{geometry} % Pour passer au format A4
+\geometry{hmargin=1cm, vmargin=2cm} % 
+
+% Page et encodage
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage[english,french]{babel} % Français et anglais
+\usepackage[utf8]{inputenc} 
+
+\usepackage{lmodern}
+\setlength\parindent{0pt}
+
+
+\usepackage{fourier}
+%\usepackage[scaled=0.875]{helvet} 
+\renewcommand{\ttdefault}{lmtt} 
+\usepackage{amsmath,amssymb,makeidx}
+\usepackage[normalem]{ulem}
+\usepackage{fancybox,graphicx}
+\usepackage{tabularx,booktabs}
+\usepackage{pifont}
+\usepackage{ulem}
+\usepackage{dcolumn}
+\usepackage{textcomp}
+\usepackage{diagbox}
+\usepackage{tabularx}
+\usepackage{multirow,multicol}
+\usepackage{lscape}
+\newcommand{\euro}{\eurologo{}}
+
+%Tapuscrit : François Kriegk
+\usepackage{pst-eucl}
+\usepackage{diagbox}% à mettre après pst-eucl
+\usepackage{graphicx,pstricks,pst-plot,pst-grad,pst-node,pst-text,pstricks-add}
+\usepackage{pgf,tikz,pgfplots}
+\usetikzlibrary{patterns,calc,decorations.pathmorphing}
+\setlength\paperheight{297mm}
+\setlength\paperwidth{210mm}
+\setlength{\textheight}{25cm}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\D}{\mathbb{D}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\C}{\mathbb{C}}
+
+\renewcommand{\theenumi}{\textbf{\arabic{enumi}}}
+\renewcommand{\labelenumi}{\textbf{\theenumi.}}
+\renewcommand{\theenumii}{\textbf{\alph{enumii}}}
+\renewcommand{\labelenumii}{\textbf{\theenumii.}}
+
+\newcommand{\vect}[1]{\mathchoice%
+  {\overrightarrow{\displaystyle\mathstrut#1\,\,}}%
+  {\overrightarrow{\textstyle\mathstrut#1\,\,}}%
+  {\overrightarrow{\scriptstyle\mathstrut#1\,\,}}%
+  {\overrightarrow{\scriptscriptstyle\mathstrut#1\,\,}}}
+\def\Oij{$\left(\text{O},~\vect{\imath},~\vect{\jmath}\right)$}
+\def\Oijk{$\left(\text{O},~\vect{\imath},~\vect{\jmath},~\vect{k}\right)$}
+\def\Ouv{$\left(\text{O},~\vect{u},~\vect{v}\right)$}
+\setlength{\voffset}{-1,5cm}
+
+\usepackage{fancyhdr} 
+\pagestyle{fancyplain} 
+
+\fancyhead{} % No page header
+\fancyfoot{}
+
+\renewcommand{\headrulewidth}{0pt} % Remove header underlines
+\renewcommand{\footrulewidth}{0pt} % Remove footer underlines
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+\newcommand{\tempsexo}[1]{\textit{\textbf{(#1)}}}
+%----------------------------------------------------------------------------------------
+%   Début du document
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+% RE-DEFINITION
+%----------------------------------------------------------------------------------------
+% MATHS
+%-----------
+
+\newtheorem{Definition}{Définition}
+\newtheorem{Theorem}{Théorème}
+\newtheorem{Proposition}{Propriété}
+
+% MATHS
+%-----------
+\renewcommand{\labelitemi}{$\bullet$}
+\renewcommand{\labelitemii}{$\circ$}
+%----------------------------------------------------------------------------------------
+%   Titre
+%----------------------------------------------------------------------------------------
+
+\setlength{\columnseprule}{1pt}
+
+\section*{S2 : Semaine du 23/03 au 29/03 - Exercice complémentaire}
+
+\begin{itemize}
+  \item Brevet 2019 - Grèce - (une question en moins)
+  \item 10 points
+  \item 5 / 15 minutes pour l'exercice
+  \item 5 minutes pour la lecture et la compréhension de la correction
+\end{itemize}
+
+ \horrule{2px}
+
+
+Marc et Jim, deux amateurs de course à pied, s'entraînent sur une piste d'athlétisme dont la longueur du tour mesure $400$~m. 
+
+Marc fait un temps moyen de $2$ minutes par tour. 
+
+Marc commence son entrainement par un échauffement d'une longueur d'un kilomètre. 
+
+Le schéma ci-dessous représente la piste d'athlétisme de Marc constituée de deux segments [AB] et [CD] et de deux demi-cercles de diamètre [AD] et [BC]. 
+
+(\emph{Le schéma n'est pas à l'échelle et les longueurs indiquées sont arrondies à l'unité.}) 
+
+\medskip
+
+\begin{center}
+\psset{unit=0.75cm}
+\begin{pspicture}(18,6)
+\psline(3,0.5)(9.7,0.5)\psline(3,5.7)(9.7,5.7)
+\psline[linestyle=dotted](3,0.5)(3,5.7)
+\psline[linestyle=dotted](9.7,0.5)(9.7,5.7)
+\psarc(3,3.1){2.6}{90}{270}
+\psarc(9.7,3.1){2.6}{-90}{90}
+\uput[u](3,5.7){A} \uput[u](9.7,5.7){B} \uput[d](9.7,0.5){C} \uput[d](3,0.5){D} 
+\psframe(3,5.7)(3.2,5.5)\psframe(9.7,5.7)(9.5,5.5)\psframe(9.7,0.5)(9.5,0.7)
+\psframe(3,0.5)(3.2,0.7)
+\psline[linestyle=dashed]{<->}(3,5.9)(9.7,5.9)\uput[u](6.35,5.9){90 m}
+\psline[linestyle=dashed]{<->}(3.4,5.7)(3.4,0.5)\uput[r](3.4,3.1){70 m}
+\rput(15.5,3){ABCD est un rectangle}
+\rput(15.5,2.2){AB = 90 m et AD = 70 m}
+\end{pspicture}
+\end{center}
+
+\begin{enumerate}
+\item Combien de temps durera l'échauffement de Marc? 
+\item Quelle est la vitesse moyenne de course de Marc en km/h ? 
+\end{enumerate}
+
+
+\newpage
+
+\section*{Correction}
+
+\begin{enumerate}
+\item En supposant que Marc court  à la vitesse de 2 minutes pour faire 400 m, il mettra 1 minute pour faire 200 m, donc 5~minutes pour faire $5 \times 200 = 1000$~m.
+\item 1~km en 5~min représente une vitesse de $12 \times 1 = 12$~(km/h) en $12 \times 5 = 60$~min = 1 h. 
+\end{enumerate}
+
+ 
+\end{document}

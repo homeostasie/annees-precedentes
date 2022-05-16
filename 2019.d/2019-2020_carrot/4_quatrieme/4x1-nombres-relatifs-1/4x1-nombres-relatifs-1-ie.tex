@@ -1,0 +1,347 @@
+\documentclass[11pt]{article}
+\usepackage{geometry} % Pour passer au format A4
+\geometry{hmargin=1cm, vmargin=1cm} % 
+
+% Page et encodage
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage[english,french]{babel} % Français et anglais
+\usepackage[utf8]{inputenc} 
+
+\usepackage{lmodern}
+\setlength\parindent{0pt}
+
+% Graphiques
+\usepackage{graphicx,float,grffile,tikz}
+
+% Maths et divers
+\usepackage{amsmath,amsfonts,amssymb,amsthm,verbatim}
+\usepackage{multicol,enumitem,url,eurosym,gensymb,multido}
+
+% Sections
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{\centering \normalfont\scshape}
+
+% Tête et pied de page
+
+\usepackage{fancyhdr} 
+\pagestyle{fancyplain} 
+
+\fancyhead{} % No page header
+\fancyfoot{}
+
+\renewcommand{\headrulewidth}{0pt} % Remove header underlines
+\renewcommand{\footrulewidth}{0pt} % Remove footer underlines
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+%----------------------------------------------------------------------------------------
+%	Début du document
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+% MATHS
+%-----------
+\newcommand{\Pointilles}[1][3]{%
+  \multido{}{#1}{\makebox[\linewidth]{\dotfill}\\[\parskip]
+}}
+%----------------------------------------------------------------------------------------
+%	Titre
+%----------------------------------------------------------------------------------------
+
+\setlength{\columnseprule}{1pt}
+
+\textbf{Nom, Prénom :} \hspace{8cm} \textbf{Classe :} \hspace{3cm} \textbf{Date :}\\
+
+\begin{center}
+  \textit{Les mathématiques ne sont une moindre immensité que la mer.}  - \textbf{Victor Hugo}
+\end{center}
+
+
+\subsection*{ex1 - Calcul}
+
+\begin{multicols}{3}\noindent
+
+  \begin{enumerate}
+  \item $12 - 3 = \ldots\ldots$
+  \item $-5 + \ldots\ldots = -11$
+  \item $3 + \left( -1\right) = \ldots\ldots$
+  \item $-2 + \ldots\ldots = -11$
+  \item $-2 \times 2 = \ldots\ldots$
+  \item $\ldots\ldots + 7 = 16$
+  \item $\ldots\ldots \div 10 = 4$
+  \item $5 \times \left( -10\right) = \ldots\ldots$
+  \item $10 \div \left( -5\right) = \ldots\ldots$
+  \item $\ldots\ldots \times 8 = -64$
+  \item $42 \div 6 = \ldots\ldots$
+  \item $11 - \ldots\ldots = 5$
+  \item $\ldots\ldots \times \left( -1\right) = 3$
+  \item $-30 \div 6 = \ldots\ldots$
+  \item $0 - \ldots\ldots = 3$
+  \item $40 \div 4 = \ldots\ldots$
+  \item $10 + 3 = \ldots\ldots$
+  \item $-19 - \left( -9\right) = \ldots\ldots$
+  \item $-5 \times \ldots\ldots = -20$
+  \item $7 - \ldots\ldots = 5$
+  \end{enumerate}
+  
+  \end{multicols}
+
+\vspace{-0.4cm}
+\horrule{1px}
+\vspace{-0.8cm}
+
+\begin{multicols}{2}
+
+  \subsection*{ex2 - Programme de calcul}
+
+  \textit{(sur feuille)}
+  \begin{itemize}
+  \item Prendre le nombre de départ.
+  \item Lui ajouter 10
+  \item Multiplier par -10 
+  \item Ajouter cinq fois le nombre de départ. 
+  \end{itemize}
+
+  Effectuer le programme de calcul avec les nombres suivants :
+
+  \begin{multicols}{2}
+
+    \begin{enumerate}
+    \item $x = 2$
+    \item $x = 12$
+    \item $x = -6$
+    \item $x = 0,5$
+    \end{enumerate}
+
+  \end{multicols}
+
+  \subsection*{ex3 - calcul litteral}
+
+  \textit{(sur feuille)}
+  \begin{enumerate}
+  \item On pose a = 12 et b = -4.
+    \begin{enumerate}
+    \item Calculer : $2 \times a \times b + 14$
+    \item Calculer : $(a - b)\times b - a$
+    \end{enumerate}
+
+  \item On pose a = -20 et b = -6.
+    \begin{enumerate}
+    \item Calculer : $2 \times a \times b + 14$
+    \item Calculer : $(a - b)\times b - a$
+    \end{enumerate}
+  \end{enumerate}
+
+\end{multicols}
+
+\vspace{-0.4cm}
+\horrule{1px}
+\vspace{-0.8cm}
+
+\begin{multicols}{2}
+
+  \subsection*{ex4 - calcul pyramide}
+
+  Chaque case est la somme des deux en dessous. Remplir la pyramide.
+
+  \begin{tikzpicture}[every node/.style={draw,minimum width=2cm,minimum height=1cm}]
+    \draw (0,0)  node {\phantom{\hspace{2cm}}};
+    \draw(-1,-1) node {\phantom{\hspace{2cm}}} ++(2,0) node {\phantom{\hspace{2cm}}};
+    \draw(-2,-2) node {\phantom{\hspace{2cm}}} ++(2,0) node {\phantom{\hspace{2cm}}} ++(2,0) node {\phantom{\hspace{2cm}}};
+    \draw(-3,-3) node {7} ++(2,0) node {-8} ++(2,0) node {$-6 - 6$} ++(2,0) node {$-5 \times 3$};
+  \end{tikzpicture}
+
+  \subsection*{ex5 - calcul de signe}
+  \textit{(sur feuille)}\\
+  Sachant que $a$ est positif et $b$ est négatif. Donner le signe des expressions suivantes. \textit{Justifier.}
+
+  \begin{enumerate}
+  \item  $-2 \times a \times b \times -20$
+  \item $\dfrac{-2 \times a \times b}{10 \times b}$
+  \end{enumerate}
+
+\end{multicols}
+
+\vspace{-0.4cm}
+\horrule{1px}
+\vspace{-0.8cm}
+
+\begin{multicols}{2}
+
+  \subsection*{ex6 - calcul carré magique}
+
+  Un carré est dit magique si la somme de ses lignes, la somme de ses colonnes et la somme de ses ont la même valeur. 
+  \begin{enumerate}
+  \item  Dire si le carré est magique. \textit{(sur feuille)}
+
+    \begin{center}
+      \begin{tabular}{|c|c|c|} \hline
+        3 & 202 & 104 \\ \hline
+        204 & 103 &   2 \\ \hline
+        102 &   4 & 203 \\ \hline
+      \end{tabular}
+    \end{center}
+
+
+  \item  Remplir le carré est magique.
+    \begin{center}
+      \begin{tabular}{|c|c|c|} \hline
+        8 & 5 & 6  \\ \hline
+        & 1 &    \\ \hline
+        &   &    \\ \hline
+      \end{tabular}
+    \end{center}
+
+  \end{enumerate}
+
+\end{multicols}
+
+\newpage
+
+\textbf{Nom, Prénom :} \hspace{8cm} \textbf{Classe :} \hspace{3cm} \textbf{Date :}\\
+
+\begin{center}
+  \textit{Les mathématiques ne sont une moindre immensité que la mer.}  - \textbf{Victor Hugo}
+\end{center}
+
+
+\subsection*{Calcul}
+\begin{multicols}{3}\noindent
+  \begin{enumerate}
+  \item $-4 - \ldots\ldots = -1$
+  \item $-10 \times 6 = \ldots\ldots$
+  \item $\ldots\ldots + 2 = 5$
+  \item $7 + \left( -8\right) = \ldots\ldots$
+  \item $7 - 8 = \ldots\ldots$
+  \item $5 + \ldots\ldots = 13$
+  \item $-45 \div \left( -9\right) = \ldots\ldots$
+  \item $-6 - \ldots\ldots = -8$
+  \item $\ldots\ldots - \left( -5\right) = 7$
+  \item $63 \div 7 = \ldots\ldots$
+  \item $-4 + 4 = \ldots\ldots$
+  \item $12 \div \ldots\ldots = -3$
+  \item $-6 \times \left( -9\right) = \ldots\ldots$
+  \item $1 + 2 = \ldots\ldots$
+  \item $-10 \times \ldots\ldots = 100$
+  \item $5 - \left( -5\right) = \ldots\ldots$
+  \item $12 \div 4 = \ldots\ldots$
+  \item $-8 \times \left( -8\right) = \ldots\ldots$
+  \item $\ldots\ldots \div 5 = 4$
+  \item $-7 \times \left( -7\right) = \ldots\ldots$
+  \end{enumerate}
+\end{multicols}
+
+\vspace{-0.4cm}
+\horrule{1px}
+\vspace{-0.8cm}
+
+\begin{multicols}{2}
+
+  \subsection*{ex2 - Programme de calcul}
+
+  \textit{(sur feuille)}
+  \begin{itemize}
+  \item Prendre le nombre de départ.
+  \item Lui ajouter 10
+  \item Multiplier par -10 
+  \item Ajouter six fois le nombre de départ. 
+  \end{itemize}
+
+  Effectuer le programme de calcul avec les nombres suivants :
+
+  \begin{multicols}{2}
+
+    \begin{enumerate}
+    \item $x = 2$
+    \item $x = 14$
+    \item $x = -8$
+    \item $x = 0,4$
+    \end{enumerate}
+
+  \end{multicols}
+
+  \subsection*{ex3 - calcul litteral}
+
+  \textit{(sur feuille)}
+  \begin{enumerate}
+  \item On pose a = 14 et b = -5.
+    \begin{enumerate}
+    \item Calculer : $2 \times a \times b - 12$
+    \item Calculer : $(a - b)\times b - a$
+    \end{enumerate}
+
+  \item On pose a = -12 et b = -4.
+    \begin{enumerate}
+    \item Calculer : $2 \times a \times b - 14$
+    \item Calculer : $(a - b)\times b - a$
+    \end{enumerate}
+  \end{enumerate}
+
+\end{multicols}
+
+\vspace{-0.4cm}
+\horrule{1px}
+\vspace{-0.8cm}
+
+\begin{multicols}{2}
+
+  \subsection*{ex4 - calcul pyramide}
+
+  Chaque case est la somme des deux en dessous. Remplir la pyramide.
+
+  \begin{tikzpicture}[every node/.style={draw,minimum width=2cm,minimum height=1cm}]
+    \draw (0,0)  node {\phantom{\hspace{2cm}}};
+    \draw(-1,-1) node {\phantom{\hspace{2cm}}} ++(2,0) node {\phantom{\hspace{2cm}}};
+    \draw(-2,-2) node {\phantom{\hspace{2cm}}} ++(2,0) node {\phantom{\hspace{2cm}}} ++(2,0) node {\phantom{\hspace{2cm}}};
+    \draw(-3,-3) node {6} ++(2,0) node {-10} ++(2,0) node {$-8 - 8$} ++(2,0) node {$-5 \times 2$};
+  \end{tikzpicture}
+
+  \subsection*{ex5 - calcul de signe}
+  \textit{(sur feuille)}\\
+  Sachant que $a$ est négatif et $b$ est positif. Donner le signe des expressions suivantes. \textit{Justifier.}
+
+  \begin{enumerate}
+  \item  $-2 \times a \times b \times -20$
+  \item $\dfrac{-2 \times a \times b}{10 \times b}$
+  \end{enumerate}
+
+\end{multicols}
+
+\vspace{-0.4cm}
+\horrule{1px}
+\vspace{-0.8cm}
+
+\begin{multicols}{2}
+
+  \subsection*{ex6 - calcul carré magique}
+
+  Un carré est dit magique si la somme de ses lignes, la somme de ses colonnes et la somme de ses ont la même valeur. 
+  \begin{enumerate}
+  \item  Dire si le carré est magique. \textit{(sur feuille)}
+
+    \begin{center}
+      \begin{tabular}{|c|c|c|} \hline
+        3 & 202 & 104 \\ \hline
+        204 & 105 &   2 \\ \hline
+        102 &   3 & 204 \\ \hline
+      \end{tabular}
+    \end{center}
+
+
+  \item  Remplir le carré est magique.
+    \begin{center}
+      \begin{tabular}{|c|c|c|} \hline
+        5 & 12 & 10  \\ \hline
+        & 9 &    \\ \hline
+        &   &    \\ \hline
+      \end{tabular}
+    \end{center}
+
+  \end{enumerate}
+
+\end{multicols}
+
+
+
+\end{document}
