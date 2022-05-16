@@ -1,0 +1,94 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LaTeX Template
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Linux and Unix Users Group at Virginia Tech Wiki 
+% (https://vtluug.org/wiki/Example_LaTeX_chem_lab_report)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt]{article}
+\usepackage{geometry} % Pour passer au format A4
+\geometry{hmargin=1cm, vmargin=1cm} % 
+
+\usepackage{graphicx} % Required for including pictures
+\usepackage{float} % 
+
+%Français
+\usepackage[T1]{fontenc} 
+\usepackage[english,francais]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{eurosym}
+\usepackage{lmodern}
+\usepackage{url}
+\usepackage{multicol}
+
+%Maths
+\usepackage{amsmath,amsfonts,amssymb,amsthm}
+%\usepackage[linesnumbered, ruled, vlined]{algorithm2e}
+%\SetAlFnt{\small\sffamily}
+
+%Autres
+\linespread{1} % Line spacing
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+\renewcommand{\labelenumi}{\alph{enumi}.} % 
+\pagestyle{empty}
+%----------------------------------------------------------------------------------------
+%	DOCUMENT INFORMATION
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+%\maketitle % Insert the title, author and date
+
+\begin{minipage}[t]{\textwidth}
+  \raggedright
+      {\bfseries Série B}\\[.35ex]
+      {\bfseries 1 STI 2D 2}\\[.35ex]
+      \vspace*{-1cm}
+      \raggedleft
+          {\bfseries Second degré}\\[.35ex]
+          {\bfseries 16 Septembre 2014}\\[.35ex]
+\end{minipage}\\[1em]
+
+\begin{center}
+  \textsf{Yes, we’re being bought by Microsoft - Mojang - 2.5 Millards \$}\\
+  \textsf{I’m leaving Mojang - It’s not about the money. It’s about my sanity. - Notch}
+\end{center}
+
+\setlength{\columnseprule}{1pt}
+\begin{multicols}{2}
+  \subsection*{Exercice 1 - Schéma}
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\linewidth]{sources/ie/ie-porte.pdf}
+  \end{figure}
+  \subsection*{Données}
+  Soit ABCD une porte rectangulaire dont on cherche les dimensions. On essaye de faire passer un bâton dont on ne connaît la longueur et on prend trois mesures : 
+  \begin{itemize}
+  \item La diagonale de la porte fait la taille exacte du bâton.
+  \item En position verticale, le bâton mesure $20cm$ de plus que la porte.
+  \item En position horizontale, le bâton mesure $40cm$ de plus que la porte.
+  \end{itemize}
+
+  \subsection*{Objectif}
+  \textbf{Trouver la hauteur et la largeur de la porte.}
+  \textit{On se propose de poser $x$ la taille du bâton.}
+\end{multicols}
+
+\subsection*{Exercice 2 - Résoudre dans $\mathbb{R}$ }
+\begin{multicols}{2}
+  \begin{enumerate}
+  \item $2x^2 + x - \dfrac{1}{2} = 0$
+  \item $3x^2 + 2x + \dfrac{1}{3} = 0$
+  \end{enumerate}
+\end{multicols}
+\end{document}

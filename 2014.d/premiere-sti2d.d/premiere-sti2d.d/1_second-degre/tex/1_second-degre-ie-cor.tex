@@ -1,0 +1,262 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LaTeX Template
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Linux and Unix Users Group at Virginia Tech Wiki 
+% (https://vtluug.org/wiki/Example_LaTeX_chem_lab_report)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt]{article}
+\usepackage{geometry} % Pour passer au format A4
+\geometry{hmargin=1cm, vmargin=1cm} % 
+
+\usepackage{graphicx} % Required for including pictures
+\usepackage{float} % 
+
+%Français
+\usepackage[T1]{fontenc} 
+\usepackage[english,francais]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{eurosym}
+\usepackage{lmodern}
+\usepackage{url}
+\usepackage{multicol}
+
+%Maths
+\usepackage{amsmath,amsfonts,amssymb,amsthm}
+%\usepackage[linesnumbered, ruled, vlined]{algorithm2e}
+%\SetAlFnt{\small\sffamily}
+
+%Autres
+\linespread{1} % Line spacing
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+\renewcommand{\labelenumi}{\alph{enumi}.} % 
+\pagestyle{empty}
+%----------------------------------------------------------------------------------------
+%	DOCUMENT INFORMATION
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+%\maketitle % Insert the title, author and date
+
+\begin{minipage}[t]{\textwidth}
+  \raggedright
+      {\bfseries 1 STI 2D 2}\\[.35ex]
+      \vspace*{-1cm}
+      \raggedleft
+          {\bfseries Second degré}\\[.35ex]
+          {\bfseries 16 Septembre 2014}\\[.35ex]
+\end{minipage}\\[1em]
+
+\begin{center}
+  \textsf{Yes, we’re being bought by Microsoft - Mojang - 2.5 Millards \$}\\
+  \textsf{I’m leaving Mojang - It’s not about the money. It’s about my sanity. - Notch}
+\end{center}
+
+
+
+\setlength{\columnseprule}{1pt}
+\section{Exercice 1 - La porte}
+\begin{multicols}{2}
+
+  \subsection*{Shéma}
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\linewidth]{sources/ie/ie-porte.pdf}
+  \end{figure}
+  \subsection*{Données}
+  Soit ABCD une porte rectangulaire dont on cherche les dimensions. On essaye de faire passer un bâton dont on ne connaît la longueur et on prend trois mesures : 
+  \begin{itemize}
+  \item La diagonale de la porte fait la taille exacte du bâton.
+  \item En position verticale, le bâton mesure $20cm$ de plus que la porte.
+  \item En position horizontale, le bâton mesure $40cm$ de plus que la porte.
+  \end{itemize}
+
+  \subsection*{Objectif}
+
+  \textbf{Trouver la hauteur et la largeur de la porte.}\\
+  \textit{On se propose de poser $x$ la taille du bâton.}
+\end{multicols}
+
+\noindent\hrulefill
+
+\begin{multicols}{2}
+
+  \subsection{Mise en équation du problème}
+  
+  \begin{itemize}
+  \item Hauteur de la porte : $x - 20$.
+  \item Largeur de la porte : $x - 40$.
+  \item Diagonale de la porte : $x$.
+  \end{itemize}
+  
+  Dans le triangle BCD, rectangle en C, on utilise le théorème de Pythagore :\\
+
+  \begin{eqnarray*}
+    DC^2 + CB^2 & = & BD^2\\
+    (x-20)^2 + (x - 40)^2 & = & x^2
+  \end{eqnarray*}
+
+
+
+  \subsection{Réduction de l'équation}
+
+  \begin{eqnarray*}
+    (x^2 - 2*20*x + 20^2) + (x^2 - 2*40*x + 40^2) &=& x^2\\
+    (x^2 + x^2 - x^2) + x(40 + 80) + (400 + 1600) &=& 0\\
+    x^2 - 120x + 2000 &=& 0
+  \end{eqnarray*}
+
+
+
+  \subsection{Résolution de l'équation : $ x^2 - 120x + 2000 = 0$}
+  Pour résoudre une équation du second degré, on calule le \textbf{discriminant}.
+
+  $$\Delta = 120^2 - 4*(1)(2000) = 14400 - 8000 = 6400 = 80^2$$
+  
+  Comme $\Delta > 0$, l'équation possède deux solutions.
+  \begin{eqnarray*}
+    \left\{
+    \begin{aligned}
+      x_1 &=& \dfrac{120 - 80}{2*1} = \dfrac{40}{2} = 20\\
+      x_2 &=& \dfrac{120 + 80}{2*1} = \dfrac{200}{2} = 100
+    \end{aligned}
+    \right.
+  \end{eqnarray*}
+
+  La taille du bâton est  $x_1 = 20cm$ ou  $x_2 = 100cm$. On en déduit les dimensions de la porte. \\
+  \begin{eqnarray*}
+    \left\{
+    \begin{aligned}
+      h_1 &=& 20 - 20 = 0\\
+      l_1 &=& 20-40 = -20
+    \end{aligned}
+    \right.
+  \end{eqnarray*}
+
+  \textit{Cette solution $h_1 , l_1$ est incompatible avec les dimensions d'une porte.}
+
+  \begin{eqnarray*}
+    \left\{
+    \begin{aligned}
+      h_2 &=& 100 - 20 = 80\\
+      l_2 &=& 100 - 40 = 60
+    \end{aligned}
+    \right.
+  \end{eqnarray*}
+  
+  \textbf{La porte mesure $80cm$ de haut et $60cm$ de large.}
+
+\end{multicols}
+
+\newpage
+
+
+\section{Exercice 2 - Résoudre dans $\mathbb{R}$ }
+
+\begin{multicols}{2}
+\subsection{$x^2 + 2x - 3 = 0$} 
+  Pour résoudre une équation du second degré, on calule le \textbf{discriminant}.
+  $$\Delta = 2^2 - 4(1)(-3) = 4 + 12 = 16 = 4^2$$
+
+  Comme $\Delta > 0$, l'équation possède deux solutions.
+
+
+  \begin{eqnarray*}
+    \left\{
+    \begin{aligned}
+      x_1 &=& \dfrac{-2 - 4}{2*1} = \dfrac{-6}{2} = -3\\
+      x_2 &=& \dfrac{-2 + 4}{2*1} = \dfrac{2}{2} = 1
+    \end{aligned}
+    \right.
+  \end{eqnarray*}
+
+  \textbf{Les solutions sont $x_1 = -3$ et $x_2 = 1$.}
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\linewidth]{sources/cor/2-1.pdf}
+  \end{figure}
+
+\end{multicols}
+
+\begin{multicols}{2}
+\subsection{$x^2 + 6x + 9 = 0$}
+
+  Pour résoudre une équation du second degré, on calule le \textbf{discriminant}.
+  $$\Delta = 6^2 - 4(1)(9) = 36 - 36 = 0$$
+
+  $\Delta = 0$. L'équation possède une solution double.
+
+  $$x = \dfrac{-6}{2*1} = \dfrac{-6}{2} = -3$$
+  
+  \textbf{La solution est $x = -3$.}
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\linewidth]{sources/cor/2-2.pdf}
+  \end{figure}
+
+\end{multicols}
+
+\noindent\hrulefill
+
+\begin{multicols}{2}
+\subsection{$2x^2 + x - \dfrac{1}{2} = 0$}
+
+  Pour résoudre une équation du second degré, on calule le \textbf{discriminant}.
+  $$\Delta = 1^2 + 4(2)(\dfrac{1}{2}) = 1 + 4 = 5$$
+
+ Comme $\Delta > 0$, l'équation possède deux solutions.
+
+
+  \begin{eqnarray*}
+    \left\{
+    \begin{aligned}
+      x_1 &=& \dfrac{-1 - \sqrt(5)}{2*2} = \dfrac{-1 - \sqrt(5)}{4}\\
+     x_1 &=& \dfrac{-1 + \sqrt(5)}{2*2} = \dfrac{-1 + \sqrt(5)}{4}
+    \end{aligned}
+    \right.
+  \end{eqnarray*}
+
+  \textbf{Les solutions sont $x_1 = -\dfrac{1 - \sqrt(5)}{4}$ et $x_2 = \dfrac{-1 - \sqrt(5)}{4} $.}
+
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\linewidth]{sources/cor/2-3.pdf}
+  \end{figure}
+
+\end{multicols}
+
+
+\begin{multicols}{2}
+\subsection{$3x^2 + 2x + \dfrac{1}{3} = 0$}
+  Pour résoudre une équation du second degré, on calule le \textbf{discriminant}.
+  $$\Delta = 2^2 - 4 * 3 * \frac{1}{3} = 4 - 4 = 0.$$
+
+  Comme $\Delta = 0$, l'équation possède une solution.
+
+  $$x = \dfrac{-2}{2*3} = \dfrac{-2}{6} = -\dfrac{1}{3}$$
+  \textbf{La solution est $-\dfrac{1}{3}$.}
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\linewidth]{sources/cor/2-4.pdf}
+  \end{figure}
+
+\end{multicols}
+
+
+\end{document}

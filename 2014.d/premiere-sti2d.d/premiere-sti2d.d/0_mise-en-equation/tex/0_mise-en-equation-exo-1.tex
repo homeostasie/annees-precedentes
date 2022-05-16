@@ -1,0 +1,102 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LaTeX Template
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Linux and Unix Users Group at Virginia Tech Wiki 
+% (https://vtluug.org/wiki/Example_LaTeX_chem_lab_report)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt]{article}
+\usepackage{geometry} % Pour passer au format A4
+\geometry{hmargin=1cm, vmargin=1cm} % 
+
+\usepackage{graphicx} % Required for including pictures
+\usepackage{float} % 
+
+%Français
+\usepackage[T1]{fontenc} 
+\usepackage[english,francais]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{eurosym}
+\usepackage{lmodern}
+\usepackage{url}
+\usepackage{multicol}
+\usepackage{fancybox} 
+
+\usepackage{enumitem}
+%Maths
+\usepackage{amsmath,amsfonts,amssymb,amsthm}
+%\usepackage[linesnumbered, ruled, vlined]{algorithm2e}
+%\SetAlFnt{\small\sffamily}
+
+%Autres
+\linespread{1} % Line spacing
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+\renewcommand{\labelenumi}{\alph{enumi}.} % 
+\pagestyle{empty}
+%----------------------------------------------------------------------------------------
+%	DOCUMENT INFORMATION
+%----------------------------------------------------------------------------------------
+\begin{document}
+\subsection*{Exo 1}
+\textit{Développer, et réduire si possible : }
+
+\begin{multicols}{3}
+\begin{itemize}[label=$\Diamond$]
+\item $(3t + 1)^{2}$
+\item $(2t - 9)(2t + 9)$
+\item $(t -4z)^{2}$
+\item $(4a - 6)^{2}$
+\item $(5a + 8)^{2}$
+\item $(3a + 11)(3a - 11)$
+\end{itemize}
+\end{multicols}
+
+\subsection*{Exo 2}
+\textit{Développer ET factoriser }
+\begin{multicols}{2}
+\begin{itemize}[label=$\Diamond$]
+\item $49 - (3x+ 2)^{2}$
+\item $(x - 3)^{2} + (x - 3)(x + 3)$
+\item $(3x + 2)^{2} - (5 - 2x)(3x+ 2)$
+\item $(7a - 9)^{2} + (7a - 9)(3a + 1)$
+\end{itemize}
+\end{multicols}
+
+\subsection*{Exo 3}
+\textit{Résoudre : }
+
+\begin{multicols}{3}
+\begin{itemize}[label=$\Diamond$]
+\item $(3t + 1)^{2} = 0$
+\item $(2t - 9)(2t + 9) = 0$
+\item $(2 -4z)^{2} = 1$
+\item $(4a - 6)^{2} = 1$
+\item $(5a + 8)^{2} = 4$
+\item $(3a + 11)(3a - 11) = 9$
+\end{itemize}
+\end{multicols}
+
+\subsection*{Exo 4}
+\textit{Résoudre : }
+
+\begin{multicols}{2}
+\begin{itemize}[label=$\Diamond$]
+\item $\dfrac{49 - (3x+ 2)^{2}}{x-1} = 0$
+\item $\dfrac{(x - 3)^{2} + (x - 3)(x + 3)}{2x + 31} = 0$
+\item $\dfrac{(3x + 2)^{2} - (5 - 2x)(3x+ 2)}{7x^{130}} = 0$
+\item $\dfrac{(7a - 9)^{2} + (7a - 9)(3a + 1)}{12 - x^{2}} = 0$
+\end{itemize}
+\end{multicols}
+
+\end{document}
