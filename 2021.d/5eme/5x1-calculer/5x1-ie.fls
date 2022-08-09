@@ -1,0 +1,7 @@
+PWD /home/thom/Documents/2021.d/2021-2022_astro/5eme/5x1-calculer
+INPUT /etc/texmf/web2c/texmf.cnf
+INPUT /usr/share/texmf/web2c/texmf.cnf
+INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
+INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
+INPUT /home/thom/Documents/2021.d/2021-2022_astro/5eme/5x1-calculer/5x1-ie.tex
+OUTPUT /home/thom/Documents/2021.d/2021-2022_astro/5eme/5x1-calculer/5x1-ie.log
